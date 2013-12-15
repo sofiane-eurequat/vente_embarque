@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="3a52d8c8-58f8-4bd7-80dd-76e8b206e1fb" name="UMLUseCaseDiagram1" linkedPackageId="ea43bf51-dca8-4994-b447-8ba05a05eb6a" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="5d550c19-7c29-48ae-a2bd-ffedea72a264">
+      <profileInstance Id="bf794fd7-69d4-477a-bb62-9d232a51de06" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="6cd9ca0a-ff52-4871-860d-a93aadb8bd5b">
+      <profileInstance Id="bc64fa1b-b531-4cf3-a992-5070d59df145" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="bfe006ce-a072-4234-a813-454f89536c88" name="livreur" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="14e9bcfd-c850-4961-b818-770f385a8abd" />
+        <targetEnds>
+          <association Id="5303235f-eae2-404a-bc55-d2525ae2a581" isDerived="false" sourceEndRoleName="livreur" targetEndRoleName="faire un ravaitaillement" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8c932818-d568-46cc-be4f-391e5455e04a" LastKnownName="faire un ravaitaillement" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ebd30f65-f44e-4576-8cc7-f8d8c374b39f" name="livreur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ba1ef7c6-9c75-44fe-9c68-375fa1b76c8d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c19f655b-6523-4754-b31b-c47ee4948ab0" name="faire un ravaitaillement" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="079c3110-50dc-4577-8cb0-22f0ebc41a47" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1aa4fb80-c13d-4fb0-8ccd-04421f71ff27" />
+          </association>
+          <association Id="75b658dd-9c04-4f48-829c-8650a4c53bd8" isDerived="false" sourceEndRoleName="livreur" targetEndRoleName="faire une livraison" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2293cf48-9351-49c7-a65e-d5d0877578f9" LastKnownName="faire une livraison" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a882baaf-9d80-4de4-8a29-7b5e496b84b5" name="livreur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="99120ac9-e477-4337-8913-fcd9cc089662" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="da7753b8-3e5b-45ca-a872-52443060f644" name="faire une livraison" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e1a0d76a-1e2c-4a4f-a042-5dd9cbc5ae95" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5dcff6a0-e695-4238-a576-f65cf568f752" />
+          </association>
+          <association Id="6b26efab-aa51-4190-aa85-935f89836742" isDerived="false" sourceEndRoleName="livreur" targetEndRoleName="reclamation" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="093d21e2-fce5-42ad-babd-785192006230" LastKnownName="reclamation" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="15889141-d226-4800-bb29-7c30a65ccacc" name="livreur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c6deda8d-4997-4b5e-8856-0ef892b4fa75" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7451c1b1-ea90-4e98-80d7-17005e6f7f7a" name="reclamation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7de02f05-af67-4c55-86eb-1db29ce21e1f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2ddda474-3d96-4dd2-a907-13ac8c867de1" />
+          </association>
+          <association Id="c99dac1a-1704-4a49-af81-fc82ab115f05" isDerived="false" sourceEndRoleName="livreur" targetEndRoleName="saisie info demarage" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ec87cf9b-8c20-4227-a238-f2087952bc64" LastKnownName="saisie info tournée" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0884a000-38ca-4b55-8f77-e6ec484e0b73" name="livreur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="75051a01-980b-4da8-a3f0-d704b315eb23" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bf70bab3-50d4-45bf-a41c-7d292685f0fc" name="saisie info demarage" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fa71a13e-da86-4139-8478-e305adc03cac" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8d5825a0-570e-4121-9861-2f3a1b75f7c8" />
+          </association>
+          <association Id="b1433075-768b-4f61-9dd4-4c6b7d3c2472" isDerived="false" sourceEndRoleName="livreur" targetEndRoleName="encaissement" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fc67a579-dffb-4cfb-afa1-83ab1ef415a7" LastKnownName="encaissement" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4eeb192d-cba6-4460-84f5-774c07b55dae" name="livreur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6b9014f0-6aee-4579-b61c-55964163f01b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fedf8c3f-b4ba-4242-8d69-2f4e9c24ff33" name="encaissement" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="821bdee4-3913-4c6c-af77-f8be342516b1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fe5487a1-a6ea-42b5-b594-d1c6c5b78dc8" />
+          </association>
+          <association Id="6e451420-c5b2-40a6-b992-b03eec1d9360" isDerived="false" sourceEndRoleName="livreur" targetEndRoleName="UseCase1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2c03e07d-a703-4831-a5c0-3bc10ff31bdd" LastKnownName="cloturé la tourné" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7724dff5-2d0f-4867-8ccb-57a402a218c6" name="livreur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="28e8c0e7-d9f7-4d88-b718-350c1ec45a23" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="33517501-dfe0-4b18-9831-38942ead99c6" name="UseCase1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a3dc5976-7e4a-435c-b0a0-96bfec22ebe3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f92643cf-8e68-425c-889b-e9479abb2e3d" />
+          </association>
+          <association Id="a12c961f-7397-47cc-8a08-7e18a0d12549" isDerived="false" sourceEndRoleName="livreur" targetEndRoleName="authentification" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a8acb28a-34b3-43b0-97f7-c68495170e35" LastKnownName="authentification" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5e1ce393-761e-48e1-9619-2edace650b0d" name="livreur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="02910680-69dd-4f42-bdf7-6120bb6a4b9d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5b6b9882-bec1-4b9c-baaa-20709e40e2b6" name="authentification" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8ffbe918-db4c-4d1b-9883-cb4353499e1b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5d0ddedf-bc2d-45ef-a8ff-dd6118cba2b0" />
+          </association>
+          <association Id="5b85cb1f-1b74-441c-845e-843aef03e288" isDerived="false" sourceEndRoleName="livreur" targetEndRoleName="Chercher et ajouter des clients" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="47039b7e-b849-4f28-a3c9-74f5adbd7fd2" LastKnownName="Chercher et ajouter des clients" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b9787b81-bec2-438d-8c17-ce51ef4ec6b2" name="livreur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="230b43eb-b4a6-4741-bd0b-50c578ec3c19" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c29b9b34-e17d-46b4-a17a-7adabbcd5ba1" name="Chercher et ajouter des clients" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6d2f2325-cd88-40b2-9e81-fc96a524f2d5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7a1f6ba4-d621-46be-ab00-b8598d1cfe17" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8c932818-d568-46cc-be4f-391e5455e04a" name="faire un ravaitaillement" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5fb16a97-0c85-4225-9a3b-c4af26ee2424" />
+        <additions>
+          <include Id="7eb536fe-1895-4cfe-8d03-e998c7bae8ce">
+            <useCaseMoniker Id="f566d79d-9c84-4c54-8805-3fdf06f180e2" LastKnownName="faire un depot " />
+            <elementDefinition Id="52793da2-7cb4-4e03-818f-7408527f8cdd" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f566d79d-9c84-4c54-8805-3fdf06f180e2" name="faire un depot " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="22002d2a-e03f-4dbf-8324-d0a3f4e55414" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2293cf48-9351-49c7-a65e-d5d0877578f9" name="faire une livraison" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b536fcb7-7348-406f-a16f-e2c56c442f4f" />
+        <extendedCases>
+          <extend Id="071ebc4e-3302-4086-a7b4-aaf5a8431ff7">
+            <useCaseMoniker Id="0fd4b7ac-11c2-4742-9de2-a6950e7ae98a" LastKnownName="imprimer des documents" />
+            <elementDefinition Id="1cf0831a-0728-4d9d-845a-739847ea766b" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0fd4b7ac-11c2-4742-9de2-a6950e7ae98a" name="imprimer des documents" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0862daa5-1734-4074-9fea-ee1c9f4c0bae" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="47039b7e-b849-4f28-a3c9-74f5adbd7fd2" name="Chercher et ajouter des clients" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8ba5c1a2-8a5b-423a-bae7-cf0718b256be" />
+        <extendedCases>
+          <extend Id="2209d48b-b4f8-451d-aee3-0e0d326533f4">
+            <useCaseMoniker Id="2293cf48-9351-49c7-a65e-d5d0877578f9" LastKnownName="faire une livraison" />
+            <elementDefinition Id="c74852e6-3111-4269-ba11-b0a67a1b0717" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="093d21e2-fce5-42ad-babd-785192006230" name="reclamation" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="47fb2699-536e-4227-b055-9d0c27d992c3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ec87cf9b-8c20-4227-a238-f2087952bc64" name="saisie info tournée" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f0ebf2cd-dadd-43fd-b2d4-4dcbd3137ab8" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fc67a579-dffb-4cfb-afa1-83ab1ef415a7" name="encaissement" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="94c35666-8137-40d2-997f-7eb90aefd460" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2c03e07d-a703-4831-a5c0-3bc10ff31bdd" name="cloturé la tourné" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1fbd0e99-c43c-44f0-96bb-2dc2a25d1eb3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a8acb28a-34b3-43b0-97f7-c68495170e35" name="authentification" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c6720e21-4ba7-4583-b378-9f327d5addaa" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="98de3aa7-a495-4418-8d9c-9b675ee51f7f" name="manager" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c12589f9-f7bc-40ac-a80b-676950754dbf" />
+        <targetEnds>
+          <association Id="65834243-2900-4254-bef3-04836877cba1" isDerived="false" sourceEndRoleName="manager" targetEndRoleName="gestion des secteur" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="cfe9ce7c-cb15-4aae-90c9-352e0c65579c" LastKnownName="gestion des secteur" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a54572d0-0e2e-434a-bf10-6dc8a2f39c8b" name="manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b4185090-b46b-4ea3-8169-1845e7850f20" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a9b3b7ca-8f0a-441e-b71e-19c706cd9a87" name="gestion des secteur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3ed282b4-7eed-49e8-9d0b-c673561e8391" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="aa67446e-e0d1-4ec1-95f6-1ebaa788550c" />
+          </association>
+          <association Id="f1f33aeb-c841-4c12-8458-1adf36c19c61" isDerived="false" sourceEndRoleName="manager" targetEndRoleName="manager" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="98de3aa7-a495-4418-8d9c-9b675ee51f7f" LastKnownName="manager" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="83d66dcb-6b2d-4249-b367-021ddfb39b9f" name="manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="52d9db53-a407-48dd-b7a5-4772add58c9e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e85189db-efa9-407f-89b8-c8c5cb1062f5" name="manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6991344c-2034-4390-a902-62396aaeb6d8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a351d35a-de4f-4899-8b3c-8fe3cb80730e" />
+          </association>
+          <association Id="38c6df43-9da1-4d27-a610-8d0aa5566800" isDerived="false" sourceEndRoleName="manager" targetEndRoleName="gestion des livreur" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c72c39f2-d163-46f6-95c5-f6101ed20edb" LastKnownName="gestion des livreur" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fed0068f-5718-4cb4-a54e-28f400822d24" name="manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9cbcfb12-e7dd-4662-bb57-f7249df85c49" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7e2a4ec8-7e77-45e2-a3c1-66c3fd5b3f9f" name="gestion des livreur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a3ffe998-90a5-4327-8720-5c1714926aa7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1e1c296a-7425-4074-9698-00bc4858ad9e" />
+          </association>
+          <association Id="f187d199-3ca5-4294-b232-d009f718e93a" isDerived="false" sourceEndRoleName="manager" targetEndRoleName="gestion des clients" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fa247086-e4b2-4f89-9d42-baa89ccb56aa" LastKnownName="gestion des clients" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="83b0263b-6903-4a14-9919-5f1fbde790e7" name="manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8227b92c-48be-4fed-9b51-2435614e29ec" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e0b664ac-6118-4fd6-861c-17ba81336133" name="gestion des clients" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7a50f4d1-a9b5-477b-98cd-09f73d6a0628" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c47b1aea-69ee-4aee-8c52-79771684e570" />
+          </association>
+          <association Id="df4ab027-f32c-426c-b790-a61905a9f73e" isDerived="false" sourceEndRoleName="manager" targetEndRoleName="gestion des produits" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2829f040-1751-4fa7-9226-dc7740cd61f8" LastKnownName="gestion de stock" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="561c452d-03c2-402a-952f-c0d521f50dcb" name="manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bf3a205c-bf23-4926-9922-60b57db362c1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6e19ddad-a1cd-4c45-869c-ab950e1cee4a" name="gestion des produits" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6646fcf0-a355-4717-929b-8fc83d098eb9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9a07dd86-7560-4223-95d4-fabe66cacf62" />
+          </association>
+          <association Id="46910384-d8df-4fbb-b646-87a45bac68eb" isDerived="false" sourceEndRoleName="manager" targetEndRoleName="gestion des commandes" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="86fb5960-533b-4810-a4ba-620e2948fc69" LastKnownName="gestion des commandes,reclamation" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cfa24bac-22eb-4e4e-8558-ae6622ac5c79" name="manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1458cd84-c6ab-4ce1-912a-fca0df3bedf8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e0293244-9ad6-4ca4-b9d2-a6adf76c687d" name="gestion des commandes" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6bfaec5e-2b03-4417-96c8-e5daf2356802" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fdec9551-3e79-4347-b395-59b6bd762c18" />
+          </association>
+          <association Id="d37fbdb5-ab80-4636-a612-c4cc51667ec0" isDerived="false" sourceEndRoleName="manager" targetEndRoleName="gestion immo" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="970da129-d509-43c6-aa49-0c317a63c507" LastKnownName="gestion immo" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c979ec0a-517e-41aa-ad67-a6fae95a06e9" name="manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="02793a1d-681a-4cfd-8add-2be5fc983f5d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6d1d30eb-7a6f-415e-a74e-7cec9dcf4b42" name="gestion immo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="148417c1-3cfc-45d3-a693-18c87632fdcc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1c77fd73-e4b5-4c9c-a1f1-23d0ca813d43" />
+          </association>
+          <association Id="9e357988-c8cd-4392-b283-fb678e62cf97" isDerived="false" sourceEndRoleName="manager" targetEndRoleName="gestion des depots" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e326ae4f-5abe-4699-9644-51637aa78571" LastKnownName="gestion des depots" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b188d47e-585c-44f7-91a6-afa5516b2d31" name="manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4c156c3c-0e90-47b6-a2c4-af1e5e9d1b21" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5d16f684-fca0-472b-bf1d-9e13573cb92d" name="gestion des depots" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="21a39486-29be-46ff-bbe9-4ffee6ded267" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5b61a3b4-4c72-4153-b234-c92361914b30" />
+          </association>
+          <association Id="a1f54387-c40e-4f94-9f66-2b089437907b" isDerived="false" sourceEndRoleName="manager" targetEndRoleName="affectation livreur" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="387070e5-11e0-40a0-bd92-c4b8689ac91d" LastKnownName="affectation livreur" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a6f294cd-6d92-4607-9fed-0d3fab5b9929" name="manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="851edb7d-face-428c-b2e2-a0fb150d2cda" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="54a69e87-ae6d-4d76-980e-3627b9ebf0c1" name="affectation livreur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e5113746-60bd-4e4d-8c5f-e6474505a446" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a80fdf3d-c229-401a-b7b9-bf11a14f02c8" />
+          </association>
+          <association Id="7fb40d55-6d16-4414-b6f9-b5f6c2a29d5d" isDerived="false" sourceEndRoleName="manager" targetEndRoleName="rapport" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e4c48214-fca4-4def-9a39-591a80a60080" LastKnownName="rapport" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="146b3ada-2f6f-4a9a-a9f0-6f4f4fbd4b7f" name="manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9119f658-dcf8-4e2b-9cf5-86c91fdf0ac6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e7624825-f516-4c62-862d-20aa1f8481ad" name="rapport" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e5c6a60e-ed31-4f4b-9c63-da72ab020d66" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="89277d86-bce2-4bcd-922a-b6d382ba267c" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="cfe9ce7c-cb15-4aae-90c9-352e0c65579c" name="gestion des secteur" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4c779ea6-12c7-4be7-b078-ba288b842530" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c72c39f2-d163-46f6-95c5-f6101ed20edb" name="gestion des livreur" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="61364fd5-8b5c-4875-a3a6-dea265d7d45e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2829f040-1751-4fa7-9226-dc7740cd61f8" name="gestion de stock" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8ab7226-6e4d-4741-bca6-13e43f44733f" />
+        <extendedCases>
+          <extend Id="4ef7041c-9cda-4073-9e4d-fcaafb54d5ad">
+            <useCaseMoniker Id="0e0bcbc1-9397-4009-9a27-a1ac589e20f2" LastKnownName="gestion poduit" />
+            <elementDefinition Id="3270f393-5e6c-4fcc-978f-ef18aa507aeb" />
+          </extend>
+          <extend Id="68cb634a-d0cb-4dbd-94c8-65f737a11566">
+            <useCaseMoniker Id="bba1b268-1b54-4bfe-ac88-647f7e382692" LastKnownName="gestion de quantité" />
+            <elementDefinition Id="845a3eb7-5695-4e92-8195-39b8441a02f1" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fa247086-e4b2-4f89-9d42-baa89ccb56aa" name="gestion des clients" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5952c883-89c0-4a01-919e-36321b9657af" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="86fb5960-533b-4810-a4ba-620e2948fc69" name="gestion des commandes,reclamation" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="18748532-dfa2-4ca0-a295-11ff0a35ab9e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="970da129-d509-43c6-aa49-0c317a63c507" name="gestion immo" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4fe2a117-adfc-4358-b4e4-d0fea6dff819" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0e0bcbc1-9397-4009-9a27-a1ac589e20f2" name="gestion poduit" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d5fb6d7f-9179-473c-a0c0-3b176e07203c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="bba1b268-1b54-4bfe-ac88-647f7e382692" name="gestion de quantité" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c0869bc2-55fe-46e4-88ee-c6cdff419392" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e326ae4f-5abe-4699-9644-51637aa78571" name="gestion des depots" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="615ab92a-f001-4d37-aa02-a3eb9117c36a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="387070e5-11e0-40a0-bd92-c4b8689ac91d" name="affectation livreur" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3e7507e6-1122-4943-8a72-7e571d266d54" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e4c48214-fca4-4def-9a39-591a80a60080" name="rapport" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3e9a10a7-c8f4-491a-958e-17a9ee293642" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="ea43bf51-dca8-4994-b447-8ba05a05eb6a" name="vente_embarque">
+    <elementDefinition Id="4955d48e-780e-4c53-bef4-2557fc99005d" />
+  </package>
+</useCaseModelRoot>

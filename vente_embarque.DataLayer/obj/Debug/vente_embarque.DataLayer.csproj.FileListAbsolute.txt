@@ -1,0 +1,5 @@
+C:\Users\sofiane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.DataLayer\bin\Debug\vente_embarque.DataLayer.dll
+C:\Users\sofiane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.DataLayer\bin\Debug\vente_embarque.DataLayer.pdb
+C:\Users\sofiane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.DataLayer\obj\Debug\vente_embarque.DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\sofiane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.DataLayer\obj\Debug\vente_embarque.DataLayer.dll
+C:\Users\sofiane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.DataLayer\obj\Debug\vente_embarque.DataLayer.pdb
