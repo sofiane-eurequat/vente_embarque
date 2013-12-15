@@ -4,3 +4,9 @@ C:\Users\sofiane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_emba
 C:\Users\sofiane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.Core\obj\Debug\vente_embarque.Core.csprojResolveAssemblyReference.cache
 C:\Users\sofiane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.Core\obj\Debug\vente_embarque.Core.dll
 C:\Users\sofiane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.Core\obj\Debug\vente_embarque.Core.pdb
+D:\Projets\vente_embarque\vente_embarque.Core\bin\Debug\vente_embarque.Core.dll.config
+D:\Projets\vente_embarque\vente_embarque.Core\bin\Debug\vente_embarque.Core.dll
+D:\Projets\vente_embarque\vente_embarque.Core\bin\Debug\vente_embarque.Core.pdb
+D:\Projets\vente_embarque\vente_embarque.Core\obj\Debug\vente_embarque.Core.csprojResolveAssemblyReference.cache
+D:\Projets\vente_embarque\vente_embarque.Core\obj\Debug\vente_embarque.Core.dll
+D:\Projets\vente_embarque\vente_embarque.Core\obj\Debug\vente_embarque.Core.pdb

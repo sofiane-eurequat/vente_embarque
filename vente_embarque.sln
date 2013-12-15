@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vente_embarque.Core", "vent
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vente_embarque.DataLayer", "vente_embarque.DataLayer\vente_embarque.DataLayer.csproj", "{59670109-81BC-4321-81E2-4F3A099D05C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vente_embarque.Model", "vente_embarque.Model\vente_embarque.Model.csproj", "{2E56604B-794E-4753-8F34-AADA359DA8B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +50,12 @@ Global
 		{59670109-81BC-4321-81E2-4F3A099D05C0}.EasyTest|Any CPU.Build.0 = Release|Any CPU
 		{59670109-81BC-4321-81E2-4F3A099D05C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59670109-81BC-4321-81E2-4F3A099D05C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E56604B-794E-4753-8F34-AADA359DA8B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E56604B-794E-4753-8F34-AADA359DA8B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E56604B-794E-4753-8F34-AADA359DA8B5}.EasyTest|Any CPU.ActiveCfg = Release|Any CPU
+		{2E56604B-794E-4753-8F34-AADA359DA8B5}.EasyTest|Any CPU.Build.0 = Release|Any CPU
+		{2E56604B-794E-4753-8F34-AADA359DA8B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E56604B-794E-4753-8F34-AADA359DA8B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,4 @@
+D:\Projets\vente_embarque\vente_embarque.Model\bin\Debug\vente_embarque.Model.dll
+D:\Projets\vente_embarque\vente_embarque.Model\bin\Debug\vente_embarque.Model.pdb
+D:\Projets\vente_embarque\vente_embarque.Model\obj\Debug\vente_embarque.Model.dll
+D:\Projets\vente_embarque\vente_embarque.Model\obj\Debug\vente_embarque.Model.pdb

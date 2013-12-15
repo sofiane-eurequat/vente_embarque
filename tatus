@@ -1,0 +1,190 @@
+[1mdiff --git a/vente_embarque.Core/obj/Debug/vente_embarque.Core.csproj.FileListAbsolute.txt b/vente_embarque.Core/obj/Debug/vente_embarque.Core.csproj.FileListAbsolute.txt[m
+[1mindex 8cfddc3..2a1c92f 100644[m
+[1m--- a/vente_embarque.Core/obj/Debug/vente_embarque.Core.csproj.FileListAbsolute.txt[m
+[1m+++ b/vente_embarque.Core/obj/Debug/vente_embarque.Core.csproj.FileListAbsolute.txt[m
+[36m@@ -4,3 +4,9 @@[m [mC:\Users\sofiane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_emba[m
+ C:\Users\sofiane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.Core\obj\Debug\vente_embarque.Core.csprojResolveAssemblyReference.cache[m
+ C:\Users\sofiane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.Core\obj\Debug\vente_embarque.Core.dll[m
+ C:\Users\sofiane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.Core\obj\Debug\vente_embarque.Core.pdb[m
+[32m+[m[32mD:\Projets\vente_embarque\vente_embarque.Core\bin\Debug\vente_embarque.Core.dll.config[m
+[32m+[m[32mD:\Projets\vente_embarque\vente_embarque.Core\bin\Debug\vente_embarque.Core.dll[m
+[32m+[m[32mD:\Projets\vente_embarque\vente_embarque.Core\bin\Debug\vente_embarque.Core.pdb[m
+[32m+[m[32mD:\Projets\vente_embarque\vente_embarque.Core\obj\Debug\vente_embarque.Core.csprojResolveAssemblyReference.cache[m
+[32m+[m[32mD:\Projets\vente_embarque\vente_embarque.Core\obj\Debug\vente_embarque.Core.dll[m
+[32m+[m[32mD:\Projets\vente_embarque\vente_embarque.Core\obj\Debug\vente_embarque.Core.pdb[m
+[1mdiff --git a/vente_embarque.DataLayer/obj/Debug/vente_embarque.DataLayer.csproj.FileListAbsolute.txt b/vente_embarque.DataLayer/obj/Debug/vente_embarque.DataLayer.csproj.FileListAbsolute.txt[m
+[1mindex 4e7eb7e..007e66d 100644[m
+[1m--- a/vente_embarque.DataLayer/obj/Debug/vente_embarque.DataLayer.csproj.FileListAbsolute.txt[m
+[1m+++ b/vente_embarque.DataLayer/obj/Debug/vente_embarque.DataLayer.csproj.FileListAbsolute.txt[m
+[36m@@ -3,3 +3,8 @@[m [mC:\Users\sofiane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_emba[m
+ C:\Users\sofiane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.DataLayer\obj\Debug\vente_embarque.DataLayer.csprojResolveAssemblyReference.cache[m
+ C:\Users\sofiane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.DataLayer\obj\Debug\vente_embarque.DataLayer.dll[m
+ C:\Users\sofiane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.DataLayer\obj\Debug\vente_embarque.DataLayer.pdb[m
+[32m+[m[32mD:\Projets\vente_embarque\vente_embarque.DataLayer\bin\Debug\vente_embarque.DataLayer.dll[m
+[32m+[m[32mD:\Projets\vente_embarque\vente_embarque.DataLayer\bin\Debug\vente_embarque.DataLayer.pdb[m
+[32m+[m[32mD:\Projets\vente_embarque\vente_embarque.DataLayer\obj\Debug\vente_embarque.DataLayer.csprojResolveAssemblyReference.cache[m
+[32m+[m[32mD:\Projets\vente_embarque\vente_embarque.DataLayer\obj\Debug\vente_embarque.DataLayer.dll[m
+[32m+[m[32mD:\Projets\vente_embarque\vente_embarque.DataLayer\obj\Debug\vente_embarque.DataLayer.pdb[m
+[1mdiff --git a/vente_embarque.Model/vente_embarque.Model.csproj b/vente_embarque.Model/vente_embarque.Model.csproj[m
+[1mindex 402bace..394b890 100644[m
+[1m--- a/vente_embarque.Model/vente_embarque.Model.csproj[m
+[1m+++ b/vente_embarque.Model/vente_embarque.Model.csproj[m
+[36m@@ -1,53 +1,48 @@[m
+ ﻿<?xml version="1.0" encoding="utf-8"?>[m
+ <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">[m
+   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />[m
+[31m-	<PropertyGroup>[m
+[31m-		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>[m
+[31m-		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>[m
+[31m-		<ProjectGuid>7290337d-b9f6-46c2-9070-8e77d42145f8</ProjectGuid>[m
+[31m-		<OutputType>Library</OutputType>[m
+[31m-		<AppDesignerFolder>Properties</AppDesignerFolder>[m
+[31m-		<RootNamespace>vente_embarque.Model</RootNamespace>[m
+[31m-		<AssemblyName>vente_embarque.Model</AssemblyName>[m
+[31m-		<TargetFrameworkVersion>v4.5</TargetFrameworkVersion>[m
+[31m-		<FileAlignment>512</FileAlignment>[m
+[31m-	</PropertyGroup>[m
+[31m-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">[m
+[31m-		<DebugSymbols>true</DebugSymbols>[m
+[31m-		<DebugType>full</DebugType>[m
+[31m-		<Optimize>false</Optimize>[m
+[31m-		<OutputPath>bin\Debug\</OutputPath>[m
+[31m-		<DefineConstants>DEBUG;TRACE</DefineConstants>[m
+[31m-		<ErrorReport>prompt</ErrorReport>[m
+[31m-		<WarningLevel>4</WarningLevel>[m
+[31m-	</PropertyGroup>[m
+[31m-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">[m
+[31m-		<DebugType>pdbonly</DebugType>[m
+[31m- 		<Optimize>true</Optimize>[m
+[31m-		<OutputPath>bin\Release\</OutputPath>[m
+[31m-		<DefineConstants>TRACE</DefineConstants>[m
+[31m-		<ErrorReport>prompt</ErrorReport>[m
+[31m-		<WarningLevel>4</WarningLevel>[m
+[31m-	</PropertyGroup>[m
+[31m-	<ItemGroup>[m
+[31m-		<Reference Include="System"/>[m
+[31m-		[m
+[31m-		<Reference Include="System.Core"/>[m
+[31m-		<Reference Include="System.Xml.Linq"/>[m
+[31m-		<Reference Include="System.Data.DataSetExtensions"/>[m
+[31m-		[m
+[31m-		[m
+[31m-		<Reference Include="Microsoft.CSharp"/>[m
+[31m- 		[m
+[31m-		<Reference Include="System.Data"/>[m
+[31m-		<Reference Include="System.Xml"/>[m
+[31m-	</ItemGroup>[m
+[31m-	<ItemGroup>[m
+[31m-		<Compile Include="Class1.cs" />[m
+[31m-[m
+[31m-		<Compile Include="Properties\AssemblyInfo.cs" />[m
+[31m-	</ItemGroup>[m
+[31m-	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />[m
+[32m+[m[32m  <PropertyGroup>[m
+[32m+[m[32m    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>[m
+[32m+[m[32m    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>[m
+[32m+[m[32m    <ProjectGuid>{2E56604B-794E-4753-8F34-AADA359DA8B5}</ProjectGuid>[m
+[32m+[m[32m    <OutputType>Library</OutputType>[m
+[32m+[m[32m    <AppDesignerFolder>Properties</AppDesignerFolder>[m
+[32m+[m[32m    <RootNamespace>vente_embarque.Model</RootNamespace>[m
+[32m+[m[32m    <AssemblyName>vente_embarque.Model</AssemblyName>[m
+[32m+[m[32m    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>[m
+[32m+[m[32m    <FileAlignment>512</FileAlignment>[m
+[32m+[m[32m  </PropertyGroup>[m
+[32m+[m[32m  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">[m
+[32m+[m[32m    <DebugSymbols>true</DebugSymbols>[m
+[32m+[m[32m    <DebugType>full</DebugType>[m
+[32m+[m[32m    <Optimize>false</Optimize>[m
+[32m+[m[32m    <OutputPath>bin\Debug\</OutputPath>[m
+[32m+[m[32m    <DefineConstants>DEBUG;TRACE</DefineConstants>[m
+[32m+[m[32m    <ErrorReport>prompt</ErrorReport>[m
+[32m+[m[32m    <WarningLevel>4</WarningLevel>[m
+[32m+[m[32m  </PropertyGroup>[m
+[32m+[m[32m  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">[m
+[32m+[m[32m    <DebugType>pdbonly</DebugType>[m
+[32m+[m[32m    <Optimize>true</Optimize>[m
+[32m+[m[32m    <OutputPath>bin\Release\</OutputPath>[m
+[32m+[m[32m    <DefineConstants>TRACE</DefineConstants>[m
+[32m+[m[32m    <ErrorReport>prompt</ErrorReport>[m
+[32m+[m[32m    <WarningLevel>4</WarningLevel>[m
+[32m+[m[32m  </PropertyGroup>[m
+[32m+[m[32m  <ItemGroup>[m
+[32m+[m[32m    <Reference Include="System" />[m
+[32m+[m[32m    <Reference Include="System.Core" />[m
+[32m+[m[32m    <Reference Include="System.Xml.Linq" />[m
+[32m+[m[32m    <Reference Include="System.Data.DataSetExtensions" />[m
+[32m+[m[32m    <Reference Include="Microsoft.CSharp" />[m
+[32m+[m[32m    <Reference Include="System.Data" />[m
+[32m+[m[32m    <Reference Include="System.Xml" />[m
+[32m+[m[32m  </ItemGroup>[m
+[32m+[m[32m  <ItemGroup>[m
+[32m+[m[32m    <Compile Include="Class1.cs" />[m
+[32m+[m[32m    <Compile Include="Properties\AssemblyInfo.cs" />[m
+[32m+[m[32m  </ItemGroup>[m
+[32m+[m[32m  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />[m
+   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. [m
+        Other similar extension points exist, see Microsoft.Common.targets.[m
+   <Target Name="BeforeBuild">[m
+[36m@@ -55,5 +50,4 @@[m
+   <Target Name="AfterBuild">[m
+   </Target>[m
+   -->[m
+[31m-[m
+[31m- </Project>[m
+[32m+[m[32m</Project>[m
+\ No newline at end of file[m
+[1mdiff --git a/vente_embarque.Test/obj/Debug/vente_embarque.Test.csproj.FileListAbsolute.txt b/vente_embarque.Test/obj/Debug/vente_embarque.Test.csproj.FileListAbsolute.txt[m
+[1mindex 70abb3f..772a9fb 100644[m
+[1m--- a/vente_embarque.Test/obj/Debug/vente_embarque.Test.csproj.FileListAbsolute.txt[m
+[1m+++ b/vente_embarque.Test/obj/Debug/vente_embarque.Test.csproj.FileListAbsolute.txt[m
+[36m@@ -1 +1,2 @@[m
+ C:\Users\sofiane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.Test\obj\Debug\vente_embarque.Test.csprojResolveAssemblyReference.cache[m
+[32m+[m[32mD:\Projets\vente_embarque\vente_embarque.Test\obj\Debug\vente_embarque.Test.csprojResolveAssemblyReference.cache[m
+[1mdiff --git a/vente_embarque.Test/obj/Debug/vente_embarque.Test.csprojResolveAssemblyReference.cache b/vente_embarque.Test/obj/Debug/vente_embarque.Test.csprojResolveAssemblyReference.cache[m
+[1mindex cb8a480..81da2d3 100644[m
+Binary files a/vente_embarque.Test/obj/Debug/vente_embarque.Test.csprojResolveAssemblyReference.cache and b/vente_embarque.Test/obj/Debug/vente_embarque.Test.csprojResolveAssemblyReference.cache differ
+[1mdiff --git a/vente_embarque.sln b/vente_embarque.sln[m
+[1mindex 41b2a3c..9d36f5f 100644[m
+[1m--- a/vente_embarque.sln[m
+[1m+++ b/vente_embarque.sln[m
+[36m@@ -11,6 +11,8 @@[m [mProject("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vente_embarque.Core", "vent[m
+ EndProject[m
+ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vente_embarque.DataLayer", "vente_embarque.DataLayer\vente_embarque.DataLayer.csproj", "{59670109-81BC-4321-81E2-4F3A099D05C0}"[m
+ EndProject[m
+[32m+[m[32mProject("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vente_embarque.Model", "vente_embarque.Model\vente_embarque.Model.csproj", "{2E56604B-794E-4753-8F34-AADA359DA8B5}"[m
+[32m+[m[32mEndProject[m
+ Global[m
+ 	GlobalSection(SolutionConfigurationPlatforms) = preSolution[m
+ 		Debug|Any CPU = Debug|Any CPU[m
+[36m@@ -48,6 +50,12 @@[m [mGlobal[m
+ 		{59670109-81BC-4321-81E2-4F3A099D05C0}.EasyTest|Any CPU.Build.0 = Release|Any CPU[m
+ 		{59670109-81BC-4321-81E2-4F3A099D05C0}.Release|Any CPU.ActiveCfg = Release|Any CPU[m
+ 		{59670109-81BC-4321-81E2-4F3A099D05C0}.Release|Any CPU.Build.0 = Release|Any CPU[m
+[32m+[m		[32m{2E56604B-794E-4753-8F34-AADA359DA8B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU[m
+[32m+[m		[32m{2E56604B-794E-4753-8F34-AADA359DA8B5}.Debug|Any CPU.Build.0 = Debug|Any CPU[m
+[32m+[m		[32m{2E56604B-794E-4753-8F34-AADA359DA8B5}.EasyTest|Any CPU.ActiveCfg = Release|Any CPU[m
+[32m+[m		[32m{2E56604B-794E-4753-8F34-AADA359DA8B5}.EasyTest|Any CPU.Build.0 = Release|Any CPU[m
+[32m+[m		[32m{2E56604B-794E-4753-8F34-AADA359DA8B5}.Release|Any CPU.ActiveCfg = Release|Any CPU[m
+[32m+[m		[32m{2E56604B-794E-4753-8F34-AADA359DA8B5}.Release|Any CPU.Build.0 = Release|Any CPU[m
+ 	EndGlobalSection[m
+ 	GlobalSection(SolutionProperties) = preSolution[m
+ 		HideSolutionNode = FALSE[m
+[1mdiff --git a/vente_embarque.v11.suo b/vente_embarque.v11.suo[m
+[1mindex df5e4fb..d3d0784 100644[m
+Binary files a/vente_embarque.v11.suo and b/vente_embarque.v11.suo differ
+[1mdiff --git a/vente_embarque.winforms/obj/Debug/vente_embarque.winforms.csproj.FileListAbsolute.txt b/vente_embarque.winforms/obj/Debug/vente_embarque.winforms.csproj.FileListAbsolute.txt[m
+[1mindex 3cd9be1..6e06ee5 100644[m
+[1m--- a/vente_embarque.winforms/obj/Debug/vente_embarque.winforms.csproj.FileListAbsolute.txt[m
+[1m+++ b/vente_embarque.winforms/obj/Debug/vente_embarque.winforms.csproj.FileListAbsolute.txt[m
+[36m@@ -6,3 +6,11 @@[m [mC:\Users\sofiane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_emba[m
+ C:\Users\sofiane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.winforms\obj\Debug\vente_embarque.winforms.csproj.GenerateResource.Cache[m
+ C:\Users\sofiane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.winforms\obj\Debug\vente_embarque.winforms.exe[m
+ C:\Users\sofiane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.winforms\obj\Debug\vente_embarque.winforms.pdb[m
+[32m+[m[32mD:\Projets\vente_embarque\vente_embarque.winforms\bin\Debug\vente_embarque.winforms.exe.config[m
+[32m+[m[32mD:\Projets\vente_embarque\vente_embarque.winforms\bin\Debug\vente_embarque.winforms.exe[m
+[32m+[m[32mD:\Projets\vente_embarque\vente_embarque.winforms\bin\Debug\vente_embarque.winforms.pdb[m
+[32m+[m[32mD:\Projets\vente_embarque\vente_embarque.winforms\obj\Debug\vente_embarque.winforms.csprojResolveAssemblyReference.cache[m
+[32m+[m[32mD:\Projets\vente_embarque\vente_embarque.winforms\obj\Debug\vente_embarque.winforms.Properties.Resources.resources[m
+[32m+[m[32mD:\Projets\vente_embarque\vente_embarque.winforms\obj\Debug\vente_embarque.winforms.csproj.GenerateResource.Cache[m
+[32m+[m[32mD:\Projets\vente_embarque\vente_embarque.winforms\obj\Debug\vente_embarque.winforms.exe[m
+[32m+[m[32mD:\Projets\vente_embarque\vente_embarque.winforms\obj\Debug\vente_embarque.winforms.pdb[m
