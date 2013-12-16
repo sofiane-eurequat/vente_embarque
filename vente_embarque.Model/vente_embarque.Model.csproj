@@ -39,8 +39,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="ProductLine.cs" />
+    <Compile Include="Secteur.cs" />
+    <Compile Include="Stock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vente_embarque.Core\vente_embarque.Core.csproj">
+      <Project>{4da052e4-984d-49bc-8f45-9f001825f94a}</Project>
+      <Name>vente_embarque.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

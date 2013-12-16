@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="4955d48e-780e-4c53-bef4-2557fc99005d"
   name="vente_embarque" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -995,7 +995,7 @@
             <classMoniker
               Id="7ea8a353-861e-44bc-9536-7c9a49d31735"
               LastKnownName="Secteur"
-              LastKnownLocation="vente_embarque.uml" />
+              LastKnownLocation="Package_1423.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -1075,200 +1075,6 @@
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <class
-        Id="7ea8a353-861e-44bc-9536-7c9a49d31735"
-        name="Secteur"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <targetEnds>
-          <association
-            Id="2ea7acc8-8ea4-485c-a9bb-b5c1752e1efc"
-            isDerived="false"
-            sourceEndRoleName="Secteur"
-            targetEndRoleName="BonDeCommande"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="f99fd0ef-c735-4c83-ae3a-36990a0f866a"
-              LastKnownName="BonDeCommande"
-              LastKnownLocation="Package_1020.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="b48c960a-3109-4451-ad54-917e40197545"
-                  name="Secteur"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="1a87fb84-fd1d-418d-87fb-5cdff19ebcc2"
-                  name="BonDeCommande"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="bc491b9c-e6aa-4216-ac6c-80844827eead"
-                      name="Lower"
-                      value="n" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="419b14f9-5436-4090-a2ee-d88d564e5202"
-                      name="Upper"
-                      value="n" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
-        <ownedAttributesInternal>
-          <property
-            Id="a6a3f58d-7c64-447e-8486-8c04568d9336"
-            name="secteurId"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="f8298721-5aa0-4c8f-ba56-3f466c3580a3"
-            name="NomSecteur"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation
-            Id="5201065c-d0ac-44da-a8cc-a34066f717e1"
-            name="CRUD"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
-        </ownedOperationsInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="17f75aaa-3c27-420a-ab66-8a12aebe1465"
-        name="clients"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <targetEnds>
-          <association
-            Id="b6fb17a3-683b-4619-8a2a-fdf842653f09"
-            isDerived="false"
-            sourceEndRoleName="clients"
-            targetEndRoleName="BonDeCommande"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="f99fd0ef-c735-4c83-ae3a-36990a0f866a"
-              LastKnownName="BonDeCommande"
-              LastKnownLocation="Package_1020.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="938a05c0-0ad2-4e74-9b45-6d70447cd140"
-                  name="clients"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Composite"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="9013590d-35fe-4fa0-90db-2ab6c21e3530"
-                  name="BonDeCommande"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="true">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="cde00476-f2d8-46ff-b06b-48f18ef70560"
-                      name="Lower"
-                      value="n" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="1fb7ced9-8e79-4284-b38d-ad9e09747e3f"
-                      name="Upper"
-                      value="n" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
-        <ownedAttributesInternal>
-          <property
-            Id="14fe42a6-42e8-41a7-ba17-e876af8fea47"
-            name="IdClient"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="acf780e5-306f-4b09-9471-d2f81a1d6d07"
-            name="CreditLimit"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation
-            Id="a1d39f0c-708f-4ce0-9dc7-30bcd6a8b60e"
-            name="CRUd"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
-        </ownedOperationsInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <packageMoniker
         Id="7da6c91e-d753-4b02-94d2-459da24ae120"
         LastKnownName="Package1"
@@ -1279,6 +1085,12 @@
         Id="aea57106-b8e0-4a3e-bfe4-c50cba62598c"
         LastKnownName="Package2"
         LastKnownLocation="Package_1158.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="b6e3d565-119e-413a-8ca6-6c1c1a7ed66f"
+        LastKnownName="Package3"
+        LastKnownLocation="Package_1423.uml" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

@@ -1,11 +1,45 @@
 ﻿using System;
+using System.Collections.Generic;
 using NUnit.Framework;
+using Moq;
+using Moq.Contrib.Indy;
+using vente_embarque.Core.Domain;
+using vente_embarque.Model;
 
 namespace vente_embarque.Test
 {
-    [TestFixture]
-    public class Test
+    public class TestContext<T> where T : class
     {
+        private IMockContainer _container;
+        private MockRepository _repository;
+        private T _classUnderTest;
+        protected TestContext()
+        {
+            _repository = new MockRepository(MockBehavior.Default);
+            _container = new AutoMockContainer(_repository);
+            _classUnderTest = _container.Create<T>();
+        }
+        protected T ClassUnderTest
+        {
+            get { return _classUnderTest; }
+        }
+
+        protected IMockContainer Container
+        {
+            get{return _container}
+        }
+    }
+
+
+    [TestFixture]
+    public class Test : TestContext<Stock>
+    {
+
+        [SetUp]
+        void SetupStockMock()
+        {
+           
+        }
         [Test]
         void CanCreateSecteur()
         {
@@ -19,19 +53,16 @@ namespace vente_embarque.Test
         void CanCreateClient()
         {
             const string nomSect = "nom secteur1";
-            var secteur = SecteurFactory(nomSect);
+            Sector secteur = FactorySector.CreateSector(nomSect);
 
             string nom = "NomClient1";
             string prenom = "PrenomClient1";
-            var client = ClientFactory(nom, prenom, secteur);
-            Assert.AreEqual(client.nom, "NomClient1");
-            Assert.AreEqual(client.prenom, "PrenomClient1");
-            Assert.AreEqual(client.secteur.nom, "PrenomClient1");
+            //un secteur doit tjr etre defini mmee si il doit etre nommé indéfini
+            var client = FactorySector.CreateClient(nom, prenom, secteur);
+            Assert.AreEqual(client.Name, "NomClient1");
+            Assert.AreEqual(client.PreNom, "PrenomClient1");
 
 
-            var client1= ClientFactory(nom, prenom);
-            Assert.AreEqual(client1.nom, "NomClient1");
-            Assert.AreEqual(client1.prenom, "PrenomClient1");
         }
 
         [Test]
@@ -66,35 +97,42 @@ namespace vente_embarque.Test
         [Test]
         private void CanCreaateStock()
         {
-            string namepro1 = "produit1";
-            string namepro2 = "produit2";
-            int quantiteMinimale = 10;
-            var stock = FactoryStock.CreateStock();
-            var produit1 = FactoryStock.CreateProduct(stock,namepro1,quantiteMinimale);
-            var produit2 = FactoryStock.CreateProduct(stock,namepro2);
-            var ligne1 = FactoryStock.CreateProductLine(produit1, 50);
-            var ligne2 = FactoryStock.CreateProductLine(produit2, 20);
+            const string stockName = "stock1";
+            const string namepro1 = "produit1";
+            const string namepro2 = "produit2";
+            const int quantiteMinimale = 10;
+            var stock = FactoryStock.CreateStock(stockName);
+            Assert.AreEqual(stock.Name,"stock1");
+            var produit1 = FactoryStock.CreateProduct( namepro1, quantiteMinimale);
+            Assert.AreEqual(produit1.Name,"produit1");
+            Assert.AreEqual(produit1.QuantiteMin, 10);
+            var produit2 = FactoryStock.CreateProduct(namepro2);
+            Assert.AreEqual(produit2.Name, "produit2");
+            var ligne1 = FactoryStock.CreateProductLine(stock,produit1, 50);
+            var ligne2 = FactoryStock.CreateProductLine(stock,produit2, 20);
+            
+
 
             //StockRepository.save(stock);
-            Assert.AreEqual(StockRepository.GetById(stock.Oid),stock);
-            Assert.AreEqual(stock.GetProduct().quantite,50);
+            
+            Assert.AreEqual(stock.ProductLines.Count,2);
         }
 
         [Test]
         void getProductminimal()
         {
-            StockRepository.GetById(Guid.NewGuid());
-
+            
+            string nameStock = "stock1";
             string namepro1 = "produit1";
             string namepro2 = "produit2";
             int quantiteMinimale = 10;
-            var stock = FactoryStock.CreateStock();
-            var produit1 = FactoryStock.CreateProduct(stock, namepro1, quantiteMinimale);
-            var produit2 = FactoryStock.CreateProduct(stock, namepro2,15);
-            var ligne1 = FactoryStock.CreateProductLine(produit1, 5);
-            var ligne2 = FactoryStock.CreateProductLine(produit2, 20);
-            List<Product> listProduct = StockRepository.GetProductMinimale();
-            Assert.AreEqual(listProduct.Count(),1);
+            var stock = FactoryStock.CreateStock(nameStock);
+            var produit1 = FactoryStock.CreateProduct( namepro1, quantiteMinimale);
+            var produit2 = FactoryStock.CreateProduct( namepro2,15);
+            var ligne1 = FactoryStock.CreateProductLine(stock,produit1, 5);
+            var ligne2 = FactoryStock.CreateProductLine(stock,produit2, 20);
+            var listProduct = stock.GetProductMinimale();
+            Assert.AreEqual(listProduct.Count,1);
 
         }
 
@@ -137,4 +175,6 @@ namespace vente_embarque.Test
 
 
     }
+
+    
 }
