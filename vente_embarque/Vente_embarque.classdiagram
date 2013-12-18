@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="92498df0-20f3-4dcc-9771-e67526cae24f" name="Vente_embarque" linkedPackageId="f7f7291f-9c39-41bd-82c0-ef5992038d38" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="92498df0-20f3-4dcc-9771-e67526cae24f" name="Vente_embarque" linkedPackageId="f7f7291f-9c39-41bd-82c0-ef5992038d38" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="63aaf818-1e68-426f-8f99-568e594386c2" name="Agent terrain" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -77,6 +77,11 @@
                   <elementDefinition Id="5fe8a46a-a238-4d70-b136-22196e6989e4" />
                 </property>
               </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="bc2fea0f-aa2d-4e12-96c6-d1ea484dd656" name="CRUD" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="7c1d9bdf-9aa1-4a18-8633-1d1306ec8f06" />
+                </operation>
+              </ownedOperationsInternal>
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
@@ -153,6 +158,9 @@
                 </operation>
                 <operation Id="44333af2-839f-44a7-8c32-ce1b40516a46" name="isOKPourCredit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="104cebfe-ea54-47ce-b703-264141cba24c" />
+                </operation>
+                <operation Id="3a3b8d9a-8f88-448b-8700-5081c725b881" name="UpdateDeliveryDate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="36068e8d-68b8-4056-848a-9b5bd99679a4" />
                 </operation>
               </ownedOperationsInternal>
             </class>
@@ -243,6 +251,29 @@
                 <operation Id="171d2f43-f3d8-4ad7-a4ea-3cfde6562887" name="stockBas" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="150b9b8b-3ea1-47dc-837b-f427ce2a46b7" />
                 </operation>
+                <operation Id="5ce92fa9-b244-4729-93b7-38e208249694" name="GetProduct" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="ff6ea27e-a234-445f-a37e-60759c88ce9e" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="1b2320ce-e0a8-4944-b1b0-00bfcc93dda7" name="Guid id" direction="In" isUnique="false">
+                        <elementDefinition Id="09a852eb-90f2-41ef-94fa-051869380a49" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="b5011368-2f9b-49a9-bdb1-469c560941b2" name="CRUD" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="dead76e4-f5c3-4efa-9e09-9c796b417b89" />
+                </operation>
+                <operation Id="81303039-e156-41c4-8780-a5685034bd08" name="GetProduct" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="2ee545ca-6abf-4dc5-bde7-2a32f03d06e1" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="7d8061c3-6bd9-48af-9964-24202bddc10f" name="String name" direction="In" isUnique="false">
+                        <elementDefinition Id="d563b2d4-62a7-4efc-ba61-cb9319279017" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
               </ownedOperationsInternal>
             </class>
           </packageHasNamedElement>
@@ -272,6 +303,11 @@
                   <elementDefinition Id="7ad4ddd5-442c-4cca-8b93-67dabc691887" />
                 </property>
               </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="c84ae38c-6119-4d95-80ad-96e2a7f7448f" name="CRUD" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="42651225-52d0-4760-bca6-4842a53d8a1d" />
+                </operation>
+              </ownedOperationsInternal>
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
@@ -282,6 +318,11 @@
                   <elementDefinition Id="c38319bc-3116-4263-9b08-0b9e2f172b0a" />
                 </property>
               </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="d4da138e-0ff7-480a-9373-ffe7aa191614" name="CRUD" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="778cb5d7-1f90-4b21-9d92-d1bc381c160c" />
+                </operation>
+              </ownedOperationsInternal>
             </class>
           </packageHasNamedElement>
         </packagedElements>
@@ -359,6 +400,9 @@
               <ownedOperationsInternal>
                 <operation Id="aaca288c-54f0-4b70-bd30-130a8f9f749b" name="CRUD" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="5201065c-d0ac-44da-a8cc-a34066f717e1" />
+                </operation>
+                <operation Id="ef6fa0fc-0a79-42d7-9f79-809bbd4dd6dc" name="GetClient" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="c4eace2a-22c6-4663-be8e-af1fd0b7bc09" />
                 </operation>
               </ownedOperationsInternal>
             </class>

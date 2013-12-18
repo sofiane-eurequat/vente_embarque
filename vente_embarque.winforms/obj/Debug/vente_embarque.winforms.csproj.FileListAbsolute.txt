@@ -9,7 +9,6 @@ C:\Users\sofiane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_emba
 D:\Projets\vente_embarque\vente_embarque.winforms\bin\Debug\vente_embarque.winforms.exe.config
 D:\Projets\vente_embarque\vente_embarque.winforms\bin\Debug\vente_embarque.winforms.exe
 D:\Projets\vente_embarque\vente_embarque.winforms\bin\Debug\vente_embarque.winforms.pdb
-D:\Projets\vente_embarque\vente_embarque.winforms\obj\Debug\vente_embarque.winforms.csprojResolveAssemblyReference.cache
 D:\Projets\vente_embarque\vente_embarque.winforms\obj\Debug\vente_embarque.winforms.Properties.Resources.resources
 D:\Projets\vente_embarque\vente_embarque.winforms\obj\Debug\vente_embarque.winforms.csproj.GenerateResource.Cache
 D:\Projets\vente_embarque\vente_embarque.winforms\obj\Debug\vente_embarque.winforms.exe

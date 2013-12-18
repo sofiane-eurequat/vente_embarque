@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using vente_embarque.Core.Domain;
 
 namespace vente_embarque.Model
@@ -13,6 +14,12 @@ namespace vente_embarque.Model
         {
             throw new NotImplementedException();
         }
+
+        public Client GetClient(string nom)
+        {
+            var clients= Clients.Where(c => c.Name == nom);
+            return clients.Any() ? clients.First() : null;
+        }
     }
 
     public static class FactorySector
@@ -25,6 +32,7 @@ namespace vente_embarque.Model
         public static Client CreateClient(string nom, string prenom, Sector sector)
         {
             var client = new Client {id = Guid.NewGuid(), Name = nom, PreNom = prenom};
+            if (sector.Clients == null) sector.Clients = new List<Client>();
             sector.Clients.Add(client);
             return client;
         }

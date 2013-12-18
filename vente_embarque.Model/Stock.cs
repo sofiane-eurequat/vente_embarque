@@ -26,6 +26,32 @@ namespace vente_embarque.Model
             var listProuitMinimale = ProductLines.Where(s => s.Quantity < s.Product.QuantiteMin).Select(s => s.Product).ToList();
             return listProuitMinimale;
         }
+
+        public Product GetProduct(Guid id)
+        {
+            var products=ProductLines.Where(e => e.Product.id == id).Select(p=>p.Product);
+            return products.Any() ? products.First() : null;
+        }
+
+        public Product GetProduct(string name)
+        {
+            var products = ProductLines.Where(e => e.Product.Name == name).Select(p => p.Product);
+            return products.Any() ? products.First() : null;
+            //todo: si plusiseur produit retourner une excetion
+        }
+
+        public int GetQuantity(string name)
+        {
+            var quantite = ProductLines.Where(e => e.Product.Name == name).Select(p => p.Quantity);
+            return quantite.Any() ? quantite.First() : default(int);
+        }
+
+        public Boolean UpdateQuantity(string name, int quantity)
+        {
+            var productLine = ProductLines.First(pl => pl.Product.Name == name);
+            productLine.Quantity = quantity;
+            return true;
+        }
     }
     public static class FactoryStock
     {
@@ -47,6 +73,7 @@ namespace vente_embarque.Model
             var productline = new ProductLine();
             
             productline.Product = product;
+            productline.id = Guid.NewGuid();
             productline.Quantity = quantity;
             if(stock.ProductLines==null) stock.ProductLines=new List<ProductLine>();
             stock.ProductLines.Add(productline);

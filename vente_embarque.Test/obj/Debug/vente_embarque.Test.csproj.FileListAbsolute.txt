@@ -1,2 +1,22 @@
 C:\Users\sofiane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.Test\obj\Debug\vente_embarque.Test.csprojResolveAssemblyReference.cache
 D:\Projets\vente_embarque\vente_embarque.Test\obj\Debug\vente_embarque.Test.csprojResolveAssemblyReference.cache
+D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\vente_embarque.Test.dll
+D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\vente_embarque.Test.pdb
+D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\Autofac.Configuration.dll
+D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\Autofac.dll
+D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\AutofacContrib.CommonServiceLocator.dll
+D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\Moq.Contrib.Indy.dll
+D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\Moq.dll
+D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\nunit.framework.dll
+D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\vente_embarque.Core.dll
+D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\vente_embarque.Model.dll
+D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\vente_embarque.Core.pdb
+D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\vente_embarque.Model.pdb
+D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\Autofac.xml
+D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\Moq.xml
+D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\nunit.framework.xml
+D:\Projets\vente_embarque\vente_embarque.Test\obj\Debug\vente_embarque.Test.dll
+D:\Projets\vente_embarque\vente_embarque.Test\obj\Debug\vente_embarque.Test.pdb

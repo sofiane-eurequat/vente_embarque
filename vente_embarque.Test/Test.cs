@@ -1,56 +1,64 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using NUnit.Framework;
 using Moq;
 using Moq.Contrib.Indy;
 using vente_embarque.Core.Domain;
+using vente_embarque.Core.Domain.Query;
 using vente_embarque.Model;
+using vente_embarque.Model.Enum;
 
 namespace vente_embarque.Test
 {
-    public class TestContext<T> where T : class
-    {
-        private IMockContainer _container;
-        private MockRepository _repository;
-        private T _classUnderTest;
-        protected TestContext()
-        {
-            _repository = new MockRepository(MockBehavior.Default);
-            _container = new AutoMockContainer(_repository);
-            _classUnderTest = _container.Create<T>();
-        }
-        protected T ClassUnderTest
-        {
-            get { return _classUnderTest; }
-        }
-
-        protected IMockContainer Container
-        {
-            get{return _container}
-        }
-    }
+  
 
 
     [TestFixture]
-    public class Test : TestContext<Stock>
+    public class Test
     {
-
+        private Mock<IRepository<Stock, Guid>> stockMock;
+        private Mock<IRepository<Sector, Guid>> sectorMock;
         [SetUp]
-        void SetupStockMock()
+        public void SetupStockMock()
         {
-           
+            var factoryStockCreateStock = FactoryStock.CreateStock("stock1");
+            
+           // mock du stock
+            FactoryStock.CreateProductLine(factoryStockCreateStock, FactoryStock.CreateProduct("product1"), 10);
+            FactoryStock.CreateProductLine(factoryStockCreateStock, FactoryStock.CreateProduct("product2"), 10);
+            FactoryStock.CreateProductLine(factoryStockCreateStock, FactoryStock.CreateProduct("product3"), 10);
+
+            stockMock = new Mock<IRepository<Stock, Guid>>();
+            stockMock.Setup(e => e.FindBy(It.IsAny<Query>())).Returns(
+                new List<Stock>() {factoryStockCreateStock}
+                );
+
+            // mock du secteur et client
+            const string nomSect = "nom secteur1";
+            var sector = FactorySector.CreateSector(nomSect);
+            var nom = "NomClient1";
+            var prenom = "PrenomClient1";
+            FactorySector.CreateClient(nom, prenom, sector);
+            sectorMock=new Mock<IRepository<Sector, Guid>>();
+            sectorMock.Setup(e => e.FindBy(It.IsAny<Query>())).Returns(
+                new List<Sector>() {sector}
+                );
+
         }
+
         [Test]
-        void CanCreateSecteur()
+        public void CanCreateSecteur()
         {
             const string nom = "nom secteur1";
-            var secteur =SecteurFactory(nom);
-            Assert.AreEqual(secteur.nom = "nom secteur1");
+            var sector = FactorySector.CreateSector(nom);
+            Assert.AreEqual(sector.Name, "nom secteur1");
         }
 
 
+
         [Test]
-        void CanCreateClient()
+        public void CanCreateClient()
         {
             const string nomSect = "nom secteur1";
             Sector secteur = FactorySector.CreateSector(nomSect);
@@ -61,41 +69,48 @@ namespace vente_embarque.Test
             var client = FactorySector.CreateClient(nom, prenom, secteur);
             Assert.AreEqual(client.Name, "NomClient1");
             Assert.AreEqual(client.PreNom, "PrenomClient1");
-
-
         }
 
-        [Test]
-        void CanCreateBonCommande()
-        {
-            var client = clientRepository.FindBy(Guid.NewGuid());
 
-            var product = StockRepository.findBy("produit1");
-            var product1 = StockRepository.findBy("produit1");
-            var product2 = StockRepository.findBy("produit1");
+        [Test]
+        public void CanCreateBonCommande()
+        {
+            var stockRepository = stockMock.Object;
+            var stock=stockRepository.FindBy(new Query()).First();
+
+            var product1=stock.GetProduct("product1");
+            var product2=stock.GetProduct("product2");
+            var product3=stock.GetProduct("product3");
 
             var orders = new List<OrderLine>();
-            OrderLine orderLine = OrderFactory.CreateAnOrderLine(product, 5);
-            OrderLine orderLine1 = OrderFactory.CreateAnOrderLine(product1, 5);
-            OrderLine orderLine2= OrderFactory.CreateAnOrderLine(product2, 5);
+
+            var orderLine = FactoryOrder.CreateOrderLine(stock,"product1", 5);
+            var orderLine1 = FactoryOrder.CreateOrderLine(stock,"product2", 5);
+            var orderLine2 = FactoryOrder.CreateOrderLine(stock,"product3", 5);
 
             orders.Add(orderLine);
             orders.Add(orderLine1);
             orders.Add(orderLine2);
 
-            var BonDeCommande = OrderFactory.CreateAnOrder(client,orders);
-            var BonDeCommande1 = OrderFactory.CreateAnOrder(client, orders,Priorite.Normal);
-            //TODO: des que un bon commande est reçue une livraison est automatiquement crée et est ce que la date du bon de commande fait office de date de livraison 
-            Assert.AreEqual(BonDeCommande.client.name,"NomClient");
-            Assert.AreEqual(BonDeCommande.OrderLine.Count(),3);
 
-            Assert.AreEqual(BonDeCommande1.client.name, "NomClient");
-            Assert.AreEqual(BonDeCommande1.OrderLine.Count(), 3);
-            Assert.AreEqual(BonDeCommande1.priorite, Priorite.Normal);
+            var sectorRepository = sectorMock.Object;
+            var sector = sectorRepository.FindBy(new Query()).First();
+            var client=sector.GetClient("NomClient1");
+
+            var BonDeCommande = FactoryOrder.CreateOrder(stock,client, orders);
+            var BonDeCommande1 = FactoryOrder.CreateOrder(stock, client, orders, Priorite.Normal);
+            var BonDeCommande2 = FactoryOrder.CreateOrder(stock, client);
+            //TODO: des que un bon commande est reçue une livraison est automatiquement crée et est ce que la date du bon de commande fait office de date de livraison 
+            Assert.AreEqual(BonDeCommande.Client.Name,"NomClient1");
+            Assert.AreEqual(BonDeCommande.OrderLines.Count,3);
+
+            Assert.AreEqual(BonDeCommande1.Client.Name, "NomClient1");
+            Assert.AreEqual(BonDeCommande1.OrderLines.Count, 3);
+            Assert.AreEqual(BonDeCommande1.Priorite, Priorite.Normal);
         }
 
         [Test]
-        private void CanCreaateStock()
+        public void CanCreaateStock()
         {
             const string stockName = "stock1";
             const string namepro1 = "produit1";
@@ -119,7 +134,7 @@ namespace vente_embarque.Test
         }
 
         [Test]
-        void getProductminimal()
+        public void getProductminimal()
         {
             
             string nameStock = "stock1";
@@ -137,42 +152,48 @@ namespace vente_embarque.Test
         }
 
         [Test]
-        void CanCreateBCWithoutStock()
+        public void CanCreateBCWithoutStock()
         {
 
-            StockRepository.GetById(Guid.NewGuid());
+            var stockRepository = stockMock.Object;
+            IEnumerable<Stock> stockRepositoryFindBy = stockRepository.FindBy(new Query());
+            var stock = stockRepositoryFindBy.First();
+            var product1 = stock.GetProduct("product1");
+            var product2 = stock.GetProduct("product2");
+            var product3 = stock.GetProduct("product3");
+            
 
-            string namepro1 = "produit1";
-            string namepro2 = "produit2";
-            int quantiteMinimale = 10;
-            var stock = FactoryStock.CreateStock();
-            var produit1 = FactoryStock.CreateProduct(stock, namepro1, quantiteMinimale);
-            var produit2 = FactoryStock.CreateProduct(stock, namepro2, 15);
-            var ligne1 = FactoryStock.CreateProductLine(produit1, 5);
-            var ligne2 = FactoryStock.CreateProductLine(produit2, 20);
+            var sectorRepository = sectorMock.Object;
+            var sector = sectorRepository.FindBy(new Query()).First();
+            var client = sector.GetClient("NomClient1");
 
-            var client = clientRepository.FindBy(Guid.NewGuid());
-            var product = StockRepository.findproductBy("produit");
-            var product1 = StockRepository.findproductBy("produit1");
-            var product2 = StockRepository.findproductBy("produit3");
+            
 
 
             var orders = new List<OrderLine>();
-            OrderLine orderLine = OrderFactory.CreateAnOrderLine(product, 20);
-            OrderLine orderLine1 = OrderFactory.CreateAnOrderLine(product1, 5);
-            OrderLine orderLine2 = OrderFactory.CreateAnOrderLine(product2, 5);
+            OrderLine orderLine = FactoryOrder.CreateOrderLine(stock,"product1", 20);
+            OrderLine orderLine1 = FactoryOrder.CreateOrderLine(stock, "product2", 5);
+            OrderLine orderLine2 = FactoryOrder.CreateOrderLine(stock, "product3", 5);
+            Assert.IsNull(orderLine);
 
-            orders.Add(orderLine);
+            stock.UpdateQuantity("product2", 4);
+
             orders.Add(orderLine1);
             orders.Add(orderLine2);
+            Assert.IsNull(FactoryOrder.CreateOrder(stock,client, orders));
 
-            Assert.IsNull(OrderFactory.CreateAnOrder(client, orders));
-
-            var BonDeCommande1 = OrderFactory.CreateAnOrder(client, orders, Priorite.Normal);
         }
+        /*
+        [Test]
+        public void CanUpateStock()
+        {
+            var stockRepository = stockMock.Object;
+            var stock = stockRepository.FindBy(new Query()).First();
 
+            
 
-
+        }
+        */
 
     }
 

@@ -40,6 +40,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Client.cs" />
+    <Compile Include="Delivery.cs" />
+    <Compile Include="Enum\Priorite.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderLine.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="ProductLine.cs" />
     <Compile Include="Secteur.cs" />
