@@ -1,0 +1,11 @@
+D:\Projets\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.presenter.dll
+D:\Projets\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.presenter.pdb
+D:\Projets\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.Core.dll
+D:\Projets\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.DataLayer.dll
+D:\Projets\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.Model.dll
+D:\Projets\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.Core.pdb
+D:\Projets\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.DataLayer.pdb
+D:\Projets\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.Model.pdb
+D:\Projets\vente_embarque\vente_embarque.presenter\obj\Debug\vente_embarque.presenter.csprojResolveAssemblyReference.cache
+D:\Projets\vente_embarque\vente_embarque.presenter\obj\Debug\vente_embarque.presenter.dll
+D:\Projets\vente_embarque\vente_embarque.presenter\obj\Debug\vente_embarque.presenter.pdb

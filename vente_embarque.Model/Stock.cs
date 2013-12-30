@@ -27,6 +27,14 @@ namespace vente_embarque.Model
             return listProuitMinimale;
         }
 
+
+        public List<Product> GetProductInvendue(int mois)
+        {
+            //var products = ProductLines.Where(e => e.Product.id == id).Select(p => p.Product);
+            var produitInvendue = (from productline in ProductLines let journNVendue = (productline.Product.DateEntree - DateTime.Now).TotalDays where journNVendue > mois*30 select productline.Product).ToList();
+            return produitInvendue;
+        }
+
         public Product GetProduct(Guid id)
         {
             var products=ProductLines.Where(e => e.Product.id == id).Select(p=>p.Product);
@@ -64,7 +72,7 @@ namespace vente_embarque.Model
 
         public static Product CreateProduct(string name, int quantiteMin=0)
         {
-            var product = new Product {Name = name, QuantiteMin = quantiteMin};
+            var product = new Product {Name = name, QuantiteMin = quantiteMin,id = Guid.NewGuid()};
             return product;
         }
 

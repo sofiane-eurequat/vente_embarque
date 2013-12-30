@@ -1,5 +1,4 @@
 C:\Users\sofiane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.Test\obj\Debug\vente_embarque.Test.csprojResolveAssemblyReference.cache
-D:\Projets\vente_embarque\vente_embarque.Test\obj\Debug\vente_embarque.Test.csprojResolveAssemblyReference.cache
 D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\vente_embarque.Test.dll
 D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\vente_embarque.Test.pdb
 D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\Autofac.Configuration.dll
@@ -18,5 +17,8 @@ D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\Microsoft.Practices.Serv
 D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\Microsoft.Practices.ServiceLocation.xml
 D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\Moq.xml
 D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\nunit.framework.xml
+D:\Projets\vente_embarque\vente_embarque.Test\obj\Debug\vente_embarque.Test.csprojResolveAssemblyReference.cache
 D:\Projets\vente_embarque\vente_embarque.Test\obj\Debug\vente_embarque.Test.dll
 D:\Projets\vente_embarque\vente_embarque.Test\obj\Debug\vente_embarque.Test.pdb
+D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\vente_embarque.DataLayer.dll
+D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\vente_embarque.DataLayer.pdb

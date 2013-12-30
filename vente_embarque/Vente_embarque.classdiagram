@@ -240,6 +240,16 @@
                     </associationHasOwnedEnds>
                     <associationHasOwnedEnds>
                       <memberEnd Id="b3c4d5d8-2643-4fbb-81d4-b7cc7f55801f" name="Lignes Stocks" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="bbb34382-d77f-444e-b6db-4a47aef1d7fe" name="Lower" value="n">
+                            <elementDefinition Id="522b0ae3-45a2-4183-832f-a1eb996ce563" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="9eb2a14a-d06a-4dc1-9583-e541d63ddcd7" name="Upper" value="n">
+                            <elementDefinition Id="7d9b73db-ed2a-446a-9e97-7d537f592151" />
+                          </literalString>
+                        </upperValueInternal>
                         <elementDefinition Id="3f68ee0c-ade1-41e7-acbb-be3f50557e3f" />
                       </memberEnd>
                     </associationHasOwnedEnds>
@@ -247,6 +257,14 @@
                   <elementDefinition Id="94900da9-47d1-4f9b-8fbc-5de042f19a8b" />
                 </association>
               </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="8d19ed57-5d6b-449c-9684-99789107c354" name="nom" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1a091787-a37c-47d6-96c9-c581acfcca24" />
+                </property>
+                <property Id="1dbc83b9-40c7-4da6-9471-039cd8508cbe" name="localisation" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="10fed19d-94ca-4de6-8368-49305f8eb777" />
+                </property>
+              </ownedAttributesInternal>
               <ownedOperationsInternal>
                 <operation Id="171d2f43-f3d8-4ad7-a4ea-3cfde6562887" name="stockBas" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="150b9b8b-3ea1-47dc-837b-f427ce2a46b7" />
@@ -286,6 +304,16 @@
                   <relationshipOwnedElementsInternal>
                     <associationHasOwnedEnds>
                       <memberEnd Id="493da316-29f3-4f96-8a5a-8b0bd99e06b8" name="Lignes Stocks" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <lowerValueInternal>
+                          <literalString Id="0364e080-a3f7-459d-bf83-5970ea058180" name="Lower" value="n">
+                            <elementDefinition Id="bfd6a4c3-2312-4314-ba90-96e0b2ca2efe" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="198dfc7e-a0cf-4982-aff6-9dc375420a49" name="Upper" value="n">
+                            <elementDefinition Id="dc0bc16d-42cd-4d67-ac7d-3e76456ad6aa" />
+                          </literalString>
+                        </upperValueInternal>
                         <elementDefinition Id="a0050ffd-874d-448a-92d3-ce64dbe51f94" />
                       </memberEnd>
                     </associationHasOwnedEnds>

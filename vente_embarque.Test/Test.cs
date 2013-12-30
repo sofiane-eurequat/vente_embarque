@@ -6,6 +6,8 @@ using Moq;
 using Moq.Contrib.Indy;
 using vente_embarque.Core.Domain;
 using vente_embarque.Core.Domain.Query;
+using vente_embarque.DataLayer;
+using vente_embarque.DataLayer.Helper;
 using vente_embarque.Model;
 using vente_embarque.Model.Enum;
 
@@ -22,6 +24,8 @@ namespace vente_embarque.Test
         [SetUp]
         public void SetupStockMock()
         {
+
+            InitDal.Init();
             var factoryStockCreateStock = FactoryStock.CreateStock("stock1");
             
            // mock du stock
@@ -107,6 +111,10 @@ namespace vente_embarque.Test
             Assert.AreEqual(BonDeCommande1.Client.Name, "NomClient1");
             Assert.AreEqual(BonDeCommande1.OrderLines.Count, 3);
             Assert.AreEqual(BonDeCommande1.Priorite, Priorite.Normal);
+
+            //test de la sauvegarde dans une base de données 
+            var repStock = new RepositoryStock();
+            repStock.Save(stock);
         }
 
         [Test]
@@ -127,10 +135,12 @@ namespace vente_embarque.Test
             var ligne2 = FactoryStock.CreateProductLine(stock,produit2, 20);
             
 
-
-            //StockRepository.save(stock);
-            
             Assert.AreEqual(stock.ProductLines.Count,2);
+            /*************************************************/
+            /****          Test on the data base          ****/
+            /*************************************************/
+
+            new RepositoryStock().Save(stock);
         }
 
         [Test]
@@ -183,7 +193,7 @@ namespace vente_embarque.Test
             Assert.IsNull(FactoryOrder.CreateOrder(stock,client, orders));
 
         }
-        /*
+        
         [Test]
         public void CanUpateStock()
         {
@@ -193,8 +203,11 @@ namespace vente_embarque.Test
             
 
         }
-        */
+        
 
+
+
+     
     }
 
     

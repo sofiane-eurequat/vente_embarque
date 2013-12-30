@@ -71,6 +71,10 @@
       <Project>{4da052e4-984d-49bc-8f45-9f001825f94a}</Project>
       <Name>vente_embarque.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\vente_embarque.DataLayer\vente_embarque.DataLayer.csproj">
+      <Project>{59670109-81bc-4321-81e2-4f3a099d05c0}</Project>
+      <Name>vente_embarque.DataLayer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\vente_embarque.Model\vente_embarque.Model.csproj">
       <Project>{2e56604b-794e-4753-8f34-aada359da8b5}</Project>
       <Name>vente_embarque.Model</Name>

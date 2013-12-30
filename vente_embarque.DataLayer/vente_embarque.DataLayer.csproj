@@ -30,7 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Data.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -39,8 +42,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Entities\Orders\XpoOrder.cs" />
+    <Compile Include="Entities\Stock\XpoProduct.cs" />
+    <Compile Include="Entities\Stock\XpoProductLine.cs" />
+    <Compile Include="Helper\InitDal.cs" />
+    <Compile Include="Map\Map.cs" />
+    <Compile Include="Map\MapInverse.cs" />
+    <Compile Include="RepositoryOrder.cs" />
+    <Compile Include="RepositoryStock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entities\Stock\XpoStock.cs" />
+    <Compile Include="RepoitorySector.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vente_embarque.Core\vente_embarque.Core.csproj">
+      <Project>{4da052e4-984d-49bc-8f45-9f001825f94a}</Project>
+      <Name>vente_embarque.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vente_embarque.Model\vente_embarque.Model.csproj">
+      <Project>{2e56604b-794e-4753-8f34-aada359da8b5}</Project>
+      <Name>vente_embarque.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

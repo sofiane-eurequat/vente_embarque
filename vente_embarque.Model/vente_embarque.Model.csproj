@@ -42,6 +42,8 @@
     <Compile Include="Client.cs" />
     <Compile Include="Delivery.cs" />
     <Compile Include="Enum\Priorite.cs" />
+    <Compile Include="Enum\ProduitInvendue.cs" />
+    <Compile Include="Enum\StockBas.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="OrderLine.cs" />
     <Compile Include="Product.cs" />
