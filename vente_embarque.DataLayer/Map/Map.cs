@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DevExpress.Xpo;
+using vente_embarque.Core.Domain.Query;
 using vente_embarque.DataLayer.Entities.Orders;
 using vente_embarque.DataLayer.Entities.Stock;
 using vente_embarque.Model;
@@ -12,21 +13,22 @@ namespace vente_embarque.DataLayer.Map
 {
     public static class Map
     {
-        public static Stock.XpoStock MapStock( Model.Stock stock,UnitOfWork uow)
+        public static XpoStock MapStock( Model.Stock stock,UnitOfWork uow)
         {
-            var xpostock = new Stock.XpoStock(uow)
+            var xpostock = new XpoStock(uow)
                 {
                     Name =stock.Name,
                     Oid = stock.id
                 };
             foreach (var pl in stock.ProductLines)
             {
+                var crierion = new Criterion(propertyName: "Name", value: pl.Product.Name,criteriaOperator:CriteriaOperator.Equal);
                 var xpl = new XpoProductLine(uow)
                     {
                         Oid = pl.id,
                         Quantity = pl.Quantity,
                         Stock = xpostock,
-                        Product = MapProduct(pl.Product,uow)
+                        Product = uow.GetObjectByKey<XpoProduct>(pl.Product.id)
                     };
             }
             return xpostock;
@@ -39,7 +41,27 @@ namespace vente_embarque.DataLayer.Map
                     Oid = product.id,
                     Name = product.Name, 
                     QuantityMin = product.QuantiteMin,
-                    DateEntree = product.DateEntree
+                    Category = MapCategory(product.Category,uow),
+                    Marque = MapMarque(product.Marque,uow)
+                };
+        }
+
+        private static XpoMarque MapMarque(Marque marque, UnitOfWork uow)
+        {
+            return  new XpoMarque(uow)
+                {
+                    Name = marque.Name,
+                    Oid = marque.id
+                };
+        }
+
+        private static XpoCategory MapCategory(Category category, UnitOfWork uow)
+        {
+            return new XpoCategory(uow)
+                {
+                    Oid = category.id,
+                    Name = category.Name,
+                    Description = category.Description
                 };
         }
 

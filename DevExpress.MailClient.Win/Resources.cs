@@ -55,7 +55,7 @@ namespace DevExpress.MailClient.Win {
         public const string RotateLayout = "RotateLayout";
         public const string FlipLayout = "FlipLayout";
         public const string DeleteItem = "DeleteItem";
-        public const string NewMail = "NewMail";
+        public const string NewStock = "NewStock";
         public const string Reply = "Reply";
         public const string ReplyAll = "ReplyAll";
         public const string Forward = "Forward";

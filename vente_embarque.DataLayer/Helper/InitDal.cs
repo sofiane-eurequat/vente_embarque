@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using vente_embarque.DataLayer.Entities.Orders;
+﻿using vente_embarque.DataLayer.Entities.Orders;
 using vente_embarque.DataLayer.Entities.Stock;
-using vente_embarque.DataLayer.Stock;
 
 namespace vente_embarque.DataLayer.Helper
 {
@@ -18,13 +12,16 @@ namespace vente_embarque.DataLayer.Helper
             DevExpress.Xpo.Metadata.XPDictionary dict =
             new DevExpress.Xpo.Metadata.ReflectionDictionary();
             // Initialize the XPO dictionary.
-            dict.GetDataStoreSchema(typeof(XpoStock), typeof(XpoProductLine), typeof(XpoProduct), typeof(XpoSector), typeof(XpoClient), typeof(XpoOrder), typeof(XpoOrderLine));
+            dict.GetDataStoreSchema(typeof(XpoStock), typeof(XpoProductLine), typeof(XpoProduct), typeof(XpoSector), typeof(XpoClient), typeof(XpoOrder), typeof(XpoOrderLine), typeof(XpoWilaya), typeof(XpoCommune));
 
 
             DevExpress.Xpo.DB.IDataStore store = DevExpress.Xpo.XpoDefault.GetConnectionProvider(connectionString,
                 DevExpress.Xpo.DB.AutoCreateOption.DatabaseAndSchema);
             DevExpress.Xpo.XpoDefault.DataLayer = new DevExpress.Xpo.ThreadSafeDataLayer(dict, store);
             DevExpress.Xpo.XpoDefault.Session = null;
+
+            
+
         }
     }
 }

@@ -9,50 +9,93 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraBars;
+using DevExpress.XtraEditors.Repository;
+using vente_embarque.DataLayer;
+using vente_embarque.Model;
+using vente_embarque.presenter;
+using vente_embarque.presenter.Stok;
 
 namespace DevExpress.MailClient.Win {
-    public partial class frmEditMail : RibbonForm {
-        bool isMessageModified;
-        bool newMessage = true;
-        readonly Message sourceMessage;
+    public partial class frmEditStock : RibbonForm,IEditStockView
+    {
 
-        public frmEditMail() {
+        public IEnumerable<Wilaya> Wilayas { get; set; }
+        private EditStockPresenterPage editStockPresenter;
+        bool isMessageModified;
+        bool newStock = true;
+        readonly ModelViewStock sourceStock;
+
+        public frmEditStock() {
             InitializeComponent();
             DialogResult = DialogResult.Cancel;
         }
-        public frmEditMail(Message message, bool newMessage, string caption) {
+        public frmEditStock(ModelViewStock Stock, bool newStock, string caption)
+        {
             InitializeComponent();
             DictionaryHelper.InitDictionary(spellChecker1);
-            this.newMessage = newMessage;
+            var RepositoryWilaya = new RepositoryWilaya();
+            editStockPresenter = new EditStockPresenterPage(this, RepositoryWilaya);
+            editStockPresenter.Display();
+
+            comboBoxWilaya.DataSource = Wilayas;
+
+
+            this.newStock = newStock;
             DialogResult = DialogResult.Cancel;
-            this.sourceMessage = message;
-            edtSubject.Text = message.Subject;
-            edtTo.Text = message.From;
-            richEditControl.HtmlText = message.Text;
-            this.isMessageModified = newMessage;
-            if(string.IsNullOrEmpty(message.From)) 
+            sourceStock = Stock;
+
+
+          /*  var riLookUpProduct = new RepositoryItemLookUpEdit();
+            GCLigneStock.RepositoryItems.Add
+                (
+                    GVProductLine.Columns["Name"].ColumnEdit = riLookUpProduct
+                );*/
+
+           GCLigneStock.DataSource = new List<ModelViewProductLine>()
+                {
+                    new ModelViewProductLine()
+                        {
+                            Name = "test",
+                            Quantity = 20
+                        }
+                };
+
+
+           /* riLookUpProduct.DataSource = new List<Product>()
+                {
+                    new Product()
+                        {
+                            Name = "test produit"
+                        }
+                };*/
+            /* edtSubject.Text = Stock.Subject;
+            edtTo.Text = Stock.From;
+            richEditControl.HtmlText = Stock.Text;
+            this.isMessageModified = newStock;
+            if(string.IsNullOrEmpty(Stock.From)) 
                 splitContainerControl1.PanelVisibility = SplitPanelVisibility.Panel1;
-            splitContainerControl1.Collapsed = newMessage;
-            ucMessageInfo1.Init(message, ribbonControl.Manager);
-            if(!newMessage) {
+            splitContainerControl1.Collapsed = newStock;*/
+            //ucMessageInfo1.Init(Stock, ribbonControl.Manager);
+            /*if(!newStock) {
                 splitContainerControl1.Collapsed = LayoutOption.MailCollapsed;
                 lblTo.Text = string.Format("{0}:", caption);
                 edtTo.Properties.ReadOnly = true;
                 edtSubject.Properties.ReadOnly = true;
                 richEditControl.ReadOnly = true;
-            }
+            }*/
         }
         protected override void OnClosing(CancelEventArgs e) {
             base.OnClosing(e);
-            if(!newMessage)
-                LayoutOption.MailCollapsed = splitContainerControl1.Collapsed;
+            /*if(!newStock)
+                LayoutOption.MailCollapsed = splitContainerControl1.Collapsed;*/
         }
-        public Message SourceMessage { get { return sourceMessage; } }
+        public ModelViewStock SourceMessage { get { return sourceStock; } }
+
         public bool IsMessageModified {
-            get { return isMessageModified || richEditControl.Modified; }
+            get { return false; /*isMessageModified || richEditControl.Modified;*/ }
             set {
                 isMessageModified = value;
-                richEditControl.Modified = value;
+               // richEditControl.Modified = value;
             }
         }
         #region SaveMessage event
@@ -64,10 +107,10 @@ namespace DevExpress.MailClient.Win {
         }
         #endregion
 
-        void richEditControl_SelectionChanged(object sender, EventArgs e) {
+       /* void richEditControl_SelectionChanged(object sender, EventArgs e) {
             tableToolsRibbonPageCategory1.Visible = richEditControl.IsSelectionInTable();
             floatingPictureToolsRibbonPageCategory1.Visible = richEditControl.IsFloatingObjectSelected;
-        }
+        }*/
         void edtTo_EditValueChanged(object sender, EventArgs e) {
             isMessageModified = true;
         }
@@ -112,15 +155,17 @@ namespace DevExpress.MailClient.Win {
             }
         }
         void ApplyChanges() {
-            sourceMessage.Date = DateTime.Now;
-            sourceMessage.Text = richEditControl.HtmlText;
-            sourceMessage.SetPlainText(ObjectHelper.GetPlainText(richEditControl.Text.TrimStart()));
-            sourceMessage.Subject = edtSubject.Text;
-            sourceMessage.From = edtTo.Text;
+           /* sourceStock.Date = DateTime.Now;
+            sourceStock.Text = richEditControl.HtmlText;
+            sourceStock.SetPlainText(ObjectHelper.GetPlainText(richEditControl.Text.TrimStart()));
+            sourceStock.Subject = edtSubject.Text;
+            sourceStock.From = edtTo.Text;*/
 
             IsMessageModified = false;
 
             RaiseSaveMessage();
         }
+
+
     }
 }

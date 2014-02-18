@@ -117,6 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="helpControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="helpControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="helpControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>882, 494</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="helpControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;helpControl1.Name" xml:space="preserve">
     <value>helpControl1</value>
   </data>
@@ -129,14 +144,12 @@
   <data name="&gt;&gt;helpControl1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="backstageViewClientControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>133, 63</value>
   </data>
   <data name="backstageViewClientControl1.Size" type="System.Drawing.Size, System.Drawing">
     <value>882, 494</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="backstageViewClientControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -151,6 +164,48 @@
   </data>
   <data name="&gt;&gt;backstageViewClientControl1.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="galleryControlClient1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="galleryControlClient1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;galleryControlClient1.Name" xml:space="preserve">
+    <value>galleryControlClient1</value>
+  </data>
+  <data name="&gt;&gt;galleryControlClient1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.GalleryControlClient, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;galleryControlClient1.Parent" xml:space="preserve">
+    <value>galleryControl1</value>
+  </data>
+  <data name="&gt;&gt;galleryControlClient1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="galleryControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="galleryItemGroup1.Caption" xml:space="preserve">
+    <value>Group1</value>
+  </data>
+  <data name="galleryItem1.Caption" xml:space="preserve">
+    <value>Open Calendar</value>
+  </data>
+  <data name="galleryItem1.Description" xml:space="preserve">
+    <value>Open a calendar file (.ics)</value>
+  </data>
+  <data name="galleryControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="galleryControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>842, 274</value>
+  </data>
+  <data name="galleryControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="galleryControl1.Text" xml:space="preserve">
+    <value>galleryControl1</value>
   </data>
   <data name="&gt;&gt;galleryControl1.Name" xml:space="preserve">
     <value>galleryControl1</value>
@@ -167,7 +222,6 @@
   <data name="backstageViewClientControl2.Location" type="System.Drawing.Point, System.Drawing">
     <value>133, 63</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="backstageViewClientControl2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>20, 20, 20, 200</value>
   </data>
@@ -188,6 +242,18 @@
   </data>
   <data name="&gt;&gt;backstageViewClientControl2.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="printControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="printControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="printControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>882, 494</value>
+  </data>
+  <data name="printControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;printControl1.Name" xml:space="preserve">
     <value>printControl1</value>
@@ -221,6 +287,18 @@
   </data>
   <data name="&gt;&gt;backstageViewClientControl3.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="exportControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="exportControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="exportControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>882, 494</value>
+  </data>
+  <data name="exportControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;exportControl1.Name" xml:space="preserve">
     <value>exportControl1</value>
@@ -447,19 +525,19 @@
   <data name="rgbiCurrentView.Caption" xml:space="preserve">
     <value>Current Contacts View</value>
   </data>
-  <data name="galleryItemGroup4.Caption" xml:space="preserve">
+  <data name="galleryItemGroup2.Caption" xml:space="preserve">
     <value>Group1</value>
   </data>
-  <data name="galleryItem14.Caption" xml:space="preserve">
+  <data name="galleryItem2.Caption" xml:space="preserve">
     <value>Liste</value>
   </data>
-  <data name="galleryItem15.Caption" xml:space="preserve">
+  <data name="galleryItem3.Caption" xml:space="preserve">
     <value>Alphabetique</value>
   </data>
-  <data name="galleryItem16.Caption" xml:space="preserve">
+  <data name="galleryItem4.Caption" xml:space="preserve">
     <value>Par localization</value>
   </data>
-  <data name="galleryItem17.Caption" xml:space="preserve">
+  <data name="galleryItem5.Caption" xml:space="preserve">
     <value>Carte</value>
   </data>
   <data name="beiZoom.Width" type="System.Int32, mscorlib">
@@ -480,31 +558,31 @@
   <data name="rgbiCurrentViewTasks.Caption" xml:space="preserve">
     <value>Current View</value>
   </data>
-  <data name="galleryItemGroup5.Caption" xml:space="preserve">
+  <data name="galleryItemGroup3.Caption" xml:space="preserve">
     <value>Group1</value>
   </data>
-  <data name="galleryItem18.Caption" xml:space="preserve">
+  <data name="galleryItem6.Caption" xml:space="preserve">
     <value>List by Date</value>
   </data>
-  <data name="galleryItem19.Caption" xml:space="preserve">
+  <data name="galleryItem7.Caption" xml:space="preserve">
     <value>To-Do List</value>
   </data>
-  <data name="galleryItem20.Caption" xml:space="preserve">
+  <data name="galleryItem8.Caption" xml:space="preserve">
     <value>Completed</value>
   </data>
-  <data name="galleryItem21.Caption" xml:space="preserve">
+  <data name="galleryItem9.Caption" xml:space="preserve">
     <value>Today</value>
   </data>
-  <data name="galleryItem22.Caption" xml:space="preserve">
+  <data name="galleryItem10.Caption" xml:space="preserve">
     <value>Prioritized</value>
   </data>
-  <data name="galleryItem23.Caption" xml:space="preserve">
+  <data name="galleryItem11.Caption" xml:space="preserve">
     <value>Overdue</value>
   </data>
-  <data name="galleryItem24.Caption" xml:space="preserve">
+  <data name="galleryItem12.Caption" xml:space="preserve">
     <value>Simple List</value>
   </data>
-  <data name="galleryItem25.Caption" xml:space="preserve">
+  <data name="galleryItem13.Caption" xml:space="preserve">
     <value>Deferred</value>
   </data>
   <data name="bbiTodayFlag.Caption" xml:space="preserve">
@@ -574,6 +652,18 @@
   <data name="rpcSearch.Color" type="System.Drawing.Color, System.Drawing">
     <value>DarkOrange</value>
   </data>
+  <data name="rpgFind.Text" xml:space="preserve">
+    <value>Filter Actions</value>
+  </data>
+  <data name="rpgFilterColumns.Text" xml:space="preserve">
+    <value>Filter Columns</value>
+  </data>
+  <data name="rbgClose.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="rpSearch.Text" xml:space="preserve">
+    <value>SAERCH</value>
+  </data>
   <data name="rpcSearch.Text" xml:space="preserve">
     <value>Search Tools</value>
   </data>
@@ -586,8 +676,29 @@
   <data name="calendarToolsRibbonPageCategory1.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="rpgNew.Text" xml:space="preserve">
+    <value>Stock / Produit</value>
+  </data>
+  <data name="rpgDelete.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="rpgTags.Text" xml:space="preserve">
+    <value>Affichage produit</value>
+  </data>
+  <data name="rpgLayoutMail.Text" xml:space="preserve">
+    <value>Type affichage</value>
+  </data>
   <data name="rpStock.Text" xml:space="preserve">
     <value>STOCK</value>
+  </data>
+  <data name="rpgContacts.Text" xml:space="preserve">
+    <value>Ajout / Modification</value>
+  </data>
+  <data name="rpgCurrentView.Text" xml:space="preserve">
+    <value>Affichage par</value>
+  </data>
+  <data name="rpgLayoutContacts.Text" xml:space="preserve">
+    <value>Type affichage</value>
   </data>
   <data name="rpContacts.Text" xml:space="preserve">
     <value>CLIENTS</value>
@@ -602,13 +713,13 @@
     <value>False</value>
   </data>
   <data name="ribbonControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1252, 144</value>
+    <value>1014, 144</value>
   </data>
   <data name="ribbonStatusBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 744</value>
+    <value>0, 736</value>
   </data>
   <data name="ribbonStatusBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1252, 31</value>
+    <value>1014, 31</value>
   </data>
   <data name="&gt;&gt;ribbonStatusBar1.Name" xml:space="preserve">
     <value>ribbonStatusBar1</value>
@@ -634,167 +745,20 @@
   <data name="&gt;&gt;ribbonControl1.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="helpControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="helpControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="helpControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>882, 494</value>
-  </data>
-  <data name="helpControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;helpControl1.Name" xml:space="preserve">
-    <value>helpControl1</value>
-  </data>
-  <data name="&gt;&gt;helpControl1.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.Controls.HelpControl, DevExpress.MailClient.Win, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;helpControl1.Parent" xml:space="preserve">
-    <value>backstageViewClientControl1</value>
-  </data>
-  <data name="&gt;&gt;helpControl1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="galleryControlClient1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="galleryControlClient1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;galleryControlClient1.Name" xml:space="preserve">
-    <value>galleryControlClient1</value>
-  </data>
-  <data name="&gt;&gt;galleryControlClient1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.GalleryControlClient, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;galleryControlClient1.Parent" xml:space="preserve">
-    <value>galleryControl1</value>
-  </data>
-  <data name="&gt;&gt;galleryControlClient1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="galleryControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="galleryItemGroup6.Caption" xml:space="preserve">
-    <value>Group1</value>
-  </data>
-  <data name="galleryItem26.Caption" xml:space="preserve">
-    <value>Open Calendar</value>
-  </data>
-  <data name="galleryItem26.Description" xml:space="preserve">
-    <value>Open a calendar file (.ics)</value>
-  </data>
-  <data name="galleryControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 20</value>
-  </data>
-  <data name="galleryControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>842, 274</value>
-  </data>
-  <data name="galleryControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="galleryControl1.Text" xml:space="preserve">
-    <value>galleryControl1</value>
-  </data>
-  <data name="&gt;&gt;galleryControl1.Name" xml:space="preserve">
-    <value>galleryControl1</value>
-  </data>
-  <data name="&gt;&gt;galleryControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.GalleryControl, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;galleryControl1.Parent" xml:space="preserve">
-    <value>backstageViewClientControl2</value>
-  </data>
-  <data name="&gt;&gt;galleryControl1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="printControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="printControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="printControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>882, 494</value>
-  </data>
-  <data name="printControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;printControl1.Name" xml:space="preserve">
-    <value>printControl1</value>
-  </data>
-  <data name="&gt;&gt;printControl1.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.Controls.PrintControl, DevExpress.MailClient.Win, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;printControl1.Parent" xml:space="preserve">
-    <value>backstageViewClientControl3</value>
-  </data>
-  <data name="&gt;&gt;printControl1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="exportControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="exportControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="exportControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>882, 494</value>
-  </data>
-  <data name="exportControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;exportControl1.Name" xml:space="preserve">
-    <value>exportControl1</value>
-  </data>
-  <data name="&gt;&gt;exportControl1.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.Controls.ExportControl, DevExpress.MailClient.Win, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;exportControl1.Parent" xml:space="preserve">
-    <value>backstageViewClientControl4</value>
-  </data>
-  <data name="&gt;&gt;exportControl1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="rpSearch.Text" xml:space="preserve">
-    <value>SAERCH</value>
-  </data>
-  <data name="rpgFind.Text" xml:space="preserve">
-    <value>Filter Actions</value>
-  </data>
-  <data name="rpgFilterColumns.Text" xml:space="preserve">
-    <value>Filter Columns</value>
-  </data>
-  <data name="rbgClose.Text" xml:space="preserve">
-    <value>Close</value>
-  </data>
-  <data name="rpgNew.Text" xml:space="preserve">
-    <value>Stock / Produit</value>
-  </data>
-  <data name="rpgDelete.Text" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="rpgTags.Text" xml:space="preserve">
-    <value>Affichage produit</value>
-  </data>
-  <data name="rpgLayoutMail.Text" xml:space="preserve">
-    <value>Type affichage</value>
-  </data>
-  <data name="rpgContacts.Text" xml:space="preserve">
-    <value>Ajout / Modification</value>
-  </data>
-  <data name="rpgCurrentView.Text" xml:space="preserve">
-    <value>Affichage par</value>
-  </data>
-  <data name="rpgLayoutContacts.Text" xml:space="preserve">
-    <value>Type affichage</value>
-  </data>
   <data name="nbgMail.Caption" xml:space="preserve">
     <value>Stock</value>
+  </data>
+  <data name="ucMailTree1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ucMailTree1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ucMailTree1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 333</value>
+  </data>
+  <data name="ucMailTree1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;ucMailTree1.Name" xml:space="preserve">
     <value>ucMailTree1</value>
@@ -809,7 +773,7 @@
     <value>0</value>
   </data>
   <data name="navBarGroupControlContainer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 341</value>
+    <value>180, 333</value>
   </data>
   <data name="navBarGroupControlContainer1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -824,6 +788,24 @@
     <value>navBarControl1</value>
   </data>
   <data name="&gt;&gt;navBarGroupControlContainer1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ucCalendar1.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>217, 218, 224</value>
+  </data>
+  <data name="ucCalendar1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ucCalendar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ucCalendar1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 1, 1, 1</value>
+  </data>
+  <data name="ucCalendar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 388</value>
+  </data>
+  <data name="ucCalendar1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="&gt;&gt;ucCalendar1.Name" xml:space="preserve">
@@ -855,6 +837,18 @@
   </data>
   <data name="&gt;&gt;navBarGroupControlContainer2.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="ucContacts1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ucContacts1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ucContacts1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 342</value>
+  </data>
+  <data name="ucContacts1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;ucContacts1.Name" xml:space="preserve">
     <value>ucContacts1</value>
@@ -923,7 +917,7 @@
     <value>180</value>
   </data>
   <data name="navBarControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 600</value>
+    <value>180, 592</value>
   </data>
   <data name="navBarControl1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -943,84 +937,6 @@
   <data name="&gt;&gt;navBarControl1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="ucMailTree1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="ucMailTree1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="ucMailTree1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 341</value>
-  </data>
-  <data name="ucMailTree1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ucMailTree1.Name" xml:space="preserve">
-    <value>ucMailTree1</value>
-  </data>
-  <data name="&gt;&gt;ucMailTree1.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.ucMailTree, DevExpress.MailClient.Win, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ucMailTree1.Parent" xml:space="preserve">
-    <value>navBarGroupControlContainer1</value>
-  </data>
-  <data name="&gt;&gt;ucMailTree1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="ucCalendar1.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
-    <value>217, 218, 224</value>
-  </data>
-  <data name="ucCalendar1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="ucCalendar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="ucCalendar1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 1, 1, 1</value>
-  </data>
-  <data name="ucCalendar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 388</value>
-  </data>
-  <data name="ucCalendar1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ucCalendar1.Name" xml:space="preserve">
-    <value>ucCalendar1</value>
-  </data>
-  <data name="&gt;&gt;ucCalendar1.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.Controls.ucCalendar, DevExpress.MailClient.Win, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ucCalendar1.Parent" xml:space="preserve">
-    <value>navBarGroupControlContainer2</value>
-  </data>
-  <data name="&gt;&gt;ucCalendar1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="ucContacts1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="ucContacts1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="ucContacts1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 342</value>
-  </data>
-  <data name="ucContacts1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ucContacts1.Name" xml:space="preserve">
-    <value>ucContacts1</value>
-  </data>
-  <data name="&gt;&gt;ucContacts1.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.Controls.ucContacts, DevExpress.MailClient.Win, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ucContacts1.Parent" xml:space="preserve">
-    <value>navBarGroupControlContainer3</value>
-  </data>
-  <data name="&gt;&gt;ucContacts1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="pcMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -1028,7 +944,7 @@
     <value>180, 144</value>
   </data>
   <data name="pcMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1072, 600</value>
+    <value>834, 592</value>
   </data>
   <data name="pcMain.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1064,7 +980,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1252, 775</value>
+    <value>1014, 767</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

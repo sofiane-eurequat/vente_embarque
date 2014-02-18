@@ -1092,6 +1092,12 @@
         LastKnownName="Package3"
         LastKnownLocation="Package_1423.uml" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="50500a5b-a7d9-4aee-9b7f-9d9f2e846938"
+        LastKnownName="Package4"
+        LastKnownLocation="Package_1548.uml" />
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

@@ -1,6 +1,5 @@
 ﻿using System;
 using DevExpress.Xpo;
-using vente_embarque.DataLayer.Stock;
 
 namespace vente_embarque.DataLayer.Entities.Stock
 {
@@ -31,7 +30,7 @@ namespace vente_embarque.DataLayer.Entities.Stock
         }
 
         private XpoProduct _Product;
-        [Aggregated, Association("XpoProduct-XpoproductLine")]
+        [ Association("XpoProduct-XpoproductLine")]
         public XpoProduct Product
         {
             get { return _Product; }

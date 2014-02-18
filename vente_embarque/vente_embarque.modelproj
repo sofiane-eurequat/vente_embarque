@@ -31,6 +31,9 @@
     <Content Include="ModelDefinition\Package_1423.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package_1548.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="UMLUseCaseDiagram1.usecasediagram">
       <SubType>Content</SubType>
     </Content>

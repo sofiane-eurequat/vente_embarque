@@ -3,10 +3,16 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
+using DevExpress.MailClient.Win.Properties;
+using DevExpress.XtraEditors.Controls;
+using DevExpress.XtraEditors.Repository;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraGrid.Controls;
+using DevExpress.XtraLayout;
+using DevExpress.XtraLayout.Customization;
+using DevExpress.XtraLayout.Utils;
 using DevExpress.XtraRichEdit;
 using DevExpress.XtraRichEdit.API.Native;
 using DevExpress.XtraGrid.Columns;
@@ -52,8 +58,70 @@ namespace DevExpress.MailClient.Win.Modules {
             _StockPresenter.Display();
 
             gridControlStock.DataSource = Stocks;
-            gridControlProduct.DataSource = Stocks.First().ProductLine;
-            //CalcPreviewIndent();
+            gridViewStock.Columns[5].Visible = false;
+
+
+            var LignesProduits = Stocks.First().ProductLine;
+            gridControlProduct.DataSource = LignesProduits;
+            gridViewProductLine.Columns[0].Visible = false;
+            gridViewProductLine.Columns[3].Visible = false;
+            gridViewProductLine.Columns[1].Caption = Resources.Produit;
+
+
+
+            GCProductDisplay.DataSource = Stocks.First().Products;
+            /*LayoutViewProduct.TemplateCard.Width = 400;
+            LayoutViewProduct.TemplateCard.Height = 400;*/
+
+
+           // LayoutViewProduct.OptionsBehavior.AutoPopulateColumns = false;
+            LayoutViewProduct.Columns["Id"].Visible = false;
+            /*
+            var fieldPhoto = LayoutViewProduct.Columns["Photo"].LayoutViewField;
+            var filedName = LayoutViewProduct.Columns["Nom"].LayoutViewField;
+            var filedCategorie = LayoutViewProduct.Columns["Categorie"].LayoutViewField;
+            var filedFournisseur = LayoutViewProduct.Columns["Fournisseur"].LayoutViewField;
+            var filedQuantite = LayoutViewProduct.Columns["QuantiteMin"].LayoutViewField;
+
+
+            var filedRemarque = LayoutViewProduct.Columns["Remarque"].LayoutViewField;
+            var fileReference = LayoutViewProduct.Columns["Reference"].LayoutViewField;
+
+            */
+            
+
+            /*LayoutControlGroup groupInfoPrin= LayoutViewProduct.TemplateCard.AddGroup("Information Principale",
+    fieldPhoto, InsertType.Top);
+            groupInfoPrin.Add(fieldPhoto);
+            groupInfoPrin.Add(filedName);
+            groupInfoPrin.Add(filedCategorie);
+            groupInfoPrin.Add(filedFournisseur);
+            groupInfoPrin.Add(filedQuantite);*/
+            /*
+            filedName.TextSize = new Size(){Height = 12,Width = 15};
+            filedName.Move(new LayoutItemDragController(filedName, fieldPhoto, InsertLocation.After, LayoutType.Horizontal));
+            filedCategorie.Move(new LayoutItemDragController(filedCategorie, filedName, InsertLocation.After, LayoutType.Vertical));
+            filedFournisseur.Move(new LayoutItemDragController(filedFournisseur, filedCategorie, InsertLocation.After, LayoutType.Vertical));
+            filedQuantite.Move(new LayoutItemDragController(filedQuantite, filedFournisseur, InsertLocation.After, LayoutType.Vertical));
+
+            */
+
+            /*LayoutControlGroup groupInfoSupp = LayoutViewProduct.TemplateCard.AddGroup("Information Supplémentaire", fieldPhoto, InsertType.Bottom);
+
+            groupInfoSupp.Add(filedRemarque);
+            groupInfoSupp.Add(fileReference);*/
+
+
+            var riPictureEdit = GCProductDisplay.RepositoryItems.Add("PictureEdit") as RepositoryItemPictureEdit;
+            if (riPictureEdit != null)
+            {
+                riPictureEdit.SizeMode = PictureSizeMode.Squeeze;
+                LayoutViewProduct.Columns["Photo"].ColumnEdit = riPictureEdit;
+                //LayoutViewProduct.Columns["Photo"]
+            }
+            LayoutViewProduct.Columns["Photo"].LayoutViewField.TextVisible = false;
+
+            LayoutViewProduct.CardMinSize = new Size(350, 200);
         }
   
 
@@ -79,21 +147,21 @@ namespace DevExpress.MailClient.Win.Modules {
             ((Timer)sender).Stop();
         }*/
         void FocusRow(int rowHandle) {
-            gridView1.FocusedRowHandle = rowHandle;
-            gridView1.ClearSelection();
-            gridView1.SelectRow(rowHandle);
+            gridViewStock.FocusedRowHandle = rowHandle;
+            gridViewStock.ClearSelection();
+            gridViewStock.SelectRow(rowHandle);
         }
         internal override void ShowModule(bool firstShow) {
             base.ShowModule(firstShow);
             if(firstShow) {
-                filterCriteriaManager = new FilterCriteriaManager(gridView1);
+                filterCriteriaManager = new FilterCriteriaManager(gridViewStock);
                 //filterCriteriaManager.AddBarItem(OwnerForm.ShowUnreadItem, gcIcon, "[Read] = 0");
                 //filterCriteriaManager.AddBarItem(OwnerForm.ImportantItem, gcPriority, "[Priority] = 2");
                 //filterCriteriaManager.AddBarItem(OwnerForm.HasAttachmentItem, gcAttachment, "[Attachment] = 1");
                 filterCriteriaManager.AddClearFilterButton(OwnerForm.ClearFilterItem);
                 SetPriorityMenu();
                 SetDateFilterMenu();
-                OwnerForm.FilterColumnManager.InitGridView(gridView1);
+                OwnerForm.FilterColumnManager.InitGridView(gridViewStock);
             } else {
                 lockUpdateCurrentMessage = false;
                 FocusRow(focusedRowHandle);
@@ -102,7 +170,7 @@ namespace DevExpress.MailClient.Win.Modules {
         }
         internal override void HideModule() {
             lockUpdateCurrentMessage = true;
-            focusedRowHandle = gridView1.FocusedRowHandle;
+            focusedRowHandle = gridViewStock.FocusedRowHandle;
         }
         protected override void LookAndFeelStyleChanged() {
             base.LookAndFeelStyleChanged();
@@ -122,23 +190,23 @@ namespace DevExpress.MailClient.Win.Modules {
                 PriorityMenu.ShowPopup(gridControlStock.PointToScreen(e.Location));
             if(e.Button == MouseButtons.Right) ShowMessageMenu(gridControlStock.PointToScreen(e.Location));
             if(e.Button == MouseButtons.Left && e.Clicks == 2) 
-                EditMessage(e.RowHandle);
+                EditStock(e.RowHandle);
         }
-        void EditMessage(int rowHandle) {
+        void EditStock(int rowHandle) {
             if(rowHandle < 0) return;
-            Message message = gridView1.GetRow(rowHandle) as Message;
+            Message message = gridViewStock.GetRow(rowHandle) as Message;
             //if(message != null)
               //  EditMessage(message, false, gcFrom.Caption);
         }
         private void gridView1_KeyDown(object sender, KeyEventArgs e) {
             if(e.KeyData == Keys.Enter)
-                EditMessage(gridView1.FocusedRowHandle);
+                EditStock(gridViewStock.FocusedRowHandle);
         }
         void RaiseReadMessagesChanged(int rowHandle) {
-            Message current = gridView1.GetRow(rowHandle) as Message;
+            Message current = gridViewStock.GetRow(rowHandle) as Message;
             if(current == null) return;
             current.ToggleRead();
-            gridView1.LayoutChanged();
+            gridViewStock.LayoutChanged();
             OwnerForm.ReadMessagesChanged();
             MakeFocusedRowVisible();
         }
@@ -183,16 +251,16 @@ namespace DevExpress.MailClient.Win.Modules {
 
         void UpdateCurrentMessage() {
             if(lockUpdateCurrentMessage) return;
-            if(gridView1.FocusedRowHandle >= 0)
-                CurrentMessage = gridView1.GetFocusedRow() as Message;
+            if(gridViewStock.FocusedRowHandle >= 0)
+                CurrentMessage = gridViewStock.GetFocusedRow() as Message;
             else {
                 List<Message> rows = new List<Message>();
-                GridHelper.GetChildDataRowHandles(gridView1, gridView1.FocusedRowHandle, rows);
+                GridHelper.GetChildDataRowHandles(gridViewStock, gridViewStock.FocusedRowHandle, rows);
                 //ucMailViewer1.ShowMessagesInfo(rows);
                 CurrentMessage = null;
                 messageReadTimer.Stop();
             }
-            RaiseEnableMail(gridView1.FocusedRowHandle >= 0);
+            RaiseEnableMail(gridViewStock.FocusedRowHandle >= 0);
             RaiseEnableDelete(EnableDelete);
         }
         
@@ -205,9 +273,9 @@ namespace DevExpress.MailClient.Win.Modules {
                     //layoutControl1.Root.FlipLayout();
                     break;
                 case TagResources.DeleteItem:
-                    foreach(int row in gridView1.GetSelectedRows())
+                    foreach(int row in gridViewStock.GetSelectedRows())
                         if(row >= 0) {
-                            Message message = ((Message)gridView1.GetRow(row));
+                            Message message = ((Message)gridViewStock.GetRow(row));
                             if(message.MailType == MailType.Deleted)
                                 message.Deleted = true;
                             else
@@ -215,8 +283,8 @@ namespace DevExpress.MailClient.Win.Modules {
                         }
                     RaiseUpdateTreeViewMessages();
                     break;
-                case TagResources.NewMail:
-                    CreateNewMailMessage();
+                case TagResources.NewStock:
+                    CreateStock();
                     break;
                 case TagResources.Reply:
                     CreateReplyMailMessage();
@@ -228,20 +296,20 @@ namespace DevExpress.MailClient.Win.Modules {
                     CreateForwardMailMessage();
                     break;
                 case TagResources.UnreadRead:
-                    foreach(int row in gridView1.GetSelectedRows())
+                    foreach(int row in gridViewStock.GetSelectedRows())
                         if(row >= 0)
-                            ((Message)gridView1.GetRow(row)).ToggleRead();
-                    gridView1.LayoutChanged();
+                            ((Message)gridViewStock.GetRow(row)).ToggleRead();
+                    gridViewStock.LayoutChanged();
                     OwnerForm.ReadMessagesChanged();
                     break;
                 case TagResources.CloseSearch:
-                    gridView1.Focus();
+                    gridViewStock.Focus();
                     break;
                 case TagResources.ResetColumnsToDefault:
                     OwnerForm.FilterColumnManager.SetDefault();
                     break;
                 case TagResources.ClearFilter:
-                    gridView1.ActiveFilter.Clear();
+                    gridViewStock.ActiveFilter.Clear();
                     break;
                 case TagResources.Preview:
                     ShowPreview();       
@@ -259,21 +327,22 @@ namespace DevExpress.MailClient.Win.Modules {
         }
         bool EnableDelete {
             get {
-                foreach (int row in gridView1.GetSelectedRows())
+                foreach (int row in gridViewStock.GetSelectedRows())
                     if (row >= 0)
                         return true;
                 return false;
             }
         }
 
-        void CreateNewMailMessage() {
-            Message message = new Message();
-            message.MailType = MailType.Draft;
-            EditMessage(message, true, null);
+        void CreateStock() {
+            var stock = new ModelViewStock();
+            //message.MailType = MailType.Draft;
+            EditStock(stock, true, null);
         }
-        void EditMessage(Message message, bool newMessage, string caption) {
+        void EditStock(ModelViewStock stock, bool newStock, string caption)
+        {
             Cursor.Current = Cursors.WaitCursor;
-            frmEditMail form = new frmEditMail(message, newMessage, caption);
+            frmEditStock form = new frmEditStock(stock, newStock, caption);
             form.Load += OnEditMailFormLoad;
             form.FormClosed += OnEditMailFormClosed;
             form.Location = new Point(OwnerForm.Left + (OwnerForm.Width - form.Width) / 2, OwnerForm.Top + (OwnerForm.Height - form.Height) / 2);
@@ -281,19 +350,19 @@ namespace DevExpress.MailClient.Win.Modules {
             Cursor.Current = Cursors.Default;
         }
         void CreateReplyAllMailMessages() {
-            foreach (int row in gridView1.GetSelectedRows())
+            foreach (int row in gridViewStock.GetSelectedRows())
                 CreateReplyMailMessage(row);
         }
 
         void CreateReplyMailMessage() {
-            int[] rows = gridView1.GetSelectedRows();
+            int[] rows = gridViewStock.GetSelectedRows();
             if (rows.Length != 1)
                 return;
             CreateReplyMailMessage(rows[0]);
         }
         void CreateReplyMailMessage(int row) {
             if (row >= 0) {
-                Message message = ((Message)gridView1.GetRow(row));
+                Message message = ((Message)gridViewStock.GetRow(row));
                 if (message.MailType != MailType.Deleted && !message.Deleted)
                     CreateReplyMailMessage(message);
             }
@@ -305,17 +374,17 @@ namespace DevExpress.MailClient.Win.Modules {
             message.Subject = originalMessage.Subject;
             message.Text = CreateReplyMessageText(originalMessage.Text, message.From, originalMessage.Date);
             message.IsReply = true;
-            EditMessage(message, true, null);
+            /*EditStock(message, true, null);*/
         }
         void CreateForwardMailMessage() {
-            int[] rows = gridView1.GetSelectedRows();
+            int[] rows = gridViewStock.GetSelectedRows();
             if (rows.Length != 1)
                 return;
             CreateForwardMailMessage(rows[0]);
         }
         void CreateForwardMailMessage(int row) {
             if (row >= 0) {
-                Message message = ((Message)gridView1.GetRow(row));
+                Message message = ((Message)gridViewStock.GetRow(row));
                 if (message.MailType != MailType.Deleted && !message.Deleted)
                     CreateForwardMailMessage(message);
             }
@@ -325,7 +394,7 @@ namespace DevExpress.MailClient.Win.Modules {
             message.MailType = MailType.Draft;
             message.Subject = originalMessage.Subject;
             message.Text = CreateForwardMessageText(originalMessage.Text, String.Empty);
-            EditMessage(message, true, null);
+            /*EditStock(message, true, null);*/
         }
 
         string CreateReplyMessageText(string text, string to, DateTime originalMessageDate) {
@@ -368,23 +437,23 @@ namespace DevExpress.MailClient.Win.Modules {
             document.AppendText(Properties.Resources.ForwardTextStart);
         }
         void OnEditMailFormLoad(object sender, EventArgs e) {
-            frmEditMail form = sender as frmEditMail;
+            frmEditStock form = sender as frmEditStock;
             if (form != null)
                 form.SaveMessage += OnEditMailFormSaveMessage;
         }
 
         void OnEditMailFormSaveMessage(object sender, EventArgs e) {
-            frmEditMail form = sender as frmEditMail;
+            frmEditStock form = sender as frmEditStock;
             if (form == null)
                 return;
 
-            if (!DataHelper.Messages.Contains(form.SourceMessage))
-                DataHelper.Messages.Add(form.SourceMessage);
+            /*if (!DataHelper.Messages.Contains(form.SourceMessage))
+                DataHelper.Messages.Add(form.SourceMessage);*/
             RaiseUpdateTreeViewMessages();
         }
 
         void OnEditMailFormClosed(object sender, FormClosedEventArgs e) {
-            frmEditMail form = sender as frmEditMail;
+            frmEditStock form = sender as frmEditStock;
             if (form != null)
                 form.SaveMessage -= OnEditMailFormSaveMessage;
         }
@@ -424,19 +493,19 @@ namespace DevExpress.MailClient.Win.Modules {
         PopupMenu PriorityMenu {
             get {
                 if(priorityMenu == null)
-                    priorityMenu = new PriorityMenu(ribbon.Manager, gridView1, Properties.Resources.Low16x16, Properties.Resources.High16x16);
+                    priorityMenu = new PriorityMenu(ribbon.Manager, gridViewStock, Properties.Resources.Low16x16, Properties.Resources.High16x16);
                 return priorityMenu;
             }
         }
         PopupMenu DateFilterMenu {
             get {
                 if(dateFilterMenu == null)
-                    dateFilterMenu = new DateFilterMenu(ribbon.Manager, gridView1, filterCriteriaManager);
+                    dateFilterMenu = new DateFilterMenu(ribbon.Manager, gridViewStock, filterCriteriaManager);
                 return dateFilterMenu;
             }
         }
         void MakeFocusedRowVisible() {
-            gridView1.MakeRowVisible(gridView1.FocusedRowHandle);
+            gridViewStock.MakeRowVisible(gridViewStock.FocusedRowHandle);
         }
         protected internal override void SendKeyDown(KeyEventArgs e) {
             base.SendKeyDown(e);
@@ -465,12 +534,12 @@ namespace DevExpress.MailClient.Win.Modules {
 
         void CalcPreviewIndent() {
             int indent = 0;
-            foreach(GridColumn column in gridView1.VisibleColumns) {
+            foreach(GridColumn column in gridViewStock.VisibleColumns) {
                 if("Priority;Read;Attachment".IndexOf(column.FieldName) > -1)
                     indent += column.Width;
                 else break;
             }
-            gridView1.PreviewIndent = indent;
+            gridViewStock.PreviewIndent = indent;
         }
 
         

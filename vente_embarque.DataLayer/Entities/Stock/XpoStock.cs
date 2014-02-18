@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DevExpress.Xpo;
-using vente_embarque.DataLayer.Entities.Stock;
 
-namespace vente_embarque.DataLayer.Stock
+namespace vente_embarque.DataLayer.Entities.Stock
 {
     public class XpoStock : XPBaseObject
     {

@@ -132,7 +132,7 @@
     <value>0, 0</value>
   </data>
   <data name="gridControlStock.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1226, 206</value>
+    <value>1226, 182</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="gridControlStock.TabIndex" type="System.Int32, mscorlib">
@@ -166,7 +166,7 @@
     <value>0, 0</value>
   </data>
   <data name="gridControlProduct.Size" type="System.Drawing.Size, System.Drawing">
-    <value>541, 410</value>
+    <value>481, 434</value>
   </data>
   <data name="gridControlProduct.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -186,35 +186,50 @@
   <data name="splitContainerControl1.Panel1.Text" xml:space="preserve">
     <value>Panel1</value>
   </data>
-  <data name="gridControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <metadata name="modelViewProductBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>220, 17</value>
+  </metadata>
+  <data name="GCProductDisplay.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="GCProductDisplay.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>680, 410</value>
+  <data name="layoutViewCard1.CustomizationFormText" xml:space="preserve">
+    <value>TemplateCard</value>
   </data>
-  <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
+  <data name="Group1.CustomizationFormText" xml:space="preserve">
+    <value>Group1</value>
+  </data>
+  <data name="Group1.Text" xml:space="preserve">
+    <value>Group1</value>
+  </data>
+  <data name="layoutViewCard1.Text" xml:space="preserve">
+    <value>TemplateCard</value>
+  </data>
+  <data name="GCProductDisplay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>740, 434</value>
+  </data>
+  <data name="GCProductDisplay.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;gridControl1.Name" xml:space="preserve">
-    <value>gridControl1</value>
+  <data name="&gt;&gt;GCProductDisplay.Name" xml:space="preserve">
+    <value>GCProductDisplay</value>
   </data>
-  <data name="&gt;&gt;gridControl1.Type" xml:space="preserve">
+  <data name="&gt;&gt;GCProductDisplay.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;gridControl1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;GCProductDisplay.Parent" xml:space="preserve">
     <value>splitContainerControl1.Panel2</value>
   </data>
-  <data name="&gt;&gt;gridControl1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;GCProductDisplay.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="splitContainerControl1.Panel2.Text" xml:space="preserve">
     <value>Panel2</value>
   </data>
   <data name="splitContainerControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1226, 410</value>
+    <value>1226, 434</value>
   </data>
   <data name="splitContainerControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -548,7 +563,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAB6
-        BwAAAk1TRnQBSQFMAgEBBAEAASABAgEgAQIBDAEAAQwBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        BwAAAk1TRnQBSQFMAgEBBAEAAaABAgGgAQIBDAEAAQwBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABMAMAARgDAAEBAQABCAUAAYABBBgAAYACAAGAAwACgAEAAYADAAGAAQABgAEAAoACAAPAAQABwAHc
         AcABAAHwAcoBpgEAATMFAAEzAQABMwEAATMBAAIzAgADFgEAAxwBAAMiAQADKQEAA1UBAANNAQADQgEA
         AzkBAAGAAXwB/wEAAlAB/wEAAZMBAAHWAQAB/wHsAcwBAAHGAdYB7wEAAdYC5wEAAZABqQGtAgAB/wEz
@@ -609,17 +624,77 @@
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
     <value>1226, 621</value>
   </data>
-  <data name="&gt;&gt;gridView1.Name" xml:space="preserve">
-    <value>gridView1</value>
+  <data name="&gt;&gt;gridViewStock.Name" xml:space="preserve">
+    <value>gridViewStock</value>
   </data>
-  <data name="&gt;&gt;gridView1.Type" xml:space="preserve">
+  <data name="&gt;&gt;gridViewStock.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;gridView2.Name" xml:space="preserve">
-    <value>gridView2</value>
+  <data name="&gt;&gt;gridViewProductLine.Name" xml:space="preserve">
+    <value>gridViewProductLine</value>
   </data>
-  <data name="&gt;&gt;gridView2.Type" xml:space="preserve">
+  <data name="&gt;&gt;gridViewProductLine.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;modelViewProductBindingSource.Name" xml:space="preserve">
+    <value>modelViewProductBindingSource</value>
+  </data>
+  <data name="&gt;&gt;modelViewProductBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LayoutViewProduct.Name" xml:space="preserve">
+    <value>LayoutViewProduct</value>
+  </data>
+  <data name="&gt;&gt;LayoutViewProduct.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutView, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colId.Name" xml:space="preserve">
+    <value>colId</value>
+  </data>
+  <data name="&gt;&gt;colId.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colQuantiteMin.Name" xml:space="preserve">
+    <value>colQuantiteMin</value>
+  </data>
+  <data name="&gt;&gt;colQuantiteMin.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colPhoto.Name" xml:space="preserve">
+    <value>colPhoto</value>
+  </data>
+  <data name="&gt;&gt;colPhoto.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colFournisseur.Name" xml:space="preserve">
+    <value>colFournisseur</value>
+  </data>
+  <data name="&gt;&gt;colFournisseur.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colCategorie.Name" xml:space="preserve">
+    <value>colCategorie</value>
+  </data>
+  <data name="&gt;&gt;colCategorie.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colRemarque.Name" xml:space="preserve">
+    <value>colRemarque</value>
+  </data>
+  <data name="&gt;&gt;colRemarque.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colReference.Name" xml:space="preserve">
+    <value>colReference</value>
+  </data>
+  <data name="&gt;&gt;colReference.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colNom.Name" xml:space="preserve">
+    <value>colNom</value>
+  </data>
+  <data name="&gt;&gt;colNom.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;icEditors.Name" xml:space="preserve">
     <value>icEditors</value>
@@ -633,14 +708,68 @@
   <data name="&gt;&gt;ilColumns.Type" xml:space="preserve">
     <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cardView1.Name" xml:space="preserve">
-    <value>cardView1</value>
+  <data name="&gt;&gt;layoutViewCard1.Name" xml:space="preserve">
+    <value>layoutViewCard1</value>
   </data>
-  <data name="&gt;&gt;cardView1.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Card.CardView, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;layoutViewCard1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewCard, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colPhoto.Name" xml:space="preserve">
+    <value>layoutViewField_colPhoto</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colPhoto.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colRemarque.Name" xml:space="preserve">
+    <value>layoutViewField_colRemarque</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colRemarque.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;Group1.Name" xml:space="preserve">
+    <value>Group1</value>
+  </data>
+  <data name="&gt;&gt;Group1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colFournisseur.Name" xml:space="preserve">
+    <value>layoutViewField_colFournisseur</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colFournisseur.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colCategorie.Name" xml:space="preserve">
+    <value>layoutViewField_colCategorie</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colCategorie.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colReference.Name" xml:space="preserve">
+    <value>layoutViewField_colReference</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colReference.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colNom.Name" xml:space="preserve">
+    <value>layoutViewField_colNom</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colNom.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colQuantiteMin.Name" xml:space="preserve">
+    <value>layoutViewField_colQuantiteMin</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colQuantiteMin.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colId.Name" xml:space="preserve">
+    <value>layoutViewField_colId</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colId.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Mail</value>
+    <value>Stock</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>DevExpress.MailClient.Win.BaseModule, DevExpress.MailClient.Win, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>

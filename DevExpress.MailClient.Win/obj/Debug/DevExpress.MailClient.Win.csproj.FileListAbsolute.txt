@@ -6,7 +6,6 @@ D:\Projets\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailCli
 D:\Projets\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Controls.ucMessageInfo.resources
 D:\Projets\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Forms.frmEditTask.resources
 D:\Projets\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Forms.frmEditContact.resources
-D:\Projets\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.frmEditMail.resources
 D:\Projets\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Controls.ucCalendar.resources
 D:\Projets\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Controls.ucContactInfo.resources
 D:\Projets\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Controls.ucContacts.resources
@@ -37,3 +36,4 @@ D:\Projets\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailCli
 D:\Projets\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.pdb
 D:\Projets\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Modules.Stock.resources
 D:\Projets\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.BDC.resources
+D:\Projets\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.frmEditStock.resources

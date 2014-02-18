@@ -163,7 +163,7 @@
             <classMoniker
               Id="0f3ce968-bdf2-41f3-a3b3-592260922459"
               LastKnownName="Produit"
-              LastKnownLocation="Package_1158.uml" />
+              LastKnownLocation="Package_1548.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -222,38 +222,6 @@
         <ownedOperationsInternal>
           <operation
             Id="42651225-52d0-4760-bca6-4842a53d8a1d"
-            name="CRUD"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
-        </ownedOperationsInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="0f3ce968-bdf2-41f3-a3b3-592260922459"
-        name="Produit"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <ownedAttributesInternal>
-          <property
-            Id="c38319bc-3116-4263-9b08-0b9e2f172b0a"
-            name="Idproduit"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation
-            Id="778cb5d7-1f90-4b21-9d92-d1bc381c160c"
             name="CRUD"
             isLeaf="false"
             isStatic="false"

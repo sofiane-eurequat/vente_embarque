@@ -69,4 +69,5 @@ namespace vente_embarque.DataLayer.Entities.Orders
             set { SetPropertyValue("Sector", ref _Sector, value); }
         }
     }
+
 }

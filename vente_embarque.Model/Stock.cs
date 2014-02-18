@@ -10,7 +10,10 @@ namespace vente_embarque.Model
     public class Stock:EntityBase<Guid>,IAggregateRoot
     {
         public string Name { get; set; }
-        public List<ProductLine> ProductLines { get; set; } 
+        public List<ProductLine> ProductLines { get; set; }
+        public string Wilaya { get; set; }
+        public string Commune { get; set; }
+
         public Stock(string name)
         {
             Name = name;
@@ -30,9 +33,7 @@ namespace vente_embarque.Model
 
         public List<Product> GetProductInvendue(int mois)
         {
-            //var products = ProductLines.Where(e => e.Product.id == id).Select(p => p.Product);
-            var produitInvendue = (from productline in ProductLines let journNVendue = (productline.Product.DateEntree - DateTime.Now).TotalDays where journNVendue > mois*30 select productline.Product).ToList();
-            return produitInvendue;
+            return new List<Product>();
         }
 
         public Product GetProduct(Guid id)
@@ -46,6 +47,12 @@ namespace vente_embarque.Model
             var products = ProductLines.Where(e => e.Product.Name == name).Select(p => p.Product);
             return products.Any() ? products.First() : null;
             //todo: si plusiseur produit retourner une excetion
+        }
+
+        public IEnumerable<Product> GetProducts()
+        {
+            var products = ProductLines.Select(p => p.Product);
+            return products;
         }
 
         public int GetQuantity(string name)
@@ -70,11 +77,7 @@ namespace vente_embarque.Model
             return stock;
         }
 
-        public static Product CreateProduct(string name, int quantiteMin=0)
-        {
-            var product = new Product {Name = name, QuantiteMin = quantiteMin,id = Guid.NewGuid()};
-            return product;
-        }
+        
 
         public static ProductLine CreateProductLine(Stock stock,Product product,int quantity=0)
         {

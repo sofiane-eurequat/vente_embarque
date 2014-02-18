@@ -39,11 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Category.cs" />
     <Compile Include="Client.cs" />
+    <Compile Include="Communes.cs" />
     <Compile Include="Delivery.cs" />
+    <Compile Include="Enum\GestionProduit.cs" />
     <Compile Include="Enum\Priorite.cs" />
     <Compile Include="Enum\ProduitInvendue.cs" />
     <Compile Include="Enum\StockBas.cs" />
+    <Compile Include="Marque.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="OrderLine.cs" />
     <Compile Include="Product.cs" />
@@ -51,6 +55,7 @@
     <Compile Include="Secteur.cs" />
     <Compile Include="Stock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Wilaya.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\vente_embarque.Core\vente_embarque.Core.csproj">

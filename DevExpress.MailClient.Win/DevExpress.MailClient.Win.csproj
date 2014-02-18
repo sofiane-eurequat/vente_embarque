@@ -286,11 +286,11 @@
     <Compile Include="Forms\frmEditContact.Designer.cs">
       <DependentUpon>frmEditContact.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmEditMail.cs">
+    <Compile Include="Forms\Stock\frmEditStock.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmEditMail.Designer.cs">
-      <DependentUpon>frmEditMail.cs</DependentUpon>
+    <Compile Include="Forms\Stock\frmEditStock.Designer.cs">
+      <DependentUpon>frmEditStock.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\ucCalendar.cs">
       <SubType>UserControl</SubType>
@@ -410,8 +410,8 @@
     <EmbeddedResource Include="Forms\frmEditContact.resx">
       <DependentUpon>frmEditContact.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmEditMail.resx">
-      <DependentUpon>frmEditMail.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Stock\frmEditStock.resx">
+      <DependentUpon>frmEditStock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ucCalendar.resx">
       <DependentUpon>ucCalendar.cs</DependentUpon>
@@ -458,20 +458,24 @@
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="App.config" />
     <EmbeddedResource Include="Dictionaries\default.zip" />
+    <None Include="Properties\DataSources\vente_embarque.Model.Communes.datasource" />
+    <None Include="Properties\DataSources\vente_embarque.Model.Wilaya.datasource" />
+    <None Include="Properties\DataSources\vente_embarque.presenter.ModelViewProduct.datasource" />
+    <None Include="Properties\DataSources\vente_embarque.presenter.ModelViewProductLine.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -487,6 +491,38 @@
     <None Include="Resources\delivery-box-icone-6837-16.png" />
     <None Include="Resources\delivery-box-icone-6837-32.png" />
     <Content Include="Data\Mail.xml" />
+    <None Include="Resources\Action_New_32x32.png" />
+    <None Include="Resources\Action_New_12x12.png" />
+    <None Include="Resources\Action_Save_32x32.png" />
+    <None Include="Resources\Action_Save_12x12.png" />
+    <None Include="Resources\Action_Save_Close.png" />
+    <None Include="Resources\Action_Save_Close_32x32.png" />
+    <None Include="Resources\Action_Save_New.png" />
+    <None Include="Resources\Action_Save_New_32x32.png" />
+    <None Include="Resources\clear_16x16.png" />
+    <None Include="Resources\clear_32x32.png" />
+    <None Include="Resources\clear_32x321.png" />
+    <None Include="Resources\clear_16x161.png" />
+    <None Include="Resources\close_16x161.png" />
+    <Content Include="Resources\delete-16x16.png" />
+    <None Include="Resources\undo_16x16.png" />
+    <None Include="Resources\undo_32x32.png" />
+    <None Include="Resources\undo_32x321.png" />
+    <None Include="Resources\undo_16x161.png" />
+    <None Include="Resources\saveandnew_16x16.png" />
+    <None Include="Resources\saveandnew_32x32.png" />
+    <None Include="Resources\saveandnew_32x321.png" />
+    <None Include="Resources\saveandnew_16x161.png" />
+    <None Include="Resources\refresh2_16x16.png" />
+    <None Include="Resources\refresh2_32x32.png" />
+    <None Include="Resources\refresh2_32x321.png" />
+    <None Include="Resources\refresh2_16x161.png" />
+    <None Include="Resources\previous_16x16.png" />
+    <None Include="Resources\previous_32x32.png" />
+    <None Include="Resources\next_16x16.png" />
+    <None Include="Resources\next_32x32.png" />
+    <Content Include="Resources\Valid_12x12.png" />
+    <Content Include="Resources\Valid_32x32.png" />
     <Content Include="Resources\Mail_32x32.png" />
   </ItemGroup>
   <ItemGroup>
@@ -868,6 +904,9 @@
       <Project>{847815dd-a040-4190-a8e8-0d5ac63e243d}</Project>
       <Name>vente_embarque.presenter</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Photos\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

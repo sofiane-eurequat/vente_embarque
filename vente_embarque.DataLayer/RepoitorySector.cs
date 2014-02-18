@@ -9,7 +9,7 @@ using vente_embarque.Model;
 
 namespace vente_embarque.DataLayer
 {
-    class RepoitorySector : IRepository<Sector, Guid>
+    public class RepoitorySector : IRepository<Sector, Guid>
     {
         public Sector FindBy(Guid id)
         {

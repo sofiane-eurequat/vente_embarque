@@ -21,6 +21,7 @@ namespace vente_embarque.Test
     {
         private Mock<IRepository<Stock, Guid>> stockMock;
         private Mock<IRepository<Sector, Guid>> sectorMock;
+        private Mock<IRepository<Product, Guid>> productMock;
         [SetUp]
         public void SetupStockMock()
         {
@@ -29,9 +30,9 @@ namespace vente_embarque.Test
             var factoryStockCreateStock = FactoryStock.CreateStock("stock1");
             
            // mock du stock
-            FactoryStock.CreateProductLine(factoryStockCreateStock, FactoryStock.CreateProduct("product1"), 10);
-            FactoryStock.CreateProductLine(factoryStockCreateStock, FactoryStock.CreateProduct("product2"), 10);
-            FactoryStock.CreateProductLine(factoryStockCreateStock, FactoryStock.CreateProduct("product3"), 10);
+            FactoryStock.CreateProductLine(factoryStockCreateStock, FactoryProduct.CreateProduct("product1"), 10);
+            FactoryStock.CreateProductLine(factoryStockCreateStock, FactoryProduct.CreateProduct("product2"), 10);
+            FactoryStock.CreateProductLine(factoryStockCreateStock, FactoryProduct.CreateProduct("product3"), 10);
 
             stockMock = new Mock<IRepository<Stock, Guid>>();
             stockMock.Setup(e => e.FindBy(It.IsAny<Query>())).Returns(
@@ -49,6 +50,19 @@ namespace vente_embarque.Test
                 new List<Sector>() {sector}
                 );
 
+
+            //mock du produit 
+            var produit1=FactoryProduct.CreateProduct("MockedProduct");
+            var produit2 = FactoryProduct.CreateProduct("MockedProduct", 15, "ce produit est explosif",
+                                                        reference: "http://www.google.com");
+            productMock=new Mock<IRepository<Product, Guid>>();
+            productMock.Setup(e => e.FindBy(It.IsAny<Query>())).Returns(
+                new List<Product>()
+                    {
+                        produit1,
+                        produit2
+                    }
+                );
         }
 
         [Test]
@@ -118,7 +132,16 @@ namespace vente_embarque.Test
         }
 
         [Test]
-        public void CanCreaateStock()
+        public void CanCreateProduct()
+        {
+            
+        }
+
+
+
+
+        [Test]
+        public void CanCreateStock()
         {
             const string stockName = "stock1";
             const string namepro1 = "produit1";
@@ -126,21 +149,23 @@ namespace vente_embarque.Test
             const int quantiteMinimale = 10;
             var stock = FactoryStock.CreateStock(stockName);
             Assert.AreEqual(stock.Name,"stock1");
-            var produit1 = FactoryStock.CreateProduct( namepro1, quantiteMinimale);
+            var produit1 = FactoryProduct.CreateProduct(namepro1, quantiteMinimale);
             Assert.AreEqual(produit1.Name,"produit1");
             Assert.AreEqual(produit1.QuantiteMin, 10);
-            var produit2 = FactoryStock.CreateProduct(namepro2);
+            var produit2 = FactoryProduct.CreateProduct(namepro2);
             Assert.AreEqual(produit2.Name, "produit2");
             var ligne1 = FactoryStock.CreateProductLine(stock,produit1, 50);
             var ligne2 = FactoryStock.CreateProductLine(stock,produit2, 20);
-            
+            var listeProduit = productMock.Object.FindBy(new Query()).ToList();
 
-            Assert.AreEqual(stock.ProductLines.Count,2);
+            var ligne3 = FactoryStock.CreateProductLine(stock, listeProduit[1], 20);
+
+            Assert.AreEqual(stock.ProductLines.Count,3);
             /*************************************************/
             /****          Test on the data base          ****/
             /*************************************************/
 
-            new RepositoryStock().Save(stock);
+            //new RepositoryStock().Save(stock);
         }
 
         [Test]
@@ -152,14 +177,16 @@ namespace vente_embarque.Test
             string namepro2 = "produit2";
             int quantiteMinimale = 10;
             var stock = FactoryStock.CreateStock(nameStock);
-            var produit1 = FactoryStock.CreateProduct( namepro1, quantiteMinimale);
-            var produit2 = FactoryStock.CreateProduct( namepro2,15);
+            var produit1 = FactoryProduct.CreateProduct(namepro1, quantiteMinimale);
+            var produit2 = FactoryProduct.CreateProduct(namepro2, 15);
             var ligne1 = FactoryStock.CreateProductLine(stock,produit1, 5);
             var ligne2 = FactoryStock.CreateProductLine(stock,produit2, 20);
             var listProduct = stock.GetProductMinimale();
             Assert.AreEqual(listProduct.Count,1);
 
         }
+
+
 
         [Test]
         public void CanCreateBCWithoutStock()
@@ -199,8 +226,6 @@ namespace vente_embarque.Test
         {
             var stockRepository = stockMock.Object;
             var stock = stockRepository.FindBy(new Query()).First();
-
-            
 
         }
         

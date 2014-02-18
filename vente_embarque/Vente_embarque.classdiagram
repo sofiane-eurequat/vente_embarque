@@ -338,21 +338,6 @@
               </ownedOperationsInternal>
             </class>
           </packageHasNamedElement>
-          <packageHasNamedElement>
-            <class Id="42b6823e-570a-48a0-9185-6f4dd22a3afd" name="Produit" isAbstract="false" isLeaf="false" isActiveClass="false">
-              <elementDefinition Id="0f3ce968-bdf2-41f3-a3b3-592260922459" />
-              <ownedAttributesInternal>
-                <property Id="c0139897-9cbb-4aa5-9fdd-c69c8d6c6a9b" name="Idproduit" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="c38319bc-3116-4263-9b08-0b9e2f172b0a" />
-                </property>
-              </ownedAttributesInternal>
-              <ownedOperationsInternal>
-                <operation Id="d4da138e-0ff7-480a-9373-ffe7aa191614" name="CRUD" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="778cb5d7-1f90-4b21-9d92-d1bc381c160c" />
-                </operation>
-              </ownedOperationsInternal>
-            </class>
-          </packageHasNamedElement>
         </packagedElements>
       </package>
     </logicalClassDesignerModelHasPackages>
@@ -479,6 +464,102 @@
                   <elementDefinition Id="a1d39f0c-708f-4ce0-9dc7-30bcd6a8b60e" />
                 </operation>
               </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="08250579-dacb-42f6-95ad-c1a4b7c32459" name="Package4">
+        <elementDefinition Id="50500a5b-a7d9-4aee-9b7f-9d9f2e846938" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="3ff4976d-fa6c-463c-bf43-31dfbce6af94" name="Category" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="5159e857-e5be-40a4-a8d0-3b77b9ee3a89" />
+              <ownedAttributesInternal>
+                <property Id="bde5859f-7c58-4a90-bbfc-7e1c76aa7a9a" name="Nom" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="edc3a6d6-fc0d-411b-b564-88191f50f835" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="42b6823e-570a-48a0-9185-6f4dd22a3afd" name="Produit" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="0f3ce968-bdf2-41f3-a3b3-592260922459" />
+              <targetEnds>
+                <association Id="622e73b2-6a16-4eff-88cf-88f0bae716ab" isDerived="false" sourceEndRoleName="Produit" targetEndRoleName="Category" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="3ff4976d-fa6c-463c-bf43-31dfbce6af94" LastKnownName="Category" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="f951b73f-f81e-4393-83e6-3c1042119586" name="Produit" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <lowerValueInternal>
+                          <literalString Id="9a38a595-081f-4259-b443-8dfb29141cbe" name="Lower" value="n">
+                            <elementDefinition Id="3e249a0c-1150-4c88-b081-4a53e01be8d3" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="12172359-a8b8-4e9f-87c3-2112b08d0448" name="Upper" value="n">
+                            <elementDefinition Id="884bfef5-7d3f-423e-ace5-24f80acc2771" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="a4623a06-2acc-4159-8be8-69d9e7e92dff" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="22f67795-81b3-4da2-b26b-c6d89e7e7331" name="Category" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="a7c7afaf-a3e1-4bc2-b5c6-4274d5175192" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="6ee1b4d5-d807-4a0c-8172-82e1198aae65" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="c0139897-9cbb-4aa5-9fdd-c69c8d6c6a9b" name="Idproduit" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c38319bc-3116-4263-9b08-0b9e2f172b0a" />
+                </property>
+                <property Id="0756e316-c993-494b-aae7-924c924110de" name="Photo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="62394001-d013-4e3c-9394-a239f73c6040" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="d4da138e-0ff7-480a-9373-ffe7aa191614" name="CRUD" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="778cb5d7-1f90-4b21-9d92-d1bc381c160c" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="69f1fe48-794f-4faf-8bf9-c07999af28a4" name="Marque" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="eb23f6af-8030-4177-9e78-f0d4df461165" />
+              <targetEnds>
+                <association Id="c35087e9-041e-4abd-8c0b-a68c69583ecd" isDerived="false" sourceEndRoleName="Marque" targetEndRoleName="Produit" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="42b6823e-570a-48a0-9185-6f4dd22a3afd" LastKnownName="Produit" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="f9d1a6dc-8ba3-447e-9295-95cbd11bdc6c" name="Marque" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="af4ac2ef-4122-436e-8b8d-db8560b0d6a1" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="c09bfd5d-34a4-44c1-8c0b-f60059d61020" name="Produit" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="4ac8070e-26ff-4194-8b8d-e11d86f156e0" name="Lower" value="n">
+                            <elementDefinition Id="0e5c7948-fbb6-4d01-ade2-ee3fbdc89228" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="97eaf386-ac41-4a3f-a399-2275c7e4fc65" name="Upper" value="n">
+                            <elementDefinition Id="d9e5945c-890b-49d6-8766-25f4f2773d31" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="a4f147a3-a531-4d04-a44b-dbdda8374ed2" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="fb4317dc-2698-4ea1-9c0d-7cf13781d339" />
+                </association>
+              </targetEnds>
             </class>
           </packageHasNamedElement>
         </packagedElements>

@@ -1,6 +1,7 @@
 ﻿using System;
 using DevExpress.Xpo;
 using vente_embarque.DataLayer.Entities.Orders;
+using vente_embarque.Model.Enum;
 
 namespace vente_embarque.DataLayer.Entities.Stock
 {
@@ -39,6 +40,14 @@ namespace vente_embarque.DataLayer.Entities.Stock
         }
 
 
+
+        private GestionProduit _TypeGestion;
+        public GestionProduit TypeGestion
+        {
+            get { return _TypeGestion; }
+            set { SetPropertyValue("TypeGestion", ref _TypeGestion, value); }
+        }
+
         private int _QuantityMin;
         public int QuantityMin
         {
@@ -47,13 +56,21 @@ namespace vente_embarque.DataLayer.Entities.Stock
         }
 
 
-        private DateTime _DateEntree;
-        public DateTime DateEntree
+        private XpoCategory _Category;
+
+        public XpoCategory Category
         {
-            get { return _DateEntree; }
-            set { SetPropertyValue("DateEntree", ref _DateEntree, value); }
+            get { return _Category; }
+            set { SetPropertyValue("Category", ref _Category, value); }
         }
 
+        private XpoMarque _Marque;
+
+        public XpoMarque Marque
+        {
+            get { return _Marque; }
+            set { SetPropertyValue("Marque", ref _Marque, value); }
+        }
 
 
         [Aggregated, Association("XpoProduct-XpoproductLine")]
@@ -65,7 +82,7 @@ namespace vente_embarque.DataLayer.Entities.Stock
 
 
       
-        [Aggregated, Association("XpoProduct-XpoOrderLine")]
+        [Association("XpoProduct-XpoOrderLine")]
         XPCollection<XpoOrderLine> OrderLines
         {
             get { return GetCollection<XpoOrderLine>("OrderLines"); }

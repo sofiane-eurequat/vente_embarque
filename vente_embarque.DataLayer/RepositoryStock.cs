@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 using DevExpress.Xpo;
 using vente_embarque.Core.Domain;
 using vente_embarque.Core.Domain.Query;
-using vente_embarque.DataLayer.Stock;
+using vente_embarque.DataLayer.Entities.Stock;
+using vente_embarque.DataLayer.Helper;
 using vente_embarque.Model;
 
 namespace vente_embarque.DataLayer

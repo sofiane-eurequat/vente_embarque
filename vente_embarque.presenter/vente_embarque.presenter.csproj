@@ -32,6 +32,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -39,9 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IStockView.cs" />
+    <Compile Include="Stok\EditStockPresenterPage.cs" />
+    <Compile Include="Stok\IEditStockView.cs" />
+    <Compile Include="Stok\IStockView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StockPresenterPage.cs" />
+    <Compile Include="Stok\StockPresenterPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\vente_embarque.Core\vente_embarque.Core.csproj">

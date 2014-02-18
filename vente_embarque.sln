@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vente_embarque.DataLayer", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vente_embarque.Model", "vente_embarque.Model\vente_embarque.Model.csproj", "{2E56604B-794E-4753-8F34-AADA359DA8B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vente_embarque.win.UI", "DevExpress.MailClient.Win\vente_embarque.win.UI.csproj", "{1C2E33FD-0D9D-423E-A02A-F457A94C97D6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevExpress.MailClient.Win", "DevExpress.MailClient.Win\DevExpress.MailClient.Win.csproj", "{1C2E33FD-0D9D-423E-A02A-F457A94C97D6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vente_embarque.presenter", "vente_embarque.presenter\vente_embarque.presenter.csproj", "{847815DD-A040-4190-A8E8-0D5AC63E243D}"
 EndProject

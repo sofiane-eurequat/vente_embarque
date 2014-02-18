@@ -55,7 +55,7 @@ namespace DevExpress.MailClient.Win {
             InitBarButtonItem(bbiRotateLayout, TagResources.RotateLayout, Properties.Resources.RotateLayoutDescription);
             InitBarButtonItem(bbiFlipLayout, TagResources.FlipLayout, Properties.Resources.FlipLayoutDescription);
             InitBarButtonItem(bbiDelete, TagResources.DeleteItem, Properties.Resources.DeleteItemDescription);
-            InitBarButtonItem(bbiNew, TagResources.NewMail, Properties.Resources.NewItemDescription);
+            InitBarButtonItem(bbiNew, TagResources.NewStock, Properties.Resources.NewItemDescription);
             InitBarButtonItem(bbiReply, TagResources.Reply, Properties.Resources.ReplyDescription);
             InitBarButtonItem(bbiReplyAll, TagResources.ReplyAll, Properties.Resources.ReplyAllDescription);
             InitBarButtonItem(bbiForward, TagResources.Forward, Properties.Resources.ForwardDescription);
