@@ -208,7 +208,6 @@ namespace vente_embarque.Test
             var product1 = stock.GetProduct("product1");
             var product2 = stock.GetProduct("product2");
             var product3 = stock.GetProduct("product3");
-            
 
             var sectorRepository = sectorMock.Object;
             var sector = sectorRepository.FindBy(new Query()).First();
