@@ -7,7 +7,7 @@ namespace vente_embarque.DataLayer.Helper
     {
         public static void Init()
         {
-            var connectionString = @"data source=SOFIANE-PC\EUREQUAT;integrated security=true;initial catalog=Inventaire";
+            var connectionString = @"data source=SOFYANE-PC\;integrated security=true;initial catalog=Inventaire";
 
             DevExpress.Xpo.Metadata.XPDictionary dict =
             new DevExpress.Xpo.Metadata.ReflectionDictionary();

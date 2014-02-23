@@ -22,7 +22,7 @@ namespace vente_embarque.DataLayer
             using (
                 var uow = new UnitOfWork()
                     {
-                        ConnectionString = @"data source=SOFIANE-PC\EUREQUAT;integrated security=true;initial catalog=Inventaire;"
+                        ConnectionString = @"data source=SOFYANE-PC\;integrated security=true;initial catalog=Inventaire;"
                     })
             {
                 var Products = new XPCollection<XpoProduct>(uow);
@@ -37,7 +37,7 @@ namespace vente_embarque.DataLayer
             using (
                 var uow = new UnitOfWork()
                 {
-                    ConnectionString = @"data source=SOFIANE-PC\EUREQUAT;integrated security=true;initial catalog=Inventaire;"
+                    ConnectionString = @"data source=SOFYANE-PC\;integrated security=true;initial catalog=Inventaire;"
                 })
             {
 

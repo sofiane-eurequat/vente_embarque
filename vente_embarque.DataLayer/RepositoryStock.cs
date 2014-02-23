@@ -26,7 +26,7 @@ namespace vente_embarque.DataLayer
             using (
                 var uow = new UnitOfWork()
                 {
-                    ConnectionString = @"data source=SOFIANE-PC\EUREQUAT;integrated security=true;initial catalog=Inventaire;"
+                    ConnectionString = @"data source=SOFYANE-PC\;integrated security=true;initial catalog=Inventaire;"
                 })
             {
                 var stocks = new XPCollection<XpoStock>(uow);
@@ -61,7 +61,7 @@ namespace vente_embarque.DataLayer
             using (
                 var uow = new UnitOfWork()
                     {
-                        ConnectionString = @"data source=SOFIANE-PC\EUREQUAT;integrated security=true;initial catalog=Inventaire;"
+                        ConnectionString = @"data source=SOFYANE-PC\;integrated security=true;initial catalog=Inventaire;"
                     })
             {
                 Map.Map.MapStock(entity,uow);

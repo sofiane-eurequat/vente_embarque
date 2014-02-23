@@ -63,6 +63,16 @@ namespace vente_embarque.Test
                         produit2
                     }
                 );
+            var nomSector = "secteur1";
+            var secteur=FactorySector.CreateSector(nomSector);
+            sectorMock=new Mock<IRepository<Sector, Guid>>();
+            sectorMock.Setup(e => e.FindBy(It.IsAny<Query>())).Returns(
+                new List<Sector>()
+                    {
+                        secteur
+                    }
+                );
+
         }
 
         [Test]
@@ -229,10 +239,21 @@ namespace vente_embarque.Test
 
         }
         
+        [Test]
+        public void CanCreateAgentTerrain()
+        {
+            var nomAgent = "Agent1";
+            var nomAgent2 = "Agent2";
+            var agentterrain = FactoryAgentTerrain.CreateAgentTerrain(nomAgent);
+            Assert.AreEqual(agentterrain.Name,nomAgent);
+
+            var secteur=sectorMock.Object.FindBy(new Query()).First();
+            AgentTerrain agentTerrainSecteur = FactoryAgentTerrain.CreateAgentTerrain(nomAgent2,secteur);
+            Assert.AreEqual(agentTerrainSecteur.Name,nomAgent2);
+            Assert.AreEqual(agentTerrainSecteur.Secteur,secteur);
+        }
 
 
-
-     
     }
 
     
