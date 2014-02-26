@@ -772,6 +772,6 @@
     <value>Stock</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.BaseModule, DevExpress.MailClient.Win, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>DevExpress.MailClient.Win.BaseModule, DevExpress.MailClient.Win.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
 </root>

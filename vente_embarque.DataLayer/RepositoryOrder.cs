@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -44,11 +45,11 @@ namespace vente_embarque.DataLayer
 
         public void Save(Order entity)
         {
-
+            AppSettingsReader config = new AppSettingsReader();
             using (
                 var uow = new UnitOfWork()
                 {
-                    ConnectionString = @"data source=SOFYANE-PC\;integrated security=true;initial catalog=Inventaire;"
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
                 })
             {
                 Map.Map.MapOrder(entity, uow);

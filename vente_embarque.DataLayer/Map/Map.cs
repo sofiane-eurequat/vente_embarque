@@ -20,6 +20,7 @@ namespace vente_embarque.DataLayer.Map
                     Name =stock.Name,
                     Oid = stock.id
                 };
+            if (stock.ProductLines == null) return xpostock;
             foreach (var pl in stock.ProductLines)
             {
                 var crierion = new Criterion(propertyName: "Name", value: pl.Product.Name,criteriaOperator:CriteriaOperator.Equal);

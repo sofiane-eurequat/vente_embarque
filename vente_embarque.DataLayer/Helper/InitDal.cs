@@ -1,4 +1,5 @@
-﻿using vente_embarque.DataLayer.Entities.Orders;
+﻿using System.Configuration;
+using vente_embarque.DataLayer.Entities.Orders;
 using vente_embarque.DataLayer.Entities.Stock;
 
 namespace vente_embarque.DataLayer.Helper
@@ -7,8 +8,9 @@ namespace vente_embarque.DataLayer.Helper
     {
         public static void Init()
         {
-            var connectionString = @"data source=SOFYANE-PC\;integrated security=true;initial catalog=Inventaire";
-
+            AppSettingsReader config=new AppSettingsReader();
+            var connectionString = ((string) config.GetValue("connect", typeof (string)));
+            
             DevExpress.Xpo.Metadata.XPDictionary dict =
             new DevExpress.Xpo.Metadata.ReflectionDictionary();
             // Initialize the XPO dictionary.

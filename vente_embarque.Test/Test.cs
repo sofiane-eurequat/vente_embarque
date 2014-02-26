@@ -21,6 +21,7 @@ namespace vente_embarque.Test
     {
         private Mock<IRepository<Stock, Guid>> stockMock;
         private Mock<IRepository<Sector, Guid>> sectorMock;
+        private Mock<IRepository<Sector, Guid>> sectorMock2;
         private Mock<IRepository<Product, Guid>> productMock;
         [SetUp]
         public void SetupStockMock()
@@ -65,8 +66,8 @@ namespace vente_embarque.Test
                 );
             var nomSector = "secteur1";
             var secteur=FactorySector.CreateSector(nomSector);
-            sectorMock=new Mock<IRepository<Sector, Guid>>();
-            sectorMock.Setup(e => e.FindBy(It.IsAny<Query>())).Returns(
+            sectorMock2=new Mock<IRepository<Sector, Guid>>();
+            sectorMock2.Setup(e => e.FindBy(It.IsAny<Query>())).Returns(
                 new List<Sector>()
                     {
                         secteur
@@ -103,7 +104,8 @@ namespace vente_embarque.Test
         [Test]
         public void CanCreateBonCommande()
         {
-            var stockRepository = stockMock.Object;
+            IRepository<Stock, Guid> stockRepository = stockMock.Object;
+
             var stock=stockRepository.FindBy(new Query()).First();
 
             var product1=stock.GetProduct("product1");
@@ -120,9 +122,9 @@ namespace vente_embarque.Test
             orders.Add(orderLine1);
             orders.Add(orderLine2);
 
-
             var sectorRepository = sectorMock.Object;
-            var sector = sectorRepository.FindBy(new Query()).First();
+            IEnumerable<Sector> sectorRepositoryFindBy = sectorRepository.FindBy(new Query());
+            var sector = sectorRepositoryFindBy.First(s => s.Name == "nom secteur1");
             var client=sector.GetClient("NomClient1");
 
             var BonDeCommande = FactoryOrder.CreateOrder(stock,client, orders);
@@ -252,7 +254,14 @@ namespace vente_embarque.Test
             Assert.AreEqual(agentTerrainSecteur.Secteur,secteur);
         }
 
-
+        [Test]
+        public void CanCreateStockDatabase()
+        {
+            string stock1 = "stock2";
+            var stock = FactoryStock.CreateStock(stock1);
+            var rs = new RepositoryStock();
+            rs.Save(stock);
+        }
     }
 
     

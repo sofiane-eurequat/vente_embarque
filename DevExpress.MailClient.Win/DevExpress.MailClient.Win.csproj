@@ -62,140 +62,117 @@
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v13.1">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>
-      </HintPath>
+      
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Data.v13.1">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>
-      </HintPath>
+      
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Printing.v13.1.Core">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>
-      </HintPath>
+      
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Office.v13.1.Core">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>
-      </HintPath>
+      
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Docs.v13.1">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>
-      </HintPath>
+      
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.RichEdit.v13.1.Core">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>
-      </HintPath>
+      
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.SpellChecker.v13.1.Core">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>
-      </HintPath>
+      
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Utils.v13.1">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>
-      </HintPath>
+      
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraBars.v13.1">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>
-      </HintPath>
+      
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraEditors.v13.1">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>
-      </HintPath>
+      
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraGrid.v13.1">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>
-      </HintPath>
+      
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraLayout.v13.1">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>
-      </HintPath>
+      
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraNavBar.v13.1">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>
-      </HintPath>
+      
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraPrinting.v13.1">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>
-      </HintPath>
+      
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraRichEdit.v13.1">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>
-      </HintPath>
+      
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraRichEdit.v13.1.Extensions">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>
-      </HintPath>
+      
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraScheduler.v13.1.iCalendarExchange">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>
-      </HintPath>
+      
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraSpellChecker.v13.1">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>
-      </HintPath>
+      
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraTreeList.v13.1">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>
-      </HintPath>
+      
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraScheduler.v13.1.Reporting.Extensions">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>
-      </HintPath>
+      
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraScheduler.v13.1">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>
-      </HintPath>
+      
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraScheduler.v13.1.Core">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>
-      </HintPath>
+      
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraScheduler.v13.1.Extensions">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>
-      </HintPath>
+      
       <Private>False</Private>
     </Reference>
     <Reference Include="System">

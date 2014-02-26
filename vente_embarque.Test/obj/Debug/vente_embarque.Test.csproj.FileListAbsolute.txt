@@ -45,3 +45,4 @@ C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_emba
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.Test\bin\Debug\Moq.xml
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.Test\bin\Debug\nunit.framework.xml
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.Test\obj\Debug\vente_embarque.Test.pdb
+D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\vente_embarque.Test.dll.config

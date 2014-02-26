@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using DevExpress.Xpo;
 using vente_embarque.Core.Domain;
@@ -19,10 +20,11 @@ namespace vente_embarque.DataLayer
         public IEnumerable<Wilaya> FindAll()
         {
             var listeWilaya = new List<Model.Wilaya>();
+            AppSettingsReader config = new AppSettingsReader();
             using (
                 var uow = new UnitOfWork()
                 {
-                    ConnectionString = @"data source=SOFYANE-PC\;integrated security=true;initial catalog=Inventaire;"
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
                 })
             {
                 var Wilayas = new XPCollection<XpoWilaya>(uow);

@@ -136,7 +136,7 @@
     <value>helpControl1</value>
   </data>
   <data name="&gt;&gt;helpControl1.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.Controls.HelpControl, DevExpress.MailClient.Win, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>DevExpress.MailClient.Win.Controls.HelpControl, DevExpress.MailClient.Win.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;helpControl1.Parent" xml:space="preserve">
     <value>backstageViewClientControl1</value>
@@ -259,7 +259,7 @@
     <value>printControl1</value>
   </data>
   <data name="&gt;&gt;printControl1.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.Controls.PrintControl, DevExpress.MailClient.Win, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>DevExpress.MailClient.Win.Controls.PrintControl, DevExpress.MailClient.Win.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;printControl1.Parent" xml:space="preserve">
     <value>backstageViewClientControl3</value>
@@ -304,7 +304,7 @@
     <value>exportControl1</value>
   </data>
   <data name="&gt;&gt;exportControl1.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.Controls.ExportControl, DevExpress.MailClient.Win, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>DevExpress.MailClient.Win.Controls.ExportControl, DevExpress.MailClient.Win.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;exportControl1.Parent" xml:space="preserve">
     <value>backstageViewClientControl4</value>
@@ -764,7 +764,7 @@
     <value>ucMailTree1</value>
   </data>
   <data name="&gt;&gt;ucMailTree1.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.ucMailTree, DevExpress.MailClient.Win, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>DevExpress.MailClient.Win.ucMailTree, DevExpress.MailClient.Win.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ucMailTree1.Parent" xml:space="preserve">
     <value>navBarGroupControlContainer1</value>
@@ -812,7 +812,7 @@
     <value>ucCalendar1</value>
   </data>
   <data name="&gt;&gt;ucCalendar1.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.Controls.ucCalendar, DevExpress.MailClient.Win, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>DevExpress.MailClient.Win.Controls.ucCalendar, DevExpress.MailClient.Win.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ucCalendar1.Parent" xml:space="preserve">
     <value>navBarGroupControlContainer2</value>
@@ -854,7 +854,7 @@
     <value>ucContacts1</value>
   </data>
   <data name="&gt;&gt;ucContacts1.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.Controls.ucContacts, DevExpress.MailClient.Win, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>DevExpress.MailClient.Win.Controls.ucContacts, DevExpress.MailClient.Win.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ucContacts1.Parent" xml:space="preserve">
     <value>navBarGroupControlContainer3</value>

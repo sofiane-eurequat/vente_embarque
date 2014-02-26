@@ -22,11 +22,12 @@ namespace vente_embarque.DataLayer
 
         public IEnumerable<Model.Stock> FindAll()
         {
+            AppSettingsReader config = new AppSettingsReader();
             var listestoks = new List<Model.Stock>();
             using (
                 var uow = new UnitOfWork()
                 {
-                    ConnectionString = @"data source=SOFYANE-PC\;integrated security=true;initial catalog=Inventaire;"
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
                 })
             {
                 var stocks = new XPCollection<XpoStock>(uow);
@@ -57,11 +58,12 @@ namespace vente_embarque.DataLayer
 
         public void Save(Model.Stock entity)
         {
-
+            AppSettingsReader config=new AppSettingsReader();
+            
             using (
                 var uow = new UnitOfWork()
                     {
-                        ConnectionString = @"data source=SOFYANE-PC\;integrated security=true;initial catalog=Inventaire;"
+                        ConnectionString = ((string)config.GetValue("connect", typeof(string)))
                     })
             {
                 Map.Map.MapStock(entity,uow);

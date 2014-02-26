@@ -132,7 +132,7 @@
     <value>ucMailViewer1</value>
   </data>
   <data name="&gt;&gt;ucMailViewer1.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.ucMailViewer, DevExpress.MailClient.Win, Culture=neutral</value>
+    <value>DevExpress.MailClient.Win.ucMailViewer, DevExpress.MailClient.Win.v13.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;ucMailViewer1.Parent" xml:space="preserve">
     <value>layoutControl1</value>
@@ -332,6 +332,6 @@
     <value>Feeds</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.BaseModule, DevExpress.MailClient.Win, Culture=neutral</value>
+    <value>DevExpress.MailClient.Win.BaseModule, DevExpress.MailClient.Win.v13.1, Culture=neutral</value>
   </data>
 </root>

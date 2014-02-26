@@ -223,7 +223,7 @@ our components better</value>
     <value>backstageViewLabel1</value>
   </data>
   <data name="&gt;&gt;backstageViewLabel1.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.Controls.BackstageViewLabel, DevExpress.MailClient.Win, Culture=neutral</value>
+    <value>DevExpress.MailClient.Win.Controls.BackstageViewLabel, DevExpress.MailClient.Win.v13.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;backstageViewLabel1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel1</value>
@@ -325,6 +325,6 @@ our components better</value>
     <value>HelpControl</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.Controls.RibbonApplicationUserControl, DevExpress.MailClient.Win, Culture=neutral</value>
+    <value>DevExpress.MailClient.Win.Controls.RibbonApplicationUserControl, DevExpress.MailClient.Win.v13.1, Culture=neutral</value>
   </data>
 </root>
