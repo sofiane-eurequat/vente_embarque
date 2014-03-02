@@ -76,3 +76,5 @@ C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Properties.Resources.resources
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.csproj.GenerateResource.Cache
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.exe.licenses
+D:\Projets\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Modules.Secteur.resources
+D:\Projets\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Forms.GestionSecteur.resources

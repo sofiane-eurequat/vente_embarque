@@ -3,7 +3,7 @@ using DevExpress.Xpo;
 
 namespace vente_embarque.DataLayer.Entities.Orders
 {
-    public class XpoSector: XPBaseObject
+    public class XpoSector : XPBaseObject
     {
 
         public XpoSector()
@@ -22,6 +22,7 @@ namespace vente_embarque.DataLayer.Entities.Orders
 
 
         private Guid _Oid;
+
         [Key]
         public Guid Oid
         {
@@ -30,6 +31,7 @@ namespace vente_embarque.DataLayer.Entities.Orders
         }
 
         private String _Name;
+
         public String Name
         {
             get { return _Name; }
@@ -43,8 +45,10 @@ namespace vente_embarque.DataLayer.Entities.Orders
             get { return GetCollection<XpoClient>("Clients"); }
         }
 
-
-
-
+        [Aggregated, Association("XpoAgentTerrain-XpoSector")]
+        public XPCollection<XpoAgentTerrain> AgentTerrains
+        {
+            get { return GetCollection<XpoAgentTerrain>("AgentTerrains"); }
+        }
     }
 }

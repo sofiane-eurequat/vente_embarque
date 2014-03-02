@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DevExpress.Xpo;
 using vente_embarque.Core.Domain.Query;
+using vente_embarque.DataLayer.Entities;
 using vente_embarque.DataLayer.Entities.Orders;
 using vente_embarque.DataLayer.Entities.Stock;
 using vente_embarque.Model;
@@ -87,7 +88,15 @@ namespace vente_embarque.DataLayer.Map
                     PreName = client.PreNom,
                     
                 };
+        }
 
+        public static XpoAgentTerrain MapAgentTerrain(AgentTerrain agentterrain, UnitOfWork uow)
+        {
+            return new XpoAgentTerrain(uow)
+            {
+                Name = agentterrain.Name,
+                Oid = agentterrain.id,
+            };
         }
     }
 }

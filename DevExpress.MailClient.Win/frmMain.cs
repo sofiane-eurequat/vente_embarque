@@ -26,9 +26,10 @@ namespace DevExpress.MailClient.Win {
         internal FilterColumnsManager FilterColumnManager;
         ZoomManager zoomManager;
         List<BarItem> AllowCustomizationMenuList = new List<BarItem>();
+
         public frmMain() {
             InitializeComponent();
-            rpcSearch.Text = TagResources.SearchTools;
+            //rpcSearch.Text = TagResources.SearchTools;
             InitNavBarGroups();
             SkinHelper.InitSkinGallery(rgbiSkins);
             RibbonButtonsInitialize();
@@ -155,16 +156,17 @@ namespace DevExpress.MailClient.Win {
         }
         void InitNavBarGroups() {
             nbgMail.Tag = new NavBarGroupTagObject("Stock", typeof(Stock));
-            nbgCalendar.Tag = new NavBarGroupTagObject("Calendar", typeof(DevExpress.MailClient.Win.Calendar));
-            nbgContacts.Tag = new NavBarGroupTagObject("Contacts", typeof(DevExpress.MailClient.Win.Contacts));
+            nbgCalendar.Tag = new NavBarGroupTagObject("Calendar", typeof(Calendar));
+            nbgContacts.Tag = new NavBarGroupTagObject("Contacts", typeof(Contacts));
+            nbgSecteur.Tag = new NavBarGroupTagObject("Secteur", typeof (Secteur));
             //nbgBDC.Tag = new NavBarGroupTagObject("BDC", typeof(BDC));
             //nbgTasks.Tag = new NavBarGroupTagObject("Tasks", typeof(DevExpress.MailClient.Win.Tasks));
         }
         public void ReadMessagesChanged() {
-            ucMailTree1.RefreshTreeList();
+           // ucMailTree1.RefreshTreeList();
         }
         public void UpdateTreeViewMessages() {
-            ucMailTree1.UpdateTreeViewMessages();
+           // ucMailTree1.UpdateTreeViewMessages();
         }
         internal void EnableDelete(bool enabled) {
             bbiDelete.Enabled = enabled;
@@ -238,7 +240,7 @@ namespace DevExpress.MailClient.Win {
             ShowInfo(e.List.Count);
         }
         private void ucMailTree1_ShowMenu(object sender, MouseEventArgs e) {
-            pmTreeView.ShowPopup(ucMailTree1.PointToScreen(e.Location));
+            //pmTreeView.ShowPopup(ucMailTree1.PointToScreen(e.Location));
         }
         private void pmTreeView_BeforePopup(object sender, CancelEventArgs e) {
             bciShowAllMessageCount.Checked = DataHelper.ShowAllMessageCount;
@@ -246,18 +248,18 @@ namespace DevExpress.MailClient.Win {
         }
         private void bciShowAllMessageCount_CheckedChanged(object sender, DevExpress.XtraBars.ItemClickEventArgs e) {
             DataHelper.ShowAllMessageCount = bciShowAllMessageCount.Checked;
-            ucMailTree1.RefreshTreeList();
+            //ucMailTree1.RefreshTreeList();
         }
         private void bciShowUnreadMessageCount_CheckedChanged(object sender, DevExpress.XtraBars.ItemClickEventArgs e) {
             DataHelper.ShowUnreadMessageCount = bciShowUnreadMessageCount.Checked;
-            ucMailTree1.RefreshTreeList();
+            //ucMailTree1.RefreshTreeList();
         }
         private void frmMain_KeyDown(object sender, KeyEventArgs e) {
             modulesNavigator.CurrentModule.SendKeyDown(e);   
         }
         protected object GetModuleData(NavBarGroupTagObject tag) {
             if(tag == null) return null;
-            if (tag.ModuleType == typeof(DevExpress.MailClient.Win.Calendar)) return ucCalendar1;
+            if (tag.ModuleType == typeof(Calendar)) return ucCalendar1;
             //if(tag.ModuleType == typeof(DevExpress.MailClient.Win.Feeds)) return navBarControl2;
            // if(tag.ModuleType == typeof(DevExpress.MailClient.Win.Tasks)) return nbgTasks;
             return null;

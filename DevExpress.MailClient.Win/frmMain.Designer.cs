@@ -24,15 +24,15 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup3 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem13 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem1 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup2 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem2 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem3 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem4 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup2 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem5 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup3 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem6 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem7 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem8 = new DevExpress.XtraBars.Ribbon.GalleryItem();
@@ -40,26 +40,9 @@
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem10 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem11 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem12 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem13 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
-            this.backstageViewClientControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
-            this.helpControl1 = new DevExpress.MailClient.Win.Controls.HelpControl();
-            this.backstageViewClientControl2 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
-            this.galleryControl1 = new DevExpress.XtraBars.Ribbon.GalleryControl();
-            this.galleryControlClient1 = new DevExpress.XtraBars.Ribbon.GalleryControlClient();
-            this.backstageViewClientControl3 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
-            this.printControl1 = new DevExpress.MailClient.Win.Controls.PrintControl();
-            this.backstageViewClientControl4 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
-            this.exportControl1 = new DevExpress.MailClient.Win.Controls.ExportControl();
-            this.bvbiSaveAs = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
-            this.bvbiSaveAttachment = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
-            this.bvbiSaveCalendar = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
-            this.bvtiInfo = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
-            this.bvtiOpen = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
-            this.bvtiPrint = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
-            this.bvtiExport = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
-            this.bvbiExit = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
+            this.galleryControlGallery1 = new DevExpress.XtraBars.Ribbon.Gallery.GalleryControlGallery();
             this.rgbiSkins = new DevExpress.XtraBars.RibbonGalleryBarItem();
             this.bbiRotateLayout = new DevExpress.XtraBars.BarButtonItem();
             this.bbiFlipLayout = new DevExpress.XtraBars.BarButtonItem();
@@ -145,17 +128,20 @@
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonGroup1 = new DevExpress.XtraBars.BarButtonGroup();
+            this.barButtonGroup2 = new DevExpress.XtraBars.BarButtonGroup();
+            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonMiniToolbar1 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(this.components);
             this.ribbonMiniToolbar2 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(this.components);
-            this.rpcSearch = new DevExpress.XtraBars.Ribbon.RibbonPageCategory();
-            this.rpSearch = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.rpgFind = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rpgFilterColumns = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rbgClose = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.calendarToolsRibbonPageCategory1 = new DevExpress.XtraScheduler.UI.CalendarToolsRibbonPageCategory();
-            this.appointmentRibbonPage1 = new DevExpress.XtraScheduler.UI.AppointmentRibbonPage();
-            this.actionsRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.ActionsRibbonPageGroup();
-            this.optionsRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.OptionsRibbonPageGroup();
             this.rpStock = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rpgNew = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpgDelete = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -172,47 +158,71 @@
             this.arrangeRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.ArrangeRibbonPageGroup();
             this.groupByRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.GroupByRibbonPageGroup();
             this.layoutRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.LayoutRibbonPageGroup();
+            this.rpSecteur = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.rpgGestionSecteur = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpgGestionLivreur = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemSpinEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.navBarControl1 = new DevExpress.XtraNavBar.NavBarControl();
-            this.nbgMail = new DevExpress.XtraNavBar.NavBarGroup();
-            this.navBarGroupControlContainer1 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
-            this.ucMailTree1 = new DevExpress.MailClient.Win.ucMailTree();
-            this.navBarGroupControlContainer2 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
-            this.ucCalendar1 = new DevExpress.MailClient.Win.Controls.ucCalendar();
-            this.navBarGroupControlContainer3 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
-            this.ucContacts1 = new DevExpress.MailClient.Win.Controls.ucContacts();
-            this.navBarGroupControlContainer4 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
-            this.nbgContacts = new DevExpress.XtraNavBar.NavBarGroup();
-            this.nbgBDC = new DevExpress.XtraNavBar.NavBarGroup();
-            this.nbgCalendar = new DevExpress.XtraNavBar.NavBarGroup();
-            this.pcMain = new DevExpress.XtraEditors.PanelControl();
             this.pmTreeView = new DevExpress.XtraBars.PopupMenu(this.components);
             this.pmMessage = new DevExpress.XtraBars.PopupMenu(this.components);
             this.pmFlagStatus = new DevExpress.XtraBars.PopupMenu(this.components);
             this.schedulerBarController1 = new DevExpress.XtraScheduler.UI.SchedulerBarController();
+            this.navBarItem1 = new DevExpress.XtraNavBar.NavBarItem();
+            this.nbgMail = new DevExpress.XtraNavBar.NavBarGroup();
+            this.navBarGroupControlContainer1 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
+            this.nbgContacts = new DevExpress.XtraNavBar.NavBarGroup();
+            this.navBarGroupControlContainer3 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
+            this.ucContacts1 = new DevExpress.MailClient.Win.Controls.ucContacts();
+            this.nbgCalendar = new DevExpress.XtraNavBar.NavBarGroup();
+            this.navBarGroupControlContainer2 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
+            this.ucCalendar1 = new DevExpress.MailClient.Win.Controls.ucCalendar();
+            this.navBarControl1 = new DevExpress.XtraNavBar.NavBarControl();
+            this.bvbiExit = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
+            this.bvtiExport = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.bvtiPrint = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.bvtiOpen = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.bvtiInfo = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.bvbiSaveCalendar = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
+            this.bvbiSaveAttachment = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
+            this.bvbiSaveAs = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
+            this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
+            this.backstageViewClientControl4 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.exportControl1 = new DevExpress.MailClient.Win.Controls.ExportControl();
+            this.backstageViewClientControl3 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.printControl1 = new DevExpress.MailClient.Win.Controls.PrintControl();
+            this.backstageViewClientControl2 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.galleryControl1 = new DevExpress.XtraBars.Ribbon.GalleryControl();
+            this.galleryControlClient1 = new DevExpress.XtraBars.Ribbon.GalleryControlClient();
+            this.backstageViewClientControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.helpControl1 = new DevExpress.MailClient.Win.Controls.HelpControl();
+            this.pcMain = new DevExpress.XtraEditors.PanelControl();
+            this.nbgSecteur = new DevExpress.XtraNavBar.NavBarGroup();
+            this.navBarItem2 = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarItem3 = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarGroupControlContainer4 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
-            this.backstageViewControl1.SuspendLayout();
-            this.backstageViewClientControl1.SuspendLayout();
-            this.backstageViewClientControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.galleryControl1)).BeginInit();
-            this.galleryControl1.SuspendLayout();
-            this.backstageViewClientControl3.SuspendLayout();
-            this.backstageViewClientControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDuration1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
-            this.navBarControl1.SuspendLayout();
-            this.navBarGroupControlContainer1.SuspendLayout();
-            this.navBarGroupControlContainer2.SuspendLayout();
-            this.navBarGroupControlContainer3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcMain)).BeginInit();
-            this.pcMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pmTreeView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pmMessage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pmFlagStatus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerBarController1)).BeginInit();
+            this.navBarGroupControlContainer3.SuspendLayout();
+            this.navBarGroupControlContainer2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
+            this.navBarControl1.SuspendLayout();
+            this.backstageViewControl1.SuspendLayout();
+            this.backstageViewClientControl4.SuspendLayout();
+            this.backstageViewClientControl3.SuspendLayout();
+            this.backstageViewClientControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.galleryControl1)).BeginInit();
+            this.galleryControl1.SuspendLayout();
+            this.backstageViewClientControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcMain)).BeginInit();
+            this.pcMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // ribbonControl1
@@ -309,20 +319,30 @@
             this.changeAppointmentReminderItem1,
             this.barButtonItem1,
             this.barButtonItem2,
-            this.barButtonItem3});
+            this.barButtonItem3,
+            this.barButtonItem4,
+            this.barButtonItem5,
+            this.barButtonGroup1,
+            this.barButtonGroup2,
+            this.barButtonItem6,
+            this.barButtonItem7,
+            this.barButtonItem8,
+            this.barButtonItem9,
+            this.barButtonItem10,
+            this.barButtonItem11,
+            this.barButtonItem12,
+            this.barButtonItem13});
             resources.ApplyResources(this.ribbonControl1, "ribbonControl1");
-            this.ribbonControl1.MaxItemId = 1;
+            this.ribbonControl1.MaxItemId = 13;
             this.ribbonControl1.MiniToolbars.Add(this.ribbonMiniToolbar1);
             this.ribbonControl1.MiniToolbars.Add(this.ribbonMiniToolbar2);
             this.ribbonControl1.Name = "ribbonControl1";
-            this.ribbonControl1.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
-            this.rpcSearch,
-            this.calendarToolsRibbonPageCategory1});
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.rpStock,
             this.rpContacts,
             this.rpBDC,
-            this.rpCalendar});
+            this.rpCalendar,
+            this.rpSecteur});
             this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemZoomTrackBar1,
             this.repositoryItemSpinEdit1,
@@ -333,163 +353,35 @@
             this.ribbonControl1.BeforeApplicationButtonContentControlShow += new System.EventHandler(this.ribbonControl1_BeforeApplicationButtonContentControlShow);
             this.ribbonControl1.ShowCustomizationMenu += new DevExpress.XtraBars.Ribbon.RibbonCustomizationMenuEventHandler(this.ribbonControl1_ShowCustomizationMenu);
             // 
-            // backstageViewControl1
-            // 
-            this.backstageViewControl1.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Yellow;
-            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl1);
-            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl2);
-            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl3);
-            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl4);
-            this.backstageViewControl1.Items.Add(this.bvbiSaveAs);
-            this.backstageViewControl1.Items.Add(this.bvbiSaveAttachment);
-            this.backstageViewControl1.Items.Add(this.bvbiSaveCalendar);
-            this.backstageViewControl1.Items.Add(this.bvtiInfo);
-            this.backstageViewControl1.Items.Add(this.bvtiOpen);
-            this.backstageViewControl1.Items.Add(this.bvtiPrint);
-            this.backstageViewControl1.Items.Add(this.bvtiExport);
-            this.backstageViewControl1.Items.Add(this.bvbiExit);
-            resources.ApplyResources(this.backstageViewControl1, "backstageViewControl1");
-            this.backstageViewControl1.Name = "backstageViewControl1";
-            this.backstageViewControl1.Ribbon = this.ribbonControl1;
-            this.backstageViewControl1.SelectedTab = this.bvtiInfo;
-            this.backstageViewControl1.SelectedTabIndex = 3;
-            this.backstageViewControl1.ItemClick += new DevExpress.XtraBars.Ribbon.BackstageViewItemEventHandler(this.backstageViewControl1_ItemClick);
-            // 
-            // backstageViewClientControl1
-            // 
-            this.backstageViewClientControl1.Controls.Add(this.helpControl1);
-            resources.ApplyResources(this.backstageViewClientControl1, "backstageViewClientControl1");
-            this.backstageViewClientControl1.Name = "backstageViewClientControl1";
-            // 
-            // helpControl1
-            // 
-            resources.ApplyResources(this.helpControl1, "helpControl1");
-            this.helpControl1.ForeColor = System.Drawing.Color.Transparent;
-            this.helpControl1.Name = "helpControl1";
-            // 
-            // backstageViewClientControl2
-            // 
-            this.backstageViewClientControl2.Controls.Add(this.galleryControl1);
-            resources.ApplyResources(this.backstageViewClientControl2, "backstageViewClientControl2");
-            this.backstageViewClientControl2.Name = "backstageViewClientControl2";
-            // 
-            // galleryControl1
-            // 
-            this.galleryControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.galleryControl1.Controls.Add(this.galleryControlClient1);
-            this.galleryControl1.DesignGalleryGroupIndex = 0;
-            this.galleryControl1.DesignGalleryItemIndex = 0;
-            resources.ApplyResources(this.galleryControl1, "galleryControl1");
-            // 
             // galleryControlGallery1
             // 
-            this.galleryControl1.Gallery.Appearance.ItemCaptionAppearance.Hovered.Options.UseTextOptions = true;
-            this.galleryControl1.Gallery.Appearance.ItemCaptionAppearance.Hovered.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.galleryControl1.Gallery.Appearance.ItemCaptionAppearance.Hovered.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.galleryControl1.Gallery.Appearance.ItemCaptionAppearance.Normal.Options.UseTextOptions = true;
-            this.galleryControl1.Gallery.Appearance.ItemCaptionAppearance.Normal.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.galleryControl1.Gallery.Appearance.ItemCaptionAppearance.Normal.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.galleryControl1.Gallery.Appearance.ItemCaptionAppearance.Pressed.Options.UseTextOptions = true;
-            this.galleryControl1.Gallery.Appearance.ItemCaptionAppearance.Pressed.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.galleryControl1.Gallery.Appearance.ItemCaptionAppearance.Pressed.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.galleryControl1.Gallery.AutoFitColumns = false;
-            this.galleryControl1.Gallery.AutoSize = DevExpress.XtraBars.Ribbon.GallerySizeMode.None;
-            this.galleryControl1.Gallery.BackColor = System.Drawing.Color.Transparent;
-            this.galleryControl1.Gallery.ColumnCount = 1;
-            this.galleryControl1.Gallery.FixedImageSize = false;
-            resources.ApplyResources(galleryItemGroup1, "galleryItemGroup1");
-            resources.ApplyResources(galleryItem1, "galleryItem1");
-            galleryItem1.Image = global::DevExpress.MailClient.Win.Properties.Resources.OpenClendar_64x64;
-            galleryItem1.Tag = "OpenCalendar";
-            galleryItemGroup1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
-            galleryItem1});
-            this.galleryControl1.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup1});
-            this.galleryControl1.Gallery.ItemImageLocation = DevExpress.Utils.Locations.Left;
-            this.galleryControl1.Gallery.ShowGroupCaption = false;
-            this.galleryControl1.Gallery.ShowItemText = true;
-            this.galleryControl1.Gallery.ShowScrollBar = DevExpress.XtraBars.Ribbon.Gallery.ShowScrollBar.Hide;
-            this.galleryControl1.Gallery.ItemClick += new DevExpress.XtraBars.Ribbon.GalleryItemClickEventHandler(this.galleryControlGallery1_ItemClick);
-            this.galleryControl1.Name = "galleryControl1";
-            // 
-            // galleryControlClient1
-            // 
-            this.galleryControlClient1.GalleryControl = this.galleryControl1;
-            resources.ApplyResources(this.galleryControlClient1, "galleryControlClient1");
-            // 
-            // backstageViewClientControl3
-            // 
-            this.backstageViewClientControl3.Controls.Add(this.printControl1);
-            resources.ApplyResources(this.backstageViewClientControl3, "backstageViewClientControl3");
-            this.backstageViewClientControl3.Name = "backstageViewClientControl3";
-            // 
-            // printControl1
-            // 
-            resources.ApplyResources(this.printControl1, "printControl1");
-            this.printControl1.ForeColor = System.Drawing.Color.Transparent;
-            this.printControl1.Name = "printControl1";
-            // 
-            // backstageViewClientControl4
-            // 
-            this.backstageViewClientControl4.Controls.Add(this.exportControl1);
-            resources.ApplyResources(this.backstageViewClientControl4, "backstageViewClientControl4");
-            this.backstageViewClientControl4.Name = "backstageViewClientControl4";
-            // 
-            // exportControl1
-            // 
-            resources.ApplyResources(this.exportControl1, "exportControl1");
-            this.exportControl1.ForeColor = System.Drawing.Color.Transparent;
-            this.exportControl1.Name = "exportControl1";
-            // 
-            // bvbiSaveAs
-            // 
-            resources.ApplyResources(this.bvbiSaveAs, "bvbiSaveAs");
-            this.bvbiSaveAs.Name = "bvbiSaveAs";
-            // 
-            // bvbiSaveAttachment
-            // 
-            resources.ApplyResources(this.bvbiSaveAttachment, "bvbiSaveAttachment");
-            this.bvbiSaveAttachment.Name = "bvbiSaveAttachment";
-            // 
-            // bvbiSaveCalendar
-            // 
-            resources.ApplyResources(this.bvbiSaveCalendar, "bvbiSaveCalendar");
-            this.bvbiSaveCalendar.Name = "bvbiSaveCalendar";
-            // 
-            // bvtiInfo
-            // 
-            resources.ApplyResources(this.bvtiInfo, "bvtiInfo");
-            this.bvtiInfo.ContentControl = this.backstageViewClientControl1;
-            this.bvtiInfo.Name = "bvtiInfo";
-            this.bvtiInfo.Selected = true;
-            // 
-            // bvtiOpen
-            // 
-            resources.ApplyResources(this.bvtiOpen, "bvtiOpen");
-            this.bvtiOpen.ContentControl = this.backstageViewClientControl2;
-            this.bvtiOpen.Name = "bvtiOpen";
-            this.bvtiOpen.Selected = false;
-            // 
-            // bvtiPrint
-            // 
-            resources.ApplyResources(this.bvtiPrint, "bvtiPrint");
-            this.bvtiPrint.ContentControl = this.backstageViewClientControl3;
-            this.bvtiPrint.Name = "bvtiPrint";
-            this.bvtiPrint.Selected = false;
-            this.bvtiPrint.SelectedChanged += new DevExpress.XtraBars.Ribbon.BackstageViewItemEventHandler(this.bvtiPrint_SelectedChanged);
-            // 
-            // bvtiExport
-            // 
-            resources.ApplyResources(this.bvtiExport, "bvtiExport");
-            this.bvtiExport.ContentControl = this.backstageViewClientControl4;
-            this.bvtiExport.Name = "bvtiExport";
-            this.bvtiExport.Selected = false;
-            // 
-            // bvbiExit
-            // 
-            resources.ApplyResources(this.bvbiExit, "bvbiExit");
-            this.bvbiExit.Name = "bvbiExit";
-            this.bvbiExit.ItemClick += new DevExpress.XtraBars.Ribbon.BackstageViewItemEventHandler(this.bvbiExit_ItemClick);
+            this.galleryControlGallery1.Appearance.ItemCaptionAppearance.Hovered.Options.UseTextOptions = true;
+           // this.galleryControlGallery1.Appearance.ItemCaptionAppearance.Hovered.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            /*this.galleryControlGallery1.Appearance.ItemCaptionAppearance.Hovered.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.galleryControlGallery1.Appearance.ItemCaptionAppearance.Normal.Options.UseTextOptions = true;
+            this.galleryControlGallery1.Appearance.ItemCaptionAppearance.Normal.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.galleryControlGallery1.Appearance.ItemCaptionAppearance.Normal.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.galleryControlGallery1.Appearance.ItemCaptionAppearance.Pressed.Options.UseTextOptions = true;
+            this.galleryControlGallery1.Appearance.ItemCaptionAppearance.Pressed.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.galleryControlGallery1.Appearance.ItemCaptionAppearance.Pressed.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.galleryControlGallery1.AutoFitColumns = false;
+            this.galleryControlGallery1.AutoSize = DevExpress.XtraBars.Ribbon.GallerySizeMode.None;
+            this.galleryControlGallery1.BackColor = System.Drawing.Color.Transparent;
+            this.galleryControlGallery1.ColumnCount = 1;
+            this.galleryControlGallery1.FixedImageSize = false;*/
+            resources.ApplyResources(galleryItemGroup3, "galleryItemGroup3");
+            resources.ApplyResources(galleryItem13, "galleryItem13");
+            galleryItem13.Image = global::DevExpress.MailClient.Win.Properties.Resources.OpenClendar_64x64;
+            galleryItem13.Tag = "OpenCalendar";
+            galleryItemGroup3.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem13});
+            this.galleryControlGallery1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
+            galleryItemGroup3});
+            this.galleryControlGallery1.ItemImageLocation = DevExpress.Utils.Locations.Left;
+            this.galleryControlGallery1.ShowGroupCaption = false;
+            this.galleryControlGallery1.ShowItemText = true;
+            this.galleryControlGallery1.ShowScrollBar = DevExpress.XtraBars.Ribbon.Gallery.ShowScrollBar.Hide;
+            this.galleryControlGallery1.ItemClick += new DevExpress.XtraBars.Ribbon.GalleryItemClickEventHandler(this.galleryControlGallery1_ItemClick);
             // 
             // rgbiSkins
             // 
@@ -750,27 +642,27 @@
             this.rgbiCurrentView.Gallery.Appearance.ItemCaptionAppearance.Pressed.Options.UseTextOptions = true;
             this.rgbiCurrentView.Gallery.Appearance.ItemCaptionAppearance.Pressed.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.rgbiCurrentView.Gallery.ColumnCount = 4;
-            resources.ApplyResources(galleryItemGroup2, "galleryItemGroup2");
+            resources.ApplyResources(galleryItemGroup1, "galleryItemGroup1");
+            resources.ApplyResources(galleryItem1, "galleryItem1");
+            galleryItem1.Image = global::DevExpress.MailClient.Win.Properties.Resources.List_32x32;
+            galleryItem1.Tag = "List";
             resources.ApplyResources(galleryItem2, "galleryItem2");
-            galleryItem2.Image = global::DevExpress.MailClient.Win.Properties.Resources.List_32x32;
-            galleryItem2.Tag = "List";
+            galleryItem2.Image = global::DevExpress.MailClient.Win.Properties.Resources.SortAsc_32x32;
+            galleryItem2.Tag = "Alphabetical";
             resources.ApplyResources(galleryItem3, "galleryItem3");
-            galleryItem3.Image = global::DevExpress.MailClient.Win.Properties.Resources.SortAsc_32x32;
-            galleryItem3.Tag = "Alphabetical";
+            galleryItem3.Image = global::DevExpress.MailClient.Win.Properties.Resources.ByState_32x32;
+            galleryItem3.Tag = "ByState";
             resources.ApplyResources(galleryItem4, "galleryItem4");
-            galleryItem4.Image = global::DevExpress.MailClient.Win.Properties.Resources.ByState_32x32;
-            galleryItem4.Tag = "ByState";
-            resources.ApplyResources(galleryItem5, "galleryItem5");
-            galleryItem5.Checked = true;
-            galleryItem5.Image = global::DevExpress.MailClient.Win.Properties.Resources.Card_32x32;
-            galleryItem5.Tag = "Card";
-            galleryItemGroup2.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem4.Checked = true;
+            galleryItem4.Image = global::DevExpress.MailClient.Win.Properties.Resources.Card_32x32;
+            galleryItem4.Tag = "Card";
+            galleryItemGroup1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem1,
             galleryItem2,
             galleryItem3,
-            galleryItem4,
-            galleryItem5});
+            galleryItem4});
             this.rgbiCurrentView.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup2});
+            galleryItemGroup1});
             this.rgbiCurrentView.Gallery.ImageSize = new System.Drawing.Size(32, 32);
             this.rgbiCurrentView.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio;
             this.rgbiCurrentView.Gallery.RowCount = 1;
@@ -861,43 +753,43 @@
             this.rgbiCurrentViewTasks.Gallery.Appearance.ItemCaptionAppearance.Pressed.Options.UseTextOptions = true;
             this.rgbiCurrentViewTasks.Gallery.Appearance.ItemCaptionAppearance.Pressed.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.rgbiCurrentViewTasks.Gallery.ColumnCount = 4;
-            resources.ApplyResources(galleryItemGroup3, "galleryItemGroup3");
+            resources.ApplyResources(galleryItemGroup2, "galleryItemGroup2");
+            resources.ApplyResources(galleryItem5, "galleryItem5");
+            galleryItem5.Image = global::DevExpress.MailClient.Win.Properties.Resources.ListByDate_32x32;
+            galleryItem5.Tag = "TaskList";
             resources.ApplyResources(galleryItem6, "galleryItem6");
-            galleryItem6.Image = global::DevExpress.MailClient.Win.Properties.Resources.ListByDate_32x32;
-            galleryItem6.Tag = "TaskList";
+            galleryItem6.Image = global::DevExpress.MailClient.Win.Properties.Resources.ToDoList_32x32;
+            galleryItem6.Tag = "TaskToDoList";
             resources.ApplyResources(galleryItem7, "galleryItem7");
-            galleryItem7.Image = global::DevExpress.MailClient.Win.Properties.Resources.ToDoList_32x32;
-            galleryItem7.Tag = "TaskToDoList";
+            galleryItem7.Image = global::DevExpress.MailClient.Win.Properties.Resources.Completed_32x32;
+            galleryItem7.Tag = "TaskCompleted";
             resources.ApplyResources(galleryItem8, "galleryItem8");
-            galleryItem8.Image = global::DevExpress.MailClient.Win.Properties.Resources.Completed_32x32;
-            galleryItem8.Tag = "TaskCompleted";
+            galleryItem8.Image = global::DevExpress.MailClient.Win.Properties.Resources.Today_32x32;
+            galleryItem8.Tag = "TaskToday";
             resources.ApplyResources(galleryItem9, "galleryItem9");
-            galleryItem9.Image = global::DevExpress.MailClient.Win.Properties.Resources.Today_32x32;
-            galleryItem9.Tag = "TaskToday";
+            galleryItem9.Image = global::DevExpress.MailClient.Win.Properties.Resources.Prioritized_32x32;
+            galleryItem9.Tag = "TaskPrioritized";
             resources.ApplyResources(galleryItem10, "galleryItem10");
-            galleryItem10.Image = global::DevExpress.MailClient.Win.Properties.Resources.Prioritized_32x32;
-            galleryItem10.Tag = "TaskPrioritized";
+            galleryItem10.Image = global::DevExpress.MailClient.Win.Properties.Resources.Overdue_32x32;
+            galleryItem10.Tag = "TaskOverdue";
             resources.ApplyResources(galleryItem11, "galleryItem11");
-            galleryItem11.Image = global::DevExpress.MailClient.Win.Properties.Resources.Overdue_32x32;
-            galleryItem11.Tag = "TaskOverdue";
+            galleryItem11.Image = global::DevExpress.MailClient.Win.Properties.Resources.List_32x32;
+            galleryItem11.Tag = "TaskSimpleList";
             resources.ApplyResources(galleryItem12, "galleryItem12");
-            galleryItem12.Image = global::DevExpress.MailClient.Win.Properties.Resources.List_32x32;
-            galleryItem12.Tag = "TaskSimpleList";
-            resources.ApplyResources(galleryItem13, "galleryItem13");
-            galleryItem13.Checked = true;
-            galleryItem13.Image = global::DevExpress.MailClient.Win.Properties.Resources.Deferred_32x32;
-            galleryItem13.Tag = "TaskDeferred";
-            galleryItemGroup3.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem12.Checked = true;
+            galleryItem12.Image = global::DevExpress.MailClient.Win.Properties.Resources.Deferred_32x32;
+            galleryItem12.Tag = "TaskDeferred";
+            galleryItemGroup2.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem5,
             galleryItem6,
             galleryItem7,
             galleryItem8,
             galleryItem9,
             galleryItem10,
             galleryItem11,
-            galleryItem12,
-            galleryItem13});
+            galleryItem12});
             this.rgbiCurrentViewTasks.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup3});
+            galleryItemGroup2});
             this.rgbiCurrentViewTasks.Gallery.ImageSize = new System.Drawing.Size(32, 32);
             this.rgbiCurrentViewTasks.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio;
             this.rgbiCurrentViewTasks.Gallery.RowCount = 2;
@@ -1216,83 +1108,97 @@
             this.barButtonItem3.Id = 99;
             this.barButtonItem3.Name = "barButtonItem3";
             // 
-            // rpcSearch
+            // barButtonItem4
             // 
-            resources.ApplyResources(this.rpcSearch, "rpcSearch");
-            this.rpcSearch.Name = "rpcSearch";
-            this.rpcSearch.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.rpSearch});
+            resources.ApplyResources(this.barButtonItem4, "barButtonItem4");
+            this.barButtonItem4.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.barButtonItem4.Id = 1;
+            this.barButtonItem4.Name = "barButtonItem4";
             // 
-            // rpSearch
+            // barButtonItem5
             // 
-            this.rpSearch.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.rpgFind,
-            this.rpgFilterColumns,
-            this.rbgClose});
-            this.rpSearch.Name = "rpSearch";
-            resources.ApplyResources(this.rpSearch, "rpSearch");
-            this.rpSearch.Visible = false;
+            resources.ApplyResources(this.barButtonItem5, "barButtonItem5");
+            this.barButtonItem5.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.barButtonItem5.Id = 2;
+            this.barButtonItem5.Name = "barButtonItem5";
             // 
-            // rpgFind
+            // barButtonGroup1
             // 
-            this.rpgFind.ItemLinks.Add(this.bbiShowUnread);
-            this.rpgFind.ItemLinks.Add(this.bbiDate);
-            this.rpgFind.ItemLinks.Add(this.bbiImportant);
-            this.rpgFind.ItemLinks.Add(this.bbiHasAttachment);
-            this.rpgFind.ItemLinks.Add(this.bbiClearFilter);
-            this.rpgFind.Name = "rpgFind";
-            this.rpgFind.ShowCaptionButton = false;
-            resources.ApplyResources(this.rpgFind, "rpgFind");
+            resources.ApplyResources(this.barButtonGroup1, "barButtonGroup1");
+            this.barButtonGroup1.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.barButtonGroup1.Id = 3;
+            this.barButtonGroup1.Name = "barButtonGroup1";
             // 
-            // rpgFilterColumns
+            // barButtonGroup2
             // 
-            this.rpgFilterColumns.ItemLinks.Add(this.bsiColumns);
-            this.rpgFilterColumns.ItemLinks.Add(this.bbiResetColumnsToDefault);
-            this.rpgFilterColumns.Name = "rpgFilterColumns";
-            this.rpgFilterColumns.ShowCaptionButton = false;
-            resources.ApplyResources(this.rpgFilterColumns, "rpgFilterColumns");
+            resources.ApplyResources(this.barButtonGroup2, "barButtonGroup2");
+            this.barButtonGroup2.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.barButtonGroup2.Id = 4;
+            this.barButtonGroup2.Name = "barButtonGroup2";
             // 
-            // rbgClose
+            // barButtonItem6
             // 
-            this.rbgClose.AllowTextClipping = false;
-            this.rbgClose.ItemLinks.Add(this.bbiCloseSearch);
-            this.rbgClose.Name = "rbgClose";
-            this.rbgClose.ShowCaptionButton = false;
-            resources.ApplyResources(this.rbgClose, "rbgClose");
+            resources.ApplyResources(this.barButtonItem6, "barButtonItem6");
+            this.barButtonItem6.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.Glyph")));
+            this.barButtonItem6.Id = 5;
+            this.barButtonItem6.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.LargeGlyph")));
+            this.barButtonItem6.Name = "barButtonItem6";
             // 
-            // calendarToolsRibbonPageCategory1
+            // barButtonItem7
             // 
-            this.calendarToolsRibbonPageCategory1.Control = null;
-            this.calendarToolsRibbonPageCategory1.Name = "calendarToolsRibbonPageCategory1";
-            this.calendarToolsRibbonPageCategory1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.appointmentRibbonPage1});
-            this.calendarToolsRibbonPageCategory1.Tag = "CalendarTools";
-            resources.ApplyResources(this.calendarToolsRibbonPageCategory1, "calendarToolsRibbonPageCategory1");
+            resources.ApplyResources(this.barButtonItem7, "barButtonItem7");
+            this.barButtonItem7.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.Glyph")));
+            this.barButtonItem7.Id = 6;
+            this.barButtonItem7.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.LargeGlyph")));
+            this.barButtonItem7.Name = "barButtonItem7";
             // 
-            // appointmentRibbonPage1
+            // barButtonItem8
             // 
-            this.appointmentRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.actionsRibbonPageGroup1,
-            this.optionsRibbonPageGroup1});
-            this.appointmentRibbonPage1.Name = "appointmentRibbonPage1";
-            this.appointmentRibbonPage1.Tag = "Appointment";
-            resources.ApplyResources(this.appointmentRibbonPage1, "appointmentRibbonPage1");
-            this.appointmentRibbonPage1.Visible = false;
+            resources.ApplyResources(this.barButtonItem8, "barButtonItem8");
+            this.barButtonItem8.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.Glyph")));
+            this.barButtonItem8.Id = 7;
+            this.barButtonItem8.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.LargeGlyph")));
+            this.barButtonItem8.Name = "barButtonItem8";
             // 
-            // actionsRibbonPageGroup1
+            // barButtonItem9
             // 
-            this.actionsRibbonPageGroup1.ItemLinks.Add(this.editAppointmentQueryItem1);
-            this.actionsRibbonPageGroup1.ItemLinks.Add(this.deleteAppointmentsItem1);
-            this.actionsRibbonPageGroup1.ItemLinks.Add(this.splitAppointmentItem1);
-            this.actionsRibbonPageGroup1.Name = "actionsRibbonPageGroup1";
+            resources.ApplyResources(this.barButtonItem9, "barButtonItem9");
+            this.barButtonItem9.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.Glyph")));
+            this.barButtonItem9.Id = 8;
+            this.barButtonItem9.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.LargeGlyph")));
+            this.barButtonItem9.Name = "barButtonItem9";
             // 
-            // optionsRibbonPageGroup1
+            // barButtonItem10
             // 
-            this.optionsRibbonPageGroup1.ItemLinks.Add(this.changeAppointmentStatusItem1);
-            this.optionsRibbonPageGroup1.ItemLinks.Add(this.changeAppointmentLabelItem1);
-            this.optionsRibbonPageGroup1.ItemLinks.Add(this.toggleRecurrenceItem1);
-            this.optionsRibbonPageGroup1.ItemLinks.Add(this.changeAppointmentReminderItem1);
-            this.optionsRibbonPageGroup1.Name = "optionsRibbonPageGroup1";
+            resources.ApplyResources(this.barButtonItem10, "barButtonItem10");
+            this.barButtonItem10.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.Glyph")));
+            this.barButtonItem10.Id = 9;
+            this.barButtonItem10.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.LargeGlyph")));
+            this.barButtonItem10.Name = "barButtonItem10";
+            // 
+            // barButtonItem11
+            // 
+            resources.ApplyResources(this.barButtonItem11, "barButtonItem11");
+            this.barButtonItem11.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.Glyph")));
+            this.barButtonItem11.Id = 10;
+            this.barButtonItem11.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.LargeGlyph")));
+            this.barButtonItem11.Name = "barButtonItem11";
+            // 
+            // barButtonItem12
+            // 
+            resources.ApplyResources(this.barButtonItem12, "barButtonItem12");
+            this.barButtonItem12.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.Glyph")));
+            this.barButtonItem12.Id = 11;
+            this.barButtonItem12.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.LargeGlyph")));
+            this.barButtonItem12.Name = "barButtonItem12";
+            // 
+            // barButtonItem13
+            // 
+            resources.ApplyResources(this.barButtonItem13, "barButtonItem13");
+            this.barButtonItem13.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.Glyph")));
+            this.barButtonItem13.Id = 12;
+            this.barButtonItem13.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.LargeGlyph")));
+            this.barButtonItem13.Name = "barButtonItem13";
             // 
             // rpStock
             // 
@@ -1378,7 +1284,6 @@
             this.rpBDC.Name = "rpBDC";
             this.rpBDC.Tag = "BDC";
             resources.ApplyResources(this.rpBDC, "rpBDC");
-            this.rpBDC.Visible = false;
             // 
             // rpCalendar
             // 
@@ -1430,6 +1335,45 @@
             this.layoutRibbonPageGroup1.ItemLinks.Add(this.switchTimeScalesItem1);
             this.layoutRibbonPageGroup1.Name = "layoutRibbonPageGroup1";
             // 
+            // rpSecteur
+            // 
+            this.rpSecteur.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.rpgGestionSecteur,
+            this.rpgGestionLivreur,
+            this.ribbonPageGroup3,
+            this.ribbonPageGroup4});
+            this.rpSecteur.Name = "rpSecteur";
+            this.rpSecteur.Tag = "Secteur";
+            resources.ApplyResources(this.rpSecteur, "rpSecteur");
+            // 
+            // rpgGestionSecteur
+            // 
+            this.rpgGestionSecteur.ItemLinks.Add(this.barButtonItem6);
+            this.rpgGestionSecteur.ItemLinks.Add(this.barButtonItem7);
+            this.rpgGestionSecteur.ItemLinks.Add(this.barButtonItem8);
+            this.rpgGestionSecteur.ItemLinks.Add(this.barButtonItem9);
+            this.rpgGestionSecteur.Name = "rpgGestionSecteur";
+            resources.ApplyResources(this.rpgGestionSecteur, "rpgGestionSecteur");
+            // 
+            // rpgGestionLivreur
+            // 
+            this.rpgGestionLivreur.ItemLinks.Add(this.barButtonItem10);
+            this.rpgGestionLivreur.ItemLinks.Add(this.barButtonItem11);
+            this.rpgGestionLivreur.ItemLinks.Add(this.barButtonItem12);
+            this.rpgGestionLivreur.ItemLinks.Add(this.barButtonItem13);
+            this.rpgGestionLivreur.Name = "rpgGestionLivreur";
+            resources.ApplyResources(this.rpgGestionLivreur, "rpgGestionLivreur");
+            // 
+            // ribbonPageGroup3
+            // 
+            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
+            resources.ApplyResources(this.ribbonPageGroup3, "ribbonPageGroup3");
+            // 
+            // ribbonPageGroup4
+            // 
+            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
+            resources.ApplyResources(this.ribbonPageGroup4, "ribbonPageGroup4");
+            // 
             // repositoryItemSpinEdit1
             // 
             resources.ApplyResources(this.repositoryItemSpinEdit1, "repositoryItemSpinEdit1");
@@ -1458,127 +1402,6 @@
             resources.ApplyResources(this.ribbonStatusBar1, "ribbonStatusBar1");
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            // 
-            // navBarControl1
-            // 
-            this.navBarControl1.ActiveGroup = this.nbgMail;
-            this.navBarControl1.Controls.Add(this.navBarGroupControlContainer1);
-            this.navBarControl1.Controls.Add(this.navBarGroupControlContainer2);
-            this.navBarControl1.Controls.Add(this.navBarGroupControlContainer3);
-            this.navBarControl1.Controls.Add(this.navBarGroupControlContainer4);
-            resources.ApplyResources(this.navBarControl1, "navBarControl1");
-            this.navBarControl1.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
-            this.nbgMail,
-            this.nbgContacts,
-            this.nbgBDC,
-            this.nbgCalendar});
-            this.navBarControl1.MenuManager = this.ribbonControl1;
-            this.navBarControl1.Name = "navBarControl1";
-            this.navBarControl1.NavigationPaneGroupClientHeight = 320;
-            this.navBarControl1.OptionsNavPane.ExpandedWidth = ((int)(resources.GetObject("resource.ExpandedWidth")));
-            this.navBarControl1.View = new DevExpress.XtraNavBar.ViewInfo.SkinNavigationPaneViewInfoRegistrator();
-            this.navBarControl1.NavPaneStateChanged += new System.EventHandler(this.navBarControl1_NavPaneStateChanged);
-            this.navBarControl1.ActiveGroupChanged += new DevExpress.XtraNavBar.NavBarGroupEventHandler(this.navBarControl1_ActiveGroupChanged);
-            // 
-            // nbgMail
-            // 
-            resources.ApplyResources(this.nbgMail, "nbgMail");
-            this.nbgMail.ControlContainer = this.navBarGroupControlContainer1;
-            this.nbgMail.DragDropFlags = DevExpress.XtraNavBar.NavBarDragDrop.None;
-            this.nbgMail.Expanded = true;
-            this.nbgMail.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;
-            this.nbgMail.GroupClientHeight = 80;
-            this.nbgMail.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
-            this.nbgMail.LargeImage = global::DevExpress.MailClient.Win.Properties.Resources.cart_shopping_magasin_icone_5771_32;
-            this.nbgMail.Name = "nbgMail";
-            this.nbgMail.SmallImage = global::DevExpress.MailClient.Win.Properties.Resources.cart_shopping_magasin_icone_5771_16;
-            // 
-            // navBarGroupControlContainer1
-            // 
-            this.navBarGroupControlContainer1.Controls.Add(this.ucMailTree1);
-            this.navBarGroupControlContainer1.Name = "navBarGroupControlContainer1";
-            resources.ApplyResources(this.navBarGroupControlContainer1, "navBarGroupControlContainer1");
-            // 
-            // ucMailTree1
-            // 
-            resources.ApplyResources(this.ucMailTree1, "ucMailTree1");
-            this.ucMailTree1.Name = "ucMailTree1";
-            this.ucMailTree1.DataSourceChanged += new DevExpress.MailClient.Win.DataSourceChangedEventHandler(this.ucMailTree1_DataSourceChanged);
-            this.ucMailTree1.ShowMenu += new System.Windows.Forms.MouseEventHandler(this.ucMailTree1_ShowMenu);
-            // 
-            // navBarGroupControlContainer2
-            // 
-            this.navBarGroupControlContainer2.Controls.Add(this.ucCalendar1);
-            this.navBarGroupControlContainer2.Name = "navBarGroupControlContainer2";
-            resources.ApplyResources(this.navBarGroupControlContainer2, "navBarGroupControlContainer2");
-            // 
-            // ucCalendar1
-            // 
-            this.ucCalendar1.Appearance.BackColor = ((System.Drawing.Color)(resources.GetObject("ucCalendar1.Appearance.BackColor")));
-            this.ucCalendar1.Appearance.Options.UseBackColor = true;
-            resources.ApplyResources(this.ucCalendar1, "ucCalendar1");
-            this.ucCalendar1.Name = "ucCalendar1";
-            this.ucCalendar1.State = DevExpress.XtraNavBar.NavPaneState.Collapsed;
-            this.ucCalendar1.VisibleChanged += new System.EventHandler(this.ucCalendar1_VisibleChanged);
-            // 
-            // navBarGroupControlContainer3
-            // 
-            this.navBarGroupControlContainer3.Controls.Add(this.ucContacts1);
-            this.navBarGroupControlContainer3.Name = "navBarGroupControlContainer3";
-            resources.ApplyResources(this.navBarGroupControlContainer3, "navBarGroupControlContainer3");
-            // 
-            // ucContacts1
-            // 
-            resources.ApplyResources(this.ucContacts1, "ucContacts1");
-            this.ucContacts1.Name = "ucContacts1";
-            this.ucContacts1.CheckedChanged += new System.EventHandler(this.ucContacts1_CheckedChanged);
-            // 
-            // navBarGroupControlContainer4
-            // 
-            this.navBarGroupControlContainer4.Name = "navBarGroupControlContainer4";
-            resources.ApplyResources(this.navBarGroupControlContainer4, "navBarGroupControlContainer4");
-            // 
-            // nbgContacts
-            // 
-            resources.ApplyResources(this.nbgContacts, "nbgContacts");
-            this.nbgContacts.ControlContainer = this.navBarGroupControlContainer3;
-            this.nbgContacts.DragDropFlags = DevExpress.XtraNavBar.NavBarDragDrop.None;
-            this.nbgContacts.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;
-            this.nbgContacts.GroupClientHeight = 80;
-            this.nbgContacts.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
-            this.nbgContacts.LargeImage = global::DevExpress.MailClient.Win.Properties.Resources.Contact_32x32;
-            this.nbgContacts.Name = "nbgContacts";
-            this.nbgContacts.SmallImage = global::DevExpress.MailClient.Win.Properties.Resources.Contact_16x16;
-            // 
-            // nbgBDC
-            // 
-            resources.ApplyResources(this.nbgBDC, "nbgBDC");
-            this.nbgBDC.ControlContainer = this.navBarGroupControlContainer4;
-            this.nbgBDC.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;
-            this.nbgBDC.GroupClientHeight = 80;
-            this.nbgBDC.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
-            this.nbgBDC.LargeImage = global::DevExpress.MailClient.Win.Properties.Resources.repeat_order_blue_icone_7542_32;
-            this.nbgBDC.Name = "nbgBDC";
-            this.nbgBDC.SmallImage = global::DevExpress.MailClient.Win.Properties.Resources.repeat_order_blue_icone_7542_16;
-            // 
-            // nbgCalendar
-            // 
-            resources.ApplyResources(this.nbgCalendar, "nbgCalendar");
-            this.nbgCalendar.ControlContainer = this.navBarGroupControlContainer2;
-            this.nbgCalendar.DragDropFlags = DevExpress.XtraNavBar.NavBarDragDrop.None;
-            this.nbgCalendar.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;
-            this.nbgCalendar.GroupClientHeight = 80;
-            this.nbgCalendar.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
-            this.nbgCalendar.LargeImage = global::DevExpress.MailClient.Win.Properties.Resources.delivery_box_icone_6837_32;
-            this.nbgCalendar.Name = "nbgCalendar";
-            this.nbgCalendar.SmallImage = global::DevExpress.MailClient.Win.Properties.Resources.delivery_box_icone_6837_16;
-            // 
-            // pcMain
-            // 
-            this.pcMain.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pcMain.Controls.Add(this.backstageViewControl1);
-            resources.ApplyResources(this.pcMain, "pcMain");
-            this.pcMain.Name = "pcMain";
             // 
             // pmTreeView
             // 
@@ -1642,6 +1465,269 @@
             this.schedulerBarController1.BarItems.Add(this.toggleRecurrenceItem1);
             this.schedulerBarController1.BarItems.Add(this.changeAppointmentReminderItem1);
             // 
+            // navBarItem1
+            // 
+            resources.ApplyResources(this.navBarItem1, "navBarItem1");
+            this.navBarItem1.Name = "navBarItem1";
+            // 
+            // nbgMail
+            // 
+            resources.ApplyResources(this.nbgMail, "nbgMail");
+            this.nbgMail.ControlContainer = this.navBarGroupControlContainer1;
+            this.nbgMail.DragDropFlags = DevExpress.XtraNavBar.NavBarDragDrop.None;
+            this.nbgMail.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;
+            this.nbgMail.GroupClientHeight = 80;
+            this.nbgMail.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
+            this.nbgMail.LargeImage = global::DevExpress.MailClient.Win.Properties.Resources.cart_shopping_magasin_icone_5771_32;
+            this.nbgMail.Name = "nbgMail";
+            this.nbgMail.SmallImage = global::DevExpress.MailClient.Win.Properties.Resources.cart_shopping_magasin_icone_5771_16;
+            // 
+            // navBarGroupControlContainer1
+            // 
+            this.navBarGroupControlContainer1.Name = "navBarGroupControlContainer1";
+            resources.ApplyResources(this.navBarGroupControlContainer1, "navBarGroupControlContainer1");
+            // 
+            // nbgContacts
+            // 
+            resources.ApplyResources(this.nbgContacts, "nbgContacts");
+            this.nbgContacts.ControlContainer = this.navBarGroupControlContainer3;
+            this.nbgContacts.DragDropFlags = DevExpress.XtraNavBar.NavBarDragDrop.None;
+            this.nbgContacts.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;
+            this.nbgContacts.GroupClientHeight = 80;
+            this.nbgContacts.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
+            this.nbgContacts.LargeImage = global::DevExpress.MailClient.Win.Properties.Resources.Contact_32x32;
+            this.nbgContacts.Name = "nbgContacts";
+            this.nbgContacts.SmallImage = global::DevExpress.MailClient.Win.Properties.Resources.Contact_16x16;
+            // 
+            // navBarGroupControlContainer3
+            // 
+            this.navBarGroupControlContainer3.Controls.Add(this.ucContacts1);
+            this.navBarGroupControlContainer3.Name = "navBarGroupControlContainer3";
+            resources.ApplyResources(this.navBarGroupControlContainer3, "navBarGroupControlContainer3");
+            // 
+            // ucContacts1
+            // 
+            resources.ApplyResources(this.ucContacts1, "ucContacts1");
+            this.ucContacts1.Name = "ucContacts1";
+            this.ucContacts1.CheckedChanged += new System.EventHandler(this.ucContacts1_CheckedChanged);
+            // 
+            // nbgCalendar
+            // 
+            resources.ApplyResources(this.nbgCalendar, "nbgCalendar");
+            this.nbgCalendar.ControlContainer = this.navBarGroupControlContainer2;
+            this.nbgCalendar.DragDropFlags = DevExpress.XtraNavBar.NavBarDragDrop.None;
+            this.nbgCalendar.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;
+            this.nbgCalendar.GroupClientHeight = 80;
+            this.nbgCalendar.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
+            this.nbgCalendar.LargeImage = global::DevExpress.MailClient.Win.Properties.Resources.delivery_box_icone_6837_32;
+            this.nbgCalendar.Name = "nbgCalendar";
+            this.nbgCalendar.SmallImage = global::DevExpress.MailClient.Win.Properties.Resources.delivery_box_icone_6837_16;
+            // 
+            // navBarGroupControlContainer2
+            // 
+            this.navBarGroupControlContainer2.Controls.Add(this.ucCalendar1);
+            this.navBarGroupControlContainer2.Name = "navBarGroupControlContainer2";
+            resources.ApplyResources(this.navBarGroupControlContainer2, "navBarGroupControlContainer2");
+            // 
+            // ucCalendar1
+            // 
+            this.ucCalendar1.Appearance.BackColor = ((System.Drawing.Color)(resources.GetObject("ucCalendar1.Appearance.BackColor")));
+            this.ucCalendar1.Appearance.Options.UseBackColor = true;
+            resources.ApplyResources(this.ucCalendar1, "ucCalendar1");
+            this.ucCalendar1.Name = "ucCalendar1";
+            this.ucCalendar1.State = DevExpress.XtraNavBar.NavPaneState.Collapsed;
+            this.ucCalendar1.VisibleChanged += new System.EventHandler(this.ucCalendar1_VisibleChanged);
+            // 
+            // navBarControl1
+            // 
+            this.navBarControl1.ActiveGroup = this.nbgSecteur;
+            this.navBarControl1.Controls.Add(this.navBarGroupControlContainer2);
+            this.navBarControl1.Controls.Add(this.navBarGroupControlContainer3);
+            this.navBarControl1.Controls.Add(this.navBarGroupControlContainer1);
+            this.navBarControl1.Controls.Add(this.navBarGroupControlContainer4);
+            resources.ApplyResources(this.navBarControl1, "navBarControl1");
+            this.navBarControl1.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
+            this.nbgMail,
+            this.nbgContacts,
+            this.nbgCalendar,
+            this.nbgSecteur});
+            this.navBarControl1.Items.AddRange(new DevExpress.XtraNavBar.NavBarItem[] {
+            this.navBarItem1,
+            this.navBarItem2,
+            this.navBarItem3});
+            this.navBarControl1.MenuManager = this.ribbonControl1;
+            this.navBarControl1.Name = "navBarControl1";
+            this.navBarControl1.NavigationPaneGroupClientHeight = 320;
+            this.navBarControl1.OptionsNavPane.ExpandedWidth = ((int)(resources.GetObject("resource.ExpandedWidth")));
+            this.navBarControl1.PaintStyleKind = DevExpress.XtraNavBar.NavBarViewKind.NavigationPane;
+            this.navBarControl1.View = new DevExpress.XtraNavBar.ViewInfo.SkinNavigationPaneViewInfoRegistrator();
+            this.navBarControl1.NavPaneStateChanged += new System.EventHandler(this.navBarControl1_NavPaneStateChanged);
+            this.navBarControl1.ActiveGroupChanged += new DevExpress.XtraNavBar.NavBarGroupEventHandler(this.navBarControl1_ActiveGroupChanged);
+            // 
+            // bvbiExit
+            // 
+            resources.ApplyResources(this.bvbiExit, "bvbiExit");
+            this.bvbiExit.Name = "bvbiExit";
+            this.bvbiExit.ItemClick += new DevExpress.XtraBars.Ribbon.BackstageViewItemEventHandler(this.bvbiExit_ItemClick);
+            // 
+            // bvtiExport
+            // 
+            resources.ApplyResources(this.bvtiExport, "bvtiExport");
+            this.bvtiExport.ContentControl = this.backstageViewClientControl4;
+            this.bvtiExport.Name = "bvtiExport";
+            this.bvtiExport.Selected = false;
+            // 
+            // bvtiPrint
+            // 
+            resources.ApplyResources(this.bvtiPrint, "bvtiPrint");
+            this.bvtiPrint.ContentControl = this.backstageViewClientControl3;
+            this.bvtiPrint.Name = "bvtiPrint";
+            this.bvtiPrint.Selected = false;
+            this.bvtiPrint.SelectedChanged += new DevExpress.XtraBars.Ribbon.BackstageViewItemEventHandler(this.bvtiPrint_SelectedChanged);
+            // 
+            // bvtiOpen
+            // 
+            resources.ApplyResources(this.bvtiOpen, "bvtiOpen");
+            this.bvtiOpen.ContentControl = this.backstageViewClientControl2;
+            this.bvtiOpen.Name = "bvtiOpen";
+            this.bvtiOpen.Selected = false;
+            // 
+            // bvtiInfo
+            // 
+            resources.ApplyResources(this.bvtiInfo, "bvtiInfo");
+            this.bvtiInfo.ContentControl = this.backstageViewClientControl1;
+            this.bvtiInfo.Name = "bvtiInfo";
+            this.bvtiInfo.Selected = true;
+            // 
+            // bvbiSaveCalendar
+            // 
+            resources.ApplyResources(this.bvbiSaveCalendar, "bvbiSaveCalendar");
+            this.bvbiSaveCalendar.Name = "bvbiSaveCalendar";
+            // 
+            // bvbiSaveAttachment
+            // 
+            resources.ApplyResources(this.bvbiSaveAttachment, "bvbiSaveAttachment");
+            this.bvbiSaveAttachment.Name = "bvbiSaveAttachment";
+            // 
+            // bvbiSaveAs
+            // 
+            resources.ApplyResources(this.bvbiSaveAs, "bvbiSaveAs");
+            this.bvbiSaveAs.Name = "bvbiSaveAs";
+            // 
+            // backstageViewControl1
+            // 
+            this.backstageViewControl1.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Yellow;
+            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl1);
+            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl2);
+            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl3);
+            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl4);
+            this.backstageViewControl1.Items.Add(this.bvbiSaveAs);
+            this.backstageViewControl1.Items.Add(this.bvbiSaveAttachment);
+            this.backstageViewControl1.Items.Add(this.bvbiSaveCalendar);
+            this.backstageViewControl1.Items.Add(this.bvtiInfo);
+            this.backstageViewControl1.Items.Add(this.bvtiOpen);
+            this.backstageViewControl1.Items.Add(this.bvtiPrint);
+            this.backstageViewControl1.Items.Add(this.bvtiExport);
+            this.backstageViewControl1.Items.Add(this.bvbiExit);
+            resources.ApplyResources(this.backstageViewControl1, "backstageViewControl1");
+            this.backstageViewControl1.Name = "backstageViewControl1";
+            this.backstageViewControl1.Ribbon = this.ribbonControl1;
+            this.backstageViewControl1.SelectedTab = this.bvtiInfo;
+            this.backstageViewControl1.SelectedTabIndex = 3;
+            this.backstageViewControl1.ItemClick += new DevExpress.XtraBars.Ribbon.BackstageViewItemEventHandler(this.backstageViewControl1_ItemClick);
+            // 
+            // backstageViewClientControl4
+            // 
+            this.backstageViewClientControl4.Controls.Add(this.exportControl1);
+            resources.ApplyResources(this.backstageViewClientControl4, "backstageViewClientControl4");
+            this.backstageViewClientControl4.Name = "backstageViewClientControl4";
+            // 
+            // exportControl1
+            // 
+            resources.ApplyResources(this.exportControl1, "exportControl1");
+            this.exportControl1.ForeColor = System.Drawing.Color.Transparent;
+            this.exportControl1.Name = "exportControl1";
+            // 
+            // backstageViewClientControl3
+            // 
+            this.backstageViewClientControl3.Controls.Add(this.printControl1);
+            resources.ApplyResources(this.backstageViewClientControl3, "backstageViewClientControl3");
+            this.backstageViewClientControl3.Name = "backstageViewClientControl3";
+            // 
+            // printControl1
+            // 
+            resources.ApplyResources(this.printControl1, "printControl1");
+            this.printControl1.ForeColor = System.Drawing.Color.Transparent;
+            this.printControl1.Name = "printControl1";
+            // 
+            // backstageViewClientControl2
+            // 
+            this.backstageViewClientControl2.Controls.Add(this.galleryControl1);
+            resources.ApplyResources(this.backstageViewClientControl2, "backstageViewClientControl2");
+            this.backstageViewClientControl2.Name = "backstageViewClientControl2";
+            // 
+            // galleryControl1
+            // 
+            this.galleryControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.galleryControl1.Controls.Add(this.galleryControlClient1);
+            this.galleryControl1.DesignGalleryGroupIndex = 0;
+            this.galleryControl1.DesignGalleryItemIndex = 0;
+            resources.ApplyResources(this.galleryControl1, "galleryControl1");
+            this.galleryControl1.Name = "galleryControl1";
+            // 
+            // galleryControlClient1
+            // 
+            this.galleryControlClient1.GalleryControl = this.galleryControl1;
+            resources.ApplyResources(this.galleryControlClient1, "galleryControlClient1");
+            // 
+            // backstageViewClientControl1
+            // 
+            this.backstageViewClientControl1.Controls.Add(this.helpControl1);
+            resources.ApplyResources(this.backstageViewClientControl1, "backstageViewClientControl1");
+            this.backstageViewClientControl1.Name = "backstageViewClientControl1";
+            // 
+            // helpControl1
+            // 
+            resources.ApplyResources(this.helpControl1, "helpControl1");
+            this.helpControl1.ForeColor = System.Drawing.Color.Transparent;
+            this.helpControl1.Name = "helpControl1";
+            // 
+            // pcMain
+            // 
+            this.pcMain.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pcMain.Controls.Add(this.backstageViewControl1);
+            resources.ApplyResources(this.pcMain, "pcMain");
+            this.pcMain.Name = "pcMain";
+            // 
+            // nbgSecteur
+            // 
+            resources.ApplyResources(this.nbgSecteur, "nbgSecteur");
+            this.nbgSecteur.ControlContainer = this.navBarGroupControlContainer4;
+            this.nbgSecteur.DragDropFlags = DevExpress.XtraNavBar.NavBarDragDrop.None;
+            this.nbgSecteur.Expanded = true;
+            this.nbgSecteur.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;
+            this.nbgSecteur.GroupClientHeight = 80;
+            this.nbgSecteur.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
+            this.nbgSecteur.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem2),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem3)});
+            this.nbgSecteur.Name = "nbgSecteur";
+            // 
+            // navBarItem2
+            // 
+            resources.ApplyResources(this.navBarItem2, "navBarItem2");
+            this.navBarItem2.Name = "navBarItem2";
+            // 
+            // navBarItem3
+            // 
+            resources.ApplyResources(this.navBarItem3, "navBarItem3");
+            this.navBarItem3.Name = "navBarItem3";
+            // 
+            // navBarGroupControlContainer4
+            // 
+            this.navBarGroupControlContainer4.Name = "navBarGroupControlContainer4";
+            resources.ApplyResources(this.navBarGroupControlContainer4, "navBarGroupControlContainer4");
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -1656,27 +1742,26 @@
             this.StatusBar = this.ribbonStatusBar1;
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMain_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
-            this.backstageViewControl1.ResumeLayout(false);
-            this.backstageViewClientControl1.ResumeLayout(false);
-            this.backstageViewClientControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.galleryControl1)).EndInit();
-            this.galleryControl1.ResumeLayout(false);
-            this.backstageViewClientControl3.ResumeLayout(false);
-            this.backstageViewClientControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDuration1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).EndInit();
-            this.navBarControl1.ResumeLayout(false);
-            this.navBarGroupControlContainer1.ResumeLayout(false);
-            this.navBarGroupControlContainer2.ResumeLayout(false);
-            this.navBarGroupControlContainer3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcMain)).EndInit();
-            this.pcMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pmTreeView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pmMessage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pmFlagStatus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerBarController1)).EndInit();
+            this.navBarGroupControlContainer3.ResumeLayout(false);
+            this.navBarGroupControlContainer2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).EndInit();
+            this.navBarControl1.ResumeLayout(false);
+            this.backstageViewControl1.ResumeLayout(false);
+            this.backstageViewClientControl4.ResumeLayout(false);
+            this.backstageViewClientControl3.ResumeLayout(false);
+            this.backstageViewClientControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.galleryControl1)).EndInit();
+            this.galleryControl1.ResumeLayout(false);
+            this.backstageViewClientControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pcMain)).EndInit();
+            this.pcMain.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1687,13 +1772,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage rpStock;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup rpgNew;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar1;
-        private DevExpress.XtraNavBar.NavBarControl navBarControl1;
-        private DevExpress.XtraNavBar.NavBarGroup nbgMail;
-        private DevExpress.XtraEditors.PanelControl pcMain;
-        private DevExpress.XtraNavBar.NavBarGroup nbgCalendar;
-        private DevExpress.XtraNavBar.NavBarGroup nbgContacts;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup rpgDelete;
-        private DevExpress.XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer1;
         private DevExpress.XtraBars.Ribbon.RibbonPage rpCalendar;
         private DevExpress.XtraBars.Ribbon.RibbonPage rpContacts;
         private DevExpress.XtraBars.RibbonGalleryBarItem rgbiSkins;
@@ -1713,12 +1792,6 @@
         private DevExpress.XtraBars.BarButtonItem bbiPriority;
         private DevExpress.XtraBars.PopupMenu pmMessage;
         private DevExpress.XtraBars.BarSubItem bsiNavigation;
-        private DevExpress.XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer2;
-        private DevExpress.XtraBars.Ribbon.RibbonPageCategory rpcSearch;
-        private DevExpress.XtraBars.Ribbon.RibbonPage rpSearch;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup rpgFilterColumns;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup rpgFind;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup rbgClose;
         private DevExpress.XtraBars.BarButtonItem bbiCloseSearch;
         private DevExpress.XtraBars.BarButtonItem bbiShowUnread;
         private DevExpress.XtraBars.BarButtonItem bbiImportant;
@@ -1732,20 +1805,6 @@
         private DevExpress.XtraBars.BarButtonItem bbiAttachmentColumn;
         private DevExpress.XtraBars.BarButtonItem bbiDate;
         private DevExpress.XtraBars.BarButtonItem bbiClearFilter;
-        private DevExpress.MailClient.Win.Controls.ucCalendar ucCalendar1;
-        private DevExpress.XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer3;
-        private DevExpress.MailClient.Win.Controls.ucContacts ucContacts1;
-        private DevExpress.XtraBars.Ribbon.BackstageViewControl backstageViewControl1;
-        private DevExpress.XtraBars.Ribbon.BackstageViewButtonItem bvbiSaveAs;
-        private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl1;
-        private DevExpress.XtraBars.Ribbon.BackstageViewButtonItem bvbiSaveAttachment;
-        private DevExpress.XtraBars.Ribbon.BackstageViewButtonItem bvbiSaveCalendar;
-        private DevExpress.XtraBars.Ribbon.BackstageViewTabItem bvtiInfo;
-        private DevExpress.XtraBars.Ribbon.BackstageViewButtonItem bvbiExit;
-        private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl2;
-        private DevExpress.XtraBars.Ribbon.BackstageViewTabItem bvtiOpen;
-        private DevExpress.XtraBars.Ribbon.GalleryControl galleryControl1;
-        private DevExpress.XtraBars.Ribbon.GalleryControlClient galleryControlClient1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup rpgLayoutContacts;
         private DevExpress.XtraBars.BarButtonItem bbiNewFeed;
         private DevExpress.XtraBars.BarButtonItem bbiEditFeed;
@@ -1769,13 +1828,6 @@
         private DevExpress.XtraBars.BarButtonItem bbiNoDateFlag;
         private DevExpress.XtraBars.BarButtonItem bbiCustomFlag;
         private DevExpress.XtraBars.PopupMenu pmFlagStatus;
-        private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl3;
-        private DevExpress.MailClient.Win.Controls.PrintControl printControl1;
-        private DevExpress.XtraBars.Ribbon.BackstageViewTabItem bvtiPrint;
-        private DevExpress.MailClient.Win.Controls.HelpControl helpControl1;
-        private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl4;
-        private DevExpress.MailClient.Win.Controls.ExportControl exportControl1;
-        private DevExpress.XtraBars.Ribbon.BackstageViewTabItem bvtiExport;
         private DevExpress.XtraBars.BarButtonItem bbiNewContact;
         private DevExpress.XtraBars.BarButtonItem bbiEditContact;
         private DevExpress.XtraBars.BarButtonItem bbiDeleteContact;
@@ -1813,10 +1865,6 @@
         private DevExpress.XtraScheduler.UI.ToggleRecurrenceItem toggleRecurrenceItem1;
         private DevExpress.XtraScheduler.UI.ChangeAppointmentReminderItem changeAppointmentReminderItem1;
         private DevExpress.XtraScheduler.UI.RepositoryItemDuration repositoryItemDuration1;
-        private DevExpress.XtraScheduler.UI.CalendarToolsRibbonPageCategory calendarToolsRibbonPageCategory1;
-        private DevExpress.XtraScheduler.UI.AppointmentRibbonPage appointmentRibbonPage1;
-        private DevExpress.XtraScheduler.UI.ActionsRibbonPageGroup actionsRibbonPageGroup1;
-        private DevExpress.XtraScheduler.UI.OptionsRibbonPageGroup optionsRibbonPageGroup1;
         private DevExpress.XtraScheduler.UI.AppointmentRibbonPageGroup appointmentRibbonPageGroup1;
         private DevExpress.XtraScheduler.UI.NavigatorRibbonPageGroup navigatorRibbonPageGroup1;
         private DevExpress.XtraScheduler.UI.ArrangeRibbonPageGroup arrangeRibbonPageGroup1;
@@ -1830,9 +1878,57 @@
         private XtraBars.Ribbon.RibbonMiniToolbar ribbonMiniToolbar1;
         private XtraBars.Ribbon.RibbonMiniToolbar ribbonMiniToolbar2;
         private XtraBars.Ribbon.RibbonPage rpBDC;
-        private XtraNavBar.NavBarGroup nbgBDC;
+        private XtraBars.Ribbon.RibbonPage rpSecteur;
+        private XtraBars.BarButtonItem barButtonItem4;
+        private XtraBars.BarButtonItem barButtonItem5;
+        private XtraBars.BarButtonGroup barButtonGroup1;
+        private XtraBars.BarButtonGroup barButtonGroup2;
+        private XtraBars.BarButtonItem barButtonItem6;
+        private XtraBars.BarButtonItem barButtonItem7;
+        private XtraBars.BarButtonItem barButtonItem8;
+        private XtraBars.BarButtonItem barButtonItem9;
+        private XtraBars.BarButtonItem barButtonItem10;
+        private XtraBars.BarButtonItem barButtonItem11;
+        private XtraBars.BarButtonItem barButtonItem12;
+        private XtraBars.BarButtonItem barButtonItem13;
+        private XtraBars.Ribbon.RibbonPageGroup rpgGestionSecteur;
+        private XtraBars.Ribbon.RibbonPageGroup rpgGestionLivreur;
+        private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
+        private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
+        private XtraBars.Ribbon.BackstageViewControl backstageViewControl1;
+        private XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl1;
+        private Controls.HelpControl helpControl1;
+        private XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl2;
+        private XtraBars.Ribbon.GalleryControl galleryControl1;
+        private XtraBars.Ribbon.GalleryControlClient galleryControlClient1;
+        private XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl3;
+        private Controls.PrintControl printControl1;
+        private XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl4;
+        private Controls.ExportControl exportControl1;
+        private XtraBars.Ribbon.BackstageViewButtonItem bvbiSaveAs;
+        private XtraBars.Ribbon.BackstageViewButtonItem bvbiSaveAttachment;
+        private XtraBars.Ribbon.BackstageViewButtonItem bvbiSaveCalendar;
+        private XtraBars.Ribbon.BackstageViewTabItem bvtiInfo;
+        private XtraBars.Ribbon.BackstageViewTabItem bvtiOpen;
+        private XtraBars.Ribbon.BackstageViewTabItem bvtiPrint;
+        private XtraBars.Ribbon.BackstageViewTabItem bvtiExport;
+        private XtraBars.Ribbon.BackstageViewButtonItem bvbiExit;
+        private XtraBars.Ribbon.Gallery.GalleryControlGallery galleryControlGallery1;
+        private XtraNavBar.NavBarItem navBarItem1;
+        private XtraNavBar.NavBarGroup nbgMail;
+        private XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer1;
+        private XtraNavBar.NavBarGroup nbgContacts;
+        private XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer3;
+        private Controls.ucContacts ucContacts1;
+        private XtraNavBar.NavBarGroup nbgCalendar;
+        private XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer2;
+        private Controls.ucCalendar ucCalendar1;
+        private XtraNavBar.NavBarControl navBarControl1;
+        private XtraNavBar.NavBarGroup nbgSecteur;
         private XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer4;
-        private ucMailTree ucMailTree1;
+        private XtraNavBar.NavBarItem navBarItem2;
+        private XtraNavBar.NavBarItem navBarItem3;
+        private XtraEditors.PanelControl pcMain;
     }
 }
 

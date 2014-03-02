@@ -25,10 +25,16 @@ namespace vente_embarque.presenter.Stok
         {
             _EditStockView.Wilayas = _repositoryWilaya.FindAll();
         }
+
+        public void Write()
+        {
+            throw new NotImplementedException();
+        }
     }
 
     internal interface IEditStockPagePresenter
     {
         void Display();
+        void Write();
     }
 }

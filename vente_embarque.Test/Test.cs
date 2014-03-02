@@ -257,12 +257,19 @@ namespace vente_embarque.Test
         [Test]
         public void CanCreateStockDatabase()
         {
-            string stock1 = "stock2";
-            var stock = FactoryStock.CreateStock(stock1);
+            string stock2 = "stock2";
+            var stock = FactoryStock.CreateStock(stock2);
             var rs = new RepositoryStock();
             rs.Save(stock);
         }
-    }
 
-    
+        [Test]
+        public void CanCreateAgentTerraindatabae()
+        {
+            String stock3 = "stock3";
+            var agentterrain = FactoryAgentTerrain.CreateAgentTerrain(stock3);
+            var ra = new RepositoryAgentTerrain();
+            ra.Save(agentterrain);
+        }
+    }
 }

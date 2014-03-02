@@ -267,10 +267,8 @@ namespace DevExpress.MailClient.Win.Modules {
         protected internal override void ButtonClick(string tag) {
             switch(tag) {
                 case TagResources.RotateLayout:
-                    //layoutControl1.Root.RotateLayout();
                     break;
                 case TagResources.FlipLayout:
-                    //layoutControl1.Root.FlipLayout();
                     break;
                 case TagResources.DeleteItem:
                     foreach(int row in gridViewStock.GetSelectedRows())
@@ -336,7 +334,6 @@ namespace DevExpress.MailClient.Win.Modules {
 
         void CreateStock() {
             var stock = new ModelViewStock();
-            //message.MailType = MailType.Draft;
             EditStock(stock, true, null);
         }
         void EditStock(ModelViewStock stock, bool newStock, string caption)
