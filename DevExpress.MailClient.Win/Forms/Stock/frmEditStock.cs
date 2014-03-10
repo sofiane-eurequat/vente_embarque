@@ -39,7 +39,6 @@ namespace DevExpress.MailClient.Win {
 
             comboBoxWilaya.DataSource = Wilayas;
 
-
             this.newStock = newStock;
             DialogResult = DialogResult.Cancel;
             sourceStock = Stock;

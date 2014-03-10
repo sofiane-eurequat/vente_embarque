@@ -240,11 +240,11 @@
     <Compile Include="Forms\frmEditContact.Designer.cs">
       <DependentUpon>frmEditContact.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\GestionSecteur.cs">
+    <Compile Include="Forms\frmGestionSecteur.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\GestionSecteur.Designer.cs">
-      <DependentUpon>GestionSecteur.cs</DependentUpon>
+    <Compile Include="Forms\frmGestionSecteur.Designer.cs">
+      <DependentUpon>frmGestionSecteur.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Stock\frmEditStock.cs">
       <SubType>Form</SubType>
@@ -376,8 +376,8 @@
     <EmbeddedResource Include="Forms\frmEditContact.resx">
       <DependentUpon>frmEditContact.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\GestionSecteur.resx">
-      <DependentUpon>GestionSecteur.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmGestionSecteur.resx">
+      <DependentUpon>frmGestionSecteur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Stock\frmEditStock.resx">
       <DependentUpon>frmEditStock.cs</DependentUpon>
@@ -463,7 +463,9 @@
     <None Include="Resources\cart-shopping-magasin-icone-5771-16.png" />
     <None Include="Resources\delivery-box-icone-6837-16.png" />
     <None Include="Resources\delivery-box-icone-6837-32.png" />
-    <Content Include="Data\Mail.xml" />
+    <Content Include="Data\Mail.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Resources\Action_New_32x32.png" />
     <None Include="Resources\Action_New_12x12.png" />
     <None Include="Resources\Action_Save_32x32.png" />
