@@ -266,8 +266,8 @@ namespace vente_embarque.Test
         [Test]
         public void CanCreateAgentTerraindatabae()
         {
-            String stock3 = "stock3";
-            var agentterrain = FactoryAgentTerrain.CreateAgentTerrain(stock3);
+            String agentterrain1 = "agentterrain1";
+            var agentterrain = FactoryAgentTerrain.CreateAgentTerrain(agentterrain1);
             var ra = new RepositoryAgentTerrain();
             ra.Save(agentterrain);
         }

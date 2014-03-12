@@ -37,40 +37,63 @@
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.comboBoxWilaya = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxClients = new System.Windows.Forms.ComboBox();
             this.wilayaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.wilayaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.comboBoxCommune = new System.Windows.Forms.ComboBox();
             this.communesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.comboBoxWilaya = new System.Windows.Forms.ComboBox();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.wilayaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.modelViewSecteurBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colId = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colClient = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GCAgentTerrain = new DevExpress.XtraGrid.GridControl();
+            this.GVAgentTerrain = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colId1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colClient1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
+            this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.modelViewAgentTerrainBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.colName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.standaloneBarDockControl1 = new DevExpress.XtraBars.StandaloneBarDockControl();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wilayaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wilayaBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.communesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wilayaBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.modelViewSecteurBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GCAgentTerrain)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVAgentTerrain)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
+            this.xtraTabControl1.SuspendLayout();
+            this.xtraTabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.modelViewAgentTerrainBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
@@ -146,6 +169,54 @@
             this.barButtonItem6.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.LargeGlyph")));
             this.barButtonItem6.Name = "barButtonItem6";
             // 
+            // barButtonItem7
+            // 
+            this.barButtonItem7.Caption = "Effacer";
+            this.barButtonItem7.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.Glyph")));
+            this.barButtonItem7.Id = 8;
+            this.barButtonItem7.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.LargeGlyph")));
+            this.barButtonItem7.Name = "barButtonItem7";
+            // 
+            // barButtonItem8
+            // 
+            this.barButtonItem8.Caption = "Rafrichir";
+            this.barButtonItem8.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.Glyph")));
+            this.barButtonItem8.Id = 9;
+            this.barButtonItem8.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.LargeGlyph")));
+            this.barButtonItem8.Name = "barButtonItem8";
+            // 
+            // barButtonItem10
+            // 
+            this.barButtonItem10.Caption = "Fermer";
+            this.barButtonItem10.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.Glyph")));
+            this.barButtonItem10.Id = 12;
+            this.barButtonItem10.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.LargeGlyph")));
+            this.barButtonItem10.Name = "barButtonItem10";
+            // 
+            // barButtonItem9
+            // 
+            this.barButtonItem9.Caption = "Precedent";
+            this.barButtonItem9.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.Glyph")));
+            this.barButtonItem9.Id = 13;
+            this.barButtonItem9.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.LargeGlyph")));
+            this.barButtonItem9.Name = "barButtonItem9";
+            // 
+            // barButtonItem11
+            // 
+            this.barButtonItem11.Caption = "Suivant";
+            this.barButtonItem11.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.Glyph")));
+            this.barButtonItem11.Id = 14;
+            this.barButtonItem11.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.LargeGlyph")));
+            this.barButtonItem11.Name = "barButtonItem11";
+            // 
+            // barButtonItem12
+            // 
+            this.barButtonItem12.Caption = "Fermer";
+            this.barButtonItem12.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.Glyph")));
+            this.barButtonItem12.Id = 15;
+            this.barButtonItem12.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.LargeGlyph")));
+            this.barButtonItem12.Name = "barButtonItem12";
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -190,21 +261,6 @@
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             this.ribbonPageGroup4.Text = "Reinitialiser";
             // 
-            // ribbonStatusBar
-            // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 418);
-            this.ribbonStatusBar.Name = "ribbonStatusBar";
-            this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(803, 31);
-            // 
-            // barButtonItem7
-            // 
-            this.barButtonItem7.Caption = "Effacer";
-            this.barButtonItem7.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.Glyph")));
-            this.barButtonItem7.Id = 8;
-            this.barButtonItem7.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.LargeGlyph")));
-            this.barButtonItem7.Name = "barButtonItem7";
-            // 
             // ribbonPageGroup5
             // 
             this.ribbonPageGroup5.AllowTextClipping = false;
@@ -229,50 +285,17 @@
             this.ribbonPageGroup7.ShowCaptionButton = false;
             this.ribbonPageGroup7.Text = "Fermer";
             // 
-            // barButtonItem8
+            // ribbonStatusBar
             // 
-            this.barButtonItem8.Caption = "Rafrichir";
-            this.barButtonItem8.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.Glyph")));
-            this.barButtonItem8.Id = 9;
-            this.barButtonItem8.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.LargeGlyph")));
-            this.barButtonItem8.Name = "barButtonItem8";
-            // 
-            // barButtonItem10
-            // 
-            this.barButtonItem10.Caption = "Fermer";
-            this.barButtonItem10.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.Glyph")));
-            this.barButtonItem10.Id = 12;
-            this.barButtonItem10.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.LargeGlyph")));
-            this.barButtonItem10.Name = "barButtonItem10";
-            // 
-            // barButtonItem9
-            // 
-            this.barButtonItem9.Caption = "Precedent";
-            this.barButtonItem9.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.Glyph")));
-            this.barButtonItem9.Id = 13;
-            this.barButtonItem9.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.LargeGlyph")));
-            this.barButtonItem9.Name = "barButtonItem9";
-            // 
-            // barButtonItem11
-            // 
-            this.barButtonItem11.Caption = "Suivant";
-            this.barButtonItem11.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.Glyph")));
-            this.barButtonItem11.Id = 14;
-            this.barButtonItem11.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.LargeGlyph")));
-            this.barButtonItem11.Name = "barButtonItem11";
-            // 
-            // barButtonItem12
-            // 
-            this.barButtonItem12.Caption = "Fermer";
-            this.barButtonItem12.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.Glyph")));
-            this.barButtonItem12.Id = 15;
-            this.barButtonItem12.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.LargeGlyph")));
-            this.barButtonItem12.Name = "barButtonItem12";
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 474);
+            this.ribbonStatusBar.Name = "ribbonStatusBar";
+            this.ribbonStatusBar.Ribbon = this.ribbon;
+            this.ribbonStatusBar.Size = new System.Drawing.Size(803, 31);
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.comboBox2);
-            this.groupControl1.Controls.Add(this.comboBox1);
+            this.groupControl1.Controls.Add(this.comboBoxClients);
+            this.groupControl1.Controls.Add(this.comboBoxCommune);
             this.groupControl1.Controls.Add(this.comboBoxWilaya);
             this.groupControl1.Controls.Add(this.textEdit1);
             this.groupControl1.Controls.Add(this.labelControl4);
@@ -285,37 +308,46 @@
             this.groupControl1.TabIndex = 2;
             this.groupControl1.Text = "Information Generale";
             // 
-            // labelControl1
+            // comboBoxClients
             // 
-            this.labelControl1.Location = new System.Drawing.Point(5, 41);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(76, 13);
-            this.labelControl1.TabIndex = 4;
-            this.labelControl1.Text = "Nom du Secteur";
+            this.comboBoxClients.DataSource = this.wilayaBindingSource;
+            this.comboBoxClients.DisplayMember = "Name";
+            this.comboBoxClients.FormattingEnabled = true;
+            this.comboBoxClients.Location = new System.Drawing.Point(520, 37);
+            this.comboBoxClients.Name = "comboBoxClients";
+            this.comboBoxClients.Size = new System.Drawing.Size(206, 21);
+            this.comboBoxClients.TabIndex = 14;
+            this.comboBoxClients.ValueMember = "id";
             // 
-            // labelControl2
+            // wilayaBindingSource
             // 
-            this.labelControl2.Location = new System.Drawing.Point(403, 41);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(77, 13);
-            this.labelControl2.TabIndex = 5;
-            this.labelControl2.Text = "Liste des Clients";
+            this.wilayaBindingSource.DataSource = typeof(vente_embarque.Model.Wilaya);
             // 
-            // labelControl3
+            // comboBoxCommune
             // 
-            this.labelControl3.Location = new System.Drawing.Point(5, 77);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(32, 13);
-            this.labelControl3.TabIndex = 6;
-            this.labelControl3.Text = "Wilaya";
+            this.comboBoxCommune.DataSource = this.communesBindingSource;
+            this.comboBoxCommune.DisplayMember = "Name";
+            this.comboBoxCommune.FormattingEnabled = true;
+            this.comboBoxCommune.Location = new System.Drawing.Point(520, 74);
+            this.comboBoxCommune.Name = "comboBoxCommune";
+            this.comboBoxCommune.Size = new System.Drawing.Size(206, 21);
+            this.comboBoxCommune.TabIndex = 13;
+            this.comboBoxCommune.ValueMember = "id";
             // 
-            // labelControl4
+            // communesBindingSource
             // 
-            this.labelControl4.Location = new System.Drawing.Point(403, 78);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(47, 13);
-            this.labelControl4.TabIndex = 7;
-            this.labelControl4.Text = "Commune";
+            this.communesBindingSource.DataSource = typeof(vente_embarque.Model.Commune);
+            // 
+            // comboBoxWilaya
+            // 
+            this.comboBoxWilaya.DisplayMember = "Name";
+            this.comboBoxWilaya.FormattingEnabled = true;
+            this.comboBoxWilaya.Location = new System.Drawing.Point(115, 74);
+            this.comboBoxWilaya.Name = "comboBoxWilaya";
+            this.comboBoxWilaya.Size = new System.Drawing.Size(206, 21);
+            this.comboBoxWilaya.TabIndex = 12;
+            this.comboBoxWilaya.ValueMember = "id";
+            this.comboBoxWilaya.SelectedIndexChanged += new System.EventHandler(this.comboBoxWilaya_SelectedIndexChanged);
             // 
             // textEdit1
             // 
@@ -325,59 +357,159 @@
             this.textEdit1.Size = new System.Drawing.Size(206, 20);
             this.textEdit1.TabIndex = 8;
             // 
-            // comboBoxWilaya
+            // labelControl4
             // 
-            this.comboBoxWilaya.DisplayMember = "Name";
-            this.comboBoxWilaya.FormattingEnabled = true;
-            this.comboBoxWilaya.Location = new System.Drawing.Point(520, 37);
-            this.comboBoxWilaya.Name = "comboBoxWilaya";
-            this.comboBoxWilaya.Size = new System.Drawing.Size(217, 21);
-            this.comboBoxWilaya.TabIndex = 12;
-            this.comboBoxWilaya.ValueMember = "id";
+            this.labelControl4.Location = new System.Drawing.Point(403, 78);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(47, 13);
+            this.labelControl4.TabIndex = 7;
+            this.labelControl4.Text = "Commune";
             // 
-            // comboBox1
+            // labelControl3
             // 
-            this.comboBox1.DataSource = this.communesBindingSource;
-            this.comboBox1.DisplayMember = "Name";
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(520, 74);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(217, 21);
-            this.comboBox1.TabIndex = 13;
-            this.comboBox1.ValueMember = "id";
+            this.labelControl3.Location = new System.Drawing.Point(14, 77);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(32, 13);
+            this.labelControl3.TabIndex = 6;
+            this.labelControl3.Text = "Wilaya";
             // 
-            // comboBox2
+            // labelControl2
             // 
-            this.comboBox2.DataSource = this.wilayaBindingSource;
-            this.comboBox2.DisplayMember = "Name";
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(115, 74);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(206, 21);
-            this.comboBox2.TabIndex = 14;
-            this.comboBox2.ValueMember = "id";
+            this.labelControl2.Location = new System.Drawing.Point(403, 41);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(77, 13);
+            this.labelControl2.TabIndex = 5;
+            this.labelControl2.Text = "Liste des Clients";
             // 
-            // wilayaBindingSource
+            // labelControl1
             // 
-            this.wilayaBindingSource.DataSource = typeof(vente_embarque.Model.Wilaya);
+            this.labelControl1.Location = new System.Drawing.Point(14, 41);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(76, 13);
+            this.labelControl1.TabIndex = 4;
+            this.labelControl1.Text = "Nom du Secteur";
             // 
             // wilayaBindingSource1
             // 
             this.wilayaBindingSource1.DataSource = typeof(vente_embarque.Model.Wilaya);
             // 
-            // communesBindingSource
+            // modelViewSecteurBindingSource
             // 
-            this.communesBindingSource.DataSource = typeof(vente_embarque.Model.Communes);
+            this.modelViewSecteurBindingSource.DataSource = typeof(vente_embarque.presenter.Secteur.ModelViewSecteur);
             // 
-            // GestionSecteur
+            // gridView1
+            // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colId,
+            this.colClient});
+            this.gridView1.GridControl = this.GCAgentTerrain;
+            this.gridView1.Name = "gridView1";
+            // 
+            // colId
+            // 
+            this.colId.FieldName = "Id";
+            this.colId.Name = "colId";
+            this.colId.Visible = true;
+            this.colId.VisibleIndex = 0;
+            // 
+            // colClient
+            // 
+            this.colClient.FieldName = "Client";
+            this.colClient.Name = "colClient";
+            this.colClient.Visible = true;
+            this.colClient.VisibleIndex = 1;
+            // 
+            // GCAgentTerrain
+            // 
+            this.GCAgentTerrain.DataSource = this.modelViewAgentTerrainBindingSource;
+            this.GCAgentTerrain.Location = new System.Drawing.Point(-1, 28);
+            this.GCAgentTerrain.MainView = this.GVAgentTerrain;
+            this.GCAgentTerrain.MenuManager = this.ribbon;
+            this.GCAgentTerrain.Name = "GCAgentTerrain";
+            this.GCAgentTerrain.Size = new System.Drawing.Size(779, 142);
+            this.GCAgentTerrain.TabIndex = 5;
+            this.GCAgentTerrain.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.GVAgentTerrain,
+            this.gridView2,
+            this.gridView1});
+            // 
+            // GVAgentTerrain
+            // 
+            this.GVAgentTerrain.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colName});
+            this.GVAgentTerrain.GridControl = this.GCAgentTerrain;
+            this.GVAgentTerrain.Name = "GVAgentTerrain";
+            this.GVAgentTerrain.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridView2
+            // 
+            this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colId1,
+            this.colClient1});
+            this.gridView2.GridControl = this.GCAgentTerrain;
+            this.gridView2.Name = "gridView2";
+            // 
+            // colId1
+            // 
+            this.colId1.FieldName = "Id";
+            this.colId1.Name = "colId1";
+            this.colId1.Visible = true;
+            this.colId1.VisibleIndex = 1;
+            // 
+            // colClient1
+            // 
+            this.colClient1.FieldName = "Client";
+            this.colClient1.Name = "colClient1";
+            this.colClient1.Visible = true;
+            this.colClient1.VisibleIndex = 2;
+            // 
+            // xtraTabControl1
+            // 
+            this.xtraTabControl1.Location = new System.Drawing.Point(12, 270);
+            this.xtraTabControl1.Name = "xtraTabControl1";
+            this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
+            this.xtraTabControl1.Size = new System.Drawing.Size(779, 198);
+            this.xtraTabControl1.TabIndex = 8;
+            this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.xtraTabPage1});
+            // 
+            // xtraTabPage1
+            // 
+            this.xtraTabPage1.Controls.Add(this.standaloneBarDockControl1);
+            this.xtraTabPage1.Controls.Add(this.GCAgentTerrain);
+            this.xtraTabPage1.Name = "xtraTabPage1";
+            this.xtraTabPage1.Size = new System.Drawing.Size(773, 170);
+            this.xtraTabPage1.Text = "Liste des agents de terrain";
+            // 
+            // modelViewAgentTerrainBindingSource
+            // 
+            this.modelViewAgentTerrainBindingSource.DataSource = typeof(vente_embarque.presenter.Secteur.ModelViewAgentTerrain);
+            // 
+            // colName
+            // 
+            this.colName.FieldName = "Name";
+            this.colName.Name = "colName";
+            this.colName.Visible = true;
+            this.colName.VisibleIndex = 0;
+            // 
+            // standaloneBarDockControl1
+            // 
+            this.standaloneBarDockControl1.CausesValidation = false;
+            this.standaloneBarDockControl1.Location = new System.Drawing.Point(0, 3);
+            this.standaloneBarDockControl1.Name = "standaloneBarDockControl1";
+            this.standaloneBarDockControl1.Size = new System.Drawing.Size(537, 23);
+            this.standaloneBarDockControl1.Text = "standaloneBarDockControl1";
+            // 
+            // frmGestionSecteur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(803, 449);
+            this.ClientSize = new System.Drawing.Size(803, 505);
+            this.Controls.Add(this.xtraTabControl1);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
-            this.Name = "GestionSecteur";
+            this.Name = "frmGestionSecteur";
             this.Ribbon = this.ribbon;
             this.StatusBar = this.ribbonStatusBar;
             this.Text = "GestionSecteur";
@@ -385,10 +517,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wilayaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wilayaBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.communesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wilayaBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.modelViewSecteurBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GCAgentTerrain)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GVAgentTerrain)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
+            this.xtraTabControl1.ResumeLayout(false);
+            this.xtraTabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.modelViewAgentTerrainBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -423,11 +564,25 @@
         private XtraEditors.LabelControl labelControl2;
         private XtraEditors.LabelControl labelControl1;
         private XtraEditors.TextEdit textEdit1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBoxClients;
         private System.Windows.Forms.BindingSource wilayaBindingSource;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxCommune;
         private System.Windows.Forms.BindingSource communesBindingSource;
         private System.Windows.Forms.ComboBox comboBoxWilaya;
         private System.Windows.Forms.BindingSource wilayaBindingSource1;
+        private System.Windows.Forms.BindingSource modelViewSecteurBindingSource;
+        private XtraGrid.Views.Grid.GridView gridView1;
+        private XtraGrid.Columns.GridColumn colId;
+        private XtraGrid.Columns.GridColumn colClient;
+        private XtraGrid.GridControl GCAgentTerrain;
+        private XtraGrid.Views.Grid.GridView GVAgentTerrain;
+        private XtraGrid.Views.Grid.GridView gridView2;
+        private XtraGrid.Columns.GridColumn colId1;
+        private XtraGrid.Columns.GridColumn colClient1;
+        private XtraTab.XtraTabControl xtraTabControl1;
+        private XtraTab.XtraTabPage xtraTabPage1;
+        private System.Windows.Forms.BindingSource modelViewAgentTerrainBindingSource;
+        private XtraGrid.Columns.GridColumn colName;
+        private XtraBars.StandaloneBarDockControl standaloneBarDockControl1;
     }
 }

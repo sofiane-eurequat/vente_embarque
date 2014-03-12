@@ -37,7 +37,9 @@ namespace DevExpress.MailClient.Win {
             editStockPresenter = new EditStockPresenterPage(this, RepositoryWilaya);
             editStockPresenter.Display();
 
-            comboBoxWilaya.DataSource = Wilayas;
+            comboBoxWilaya.DataSource = Wilayas.OrderBy(c => c.Code).ToList();
+            comboBoxWilaya.ValueMember = "Code";
+            comboBoxCommune.DataSource = Wilayas.First(w => w.Code == (int)comboBoxWilaya.SelectedValue).Communes.OrderBy(c => c.Name).ToList();
 
             this.newStock = newStock;
             DialogResult = DialogResult.Cancel;
@@ -163,6 +165,13 @@ namespace DevExpress.MailClient.Win {
             IsMessageModified = false;
 
             RaiseSaveMessage();
+        }
+
+        private void comboBoxWilaya_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            comboBoxWilaya.ValueMember = "Code";
+            comboBoxCommune.DataSource = Wilayas.First(w => w.Code == (int)comboBoxWilaya.SelectedValue).Communes.OrderBy(c => c.Name).ToList();
+
         }
 
 

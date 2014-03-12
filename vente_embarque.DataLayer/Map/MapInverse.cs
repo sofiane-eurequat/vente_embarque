@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using DevExpress.Xpo;
+using vente_embarque.DataLayer.Entities;
 using vente_embarque.DataLayer.Entities.Stock;
 using vente_embarque.DataLayer.Helper;
 using vente_embarque.Model;
@@ -71,16 +72,25 @@ namespace vente_embarque.DataLayer.Map
                 };
         }
 
-        private static IEnumerable<Communes> MapCommunes(XPCollection<XpoCommune> communes)
+        private static IEnumerable<Commune> MapCommunes(XPCollection<XpoCommune> communes)
         {
 
-            var ListeCommunes = communes.Select(xpoCommune => new Communes()
+            var ListeCommunes = communes.Select(xpoCommune => new Commune()
                 {
                     Name = xpoCommune.Name,
                     id = xpoCommune.Oid
                 });
 
             return ListeCommunes;
+        }
+
+        public static AgentTerrain MapAgentTerrain(XpoAgentTerrain xpoAgentTerrain)
+        {
+            return new AgentTerrain()
+                {
+                    Name = xpoAgentTerrain.Name,
+                    id = xpoAgentTerrain.Oid
+                };
         }
     }
 }

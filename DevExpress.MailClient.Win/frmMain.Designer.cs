@@ -24,8 +24,7 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup3 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem13 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem1 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem2 = new DevExpress.XtraBars.Ribbon.GalleryItem();
@@ -40,9 +39,27 @@
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem10 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem11 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem12 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup3 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem13 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.galleryControlGallery1 = new DevExpress.XtraBars.Ribbon.Gallery.GalleryControlGallery();
+            this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
+            this.backstageViewClientControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.helpControl1 = new DevExpress.MailClient.Win.Controls.HelpControl();
+            this.backstageViewClientControl2 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.galleryControl1 = new DevExpress.XtraBars.Ribbon.GalleryControl();
+            this.galleryControlClient1 = new DevExpress.XtraBars.Ribbon.GalleryControlClient();
+            this.backstageViewClientControl3 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.printControl1 = new DevExpress.MailClient.Win.Controls.PrintControl();
+            this.backstageViewClientControl4 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.exportControl1 = new DevExpress.MailClient.Win.Controls.ExportControl();
+            this.bvbiSaveAs = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
+            this.bvbiSaveAttachment = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
+            this.bvbiSaveCalendar = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
+            this.bvtiInfo = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.bvtiOpen = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.bvtiPrint = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.bvtiExport = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.bvbiExit = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
             this.rgbiSkins = new DevExpress.XtraBars.RibbonGalleryBarItem();
             this.bbiRotateLayout = new DevExpress.XtraBars.BarButtonItem();
             this.bbiFlipLayout = new DevExpress.XtraBars.BarButtonItem();
@@ -132,7 +149,7 @@
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonGroup1 = new DevExpress.XtraBars.BarButtonGroup();
             this.barButtonGroup2 = new DevExpress.XtraBars.BarButtonGroup();
-            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiNewSecteur = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
@@ -165,6 +182,7 @@
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemSpinEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
+            this.galleryControlGallery1 = new DevExpress.XtraBars.Ribbon.Gallery.GalleryControlGallery();
             this.pmTreeView = new DevExpress.XtraBars.PopupMenu(this.components);
             this.pmMessage = new DevExpress.XtraBars.PopupMenu(this.components);
             this.pmFlagStatus = new DevExpress.XtraBars.PopupMenu(this.components);
@@ -179,30 +197,19 @@
             this.navBarGroupControlContainer2 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
             this.ucCalendar1 = new DevExpress.MailClient.Win.Controls.ucCalendar();
             this.navBarControl1 = new DevExpress.XtraNavBar.NavBarControl();
-            this.bvbiExit = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
-            this.bvtiExport = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
-            this.bvtiPrint = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
-            this.bvtiOpen = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
-            this.bvtiInfo = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
-            this.bvbiSaveCalendar = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
-            this.bvbiSaveAttachment = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
-            this.bvbiSaveAs = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
-            this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
-            this.backstageViewClientControl4 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
-            this.exportControl1 = new DevExpress.MailClient.Win.Controls.ExportControl();
-            this.backstageViewClientControl3 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
-            this.printControl1 = new DevExpress.MailClient.Win.Controls.PrintControl();
-            this.backstageViewClientControl2 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
-            this.galleryControl1 = new DevExpress.XtraBars.Ribbon.GalleryControl();
-            this.galleryControlClient1 = new DevExpress.XtraBars.Ribbon.GalleryControlClient();
-            this.backstageViewClientControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
-            this.helpControl1 = new DevExpress.MailClient.Win.Controls.HelpControl();
-            this.pcMain = new DevExpress.XtraEditors.PanelControl();
             this.nbgSecteur = new DevExpress.XtraNavBar.NavBarGroup();
+            this.navBarGroupControlContainer4 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
             this.navBarItem2 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem3 = new DevExpress.XtraNavBar.NavBarItem();
-            this.navBarGroupControlContainer4 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
+            this.pcMain = new DevExpress.XtraEditors.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
+            this.backstageViewControl1.SuspendLayout();
+            this.backstageViewClientControl1.SuspendLayout();
+            this.backstageViewClientControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.galleryControl1)).BeginInit();
+            this.galleryControl1.SuspendLayout();
+            this.backstageViewClientControl3.SuspendLayout();
+            this.backstageViewClientControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDuration1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).BeginInit();
@@ -214,13 +221,6 @@
             this.navBarGroupControlContainer2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
             this.navBarControl1.SuspendLayout();
-            this.backstageViewControl1.SuspendLayout();
-            this.backstageViewClientControl4.SuspendLayout();
-            this.backstageViewClientControl3.SuspendLayout();
-            this.backstageViewClientControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.galleryControl1)).BeginInit();
-            this.galleryControl1.SuspendLayout();
-            this.backstageViewClientControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcMain)).BeginInit();
             this.pcMain.SuspendLayout();
             this.SuspendLayout();
@@ -324,7 +324,7 @@
             this.barButtonItem5,
             this.barButtonGroup1,
             this.barButtonGroup2,
-            this.barButtonItem6,
+            this.bbiNewSecteur,
             this.barButtonItem7,
             this.barButtonItem8,
             this.barButtonItem9,
@@ -353,35 +353,133 @@
             this.ribbonControl1.BeforeApplicationButtonContentControlShow += new System.EventHandler(this.ribbonControl1_BeforeApplicationButtonContentControlShow);
             this.ribbonControl1.ShowCustomizationMenu += new DevExpress.XtraBars.Ribbon.RibbonCustomizationMenuEventHandler(this.ribbonControl1_ShowCustomizationMenu);
             // 
-            // galleryControlGallery1
+            // backstageViewControl1
             // 
-            this.galleryControlGallery1.Appearance.ItemCaptionAppearance.Hovered.Options.UseTextOptions = true;
-           // this.galleryControlGallery1.Appearance.ItemCaptionAppearance.Hovered.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            /*this.galleryControlGallery1.Appearance.ItemCaptionAppearance.Hovered.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.galleryControlGallery1.Appearance.ItemCaptionAppearance.Normal.Options.UseTextOptions = true;
-            this.galleryControlGallery1.Appearance.ItemCaptionAppearance.Normal.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.galleryControlGallery1.Appearance.ItemCaptionAppearance.Normal.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.galleryControlGallery1.Appearance.ItemCaptionAppearance.Pressed.Options.UseTextOptions = true;
-            this.galleryControlGallery1.Appearance.ItemCaptionAppearance.Pressed.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.galleryControlGallery1.Appearance.ItemCaptionAppearance.Pressed.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.galleryControlGallery1.AutoFitColumns = false;
-            this.galleryControlGallery1.AutoSize = DevExpress.XtraBars.Ribbon.GallerySizeMode.None;
-            this.galleryControlGallery1.BackColor = System.Drawing.Color.Transparent;
-            this.galleryControlGallery1.ColumnCount = 1;
-            this.galleryControlGallery1.FixedImageSize = false;*/
-            resources.ApplyResources(galleryItemGroup3, "galleryItemGroup3");
-            resources.ApplyResources(galleryItem13, "galleryItem13");
-            galleryItem13.Image = global::DevExpress.MailClient.Win.Properties.Resources.OpenClendar_64x64;
-            galleryItem13.Tag = "OpenCalendar";
-            galleryItemGroup3.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
-            galleryItem13});
-            this.galleryControlGallery1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup3});
-            this.galleryControlGallery1.ItemImageLocation = DevExpress.Utils.Locations.Left;
-            this.galleryControlGallery1.ShowGroupCaption = false;
-            this.galleryControlGallery1.ShowItemText = true;
-            this.galleryControlGallery1.ShowScrollBar = DevExpress.XtraBars.Ribbon.Gallery.ShowScrollBar.Hide;
-            this.galleryControlGallery1.ItemClick += new DevExpress.XtraBars.Ribbon.GalleryItemClickEventHandler(this.galleryControlGallery1_ItemClick);
+            this.backstageViewControl1.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Yellow;
+            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl1);
+            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl2);
+            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl3);
+            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl4);
+            this.backstageViewControl1.Items.Add(this.bvbiSaveAs);
+            this.backstageViewControl1.Items.Add(this.bvbiSaveAttachment);
+            this.backstageViewControl1.Items.Add(this.bvbiSaveCalendar);
+            this.backstageViewControl1.Items.Add(this.bvtiInfo);
+            this.backstageViewControl1.Items.Add(this.bvtiOpen);
+            this.backstageViewControl1.Items.Add(this.bvtiPrint);
+            this.backstageViewControl1.Items.Add(this.bvtiExport);
+            this.backstageViewControl1.Items.Add(this.bvbiExit);
+            resources.ApplyResources(this.backstageViewControl1, "backstageViewControl1");
+            this.backstageViewControl1.Name = "backstageViewControl1";
+            this.backstageViewControl1.Ribbon = this.ribbonControl1;
+            this.backstageViewControl1.SelectedTab = this.bvtiInfo;
+            this.backstageViewControl1.SelectedTabIndex = 3;
+            this.backstageViewControl1.ItemClick += new DevExpress.XtraBars.Ribbon.BackstageViewItemEventHandler(this.backstageViewControl1_ItemClick);
+            // 
+            // backstageViewClientControl1
+            // 
+            this.backstageViewClientControl1.Controls.Add(this.helpControl1);
+            resources.ApplyResources(this.backstageViewClientControl1, "backstageViewClientControl1");
+            this.backstageViewClientControl1.Name = "backstageViewClientControl1";
+            // 
+            // helpControl1
+            // 
+            resources.ApplyResources(this.helpControl1, "helpControl1");
+            this.helpControl1.ForeColor = System.Drawing.Color.Transparent;
+            this.helpControl1.Name = "helpControl1";
+            // 
+            // backstageViewClientControl2
+            // 
+            this.backstageViewClientControl2.Controls.Add(this.galleryControl1);
+            resources.ApplyResources(this.backstageViewClientControl2, "backstageViewClientControl2");
+            this.backstageViewClientControl2.Name = "backstageViewClientControl2";
+            // 
+            // galleryControl1
+            // 
+            this.galleryControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.galleryControl1.Controls.Add(this.galleryControlClient1);
+            this.galleryControl1.DesignGalleryGroupIndex = 0;
+            this.galleryControl1.DesignGalleryItemIndex = 0;
+            resources.ApplyResources(this.galleryControl1, "galleryControl1");
+            this.galleryControl1.Name = "galleryControl1";
+            // 
+            // galleryControlClient1
+            // 
+            this.galleryControlClient1.GalleryControl = this.galleryControl1;
+            resources.ApplyResources(this.galleryControlClient1, "galleryControlClient1");
+            // 
+            // backstageViewClientControl3
+            // 
+            this.backstageViewClientControl3.Controls.Add(this.printControl1);
+            resources.ApplyResources(this.backstageViewClientControl3, "backstageViewClientControl3");
+            this.backstageViewClientControl3.Name = "backstageViewClientControl3";
+            // 
+            // printControl1
+            // 
+            resources.ApplyResources(this.printControl1, "printControl1");
+            this.printControl1.ForeColor = System.Drawing.Color.Transparent;
+            this.printControl1.Name = "printControl1";
+            // 
+            // backstageViewClientControl4
+            // 
+            this.backstageViewClientControl4.Controls.Add(this.exportControl1);
+            resources.ApplyResources(this.backstageViewClientControl4, "backstageViewClientControl4");
+            this.backstageViewClientControl4.Name = "backstageViewClientControl4";
+            // 
+            // exportControl1
+            // 
+            resources.ApplyResources(this.exportControl1, "exportControl1");
+            this.exportControl1.ForeColor = System.Drawing.Color.Transparent;
+            this.exportControl1.Name = "exportControl1";
+            // 
+            // bvbiSaveAs
+            // 
+            resources.ApplyResources(this.bvbiSaveAs, "bvbiSaveAs");
+            this.bvbiSaveAs.Name = "bvbiSaveAs";
+            // 
+            // bvbiSaveAttachment
+            // 
+            resources.ApplyResources(this.bvbiSaveAttachment, "bvbiSaveAttachment");
+            this.bvbiSaveAttachment.Name = "bvbiSaveAttachment";
+            // 
+            // bvbiSaveCalendar
+            // 
+            resources.ApplyResources(this.bvbiSaveCalendar, "bvbiSaveCalendar");
+            this.bvbiSaveCalendar.Name = "bvbiSaveCalendar";
+            // 
+            // bvtiInfo
+            // 
+            resources.ApplyResources(this.bvtiInfo, "bvtiInfo");
+            this.bvtiInfo.ContentControl = this.backstageViewClientControl1;
+            this.bvtiInfo.Name = "bvtiInfo";
+            this.bvtiInfo.Selected = true;
+            // 
+            // bvtiOpen
+            // 
+            resources.ApplyResources(this.bvtiOpen, "bvtiOpen");
+            this.bvtiOpen.ContentControl = this.backstageViewClientControl2;
+            this.bvtiOpen.Name = "bvtiOpen";
+            this.bvtiOpen.Selected = false;
+            // 
+            // bvtiPrint
+            // 
+            resources.ApplyResources(this.bvtiPrint, "bvtiPrint");
+            this.bvtiPrint.ContentControl = this.backstageViewClientControl3;
+            this.bvtiPrint.Name = "bvtiPrint";
+            this.bvtiPrint.Selected = false;
+            this.bvtiPrint.SelectedChanged += new DevExpress.XtraBars.Ribbon.BackstageViewItemEventHandler(this.bvtiPrint_SelectedChanged);
+            // 
+            // bvtiExport
+            // 
+            resources.ApplyResources(this.bvtiExport, "bvtiExport");
+            this.bvtiExport.ContentControl = this.backstageViewClientControl4;
+            this.bvtiExport.Name = "bvtiExport";
+            this.bvtiExport.Selected = false;
+            // 
+            // bvbiExit
+            // 
+            resources.ApplyResources(this.bvbiExit, "bvbiExit");
+            this.bvbiExit.Name = "bvbiExit";
+            this.bvbiExit.ItemClick += new DevExpress.XtraBars.Ribbon.BackstageViewItemEventHandler(this.bvbiExit_ItemClick);
             // 
             // rgbiSkins
             // 
@@ -1136,13 +1234,13 @@
             this.barButtonGroup2.Id = 4;
             this.barButtonGroup2.Name = "barButtonGroup2";
             // 
-            // barButtonItem6
+            // bbiNewSecteur
             // 
-            resources.ApplyResources(this.barButtonItem6, "barButtonItem6");
-            this.barButtonItem6.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.Glyph")));
-            this.barButtonItem6.Id = 5;
-            this.barButtonItem6.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.LargeGlyph")));
-            this.barButtonItem6.Name = "barButtonItem6";
+            resources.ApplyResources(this.bbiNewSecteur, "bbiNewSecteur");
+            this.bbiNewSecteur.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiNewSecteur.Glyph")));
+            this.bbiNewSecteur.Id = 5;
+            this.bbiNewSecteur.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiNewSecteur.LargeGlyph")));
+            this.bbiNewSecteur.Name = "bbiNewSecteur";
             // 
             // barButtonItem7
             // 
@@ -1348,7 +1446,7 @@
             // 
             // rpgGestionSecteur
             // 
-            this.rpgGestionSecteur.ItemLinks.Add(this.barButtonItem6);
+            this.rpgGestionSecteur.ItemLinks.Add(this.bbiNewSecteur);
             this.rpgGestionSecteur.ItemLinks.Add(this.barButtonItem7);
             this.rpgGestionSecteur.ItemLinks.Add(this.barButtonItem8);
             this.rpgGestionSecteur.ItemLinks.Add(this.barButtonItem9);
@@ -1402,6 +1500,23 @@
             resources.ApplyResources(this.ribbonStatusBar1, "ribbonStatusBar1");
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
+            // 
+            // galleryControlGallery1
+            // 
+            this.galleryControlGallery1.Appearance.ItemCaptionAppearance.Hovered.Options.UseTextOptions = true;
+            resources.ApplyResources(galleryItemGroup3, "galleryItemGroup3");
+            resources.ApplyResources(galleryItem13, "galleryItem13");
+            galleryItem13.Image = global::DevExpress.MailClient.Win.Properties.Resources.OpenClendar_64x64;
+            galleryItem13.Tag = "OpenCalendar";
+            galleryItemGroup3.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem13});
+            this.galleryControlGallery1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
+            galleryItemGroup3});
+            this.galleryControlGallery1.ItemImageLocation = DevExpress.Utils.Locations.Left;
+            this.galleryControlGallery1.ShowGroupCaption = false;
+            this.galleryControlGallery1.ShowItemText = true;
+            this.galleryControlGallery1.ShowScrollBar = DevExpress.XtraBars.Ribbon.Gallery.ShowScrollBar.Hide;
+            this.galleryControlGallery1.ItemClick += new DevExpress.XtraBars.Ribbon.GalleryItemClickEventHandler(this.galleryControlGallery1_ItemClick);
             // 
             // pmTreeView
             // 
@@ -1564,141 +1679,6 @@
             this.navBarControl1.NavPaneStateChanged += new System.EventHandler(this.navBarControl1_NavPaneStateChanged);
             this.navBarControl1.ActiveGroupChanged += new DevExpress.XtraNavBar.NavBarGroupEventHandler(this.navBarControl1_ActiveGroupChanged);
             // 
-            // bvbiExit
-            // 
-            resources.ApplyResources(this.bvbiExit, "bvbiExit");
-            this.bvbiExit.Name = "bvbiExit";
-            this.bvbiExit.ItemClick += new DevExpress.XtraBars.Ribbon.BackstageViewItemEventHandler(this.bvbiExit_ItemClick);
-            // 
-            // bvtiExport
-            // 
-            resources.ApplyResources(this.bvtiExport, "bvtiExport");
-            this.bvtiExport.ContentControl = this.backstageViewClientControl4;
-            this.bvtiExport.Name = "bvtiExport";
-            this.bvtiExport.Selected = false;
-            // 
-            // bvtiPrint
-            // 
-            resources.ApplyResources(this.bvtiPrint, "bvtiPrint");
-            this.bvtiPrint.ContentControl = this.backstageViewClientControl3;
-            this.bvtiPrint.Name = "bvtiPrint";
-            this.bvtiPrint.Selected = false;
-            this.bvtiPrint.SelectedChanged += new DevExpress.XtraBars.Ribbon.BackstageViewItemEventHandler(this.bvtiPrint_SelectedChanged);
-            // 
-            // bvtiOpen
-            // 
-            resources.ApplyResources(this.bvtiOpen, "bvtiOpen");
-            this.bvtiOpen.ContentControl = this.backstageViewClientControl2;
-            this.bvtiOpen.Name = "bvtiOpen";
-            this.bvtiOpen.Selected = false;
-            // 
-            // bvtiInfo
-            // 
-            resources.ApplyResources(this.bvtiInfo, "bvtiInfo");
-            this.bvtiInfo.ContentControl = this.backstageViewClientControl1;
-            this.bvtiInfo.Name = "bvtiInfo";
-            this.bvtiInfo.Selected = true;
-            // 
-            // bvbiSaveCalendar
-            // 
-            resources.ApplyResources(this.bvbiSaveCalendar, "bvbiSaveCalendar");
-            this.bvbiSaveCalendar.Name = "bvbiSaveCalendar";
-            // 
-            // bvbiSaveAttachment
-            // 
-            resources.ApplyResources(this.bvbiSaveAttachment, "bvbiSaveAttachment");
-            this.bvbiSaveAttachment.Name = "bvbiSaveAttachment";
-            // 
-            // bvbiSaveAs
-            // 
-            resources.ApplyResources(this.bvbiSaveAs, "bvbiSaveAs");
-            this.bvbiSaveAs.Name = "bvbiSaveAs";
-            // 
-            // backstageViewControl1
-            // 
-            this.backstageViewControl1.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Yellow;
-            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl1);
-            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl2);
-            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl3);
-            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl4);
-            this.backstageViewControl1.Items.Add(this.bvbiSaveAs);
-            this.backstageViewControl1.Items.Add(this.bvbiSaveAttachment);
-            this.backstageViewControl1.Items.Add(this.bvbiSaveCalendar);
-            this.backstageViewControl1.Items.Add(this.bvtiInfo);
-            this.backstageViewControl1.Items.Add(this.bvtiOpen);
-            this.backstageViewControl1.Items.Add(this.bvtiPrint);
-            this.backstageViewControl1.Items.Add(this.bvtiExport);
-            this.backstageViewControl1.Items.Add(this.bvbiExit);
-            resources.ApplyResources(this.backstageViewControl1, "backstageViewControl1");
-            this.backstageViewControl1.Name = "backstageViewControl1";
-            this.backstageViewControl1.Ribbon = this.ribbonControl1;
-            this.backstageViewControl1.SelectedTab = this.bvtiInfo;
-            this.backstageViewControl1.SelectedTabIndex = 3;
-            this.backstageViewControl1.ItemClick += new DevExpress.XtraBars.Ribbon.BackstageViewItemEventHandler(this.backstageViewControl1_ItemClick);
-            // 
-            // backstageViewClientControl4
-            // 
-            this.backstageViewClientControl4.Controls.Add(this.exportControl1);
-            resources.ApplyResources(this.backstageViewClientControl4, "backstageViewClientControl4");
-            this.backstageViewClientControl4.Name = "backstageViewClientControl4";
-            // 
-            // exportControl1
-            // 
-            resources.ApplyResources(this.exportControl1, "exportControl1");
-            this.exportControl1.ForeColor = System.Drawing.Color.Transparent;
-            this.exportControl1.Name = "exportControl1";
-            // 
-            // backstageViewClientControl3
-            // 
-            this.backstageViewClientControl3.Controls.Add(this.printControl1);
-            resources.ApplyResources(this.backstageViewClientControl3, "backstageViewClientControl3");
-            this.backstageViewClientControl3.Name = "backstageViewClientControl3";
-            // 
-            // printControl1
-            // 
-            resources.ApplyResources(this.printControl1, "printControl1");
-            this.printControl1.ForeColor = System.Drawing.Color.Transparent;
-            this.printControl1.Name = "printControl1";
-            // 
-            // backstageViewClientControl2
-            // 
-            this.backstageViewClientControl2.Controls.Add(this.galleryControl1);
-            resources.ApplyResources(this.backstageViewClientControl2, "backstageViewClientControl2");
-            this.backstageViewClientControl2.Name = "backstageViewClientControl2";
-            // 
-            // galleryControl1
-            // 
-            this.galleryControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.galleryControl1.Controls.Add(this.galleryControlClient1);
-            this.galleryControl1.DesignGalleryGroupIndex = 0;
-            this.galleryControl1.DesignGalleryItemIndex = 0;
-            resources.ApplyResources(this.galleryControl1, "galleryControl1");
-            this.galleryControl1.Name = "galleryControl1";
-            // 
-            // galleryControlClient1
-            // 
-            this.galleryControlClient1.GalleryControl = this.galleryControl1;
-            resources.ApplyResources(this.galleryControlClient1, "galleryControlClient1");
-            // 
-            // backstageViewClientControl1
-            // 
-            this.backstageViewClientControl1.Controls.Add(this.helpControl1);
-            resources.ApplyResources(this.backstageViewClientControl1, "backstageViewClientControl1");
-            this.backstageViewClientControl1.Name = "backstageViewClientControl1";
-            // 
-            // helpControl1
-            // 
-            resources.ApplyResources(this.helpControl1, "helpControl1");
-            this.helpControl1.ForeColor = System.Drawing.Color.Transparent;
-            this.helpControl1.Name = "helpControl1";
-            // 
-            // pcMain
-            // 
-            this.pcMain.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pcMain.Controls.Add(this.backstageViewControl1);
-            resources.ApplyResources(this.pcMain, "pcMain");
-            this.pcMain.Name = "pcMain";
-            // 
             // nbgSecteur
             // 
             resources.ApplyResources(this.nbgSecteur, "nbgSecteur");
@@ -1713,6 +1693,11 @@
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem3)});
             this.nbgSecteur.Name = "nbgSecteur";
             // 
+            // navBarGroupControlContainer4
+            // 
+            this.navBarGroupControlContainer4.Name = "navBarGroupControlContainer4";
+            resources.ApplyResources(this.navBarGroupControlContainer4, "navBarGroupControlContainer4");
+            // 
             // navBarItem2
             // 
             resources.ApplyResources(this.navBarItem2, "navBarItem2");
@@ -1723,10 +1708,12 @@
             resources.ApplyResources(this.navBarItem3, "navBarItem3");
             this.navBarItem3.Name = "navBarItem3";
             // 
-            // navBarGroupControlContainer4
+            // pcMain
             // 
-            this.navBarGroupControlContainer4.Name = "navBarGroupControlContainer4";
-            resources.ApplyResources(this.navBarGroupControlContainer4, "navBarGroupControlContainer4");
+            this.pcMain.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pcMain.Controls.Add(this.backstageViewControl1);
+            resources.ApplyResources(this.pcMain, "pcMain");
+            this.pcMain.Name = "pcMain";
             // 
             // frmMain
             // 
@@ -1742,6 +1729,13 @@
             this.StatusBar = this.ribbonStatusBar1;
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMain_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
+            this.backstageViewControl1.ResumeLayout(false);
+            this.backstageViewClientControl1.ResumeLayout(false);
+            this.backstageViewClientControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.galleryControl1)).EndInit();
+            this.galleryControl1.ResumeLayout(false);
+            this.backstageViewClientControl3.ResumeLayout(false);
+            this.backstageViewClientControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDuration1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).EndInit();
@@ -1753,13 +1747,6 @@
             this.navBarGroupControlContainer2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).EndInit();
             this.navBarControl1.ResumeLayout(false);
-            this.backstageViewControl1.ResumeLayout(false);
-            this.backstageViewClientControl4.ResumeLayout(false);
-            this.backstageViewClientControl3.ResumeLayout(false);
-            this.backstageViewClientControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.galleryControl1)).EndInit();
-            this.galleryControl1.ResumeLayout(false);
-            this.backstageViewClientControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pcMain)).EndInit();
             this.pcMain.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -1883,7 +1870,7 @@
         private XtraBars.BarButtonItem barButtonItem5;
         private XtraBars.BarButtonGroup barButtonGroup1;
         private XtraBars.BarButtonGroup barButtonGroup2;
-        private XtraBars.BarButtonItem barButtonItem6;
+        private XtraBars.BarButtonItem bbiNewSecteur;
         private XtraBars.BarButtonItem barButtonItem7;
         private XtraBars.BarButtonItem barButtonItem8;
         private XtraBars.BarButtonItem barButtonItem9;

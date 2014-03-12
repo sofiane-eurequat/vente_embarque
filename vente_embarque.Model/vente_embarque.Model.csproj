@@ -42,7 +42,7 @@
     <Compile Include="AgentTerrain.cs" />
     <Compile Include="Category.cs" />
     <Compile Include="Client.cs" />
-    <Compile Include="Communes.cs" />
+    <Compile Include="Commune.cs" />
     <Compile Include="Delivery.cs" />
     <Compile Include="Enum\GestionProduit.cs" />
     <Compile Include="Enum\Priorite.cs" />

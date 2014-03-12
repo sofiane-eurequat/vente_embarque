@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using DevExpress.Xpo;
 using vente_embarque.Core.Domain;
 using vente_embarque.Core.Domain.Query;
+using vente_embarque.DataLayer.Entities;
 using vente_embarque.Model;
 
 namespace vente_embarque.DataLayer
@@ -20,7 +21,18 @@ namespace vente_embarque.DataLayer
 
         public IEnumerable<AgentTerrain> FindAll()
         {
-            throw new NotImplementedException();
+            var listeAgentTerrain = new List<AgentTerrain>();
+            AppSettingsReader config = new AppSettingsReader();
+            using (
+                var uow = new UnitOfWork()
+                {
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
+                })
+            {
+                var AgentTerrains = new XPCollection<XpoAgentTerrain>(uow);
+                listeAgentTerrain.AddRange(AgentTerrains.Select(Map.MapInverse.MapAgentTerrain));
+            }
+            return listeAgentTerrain;
         }
 
         public IEnumerable<AgentTerrain> FindBy(Query query)

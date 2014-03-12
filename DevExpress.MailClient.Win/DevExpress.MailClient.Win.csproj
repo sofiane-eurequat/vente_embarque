@@ -409,6 +409,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Calendar.resx">
       <DependentUpon>Calendar.cs</DependentUpon>
@@ -440,6 +441,8 @@
     <None Include="Properties\DataSources\vente_embarque.Model.Wilaya.datasource" />
     <None Include="Properties\DataSources\vente_embarque.presenter.ModelViewProduct.datasource" />
     <None Include="Properties\DataSources\vente_embarque.presenter.ModelViewProductLine.datasource" />
+    <None Include="Properties\DataSources\vente_embarque.presenter.Secteur.ModelViewAgentTerrain.datasource" />
+    <None Include="Properties\DataSources\vente_embarque.presenter.Secteur.ModelViewSecteur.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

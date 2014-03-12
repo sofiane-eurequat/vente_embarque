@@ -12,15 +12,18 @@ namespace vente_embarque.presenter.Secteur
     {
         private readonly IEditSecteurView _EditSecteurView;
         private IRepository<Wilaya, Guid> _repositoryWilaya;
-        public EditSecteurPresenterPage(IEditSecteurView editSecteurView,IRepository<Wilaya,Guid> repository)
+        private IRepository<AgentTerrain, Guid> _repositoryAgentTerrain;
+        public EditSecteurPresenterPage(IEditSecteurView editSecteurView,IRepository<Wilaya,Guid> repository, IRepository<AgentTerrain,Guid> repository1 )
         {
             _EditSecteurView = editSecteurView;
             _repositoryWilaya = repository;
+            _repositoryAgentTerrain = repository1;
         }
 
         public void Display()
         {
             _EditSecteurView.Wilayas = _repositoryWilaya.FindAll();
+            _EditSecteurView.AgentTerrains = _repositoryAgentTerrain.FindAll();
         }
 
         public void Write()

@@ -1720,7 +1720,7 @@
             // 
             // communesBindingSource
             // 
-            this.communesBindingSource.DataSource = typeof(vente_embarque.Model.Communes);
+            this.communesBindingSource.DataSource = typeof(vente_embarque.Model.Commune);
             // 
             // comboBoxWilaya
             // 
@@ -1730,6 +1730,7 @@
             resources.ApplyResources(this.comboBoxWilaya, "comboBoxWilaya");
             this.comboBoxWilaya.Name = "comboBoxWilaya";
             this.comboBoxWilaya.ValueMember = "id";
+            this.comboBoxWilaya.SelectedIndexChanged += new System.EventHandler(this.comboBoxWilaya_SelectedIndexChanged);
             // 
             // wilayaBindingSource
             // 

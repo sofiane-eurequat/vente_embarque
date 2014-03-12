@@ -146,7 +146,7 @@
   <data name="repositoryItemFontEdit1.AutoHeight" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <assembly alias="DevExpress.Utils.v13.1" name="DevExpress.Utils.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <assembly alias="DevExpress.Utils.v13.1" name="DevExpress.Utils.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   <data name="repositoryItemFontEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.1">
     <value>Combo</value>
   </data>
@@ -482,49 +482,50 @@
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAA9dEVYdFRpdGxlAE5ldztQYWdlO0JhcnM7UmliYm9uO1N0YW5kYXJkO0l0ZW07Qmxhbms7RGVm
-        YXVsdDtFbXB0eTsTBFLtAAACHUlEQVQ4T2WSW08TURSFG4logYqAf88nsJoYSTQBKQSjRjHWoJhqMSFi
-        CKLEJ1tijJIQ8EIwRir+BpVL2+l97jPLtU9rOxMm+ebMw/nWPvvsiQCI8OlKr+Q2n63+wvzqXpPXe0i/
-        +ql4KqwIOTx5mcPci51PdLqV2wo4KRuDjy/w5fPVWX145PHSD5Gi3NIO6E4t74oHy/ZgtjAsYrrQTQe6
-        4aBhuHBdH7PPv4vUGwqYW9pVVZXUFl0lNSjXSY3ftushubBzLODU7OI3ddSO5KKuUyQ13UWVVPhtOR5m
-        5rdF6gsGnE4uSIAfkpRYp9hwUFbYqrXbqc8ixYIB0Zn0trqgGjdVGdCRHJTqNjRSqtmqvemHWyKdCQXc
-        TH1RAW2xTpGCUKxZKFYt5CsW78JF4sGGSP3BgJ4bjzbheb4SpJrGtVCxlZQvN+Wjssm2HIzdXz8W0JtI
-        bsBlgFRS1SgdKUwcCiUTB6TCFq/e/SjS2WBA39i9dTiccVtqCYeaif3/FE11H6O33os0EAyIXbvzgQGe
-        kg40Q9EUDfwtGPij0KFVbVyefifSYCjgClNtzlgEqbRfpEhEEn7nTaLzXixcmlwTaSgUIKnyk8gIq5yC
-        9FriJDROQOOdFFg5z9akxfhERqTQCaLD42+2Lk6tIT6VRXwyi5GJLC4kMk2uZzBMRsbfKs6PLn+lE/oT
-        T5Ae0k8GWgy2GApwrrXGSBeAyD9zsuRZ1Bq/cAAAAABJRU5ErkJggg==
+        YXVsdDtFbXB0eTsTBFLtAAACKklEQVQ4T2WU7UtTYRjGpciaul6sf69P2goioUBzilFRRgvLWM1AKsQs
+        6VObRJQg2osYkcv+hmrqtrOXs533c66u+zlrnrUD13kZ5/e7n+e+D+sB0MPjcGYpv/5k+SfmlnfCvNpB
+        5uUPlceSJUkej17kMft86yOZXsW2BEfkxegR8CHgKeDp4BrA58PDhe9SNRYV9KYXtxVvOz6sVkzbh2l5
+        MCwXhumiaXrwvAAzT7+JoL9DMLuwDamqoDboKahJuMHovHc8H6n5rS7B0ZlnX9VSDVYMIQ8NgyCjGx7q
+        TI33tutjem5TBAPRFRxLzYsg6IAU2CDYdFFVcdT2bqY/iSAeFcSmM5uqQTpfqrPSAeSi0nCgMRXdUdub
+        ur8hguMdguvpz0rQBhsECUjKuo1y3UaxZrMXHpL31kRwIirou/ZgHb4fKECqabyWao6CitUQ3q9a7IeL
+        0burXYL+ZGoNHgVSSVUjtK9iYU9SsbDL1LjFy7c/iOBkdAUDo3dW4XLGbagF7GkWCv9StlQ/Rm68E8Gp
+        qCB+5dZ7CnxVZVczVULQxJ+Sid8qBrS6g4tTb0Uw2CG4RKvDGQtQYKVCmSAjkORX0WIM9sXGhYkVEZzu
+        EIhVPhIZYZ0zl71WOAmNE9DYkxIrF9kL2WJiPNu1gtjQ2OuN85MrSEzmkJjIYXg8h3PJbJirWQwxw2Nv
+        VM6OLH75/0s8xB/6ZLbSnFYGZZ+y1EjOtO7j8hcgW/gLc7LkWZrHKOEAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="barButtonItem3.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         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
-        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
-        sn8AEEHfzz6jNLcAAAAASUVORK5CYII=
+        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
+        QmCC
 </value>
   </data>
   <data name="barButtonItem4.Caption" xml:space="preserve">
@@ -533,66 +534,66 @@
   <data name="barButtonItem4.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAALdEVYdFRpdGxlAFNhdmU7+ej5CQAAAvRJREFUOE+Fk11Ik1EYx1emIWIfVpqUkhkDwTRtbbr5
-        Oufmvpxz0+lsTrfhzK/8yO+VpgZFEXQTBN0GBSGFGEVRQXSZHxdhqRFdqE3nNCuXK2/+nedtFxJBB368
-        L+85/995znl4BaGxnRHG2PEX4f8gIgTNb2MIwjhNxStOVwGbewC9Q7fRNXAL7edvorn3Bhrar8PdcgWO
-        hkuodPdDb2mBrKAcWcrS1yxLQkEEp7XCM3gNVlcfAsFNBDb+sB7i+49N+L78gHclALWpAa09l5CtKgXL
-        RpJgp7SgDN39V2Gp9vBBWry4SgT4kFiqgZjTYmLWB6XBjRJbHSQKMwmiSBBJto7zl2GydfE7UtgbCn+Y
-        W0MWp4O6yIYFfwByrZMJaiGSF5MgmgRR4nwz2lhZReVtrNxfWFgO4JP3G95+9GOc7copjDCUOjG/vI6c
-        giqYT9cikzOQYDcJok/JjWjuHIS2pInfdfKDDxMzPowzxhhvppcwx8JzvnVkK2wwVbiRLtWSYC8JdpGt
-        sa0PKmMd8gtrodDXQK5xIVfjQI7KDqmykgVPIyuvAhK5FcXWGhwXq0mwjwR70qU6nGnxgCswwVjuYjhR
-        VOaEweJgVKOwtBr6kiroSuzQmSvZnAspIiUJDpAgJlWiRk1TDy/435Ap2X1YXBBm5JEgjgT7U0QqOOo6
-        WLnF/KLV7z+x+o0IYvVrEH727mfPFYYkT88qciA5jSNBPAliyWZ3t7IzGniBnwUpwLMWxPLaBo+PIZKp
-        2VGqkJQqJcEhEhw8lp4Lq/MsuyA9+kdncWFkBj0Pp9E5PI22++/RfO8dGu9Oof7OFE7KNNAUVyIxRUKC
-        BBLEJ6XKYLHXQ5SjxfXXS7j6ahGXX3ox9Pwz+p4uwPN4Ht2jc+hgZGSrWFfMSBCKSJBIgpjDwswxMmZI
-        1TANvUTRxRfQeZ5B3f0EinOPwDWPILv+AU7VDiNNnA/hCQ5xR45PsizfBfotqZ9kO7KFpC0c3UJy6Fus
-        QCAI/w0F4v5uZtgcHwAAAABJRU5ErkJggg==
+        YQUAAAALdEVYdFRpdGxlAFNhdmU7+ej5CQAAAvZJREFUOE+Fk1tI01Ecxy2zELF7mpShGQNBM21uuvl3
+        zs3dnLqbTudlG868pVnemmlewDCEXoKg16AgpBCjKEqQHvPyEJYZ0YOaOqeZOrV8+XZ+fxXCl/7w4Zz/
+        +Z/v5/zOOfz9/Laf/Qx/xoE9BLD3vRxkYwTN3Udhf06dP8Rp82FzteNm50M0tj/AjZb7qLl5D5U3euGq
+        vQN7ZRcKXW3QWWohzchDksL8fkfud5DTWOHuuAursxW+zS34NrZZ22F1fQuen+uYXfRBZajEteYuJCvN
+        YIJAquCQJCMXTW09sJS4+SBNnlsifHxIJFFDxGkwOumBQu+CyVYOsdxIgiASBJKtvqUbBlsjvyqFZ3fC
+        X6eWkcRpocqyYcbrg0zjYIIyCGU5JAgmQZAo3Yg6VlZWXh1W1/9gZsGH77Mr+PjNixG2KifPht7swPTC
+        GlIyimEsKEMCpyfBERIEJ8qyUdPQAY2pmi957KsHo188GGEMMz5MzGOKhac8a0iW22DIdyFOoiHBMRIc
+        JltVXSuU2eVIzyyDXFcKmdqJVLUdKcoiSBSFLFiApLR8iGVW5FhLEStSkeAECY7GSbS4UusGl2FAdp6T
+        4UBWrgN6i51RgkxzCXSmYmhNRdAaC9k3J6KFChKcIsHxGLEKpdXNvOB/j1TBzsPihCA+jQShJDgZLVTC
+        Xl7Pys3h80urv7G0Qmxi6dcmvKzvZe0iQ5ymYxXZEXWRI0EYCULIVuS6xvao5wVeFqQAz/ImFpY3eDwM
+        oVTFtlKMyBgJCc6Q4PSFuFRYHVfZAenQNjCJW/1f0Px8Ag19E6h7+hk1Tz6h6vE4Kh6N47JUDXVOIc5F
+        i0kQToKwyBgpLEUVEKZo0Pt+Hj1Dc+genEXn2x9ofT0D98tpNA1MoZ4Rn6xkt2JEuEBIgnP8IZ4VJAyT
+        MV6igqFzEFm330HrfgNV0yvIr78AV9OP5IpnSCzrw0VROgSXOIRGxI7t3gL9lnSfZIv4h0jW3+U86+8S
+        tTMewtqAvwXi/m52XeinAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="barButtonItem4.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         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
-        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
-        CtBCAjUAAAAASUVORK5CYII=
+        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
 </value>
   </data>
   <data name="barButtonItem5.Caption" xml:space="preserve">
@@ -601,65 +602,65 @@
   <data name="barButtonItem5.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgdEVYdFRpdGxlAFNhdmUgQW5kIENsb3NlO1NhdmU7Q2xvc2U7KoQIewAAAuNJREFUOE9tk3lI
-        E1Acx+edV9YfBV2Uf2SpBYra8szhNc+Wx6a52eaW89bcvBVJo5RsEWX6h4IIZiWZkWAlJEmHILJRXiuU
-        MDGPmYrOeQTf3psZQnvw4cHj/T6/B9/fYwAwCFlGBFOCOcHCAGYEI4PFFHphQCzpU6VIoZJchUqcAmWy
-        GEqhBINXkvEpUdBH7lC5vpMxwWQXtLPNgECI5WcNmGmswUKLApqmGkwpyqGpr8LHmATaxYrAMBbJFL0i
-        2V3EJhUjWlAAzmU5wuOy0cfmYLpYCt3mb0zcKCOUQru+hXFuAN4GRFCBDRWYCvMUqGvtIYX50CzrML+0
-        hokfs+jxY2MyJQ6T1wuxqtvCim4T3yvkULOZ6PYMpAJbKjBLyr2Ne83diOTmYm5xDV/GNfignECXhz8m
-        eEFQ52djWbuJJe0G1PJMjPg444WLDxXYUYE5P6satY0vwY7OwLRmFYPqWfQOfEOHExNjwR5YXN3A12Qu
-        1KI4LKys47OrPZ46uFPBPiqwSEi/ier65wiMkmJqbgX9wz/xpl+Nx/YuGGI6QOV8BConguNhKJ0IjofQ
-        euzsP8EenrQKlffbwQoTwz9EBN/gJHiy4iE/5QWFvRvunPjLcTfUEpoPnkbdgZPvSa01FVjGiitQrmhD
-        ekk90oofQlpch8TUSgRdykA4N0efSFhMNkKjs+DhH087HyXQBGjkDCuOsAyFt1oQKyolM2R4hRJBBE+O
-        8yw+FdiQo52BY1hH8Ysgq2wCh1+gvzy/RKMkLOr0qVACo1LJS/Lg4acfoL27BTZhPBmyyxvIc3P1Alow
-        S/lF0WKG7BdCksGOuQY3bx6tststsA2JyUFa0QMEX0xHaecYCjtGIW8fRe6TEWQ9GkZ66xC8WAKwwlPh
-        6hn73wssvQIE77yDhCQFCaLKXyGs5DUC5V3wzezEOUnbNr7xYPol4ox7JP1EVrsF9CPRT0Gniua6w34D
-        0HMancm2AIw/zM0NDO/d/g4AAAAASUVORK5CYII=
+        YQUAAAAgdEVYdFRpdGxlAFNhdmUgQW5kIENsb3NlO1NhdmU7Q2xvc2U7KoQIewAAAuRJREFUOE99k2lI
+        VGEUhifX3Fp+FLRR/shSCxQ1c83BbVwzZ3Q0HZstx91Jx91B0iglm4gy/aEggllJZiRYCUnSIog4lNsU
+        DmFiLmMqLuMSvH3fTUNKuvBwL9zve86B9xwWANZ2sFisHQQjggnBdBuMmTP/ERj3SKRd6kQZ1NLLUEsS
+        0SeWoE8oRe8lMT7ECbo25EwlA4LhFmhlyx6BEPNPajBRW4GZBhV0dRUYUymhqy7De24syBlzAstAlK3q
+        FGXfBi+hAJGCXERcVCAkKgNdnAiMF8igX/sJ7bViQhGWVtYxEu2L176hVGBJBUbCLBWqGjvIxRzo5vWY
+        nluG9tskOrw5GE2MwujVPCzq17GgX8PXEgU0HFe0u/lRgRUVGCfIb+JOfTvCouWYml3GpxEd3vVp0ebi
+        Ay3fH5qcDMwvrWFuaRUaRRoGPe3xzMGTCnZTgUl8ejkqa5+DE5mKcd0iejWT6Oz5ghY7VwwHuGB2cRWf
+        xdHQiKIws7CCj47WeGzjTAV7qMA0NuU6yqufwi9chrGpBXQPfMerbg0eWjug39UGavtDUNsRbA+iz45g
+        ewCNR07/Eezky8pQercZ7GAJfAJF8ApIgBs7BooT7lBZO+HWsQ2OOqGSUL//JKr2HX9LilvQDsx4khIo
+        VU1IKaxGcsF9yAqqEJdUCv8LqQiJzmQSCeZmICgyHS4+MbTy4Y0EaPQs8whhMfJuNIAnKiJztf0TRASh
+        fAXOsuOZ+DYHkAoswuPzkV1ah4j4XOb29ByNkjCrZ1Kh+IUnkU6y4OLNDNCurQLLYH42MpQ1pF05I6AX
+        Jik/KEuYIO9zgWJwuFfg5MFn4tsqsArkZiI5/x4CzqegqHUYeS1DUDQPQf5oEOkPBpDS2A93tgDskCQ4
+        uvH+6cDM3VfwxsNfSFKQIlz5AsGFL+GnaINXWivOSJt+4xUDV+84nHIOo0tkvrUDukh0KehU0cHYZC/5
+        /hv6j0ZnuCn4BczNDQxXmLvMAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="barButtonItem5.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         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
-        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
-        SUVORK5CYII=
+        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
 </value>
   </data>
   <data name="barButtonItem6.Caption" xml:space="preserve">
@@ -671,66 +672,66 @@
   <data name="barButtonItem7.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAALdEVYdFRpdGxlAFNhdmU7+ej5CQAAAvRJREFUOE+Fk11Ik1EYx1emIWIfVpqUkhkDwTRtbbr5
-        Oufmvpxz0+lsTrfhzK/8yO+VpgZFEXQTBN0GBSGFGEVRQXSZHxdhqRFdqE3nNCuXK2/+nedtFxJBB368
-        L+85/995znl4BaGxnRHG2PEX4f8gIgTNb2MIwjhNxStOVwGbewC9Q7fRNXAL7edvorn3Bhrar8PdcgWO
-        hkuodPdDb2mBrKAcWcrS1yxLQkEEp7XCM3gNVlcfAsFNBDb+sB7i+49N+L78gHclALWpAa09l5CtKgXL
-        RpJgp7SgDN39V2Gp9vBBWry4SgT4kFiqgZjTYmLWB6XBjRJbHSQKMwmiSBBJto7zl2GydfE7UtgbCn+Y
-        W0MWp4O6yIYFfwByrZMJaiGSF5MgmgRR4nwz2lhZReVtrNxfWFgO4JP3G95+9GOc7copjDCUOjG/vI6c
-        giqYT9cikzOQYDcJok/JjWjuHIS2pInfdfKDDxMzPowzxhhvppcwx8JzvnVkK2wwVbiRLtWSYC8JdpGt
-        sa0PKmMd8gtrodDXQK5xIVfjQI7KDqmykgVPIyuvAhK5FcXWGhwXq0mwjwR70qU6nGnxgCswwVjuYjhR
-        VOaEweJgVKOwtBr6kiroSuzQmSvZnAspIiUJDpAgJlWiRk1TDy/435Ap2X1YXBBm5JEgjgT7U0QqOOo6
-        WLnF/KLV7z+x+o0IYvVrEH727mfPFYYkT88qciA5jSNBPAliyWZ3t7IzGniBnwUpwLMWxPLaBo+PIZKp
-        2VGqkJQqJcEhEhw8lp4Lq/MsuyA9+kdncWFkBj0Pp9E5PI22++/RfO8dGu9Oof7OFE7KNNAUVyIxRUKC
-        BBLEJ6XKYLHXQ5SjxfXXS7j6ahGXX3ox9Pwz+p4uwPN4Ht2jc+hgZGSrWFfMSBCKSJBIgpjDwswxMmZI
-        1TANvUTRxRfQeZ5B3f0EinOPwDWPILv+AU7VDiNNnA/hCQ5xR45PsizfBfotqZ9kO7KFpC0c3UJy6Fus
-        QCAI/w0F4v5uZtgcHwAAAABJRU5ErkJggg==
+        YQUAAAALdEVYdFRpdGxlAFNhdmU7+ej5CQAAAvZJREFUOE+Fk1tI01Ecxy2zELF7mpShGQNBM21uuvl3
+        zs3dnLqbTudlG868pVnemmlewDCEXoKg16AgpBCjKEqQHvPyEJYZ0YOaOqeZOrV8+XZ+fxXCl/7w4Zz/
+        +Z/v5/zOOfz9/Laf/Qx/xoE9BLD3vRxkYwTN3Udhf06dP8Rp82FzteNm50M0tj/AjZb7qLl5D5U3euGq
+        vQN7ZRcKXW3QWWohzchDksL8fkfud5DTWOHuuAursxW+zS34NrZZ22F1fQuen+uYXfRBZajEteYuJCvN
+        YIJAquCQJCMXTW09sJS4+SBNnlsifHxIJFFDxGkwOumBQu+CyVYOsdxIgiASBJKtvqUbBlsjvyqFZ3fC
+        X6eWkcRpocqyYcbrg0zjYIIyCGU5JAgmQZAo3Yg6VlZWXh1W1/9gZsGH77Mr+PjNixG2KifPht7swPTC
+        GlIyimEsKEMCpyfBERIEJ8qyUdPQAY2pmi957KsHo188GGEMMz5MzGOKhac8a0iW22DIdyFOoiHBMRIc
+        JltVXSuU2eVIzyyDXFcKmdqJVLUdKcoiSBSFLFiApLR8iGVW5FhLEStSkeAECY7GSbS4UusGl2FAdp6T
+        4UBWrgN6i51RgkxzCXSmYmhNRdAaC9k3J6KFChKcIsHxGLEKpdXNvOB/j1TBzsPihCA+jQShJDgZLVTC
+        Xl7Pys3h80urv7G0Qmxi6dcmvKzvZe0iQ5ymYxXZEXWRI0EYCULIVuS6xvao5wVeFqQAz/ImFpY3eDwM
+        oVTFtlKMyBgJCc6Q4PSFuFRYHVfZAenQNjCJW/1f0Px8Ag19E6h7+hk1Tz6h6vE4Kh6N47JUDXVOIc5F
+        i0kQToKwyBgpLEUVEKZo0Pt+Hj1Dc+genEXn2x9ofT0D98tpNA1MoZ4Rn6xkt2JEuEBIgnP8IZ4VJAyT
+        MV6igqFzEFm330HrfgNV0yvIr78AV9OP5IpnSCzrw0VROgSXOIRGxI7t3gL9lnSfZIv4h0jW3+U86+8S
+        tTMewtqAvwXi/m52XeinAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="barButtonItem7.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         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
-        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
-        CtBCAjUAAAAASUVORK5CYII=
+        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
 </value>
   </data>
   <data name="barButtonItem8.Caption" xml:space="preserve">
@@ -739,65 +740,65 @@
   <data name="barButtonItem8.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgdEVYdFRpdGxlAFNhdmUgQW5kIENsb3NlO1NhdmU7Q2xvc2U7KoQIewAAAuNJREFUOE9tk3lI
-        E1Acx+edV9YfBV2Uf2SpBYra8szhNc+Wx6a52eaW89bcvBVJo5RsEWX6h4IIZiWZkWAlJEmHILJRXiuU
-        MDGPmYrOeQTf3psZQnvw4cHj/T6/B9/fYwAwCFlGBFOCOcHCAGYEI4PFFHphQCzpU6VIoZJchUqcAmWy
-        GEqhBINXkvEpUdBH7lC5vpMxwWQXtLPNgECI5WcNmGmswUKLApqmGkwpyqGpr8LHmATaxYrAMBbJFL0i
-        2V3EJhUjWlAAzmU5wuOy0cfmYLpYCt3mb0zcKCOUQru+hXFuAN4GRFCBDRWYCvMUqGvtIYX50CzrML+0
-        hokfs+jxY2MyJQ6T1wuxqtvCim4T3yvkULOZ6PYMpAJbKjBLyr2Ne83diOTmYm5xDV/GNfignECXhz8m
-        eEFQ52djWbuJJe0G1PJMjPg444WLDxXYUYE5P6satY0vwY7OwLRmFYPqWfQOfEOHExNjwR5YXN3A12Qu
-        1KI4LKys47OrPZ46uFPBPiqwSEi/ier65wiMkmJqbgX9wz/xpl+Nx/YuGGI6QOV8BConguNhKJ0IjofQ
-        euzsP8EenrQKlffbwQoTwz9EBN/gJHiy4iE/5QWFvRvunPjLcTfUEpoPnkbdgZPvSa01FVjGiitQrmhD
-        ekk90oofQlpch8TUSgRdykA4N0efSFhMNkKjs+DhH087HyXQBGjkDCuOsAyFt1oQKyolM2R4hRJBBE+O
-        8yw+FdiQo52BY1hH8Ysgq2wCh1+gvzy/RKMkLOr0qVACo1LJS/Lg4acfoL27BTZhPBmyyxvIc3P1Alow
-        S/lF0WKG7BdCksGOuQY3bx6tststsA2JyUFa0QMEX0xHaecYCjtGIW8fRe6TEWQ9GkZ66xC8WAKwwlPh
-        6hn73wssvQIE77yDhCQFCaLKXyGs5DUC5V3wzezEOUnbNr7xYPol4ox7JP1EVrsF9CPRT0Gniua6w34D
-        0HMancm2AIw/zM0NDO/d/g4AAAAASUVORK5CYII=
+        YQUAAAAgdEVYdFRpdGxlAFNhdmUgQW5kIENsb3NlO1NhdmU7Q2xvc2U7KoQIewAAAuRJREFUOE99k2lI
+        VGEUhifX3Fp+FLRR/shSCxQ1c83BbVwzZ3Q0HZstx91Jx91B0iglm4gy/aEggllJZiRYCUnSIog4lNsU
+        DmFiLmMqLuMSvH3fTUNKuvBwL9zve86B9xwWANZ2sFisHQQjggnBdBuMmTP/ERj3SKRd6kQZ1NLLUEsS
+        0SeWoE8oRe8lMT7ECbo25EwlA4LhFmhlyx6BEPNPajBRW4GZBhV0dRUYUymhqy7De24syBlzAstAlK3q
+        FGXfBi+hAJGCXERcVCAkKgNdnAiMF8igX/sJ7bViQhGWVtYxEu2L176hVGBJBUbCLBWqGjvIxRzo5vWY
+        nluG9tskOrw5GE2MwujVPCzq17GgX8PXEgU0HFe0u/lRgRUVGCfIb+JOfTvCouWYml3GpxEd3vVp0ebi
+        Ay3fH5qcDMwvrWFuaRUaRRoGPe3xzMGTCnZTgUl8ejkqa5+DE5mKcd0iejWT6Oz5ghY7VwwHuGB2cRWf
+        xdHQiKIws7CCj47WeGzjTAV7qMA0NuU6yqufwi9chrGpBXQPfMerbg0eWjug39UGavtDUNsRbA+iz45g
+        ewCNR07/Eezky8pQercZ7GAJfAJF8ApIgBs7BooT7lBZO+HWsQ2OOqGSUL//JKr2HX9LilvQDsx4khIo
+        VU1IKaxGcsF9yAqqEJdUCv8LqQiJzmQSCeZmICgyHS4+MbTy4Y0EaPQs8whhMfJuNIAnKiJztf0TRASh
+        fAXOsuOZ+DYHkAoswuPzkV1ah4j4XOb29ByNkjCrZ1Kh+IUnkU6y4OLNDNCurQLLYH42MpQ1pF05I6AX
+        Jik/KEuYIO9zgWJwuFfg5MFn4tsqsArkZiI5/x4CzqegqHUYeS1DUDQPQf5oEOkPBpDS2A93tgDskCQ4
+        uvH+6cDM3VfwxsNfSFKQIlz5AsGFL+GnaINXWivOSJt+4xUDV+84nHIOo0tkvrUDukh0KehU0cHYZC/5
+        /hv6j0ZnuCn4BczNDQxXmLvMAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="barButtonItem8.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        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
-        SUVORK5CYII=
+        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
 </value>
   </data>
   <data name="bbiSupprimer.Caption" xml:space="preserve">
@@ -809,50 +810,51 @@
   <data name="bbiValider.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         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
-        YQUAAAKrSURBVDhPpZNtSFNRGMcfdVNrtpuTOZkvLCfkFLcJSb7MdyNSKsyMpiUSNTVLrEytuUKCUlqW
-        ItFmiS4zEzWblsoqTK0gqCSI3kcf+hDUl8JMMnl6zvWlBD8UHfhzueec3/9/n/PcA4j4X1py8l8Et963
-        Leim0wb2dy3Q+7YZul81wbUXFmh/fh4uP2uEkD2cTlsSNBGUs+I4ALiQFhvwsJPgNwS/boLOP2EDp0uq
-        Uk+efmBEfUMGyjYvO0G864IBg/ucrUsmB+/iEhh8bHgfaqxSzOvKQGWujEjw4A0YHF0jz19Xp/oRWeW7
-        dR6m4aLYKU5ONKm/M1h7UYrKOhHKizxQkiqsWzBgsKFjI1511qPemjIdVuqTTYtuCr04jZIJ3o9aSlaa
-        RehPsHeSeyOti0mzJaSaVT/PPDmMufei0DxehlvOJUyv2sHVJBlnkzWUHGJeTrAneie4WwmUsAAG8waR
-        Rll2TE3gzIau1Zjer8Lqh8WYZ9mELJnVHELJcoI5nbCZQCmDG0ZP/W4jDdfQYoleY5LNxLUGYGx7ABYO
-        ZvGwkpJZzVycu432+aWYxjDFNIrJVbyAaf7ABIoccXlohQTVFh8Ms3JzB0bJscIrtC5ne5KNo2h7NIXx
-        R4axemAC4iuHgW8VDfZjePlniRzBRi9U1s4lxwg7aD6AJTOYgRfGJjH60G2SA6PLHAgt4/Vw6fFZZuJG
-        kknXe47ItlPyLBxIErBP7nw6hU33v2Ht0Bes6PmMhW0fcU3JAIIiXwxBuV7gv03ETAQkX1GEIJOefux9
-        ZZoQEo0jqKu4i2sPOrCy+xOq99oxotCOmqL+xRdj7lRZOcyI7zNT4tERODn0FaIODGGB7QOGF/RiZv1L
-        CDf0/t1tZAZx5XcgqnQQtcV9ZHAdVbt7yOAG/AKWluuA86FyvgAAAABJRU5ErkJggg==
+        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
 </value>
   </data>
   <data name="bbiValider.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         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
-        YQUAAAYeSURBVFhHxZZpTFRXFMfvm43ZmH3AijAsDoILSmFYZEeqNUIVlWo0rlULGkldq1MRW7WCxmgR
-        tRYtLlgtSoVBoYqiCHWJ2uiXNtWaNDZNmlTTdLXRJqfnvNl5Qz+owZP8Gd59Z+7vf869981jAPBSFXCw
-        PxVwsD8VcLA/FXjwOaPXPJyP+PBj0Z/0XSaWVmNiqTuNzLbdwGzbDCyp2sASP9SzkRv1LGGDjo2o0LLh
-        dg0bukbN4laqmXW5mg0uV7PoJSoWVapglkVyZlmgYOFz5SxslowNmCEjFkHFYg1HF1L6n8Z040X+Bghe
-        3bDhhYpABJXoOa2xSNJieF28Ba9VNOa65zWQgpUHmuRZhSFCySRaTm8ukp0p2z8DJr6fB5ox3DYc19A9
-        V47TALU90ETPItfEMnEwZzQVydoIvvfOZpjsSIak8hgIzmLb8b4WJUVxvIHkbS+mAxgEDxKrObO5UNa+
-        GOF7EF7ckgwJh9QQX6uCUWXRoMpk1AkFn88bqHr+DrjgcrGKCzUVyr4kOFVe3GLj4UN3q8BaLQdTiQiU
-        GWwH5tJ+cBpI3OQ1gEEbhCajHUufnC8okFx5cqmBCzNPkJ51wye74bVKHm4keCrbjblmVBDKuQR01FwT
-        EVwyZHnwStQ5c6ZMT9coUW+oWxhkVCExcmEhRUEdtOZ7bnvb7lu5IoV9jLkDKN/1PWfQOcfg4fEIn16b
-        B/aWBRBXru/UJkjJLb9re4Ep3wk3cINCi+Qu+CaEuyv3gaeyfZg7EKV0fY8v3h3OypcFr5pWmwsN97fC
-        e7fehNdqrGAt1VxSx0rItRwl7gVX4jkPNxfKz/PwOwT3bjgP3MbqMDcMResuVuY44b4GRHErqHIvfGy7
-        EQrajJC/czDEzNNcVkaKaAJqHS0JSSnRcREhbjhWTkdN0HYb24+54Sg1ii+gtwEO11oWv0LTQW23I7yg
-        3QRjziAclddqhNztMWCZqe4JGiiyYH4wCeEWhF9wHjWEB678AOZGoDzwQAYoxMZ0mSG+XHeR2s7DTxsh
-        p9UA2S0GyGrWQ1Z1NAwsUV3BnR6PD5kh2PZO75q7K/fudkUy+xTndRv2wPsyQGsq1QyXhFjf1nRR2/NO
-        ExzBCM9o0kP6SR1kbImG0EmKmyET5N3/2/ZkVo/zRaIEcIEB+mMtp73Bn2WZerDkFVrzHGx71ik9ZCI8
-        A+GpJ3SQ0qiFjKpoKN0/3X+3C+FRKILTXhE8RwQGYvAnlW5g8A8URYQo3DIzuCd7azSkN+kgrZHgGkg+
-        jvpMA0XNCVDsSPJbc1fbD+L3o1GagsorrWPWfwX5FT0kR15FN8tbh8JPgYGoMoXHHQZ/tnHDRdKaZ2yJ
-        4iu3ITwJ4YlHgmHUYbWzctcTzlW5B46SEPjY7X/h6NdPIdt+CRpuPWFHbz1lWWu7hAYiFyp9DbjPuEoW
-        wsUMKFZeTd8U5YUfccH9234I82NQPBzF5dgvw5Eb/8DK5j9h9OpOqL/2N6u/9piNXnVBaIDeZNwGfEzQ
-        RGp8xMbiprue+oHFC/etPMkLL6jsac2v6IYcexdkrrkIB678BYuPP4K05ecgZRnpLMkhMBAxN8jPQC8T
-        GomexZvGyW7YKi384zW2j8rz1/dAw80nUH/9MdT1/AF7u36FefU/wewDD+Cjjl+g5vxDfCdoA4GBQbNl
-        AgO9TGjFGjZcny+9kbg6vM+2567rhoMIX4JVLzj8M8yqewDT9t6HqbvuwhTU1Nq7MLLMITRAL5CBDJBo
-        YpQUpUMTw7S5kqv4q/YJXtNR88ApF9fdkfnuRUhb0QG2d85Cye57MHHHNzCitAWGLToFwxaiFjULlyB0
-        mpSFlEiYeYqYmSZJmPENMdMXiphuPMe0Y4nvMaEWafgfFROKHh48nCYkZdu7WF3P76y28xFLKm+HqtYf
-        YVzVbRi68AuoaLzHKk98z+LmNwk3YW/1EWSCTgcZITD/soLyRNbaS2xf92+s5sJD9urSNtjc/APkb7wJ
-        cW81wZqj3zL7se9Y7NwT/izfC89g30FAtwSRjQZGrzrPcKezxKVtjgRcb2p73PyTDuucRhYz6zizzvnc
-        n+V78TIUcLD/BOw/mImjjLNSWpgAAAAASUVORK5CYII=
+        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
+        AElFTkSuQmCC
 </value>
   </data>
   <data name="bbiAnnuler.Caption" xml:space="preserve">
@@ -879,66 +881,66 @@
   <data name="barButtonItem16.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAddEVYdFRpdGxlAENsb3NlO0V4aXQ7QmFycztSaWJib247RgO56AAAAwpJREFUOE+Nk2lIVFEY
-        hqdMcytR0yDa3NNMs9RJ0zLX1BiLUvGHJUYQCeqPxCVtXAIzqdwhBiQxKTGJIEfNUbKoGJ3EJU1H0zKX
-        dOZq2jgj9ePtfNehf0EXHnjvOed7znfvuVcwc7tIwK7NDAPGlv/AUA+t38QQGHwuFL/6eqsAX4qIfEwV
-        iTcoZBTcxCRPHibzGeI8fBbnYjQ3p5vVklBgSBPaD+0bKPTwuU1PK7S9hBRaeQvPaE4WWK0RCYyUN7Kh
-        7WnB0uNKDGanQ2LvgY7zF/h7QhYbC4mdBwYy08A9KgdXX4aPGddJYEyCrSOZGVh795wtSEVdRDxkUgWe
-        XM1B6xkR2kQxfJa19KIuPB79GSlQ191Df2o6CUxIYNx/LQWa7mZI9rphUjkL1ZIWyikOjakFPKMsz6s1
-        mBibhWSPG1S1pZBfvkICUxKYvD5zlrVawVqNQ0/JfWi0v6Fe0WHsK4exLxwWf+iwuvaLn5OxR5vOSkZ7
-        SCQJzEhgKguNwvf7WfiWmYSO6Gi8LynHwrIOC6yT78sMToe3xWV4GRmJqbQEKBNC8MI/mATmJDCTBoZh
-        tigVExdPo/W4H9rFd1jLWsyp1zCr0jC0aMsrgdRPiLELQfh0LhDPjgaQYBsJzJ/7BmE65wpafbzQnJ6P
-        oXEVZhY14FZ14FbWMb2gwYByEU/TxJB6eWA40geN7kISbCfBtiZPP761BnsXqOfVmFGtYWl1HQPlVTwb
-        kp9QzanRYOeCgWBP1DsfJYEFCbY3uPpgPFkERUwoOhOTsM5x6CsphSzgGDoYlGmsM/ES5BGB6PN3Re2+
-        QySwJIHFQzsvfIoLwXC0EL3RJ9HkcgBdAb4YiTmBYVEguvx9+DF52HH0n/KE4ogDHuxyJYEVL5DsPoih
-        KLaT0BmDwYfZiwrGx3BfKISOUHg7YijUGyOiALazG+Se+yF334tqG6e/ArO7tk5vanY6o8bWBdW2zqiy
-        IZw2sHZEpZUjKngcUGHpgHJGsYXdW1bLHyP9lvRBkM1az45/YKOHMjtCgcEfpxkalin7Ah0AAAAASUVO
-        RK5CYII=
+        YQUAAAAddEVYdFRpdGxlAENsb3NlO0V4aXQ7QmFycztSaWJib247RgO56AAAAwxJREFUOE+Nk1lIVFEY
+        xy3TXFLJ0iDKGtc008x00rTMNRfGIk18sMQQokB9SFzSxiUoi3IXYkASkxKLEHLUHKUFi8lJ3JdxzbTU
+        matl44zUw7/zXa2nHrrw4373nO/+zv/ec6/e7O1CPXZsZugztvwHBqyHoP5NdLP+RIH41aeb+ZguJPIw
+        VShep4CRfwOTPLmYzGOIczEhzsFITvbrjcX0DGhC+7F1HcUGfN2yQTO0XYQUWnkTz0h2JpjAkBIYKq9n
+        QfuhCUuPy9GXlQaJrRvazsXw14QsNhYSgRt6M1LBPSoFV1uCgfRrJDAiwdahjHSsvmtkDSmoCYuDTKrA
+        k8vZaI4SoUUUzdeypi7UhMahJ/0q1DX30ZOSRgJjEhj1XLkKzetnkNi4YFI5B9WSFsopDvUp+TwjrP6q
+        1mB8dA6SvS5QVd+F/FIyCUxIYPwm6gyLWsainseHomJotL+g/q7D6CcOo9McFr/psLL6k5+TsUebyUxC
+        a1A4CUxJYCILjsB8cSY+ZySiLTIS74tKsbCswwJLMr/M4HTovFWCl+HhmEqNhzI+CC98A0mwjQSmUv8Q
+        zBWmYPzCaTQf90Gr+A6LrMUX9SrmVBqGFi25RZD6CDEaE4Dhs/547ulHAjMSbGv0DsBMdjKavTzwLC0P
+        /WMqzC5qwK3owH1fw8yCBr3KRTxNFUPq4YbBcC/UuwpJYE4CswZ3Hz5ana0T1F/VmFWtYmllDb2lFTzr
+        kh9QfVGjTuCE3kB31Dp6ksCCBOZ1zl4YSxJBER2M9oRErHEcuovuQuZ3DG0MqmmsPeEi5GH+6PZ1RvW+
+        QyTYTgKLhwIPDJ8PwmCkEF2RJ9HgdAAdft4Yij6BQZE/Ony9+DF5yHH0nHKH4ogdHux2JoElL5DsOYj+
+        CLaS0BF9gYfZiwrEQKg3FEJ7KI7aoz/4KIZEfmxlF8jd90PuaoNKK4e/AtN71g5vq3Y5osraCZXWjqiw
+        IhzW2WGPckt7lPHYoWy7HUoZtywEnX+2kX5L+iAozo4NdrLzv7Bi4wTN0Rbq/wanGRqWcibO0wAAAABJ
+        RU5ErkJggg==
 </value>
   </data>
   <data name="barButtonItem16.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         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
-        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
-        AABJRU5ErkJggg==
+        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
 </value>
   </data>
   <data name="ribbonControl.Location" type="System.Drawing.Point, System.Drawing">
@@ -990,7 +992,7 @@
     <value>statusBar</value>
   </data>
   <data name="&gt;&gt;statusBar.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonStatusBar, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonStatusBar, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;statusBar.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1002,7 +1004,7 @@
     <value>ribbonControl</value>
   </data>
   <data name="&gt;&gt;ribbonControl.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonControl.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1026,7 +1028,7 @@
     <value>textEdit1</value>
   </data>
   <data name="&gt;&gt;textEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;textEdit1.Parent" xml:space="preserve">
     <value>GCInfoGeneral</value>
@@ -1047,7 +1049,7 @@
     <value>textEdit4</value>
   </data>
   <data name="&gt;&gt;textEdit4.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;textEdit4.Parent" xml:space="preserve">
     <value>GCInfoGeneral</value>
@@ -1134,7 +1136,7 @@
     <value>labelAdress</value>
   </data>
   <data name="&gt;&gt;labelAdress.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelAdress.Parent" xml:space="preserve">
     <value>GCInfoGeneral</value>
@@ -1158,7 +1160,7 @@
     <value>labelWilaya</value>
   </data>
   <data name="&gt;&gt;labelWilaya.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelWilaya.Parent" xml:space="preserve">
     <value>GCInfoGeneral</value>
@@ -1182,7 +1184,7 @@
     <value>labelComune</value>
   </data>
   <data name="&gt;&gt;labelComune.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelComune.Parent" xml:space="preserve">
     <value>GCInfoGeneral</value>
@@ -1206,7 +1208,7 @@
     <value>labelNameStock</value>
   </data>
   <data name="&gt;&gt;labelNameStock.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelNameStock.Parent" xml:space="preserve">
     <value>GCInfoGeneral</value>
@@ -1230,7 +1232,7 @@
     <value>GCInfoGeneral</value>
   </data>
   <data name="&gt;&gt;GCInfoGeneral.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;GCInfoGeneral.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1242,7 +1244,7 @@
     <value>583, 17</value>
   </metadata>
   <data name="GCLigneStock.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-65, 31</value>
+    <value>0, 31</value>
   </data>
   <data name="colProduct.Caption" xml:space="preserve">
     <value>Product</value>
@@ -1281,7 +1283,7 @@
     <value>Combo</value>
   </data>
   <data name="GCLigneStock.Size" type="System.Drawing.Size, System.Drawing">
-    <value>838, 123</value>
+    <value>779, 123</value>
   </data>
   <data name="GCLigneStock.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1290,7 +1292,7 @@
     <value>GCLigneStock</value>
   </data>
   <data name="&gt;&gt;GCLigneStock.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;GCLigneStock.Parent" xml:space="preserve">
     <value>xtpLigneProduit</value>
@@ -1314,7 +1316,7 @@
     <value>standaloneBarDockControl1</value>
   </data>
   <data name="&gt;&gt;standaloneBarDockControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.StandaloneBarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.StandaloneBarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;standaloneBarDockControl1.Parent" xml:space="preserve">
     <value>xtpLigneProduit</value>
@@ -1332,7 +1334,7 @@
     <value>xtpLigneProduit</value>
   </data>
   <data name="&gt;&gt;xtpLigneProduit.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;xtpLigneProduit.Parent" xml:space="preserve">
     <value>xtcLignesProduit</value>
@@ -1353,7 +1355,7 @@
     <value>xtcLignesProduit</value>
   </data>
   <data name="&gt;&gt;xtcLignesProduit.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;xtcLignesProduit.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1370,63 +1372,62 @@
   <data name="barButtonItem14.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        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
+        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
 </value>
   </data>
   <data name="barButtonItem14.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         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
-        YQUAAAAjdEVYdFRpdGxlAEFkZDtGaWxlO0FkZEZpbGU7QmFycztSaWJib247FdyqCgAACC5JREFUWEeF
-        l2lQVFcahpsks2SWzExmK+dHyhGcRFPW6FhOEuNoEiMajRONVVrGiSsgEo3LAAEUBQQUEFlUNFE0iaIp
-        cKJxiRu4I0osS51JXHAFWbrpDbrppruBd97v9G3SbWP8qp469yKc5z3n3nPOVQegG78K0XiCPPkInuoB
-        +bn83Q9WgDPghlX42bmKgs/PgS0KhG2VKNzmbfOJtz2L/K1nkVd8FmvZri0+o0jJ/TqNXUgQCR6SVlCu
-        S8s/qksl/hXgDLhhifRx5XJ5YHe4YG1xQG9sxb06M8NWoqKyBgmr9qxkNz8iKkSTuV2XlHNQuu4udvG9
-        M+CGlc+OpDydXfB4Otl2wu3pUrh4LzicHtjaXDC3ONHYbMOt+ybkbD6Fri5gX/l3WJRSls6ufkxUiLj0
-        vdJ1d/l8QuANS6ZWyk2R4JO63Azg7kS7hsPpQqvdhWZTG27fb0b6hnIVwObwYM/R/yE6cUcGu/sJCXov
-        fD4h8IaVx2cpJUI3RV65V6paVyecfATt2mMwWh2ouW9E8pqvVQAH/11C7D54BbMXb81klz8lASF8PiHw
-        hpWrBfAXyrVTWk0uOIR2D0x8D2ruNiM2Y68KII9Kftfm6MAX+y5hWszGoBA+nxB4w1rDZyklIxSkM6fb
-        K1ViSn3Y292wtDpx864RC5aXqb+TEB2dDNIhQTqwc081JkcUSAjfOxHoDLhh5XziDRAwUobwSt2amDjd
-        xMMA7bjbYMGynP2I+qgEEXE7EBG7A3P+LWxXRMaXSOc/IzILgc6AG1bWxyd5yQDaKP1HK0KfWNpWroQW
-        oje34VatGZevN6D66n1UXbqH09V3cLyqBqfP3+L7cUg6/yV5fIBVG0/wki+TklKuhG7Y/HFQTmx8CaWV
-        WWi2cE/gimgw2FBbb8VtBrpxp5krxIikrIPS+TNENqlAZ8ANK6OoAnyM3dMcLPZKhRaBS9Fqa1etha1Z
-        wnBlNJnsqNe3cqOyISFrv3T+K6ICBNTDAdLXaetZST1eGa+7pXZNSlps3tYqLRG5ghuU3sLZMNphsrYh
-        PkMF+DV5fIC0gmPahuIbLUUiU1K3V6hJLRrmlnaYOHqZAavNSRwM51TyVl5nrjsqnT9LnkopG6lLLX1T
-        l1I6UvmCAqTkHVEB1Ej9RqxG6yf1ip0Kkd1tqsFXFwpRdHgu0naHI60sHEWHorCvuhC7jxyTzv9IZCmG
-        2D03dck73xBdcIAVaw8xQJc2Yn8xR8jptbR6r0VsIjLaiislyNozEUeu5qFGfwR29w1yHTVNh3H4ci4y
-        Sv+JBQWvyCH1C6I2pKXbXxNdcABZMhIgYJopNvlh5JTLFmy0tqD4WCw2V0Sj3loJi+sCHrSV4qa1AN+a
-        M3HDko9a207cNh3ApsORiCseXjHwtT/Jy/j91vxwgEQumU4JQLG/VCFi0myVqXdg99lcfH5yMVpcV1Bv
-        34vvzFlYXTITC9ZMUmSWTMclw1JcNqTiXstObD4ag4Xrh26gRg4pdVIGBUhYfQCdPIpNnGqjjFbQxEZO
-        uYHr3cDRX7v/X6z8Yjz09krca91OSTJly/BB9iQ0mx2KmOx3caExFlUNS3CufjGuGgqRuG1Ux9SEvw6h
-        SlZEcID4zK+8AURIebOMmGIFR663MITZhl3Hs3HwYjbqbF/ioj4J1Y3xSjZv9bt8b9rRxqUbvWoCTtfN
-        x6naGJyonUdisOPUfERmD5FZkAPqiaAAcel7VACvWKbbO+UGjUZuuwZzK1aWTEbl7VxcMWQhZdtURGdO
-        xFwhYyKMnCU7V1Bk+juKCJL0ySQcqJmG7d9MRkTWkBtU/Zw8GRRgSeqXPM26uoV6QbZZjryJNHK71Rut
-        WFQ0HFUPVqDk6hhEpU/A3VoL7jyw4CZbvZH7AF/iBmMbvr1jxlVuybNSxqPo/BBsqnoVszIHt1LlPRse
-        DrBoxX+6A4jUh8ibTA7Uc69vMlgwv/BVHL+zEOsvDMac1HfQqEl9S1Z2RN+LK8t1RvI45FUOQN6ZQXg/
-        dZCdKjkbggKELEzerQIoqYlyIuIGjTq9DQ16C+KK3sbeK3Ox7vxgLNkwFjOXv40ZGiKUF3b6snF4f6kw
-        Fh8WjsaaM/2RcWgAJicOuElXjzMQMn9ZKTz8ohC50MCRNfBgkX1dqDPY8UBvxoayZKw/OBkbL7yMTdWv
-        oPjiCMW/ksbyUbRwtTgxLfEtbP7mH4qi8y8h53Q/xH06EOM/7LeFrh7fgZCYRG8AJdaoF5p5upE6OW6b
-        LDz3qxCx+mV8ejGcHfdXnWeT9xLewnW+BzJrU+PHIOvE81h9irDNOPY8piS92DF00nPD6ZK9IHgZRifs
-        4ueU9wuoTR3JPrzHsXyAyGeYwWRBfkkS4j8ejpyT/bslMbkjMSVuNKbEjkb0mpFYdbwvMo6HkVDMzHoB
-        4ZFhxdT4vg2CA8yN33koip9QkXEklp9YZE6sfFrtwGx+Xs1eQhZ/hnkJJdi6qxxRKRMp+huWH6CoIgz5
-        ZwdhfdVL5O+8HoiV5aFYtj8UU9P6YlRU2Knf9Hq6FzWP3gn9SvbqH0L2c9lMnn1jRp+VE5b0c8ZsfAEf
-        lYUhtbyPIr40FBGFoRjzQd/2Ye89J4fRb7W/6fkseBy+GrfgL7rrxk1yKaOQI/aZgeG9ho6Y3nvLm3NC
-        r42aG8rRhmLkrD7Xhk3rveXF1/8wjL8jh1D3yF+f/Wc2rJ5Ej8JX4dF9daOiw+RSRiEdyvN8msizlQ+P
-        35HfExmx/Ez+rfv/i8Nn9taNmNGbl6yeRI/iEeV7JNK5TK2I/JFwSqzhVzrd/wGxghmmmNWRjgAAAABJ
-        RU5ErkJggg==
+        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
 </value>
   </data>
   <data name="barButtonItem15.Caption" xml:space="preserve">
@@ -1436,57 +1437,58 @@
     <value>
         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
-        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
+        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
 </value>
   </data>
   <data name="barButtonItem15.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAABadEVYdFRpdGxlAERlbGV0ZTtEZWxldGVJdGVtO1JlbW92ZTtSZW1vdmVJdGVtO0RlbGV0ZUxp
-        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
+        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
+        rkJggg==
 </value>
   </data>
   <data name="bar1.Text" xml:space="preserve">
@@ -1505,7 +1507,7 @@
     <value>barDockControlTop</value>
   </data>
   <data name="&gt;&gt;barDockControlTop.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barDockControlTop.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1526,7 +1528,7 @@
     <value>barDockControlBottom</value>
   </data>
   <data name="&gt;&gt;barDockControlBottom.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barDockControlBottom.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1547,7 +1549,7 @@
     <value>barDockControlLeft</value>
   </data>
   <data name="&gt;&gt;barDockControlLeft.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barDockControlLeft.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1568,7 +1570,7 @@
     <value>barDockControlRight</value>
   </data>
   <data name="&gt;&gt;barDockControlRight.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barDockControlRight.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1854,919 +1856,919 @@
     <value>applicationMenu</value>
   </data>
   <data name="&gt;&gt;applicationMenu.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.ApplicationMenu, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.ApplicationMenu, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;fileSaveItem1.Name" xml:space="preserve">
     <value>fileSaveItem1</value>
   </data>
   <data name="&gt;&gt;fileSaveItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;printPreviewItem1.Name" xml:space="preserve">
     <value>printPreviewItem1</value>
   </data>
   <data name="&gt;&gt;printPreviewItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.PrintPreviewItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.PrintPreviewItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;undoItem1.Name" xml:space="preserve">
     <value>undoItem1</value>
   </data>
   <data name="&gt;&gt;undoItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.UndoItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.UndoItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;redoItem1.Name" xml:space="preserve">
     <value>redoItem1</value>
   </data>
   <data name="&gt;&gt;redoItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.RedoItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.RedoItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;pasteItem1.Name" xml:space="preserve">
     <value>pasteItem1</value>
   </data>
   <data name="&gt;&gt;pasteItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.PasteItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.PasteItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonGroup1.Name" xml:space="preserve">
     <value>barButtonGroup1</value>
   </data>
   <data name="&gt;&gt;barButtonGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeFontNameItem1.Name" xml:space="preserve">
     <value>changeFontNameItem1</value>
   </data>
   <data name="&gt;&gt;changeFontNameItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFontNameItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFontNameItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;repositoryItemFontEdit1.Name" xml:space="preserve">
     <value>repositoryItemFontEdit1</value>
   </data>
   <data name="&gt;&gt;repositoryItemFontEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemFontEdit, DevExpress.XtraEditors.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemFontEdit, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeFontSizeItem1.Name" xml:space="preserve">
     <value>changeFontSizeItem1</value>
   </data>
   <data name="&gt;&gt;changeFontSizeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFontSizeItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFontSizeItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;repositoryItemRichEditFontSizeEdit1.Name" xml:space="preserve">
     <value>repositoryItemRichEditFontSizeEdit1</value>
   </data>
   <data name="&gt;&gt;repositoryItemRichEditFontSizeEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditFontSizeEdit, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditFontSizeEdit, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;fontSizeIncreaseItem1.Name" xml:space="preserve">
     <value>fontSizeIncreaseItem1</value>
   </data>
   <data name="&gt;&gt;fontSizeIncreaseItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FontSizeIncreaseItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.FontSizeIncreaseItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;fontSizeDecreaseItem1.Name" xml:space="preserve">
     <value>fontSizeDecreaseItem1</value>
   </data>
   <data name="&gt;&gt;fontSizeDecreaseItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FontSizeDecreaseItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.FontSizeDecreaseItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonGroup2.Name" xml:space="preserve">
     <value>barButtonGroup2</value>
   </data>
   <data name="&gt;&gt;barButtonGroup2.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleFontBoldItem1.Name" xml:space="preserve">
     <value>toggleFontBoldItem1</value>
   </data>
   <data name="&gt;&gt;toggleFontBoldItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleFontBoldItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleFontBoldItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleFontItalicItem1.Name" xml:space="preserve">
     <value>toggleFontItalicItem1</value>
   </data>
   <data name="&gt;&gt;toggleFontItalicItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleFontItalicItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleFontItalicItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleFontUnderlineItem1.Name" xml:space="preserve">
     <value>toggleFontUnderlineItem1</value>
   </data>
   <data name="&gt;&gt;toggleFontUnderlineItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleFontUnderlineItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleFontUnderlineItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonGroup3.Name" xml:space="preserve">
     <value>barButtonGroup3</value>
   </data>
   <data name="&gt;&gt;barButtonGroup3.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeFontColorItem1.Name" xml:space="preserve">
     <value>changeFontColorItem1</value>
   </data>
   <data name="&gt;&gt;changeFontColorItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFontColorItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFontColorItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeFontBackColorItem1.Name" xml:space="preserve">
     <value>changeFontBackColorItem1</value>
   </data>
   <data name="&gt;&gt;changeFontBackColorItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFontBackColorItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFontBackColorItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonGroup4.Name" xml:space="preserve">
     <value>barButtonGroup4</value>
   </data>
   <data name="&gt;&gt;barButtonGroup4.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleBulletedListItem1.Name" xml:space="preserve">
     <value>toggleBulletedListItem1</value>
   </data>
   <data name="&gt;&gt;toggleBulletedListItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleBulletedListItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleBulletedListItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleNumberingListItem1.Name" xml:space="preserve">
     <value>toggleNumberingListItem1</value>
   </data>
   <data name="&gt;&gt;toggleNumberingListItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleNumberingListItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleNumberingListItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonGroup5.Name" xml:space="preserve">
     <value>barButtonGroup5</value>
   </data>
   <data name="&gt;&gt;barButtonGroup5.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;decreaseIndentItem1.Name" xml:space="preserve">
     <value>decreaseIndentItem1</value>
   </data>
   <data name="&gt;&gt;decreaseIndentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.DecreaseIndentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.DecreaseIndentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;increaseIndentItem1.Name" xml:space="preserve">
     <value>increaseIndentItem1</value>
   </data>
   <data name="&gt;&gt;increaseIndentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.IncreaseIndentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.IncreaseIndentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonGroup6.Name" xml:space="preserve">
     <value>barButtonGroup6</value>
   </data>
   <data name="&gt;&gt;barButtonGroup6.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleParagraphAlignmentLeftItem1.Name" xml:space="preserve">
     <value>toggleParagraphAlignmentLeftItem1</value>
   </data>
   <data name="&gt;&gt;toggleParagraphAlignmentLeftItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentLeftItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentLeftItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleParagraphAlignmentCenterItem1.Name" xml:space="preserve">
     <value>toggleParagraphAlignmentCenterItem1</value>
   </data>
   <data name="&gt;&gt;toggleParagraphAlignmentCenterItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentCenterItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentCenterItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleParagraphAlignmentRightItem1.Name" xml:space="preserve">
     <value>toggleParagraphAlignmentRightItem1</value>
   </data>
   <data name="&gt;&gt;toggleParagraphAlignmentRightItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentRightItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentRightItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonGroup7.Name" xml:space="preserve">
     <value>barButtonGroup7</value>
   </data>
   <data name="&gt;&gt;barButtonGroup7.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeParagraphBackColorItem1.Name" xml:space="preserve">
     <value>changeParagraphBackColorItem1</value>
   </data>
   <data name="&gt;&gt;changeParagraphBackColorItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeParagraphBackColorItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeParagraphBackColorItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;findItem1.Name" xml:space="preserve">
     <value>findItem1</value>
   </data>
   <data name="&gt;&gt;findItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FindItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.FindItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;replaceItem1.Name" xml:space="preserve">
     <value>replaceItem1</value>
   </data>
   <data name="&gt;&gt;replaceItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ReplaceItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ReplaceItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;insertTableItem1.Name" xml:space="preserve">
     <value>insertTableItem1</value>
   </data>
   <data name="&gt;&gt;insertTableItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertTableItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertTableItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;insertPictureItem1.Name" xml:space="preserve">
     <value>insertPictureItem1</value>
   </data>
   <data name="&gt;&gt;insertPictureItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertPictureItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertPictureItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;insertFloatingPictureItem1.Name" xml:space="preserve">
     <value>insertFloatingPictureItem1</value>
   </data>
   <data name="&gt;&gt;insertFloatingPictureItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertFloatingPictureItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertFloatingPictureItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;insertHyperlinkItem1.Name" xml:space="preserve">
     <value>insertHyperlinkItem1</value>
   </data>
   <data name="&gt;&gt;insertHyperlinkItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertHyperlinkItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertHyperlinkItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;insertTextBoxItem1.Name" xml:space="preserve">
     <value>insertTextBoxItem1</value>
   </data>
   <data name="&gt;&gt;insertTextBoxItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertTextBoxItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertTextBoxItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;insertSymbolItem1.Name" xml:space="preserve">
     <value>insertSymbolItem1</value>
   </data>
   <data name="&gt;&gt;insertSymbolItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertSymbolItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertSymbolItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeTableCellsShadingItem1.Name" xml:space="preserve">
     <value>changeTableCellsShadingItem1</value>
   </data>
   <data name="&gt;&gt;changeTableCellsShadingItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeTableCellsShadingItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeTableCellsShadingItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeTableBordersItem1.Name" xml:space="preserve">
     <value>changeTableBordersItem1</value>
   </data>
   <data name="&gt;&gt;changeTableBordersItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeTableBordersItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeTableBordersItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomBorderItem1.Name" xml:space="preserve">
     <value>toggleTableCellsBottomBorderItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomBorderItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomBorderItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopBorderItem1.Name" xml:space="preserve">
     <value>toggleTableCellsTopBorderItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopBorderItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopBorderItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsLeftBorderItem1.Name" xml:space="preserve">
     <value>toggleTableCellsLeftBorderItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsLeftBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsLeftBorderItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsLeftBorderItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsRightBorderItem1.Name" xml:space="preserve">
     <value>toggleTableCellsRightBorderItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsRightBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsRightBorderItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsRightBorderItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;resetTableCellsAllBordersItem1.Name" xml:space="preserve">
     <value>resetTableCellsAllBordersItem1</value>
   </data>
   <data name="&gt;&gt;resetTableCellsAllBordersItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ResetTableCellsAllBordersItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ResetTableCellsAllBordersItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsAllBordersItem1.Name" xml:space="preserve">
     <value>toggleTableCellsAllBordersItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsAllBordersItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsAllBordersItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsAllBordersItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsOutsideBorderItem1.Name" xml:space="preserve">
     <value>toggleTableCellsOutsideBorderItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsOutsideBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsOutsideBorderItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsOutsideBorderItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsInsideBorderItem1.Name" xml:space="preserve">
     <value>toggleTableCellsInsideBorderItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsInsideBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsInsideBorderItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsInsideBorderItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsInsideHorizontalBorderItem1.Name" xml:space="preserve">
     <value>toggleTableCellsInsideHorizontalBorderItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsInsideHorizontalBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsInsideHorizontalBorderItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsInsideHorizontalBorderItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsInsideVerticalBorderItem1.Name" xml:space="preserve">
     <value>toggleTableCellsInsideVerticalBorderItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsInsideVerticalBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsInsideVerticalBorderItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsInsideVerticalBorderItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleShowTableGridLinesItem1.Name" xml:space="preserve">
     <value>toggleShowTableGridLinesItem1</value>
   </data>
   <data name="&gt;&gt;toggleShowTableGridLinesItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleShowTableGridLinesItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleShowTableGridLinesItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeTableBorderLineStyleItem1.Name" xml:space="preserve">
     <value>changeTableBorderLineStyleItem1</value>
   </data>
   <data name="&gt;&gt;changeTableBorderLineStyleItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeTableBorderLineStyleItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeTableBorderLineStyleItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;repositoryItemBorderLineStyle1.Name" xml:space="preserve">
     <value>repositoryItemBorderLineStyle1</value>
   </data>
   <data name="&gt;&gt;repositoryItemBorderLineStyle1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemBorderLineStyle, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemBorderLineStyle, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeTableBorderLineWeightItem1.Name" xml:space="preserve">
     <value>changeTableBorderLineWeightItem1</value>
   </data>
   <data name="&gt;&gt;changeTableBorderLineWeightItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeTableBorderLineWeightItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeTableBorderLineWeightItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;repositoryItemBorderLineWeight1.Name" xml:space="preserve">
     <value>repositoryItemBorderLineWeight1</value>
   </data>
   <data name="&gt;&gt;repositoryItemBorderLineWeight1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemBorderLineWeight, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemBorderLineWeight, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeTableBorderColorItem1.Name" xml:space="preserve">
     <value>changeTableBorderColorItem1</value>
   </data>
   <data name="&gt;&gt;changeTableBorderColorItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeTableBorderColorItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeTableBorderColorItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;selectTableElementsItem1.Name" xml:space="preserve">
     <value>selectTableElementsItem1</value>
   </data>
   <data name="&gt;&gt;selectTableElementsItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SelectTableElementsItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SelectTableElementsItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;selectTableCellItem1.Name" xml:space="preserve">
     <value>selectTableCellItem1</value>
   </data>
   <data name="&gt;&gt;selectTableCellItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SelectTableCellItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SelectTableCellItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;selectTableColumnItem1.Name" xml:space="preserve">
     <value>selectTableColumnItem1</value>
   </data>
   <data name="&gt;&gt;selectTableColumnItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SelectTableColumnItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SelectTableColumnItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;selectTableRowItem1.Name" xml:space="preserve">
     <value>selectTableRowItem1</value>
   </data>
   <data name="&gt;&gt;selectTableRowItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SelectTableRowItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SelectTableRowItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;selectTableItem1.Name" xml:space="preserve">
     <value>selectTableItem1</value>
   </data>
   <data name="&gt;&gt;selectTableItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SelectTableItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SelectTableItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;showTablePropertiesFormItem1.Name" xml:space="preserve">
     <value>showTablePropertiesFormItem1</value>
   </data>
   <data name="&gt;&gt;showTablePropertiesFormItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowTablePropertiesFormItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowTablePropertiesFormItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;deleteTableElementsItem1.Name" xml:space="preserve">
     <value>deleteTableElementsItem1</value>
   </data>
   <data name="&gt;&gt;deleteTableElementsItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.DeleteTableElementsItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.DeleteTableElementsItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;showDeleteTableCellsFormItem1.Name" xml:space="preserve">
     <value>showDeleteTableCellsFormItem1</value>
   </data>
   <data name="&gt;&gt;showDeleteTableCellsFormItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowDeleteTableCellsFormItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowDeleteTableCellsFormItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;deleteTableColumnsItem1.Name" xml:space="preserve">
     <value>deleteTableColumnsItem1</value>
   </data>
   <data name="&gt;&gt;deleteTableColumnsItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.DeleteTableColumnsItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.DeleteTableColumnsItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;deleteTableRowsItem1.Name" xml:space="preserve">
     <value>deleteTableRowsItem1</value>
   </data>
   <data name="&gt;&gt;deleteTableRowsItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.DeleteTableRowsItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.DeleteTableRowsItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;deleteTableItem1.Name" xml:space="preserve">
     <value>deleteTableItem1</value>
   </data>
   <data name="&gt;&gt;deleteTableItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.DeleteTableItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.DeleteTableItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;insertTableRowAboveItem1.Name" xml:space="preserve">
     <value>insertTableRowAboveItem1</value>
   </data>
   <data name="&gt;&gt;insertTableRowAboveItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertTableRowAboveItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertTableRowAboveItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;insertTableRowBelowItem1.Name" xml:space="preserve">
     <value>insertTableRowBelowItem1</value>
   </data>
   <data name="&gt;&gt;insertTableRowBelowItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertTableRowBelowItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertTableRowBelowItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;insertTableColumnToLeftItem1.Name" xml:space="preserve">
     <value>insertTableColumnToLeftItem1</value>
   </data>
   <data name="&gt;&gt;insertTableColumnToLeftItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertTableColumnToLeftItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertTableColumnToLeftItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;insertTableColumnToRightItem1.Name" xml:space="preserve">
     <value>insertTableColumnToRightItem1</value>
   </data>
   <data name="&gt;&gt;insertTableColumnToRightItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertTableColumnToRightItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertTableColumnToRightItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;mergeTableCellsItem1.Name" xml:space="preserve">
     <value>mergeTableCellsItem1</value>
   </data>
   <data name="&gt;&gt;mergeTableCellsItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.MergeTableCellsItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.MergeTableCellsItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;showSplitTableCellsForm1.Name" xml:space="preserve">
     <value>showSplitTableCellsForm1</value>
   </data>
   <data name="&gt;&gt;showSplitTableCellsForm1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowSplitTableCellsForm, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowSplitTableCellsForm, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;splitTableItem1.Name" xml:space="preserve">
     <value>splitTableItem1</value>
   </data>
   <data name="&gt;&gt;splitTableItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SplitTableItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SplitTableItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableAutoFitItem1.Name" xml:space="preserve">
     <value>toggleTableAutoFitItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableAutoFitItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableAutoFitItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableAutoFitItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableAutoFitContentsItem1.Name" xml:space="preserve">
     <value>toggleTableAutoFitContentsItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableAutoFitContentsItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableAutoFitContentsItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableAutoFitContentsItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableAutoFitWindowItem1.Name" xml:space="preserve">
     <value>toggleTableAutoFitWindowItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableAutoFitWindowItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableAutoFitWindowItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableAutoFitWindowItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableFixedColumnWidthItem1.Name" xml:space="preserve">
     <value>toggleTableFixedColumnWidthItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableFixedColumnWidthItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableFixedColumnWidthItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableFixedColumnWidthItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopLeftAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsTopLeftAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopLeftAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopLeftAlignmentItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopLeftAlignmentItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsMiddleLeftAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsMiddleLeftAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsMiddleLeftAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsMiddleLeftAlignmentItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsMiddleLeftAlignmentItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomLeftAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsBottomLeftAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomLeftAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomLeftAlignmentItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomLeftAlignmentItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopCenterAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsTopCenterAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopCenterAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopCenterAlignmentItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopCenterAlignmentItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsMiddleCenterAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsMiddleCenterAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsMiddleCenterAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsMiddleCenterAlignmentItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsMiddleCenterAlignmentItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomCenterAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsBottomCenterAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomCenterAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomCenterAlignmentItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomCenterAlignmentItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopRightAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsTopRightAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopRightAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopRightAlignmentItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopRightAlignmentItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsMiddleRightAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsMiddleRightAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsMiddleRightAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsMiddleRightAlignmentItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsMiddleRightAlignmentItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomRightAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsBottomRightAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomRightAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomRightAlignmentItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomRightAlignmentItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectFillColorItem1.Name" xml:space="preserve">
     <value>changeFloatingObjectFillColorItem1</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectFillColorItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectFillColorItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectFillColorItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectOutlineColorItem1.Name" xml:space="preserve">
     <value>changeFloatingObjectOutlineColorItem1</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectOutlineColorItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectOutlineColorItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectOutlineColorItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectOutlineWeightItem1.Name" xml:space="preserve">
     <value>changeFloatingObjectOutlineWeightItem1</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectOutlineWeightItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectOutlineWeightItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectOutlineWeightItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;repositoryItemFloatingObjectOutlineWeight1.Name" xml:space="preserve">
     <value>repositoryItemFloatingObjectOutlineWeight1</value>
   </data>
   <data name="&gt;&gt;repositoryItemFloatingObjectOutlineWeight1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemFloatingObjectOutlineWeight, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemFloatingObjectOutlineWeight, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectTextWrapTypeItem1.Name" xml:space="preserve">
     <value>changeFloatingObjectTextWrapTypeItem1</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectTextWrapTypeItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectTextWrapTypeItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectSquareTextWrapTypeItem1.Name" xml:space="preserve">
     <value>setFloatingObjectSquareTextWrapTypeItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectSquareTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectSquareTextWrapTypeItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectSquareTextWrapTypeItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTightTextWrapTypeItem1.Name" xml:space="preserve">
     <value>setFloatingObjectTightTextWrapTypeItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTightTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTightTextWrapTypeItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTightTextWrapTypeItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectThroughTextWrapTypeItem1.Name" xml:space="preserve">
     <value>setFloatingObjectThroughTextWrapTypeItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectThroughTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectThroughTextWrapTypeItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectThroughTextWrapTypeItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopAndBottomTextWrapTypeItem1.Name" xml:space="preserve">
     <value>setFloatingObjectTopAndBottomTextWrapTypeItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopAndBottomTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopAndBottomTextWrapTypeItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopAndBottomTextWrapTypeItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBehindTextWrapTypeItem1.Name" xml:space="preserve">
     <value>setFloatingObjectBehindTextWrapTypeItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBehindTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBehindTextWrapTypeItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBehindTextWrapTypeItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectInFrontOfTextWrapTypeItem1.Name" xml:space="preserve">
     <value>setFloatingObjectInFrontOfTextWrapTypeItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectInFrontOfTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectInFrontOfTextWrapTypeItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectInFrontOfTextWrapTypeItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectAlignmentItem1.Name" xml:space="preserve">
     <value>changeFloatingObjectAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopLeftAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectTopLeftAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopLeftAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopLeftAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopLeftAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopCenterAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectTopCenterAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopCenterAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopCenterAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopCenterAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopRightAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectTopRightAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopRightAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopRightAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopRightAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectMiddleLeftAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectMiddleLeftAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectMiddleLeftAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectMiddleLeftAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectMiddleLeftAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectMiddleCenterAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectMiddleCenterAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectMiddleCenterAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectMiddleCenterAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectMiddleCenterAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectMiddleRightAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectMiddleRightAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectMiddleRightAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectMiddleRightAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectMiddleRightAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBottomLeftAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectBottomLeftAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBottomLeftAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBottomLeftAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBottomLeftAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBottomCenterAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectBottomCenterAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBottomCenterAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBottomCenterAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBottomCenterAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBottomRightAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectBottomRightAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBottomRightAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBottomRightAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBottomRightAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringForwardSubItem1.Name" xml:space="preserve">
     <value>floatingObjectBringForwardSubItem1</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringForwardSubItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringForwardSubItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringForwardSubItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringForwardItem1.Name" xml:space="preserve">
     <value>floatingObjectBringForwardItem1</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringForwardItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringForwardItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringForwardItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringToFrontItem1.Name" xml:space="preserve">
     <value>floatingObjectBringToFrontItem1</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringToFrontItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringToFrontItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringToFrontItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringInFrontOfTextItem1.Name" xml:space="preserve">
     <value>floatingObjectBringInFrontOfTextItem1</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringInFrontOfTextItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringInFrontOfTextItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringInFrontOfTextItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendBackwardSubItem1.Name" xml:space="preserve">
     <value>floatingObjectSendBackwardSubItem1</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendBackwardSubItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendBackwardSubItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendBackwardSubItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendBackwardItem1.Name" xml:space="preserve">
     <value>floatingObjectSendBackwardItem1</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendBackwardItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendBackwardItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendBackwardItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendToBackItem1.Name" xml:space="preserve">
     <value>floatingObjectSendToBackItem1</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendToBackItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendToBackItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendToBackItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendBehindTextItem1.Name" xml:space="preserve">
     <value>floatingObjectSendBehindTextItem1</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendBehindTextItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendBehindTextItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendBehindTextItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonGroup8.Name" xml:space="preserve">
     <value>barButtonGroup8</value>
   </data>
   <data name="&gt;&gt;barButtonGroup8.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem1.Name" xml:space="preserve">
     <value>barButtonItem1</value>
   </data>
   <data name="&gt;&gt;barButtonItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem2.Name" xml:space="preserve">
     <value>barButtonItem2</value>
   </data>
   <data name="&gt;&gt;barButtonItem2.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonGroup9.Name" xml:space="preserve">
     <value>barButtonGroup9</value>
   </data>
   <data name="&gt;&gt;barButtonGroup9.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonGroup10.Name" xml:space="preserve">
     <value>barButtonGroup10</value>
   </data>
   <data name="&gt;&gt;barButtonGroup10.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem3.Name" xml:space="preserve">
     <value>barButtonItem3</value>
   </data>
   <data name="&gt;&gt;barButtonItem3.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem4.Name" xml:space="preserve">
     <value>barButtonItem4</value>
   </data>
   <data name="&gt;&gt;barButtonItem4.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem5.Name" xml:space="preserve">
     <value>barButtonItem5</value>
   </data>
   <data name="&gt;&gt;barButtonItem5.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem6.Name" xml:space="preserve">
     <value>barButtonItem6</value>
   </data>
   <data name="&gt;&gt;barButtonItem6.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem7.Name" xml:space="preserve">
     <value>barButtonItem7</value>
   </data>
   <data name="&gt;&gt;barButtonItem7.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem8.Name" xml:space="preserve">
     <value>barButtonItem8</value>
   </data>
   <data name="&gt;&gt;barButtonItem8.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiSupprimer.Name" xml:space="preserve">
     <value>bbiSupprimer</value>
   </data>
   <data name="&gt;&gt;bbiSupprimer.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiValider.Name" xml:space="preserve">
     <value>bbiValider</value>
   </data>
   <data name="&gt;&gt;bbiValider.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiAnnuler.Name" xml:space="preserve">
     <value>bbiAnnuler</value>
   </data>
   <data name="&gt;&gt;bbiAnnuler.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiEffacer.Name" xml:space="preserve">
     <value>bbiEffacer</value>
   </data>
   <data name="&gt;&gt;bbiEffacer.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem10.Name" xml:space="preserve">
     <value>barButtonItem10</value>
   </data>
   <data name="&gt;&gt;barButtonItem10.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem11.Name" xml:space="preserve">
     <value>barButtonItem11</value>
   </data>
   <data name="&gt;&gt;barButtonItem11.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem12.Name" xml:space="preserve">
     <value>barButtonItem12</value>
   </data>
   <data name="&gt;&gt;barButtonItem12.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem13.Name" xml:space="preserve">
     <value>barButtonItem13</value>
   </data>
   <data name="&gt;&gt;barButtonItem13.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem16.Name" xml:space="preserve">
     <value>barButtonItem16</value>
   </data>
   <data name="&gt;&gt;barButtonItem16.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;homeRibbonPage1.Name" xml:space="preserve">
     <value>homeRibbonPage1</value>
   </data>
   <data name="&gt;&gt;homeRibbonPage1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.HomeRibbonPage, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.HomeRibbonPage, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;NouveauRibbonPageGroup1.Name" xml:space="preserve">
     <value>NouveauRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;NouveauRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ClipboardRibbonPageGroup, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ClipboardRibbonPageGroup, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;SauvegarderibbonPageGroup.Name" xml:space="preserve">
     <value>SauvegarderibbonPageGroup</value>
   </data>
   <data name="&gt;&gt;SauvegarderibbonPageGroup.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;EditionRibbonPageGroup1.Name" xml:space="preserve">
     <value>EditionRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;EditionRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ParagraphRibbonPageGroup, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ParagraphRibbonPageGroup, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;EditionEnregistremetRibbonPageGroup.Name" xml:space="preserve">
     <value>EditionEnregistremetRibbonPageGroup</value>
   </data>
   <data name="&gt;&gt;EditionEnregistremetRibbonPageGroup.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.EditingRibbonPageGroup, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.EditingRibbonPageGroup, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonPageGroup2.Name" xml:space="preserve">
     <value>ribbonPageGroup2</value>
   </data>
   <data name="&gt;&gt;ribbonPageGroup2.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonPageGroup3.Name" xml:space="preserve">
     <value>ribbonPageGroup3</value>
   </data>
   <data name="&gt;&gt;ribbonPageGroup3.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;RPGFermer.Name" xml:space="preserve">
     <value>RPGFermer</value>
   </data>
   <data name="&gt;&gt;RPGFermer.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;repositoryItemRichEditStyleEdit1.Name" xml:space="preserve">
     <value>repositoryItemRichEditStyleEdit1</value>
   </data>
   <data name="&gt;&gt;repositoryItemRichEditStyleEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditStyleEdit, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditStyleEdit, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;spellChecker1.Name" xml:space="preserve">
     <value>spellChecker1</value>
   </data>
   <data name="&gt;&gt;spellChecker1.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpellChecker.SpellChecker, DevExpress.XtraSpellChecker.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraSpellChecker.SpellChecker, DevExpress.XtraSpellChecker.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;richEditBarController1.Name" xml:space="preserve">
     <value>richEditBarController1</value>
   </data>
   <data name="&gt;&gt;richEditBarController1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.RichEditBarController, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.RichEditBarController, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;showFontFormItem1.Name" xml:space="preserve">
     <value>showFontFormItem1</value>
   </data>
   <data name="&gt;&gt;showFontFormItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowFontFormItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowFontFormItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;showParagraphFormItem1.Name" xml:space="preserve">
     <value>showParagraphFormItem1</value>
   </data>
   <data name="&gt;&gt;showParagraphFormItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowParagraphFormItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowParagraphFormItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;showEditStyleFormItem1.Name" xml:space="preserve">
     <value>showEditStyleFormItem1</value>
   </data>
   <data name="&gt;&gt;showEditStyleFormItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowEditStyleFormItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowEditStyleFormItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;showInsertTableCellsFormItem1.Name" xml:space="preserve">
     <value>showInsertTableCellsFormItem1</value>
   </data>
   <data name="&gt;&gt;showInsertTableCellsFormItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowInsertTableCellsFormItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowInsertTableCellsFormItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;communesBindingSource.Name" xml:space="preserve">
     <value>communesBindingSource</value>
@@ -2790,25 +2792,25 @@
     <value>GVProductLine</value>
   </data>
   <data name="&gt;&gt;GVProductLine.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;colProduct.Name" xml:space="preserve">
     <value>colProduct</value>
   </data>
   <data name="&gt;&gt;colProduct.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;colName.Name" xml:space="preserve">
     <value>colName</value>
   </data>
   <data name="&gt;&gt;colName.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;RISLUProduct.Name" xml:space="preserve">
     <value>RISLUProduct</value>
   </data>
   <data name="&gt;&gt;RISLUProduct.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;modelViewProductBindingSource.Name" xml:space="preserve">
     <value>modelViewProductBindingSource</value>
@@ -2820,60 +2822,60 @@
     <value>repositoryItemSearchLookUpEdit1View</value>
   </data>
   <data name="&gt;&gt;repositoryItemSearchLookUpEdit1View.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;colQuantity.Name" xml:space="preserve">
     <value>colQuantity</value>
   </data>
   <data name="&gt;&gt;colQuantity.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;colId.Name" xml:space="preserve">
     <value>colId</value>
   </data>
   <data name="&gt;&gt;colId.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;repositoryItemGridLookUpEdit1.Name" xml:space="preserve">
     <value>repositoryItemGridLookUpEdit1</value>
   </data>
   <data name="&gt;&gt;repositoryItemGridLookUpEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;repositoryItemGridLookUpEdit1View.Name" xml:space="preserve">
     <value>repositoryItemGridLookUpEdit1View</value>
   </data>
   <data name="&gt;&gt;repositoryItemGridLookUpEdit1View.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barManager1.Name" xml:space="preserve">
     <value>barManager1</value>
   </data>
   <data name="&gt;&gt;barManager1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarManager, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarManager, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bar1.Name" xml:space="preserve">
     <value>bar1</value>
   </data>
   <data name="&gt;&gt;bar1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem14.Name" xml:space="preserve">
     <value>barButtonItem14</value>
   </data>
   <data name="&gt;&gt;barButtonItem14.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem15.Name" xml:space="preserve">
     <value>barButtonItem15</value>
   </data>
   <data name="&gt;&gt;barButtonItem15.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmEditStock</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonForm, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonForm, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
 </root>

@@ -11,7 +11,7 @@ namespace vente_embarque.Model
     {
         public string Name { get; set; }
         public int Code { get; set; }
-        public List<Communes> Communes { get; set; }
+        public List<Commune> Communes { get; set; }
 
         protected override void Validate()
         {
