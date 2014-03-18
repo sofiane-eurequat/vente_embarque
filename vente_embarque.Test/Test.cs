@@ -42,9 +42,11 @@ namespace vente_embarque.Test
 
             // mock du secteur et client
             const string nomSect = "nom secteur1";
-            var sector = FactorySector.CreateSector(nomSect);
-            var nom = "NomClient1";
-            var prenom = "PrenomClient1";
+            const string wilaya = "Tlemcen";
+            const string commune = "Tlemcen";
+            var sector = FactorySector.CreateSector(nomSect,wilaya,commune);
+            const string nom = "NomClient1";
+            const string prenom = "PrenomClient1";
             FactorySector.CreateClient(nom, prenom, sector);
             sectorMock=new Mock<IRepository<Sector, Guid>>();
             sectorMock.Setup(e => e.FindBy(It.IsAny<Query>())).Returns(
@@ -64,11 +66,16 @@ namespace vente_embarque.Test
                         produit2
                     }
                 );
-            var nomSector = "secteur1";
-            var secteur=FactorySector.CreateSector(nomSector);
+            const string nomSector = "secteur1";
+            //var rw1 = new RepositoryWilaya();
+            //string wilaya1 = rw1.FindBy(new Query()).First().ToString();
+            //string commune1 = rw1.FindBy(new Query()).First().Communes.First().ToString();
+            const string wilaya1 = "Tlemcen";
+            const string commune1 = "Tlemcen";
+            var secteur=FactorySector.CreateSector(nomSector,wilaya1,commune1);
             sectorMock2=new Mock<IRepository<Sector, Guid>>();
             sectorMock2.Setup(e => e.FindBy(It.IsAny<Query>())).Returns(
-                new List<Sector>()
+                new List<Sector>
                     {
                         secteur
                     }
@@ -80,7 +87,9 @@ namespace vente_embarque.Test
         public void CanCreateSecteur()
         {
             const string nom = "nom secteur1";
-            var sector = FactorySector.CreateSector(nom);
+            const string wilaya = "Tlemcen";
+            const string commune = "Tlemcen";
+            var sector = FactorySector.CreateSector(nom,wilaya,commune);
             Assert.AreEqual(sector.Name, "nom secteur1");
         }
 
@@ -90,10 +99,12 @@ namespace vente_embarque.Test
         public void CanCreateClient()
         {
             const string nomSect = "nom secteur1";
-            Sector secteur = FactorySector.CreateSector(nomSect);
+            const string wilaya = "Tlemcen";
+            const string commune = "Tlemcen";
+            Sector secteur = FactorySector.CreateSector(nomSect,wilaya,commune);
 
-            string nom = "NomClient1";
-            string prenom = "PrenomClient1";
+            const string nom = "NomClient1";
+            const string prenom = "PrenomClient1";
             //un secteur doit tjr etre defini mmee si il doit etre nommé indéfini
             var client = FactorySector.CreateClient(nom, prenom, secteur);
             Assert.AreEqual(client.Name, "NomClient1");
@@ -181,13 +192,13 @@ namespace vente_embarque.Test
         }
 
         [Test]
-        public void getProductminimal()
+        public void GetProductminimal()
         {
             
-            string nameStock = "stock1";
-            string namepro1 = "produit1";
-            string namepro2 = "produit2";
-            int quantiteMinimale = 10;
+            const string nameStock = "stock1";
+            const string namepro1 = "produit1";
+            const string namepro2 = "produit2";
+            const int quantiteMinimale = 10;
             var stock = FactoryStock.CreateStock(nameStock);
             var produit1 = FactoryProduct.CreateProduct(namepro1, quantiteMinimale);
             var produit2 = FactoryProduct.CreateProduct(namepro2, 15);
@@ -243,8 +254,8 @@ namespace vente_embarque.Test
         [Test]
         public void CanCreateAgentTerrain()
         {
-            var nomAgent = "Agent1";
-            var nomAgent2 = "Agent2";
+            const string nomAgent = "Agent1";
+            const string nomAgent2 = "Agent2";
             var agentterrain = FactoryAgentTerrain.CreateAgentTerrain(nomAgent);
             Assert.AreEqual(agentterrain.Name,nomAgent);
 
@@ -257,7 +268,7 @@ namespace vente_embarque.Test
         [Test]
         public void CanCreateStockDatabase()
         {
-            string stock2 = "stock2";
+            const string stock2 = "stock2";
             var stock = FactoryStock.CreateStock(stock2);
             var rs = new RepositoryStock();
             rs.Save(stock);
@@ -266,7 +277,7 @@ namespace vente_embarque.Test
         [Test]
         public void CanCreateAgentTerraindatabae()
         {
-            String agentterrain1 = "agentterrain1";
+            const string agentterrain1 = "agentterrain1";
             var agentterrain = FactoryAgentTerrain.CreateAgentTerrain(agentterrain1);
             var ra = new RepositoryAgentTerrain();
             ra.Save(agentterrain);

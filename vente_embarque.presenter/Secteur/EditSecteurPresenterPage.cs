@@ -13,11 +13,14 @@ namespace vente_embarque.presenter.Secteur
         private readonly IEditSecteurView _EditSecteurView;
         private IRepository<Wilaya, Guid> _repositoryWilaya;
         private IRepository<AgentTerrain, Guid> _repositoryAgentTerrain;
-        public EditSecteurPresenterPage(IEditSecteurView editSecteurView,IRepository<Wilaya,Guid> repository, IRepository<AgentTerrain,Guid> repository1 )
+        private IRepository<Sector, Guid> _repositorySecteur;
+
+        public EditSecteurPresenterPage(IEditSecteurView editSecteurView,IRepository<Wilaya,Guid> repository, IRepository<AgentTerrain,Guid> repository1, IRepository<Sector,Guid> repository2)
         {
             _EditSecteurView = editSecteurView;
             _repositoryWilaya = repository;
             _repositoryAgentTerrain = repository1;
+            _repositorySecteur = repository2;
         }
 
         public void Display()
@@ -26,15 +29,16 @@ namespace vente_embarque.presenter.Secteur
             _EditSecteurView.AgentTerrains = _repositoryAgentTerrain.FindAll();
         }
 
-        public void Write()
+        public void Write(string name, string wilaya, string communes)
         {
-            throw new NotImplementedException();
+            var secteur =FactorySector.CreateSector(name, wilaya, communes);
+            _repositorySecteur.Save(secteur);
         }
     }
 
     internal interface IEditSecteurPagePresenter
     {
         void Display();
-        void Write();
+        void Write(string name, string wilaya, string communes);
     }
 }

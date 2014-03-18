@@ -22,7 +22,7 @@ namespace vente_embarque.DataLayer
             var listeProduct = new List<Product>();
             AppSettingsReader config = new AppSettingsReader();
             using (
-                var uow = new UnitOfWork()
+                var uow = new UnitOfWork
                     {
                         ConnectionString = ((string)config.GetValue("connect", typeof(string)))
                     })
@@ -36,10 +36,10 @@ namespace vente_embarque.DataLayer
         public IEnumerable<Product> FindBy(Query query)
         {
             var listeProduct = new List<Product>();
-            AppSettingsReader config = new AppSettingsReader();
+            var config = new AppSettingsReader();
             using (
-                var uow = new UnitOfWork()
-                {
+                var uow = new UnitOfWork
+                    {
                     ConnectionString = ((string)config.GetValue("connect", typeof(string)))
                 })
             {
@@ -55,8 +55,6 @@ namespace vente_embarque.DataLayer
             }
             return listeProduct;
         }
-
-
 
         public IEnumerable<Product> FindBy(Query query, int index, int count)
         {

@@ -12,7 +12,7 @@ using vente_embarque.Model;
 
 namespace vente_embarque.DataLayer
 {
-    public class RepositoryAgentTerrain: IRepository<Model.AgentTerrain,Guid>
+    public class RepositoryAgentTerrain: IRepository<AgentTerrain,Guid>
     {
         public AgentTerrain FindBy(Guid id)
         {
@@ -22,7 +22,7 @@ namespace vente_embarque.DataLayer
         public IEnumerable<AgentTerrain> FindAll()
         {
             var listeAgentTerrain = new List<AgentTerrain>();
-            AppSettingsReader config = new AppSettingsReader();
+            var config = new AppSettingsReader();
             using (
                 var uow = new UnitOfWork()
                 {
@@ -57,9 +57,9 @@ namespace vente_embarque.DataLayer
 
         public void Save(AgentTerrain entity)
         {
-            AppSettingsReader config = new AppSettingsReader();
+            var config = new AppSettingsReader();
             using (
-                var uow = new UnitOfWork()
+                var uow = new UnitOfWork
                     {
                         ConnectionString = ((string)config.GetValue("connect", typeof(string)))
                     })

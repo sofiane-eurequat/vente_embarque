@@ -474,11 +474,11 @@
   <data name="barButtonGroup10.Caption" xml:space="preserve">
     <value>barButtonGroup10</value>
   </data>
-  <data name="barButtonItem3.Caption" xml:space="preserve">
+  <data name="bbiNouveau.Caption" xml:space="preserve">
     <value>Nouveau</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="barButtonItem3.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bbiNouveau.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAA9dEVYdFRpdGxlAE5ldztQYWdlO0JhcnM7UmliYm9uO1N0YW5kYXJkO0l0ZW07Qmxhbms7RGVm
@@ -494,7 +494,7 @@
         VM6OLH75/0s8xB/6ZLbSnFYGZZ+y1EjOtO7j8hcgW/gLc7LkWZrHKOEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="barButtonItem3.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bbiNouveau.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAA9dEVYdFRpdGxlAE5ldztQYWdlO0JhcnM7UmliYm9uO1N0YW5kYXJkO0l0ZW07Qmxhbms7RGVm
@@ -666,10 +666,10 @@
   <data name="barButtonItem6.Caption" xml:space="preserve">
     <value>barButtonItem6</value>
   </data>
-  <data name="barButtonItem7.Caption" xml:space="preserve">
+  <data name="bbiSauvergarder.Caption" xml:space="preserve">
     <value>Sauvegarder</value>
   </data>
-  <data name="barButtonItem7.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bbiSauvergarder.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAALdEVYdFRpdGxlAFNhdmU7+ej5CQAAAvZJREFUOE+Fk1tI01Ecxy2zELF7mpShGQNBM21uuvl3
@@ -688,7 +688,7 @@
         tTMewtqAvwXi/m52XeinAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="barButtonItem7.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bbiSauvergarder.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAALdEVYdFRpdGxlAFNhdmU7+ej5CQAACU9JREFUWEfFV2dUVGcadku2JBtj1E22/t1fcTcqShHp
@@ -734,10 +734,10 @@
         BX+gspv/C6gNX/RPBgtbCj92lKQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="barButtonItem8.Caption" xml:space="preserve">
+  <data name="bbiSauvegarderFermer.Caption" xml:space="preserve">
     <value>Sauvegarder et Fermer</value>
   </data>
-  <data name="barButtonItem8.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bbiSauvegarderFermer.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAgdEVYdFRpdGxlAFNhdmUgQW5kIENsb3NlO1NhdmU7Q2xvc2U7KoQIewAAAuRJREFUOE99k2lI
@@ -756,7 +756,7 @@
         /hv6j0ZnuCn4BczNDQxXmLvMAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="barButtonItem8.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bbiSauvegarderFermer.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAgdEVYdFRpdGxlAFNhdmUgQW5kIENsb3NlO1NhdmU7Q2xvc2U7KoQIewAACQJJREFUWEfFlwlQ
@@ -875,10 +875,10 @@
   <data name="barButtonItem13.Caption" xml:space="preserve">
     <value>Fermer</value>
   </data>
-  <data name="barButtonItem16.Caption" xml:space="preserve">
+  <data name="bbiFermer.Caption" xml:space="preserve">
     <value>Fermer</value>
   </data>
-  <data name="barButtonItem16.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bbiFermer.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAddEVYdFRpdGxlAENsb3NlO0V4aXQ7QmFycztSaWJib247RgO56AAAAwxJREFUOE+Nk1lIVFEY
@@ -898,7 +898,7 @@
         RU5ErkJggg==
 </value>
   </data>
-  <data name="barButtonItem16.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bbiFermer.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAddEVYdFRpdGxlAENsb3NlO0V4aXQ7QmFycztSaWJib247RgO56AAACQdJREFUWEfFl3lQVFcW
@@ -946,27 +946,6 @@
   <data name="ribbonControl.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="NouveauRibbonPageGroup1.Text" xml:space="preserve">
-    <value>Nouveau</value>
-  </data>
-  <data name="SauvegarderibbonPageGroup.Text" xml:space="preserve">
-    <value>Sauvegarder</value>
-  </data>
-  <data name="EditionRibbonPageGroup1.Text" xml:space="preserve">
-    <value>Editer</value>
-  </data>
-  <data name="EditionEnregistremetRibbonPageGroup.Text" xml:space="preserve">
-    <value>Reinitialiser</value>
-  </data>
-  <data name="ribbonPageGroup2.Text" xml:space="preserve">
-    <value>Vue</value>
-  </data>
-  <data name="ribbonPageGroup3.Text" xml:space="preserve">
-    <value>Navigation Enregistrement</value>
-  </data>
-  <data name="RPGFermer.Text" xml:space="preserve">
-    <value>Fermer</value>
-  </data>
   <data name="homeRibbonPage1.Text" xml:space="preserve">
     <value>HOME</value>
   </data>
@@ -1011,6 +990,27 @@
   </data>
   <data name="&gt;&gt;ribbonControl.ZOrder" xml:space="preserve">
     <value>7</value>
+  </data>
+  <data name="NouveauRibbonPageGroup1.Text" xml:space="preserve">
+    <value>Nouveau</value>
+  </data>
+  <data name="SauvegarderibbonPageGroup.Text" xml:space="preserve">
+    <value>Sauvegarder</value>
+  </data>
+  <data name="EditionRibbonPageGroup1.Text" xml:space="preserve">
+    <value>Editer</value>
+  </data>
+  <data name="EditionEnregistremetRibbonPageGroup.Text" xml:space="preserve">
+    <value>Reinitialiser</value>
+  </data>
+  <data name="ribbonPageGroup2.Text" xml:space="preserve">
+    <value>Vue</value>
+  </data>
+  <data name="ribbonPageGroup3.Text" xml:space="preserve">
+    <value>Navigation Enregistrement</value>
+  </data>
+  <data name="RPGFermer.Text" xml:space="preserve">
+    <value>Fermer</value>
   </data>
   <metadata name="spellChecker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>331, 17</value>
@@ -1072,9 +1072,102 @@
   <data name="showInsertTableCellsFormItem1.Caption" xml:space="preserve">
     <value>Insert Cells</value>
   </data>
-  <metadata name="communesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 56</value>
-  </metadata>
+  <data name="&gt;&gt;comboBoxCommune.Name" xml:space="preserve">
+    <value>comboBoxCommune</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCommune.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCommune.Parent" xml:space="preserve">
+    <value>GCInfoGeneral</value>
+  </data>
+  <data name="&gt;&gt;comboBoxCommune.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;comboBoxWilaya.Name" xml:space="preserve">
+    <value>comboBoxWilaya</value>
+  </data>
+  <data name="&gt;&gt;comboBoxWilaya.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxWilaya.Parent" xml:space="preserve">
+    <value>GCInfoGeneral</value>
+  </data>
+  <data name="&gt;&gt;comboBoxWilaya.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;labelAdress.Name" xml:space="preserve">
+    <value>labelAdress</value>
+  </data>
+  <data name="&gt;&gt;labelAdress.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelAdress.Parent" xml:space="preserve">
+    <value>GCInfoGeneral</value>
+  </data>
+  <data name="&gt;&gt;labelAdress.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;labelWilaya.Name" xml:space="preserve">
+    <value>labelWilaya</value>
+  </data>
+  <data name="&gt;&gt;labelWilaya.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelWilaya.Parent" xml:space="preserve">
+    <value>GCInfoGeneral</value>
+  </data>
+  <data name="&gt;&gt;labelWilaya.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;labelComune.Name" xml:space="preserve">
+    <value>labelComune</value>
+  </data>
+  <data name="&gt;&gt;labelComune.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelComune.Parent" xml:space="preserve">
+    <value>GCInfoGeneral</value>
+  </data>
+  <data name="&gt;&gt;labelComune.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;labelNameStock.Name" xml:space="preserve">
+    <value>labelNameStock</value>
+  </data>
+  <data name="&gt;&gt;labelNameStock.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelNameStock.Parent" xml:space="preserve">
+    <value>GCInfoGeneral</value>
+  </data>
+  <data name="&gt;&gt;labelNameStock.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="GCInfoGeneral.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 150</value>
+  </data>
+  <data name="GCInfoGeneral.Size" type="System.Drawing.Size, System.Drawing">
+    <value>784, 114</value>
+  </data>
+  <data name="GCInfoGeneral.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="GCInfoGeneral.Text" xml:space="preserve">
+    <value>Information Generale</value>
+  </data>
+  <data name="&gt;&gt;GCInfoGeneral.Name" xml:space="preserve">
+    <value>GCInfoGeneral</value>
+  </data>
+  <data name="&gt;&gt;GCInfoGeneral.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;GCInfoGeneral.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GCInfoGeneral.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="comboBoxCommune.Location" type="System.Drawing.Point, System.Drawing">
     <value>101, 80</value>
   </data>
@@ -1096,9 +1189,6 @@
   <data name="&gt;&gt;comboBoxCommune.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="wilayaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1073, 17</value>
-  </metadata>
   <data name="comboBoxWilaya.Location" type="System.Drawing.Point, System.Drawing">
     <value>520, 34</value>
   </data>
@@ -1216,29 +1306,50 @@
   <data name="&gt;&gt;labelNameStock.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="GCInfoGeneral.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 150</value>
+  <metadata name="communesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <data name="&gt;&gt;GCLigneStock.Name" xml:space="preserve">
+    <value>GCLigneStock</value>
   </data>
-  <data name="GCInfoGeneral.Size" type="System.Drawing.Size, System.Drawing">
-    <value>784, 114</value>
+  <data name="&gt;&gt;GCLigneStock.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="GCInfoGeneral.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;GCLigneStock.Parent" xml:space="preserve">
+    <value>xtpLigneProduit</value>
   </data>
-  <data name="GCInfoGeneral.Text" xml:space="preserve">
-    <value>Information Generale</value>
+  <data name="&gt;&gt;GCLigneStock.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;GCInfoGeneral.Name" xml:space="preserve">
-    <value>GCInfoGeneral</value>
+  <data name="&gt;&gt;standaloneBarDockControl1.Name" xml:space="preserve">
+    <value>standaloneBarDockControl1</value>
   </data>
-  <data name="&gt;&gt;GCInfoGeneral.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;standaloneBarDockControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.StandaloneBarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;GCInfoGeneral.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;standaloneBarDockControl1.Parent" xml:space="preserve">
+    <value>xtpLigneProduit</value>
   </data>
-  <data name="&gt;&gt;GCInfoGeneral.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;standaloneBarDockControl1.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="xtpLigneProduit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>783, 154</value>
+  </data>
+  <data name="xtpLigneProduit.Text" xml:space="preserve">
+    <value>Contenue du stock</value>
+  </data>
+  <data name="&gt;&gt;xtpLigneProduit.Name" xml:space="preserve">
+    <value>xtpLigneProduit</value>
+  </data>
+  <data name="&gt;&gt;xtpLigneProduit.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtpLigneProduit.Parent" xml:space="preserve">
+    <value>xtcLignesProduit</value>
+  </data>
+  <data name="&gt;&gt;xtpLigneProduit.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="modelViewProductLineBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>583, 17</value>
@@ -1323,24 +1434,6 @@
   </data>
   <data name="&gt;&gt;standaloneBarDockControl1.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="xtpLigneProduit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>783, 154</value>
-  </data>
-  <data name="xtpLigneProduit.Text" xml:space="preserve">
-    <value>Contenue du stock</value>
-  </data>
-  <data name="&gt;&gt;xtpLigneProduit.Name" xml:space="preserve">
-    <value>xtpLigneProduit</value>
-  </data>
-  <data name="&gt;&gt;xtpLigneProduit.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;xtpLigneProduit.Parent" xml:space="preserve">
-    <value>xtcLignesProduit</value>
-  </data>
-  <data name="&gt;&gt;xtpLigneProduit.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="xtcLignesProduit.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 280</value>
@@ -2590,10 +2683,10 @@
   <data name="&gt;&gt;barButtonGroup10.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;barButtonItem3.Name" xml:space="preserve">
-    <value>barButtonItem3</value>
+  <data name="&gt;&gt;bbiNouveau.Name" xml:space="preserve">
+    <value>bbiNouveau</value>
   </data>
-  <data name="&gt;&gt;barButtonItem3.Type" xml:space="preserve">
+  <data name="&gt;&gt;bbiNouveau.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem4.Name" xml:space="preserve">
@@ -2614,16 +2707,16 @@
   <data name="&gt;&gt;barButtonItem6.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;barButtonItem7.Name" xml:space="preserve">
-    <value>barButtonItem7</value>
+  <data name="&gt;&gt;bbiSauvergarder.Name" xml:space="preserve">
+    <value>bbiSauvergarder</value>
   </data>
-  <data name="&gt;&gt;barButtonItem7.Type" xml:space="preserve">
+  <data name="&gt;&gt;bbiSauvergarder.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;barButtonItem8.Name" xml:space="preserve">
-    <value>barButtonItem8</value>
+  <data name="&gt;&gt;bbiSauvegarderFermer.Name" xml:space="preserve">
+    <value>bbiSauvegarderFermer</value>
   </data>
-  <data name="&gt;&gt;barButtonItem8.Type" xml:space="preserve">
+  <data name="&gt;&gt;bbiSauvegarderFermer.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiSupprimer.Name" xml:space="preserve">
@@ -2674,10 +2767,10 @@
   <data name="&gt;&gt;barButtonItem13.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;barButtonItem16.Name" xml:space="preserve">
-    <value>barButtonItem16</value>
+  <data name="&gt;&gt;bbiFermer.Name" xml:space="preserve">
+    <value>bbiFermer</value>
   </data>
-  <data name="&gt;&gt;barButtonItem16.Type" xml:space="preserve">
+  <data name="&gt;&gt;bbiFermer.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;homeRibbonPage1.Name" xml:space="preserve">
@@ -2774,12 +2867,6 @@
     <value>communesBindingSource</value>
   </data>
   <data name="&gt;&gt;communesBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;wilayaBindingSource.Name" xml:space="preserve">
-    <value>wilayaBindingSource</value>
-  </data>
-  <data name="&gt;&gt;wilayaBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;modelViewProductLineBindingSource.Name" xml:space="preserve">

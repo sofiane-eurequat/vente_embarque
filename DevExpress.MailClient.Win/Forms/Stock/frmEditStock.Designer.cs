@@ -25,8 +25,8 @@
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEditStock));
+            DevExpress.XtraSpellChecker.OptionsSpelling optionsSpelling3 = new DevExpress.XtraSpellChecker.OptionsSpelling();
             DevExpress.XtraSpellChecker.OptionsSpelling optionsSpelling1 = new DevExpress.XtraSpellChecker.OptionsSpelling();
-            DevExpress.XtraSpellChecker.OptionsSpelling optionsSpelling2 = new DevExpress.XtraSpellChecker.OptionsSpelling();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.applicationMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.fileSaveItem1 = new DevExpress.XtraBars.BarButtonItem();
@@ -151,12 +151,12 @@
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonGroup9 = new DevExpress.XtraBars.BarButtonGroup();
             this.barButtonGroup10 = new DevExpress.XtraBars.BarButtonGroup();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiNouveau = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSauvergarder = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSauvegarderFermer = new DevExpress.XtraBars.BarButtonItem();
             this.bbiSupprimer = new DevExpress.XtraBars.BarButtonItem();
             this.bbiValider = new DevExpress.XtraBars.BarButtonItem();
             this.bbiAnnuler = new DevExpress.XtraBars.BarButtonItem();
@@ -165,7 +165,7 @@
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem16 = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiFermer = new DevExpress.XtraBars.BarButtonItem();
             this.homeRibbonPage1 = new DevExpress.XtraRichEdit.UI.HomeRibbonPage();
             this.NouveauRibbonPageGroup1 = new DevExpress.XtraRichEdit.UI.ClipboardRibbonPageGroup();
             this.SauvegarderibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -186,13 +186,12 @@
             this.showInsertTableCellsFormItem1 = new DevExpress.XtraRichEdit.UI.ShowInsertTableCellsFormItem();
             this.GCInfoGeneral = new DevExpress.XtraEditors.GroupControl();
             this.comboBoxCommune = new System.Windows.Forms.ComboBox();
-            this.communesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBoxWilaya = new System.Windows.Forms.ComboBox();
-            this.wilayaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.labelAdress = new DevExpress.XtraEditors.LabelControl();
             this.labelWilaya = new DevExpress.XtraEditors.LabelControl();
             this.labelComune = new DevExpress.XtraEditors.LabelControl();
             this.labelNameStock = new DevExpress.XtraEditors.LabelControl();
+            this.communesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.xtpLigneProduit = new DevExpress.XtraTab.XtraTabPage();
             this.GCLigneStock = new DevExpress.XtraGrid.GridControl();
             this.modelViewProductLineBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -230,7 +229,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.GCInfoGeneral)).BeginInit();
             this.GCInfoGeneral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.communesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wilayaBindingSource)).BeginInit();
             this.xtpLigneProduit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GCLigneStock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.modelViewProductLineBindingSource)).BeginInit();
@@ -369,12 +367,12 @@
             this.barButtonItem2,
             this.barButtonGroup9,
             this.barButtonGroup10,
-            this.barButtonItem3,
+            this.bbiNouveau,
             this.barButtonItem4,
             this.barButtonItem5,
             this.barButtonItem6,
-            this.barButtonItem7,
-            this.barButtonItem8,
+            this.bbiSauvergarder,
+            this.bbiSauvegarderFermer,
             this.bbiSupprimer,
             this.bbiValider,
             this.bbiAnnuler,
@@ -383,7 +381,7 @@
             this.barButtonItem11,
             this.barButtonItem12,
             this.barButtonItem13,
-            this.barButtonItem16});
+            this.bbiFermer});
             this.ribbonControl.MaxItemId = 208;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -1329,14 +1327,14 @@
             this.barButtonGroup10.Id = 158;
             this.barButtonGroup10.Name = "barButtonGroup10";
             // 
-            // barButtonItem3
+            // bbiNouveau
             // 
-            resources.ApplyResources(this.barButtonItem3, "barButtonItem3");
-            this.barButtonItem3.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.Glyph")));
-            this.barButtonItem3.Id = 159;
-            this.barButtonItem3.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.LargeGlyph")));
-            this.barButtonItem3.Name = "barButtonItem3";
-            this.barButtonItem3.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            resources.ApplyResources(this.bbiNouveau, "bbiNouveau");
+            this.bbiNouveau.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiNouveau.Glyph")));
+            this.bbiNouveau.Id = 159;
+            this.bbiNouveau.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiNouveau.LargeGlyph")));
+            this.bbiNouveau.Name = "bbiNouveau";
+            this.bbiNouveau.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
             // barButtonItem4
             // 
@@ -1362,21 +1360,22 @@
             this.barButtonItem6.Id = 162;
             this.barButtonItem6.Name = "barButtonItem6";
             // 
-            // barButtonItem7
+            // bbiSauvergarder
             // 
-            resources.ApplyResources(this.barButtonItem7, "barButtonItem7");
-            this.barButtonItem7.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.Glyph")));
-            this.barButtonItem7.Id = 170;
-            this.barButtonItem7.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.LargeGlyph")));
-            this.barButtonItem7.Name = "barButtonItem7";
+            resources.ApplyResources(this.bbiSauvergarder, "bbiSauvergarder");
+            this.bbiSauvergarder.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvergarder.Glyph")));
+            this.bbiSauvergarder.Id = 170;
+            this.bbiSauvergarder.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvergarder.LargeGlyph")));
+            this.bbiSauvergarder.Name = "bbiSauvergarder";
+            this.bbiSauvergarder.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiSauvergarder_ItemClick);
             // 
-            // barButtonItem8
+            // bbiSauvegarderFermer
             // 
-            resources.ApplyResources(this.barButtonItem8, "barButtonItem8");
-            this.barButtonItem8.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.Glyph")));
-            this.barButtonItem8.Id = 171;
-            this.barButtonItem8.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.LargeGlyph")));
-            this.barButtonItem8.Name = "barButtonItem8";
+            resources.ApplyResources(this.bbiSauvegarderFermer, "bbiSauvegarderFermer");
+            this.bbiSauvegarderFermer.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvegarderFermer.Glyph")));
+            this.bbiSauvegarderFermer.Id = 171;
+            this.bbiSauvegarderFermer.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvegarderFermer.LargeGlyph")));
+            this.bbiSauvegarderFermer.Name = "bbiSauvegarderFermer";
             // 
             // bbiSupprimer
             // 
@@ -1442,13 +1441,13 @@
             this.barButtonItem13.LargeGlyph = global::DevExpress.MailClient.Win.Properties.Resources.Close_32x32;
             this.barButtonItem13.Name = "barButtonItem13";
             // 
-            // barButtonItem16
+            // bbiFermer
             // 
-            resources.ApplyResources(this.barButtonItem16, "barButtonItem16");
-            this.barButtonItem16.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem16.Glyph")));
-            this.barButtonItem16.Id = 207;
-            this.barButtonItem16.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem16.LargeGlyph")));
-            this.barButtonItem16.Name = "barButtonItem16";
+            resources.ApplyResources(this.bbiFermer, "bbiFermer");
+            this.bbiFermer.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiFermer.Glyph")));
+            this.bbiFermer.Id = 207;
+            this.bbiFermer.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiFermer.LargeGlyph")));
+            this.bbiFermer.Name = "bbiFermer";
             // 
             // homeRibbonPage1
             // 
@@ -1466,15 +1465,15 @@
             // NouveauRibbonPageGroup1
             // 
             this.NouveauRibbonPageGroup1.AllowTextClipping = false;
-            this.NouveauRibbonPageGroup1.ItemLinks.Add(this.barButtonItem3);
+            this.NouveauRibbonPageGroup1.ItemLinks.Add(this.bbiNouveau);
             this.NouveauRibbonPageGroup1.Name = "NouveauRibbonPageGroup1";
             resources.ApplyResources(this.NouveauRibbonPageGroup1, "NouveauRibbonPageGroup1");
             // 
             // SauvegarderibbonPageGroup
             // 
             this.SauvegarderibbonPageGroup.AllowTextClipping = false;
-            this.SauvegarderibbonPageGroup.ItemLinks.Add(this.barButtonItem7);
-            this.SauvegarderibbonPageGroup.ItemLinks.Add(this.barButtonItem8);
+            this.SauvegarderibbonPageGroup.ItemLinks.Add(this.bbiSauvergarder);
+            this.SauvegarderibbonPageGroup.ItemLinks.Add(this.bbiSauvegarderFermer);
             this.SauvegarderibbonPageGroup.Name = "SauvegarderibbonPageGroup";
             this.SauvegarderibbonPageGroup.ShowCaptionButton = false;
             resources.ApplyResources(this.SauvegarderibbonPageGroup, "SauvegarderibbonPageGroup");
@@ -1515,7 +1514,7 @@
             // RPGFermer
             // 
             this.RPGFermer.AllowTextClipping = false;
-            this.RPGFermer.ItemLinks.Add(this.barButtonItem16);
+            this.RPGFermer.ItemLinks.Add(this.bbiFermer);
             this.RPGFermer.Name = "RPGFermer";
             this.RPGFermer.ShowCaptionButton = false;
             resources.ApplyResources(this.RPGFermer, "RPGFermer");
@@ -1546,7 +1545,7 @@
             this.textEdit1.MenuManager = this.ribbonControl;
             this.textEdit1.Name = "textEdit1";
             this.spellChecker1.SetShowSpellCheckMenu(this.textEdit1, true);
-            this.spellChecker1.SetSpellCheckerOptions(this.textEdit1, optionsSpelling1);
+            this.spellChecker1.SetSpellCheckerOptions(this.textEdit1, optionsSpelling3);
             // 
             // textEdit4
             // 
@@ -1554,7 +1553,7 @@
             this.textEdit4.MenuManager = this.ribbonControl;
             this.textEdit4.Name = "textEdit4";
             this.spellChecker1.SetShowSpellCheckMenu(this.textEdit4, true);
-            this.spellChecker1.SetSpellCheckerOptions(this.textEdit4, optionsSpelling2);
+            this.spellChecker1.SetSpellCheckerOptions(this.textEdit4, optionsSpelling1);
             // 
             // richEditBarController1
             // 
@@ -1711,30 +1710,16 @@
             // 
             // comboBoxCommune
             // 
-            this.comboBoxCommune.DataSource = this.communesBindingSource;
-            this.comboBoxCommune.DisplayMember = "Name";
             this.comboBoxCommune.FormattingEnabled = true;
             resources.ApplyResources(this.comboBoxCommune, "comboBoxCommune");
             this.comboBoxCommune.Name = "comboBoxCommune";
-            this.comboBoxCommune.ValueMember = "id";
-            // 
-            // communesBindingSource
-            // 
-            this.communesBindingSource.DataSource = typeof(vente_embarque.Model.Commune);
             // 
             // comboBoxWilaya
             // 
-            this.comboBoxWilaya.DataSource = this.wilayaBindingSource;
-            this.comboBoxWilaya.DisplayMember = "Name";
             this.comboBoxWilaya.FormattingEnabled = true;
             resources.ApplyResources(this.comboBoxWilaya, "comboBoxWilaya");
             this.comboBoxWilaya.Name = "comboBoxWilaya";
-            this.comboBoxWilaya.ValueMember = "id";
             this.comboBoxWilaya.SelectedIndexChanged += new System.EventHandler(this.comboBoxWilaya_SelectedIndexChanged);
-            // 
-            // wilayaBindingSource
-            // 
-            this.wilayaBindingSource.DataSource = typeof(vente_embarque.Model.Wilaya);
             // 
             // labelAdress
             // 
@@ -1756,6 +1741,10 @@
             resources.ApplyResources(this.labelNameStock, "labelNameStock");
             this.labelNameStock.Name = "labelNameStock";
             // 
+            // communesBindingSource
+            // 
+            this.communesBindingSource.DataSource = typeof(vente_embarque.Model.Commune);
+            // 
             // xtpLigneProduit
             // 
             this.xtpLigneProduit.Controls.Add(this.GCLigneStock);
@@ -1775,10 +1764,6 @@
             this.RISLUProduct});
             this.GCLigneStock.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.GVProductLine});
-            // 
-            // modelViewProductLineBindingSource
-            // 
-            this.modelViewProductLineBindingSource.DataSource = typeof(vente_embarque.presenter.ModelViewProductLine);
             // 
             // GVProductLine
             // 
@@ -1813,10 +1798,6 @@
             this.RISLUProduct.Name = "RISLUProduct";
             this.RISLUProduct.ShowAddNewButton = true;
             this.RISLUProduct.View = this.repositoryItemSearchLookUpEdit1View;
-            // 
-            // modelViewProductBindingSource
-            // 
-            this.modelViewProductBindingSource.DataSource = typeof(vente_embarque.presenter.ModelViewProduct);
             // 
             // repositoryItemSearchLookUpEdit1View
             // 
@@ -1963,7 +1944,6 @@
             this.GCInfoGeneral.ResumeLayout(false);
             this.GCInfoGeneral.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.communesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wilayaBindingSource)).EndInit();
             this.xtpLigneProduit.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GCLigneStock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.modelViewProductLineBindingSource)).EndInit();
@@ -2121,12 +2101,12 @@
         private XtraBars.BarButtonItem barButtonItem2;
         private XtraBars.BarButtonGroup barButtonGroup9;
         private XtraBars.BarButtonGroup barButtonGroup10;
-        private XtraBars.BarButtonItem barButtonItem3;
+        private XtraBars.BarButtonItem bbiNouveau;
         private XtraBars.BarButtonItem barButtonItem4;
         private XtraBars.BarButtonItem barButtonItem5;
         private XtraBars.BarButtonItem barButtonItem6;
-        private XtraBars.BarButtonItem barButtonItem7;
-        private XtraBars.BarButtonItem barButtonItem8;
+        private XtraBars.BarButtonItem bbiSauvergarder;
+        private XtraBars.BarButtonItem bbiSauvegarderFermer;
         private XtraBars.BarButtonItem bbiSupprimer;
         private XtraBars.BarButtonItem bbiValider;
         private XtraBars.BarButtonItem bbiAnnuler;
@@ -2158,7 +2138,7 @@
         private System.Windows.Forms.ComboBox comboBoxCommune;
         private System.Windows.Forms.ComboBox comboBoxWilaya;
         private XtraEditors.TextEdit textEdit4;
-        private XtraBars.BarButtonItem barButtonItem16;
+        private XtraBars.BarButtonItem bbiFermer;
         private XtraBars.Ribbon.RibbonPageGroup RPGFermer;
         private System.Windows.Forms.BindingSource modelViewProductLineBindingSource;
         private XtraGrid.Columns.GridColumn colProduct;
@@ -2171,6 +2151,5 @@
         private XtraEditors.Repository.RepositoryItemSearchLookUpEdit RISLUProduct;
         private XtraGrid.Views.Grid.GridView repositoryItemSearchLookUpEdit1View;
         private System.Windows.Forms.BindingSource communesBindingSource;
-        private System.Windows.Forms.BindingSource wilayaBindingSource;
     }
 }

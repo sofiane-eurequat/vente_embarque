@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DevExpress.Xpo;
+using vente_embarque.DataLayer.Entities.Orders;
 
 namespace vente_embarque.DataLayer.Helper
 {
@@ -46,15 +47,18 @@ namespace vente_embarque.DataLayer.Helper
           }
 
 
-
-
           private XpoWilaya _Wilaya;
-        [Aggregated, Association("XpoWilaya-XpoCommunes")]
+          [Aggregated, Association("XpoWilaya-XpoCommunes")]
           public XpoWilaya Wilaya
           {
               get { return _Wilaya; }
               set { SetPropertyValue("Wilaya", ref _Wilaya, value); }
           }
-
+        /*
+          [Aggregated, Association("XpoSector-XpoCommune")]
+          public XPCollection<XpoSector> Secteurs
+          {
+              get { return GetCollection<XpoSector>("Secteurs"); }
+          }*/
     }
 }

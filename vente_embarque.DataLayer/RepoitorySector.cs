@@ -1,11 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DevExpress.Data.Filtering;
+using DevExpress.Xpo;
 using vente_embarque.Core.Domain;
 using vente_embarque.Core.Domain.Query;
+using vente_embarque.DataLayer.Helper;
 using vente_embarque.Model;
+using vente_embarque.DataLayer;
 
 namespace vente_embarque.DataLayer
 {
@@ -43,7 +48,20 @@ namespace vente_embarque.DataLayer
 
         public void Save(Sector entity)
         {
-            throw new NotImplementedException();
+            var config = new AppSettingsReader();
+            using (
+                var uow = new UnitOfWork
+                {
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
+                })
+            {
+                //var repositoryWilaya = new RepositoryWilaya();
+                //var wilaya = repositoryWilaya.FindBy(entity.id);
+                var wilaya = uow.FindObject<XpoWilaya>(new BinaryOperator("Name",entity.Wilaya));
+                var communes = uow.FindObject<XpoCommune>(new BinaryOperator("Name", entity.Commune));
+                Map.Map.MapSector(entity,wilaya,communes,uow );
+                uow.CommitChanges();
+            }
         }
 
         public void Add(Sector entity)

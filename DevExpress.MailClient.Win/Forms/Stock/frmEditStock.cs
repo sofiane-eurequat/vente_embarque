@@ -40,6 +40,7 @@ namespace DevExpress.MailClient.Win {
             comboBoxWilaya.DataSource = Wilayas.OrderBy(c => c.Code).ToList();
             comboBoxWilaya.ValueMember = "Code";
             comboBoxCommune.DataSource = Wilayas.First(w => w.Code == (int)comboBoxWilaya.SelectedValue).Communes.OrderBy(c => c.Name).ToList();
+            comboBoxCommune.DisplayMember = "Name";
 
             this.newStock = newStock;
             DialogResult = DialogResult.Cancel;
@@ -171,6 +172,11 @@ namespace DevExpress.MailClient.Win {
         {
             comboBoxWilaya.ValueMember = "Code";
             comboBoxCommune.DataSource = Wilayas.First(w => w.Code == (int)comboBoxWilaya.SelectedValue).Communes.OrderBy(c => c.Name).ToList();
+
+        }
+
+        private void bbiSauvergarder_ItemClick(object sender, ItemClickEventArgs e)
+        {
 
         }
 

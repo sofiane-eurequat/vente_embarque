@@ -1,5 +1,7 @@
 ﻿using System;
 using DevExpress.Xpo;
+using vente_embarque.DataLayer.Helper;
+using vente_embarque.Model;
 
 namespace vente_embarque.DataLayer.Entities.Orders
 {
@@ -38,6 +40,21 @@ namespace vente_embarque.DataLayer.Entities.Orders
             set { SetPropertyValue("Name", ref _Name, value); }
         }
 
+        private XpoWilaya _Wilaya;
+        [Aggregated, Association("XpoSector-XpoWilaya")]
+        public XpoWilaya Wilaya
+        {
+            get { return _Wilaya; }
+            set { SetPropertyValue("Wilaya", ref _Wilaya, value); }
+        }
+
+        private XpoCommune _Commune;
+        [Aggregated, Association("XpoSector-XpoCommunes")]
+        public XpoCommune Commune
+        {
+            get { return _Commune; }
+            set { SetPropertyValue("Commune", ref _Commune, value); }
+        }
 
         [Aggregated, Association("XpoSector-XpoClient")]
         public XPCollection<XpoClient> Clients

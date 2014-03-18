@@ -13,20 +13,20 @@ using vente_embarque.Model;
 
 namespace vente_embarque.DataLayer
 {
-    public class RepositoryStock: IRepository<Model.Stock,Guid>
+    public class RepositoryStock: IRepository<Stock,Guid>
     {
-        public Model.Stock FindBy(Guid id)
+        public Stock FindBy(Guid id)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Model.Stock> FindAll()
+        public IEnumerable<Stock> FindAll()
         {
-            AppSettingsReader config = new AppSettingsReader();
-            var listestoks = new List<Model.Stock>();
+            var config = new AppSettingsReader();
+            var listestoks = new List<Stock>();
             using (
-                var uow = new UnitOfWork()
-                {
+                var uow = new UnitOfWork
+                    {
                     ConnectionString = ((string)config.GetValue("connect", typeof(string)))
                 })
             {
@@ -36,32 +36,32 @@ namespace vente_embarque.DataLayer
             return listestoks;
         }
 
-        public IEnumerable<Model.Stock> FindBy(Query query)
+        public IEnumerable<Stock> FindBy(Query query)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Model.Stock> FindBy(Query query, int index, int count)
+        public IEnumerable<Stock> FindBy(Query query, int index, int count)
         {
             throw new NotImplementedException();
         }
 
-        public void SaveAll(IEnumerable<Model.Stock> entities)
+        public void SaveAll(IEnumerable<Stock> entities)
         {
             throw new NotImplementedException();
         }
 
-        public List<Model.Stock> FindAll(List<Query> entities)
+        public List<Stock> FindAll(List<Query> entities)
         {
             throw new NotImplementedException();
         }
 
-        public void Save(Model.Stock entity)
+        public void Save(Stock entity)
         {
-            AppSettingsReader config=new AppSettingsReader();
+            var config=new AppSettingsReader();
             
             using (
-                var uow = new UnitOfWork()
+                var uow = new UnitOfWork
                     {
                         ConnectionString = ((string)config.GetValue("connect", typeof(string)))
                     })
@@ -72,12 +72,12 @@ namespace vente_embarque.DataLayer
 
         }
 
-        public void Add(Model.Stock entity)
+        public void Add(Stock entity)
         {
             throw new NotImplementedException();
         }
 
-        public void Remove(Model.Stock entity)
+        public void Remove(Stock entity)
         {
             throw new NotImplementedException();
         }

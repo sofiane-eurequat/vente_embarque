@@ -14,16 +14,29 @@ namespace vente_embarque.DataLayer
     {
         public Wilaya FindBy(Guid id)
         {
+            var config = new AppSettingsReader();
+            using (
+                var uow = new UnitOfWork
+                {
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
+                })
+            {
+                var wilaya = new Wilaya();
+                var wialaya=uow.GetObjectByKey<XpoWilaya>(id);
+                //var wilayas = new XPCollection<XpoWilaya>(uow);
+                //return wilaya = wilayas.First(w => w.Oid == id);
+
+            }
             throw new NotImplementedException();
         }
 
         public IEnumerable<Wilaya> FindAll()
         {
-            var listeWilaya = new List<Model.Wilaya>();
-            AppSettingsReader config = new AppSettingsReader();
+            var listeWilaya = new List<Wilaya>();
+            var config = new AppSettingsReader();
             using (
-                var uow = new UnitOfWork()
-                {
+                var uow = new UnitOfWork
+                    {
                     ConnectionString = ((string)config.GetValue("connect", typeof(string)))
                 })
             {

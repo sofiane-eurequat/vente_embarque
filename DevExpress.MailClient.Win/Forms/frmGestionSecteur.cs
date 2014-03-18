@@ -21,6 +21,7 @@ namespace DevExpress.MailClient.Win.Forms
     {
         public IEnumerable<Wilaya> Wilayas { get; set; }
         public IEnumerable<AgentTerrain> AgentTerrains { get; set; }
+        public Sector Secteurs { get; set; }
         private EditSecteurPresenterPage editSecteurPresenter;
         readonly ModelViewSecteur sourceSecteur;
         bool newSecteur = true;
@@ -36,12 +37,14 @@ namespace DevExpress.MailClient.Win.Forms
             //DictionaryHelper.InitDictionary(spellChecker1);
             var repositoryWilaya = new RepositoryWilaya();
             var repositoryAgentTerrain = new RepositoryAgentTerrain();
-            editSecteurPresenter = new EditSecteurPresenterPage(this, repositoryWilaya, repositoryAgentTerrain);
+            var repositorySecteur = new RepoitorySector();
+            editSecteurPresenter = new EditSecteurPresenterPage(this, repositoryWilaya, repositoryAgentTerrain, repositorySecteur);
             editSecteurPresenter.Display();
 
             comboBoxWilaya.DataSource = Wilayas.OrderBy(c=>c.Code).ToList();
             comboBoxWilaya.ValueMember = "Code";
             comboBoxCommune.DataSource = Wilayas.First(w=>w.Code==(int)comboBoxWilaya.SelectedValue).Communes.OrderBy(c=>c.Name).ToList();
+            comboBoxCommune.DisplayMember = "Name";
 
             this.newSecteur = newSecteur;
             DialogResult = DialogResult.Cancel;
@@ -54,6 +57,22 @@ namespace DevExpress.MailClient.Win.Forms
         {
             comboBoxWilaya.ValueMember = "Code";
             comboBoxCommune.DataSource = Wilayas.First(w => w.Code == (int)comboBoxWilaya.SelectedValue).Communes.OrderBy(c => c.Name).ToList();
+        }
+
+        private void bbiSauvegarder_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            editSecteurPresenter.Write(textEditSecteur.EditValue.ToString(),comboBoxWilaya.Text,comboBoxCommune.Text);
+        }
+
+        private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            editSecteurPresenter.Write(textEditSecteur.EditValue.ToString(),comboBoxWilaya.SelectedItem.ToString(),comboBoxCommune.SelectedItem.ToString());
+            Close();
+        }
+
+        private void bbiFermer_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Close();
         }
     }
 }

@@ -8,13 +8,14 @@ using vente_embarque.Core.Domain.Query;
 using vente_embarque.DataLayer.Entities;
 using vente_embarque.DataLayer.Entities.Orders;
 using vente_embarque.DataLayer.Entities.Stock;
+using vente_embarque.DataLayer.Helper;
 using vente_embarque.Model;
 
 namespace vente_embarque.DataLayer.Map
 {
     public static class Map
     {
-        public static XpoStock MapStock( Model.Stock stock,UnitOfWork uow)
+        public static XpoStock MapStock( Stock stock,UnitOfWork uow)
         {
             var xpostock = new XpoStock(uow)
                 {
@@ -34,6 +35,17 @@ namespace vente_embarque.DataLayer.Map
                     };
             }
             return xpostock;
+        }
+
+        public static XpoSector MapSector(Sector sector,XpoWilaya wilaya, XpoCommune commune, UnitOfWork uow)
+        {
+            return new XpoSector(uow)
+            {
+                Name = sector.Name,
+                Oid = sector.id,
+                Wilaya = wilaya,
+                Commune = commune 
+            };
         }
 
         private static XpoProduct MapProduct(Product product, UnitOfWork uow)
@@ -74,7 +86,6 @@ namespace vente_embarque.DataLayer.Map
                     Oid = entity.id,
                     Priorite = entity.Priorite
                 };
-
             xpoOrder.Client = MapClient(entity.Client, uow);
 
         }
@@ -86,7 +97,6 @@ namespace vente_embarque.DataLayer.Map
                     Address = client.Address,
                     Name = client.Name,
                     PreName = client.PreNom,
-                    
                 };
         }
 
@@ -98,5 +108,37 @@ namespace vente_embarque.DataLayer.Map
                 Oid = agentterrain.id,
             };
         }
+        /*
+        private static XpoWilaya MapWilaya(Wilaya wilaya, UnitOfWork uow)
+        {
+            var xpoWilaya = new XpoWilaya(uow)
+            {
+                Oid = wilaya.id,
+                Name = wilaya.Name,
+                Code = wilaya.Code,
+                //Communes = MapCommune(wilaya.Communes,uow)
+            };
+
+            foreach (var co in wilaya.Communes)
+            {
+                var xco = new XpoCommune(uow)
+                {
+                    Oid = co.id,
+                    Name = co.Name,
+                    CodeWilaya = co.CodeWilaya,
+                    Wilaya = xpoWilaya
+                };
+            }
+            return xpoWilaya;
+        }
+        
+        private static XpoCommune MapCommune(Commune commune, UnitOfWork uow)
+        {
+            return new XpoCommune(uow)
+            {
+                Name = commune.Name,
+                Oid = commune.id
+            };
+        } */
     }
 }

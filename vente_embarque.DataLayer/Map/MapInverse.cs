@@ -11,7 +11,7 @@ namespace vente_embarque.DataLayer.Map
     public static class MapInverse
     {
 
-       public static Model.Stock MapStock(XpoStock xpoStock)
+       public static Stock MapStock(XpoStock xpoStock)
        {
            var stock = new Model.Stock(xpoStock.Name)
                {
@@ -23,7 +23,7 @@ namespace vente_embarque.DataLayer.Map
 
         public static List<ProductLine> MapProdcutLine(IEnumerable<XpoProductLine> productLines)
         {
-            return productLines.Select(xpoProductLine => new ProductLine()
+            return productLines.Select(xpoProductLine => new ProductLine
                 {
                     Quantity = xpoProductLine.Quantity, id = xpoProductLine.Oid, Product = MapProduct(xpoProductLine.Product)
                 }).ToList();
@@ -31,7 +31,7 @@ namespace vente_embarque.DataLayer.Map
 
        public static Product MapProduct(XpoProduct product)
         {
-            return new Product()
+            return new Product
                 {
                     id = product.Oid,
                     Name = product.Name,
@@ -43,7 +43,7 @@ namespace vente_embarque.DataLayer.Map
 
         private static Marque MapMarque(XpoMarque marque)
         {
-            return new Marque()
+            return new Marque
                 {
                     Name = marque.Name,
                     id = marque.Oid,
@@ -53,7 +53,7 @@ namespace vente_embarque.DataLayer.Map
 
         private static Category MapCategory(XpoCategory category)
         {
-            return new Category()
+            return new Category
                 {
                     id = category.Oid,
                     Name = category.Name,
@@ -63,7 +63,7 @@ namespace vente_embarque.DataLayer.Map
 
         public static Wilaya MapWilaya(XpoWilaya xpoWilaya)
         {
-            return new Wilaya()
+            return new Wilaya
                 {
                     Code = xpoWilaya.Code,
                     Name = xpoWilaya.Name,
@@ -75,7 +75,7 @@ namespace vente_embarque.DataLayer.Map
         private static IEnumerable<Commune> MapCommunes(XPCollection<XpoCommune> communes)
         {
 
-            var ListeCommunes = communes.Select(xpoCommune => new Commune()
+            var ListeCommunes = communes.Select(xpoCommune => new Commune
                 {
                     Name = xpoCommune.Name,
                     id = xpoCommune.Oid
@@ -86,7 +86,7 @@ namespace vente_embarque.DataLayer.Map
 
         public static AgentTerrain MapAgentTerrain(XpoAgentTerrain xpoAgentTerrain)
         {
-            return new AgentTerrain()
+            return new AgentTerrain
                 {
                     Name = xpoAgentTerrain.Name,
                     id = xpoAgentTerrain.Oid
