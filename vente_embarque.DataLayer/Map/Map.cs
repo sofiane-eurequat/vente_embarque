@@ -37,14 +37,14 @@ namespace vente_embarque.DataLayer.Map
             return xpostock;
         }
 
-        public static XpoSector MapSector(Sector sector,XpoWilaya wilaya, XpoCommune commune, UnitOfWork uow)
+        public static XpoSector MapSector(Sector sector, UnitOfWork uow)
         {
             return new XpoSector(uow)
             {
                 Name = sector.Name,
                 Oid = sector.id,
-                Wilaya = wilaya,
-                Commune = commune 
+                Wilaya = sector.Wilaya,
+                Commune = sector.Commune 
             };
         }
 

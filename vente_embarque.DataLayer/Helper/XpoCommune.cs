@@ -55,7 +55,7 @@ namespace vente_embarque.DataLayer.Helper
               set { SetPropertyValue("Wilaya", ref _Wilaya, value); }
           }
         /*
-          [Aggregated, Association("XpoSector-XpoCommune")]
+          [Association("XpoCommune-XpoSectors")]
           public XPCollection<XpoSector> Secteurs
           {
               get { return GetCollection<XpoSector>("Secteurs"); }

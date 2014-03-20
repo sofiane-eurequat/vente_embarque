@@ -40,22 +40,30 @@ namespace vente_embarque.DataLayer.Entities.Orders
             set { SetPropertyValue("Name", ref _Name, value); }
         }
 
-        private XpoWilaya _Wilaya;
-        [Aggregated, Association("XpoSector-XpoWilaya")]
-        public XpoWilaya Wilaya
+        private String _Wilaya;
+
+        public String Wilaya
         {
             get { return _Wilaya; }
-            set { SetPropertyValue("Wilaya", ref _Wilaya, value); }
+            set { SetPropertyValue("Name", ref _Wilaya, value); }
         }
 
+        private String _Commune;
+
+        public String Commune
+        {
+            get { return _Commune; }
+            set { SetPropertyValue("Name", ref _Commune, value); }
+        }
+        /*
         private XpoCommune _Commune;
-        [Aggregated, Association("XpoSector-XpoCommunes")]
+        [Association("XpoCommune-XpoSectors")]
         public XpoCommune Commune
         {
             get { return _Commune; }
             set { SetPropertyValue("Commune", ref _Commune, value); }
         }
-
+        */
         [Aggregated, Association("XpoSector-XpoClient")]
         public XPCollection<XpoClient> Clients
         {

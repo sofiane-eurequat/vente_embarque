@@ -57,9 +57,9 @@ namespace vente_embarque.DataLayer
             {
                 //var repositoryWilaya = new RepositoryWilaya();
                 //var wilaya = repositoryWilaya.FindBy(entity.id);
-                var wilaya = uow.FindObject<XpoWilaya>(new BinaryOperator("Name",entity.Wilaya));
-                var communes = uow.FindObject<XpoCommune>(new BinaryOperator("Name", entity.Commune));
-                Map.Map.MapSector(entity,wilaya,communes,uow );
+                //var wilaya = uow.FindObject<XpoWilaya>(new BinaryOperator("Name",entity.Wilaya));
+                //var communes = uow.FindObject<XpoCommune>(new BinaryOperator("Name", entity.Commune));
+                Map.Map.MapSector(entity,uow );
                 uow.CommitChanges();
             }
         }

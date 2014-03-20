@@ -66,7 +66,7 @@ namespace DevExpress.MailClient.Win.Forms
 
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
         {
-            editSecteurPresenter.Write(textEditSecteur.EditValue.ToString(),comboBoxWilaya.SelectedItem.ToString(),comboBoxCommune.SelectedItem.ToString());
+            editSecteurPresenter.Write(textEditSecteur.EditValue.ToString(), comboBoxWilaya.Text, comboBoxCommune.Text);
             Close();
         }
 

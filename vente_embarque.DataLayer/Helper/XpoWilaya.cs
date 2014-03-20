@@ -51,11 +51,5 @@ namespace vente_embarque.DataLayer.Helper
         {
             get { return GetCollection<XpoCommune>("Communes"); }
         }
-
-        [Aggregated, Association("XpoSector-XpoWilaya")]
-        public XPCollection<XpoSector> Secteurs
-        {
-            get { return GetCollection<XpoSector>("Secteurs"); }
-        }
     }
 }
