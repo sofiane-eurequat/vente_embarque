@@ -111,6 +111,21 @@ namespace vente_embarque.Test
             Assert.AreEqual(client.PreNom, "PrenomClient1");
         }
 
+        [Test]
+        public void CanCreateClientBd()
+        {
+            const string nomSect = "nom secteur1";
+            const string wilaya = "Tlemcen";
+            const string commune = "Tlemcen";
+            Sector secteur = FactorySector.CreateSector(nomSect, wilaya, commune);
+
+            const string nom = "NomClient1";
+            const string prenom = "PrenomClient1";
+            //un secteur doit tjr etre defini mmee si il doit etre nommé indéfini
+            var client = FactorySector.CreateClient(nom, prenom, secteur);
+            var rc = new RepositorySector();
+            rs.Save(stock);
+        }
 
         [Test]
         public void CanCreateBonCommande()
@@ -281,6 +296,17 @@ namespace vente_embarque.Test
             var agentterrain = FactoryAgentTerrain.CreateAgentTerrain(agentterrain1);
             var ra = new RepositoryAgentTerrain();
             ra.Save(agentterrain);
+        }
+
+        [Test]
+        public void CanCreateSecteurDb()
+        {
+            const string nom = "nom secteur1";
+            const string wilaya = "Tlemcen";
+            const string commune = "Tlemcen";
+            var sector = FactorySector.CreateSector(nom, wilaya, commune);
+            var rs = new RepositorySector();
+            rs.Save(sector);
         }
     }
 }

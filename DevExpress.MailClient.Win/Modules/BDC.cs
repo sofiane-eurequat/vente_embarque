@@ -55,7 +55,7 @@ namespace DevExpress.MailClient.Win {
             AddNavBarItem(Properties.Resources.FeedEngadget, Properties.Resources.FeedGroupMisc, "http://www.engadget.com/rss.xml", navBar);
             AddNavBarItem(Properties.Resources.FeedStackOverflow, Properties.Resources.FeedGroupMisc, "http://stackoverflow.com/feeds/tag?tagnames=devexpress&sort=newest", navBar);
             navBar.LinkPressed += new NavBarLinkEventHandler(FeedNavBar_LinkPressed);
-            mainNavBar.SelectedLink = null;
+            //mainNavBar.SelectedLink = null;
             UpdateSelectedLinkData();
         }
         void FeedNavBar_LinkPressed(object sender, NavBarLinkEventArgs e) {

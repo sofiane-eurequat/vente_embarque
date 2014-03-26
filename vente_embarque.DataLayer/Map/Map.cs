@@ -41,10 +41,10 @@ namespace vente_embarque.DataLayer.Map
         {
             return new XpoSector(uow)
             {
-                Name = sector.Name,
                 Oid = sector.id,
-                Wilaya = sector.Wilaya,
-                Commune = sector.Commune 
+                Name = sector.Name,
+                wilaya = sector.Wilaya,
+                commune = sector.Commune
             };
         }
 

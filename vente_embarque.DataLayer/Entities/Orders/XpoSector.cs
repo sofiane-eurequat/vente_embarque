@@ -24,7 +24,6 @@ namespace vente_embarque.DataLayer.Entities.Orders
 
 
         private Guid _Oid;
-
         [Key]
         public Guid Oid
         {
@@ -40,20 +39,20 @@ namespace vente_embarque.DataLayer.Entities.Orders
             set { SetPropertyValue("Name", ref _Name, value); }
         }
 
-        private String _Wilaya;
+        private String _wilaya;
 
-        public String Wilaya
+        public String wilaya
         {
-            get { return _Wilaya; }
-            set { SetPropertyValue("Name", ref _Wilaya, value); }
+            get { return _wilaya; }
+            set { SetPropertyValue("Name", ref _wilaya, value); }
         }
 
-        private String _Commune;
+        private String _commune;
 
-        public String Commune
+        public String commune
         {
-            get { return _Commune; }
-            set { SetPropertyValue("Name", ref _Commune, value); }
+            get { return _commune; }
+            set { SetPropertyValue("Name", ref _commune, value); }
         }
         /*
         private XpoCommune _Commune;

@@ -88,6 +88,7 @@ namespace DevExpress.MailClient.Win {
             InitBarButtonItem(bbiCustomFlag, FlagStatus.Custom, Properties.Resources.FlagCustomDescription);
             //InitBarButtonItem(bbiShowPreview, TagResources.Preview, Properties.Resources.ShowPreviewDescription);
             InitBarButtonItem(bbiNewSecteur, TagResources.NewSecteur);
+            InitBarButtonItem(bbiNewBdc, TagResources.NewBdc);
             InitGalleryItem(rgbiCurrentView.Gallery.Groups[0].Items[0], TagResources.ContactList, Properties.Resources.ContactListDescription);
             InitGalleryItem(rgbiCurrentView.Gallery.Groups[0].Items[1], TagResources.ContactAlphabetical, Properties.Resources.ContactAlphabeticalDescription);
             InitGalleryItem(rgbiCurrentView.Gallery.Groups[0].Items[2], TagResources.ContactByState, Properties.Resources.ContactByStateDescription);
@@ -160,7 +161,7 @@ namespace DevExpress.MailClient.Win {
             nbgCalendar.Tag = new NavBarGroupTagObject("Calendar", typeof(Calendar));
             nbgContacts.Tag = new NavBarGroupTagObject("Contacts", typeof(Contacts));
             nbgSecteur.Tag = new NavBarGroupTagObject("Secteur", typeof (Secteur));
-            //nbgBDC.Tag = new NavBarGroupTagObject("BDC", typeof(BDC));
+            nbgBdc.Tag = new NavBarGroupTagObject("BDC", typeof(Bdc2));
             //nbgTasks.Tag = new NavBarGroupTagObject("Tasks", typeof(DevExpress.MailClient.Win.Tasks));
         }
         public void ReadMessagesChanged() {

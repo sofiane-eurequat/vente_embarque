@@ -167,7 +167,9 @@ Left:	12 mm	Right:	12 mm</value>
   <data name="Uncollated" xml:space="preserve">
     <value>Uncollated</value>
   </data>
-
+  <data name="close_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close_16x161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="PaperKindTabloid" xml:space="preserve">
     <value>Tabloid</value>
   </data>
@@ -243,9 +245,6 @@ Left:	12 mm	Right:	12 mm</value>
   <data name="Modifier_Produit" xml:space="preserve">
     <value>Modifier un produit</value>
   </data>
-  <data name="ExportToHTML_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ExportToHTML_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ByState_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ByState_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -278,6 +277,9 @@ Left:	12 mm	Right:	12 mm</value>
   </data>
   <data name="MediumPriority" xml:space="preserve">
     <value>Medium priority</value>
+  </data>
+  <data name="FeedBBCNews" xml:space="preserve">
+    <value>BBC News</value>
   </data>
   <data name="BO_Task_Large" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BO_Task_Large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -408,9 +410,6 @@ Left:	12 mm	Right:	12 mm</value>
   </data>
   <data name="PageOrientationPortrait" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PageOrientationPortrait.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="reading" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reading.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SentItems" xml:space="preserve">
     <value>Sent Items</value>
@@ -713,6 +712,9 @@ Left:	25 mm	Right:	25 mm</value>
   <data name="NoDate" xml:space="preserve">
     <value>No Date</value>
   </data>
+  <data name="SearchHasAttachmentDescription" xml:space="preserve">
+    <value>Display e-mail messages that have attachments.</value>
+  </data>
   <data name="NewTaskDescription" xml:space="preserve">
     <value>Create a new task.</value>
   </data>
@@ -746,6 +748,9 @@ Left:	19 mm	Right:	19 mm</value>
   </data>
   <data name="Male" xml:space="preserve">
     <value>Male</value>
+  </data>
+  <data name="TasksName" xml:space="preserve">
+    <value>Tasks</value>
   </data>
   <data name="cart-shopping-magasin-icone-5771-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cart-shopping-magasin-icone-5771-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -797,9 +802,6 @@ Left:	19 mm	Right:	19 mm</value>
   </data>
   <data name="ExportToCSV_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ExportToCSV_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="EmailHtml" xml:space="preserve">
-    <value>&lt;br&gt;Email: &lt;b&gt;{0}&lt;/b&gt;</value>
   </data>
   <data name="Collated" xml:space="preserve">
     <value>Collated</value>
@@ -858,8 +860,8 @@ Left:	19 mm	Right:	19 mm</value>
   <data name="Date" xml:space="preserve">
     <value>Date</value>
   </data>
-  <data name="TasksName" xml:space="preserve">
-    <value>Tasks</value>
+  <data name="ExportToHTML_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExportToHTML_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ToDoList_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ToDoList_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -872,6 +874,9 @@ Left:	19 mm	Right:	19 mm</value>
   </data>
   <data name="ContactsName" xml:space="preserve">
     <value>Contacts</value>
+  </data>
+  <data name="PriorityDescription" xml:space="preserve">
+    <value>Set priority for this item.</value>
   </data>
   <data name="PaperKindLetter" xml:space="preserve">
     <value>Letter</value>
@@ -1065,9 +1070,6 @@ Left:	19 mm	Right:	19 mm</value>
   <data name="Action_Save_Close_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Action_Save_Close_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PhoneHtml" xml:space="preserve">
-    <value>&lt;br&gt;Phone: &lt;b&gt;{0}&lt;/b&gt;</value>
-  </data>
   <data name="Mr" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mr.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -1098,8 +1100,8 @@ Left:	19 mm	Right:	19 mm</value>
   <data name="FeedsName" xml:space="preserve">
     <value>Feeds</value>
   </data>
-  <data name="PriorityDescription" xml:space="preserve">
-    <value>Set priority for this item.</value>
+  <data name="textbox_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\textbox_32x321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MemoStyleString" xml:space="preserve">
     <value>Memo Style</value>
@@ -1113,8 +1115,8 @@ Left:	19 mm	Right:	19 mm</value>
   <data name="SearchImportantDescription" xml:space="preserve">
     <value>Display prioritized e-mail messages.</value>
   </data>
-  <data name="FeedBBCNews" xml:space="preserve">
-    <value>BBC News</value>
+  <data name="EmailHtml" xml:space="preserve">
+    <value>&lt;br&gt;Email: &lt;b&gt;{0}&lt;/b&gt;</value>
   </data>
   <data name="FromInbox" xml:space="preserve">
     <value>From</value>
@@ -1127,6 +1129,9 @@ Left:	19 mm	Right:	19 mm</value>
   </data>
   <data name="DateOutbox" xml:space="preserve">
     <value>Sent</value>
+  </data>
+  <data name="EditContact_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EditContact_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dalerte-attention-avertissement-icone-8189-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dalerte-attention-avertissement-icone-8189-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1176,11 +1181,11 @@ Left:	19 mm	Right:	19 mm</value>
   <data name="NewTaskName" xml:space="preserve">
     <value>New task</value>
   </data>
-  <data name="SearchHasAttachmentDescription" xml:space="preserve">
-    <value>Display e-mail messages that have attachments.</value>
+  <data name="PhoneHtml" xml:space="preserve">
+    <value>&lt;br&gt;Phone: &lt;b&gt;{0}&lt;/b&gt;</value>
   </data>
-  <data name="EditContact_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\EditContact_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="reading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reading.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Export" xml:space="preserve">
     <value>Export</value>
@@ -1200,7 +1205,7 @@ Left:	19 mm	Right:	19 mm</value>
   <data name="XLSXFilter" xml:space="preserve">
     <value>XLSX files (*.xls)|*.xls</value>
   </data>
-  <data name="close_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close_16x161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="textbox_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\textbox_32x322.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

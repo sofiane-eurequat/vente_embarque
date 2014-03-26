@@ -228,6 +228,12 @@
     <Compile Include="Controls\ucMessageInfo.Designer.cs">
       <DependentUpon>ucMessageInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmBdc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBdc.Designer.cs">
+      <DependentUpon>frmBdc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmEditTask.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -317,6 +323,12 @@
     <Compile Include="Helpers.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Modules\Bdc2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Bdc2.Designer.cs">
+      <DependentUpon>Bdc2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Calendar.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -369,6 +381,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ucMessageInfo.resx">
       <DependentUpon>ucMessageInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBdc.resx">
+      <DependentUpon>frmBdc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmEditTask.resx">
       <DependentUpon>frmEditTask.cs</DependentUpon>
@@ -499,6 +514,9 @@
     <None Include="Resources\previous_32x32.png" />
     <None Include="Resources\next_16x16.png" />
     <None Include="Resources\next_32x32.png" />
+    <None Include="Resources\textbox_32x32.png" />
+    <None Include="Resources\textbox_32x321.png" />
+    <None Include="Resources\textbox_32x322.png" />
     <Content Include="Resources\Valid_12x12.png" />
     <Content Include="Resources\Valid_32x32.png" />
     <Content Include="Resources\Mail_32x32.png" />

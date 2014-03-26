@@ -8,7 +8,7 @@ using vente_embarque.Model;
 
 namespace vente_embarque.presenter.Secteur
 {
-    public class SecteurPresenterPage : IStecteurPagePresenter
+    public class SecteurPresenterPage : ISecteurPagePresenter
     {
         private readonly ISecteurView _secteurView;
         private readonly IRepository<Sector, Guid> _repositorysecteur; 
@@ -40,7 +40,7 @@ namespace vente_embarque.presenter.Secteur
         public string Name { get; set; }
     }
 
-    public interface IStecteurPagePresenter
+    public interface ISecteurPagePresenter
     {
         void Diplay();
     }

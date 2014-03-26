@@ -14,7 +14,7 @@ using vente_embarque.DataLayer;
 
 namespace vente_embarque.DataLayer
 {
-    public class RepoitorySector : IRepository<Sector, Guid>
+    public class RepositorySector : IRepository<Sector, Guid>
     {
         public Sector FindBy(Guid id)
         {

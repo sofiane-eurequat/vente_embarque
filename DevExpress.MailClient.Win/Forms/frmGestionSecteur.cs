@@ -37,7 +37,7 @@ namespace DevExpress.MailClient.Win.Forms
             //DictionaryHelper.InitDictionary(spellChecker1);
             var repositoryWilaya = new RepositoryWilaya();
             var repositoryAgentTerrain = new RepositoryAgentTerrain();
-            var repositorySecteur = new RepoitorySector();
+            var repositorySecteur = new RepositorySector();
             editSecteurPresenter = new EditSecteurPresenterPage(this, repositoryWilaya, repositoryAgentTerrain, repositorySecteur);
             editSecteurPresenter.Display();
 
@@ -73,6 +73,11 @@ namespace DevExpress.MailClient.Win.Forms
         private void bbiFermer_ItemClick(object sender, ItemClickEventArgs e)
         {
             Close();
+        }
+
+        private void bbiNouveau_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
         }
     }
 }

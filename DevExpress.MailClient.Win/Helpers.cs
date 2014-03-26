@@ -201,14 +201,13 @@ namespace DevExpress.MailClient.Win {
                 if(fGroup.Name.Equals(groupName))
                     group = fGroup;
             if(group == null) {
-                group = new NavBarGroup(groupName);
-                group.Name = groupName;
+                group = new NavBarGroup(groupName) {Name = groupName};
                 navBar.Groups.Add(group);
             }
             return group;
         }
         public static void SetNavBarItemImage(NavBarItem item, string link) {
-            PictureEdit pe = new PictureEdit();
+            var pe = new PictureEdit();
             pe.LoadAsync(ImageHelper.GetFaviconIconPath(link));
             pe.Tag = item;
             pe.LoadCompleted += new EventHandler(pe_LoadCompleted);

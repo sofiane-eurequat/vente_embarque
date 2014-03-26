@@ -157,6 +157,7 @@
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiNewBdc = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonMiniToolbar1 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(this.components);
             this.ribbonMiniToolbar2 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(this.components);
             this.rpStock = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -169,6 +170,7 @@
             this.rpgCurrentView = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpgLayoutContacts = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpBDC = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.rpgNewBdc = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpCalendar = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.appointmentRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.AppointmentRibbonPageGroup();
             this.navigatorRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.NavigatorRibbonPageGroup();
@@ -197,8 +199,10 @@
             this.navBarGroupControlContainer2 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
             this.ucCalendar1 = new DevExpress.MailClient.Win.Controls.ucCalendar();
             this.navBarControl1 = new DevExpress.XtraNavBar.NavBarControl();
-            this.nbgSecteur = new DevExpress.XtraNavBar.NavBarGroup();
+            this.nbgBdc = new DevExpress.XtraNavBar.NavBarGroup();
+            this.navBarGroupControlContainer5 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
             this.navBarGroupControlContainer4 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
+            this.nbgSecteur = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarItem2 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem3 = new DevExpress.XtraNavBar.NavBarItem();
             this.pcMain = new DevExpress.XtraEditors.PanelControl();
@@ -331,9 +335,10 @@
             this.barButtonItem10,
             this.barButtonItem11,
             this.barButtonItem12,
-            this.barButtonItem13});
+            this.barButtonItem13,
+            this.bbiNewBdc});
             resources.ApplyResources(this.ribbonControl1, "ribbonControl1");
-            this.ribbonControl1.MaxItemId = 13;
+            this.ribbonControl1.MaxItemId = 14;
             this.ribbonControl1.MiniToolbars.Add(this.ribbonMiniToolbar1);
             this.ribbonControl1.MiniToolbars.Add(this.ribbonMiniToolbar2);
             this.ribbonControl1.Name = "ribbonControl1";
@@ -1298,6 +1303,14 @@
             this.barButtonItem13.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.LargeGlyph")));
             this.barButtonItem13.Name = "barButtonItem13";
             // 
+            // bbiNewBdc
+            // 
+            resources.ApplyResources(this.bbiNewBdc, "bbiNewBdc");
+            this.bbiNewBdc.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiNewBdc.Glyph")));
+            this.bbiNewBdc.Id = 13;
+            this.bbiNewBdc.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiNewBdc.LargeGlyph")));
+            this.bbiNewBdc.Name = "bbiNewBdc";
+            // 
             // rpStock
             // 
             this.rpStock.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -1379,9 +1392,18 @@
             // 
             // rpBDC
             // 
+            this.rpBDC.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.rpgNewBdc});
             this.rpBDC.Name = "rpBDC";
             this.rpBDC.Tag = "BDC";
             resources.ApplyResources(this.rpBDC, "rpBDC");
+            // 
+            // rpgNewBdc
+            // 
+            this.rpgNewBdc.ItemLinks.Add(this.bbiNewBdc);
+            this.rpgNewBdc.Name = "rpgNewBdc";
+            this.rpgNewBdc.ShowCaptionButton = false;
+            resources.ApplyResources(this.rpgNewBdc, "rpgNewBdc");
             // 
             // rpCalendar
             // 
@@ -1655,17 +1677,19 @@
             // 
             // navBarControl1
             // 
-            this.navBarControl1.ActiveGroup = this.nbgSecteur;
+            this.navBarControl1.ActiveGroup = this.nbgBdc;
             this.navBarControl1.Controls.Add(this.navBarGroupControlContainer2);
             this.navBarControl1.Controls.Add(this.navBarGroupControlContainer3);
             this.navBarControl1.Controls.Add(this.navBarGroupControlContainer1);
             this.navBarControl1.Controls.Add(this.navBarGroupControlContainer4);
+            this.navBarControl1.Controls.Add(this.navBarGroupControlContainer5);
             resources.ApplyResources(this.navBarControl1, "navBarControl1");
             this.navBarControl1.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
             this.nbgMail,
             this.nbgContacts,
             this.nbgCalendar,
-            this.nbgSecteur});
+            this.nbgSecteur,
+            this.nbgBdc});
             this.navBarControl1.Items.AddRange(new DevExpress.XtraNavBar.NavBarItem[] {
             this.navBarItem1,
             this.navBarItem2,
@@ -1679,24 +1703,37 @@
             this.navBarControl1.NavPaneStateChanged += new System.EventHandler(this.navBarControl1_NavPaneStateChanged);
             this.navBarControl1.ActiveGroupChanged += new DevExpress.XtraNavBar.NavBarGroupEventHandler(this.navBarControl1_ActiveGroupChanged);
             // 
-            // nbgSecteur
+            // nbgBdc
             // 
-            resources.ApplyResources(this.nbgSecteur, "nbgSecteur");
-            this.nbgSecteur.ControlContainer = this.navBarGroupControlContainer4;
-            this.nbgSecteur.DragDropFlags = DevExpress.XtraNavBar.NavBarDragDrop.None;
-            this.nbgSecteur.Expanded = true;
-            this.nbgSecteur.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;
-            this.nbgSecteur.GroupClientHeight = 80;
-            this.nbgSecteur.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
-            this.nbgSecteur.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
-            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem2),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem3)});
-            this.nbgSecteur.Name = "nbgSecteur";
+            resources.ApplyResources(this.nbgBdc, "nbgBdc");
+            this.nbgBdc.ControlContainer = this.navBarGroupControlContainer5;
+            this.nbgBdc.DragDropFlags = DevExpress.XtraNavBar.NavBarDragDrop.None;
+            this.nbgBdc.Expanded = true;
+            this.nbgBdc.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;
+            this.nbgBdc.GroupClientHeight = 80;
+            this.nbgBdc.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
+            this.nbgBdc.LargeImage = global::DevExpress.MailClient.Win.Properties.Resources.textbox_32x32;
+            this.nbgBdc.Name = "nbgBdc";
+            // 
+            // navBarGroupControlContainer5
+            // 
+            this.navBarGroupControlContainer5.Name = "navBarGroupControlContainer5";
+            resources.ApplyResources(this.navBarGroupControlContainer5, "navBarGroupControlContainer5");
             // 
             // navBarGroupControlContainer4
             // 
             this.navBarGroupControlContainer4.Name = "navBarGroupControlContainer4";
             resources.ApplyResources(this.navBarGroupControlContainer4, "navBarGroupControlContainer4");
+            // 
+            // nbgSecteur
+            // 
+            resources.ApplyResources(this.nbgSecteur, "nbgSecteur");
+            this.nbgSecteur.ControlContainer = this.navBarGroupControlContainer4;
+            this.nbgSecteur.DragDropFlags = DevExpress.XtraNavBar.NavBarDragDrop.None;
+            this.nbgSecteur.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;
+            this.nbgSecteur.GroupClientHeight = 80;
+            this.nbgSecteur.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
+            this.nbgSecteur.Name = "nbgSecteur";
             // 
             // navBarItem2
             // 
@@ -1903,7 +1940,6 @@
         private XtraBars.Ribbon.Gallery.GalleryControlGallery galleryControlGallery1;
         private XtraNavBar.NavBarItem navBarItem1;
         private XtraNavBar.NavBarGroup nbgMail;
-        private XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer1;
         private XtraNavBar.NavBarGroup nbgContacts;
         private XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer3;
         private Controls.ucContacts ucContacts1;
@@ -1912,10 +1948,15 @@
         private Controls.ucCalendar ucCalendar1;
         private XtraNavBar.NavBarControl navBarControl1;
         private XtraNavBar.NavBarGroup nbgSecteur;
-        private XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer4;
         private XtraNavBar.NavBarItem navBarItem2;
         private XtraNavBar.NavBarItem navBarItem3;
         private XtraEditors.PanelControl pcMain;
+        private XtraBars.BarButtonItem bbiNewBdc;
+        private XtraBars.Ribbon.RibbonPageGroup rpgNewBdc;
+        private XtraNavBar.NavBarGroup nbgBdc;
+        private XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer1;
+        private XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer4;
+        private XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer5;
     }
 }
 

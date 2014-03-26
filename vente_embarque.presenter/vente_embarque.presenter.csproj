@@ -41,6 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bdc\BdcPresenterPage.cs" />
+    <Compile Include="Bdc\EditBdcPresenterPage.cs" />
+    <Compile Include="Bdc\IBdcView.cs" />
+    <Compile Include="Bdc\IEditBdcView.cs" />
     <Compile Include="Secteur\EditSecteurPresenterPage.cs" />
     <Compile Include="Secteur\IEditSecteurView.cs" />
     <Compile Include="Secteur\ISecteurView.cs" />
@@ -65,6 +69,7 @@
       <Name>vente_embarque.Model</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

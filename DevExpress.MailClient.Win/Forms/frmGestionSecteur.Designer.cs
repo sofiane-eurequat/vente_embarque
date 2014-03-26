@@ -142,6 +142,7 @@
             this.bbiNouveau.Id = 1;
             this.bbiNouveau.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiNouveau.LargeGlyph")));
             this.bbiNouveau.Name = "bbiNouveau";
+            this.bbiNouveau.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiNouveau_ItemClick);
             // 
             // bbiSauvegarder
             // 
