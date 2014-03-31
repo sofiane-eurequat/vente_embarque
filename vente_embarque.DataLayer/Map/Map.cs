@@ -90,13 +90,14 @@ namespace vente_embarque.DataLayer.Map
 
         }
 
-        private static XpoClient MapClient(Client client, UnitOfWork uow)
+        public static XpoClient MapClient(Client client, UnitOfWork uow)
         {
             return new XpoClient(uow)
                 {
-                    Address = client.Address,
+                    Oid = client.id,
                     Name = client.Name,
                     PreName = client.PreNom,
+                    Address = client.Address,
                 };
         }
 

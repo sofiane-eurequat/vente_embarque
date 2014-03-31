@@ -21,8 +21,7 @@ namespace vente_embarque.presenter.Secteur
 
         public void Diplay()
         {
-            var secteur = _repositorysecteur.FindAll();
-
+            _repositorysecteur.FindAll();
         }
     }
 

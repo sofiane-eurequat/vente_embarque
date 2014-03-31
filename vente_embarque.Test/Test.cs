@@ -118,13 +118,14 @@ namespace vente_embarque.Test
             const string wilaya = "Tlemcen";
             const string commune = "Tlemcen";
             Sector secteur = FactorySector.CreateSector(nomSect, wilaya, commune);
-
+            var rs = new RepositorySector();
+            rs.Save(secteur);
             const string nom = "NomClient1";
             const string prenom = "PrenomClient1";
             //un secteur doit tjr etre defini mmee si il doit etre nommé indéfini
             var client = FactorySector.CreateClient(nom, prenom, secteur);
-            var rc = new RepositorySector();
-            rs.Save(stock);
+            var rc = new RepositoryClient();
+            rc.Save(client);
         }
 
         [Test]

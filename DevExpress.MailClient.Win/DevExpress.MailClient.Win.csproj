@@ -454,6 +454,13 @@
     <EmbeddedResource Include="Dictionaries\default.zip" />
     <None Include="Properties\DataSources\vente_embarque.Model.Communes.datasource" />
     <None Include="Properties\DataSources\vente_embarque.Model.Wilaya.datasource" />
+    <None Include="Properties\DataSources\vente_embarque.presenter.Bdc.BdcPresenterPage.datasource" />
+    <None Include="Properties\DataSources\vente_embarque.presenter.Bdc.EditBdcPresenterPage.datasource" />
+    <None Include="Properties\DataSources\vente_embarque.presenter.Bdc.IBdcPagePresenter.datasource" />
+    <None Include="Properties\DataSources\vente_embarque.presenter.Bdc.IBdcView.datasource" />
+    <None Include="Properties\DataSources\vente_embarque.presenter.Bdc.IEditBdcView.datasource" />
+    <None Include="Properties\DataSources\vente_embarque.presenter.Bdc.ModelViewBdc.datasource" />
+    <None Include="Properties\DataSources\vente_embarque.presenter.Bdc.ModelViewOrder.datasource" />
     <None Include="Properties\DataSources\vente_embarque.presenter.ModelViewProduct.datasource" />
     <None Include="Properties\DataSources\vente_embarque.presenter.ModelViewProductLine.datasource" />
     <None Include="Properties\DataSources\vente_embarque.presenter.Secteur.ModelViewAgentTerrain.datasource" />

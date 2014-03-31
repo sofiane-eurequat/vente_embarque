@@ -21,6 +21,7 @@ namespace DevExpress.MailClient.Win.Forms
     {
         public IEnumerable<Wilaya> Wilayas { get; set; }
         public IEnumerable<AgentTerrain> AgentTerrains { get; set; }
+        public IEnumerable<Client> Clients { get; set; } 
         public Sector Secteurs { get; set; }
         private EditSecteurPresenterPage editSecteurPresenter;
         readonly ModelViewSecteur sourceSecteur;
@@ -38,9 +39,12 @@ namespace DevExpress.MailClient.Win.Forms
             var repositoryWilaya = new RepositoryWilaya();
             var repositoryAgentTerrain = new RepositoryAgentTerrain();
             var repositorySecteur = new RepositorySector();
-            editSecteurPresenter = new EditSecteurPresenterPage(this, repositoryWilaya, repositoryAgentTerrain, repositorySecteur);
+            var repositoryClient = new RepositoryClient();
+            editSecteurPresenter = new EditSecteurPresenterPage(this, repositoryWilaya, repositoryAgentTerrain, repositorySecteur, repositoryClient);
             editSecteurPresenter.Display();
 
+            comboBoxClients.DataSource = Clients.OrderBy(cl => cl.Name).ToList();
+            comboBoxClients.DisplayMember = "Name";
             comboBoxWilaya.DataSource = Wilayas.OrderBy(c=>c.Code).ToList();
             comboBoxWilaya.ValueMember = "Code";
             comboBoxCommune.DataSource = Wilayas.First(w=>w.Code==(int)comboBoxWilaya.SelectedValue).Communes.OrderBy(c=>c.Name).ToList();

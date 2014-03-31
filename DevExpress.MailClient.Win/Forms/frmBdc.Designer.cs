@@ -33,44 +33,50 @@
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiNouveau = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSauvegarder = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.applicationMenu1 = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.comboBoxClient = new System.Windows.Forms.ComboBox();
+            this.memoEdit1 = new DevExpress.XtraEditors.MemoEdit();
+            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
             this.comboBoxClients = new System.Windows.Forms.ComboBox();
-            this.comboBoxWilaya = new System.Windows.Forms.ComboBox();
-            this.textEditSecteur = new DevExpress.XtraEditors.TextEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.GCOrderLine = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colProduct = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colQuantity = new DevExpress.XtraGrid.Columns.GridColumn();
             this.standaloneBarDockControl1 = new DevExpress.XtraBars.StandaloneBarDockControl();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar4 = new DevExpress.XtraBars.Bar();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
-            this.GCOrderLine = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditSecteur.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GCOrderLine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
@@ -79,9 +85,10 @@
             this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbon.ExpandCollapseItem,
             this.bbiNouveau,
-            this.barButtonItem1});
+            this.barButtonItem1,
+            this.bbiSauvegarder});
             resources.ApplyResources(this.ribbon, "ribbon");
-            this.ribbon.MaxItemId = 3;
+            this.ribbon.MaxItemId = 4;
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -103,10 +110,19 @@
             this.barButtonItem1.Id = 2;
             this.barButtonItem1.Name = "barButtonItem1";
             // 
+            // bbiSauvegarder
+            // 
+            resources.ApplyResources(this.bbiSauvegarder, "bbiSauvegarder");
+            this.bbiSauvegarder.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvegarder.Glyph")));
+            this.bbiSauvegarder.Id = 3;
+            this.bbiSauvegarder.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvegarder.LargeGlyph")));
+            this.bbiSauvegarder.Name = "bbiSauvegarder";
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1});
+            this.ribbonPageGroup1,
+            this.ribbonPageGroup2});
             this.ribbonPage1.Name = "ribbonPage1";
             resources.ApplyResources(this.ribbonPage1, "ribbonPage1");
             // 
@@ -116,6 +132,12 @@
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.ShowCaptionButton = false;
             resources.ApplyResources(this.ribbonPageGroup1, "ribbonPageGroup1");
+            // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.ItemLinks.Add(this.bbiSauvegarder);
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            resources.ApplyResources(this.ribbonPageGroup2, "ribbonPageGroup2");
             // 
             // ribbonStatusBar
             // 
@@ -130,15 +152,42 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.comboBoxClient);
+            this.groupControl1.Controls.Add(this.memoEdit1);
+            this.groupControl1.Controls.Add(this.dateEdit1);
             this.groupControl1.Controls.Add(this.comboBoxClients);
-            this.groupControl1.Controls.Add(this.comboBoxWilaya);
-            this.groupControl1.Controls.Add(this.textEditSecteur);
             this.groupControl1.Controls.Add(this.labelControl4);
             this.groupControl1.Controls.Add(this.labelControl3);
             this.groupControl1.Controls.Add(this.labelControl2);
             this.groupControl1.Controls.Add(this.labelControl1);
             resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Name = "groupControl1";
+            // 
+            // comboBoxClient
+            // 
+            this.comboBoxClient.DisplayMember = "id";
+            this.comboBoxClient.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxClient, "comboBoxClient");
+            this.comboBoxClient.Name = "comboBoxClient";
+            this.comboBoxClient.ValueMember = "id";
+            // 
+            // memoEdit1
+            // 
+            resources.ApplyResources(this.memoEdit1, "memoEdit1");
+            this.memoEdit1.MenuManager = this.ribbon;
+            this.memoEdit1.Name = "memoEdit1";
+            // 
+            // dateEdit1
+            // 
+            resources.ApplyResources(this.dateEdit1, "dateEdit1");
+            this.dateEdit1.MenuManager = this.ribbon;
+            this.dateEdit1.Name = "dateEdit1";
+            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEdit1.Properties.Buttons"))))});
+            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEdit1.Properties.CalendarTimeProperties.Buttons"))))});
+            this.dateEdit1.Properties.CalendarTimeProperties.CloseUpKey = new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.F4);
+            this.dateEdit1.Properties.CalendarTimeProperties.PopupBorderStyle = DevExpress.XtraEditors.Controls.PopupBorderStyles.Default;
             // 
             // comboBoxClients
             // 
@@ -147,20 +196,6 @@
             resources.ApplyResources(this.comboBoxClients, "comboBoxClients");
             this.comboBoxClients.Name = "comboBoxClients";
             this.comboBoxClients.ValueMember = "id";
-            // 
-            // comboBoxWilaya
-            // 
-            this.comboBoxWilaya.DisplayMember = "Name";
-            this.comboBoxWilaya.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBoxWilaya, "comboBoxWilaya");
-            this.comboBoxWilaya.Name = "comboBoxWilaya";
-            this.comboBoxWilaya.ValueMember = "id";
-            // 
-            // textEditSecteur
-            // 
-            resources.ApplyResources(this.textEditSecteur, "textEditSecteur");
-            this.textEditSecteur.MenuManager = this.ribbon;
-            this.textEditSecteur.Name = "textEditSecteur";
             // 
             // labelControl4
             // 
@@ -197,6 +232,37 @@
             this.xtraTabPage1.Name = "xtraTabPage1";
             resources.ApplyResources(this.xtraTabPage1, "xtraTabPage1");
             // 
+            // GCOrderLine
+            // 
+            resources.ApplyResources(this.GCOrderLine, "GCOrderLine");
+            this.GCOrderLine.MainView = this.gridView1;
+            this.GCOrderLine.MenuManager = this.ribbon;
+            this.GCOrderLine.Name = "GCOrderLine";
+            this.GCOrderLine.UseEmbeddedNavigator = true;
+            this.GCOrderLine.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colProduct,
+            this.colQuantity});
+            this.gridView1.GridControl = this.GCOrderLine;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowGroupPanel = false;
+            // 
+            // colProduct
+            // 
+            this.colProduct.FieldName = "Product";
+            this.colProduct.Name = "colProduct";
+            resources.ApplyResources(this.colProduct, "colProduct");
+            // 
+            // colQuantity
+            // 
+            this.colQuantity.FieldName = "Quantity";
+            this.colQuantity.Name = "colQuantity";
+            resources.ApplyResources(this.colQuantity, "colQuantity");
+            // 
             // standaloneBarDockControl1
             // 
             this.standaloneBarDockControl1.CausesValidation = false;
@@ -215,7 +281,6 @@
             this.barManager1.Form = this;
             this.barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.barButtonItem2,
-            this.barButtonItem3,
             this.barButtonItem4,
             this.barButtonItem5});
             this.barManager1.MaxItemId = 4;
@@ -228,7 +293,6 @@
             this.bar4.DockStyle = DevExpress.XtraBars.BarDockStyle.Standalone;
             this.bar4.FloatLocation = new System.Drawing.Point(102, 416);
             this.bar4.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem3),
             new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem4),
             new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem5)});
             this.bar4.Offset = 1;
@@ -236,6 +300,22 @@
             this.bar4.OptionsBar.DrawDragBorder = false;
             this.bar4.StandaloneBarDockControl = this.standaloneBarDockControl1;
             resources.ApplyResources(this.bar4, "bar4");
+            // 
+            // barButtonItem4
+            // 
+            resources.ApplyResources(this.barButtonItem4, "barButtonItem4");
+            this.barButtonItem4.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.Glyph")));
+            this.barButtonItem4.Id = 2;
+            this.barButtonItem4.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.LargeGlyph")));
+            this.barButtonItem4.Name = "barButtonItem4";
+            // 
+            // barButtonItem5
+            // 
+            resources.ApplyResources(this.barButtonItem5, "barButtonItem5");
+            this.barButtonItem5.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.Glyph")));
+            this.barButtonItem5.Id = 3;
+            this.barButtonItem5.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.LargeGlyph")));
+            this.barButtonItem5.Name = "barButtonItem5";
             // 
             // barDockControlTop
             // 
@@ -263,41 +343,6 @@
             this.barButtonItem2.Id = 0;
             this.barButtonItem2.Name = "barButtonItem2";
             // 
-            // barButtonItem3
-            // 
-            resources.ApplyResources(this.barButtonItem3, "barButtonItem3");
-            this.barButtonItem3.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.Glyph")));
-            this.barButtonItem3.Id = 1;
-            this.barButtonItem3.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.LargeGlyph")));
-            this.barButtonItem3.Name = "barButtonItem3";
-            // 
-            // barButtonItem4
-            // 
-            this.barButtonItem4.Id = 2;
-            this.barButtonItem4.Name = "barButtonItem4";
-            // 
-            // barButtonItem5
-            // 
-            resources.ApplyResources(this.barButtonItem5, "barButtonItem5");
-            this.barButtonItem5.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.Glyph")));
-            this.barButtonItem5.Id = 3;
-            this.barButtonItem5.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.LargeGlyph")));
-            this.barButtonItem5.Name = "barButtonItem5";
-            // 
-            // GCOrderLine
-            // 
-            resources.ApplyResources(this.GCOrderLine, "GCOrderLine");
-            this.GCOrderLine.MainView = this.gridView1;
-            this.GCOrderLine.MenuManager = this.ribbon;
-            this.GCOrderLine.Name = "GCOrderLine";
-            this.GCOrderLine.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            // 
-            // gridView1
-            // 
-            this.gridView1.GridControl = this.GCOrderLine;
-            this.gridView1.Name = "gridView1";
-            // 
             // frmBdc
             // 
             resources.ApplyResources(this, "$this");
@@ -319,13 +364,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditSecteur.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GCOrderLine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -341,8 +388,6 @@
         private XtraBars.BarButtonItem barButtonItem1;
         private XtraEditors.GroupControl groupControl1;
         private System.Windows.Forms.ComboBox comboBoxClients;
-        private System.Windows.Forms.ComboBox comboBoxWilaya;
-        private XtraEditors.TextEdit textEditSecteur;
         private XtraEditors.LabelControl labelControl4;
         private XtraEditors.LabelControl labelControl3;
         private XtraEditors.LabelControl labelControl2;
@@ -357,10 +402,16 @@
         private XtraBars.BarDockControl barDockControlRight;
         private XtraBars.Bar bar4;
         private XtraBars.BarButtonItem barButtonItem2;
-        private XtraBars.BarButtonItem barButtonItem3;
         private XtraBars.BarButtonItem barButtonItem4;
         private XtraBars.BarButtonItem barButtonItem5;
         private XtraGrid.GridControl GCOrderLine;
         private XtraGrid.Views.Grid.GridView gridView1;
+        private XtraEditors.DateEdit dateEdit1;
+        private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
+        private XtraBars.BarButtonItem bbiSauvegarder;
+        private XtraEditors.MemoEdit memoEdit1;
+        private XtraGrid.Columns.GridColumn colProduct;
+        private XtraGrid.Columns.GridColumn colQuantity;
+        private System.Windows.Forms.ComboBox comboBoxClient;
     }
 }

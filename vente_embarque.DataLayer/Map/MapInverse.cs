@@ -2,6 +2,7 @@
 using System.Linq;
 using DevExpress.Xpo;
 using vente_embarque.DataLayer.Entities;
+using vente_embarque.DataLayer.Entities.Orders;
 using vente_embarque.DataLayer.Entities.Stock;
 using vente_embarque.DataLayer.Helper;
 using vente_embarque.Model;
@@ -90,6 +91,17 @@ namespace vente_embarque.DataLayer.Map
                 {
                     Name = xpoAgentTerrain.Name,
                     id = xpoAgentTerrain.Oid
+                };
+        }
+
+        public static Client MapClient(XpoClient xpoClient)
+        {
+            return new Client
+                {
+                    id = xpoClient.Oid,
+                    Name = xpoClient.Name,
+                    PreNom = xpoClient.PreName,
+                    Address = xpoClient.Address
                 };
         }
     }
