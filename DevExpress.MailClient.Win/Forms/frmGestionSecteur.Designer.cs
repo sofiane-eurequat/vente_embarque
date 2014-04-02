@@ -59,10 +59,10 @@
             this.comboBoxCommune = new System.Windows.Forms.ComboBox();
             this.comboBoxWilaya = new System.Windows.Forms.ComboBox();
             this.textEditSecteur = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.labelCommune = new DevExpress.XtraEditors.LabelControl();
+            this.labelWilaya = new DevExpress.XtraEditors.LabelControl();
+            this.labelClient = new DevExpress.XtraEditors.LabelControl();
+            this.labelSecteur = new DevExpress.XtraEditors.LabelControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colId = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colClient = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -333,10 +333,10 @@
             this.groupControl1.Controls.Add(this.comboBoxCommune);
             this.groupControl1.Controls.Add(this.comboBoxWilaya);
             this.groupControl1.Controls.Add(this.textEditSecteur);
-            this.groupControl1.Controls.Add(this.labelControl4);
-            this.groupControl1.Controls.Add(this.labelControl3);
-            this.groupControl1.Controls.Add(this.labelControl2);
-            this.groupControl1.Controls.Add(this.labelControl1);
+            this.groupControl1.Controls.Add(this.labelCommune);
+            this.groupControl1.Controls.Add(this.labelWilaya);
+            this.groupControl1.Controls.Add(this.labelClient);
+            this.groupControl1.Controls.Add(this.labelSecteur);
             resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Name = "groupControl1";
             // 
@@ -369,25 +369,25 @@
             this.textEditSecteur.MenuManager = this.ribbon;
             this.textEditSecteur.Name = "textEditSecteur";
             // 
-            // labelControl4
+            // labelCommune
             // 
-            resources.ApplyResources(this.labelControl4, "labelControl4");
-            this.labelControl4.Name = "labelControl4";
+            resources.ApplyResources(this.labelCommune, "labelCommune");
+            this.labelCommune.Name = "labelCommune";
             // 
-            // labelControl3
+            // labelWilaya
             // 
-            resources.ApplyResources(this.labelControl3, "labelControl3");
-            this.labelControl3.Name = "labelControl3";
+            resources.ApplyResources(this.labelWilaya, "labelWilaya");
+            this.labelWilaya.Name = "labelWilaya";
             // 
-            // labelControl2
+            // labelClient
             // 
-            resources.ApplyResources(this.labelControl2, "labelControl2");
-            this.labelControl2.Name = "labelControl2";
+            resources.ApplyResources(this.labelClient, "labelClient");
+            this.labelClient.Name = "labelClient";
             // 
-            // labelControl1
+            // labelSecteur
             // 
-            resources.ApplyResources(this.labelControl1, "labelControl1");
-            this.labelControl1.Name = "labelControl1";
+            resources.ApplyResources(this.labelSecteur, "labelSecteur");
+            this.labelSecteur.Name = "labelSecteur";
             // 
             // gridView1
             // 
@@ -629,10 +629,10 @@
         private XtraBars.BarButtonItem bbiSuivant;
         private XtraBars.BarButtonItem bbiFermer;
         private XtraEditors.GroupControl groupControl1;
-        private XtraEditors.LabelControl labelControl4;
-        private XtraEditors.LabelControl labelControl3;
-        private XtraEditors.LabelControl labelControl2;
-        private XtraEditors.LabelControl labelControl1;
+        private XtraEditors.LabelControl labelCommune;
+        private XtraEditors.LabelControl labelWilaya;
+        private XtraEditors.LabelControl labelClient;
+        private XtraEditors.LabelControl labelSecteur;
         private XtraEditors.TextEdit textEditSecteur;
         private System.Windows.Forms.ComboBox comboBoxClients;
         private System.Windows.Forms.ComboBox comboBoxCommune;

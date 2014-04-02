@@ -9,6 +9,7 @@ namespace vente_embarque.presenter.Bdc
 {
     public interface IEditBdcView
     {
-        IEnumerable<Client> Clients { get; set; } 
+        IEnumerable<Client> Clients { get; set; }
+        IEnumerable<Stock> Stocks { get; set; } 
     }
 }

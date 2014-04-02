@@ -1168,100 +1168,100 @@
   <data name="&gt;&gt;textEditSecteur.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="labelControl4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="labelCommune.Location" type="System.Drawing.Point, System.Drawing">
     <value>403, 78</value>
   </data>
-  <data name="labelControl4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="labelCommune.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 13</value>
   </data>
-  <data name="labelControl4.TabIndex" type="System.Int32, mscorlib">
+  <data name="labelCommune.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="labelControl4.Text" xml:space="preserve">
+  <data name="labelCommune.Text" xml:space="preserve">
     <value>Commune</value>
   </data>
-  <data name="&gt;&gt;labelControl4.Name" xml:space="preserve">
-    <value>labelControl4</value>
+  <data name="&gt;&gt;labelCommune.Name" xml:space="preserve">
+    <value>labelCommune</value>
   </data>
-  <data name="&gt;&gt;labelControl4.Type" xml:space="preserve">
+  <data name="&gt;&gt;labelCommune.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;labelControl4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;labelCommune.Parent" xml:space="preserve">
     <value>groupControl1</value>
   </data>
-  <data name="&gt;&gt;labelControl4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;labelCommune.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="labelControl3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="labelWilaya.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 77</value>
   </data>
-  <data name="labelControl3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="labelWilaya.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 13</value>
   </data>
-  <data name="labelControl3.TabIndex" type="System.Int32, mscorlib">
+  <data name="labelWilaya.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="labelControl3.Text" xml:space="preserve">
+  <data name="labelWilaya.Text" xml:space="preserve">
     <value>Wilaya</value>
   </data>
-  <data name="&gt;&gt;labelControl3.Name" xml:space="preserve">
-    <value>labelControl3</value>
+  <data name="&gt;&gt;labelWilaya.Name" xml:space="preserve">
+    <value>labelWilaya</value>
   </data>
-  <data name="&gt;&gt;labelControl3.Type" xml:space="preserve">
+  <data name="&gt;&gt;labelWilaya.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;labelControl3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;labelWilaya.Parent" xml:space="preserve">
     <value>groupControl1</value>
   </data>
-  <data name="&gt;&gt;labelControl3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;labelWilaya.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="labelControl2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="labelClient.Location" type="System.Drawing.Point, System.Drawing">
     <value>403, 41</value>
   </data>
-  <data name="labelControl2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="labelClient.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 13</value>
   </data>
-  <data name="labelControl2.TabIndex" type="System.Int32, mscorlib">
+  <data name="labelClient.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="labelControl2.Text" xml:space="preserve">
+  <data name="labelClient.Text" xml:space="preserve">
     <value>Liste des Clients</value>
   </data>
-  <data name="&gt;&gt;labelControl2.Name" xml:space="preserve">
-    <value>labelControl2</value>
+  <data name="&gt;&gt;labelClient.Name" xml:space="preserve">
+    <value>labelClient</value>
   </data>
-  <data name="&gt;&gt;labelControl2.Type" xml:space="preserve">
+  <data name="&gt;&gt;labelClient.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;labelControl2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;labelClient.Parent" xml:space="preserve">
     <value>groupControl1</value>
   </data>
-  <data name="&gt;&gt;labelControl2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;labelClient.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="labelControl1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="labelSecteur.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 41</value>
   </data>
-  <data name="labelControl1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="labelSecteur.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 13</value>
   </data>
-  <data name="labelControl1.TabIndex" type="System.Int32, mscorlib">
+  <data name="labelSecteur.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="labelControl1.Text" xml:space="preserve">
+  <data name="labelSecteur.Text" xml:space="preserve">
     <value>Nom du Secteur</value>
   </data>
-  <data name="&gt;&gt;labelControl1.Name" xml:space="preserve">
-    <value>labelControl1</value>
+  <data name="&gt;&gt;labelSecteur.Name" xml:space="preserve">
+    <value>labelSecteur</value>
   </data>
-  <data name="&gt;&gt;labelControl1.Type" xml:space="preserve">
+  <data name="&gt;&gt;labelSecteur.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;labelControl1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;labelSecteur.Parent" xml:space="preserve">
     <value>groupControl1</value>
   </data>
-  <data name="&gt;&gt;labelControl1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;labelSecteur.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />

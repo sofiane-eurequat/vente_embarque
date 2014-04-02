@@ -12,17 +12,20 @@ namespace vente_embarque.presenter.Bdc
     public class BdcPresenterPage:IBdcPagePresenter
     {
         private readonly IBdcView _bdcView;
-        private readonly IRepository<Client, Guid> _repositoryclient;
+        private readonly IRepository<Client, Guid> _repositoryClient;
+        private readonly IRepository<Stock, Guid> _repositoryStock; 
 
-        public BdcPresenterPage(IBdcView bdcView,IRepository<Client,Guid> clientkRepository)
+        public BdcPresenterPage(IBdcView bdcView,IRepository<Client,Guid> clientkRepository, IRepository<Stock,Guid> stockRepository )
         {
             _bdcView = bdcView;
-            _repositoryclient = clientkRepository;
+            _repositoryClient = clientkRepository;
+           // _repositoryStock = stockRepository;
         }
         
         public void Diplay()
         {
-            _repositoryclient.FindAll();
+            _repositoryClient.FindAll();
+            //_repositoryStock.FindAll();
         }
     }
 

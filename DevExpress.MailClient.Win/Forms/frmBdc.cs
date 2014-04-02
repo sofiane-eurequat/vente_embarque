@@ -17,7 +17,8 @@ namespace DevExpress.MailClient.Win.Forms
     public partial class frmBdc : RibbonForm, IEditBdcView
     {
         private EditBdcPresenterPage editBdcPresenter;
-        public IEnumerable<Client> Clients { get; set; } 
+        public IEnumerable<Client> Clients { get; set; }
+        public IEnumerable<Stock> Stocks { get; set; }
         readonly ModelViewBdc sourceBdc;
         bool newBdc = true;
 
@@ -31,15 +32,27 @@ namespace DevExpress.MailClient.Win.Forms
         {
             InitializeComponent();
             var repositoryClient = new RepositoryClient();
-            editBdcPresenter = new EditBdcPresenterPage(this, repositoryClient);
+            var repositoryStock = new RepositoryStock();
+            editBdcPresenter = new EditBdcPresenterPage(this, repositoryClient,repositoryStock);
             editBdcPresenter.Display();
 
             comboBoxClients.DataSource = Clients.OrderBy(cl => cl.Name).ToList();
             comboBoxClients.DisplayMember = "Name";
 
+            //comboBoxStock.DataSource = Stocks.OrderBy(s => s.Name).ToList();
+            //comboBoxStock.DisplayMember = "Name";
             this.newBdc = newBdc;
             DialogResult = DialogResult.Cancel;
             sourceBdc = Bdc;
+        }
+
+        private void barButtonItem4_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Cursor.Current = Cursors.WaitCursor;
+            var form = new frmOrderLine();
+            //form.Location = new Point(OwnerForm.Left + (OwnerForm.Width - form.Width) / 2, OwnerForm.Top + (OwnerForm.Height - form.Height) / 2);
+            form.Show();
+            Cursor.Current = Cursors.Default;
         }
     }
 }

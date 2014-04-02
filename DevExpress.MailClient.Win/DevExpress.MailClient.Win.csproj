@@ -252,6 +252,12 @@
     <Compile Include="Forms\frmGestionSecteur.Designer.cs">
       <DependentUpon>frmGestionSecteur.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmOrderLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmOrderLine.Designer.cs">
+      <DependentUpon>frmOrderLine.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Stock\frmEditStock.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -393,6 +399,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmGestionSecteur.resx">
       <DependentUpon>frmGestionSecteur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOrderLine.resx">
+      <DependentUpon>frmOrderLine.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Stock\frmEditStock.resx">
       <DependentUpon>frmEditStock.cs</DependentUpon>

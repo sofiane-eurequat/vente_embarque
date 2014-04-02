@@ -14,7 +14,7 @@ namespace vente_embarque.DataLayer.Map
 
        public static Stock MapStock(XpoStock xpoStock)
        {
-           var stock = new Model.Stock(xpoStock.Name)
+           var stock = new Stock(xpoStock.Name)
                {
                    id = xpoStock.Oid,
                    ProductLines = MapProdcutLine(xpoStock.ProductLines),

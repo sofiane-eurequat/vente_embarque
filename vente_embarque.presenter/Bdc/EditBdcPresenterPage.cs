@@ -12,27 +12,32 @@ namespace vente_embarque.presenter.Bdc
     {
         private readonly IEditBdcView _EditBdcView;
         private IRepository<Client, Guid> _repositoryClient;
+        private IRepository<Stock, Guid> _repositoryStock;
+        private IRepository<Order, Guid> _repositoryOrder; 
  
-        public EditBdcPresenterPage(IEditBdcView editBdcView, IRepository<Client,Guid> repository )
+        public EditBdcPresenterPage(IEditBdcView editBdcView, IRepository<Client,Guid> repository, IRepository<Stock,Guid> repository1  )
         {
             _EditBdcView = editBdcView;
             _repositoryClient = repository;
+           // _repositoryStock = repository1;
         }
         
         public void Display()
         {
             _EditBdcView.Clients = _repositoryClient.FindAll();
+            //_EditBdcView.Stocks = _repositoryStock.FindAll();
         }
 
-        public void Write()
+        public void Write(Stock stock, string nomProduit, int quantité)
         {
-            throw new NotImplementedException();
+            var orderline = FactoryOrder.CreateOrderLine(stock, nomProduit, quantité);
+            //_repositoryOrder.Save(orderline);
         }
     }
 
     internal interface IEditBdcPagePresenter
     {
         void Display();
-        void Write();
+        void Write(Stock stock, string nomProduit, int quantité);
     }
 }

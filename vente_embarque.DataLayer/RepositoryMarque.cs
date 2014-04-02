@@ -11,58 +11,58 @@ using vente_embarque.Model;
 
 namespace vente_embarque.DataLayer
 {
-    class RepositoryOrder : IRepository<Order, Guid>
+    public class RepositoryMarque: IRepository<Marque,Guid>
     {
-        public Order FindBy(Guid id)
+        public Marque FindBy(Guid id)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Order> FindAll()
+        public IEnumerable<Marque> FindAll()
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Order> FindBy(Query query)
+        public IEnumerable<Marque> FindBy(Query query)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Order> FindBy(Query query, int index, int count)
+        public IEnumerable<Marque> FindBy(Query query, int index, int count)
         {
             throw new NotImplementedException();
         }
 
-        public void SaveAll(IEnumerable<Order> entities)
+        public void SaveAll(IEnumerable<Marque> entities)
         {
             throw new NotImplementedException();
         }
 
-        public List<Order> FindAll(List<Query> entities)
+        public List<Marque> FindAll(List<Query> entities)
         {
             throw new NotImplementedException();
         }
 
-        public void Save(Order entity)
+        public void Save(Marque entity)
         {
             var config = new AppSettingsReader();
             using (
-                var uow = new UnitOfWork()
+                var uow = new UnitOfWork
                 {
                     ConnectionString = ((string)config.GetValue("connect", typeof(string)))
                 })
             {
-                Map.Map.MapOrder(entity, uow);
+                Map.Map.MapMarque(entity, uow);
                 uow.CommitChanges();
             }
         }
 
-        public void Add(Order entity)
+        public void Add(Marque entity)
         {
             throw new NotImplementedException();
         }
 
-        public void Remove(Order entity)
+        public void Remove(Marque entity)
         {
             throw new NotImplementedException();
         }

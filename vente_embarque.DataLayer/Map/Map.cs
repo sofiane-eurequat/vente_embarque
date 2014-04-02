@@ -60,7 +60,7 @@ namespace vente_embarque.DataLayer.Map
                 };
         }
 
-        private static XpoMarque MapMarque(Marque marque, UnitOfWork uow)
+        public static XpoMarque MapMarque(Marque marque, UnitOfWork uow)
         {
             return  new XpoMarque(uow)
                 {
@@ -69,7 +69,7 @@ namespace vente_embarque.DataLayer.Map
                 };
         }
 
-        private static XpoCategory MapCategory(Category category, UnitOfWork uow)
+        public static XpoCategory MapCategory(Category category, UnitOfWork uow)
         {
             return new XpoCategory(uow)
                 {

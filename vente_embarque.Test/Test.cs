@@ -309,5 +309,24 @@ namespace vente_embarque.Test
             var rs = new RepositorySector();
             rs.Save(sector);
         }
+
+        [Test]
+        public void CanCreateMarqueDb()
+        {
+            const string nom = "Hp";
+            var marque = FactoryMarque.CreateMarque(nom);
+            var rm = new RepositoryMarque();
+            rm.Save(marque);
+        }
+
+        [Test]
+        public void CanCreateCategoryDb()
+        {
+            const string nom = "Laptop";
+            const string description = "Pc portable";
+            var marque = FactoryCategory.CreateCategory(nom,description);
+            var rc = new RepositoryCategory();
+            rc.Save(marque);
+        }
     }
 }

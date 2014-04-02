@@ -40,7 +40,7 @@
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.applicationMenu1 = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.comboBoxClient = new System.Windows.Forms.ComboBox();
+            this.comboBoxStock = new System.Windows.Forms.ComboBox();
             this.memoEdit1 = new DevExpress.XtraEditors.MemoEdit();
             this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
             this.comboBoxClients = new System.Windows.Forms.ComboBox();
@@ -152,7 +152,7 @@
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.comboBoxClient);
+            this.groupControl1.Controls.Add(this.comboBoxStock);
             this.groupControl1.Controls.Add(this.memoEdit1);
             this.groupControl1.Controls.Add(this.dateEdit1);
             this.groupControl1.Controls.Add(this.comboBoxClients);
@@ -163,13 +163,13 @@
             resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Name = "groupControl1";
             // 
-            // comboBoxClient
+            // comboBoxStock
             // 
-            this.comboBoxClient.DisplayMember = "id";
-            this.comboBoxClient.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBoxClient, "comboBoxClient");
-            this.comboBoxClient.Name = "comboBoxClient";
-            this.comboBoxClient.ValueMember = "id";
+            this.comboBoxStock.DisplayMember = "id";
+            this.comboBoxStock.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxStock, "comboBoxStock");
+            this.comboBoxStock.Name = "comboBoxStock";
+            this.comboBoxStock.ValueMember = "id";
             // 
             // memoEdit1
             // 
@@ -308,6 +308,7 @@
             this.barButtonItem4.Id = 2;
             this.barButtonItem4.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.LargeGlyph")));
             this.barButtonItem4.Name = "barButtonItem4";
+            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
             // 
             // barButtonItem5
             // 
@@ -412,6 +413,6 @@
         private XtraEditors.MemoEdit memoEdit1;
         private XtraGrid.Columns.GridColumn colProduct;
         private XtraGrid.Columns.GridColumn colQuantity;
-        private System.Windows.Forms.ComboBox comboBoxClient;
+        private System.Windows.Forms.ComboBox comboBoxStock;
     }
 }

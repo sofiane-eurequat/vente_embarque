@@ -57,7 +57,9 @@
     <Compile Include="Map\Map.cs" />
     <Compile Include="Map\MapInverse.cs" />
     <Compile Include="RepositoryAgentTerrain.cs" />
+    <Compile Include="RepositoryCategory.cs" />
     <Compile Include="RepositoryClient.cs" />
+    <Compile Include="RepositoryMarque.cs" />
     <Compile Include="RepositoryOrder.cs" />
     <Compile Include="RepositoryProduct.cs" />
     <Compile Include="RepositoryStock.cs" />
