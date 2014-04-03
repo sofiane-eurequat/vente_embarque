@@ -46,7 +46,7 @@ namespace DevExpress.MailClient.Win.Forms
         }
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
         {
-            
+            //editBdcPresenter.Write(comboBoxStock,textEditProduit.EditValue.ToString(), textEditQuantité.EditValue.ToString(),);
             Close();
         }
         private void bbiEfaccer_ItemClick(object sender, ItemClickEventArgs e)
