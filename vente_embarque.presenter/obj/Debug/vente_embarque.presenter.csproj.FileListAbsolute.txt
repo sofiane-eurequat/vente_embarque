@@ -20,3 +20,4 @@ C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_emba
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\obj\Debug\vente_embarque.presenter.csprojResolveAssemblyReference.cache
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\obj\Debug\vente_embarque.presenter.dll
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\obj\Debug\vente_embarque.presenter.pdb
+C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\obj\Debug\vente_embarque.presenter.dll.licenses

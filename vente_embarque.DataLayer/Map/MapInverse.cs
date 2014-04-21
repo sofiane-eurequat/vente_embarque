@@ -42,7 +42,7 @@ namespace vente_embarque.DataLayer.Map
                 };
         }
 
-        private static Marque MapMarque(XpoMarque marque)
+        public static Marque MapMarque(XpoMarque marque)
         {
             return new Marque
                 {
@@ -52,7 +52,7 @@ namespace vente_embarque.DataLayer.Map
                 };
         }
 
-        private static Category MapCategory(XpoCategory category)
+        public static Category MapCategory(XpoCategory category)
         {
             return new Category
                 {

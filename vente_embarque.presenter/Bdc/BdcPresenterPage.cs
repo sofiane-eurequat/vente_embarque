@@ -19,13 +19,13 @@ namespace vente_embarque.presenter.Bdc
         {
             _bdcView = bdcView;
             _repositoryClient = clientkRepository;
-           // _repositoryStock = stockRepository;
+            _repositoryStock = stockRepository;
         }
         
         public void Diplay()
         {
             _repositoryClient.FindAll();
-            //_repositoryStock.FindAll();
+            _repositoryStock.FindAll();
         }
     }
 

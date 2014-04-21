@@ -21,7 +21,7 @@ namespace vente_embarque.Model
     }
     public class FactoryProduct
     {
-        public static Product CreateProduct(string name, int quantiteMin = 0, string remarque = "", Category category = null, Marque marque = null, string reference = "", string fournisseur = "", GestionProduit typeGestion = GestionProduit.Aucune)
+        public static Product CreateProduct(string name, int quantiteMin,Category category, Marque marque, string remarque = "", string reference = "", string fournisseur = "", GestionProduit typeGestion = GestionProduit.Aucune)
         {
             var product = new Product
                 {

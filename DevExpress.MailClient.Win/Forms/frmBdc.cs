@@ -10,6 +10,7 @@ using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
 using vente_embarque.DataLayer;
 using vente_embarque.Model;
+using vente_embarque.Model.Enum;
 using vente_embarque.presenter.Bdc;
 
 namespace DevExpress.MailClient.Win.Forms
@@ -19,6 +20,7 @@ namespace DevExpress.MailClient.Win.Forms
         private EditBdcPresenterPage editBdcPresenter;
         public IEnumerable<Client> Clients { get; set; }
         public IEnumerable<Stock> Stocks { get; set; }
+        public IEnumerable<Product> Produits { get; set; }
         readonly ModelViewBdc sourceBdc;
         bool newBdc = true;
 
@@ -39,8 +41,11 @@ namespace DevExpress.MailClient.Win.Forms
             comboBoxClients.DataSource = Clients.OrderBy(cl => cl.Name).ToList();
             comboBoxClients.DisplayMember = "Name";
 
-            //comboBoxStock.DataSource = Stocks.OrderBy(s => s.Name).ToList();
-            //comboBoxStock.DisplayMember = "Name";
+            comboBoxStock.DataSource = Stocks.OrderBy(s => s.Name).ToList();
+            comboBoxStock.DisplayMember = "Name";
+
+            comboBoxPriorite.DataSource= Enum.GetValues(typeof(Priorite));
+
             this.newBdc = newBdc;
             DialogResult = DialogResult.Cancel;
             sourceBdc = Bdc;
@@ -49,10 +54,45 @@ namespace DevExpress.MailClient.Win.Forms
         private void barButtonItem4_ItemClick(object sender, ItemClickEventArgs e)
         {
             Cursor.Current = Cursors.WaitCursor;
-            var form = new frmOrderLine();
+            var form = new frmOrderLineAdd();
             //form.Location = new Point(OwnerForm.Left + (OwnerForm.Width - form.Width) / 2, OwnerForm.Top + (OwnerForm.Height - form.Height) / 2);
             form.Show();
             Cursor.Current = Cursors.Default;
+        }
+
+        private void frmBdc_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bbiNouveau_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
+
+        private void bbiSauvegarder_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            editBdcPresenter.Write(comboBoxStock.SelectedItem as Stock, comboBoxClients.SelectedItem as Client, (Priorite) comboBoxPriorite.SelectedItem);
+        }
+
+        private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+            Close();
+        }
+
+        private void bbiEfaccer_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            comboBoxStock.Text = "";
+            comboBoxClients.Text = "";
+            comboBoxPriorite.Text = "";
+            memoEditAdresssLivraion.Text = "";
+            dateEditLivraison.Text = "";
+        }
+
+        private void bbiFermer_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Close();
         }
     }
 }

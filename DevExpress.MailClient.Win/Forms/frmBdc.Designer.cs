@@ -34,20 +34,27 @@
             this.bbiNouveau = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.bbiSauvegarder = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiFermer = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiEfaccer = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSauvegarderFermer = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.applicationMenu1 = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.comboBoxPriorite = new System.Windows.Forms.ComboBox();
+            this.labelPriorite = new DevExpress.XtraEditors.LabelControl();
             this.comboBoxStock = new System.Windows.Forms.ComboBox();
-            this.memoEdit1 = new DevExpress.XtraEditors.MemoEdit();
-            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
+            this.memoEditAdresssLivraion = new DevExpress.XtraEditors.MemoEdit();
+            this.dateEditLivraison = new DevExpress.XtraEditors.DateEdit();
             this.comboBoxClients = new System.Windows.Forms.ComboBox();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.labelDateLivraison = new DevExpress.XtraEditors.LabelControl();
+            this.labelAdresseLivraison = new DevExpress.XtraEditors.LabelControl();
+            this.labelClient = new DevExpress.XtraEditors.LabelControl();
+            this.labelStock = new DevExpress.XtraEditors.LabelControl();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.GCOrderLine = new DevExpress.XtraGrid.GridControl();
@@ -68,9 +75,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.memoEditAdresssLivraion.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditLivraison.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditLivraison.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
@@ -86,9 +93,12 @@
             this.ribbon.ExpandCollapseItem,
             this.bbiNouveau,
             this.barButtonItem1,
-            this.bbiSauvegarder});
+            this.bbiSauvegarder,
+            this.bbiFermer,
+            this.bbiEfaccer,
+            this.bbiSauvegarderFermer});
             resources.ApplyResources(this.ribbon, "ribbon");
-            this.ribbon.MaxItemId = 4;
+            this.ribbon.MaxItemId = 7;
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -103,6 +113,7 @@
             this.bbiNouveau.Id = 1;
             this.bbiNouveau.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiNouveau.LargeGlyph")));
             this.bbiNouveau.Name = "bbiNouveau";
+            this.bbiNouveau.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiNouveau_ItemClick);
             // 
             // barButtonItem1
             // 
@@ -117,12 +128,42 @@
             this.bbiSauvegarder.Id = 3;
             this.bbiSauvegarder.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvegarder.LargeGlyph")));
             this.bbiSauvegarder.Name = "bbiSauvegarder";
+            this.bbiSauvegarder.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiSauvegarder_ItemClick);
+            // 
+            // bbiFermer
+            // 
+            resources.ApplyResources(this.bbiFermer, "bbiFermer");
+            this.bbiFermer.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiFermer.Glyph")));
+            this.bbiFermer.Id = 4;
+            this.bbiFermer.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiFermer.LargeGlyph")));
+            this.bbiFermer.Name = "bbiFermer";
+            this.bbiFermer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiFermer_ItemClick);
+            // 
+            // bbiEfaccer
+            // 
+            resources.ApplyResources(this.bbiEfaccer, "bbiEfaccer");
+            this.bbiEfaccer.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiEfaccer.Glyph")));
+            this.bbiEfaccer.Id = 5;
+            this.bbiEfaccer.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiEfaccer.LargeGlyph")));
+            this.bbiEfaccer.Name = "bbiEfaccer";
+            this.bbiEfaccer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiEfaccer_ItemClick);
+            // 
+            // bbiSauvegarderFermer
+            // 
+            resources.ApplyResources(this.bbiSauvegarderFermer, "bbiSauvegarderFermer");
+            this.bbiSauvegarderFermer.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvegarderFermer.Glyph")));
+            this.bbiSauvegarderFermer.Id = 6;
+            this.bbiSauvegarderFermer.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvegarderFermer.LargeGlyph")));
+            this.bbiSauvegarderFermer.Name = "bbiSauvegarderFermer";
+            this.bbiSauvegarderFermer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiSauvegarderFermer_ItemClick);
             // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1,
-            this.ribbonPageGroup2});
+            this.ribbonPageGroup2,
+            this.ribbonPageGroup3,
+            this.ribbonPageGroup4});
             this.ribbonPage1.Name = "ribbonPage1";
             resources.ApplyResources(this.ribbonPage1, "ribbonPage1");
             // 
@@ -136,8 +177,24 @@
             // ribbonPageGroup2
             // 
             this.ribbonPageGroup2.ItemLinks.Add(this.bbiSauvegarder);
+            this.ribbonPageGroup2.ItemLinks.Add(this.bbiSauvegarderFermer);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            this.ribbonPageGroup2.ShowCaptionButton = false;
             resources.ApplyResources(this.ribbonPageGroup2, "ribbonPageGroup2");
+            // 
+            // ribbonPageGroup3
+            // 
+            this.ribbonPageGroup3.ItemLinks.Add(this.bbiEfaccer);
+            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
+            this.ribbonPageGroup3.ShowCaptionButton = false;
+            resources.ApplyResources(this.ribbonPageGroup3, "ribbonPageGroup3");
+            // 
+            // ribbonPageGroup4
+            // 
+            this.ribbonPageGroup4.ItemLinks.Add(this.bbiFermer);
+            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
+            this.ribbonPageGroup4.ShowCaptionButton = false;
+            resources.ApplyResources(this.ribbonPageGroup4, "ribbonPageGroup4");
             // 
             // ribbonStatusBar
             // 
@@ -152,16 +209,29 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.comboBoxPriorite);
+            this.groupControl1.Controls.Add(this.labelPriorite);
             this.groupControl1.Controls.Add(this.comboBoxStock);
-            this.groupControl1.Controls.Add(this.memoEdit1);
-            this.groupControl1.Controls.Add(this.dateEdit1);
+            this.groupControl1.Controls.Add(this.memoEditAdresssLivraion);
+            this.groupControl1.Controls.Add(this.dateEditLivraison);
             this.groupControl1.Controls.Add(this.comboBoxClients);
-            this.groupControl1.Controls.Add(this.labelControl4);
-            this.groupControl1.Controls.Add(this.labelControl3);
-            this.groupControl1.Controls.Add(this.labelControl2);
-            this.groupControl1.Controls.Add(this.labelControl1);
+            this.groupControl1.Controls.Add(this.labelDateLivraison);
+            this.groupControl1.Controls.Add(this.labelAdresseLivraison);
+            this.groupControl1.Controls.Add(this.labelClient);
+            this.groupControl1.Controls.Add(this.labelStock);
             resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Name = "groupControl1";
+            // 
+            // comboBoxPriorite
+            // 
+            this.comboBoxPriorite.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxPriorite, "comboBoxPriorite");
+            this.comboBoxPriorite.Name = "comboBoxPriorite";
+            // 
+            // labelPriorite
+            // 
+            resources.ApplyResources(this.labelPriorite, "labelPriorite");
+            this.labelPriorite.Name = "labelPriorite";
             // 
             // comboBoxStock
             // 
@@ -171,23 +241,23 @@
             this.comboBoxStock.Name = "comboBoxStock";
             this.comboBoxStock.ValueMember = "id";
             // 
-            // memoEdit1
+            // memoEditAdresssLivraion
             // 
-            resources.ApplyResources(this.memoEdit1, "memoEdit1");
-            this.memoEdit1.MenuManager = this.ribbon;
-            this.memoEdit1.Name = "memoEdit1";
+            resources.ApplyResources(this.memoEditAdresssLivraion, "memoEditAdresssLivraion");
+            this.memoEditAdresssLivraion.MenuManager = this.ribbon;
+            this.memoEditAdresssLivraion.Name = "memoEditAdresssLivraion";
             // 
-            // dateEdit1
+            // dateEditLivraison
             // 
-            resources.ApplyResources(this.dateEdit1, "dateEdit1");
-            this.dateEdit1.MenuManager = this.ribbon;
-            this.dateEdit1.Name = "dateEdit1";
-            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEdit1.Properties.Buttons"))))});
-            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEdit1.Properties.CalendarTimeProperties.Buttons"))))});
-            this.dateEdit1.Properties.CalendarTimeProperties.CloseUpKey = new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.F4);
-            this.dateEdit1.Properties.CalendarTimeProperties.PopupBorderStyle = DevExpress.XtraEditors.Controls.PopupBorderStyles.Default;
+            resources.ApplyResources(this.dateEditLivraison, "dateEditLivraison");
+            this.dateEditLivraison.MenuManager = this.ribbon;
+            this.dateEditLivraison.Name = "dateEditLivraison";
+            this.dateEditLivraison.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEditLivraison.Properties.Buttons"))))});
+            this.dateEditLivraison.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEditLivraison.Properties.CalendarTimeProperties.Buttons"))))});
+            this.dateEditLivraison.Properties.CalendarTimeProperties.CloseUpKey = new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.F4);
+            this.dateEditLivraison.Properties.CalendarTimeProperties.PopupBorderStyle = DevExpress.XtraEditors.Controls.PopupBorderStyles.Default;
             // 
             // comboBoxClients
             // 
@@ -197,25 +267,25 @@
             this.comboBoxClients.Name = "comboBoxClients";
             this.comboBoxClients.ValueMember = "id";
             // 
-            // labelControl4
+            // labelDateLivraison
             // 
-            resources.ApplyResources(this.labelControl4, "labelControl4");
-            this.labelControl4.Name = "labelControl4";
+            resources.ApplyResources(this.labelDateLivraison, "labelDateLivraison");
+            this.labelDateLivraison.Name = "labelDateLivraison";
             // 
-            // labelControl3
+            // labelAdresseLivraison
             // 
-            resources.ApplyResources(this.labelControl3, "labelControl3");
-            this.labelControl3.Name = "labelControl3";
+            resources.ApplyResources(this.labelAdresseLivraison, "labelAdresseLivraison");
+            this.labelAdresseLivraison.Name = "labelAdresseLivraison";
             // 
-            // labelControl2
+            // labelClient
             // 
-            resources.ApplyResources(this.labelControl2, "labelControl2");
-            this.labelControl2.Name = "labelControl2";
+            resources.ApplyResources(this.labelClient, "labelClient");
+            this.labelClient.Name = "labelClient";
             // 
-            // labelControl1
+            // labelStock
             // 
-            resources.ApplyResources(this.labelControl1, "labelControl1");
-            this.labelControl1.Name = "labelControl1";
+            resources.ApplyResources(this.labelStock, "labelStock");
+            this.labelStock.Name = "labelStock";
             // 
             // xtraTabControl1
             // 
@@ -360,14 +430,15 @@
             this.Name = "frmBdc";
             this.Ribbon = this.ribbon;
             this.StatusBar = this.ribbonStatusBar;
+            this.Load += new System.EventHandler(this.frmBdc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.memoEditAdresssLivraion.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditLivraison.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditLivraison.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
@@ -389,10 +460,10 @@
         private XtraBars.BarButtonItem barButtonItem1;
         private XtraEditors.GroupControl groupControl1;
         private System.Windows.Forms.ComboBox comboBoxClients;
-        private XtraEditors.LabelControl labelControl4;
-        private XtraEditors.LabelControl labelControl3;
-        private XtraEditors.LabelControl labelControl2;
-        private XtraEditors.LabelControl labelControl1;
+        private XtraEditors.LabelControl labelDateLivraison;
+        private XtraEditors.LabelControl labelAdresseLivraison;
+        private XtraEditors.LabelControl labelClient;
+        private XtraEditors.LabelControl labelStock;
         private XtraTab.XtraTabControl xtraTabControl1;
         private XtraTab.XtraTabPage xtraTabPage1;
         private XtraBars.StandaloneBarDockControl standaloneBarDockControl1;
@@ -407,12 +478,19 @@
         private XtraBars.BarButtonItem barButtonItem5;
         private XtraGrid.GridControl GCOrderLine;
         private XtraGrid.Views.Grid.GridView gridView1;
-        private XtraEditors.DateEdit dateEdit1;
+        private XtraEditors.DateEdit dateEditLivraison;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private XtraBars.BarButtonItem bbiSauvegarder;
-        private XtraEditors.MemoEdit memoEdit1;
+        private XtraEditors.MemoEdit memoEditAdresssLivraion;
         private XtraGrid.Columns.GridColumn colProduct;
         private XtraGrid.Columns.GridColumn colQuantity;
         private System.Windows.Forms.ComboBox comboBoxStock;
+        private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
+        private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
+        private XtraBars.BarButtonItem bbiFermer;
+        private XtraBars.BarButtonItem bbiEfaccer;
+        private XtraBars.BarButtonItem bbiSauvegarderFermer;
+        private XtraEditors.LabelControl labelPriorite;
+        private System.Windows.Forms.ComboBox comboBoxPriorite;
     }
 }

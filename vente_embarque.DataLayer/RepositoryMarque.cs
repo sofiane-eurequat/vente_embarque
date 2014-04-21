@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using DevExpress.Xpo;
 using vente_embarque.Core.Domain;
 using vente_embarque.Core.Domain.Query;
+using vente_embarque.DataLayer.Entities.Stock;
 using vente_embarque.Model;
 
 namespace vente_embarque.DataLayer
@@ -20,7 +21,18 @@ namespace vente_embarque.DataLayer
 
         public IEnumerable<Marque> FindAll()
         {
-            throw new NotImplementedException();
+            var listeMarque = new List<Marque>();
+            var config = new AppSettingsReader();
+            using (
+                var uow = new UnitOfWork
+                {
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
+                })
+            {
+                var Marques = new XPCollection<XpoMarque>(uow);
+                listeMarque.AddRange(Marques.Select(Map.MapInverse.MapMarque));
+            }
+            return listeMarque;
         }
 
         public IEnumerable<Marque> FindBy(Query query)

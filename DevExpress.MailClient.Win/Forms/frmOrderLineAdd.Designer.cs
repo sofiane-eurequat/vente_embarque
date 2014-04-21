@@ -1,6 +1,6 @@
 ﻿namespace DevExpress.MailClient.Win.Forms
 {
-    partial class frmOrderLine
+    partial class frmOrderLineAdd
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmOrderLine));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmOrderLineAdd));
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiSauvegarderFermer = new DevExpress.XtraBars.BarButtonItem();
             this.bbiNouveau = new DevExpress.XtraBars.BarButtonItem();
@@ -45,17 +45,16 @@
             this.applicationMenu1 = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.textEditQuantité = new DevExpress.XtraEditors.TextEdit();
-            this.textEditProduit = new DevExpress.XtraEditors.TextEdit();
             this.comboBoxStock = new System.Windows.Forms.ComboBox();
             this.labelQuantité = new DevExpress.XtraEditors.LabelControl();
             this.labelProduit = new DevExpress.XtraEditors.LabelControl();
             this.labelStock = new DevExpress.XtraEditors.LabelControl();
+            this.comboBoxProduit = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEditQuantité.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditProduit.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
@@ -79,7 +78,7 @@
             // 
             // bbiSauvegarderFermer
             // 
-            this.bbiSauvegarderFermer.Caption = "Sauvergarder et fermer";
+            this.bbiSauvegarderFermer.Caption = "Sauvegarder et fermer";
             this.bbiSauvegarderFermer.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvegarderFermer.Glyph")));
             this.bbiSauvegarderFermer.Id = 1;
             this.bbiSauvegarderFermer.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvegarderFermer.LargeGlyph")));
@@ -163,7 +162,7 @@
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 418);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 303);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
             this.ribbonStatusBar.Size = new System.Drawing.Size(617, 31);
@@ -175,15 +174,15 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.comboBoxProduit);
             this.groupControl1.Controls.Add(this.textEditQuantité);
-            this.groupControl1.Controls.Add(this.textEditProduit);
             this.groupControl1.Controls.Add(this.comboBoxStock);
             this.groupControl1.Controls.Add(this.labelQuantité);
             this.groupControl1.Controls.Add(this.labelProduit);
             this.groupControl1.Controls.Add(this.labelStock);
-            this.groupControl1.Location = new System.Drawing.Point(0, 150);
+            this.groupControl1.Location = new System.Drawing.Point(0, 163);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(617, 110);
+            this.groupControl1.Size = new System.Drawing.Size(617, 96);
             this.groupControl1.TabIndex = 4;
             this.groupControl1.Text = "Information sur la ligne de commande";
             // 
@@ -194,14 +193,6 @@
             this.textEditQuantité.Name = "textEditQuantité";
             this.textEditQuantité.Size = new System.Drawing.Size(80, 20);
             this.textEditQuantité.TabIndex = 19;
-            // 
-            // textEditProduit
-            // 
-            this.textEditProduit.Location = new System.Drawing.Point(281, 44);
-            this.textEditProduit.MenuManager = this.ribbon;
-            this.textEditProduit.Name = "textEditProduit";
-            this.textEditProduit.Size = new System.Drawing.Size(147, 20);
-            this.textEditProduit.TabIndex = 18;
             // 
             // comboBoxStock
             // 
@@ -237,27 +228,36 @@
             this.labelStock.TabIndex = 4;
             this.labelStock.Text = "Stock";
             // 
-            // frmOrderLine
+            // comboBoxProduit
+            // 
+            this.comboBoxProduit.DisplayMember = "id";
+            this.comboBoxProduit.FormattingEnabled = true;
+            this.comboBoxProduit.Location = new System.Drawing.Point(290, 43);
+            this.comboBoxProduit.Name = "comboBoxProduit";
+            this.comboBoxProduit.Size = new System.Drawing.Size(147, 21);
+            this.comboBoxProduit.TabIndex = 20;
+            this.comboBoxProduit.ValueMember = "id";
+            // 
+            // frmOrderLineAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(617, 449);
+            this.ClientSize = new System.Drawing.Size(617, 334);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Name = "frmOrderLine";
+            this.Name = "frmOrderLineAdd";
             this.Ribbon = this.ribbon;
             this.StatusBar = this.ribbonStatusBar;
-            this.Text = "Ligne de commande";
+            this.Text = "Ajouter une ligne de commande";
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEditQuantité.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditProduit.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -275,7 +275,6 @@
         private XtraEditors.LabelControl labelQuantité;
         private XtraEditors.LabelControl labelProduit;
         private XtraEditors.LabelControl labelStock;
-        private XtraEditors.TextEdit textEditProduit;
         private XtraEditors.TextEdit textEditQuantité;
         private XtraBars.BarButtonItem bbiNouveau;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
@@ -284,5 +283,6 @@
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private XtraBars.BarButtonItem bbiFermer;
         private XtraBars.BarButtonItem bbiEfaccer;
+        private System.Windows.Forms.ComboBox comboBoxProduit;
     }
 }

@@ -48,7 +48,7 @@ namespace vente_embarque.DataLayer.Map
             };
         }
 
-        private static XpoProduct MapProduct(Product product, UnitOfWork uow)
+        public static XpoProduct MapProduct(Product product, UnitOfWork uow)
         {
             return new XpoProduct(uow)
                 {

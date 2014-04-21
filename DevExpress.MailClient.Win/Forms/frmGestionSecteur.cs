@@ -83,5 +83,14 @@ namespace DevExpress.MailClient.Win.Forms
         {
 
         }
+
+        private void bbiEffacer_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            textEditSecteur.Text = "";
+            comboBoxClients.Text = "";
+            comboBoxWilaya.Text = "";
+            comboBoxCommune.Text = "";
+
+        }
     }
 }

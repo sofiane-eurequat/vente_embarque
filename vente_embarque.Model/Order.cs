@@ -23,7 +23,7 @@ namespace vente_embarque.Model
     }
     public static class FactoryOrder
     {
-        public static Order CreateOrder(Stock stock,Client client,IEnumerable<OrderLine> orderLines=null,Priorite priorite=Priorite.Normal,DateTime deliveryDate=default(DateTime))
+        public static Order CreateOrder(Stock stock,Client client,IEnumerable<OrderLine> orderLines=null,Priorite priorite=Priorite.Normal, DateTime deliveryDate=default(DateTime))
         {
             var order = new Order {id = Guid.NewGuid(),Client = client,Priorite = priorite};
             

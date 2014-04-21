@@ -40,8 +40,6 @@
             this.bbiEffacer = new DevExpress.XtraBars.BarButtonItem();
             this.bbiRafrichir = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiPrecedent = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiSuivant = new DevExpress.XtraBars.BarButtonItem();
             this.bbiFermer = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
@@ -51,7 +49,6 @@
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
@@ -120,8 +117,6 @@
             this.bbiEffacer,
             this.bbiRafrichir,
             this.barButtonItem10,
-            this.bbiPrecedent,
-            this.bbiSuivant,
             this.bbiFermer,
             this.barButtonItem13,
             this.barButtonItem14});
@@ -193,6 +188,7 @@
             this.bbiEffacer.Id = 8;
             this.bbiEffacer.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiEffacer.LargeGlyph")));
             this.bbiEffacer.Name = "bbiEffacer";
+            this.bbiEffacer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiEffacer_ItemClick);
             // 
             // bbiRafrichir
             // 
@@ -209,22 +205,6 @@
             this.barButtonItem10.Id = 12;
             this.barButtonItem10.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.LargeGlyph")));
             this.barButtonItem10.Name = "barButtonItem10";
-            // 
-            // bbiPrecedent
-            // 
-            resources.ApplyResources(this.bbiPrecedent, "bbiPrecedent");
-            this.bbiPrecedent.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiPrecedent.Glyph")));
-            this.bbiPrecedent.Id = 13;
-            this.bbiPrecedent.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiPrecedent.LargeGlyph")));
-            this.bbiPrecedent.Name = "bbiPrecedent";
-            // 
-            // bbiSuivant
-            // 
-            resources.ApplyResources(this.bbiSuivant, "bbiSuivant");
-            this.bbiSuivant.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiSuivant.Glyph")));
-            this.bbiSuivant.Id = 14;
-            this.bbiSuivant.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiSuivant.LargeGlyph")));
-            this.bbiSuivant.Name = "bbiSuivant";
             // 
             // bbiFermer
             // 
@@ -257,7 +237,6 @@
             this.ribbonPageGroup3,
             this.ribbonPageGroup4,
             this.ribbonPageGroup5,
-            this.ribbonPageGroup6,
             this.ribbonPageGroup7});
             this.ribbonPage1.Name = "ribbonPage1";
             resources.ApplyResources(this.ribbonPage1, "ribbonPage1");
@@ -303,15 +282,6 @@
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             this.ribbonPageGroup5.ShowCaptionButton = false;
             resources.ApplyResources(this.ribbonPageGroup5, "ribbonPageGroup5");
-            // 
-            // ribbonPageGroup6
-            // 
-            this.ribbonPageGroup6.AllowTextClipping = false;
-            this.ribbonPageGroup6.ItemLinks.Add(this.bbiPrecedent);
-            this.ribbonPageGroup6.ItemLinks.Add(this.bbiSuivant);
-            this.ribbonPageGroup6.Name = "ribbonPageGroup6";
-            this.ribbonPageGroup6.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonPageGroup6, "ribbonPageGroup6");
             // 
             // ribbonPageGroup7
             // 
@@ -621,12 +591,9 @@
         private XtraBars.BarButtonItem bbiAnnuler;
         private XtraBars.BarButtonItem bbiEffacer;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
-        private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
         private XtraBars.BarButtonItem bbiRafrichir;
         private XtraBars.BarButtonItem barButtonItem10;
-        private XtraBars.BarButtonItem bbiPrecedent;
-        private XtraBars.BarButtonItem bbiSuivant;
         private XtraBars.BarButtonItem bbiFermer;
         private XtraEditors.GroupControl groupControl1;
         private XtraEditors.LabelControl labelCommune;

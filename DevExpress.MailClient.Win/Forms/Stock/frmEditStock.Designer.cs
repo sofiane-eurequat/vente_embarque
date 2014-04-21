@@ -25,8 +25,8 @@
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEditStock));
-            DevExpress.XtraSpellChecker.OptionsSpelling optionsSpelling3 = new DevExpress.XtraSpellChecker.OptionsSpelling();
             DevExpress.XtraSpellChecker.OptionsSpelling optionsSpelling1 = new DevExpress.XtraSpellChecker.OptionsSpelling();
+            DevExpress.XtraSpellChecker.OptionsSpelling optionsSpelling2 = new DevExpress.XtraSpellChecker.OptionsSpelling();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.applicationMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.fileSaveItem1 = new DevExpress.XtraBars.BarButtonItem();
@@ -1545,7 +1545,7 @@
             this.textEdit1.MenuManager = this.ribbonControl;
             this.textEdit1.Name = "textEdit1";
             this.spellChecker1.SetShowSpellCheckMenu(this.textEdit1, true);
-            this.spellChecker1.SetSpellCheckerOptions(this.textEdit1, optionsSpelling3);
+            this.spellChecker1.SetSpellCheckerOptions(this.textEdit1, optionsSpelling1);
             // 
             // textEdit4
             // 
@@ -1553,7 +1553,7 @@
             this.textEdit4.MenuManager = this.ribbonControl;
             this.textEdit4.Name = "textEdit4";
             this.spellChecker1.SetShowSpellCheckMenu(this.textEdit4, true);
-            this.spellChecker1.SetSpellCheckerOptions(this.textEdit4, optionsSpelling1);
+            this.spellChecker1.SetSpellCheckerOptions(this.textEdit4, optionsSpelling2);
             // 
             // richEditBarController1
             // 

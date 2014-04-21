@@ -63,7 +63,6 @@
             // 
             resources.ApplyResources(this.ucMailViewer1, "ucMailViewer1");
             this.ucMailViewer1.Name = "ucMailViewer1";
-            //this.ucMailViewer1.ZoomFactor = 1F;
             // 
             // gridControl1
             // 
@@ -185,12 +184,12 @@
             this.splitterItem1.Name = "splitterItem1";
             this.splitterItem1.Size = new System.Drawing.Size(5, 525);
             // 
-            // Feeds
+            // BDC
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.layoutControl1);
-            this.Name = "Feeds";
+            this.Name = "BDC";
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();

@@ -24,7 +24,7 @@ namespace vente_embarque.Test
         private Mock<IRepository<Sector, Guid>> sectorMock2;
         private Mock<IRepository<Product, Guid>> productMock;
         [SetUp]
-        public void SetupStockMock()
+      /*  public void SetupStockMock()
         {
 
             InitDal.Init();
@@ -81,7 +81,7 @@ namespace vente_embarque.Test
                     }
                 );
 
-        }
+        }*/
 
         [Test]
         public void CanCreateSecteur()
@@ -118,16 +118,16 @@ namespace vente_embarque.Test
             const string wilaya = "Tlemcen";
             const string commune = "Tlemcen";
             Sector secteur = FactorySector.CreateSector(nomSect, wilaya, commune);
-            var rs = new RepositorySector();
-            rs.Save(secteur);
-            const string nom = "NomClient1";
+            //var rs = new RepositorySector();
+            //rs.Save(secteur);
+            const string nom = "NomClient";
             const string prenom = "PrenomClient1";
             //un secteur doit tjr etre defini mmee si il doit etre nommé indéfini
             var client = FactorySector.CreateClient(nom, prenom, secteur);
             var rc = new RepositoryClient();
             rc.Save(client);
         }
-
+        /*
         [Test]
         public void CanCreateBonCommande()
         {
@@ -168,17 +168,21 @@ namespace vente_embarque.Test
             //test de la sauvegarde dans une base de données 
             var repStock = new RepositoryStock();
             repStock.Save(stock);
-        }
+        }*/
 
         [Test]
         public void CanCreateProduct()
         {
-            
+            const string productname = "produit1";
+            const int quantiteMinimale = 10;
+            var marque = new RepositoryMarque().FindAll().First();
+            var category = new RepositoryCategory().FindAll().First();
+            var product = FactoryProduct.CreateProduct(productname,quantiteMinimale,category,marque);
+            Assert.AreEqual(product.Name, "produit1");
+            Assert.AreEqual(product.QuantiteMin, 10);
+            //new RepositoryProduct().Save(product);
         }
-
-
-
-
+        /*
         [Test]
         public void CanCreateStock()
         {
@@ -196,7 +200,7 @@ namespace vente_embarque.Test
             var ligne1 = FactoryStock.CreateProductLine(stock,produit1, 50);
             var ligne2 = FactoryStock.CreateProductLine(stock,produit2, 20);
             var listeProduit = productMock.Object.FindBy(new Query()).ToList();
-
+        
             var ligne3 = FactoryStock.CreateProductLine(stock, listeProduit[1], 20);
 
             Assert.AreEqual(stock.ProductLines.Count,3);
@@ -205,8 +209,8 @@ namespace vente_embarque.Test
             /*************************************************/
 
             //new RepositoryStock().Save(stock);
-        }
-
+      //  }
+    /*
         [Test]
         public void GetProductminimal()
         {
@@ -224,7 +228,7 @@ namespace vente_embarque.Test
             Assert.AreEqual(listProduct.Count,1);
 
         }
-
+        */
 
 
         [Test]

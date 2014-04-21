@@ -946,6 +946,27 @@
   <data name="ribbonControl.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="NouveauRibbonPageGroup1.Text" xml:space="preserve">
+    <value>Nouveau</value>
+  </data>
+  <data name="SauvegarderibbonPageGroup.Text" xml:space="preserve">
+    <value>Sauvegarder</value>
+  </data>
+  <data name="EditionRibbonPageGroup1.Text" xml:space="preserve">
+    <value>Editer</value>
+  </data>
+  <data name="EditionEnregistremetRibbonPageGroup.Text" xml:space="preserve">
+    <value>Reinitialiser</value>
+  </data>
+  <data name="ribbonPageGroup2.Text" xml:space="preserve">
+    <value>Vue</value>
+  </data>
+  <data name="ribbonPageGroup3.Text" xml:space="preserve">
+    <value>Navigation Enregistrement</value>
+  </data>
+  <data name="RPGFermer.Text" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
   <data name="homeRibbonPage1.Text" xml:space="preserve">
     <value>HOME</value>
   </data>
@@ -990,27 +1011,6 @@
   </data>
   <data name="&gt;&gt;ribbonControl.ZOrder" xml:space="preserve">
     <value>7</value>
-  </data>
-  <data name="NouveauRibbonPageGroup1.Text" xml:space="preserve">
-    <value>Nouveau</value>
-  </data>
-  <data name="SauvegarderibbonPageGroup.Text" xml:space="preserve">
-    <value>Sauvegarder</value>
-  </data>
-  <data name="EditionRibbonPageGroup1.Text" xml:space="preserve">
-    <value>Editer</value>
-  </data>
-  <data name="EditionEnregistremetRibbonPageGroup.Text" xml:space="preserve">
-    <value>Reinitialiser</value>
-  </data>
-  <data name="ribbonPageGroup2.Text" xml:space="preserve">
-    <value>Vue</value>
-  </data>
-  <data name="ribbonPageGroup3.Text" xml:space="preserve">
-    <value>Navigation Enregistrement</value>
-  </data>
-  <data name="RPGFermer.Text" xml:space="preserve">
-    <value>Fermer</value>
   </data>
   <metadata name="spellChecker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>331, 17</value>
@@ -1071,102 +1071,6 @@
   </data>
   <data name="showInsertTableCellsFormItem1.Caption" xml:space="preserve">
     <value>Insert Cells</value>
-  </data>
-  <data name="&gt;&gt;comboBoxCommune.Name" xml:space="preserve">
-    <value>comboBoxCommune</value>
-  </data>
-  <data name="&gt;&gt;comboBoxCommune.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBoxCommune.Parent" xml:space="preserve">
-    <value>GCInfoGeneral</value>
-  </data>
-  <data name="&gt;&gt;comboBoxCommune.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;comboBoxWilaya.Name" xml:space="preserve">
-    <value>comboBoxWilaya</value>
-  </data>
-  <data name="&gt;&gt;comboBoxWilaya.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBoxWilaya.Parent" xml:space="preserve">
-    <value>GCInfoGeneral</value>
-  </data>
-  <data name="&gt;&gt;comboBoxWilaya.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;labelAdress.Name" xml:space="preserve">
-    <value>labelAdress</value>
-  </data>
-  <data name="&gt;&gt;labelAdress.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;labelAdress.Parent" xml:space="preserve">
-    <value>GCInfoGeneral</value>
-  </data>
-  <data name="&gt;&gt;labelAdress.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;labelWilaya.Name" xml:space="preserve">
-    <value>labelWilaya</value>
-  </data>
-  <data name="&gt;&gt;labelWilaya.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;labelWilaya.Parent" xml:space="preserve">
-    <value>GCInfoGeneral</value>
-  </data>
-  <data name="&gt;&gt;labelWilaya.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;labelComune.Name" xml:space="preserve">
-    <value>labelComune</value>
-  </data>
-  <data name="&gt;&gt;labelComune.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;labelComune.Parent" xml:space="preserve">
-    <value>GCInfoGeneral</value>
-  </data>
-  <data name="&gt;&gt;labelComune.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;labelNameStock.Name" xml:space="preserve">
-    <value>labelNameStock</value>
-  </data>
-  <data name="&gt;&gt;labelNameStock.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;labelNameStock.Parent" xml:space="preserve">
-    <value>GCInfoGeneral</value>
-  </data>
-  <data name="&gt;&gt;labelNameStock.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="GCInfoGeneral.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 150</value>
-  </data>
-  <data name="GCInfoGeneral.Size" type="System.Drawing.Size, System.Drawing">
-    <value>784, 114</value>
-  </data>
-  <data name="GCInfoGeneral.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="GCInfoGeneral.Text" xml:space="preserve">
-    <value>Information Generale</value>
-  </data>
-  <data name="&gt;&gt;GCInfoGeneral.Name" xml:space="preserve">
-    <value>GCInfoGeneral</value>
-  </data>
-  <data name="&gt;&gt;GCInfoGeneral.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;GCInfoGeneral.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;GCInfoGeneral.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="comboBoxCommune.Location" type="System.Drawing.Point, System.Drawing">
     <value>101, 80</value>
@@ -1306,51 +1210,33 @@
   <data name="&gt;&gt;labelNameStock.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="GCInfoGeneral.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 150</value>
+  </data>
+  <data name="GCInfoGeneral.Size" type="System.Drawing.Size, System.Drawing">
+    <value>784, 114</value>
+  </data>
+  <data name="GCInfoGeneral.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="GCInfoGeneral.Text" xml:space="preserve">
+    <value>Information Generale</value>
+  </data>
+  <data name="&gt;&gt;GCInfoGeneral.Name" xml:space="preserve">
+    <value>GCInfoGeneral</value>
+  </data>
+  <data name="&gt;&gt;GCInfoGeneral.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;GCInfoGeneral.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GCInfoGeneral.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="communesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 56</value>
   </metadata>
-  <data name="&gt;&gt;GCLigneStock.Name" xml:space="preserve">
-    <value>GCLigneStock</value>
-  </data>
-  <data name="&gt;&gt;GCLigneStock.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;GCLigneStock.Parent" xml:space="preserve">
-    <value>xtpLigneProduit</value>
-  </data>
-  <data name="&gt;&gt;GCLigneStock.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;standaloneBarDockControl1.Name" xml:space="preserve">
-    <value>standaloneBarDockControl1</value>
-  </data>
-  <data name="&gt;&gt;standaloneBarDockControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.StandaloneBarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;standaloneBarDockControl1.Parent" xml:space="preserve">
-    <value>xtpLigneProduit</value>
-  </data>
-  <data name="&gt;&gt;standaloneBarDockControl1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="xtpLigneProduit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>783, 154</value>
-  </data>
-  <data name="xtpLigneProduit.Text" xml:space="preserve">
-    <value>Contenue du stock</value>
-  </data>
-  <data name="&gt;&gt;xtpLigneProduit.Name" xml:space="preserve">
-    <value>xtpLigneProduit</value>
-  </data>
-  <data name="&gt;&gt;xtpLigneProduit.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;xtpLigneProduit.Parent" xml:space="preserve">
-    <value>xtcLignesProduit</value>
-  </data>
-  <data name="&gt;&gt;xtpLigneProduit.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <metadata name="modelViewProductLineBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>583, 17</value>
   </metadata>
@@ -1434,6 +1320,24 @@
   </data>
   <data name="&gt;&gt;standaloneBarDockControl1.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="xtpLigneProduit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>783, 154</value>
+  </data>
+  <data name="xtpLigneProduit.Text" xml:space="preserve">
+    <value>Contenue du stock</value>
+  </data>
+  <data name="&gt;&gt;xtpLigneProduit.Name" xml:space="preserve">
+    <value>xtpLigneProduit</value>
+  </data>
+  <data name="&gt;&gt;xtpLigneProduit.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtpLigneProduit.Parent" xml:space="preserve">
+    <value>xtcLignesProduit</value>
+  </data>
+  <data name="&gt;&gt;xtpLigneProduit.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="xtcLignesProduit.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 280</value>

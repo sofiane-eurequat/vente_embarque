@@ -73,7 +73,17 @@ namespace vente_embarque.DataLayer
 
         public void Save(Product entity)
         {
-            throw new NotImplementedException();
+            var config = new AppSettingsReader();
+
+            using (
+                var uow = new UnitOfWork
+                {
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
+                })
+            {
+                Map.Map.MapProduct(entity, uow);
+                uow.CommitChanges();
+            }
         }
 
         public void Add(Product entity)
