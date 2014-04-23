@@ -76,7 +76,17 @@ namespace vente_embarque.DataLayer
 
         public void Remove(AgentTerrain entity)
         {
-            throw new NotImplementedException();
+            var config = new AppSettingsReader();
+            using (
+                var uow = new UnitOfWork
+                {
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
+                })
+            {
+                var repositoryAgentTerrain = new RepositoryAgentTerrain();
+                var sector = repositoryAgentTerrain.FindBy(entity.id);
+                uow.Delete(sector);
+            }
         }
     }
 }

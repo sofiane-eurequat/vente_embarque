@@ -76,7 +76,17 @@ namespace vente_embarque.DataLayer
 
         public void Remove(Category entity)
         {
-            throw new NotImplementedException();
+            var config = new AppSettingsReader();
+            using (
+                var uow = new UnitOfWork
+                {
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
+                })
+            {
+                var repositoryCategory = new RepositoryCategory();
+                var category = repositoryCategory.FindBy(entity.id);
+                uow.Delete(category);
+            }
         }
     }
 }

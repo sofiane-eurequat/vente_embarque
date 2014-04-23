@@ -246,8 +246,6 @@ namespace vente_embarque.Test
             var sector = sectorRepository.FindBy(new Query()).First();
             var client = sector.GetClient("NomClient1");
 
-            
-
 
             var orders = new List<OrderLine>();
             OrderLine orderLine = FactoryOrder.CreateOrderLine(stock,"product1", 20);
@@ -310,6 +308,9 @@ namespace vente_embarque.Test
             const string wilaya = "Tlemcen";
             const string commune = "Tlemcen";
             var sector = FactorySector.CreateSector(nom, wilaya, commune);
+            Assert.AreEqual(sector.Name, nom);
+            Assert.AreEqual(sector.Wilaya, wilaya);
+            Assert.AreEqual(sector.Commune, commune);
             var rs = new RepositorySector();
             rs.Save(sector);
         }

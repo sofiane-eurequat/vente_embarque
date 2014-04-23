@@ -76,7 +76,17 @@ namespace vente_embarque.DataLayer
 
         public void Remove(Marque entity)
         {
-            throw new NotImplementedException();
+            var config = new AppSettingsReader();
+            using (
+                var uow = new UnitOfWork
+                {
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
+                })
+            {
+                var repositoryMarque = new RepositoryMarque();
+                var marque = repositoryMarque.FindBy(entity.id);
+                uow.Delete(marque);
+            }
         }
     }
 }

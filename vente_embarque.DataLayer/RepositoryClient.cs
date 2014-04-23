@@ -76,7 +76,17 @@ namespace vente_embarque.DataLayer
 
         public void Remove(Client entity)
         {
-            throw new NotImplementedException();
+            var config = new AppSettingsReader();
+            using (
+                var uow = new UnitOfWork
+                {
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
+                })
+            {
+                var repositoryClient = new RepositoryClient();
+                var client = repositoryClient.FindBy(entity.id);
+                uow.Delete(client);
+            }
         }
     }
 }

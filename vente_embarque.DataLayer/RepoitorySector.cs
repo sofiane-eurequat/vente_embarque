@@ -89,8 +89,8 @@ namespace vente_embarque.DataLayer
                     })
             {
                 var repositorySector = new RepositorySector();
-                var sector = repositorySector.FindBy(entity.id);
-                uow.Delete(sector);
+                var agentTerrain = repositorySector.FindBy(entity.id);
+                uow.Delete(agentTerrain);
             }
         }
     }
