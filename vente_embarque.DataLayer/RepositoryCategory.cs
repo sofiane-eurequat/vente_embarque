@@ -16,7 +16,16 @@ namespace vente_embarque.DataLayer
     {
         public Category FindBy(Guid id)
         {
-            throw new NotImplementedException();
+            var config = new AppSettingsReader();
+            using (
+                var uow = new UnitOfWork
+                {
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
+                })
+            {
+                var category = uow.GetObjectByKey<Category>(id);
+                return category;
+            }
         }
 
         public IEnumerable<Category> FindAll()
@@ -83,9 +92,10 @@ namespace vente_embarque.DataLayer
                     ConnectionString = ((string)config.GetValue("connect", typeof(string)))
                 })
             {
-                var repositoryCategory = new RepositoryCategory();
-                var category = repositoryCategory.FindBy(entity.id);
-                uow.Delete(category);
+                //var repositoryCategory = new RepositoryCategory();
+                //var category = repositoryCategory.FindBy(entity.id);
+               // entity.Delete();
+                uow.CommitChanges();
             }
         }
     }

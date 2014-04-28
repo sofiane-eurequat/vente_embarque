@@ -333,5 +333,14 @@ namespace vente_embarque.Test
             var rc = new RepositoryCategory();
             rc.Save(marque);
         }
+
+        [Test]
+        public void CanDeleteCategorydb()
+        {
+            var rc = new RepositoryCategory();
+            var categ = rc.FindAll().First();
+            
+            rc.Remove(categ);
+        }
     }
 }

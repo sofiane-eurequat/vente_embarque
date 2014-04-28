@@ -92,5 +92,10 @@ namespace DevExpress.MailClient.Win.Forms
             comboBoxCommune.Text = "";
 
         }
+
+        private void bbiSuppAgentTerrain_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
     }
 }

@@ -228,6 +228,10 @@
     <Compile Include="Controls\ucMessageInfo.Designer.cs">
       <DependentUpon>ucMessageInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmAgentTerrainAdd.cs" />
+    <Compile Include="Forms\frmAgentTerrainAdd.Designer.cs">
+      <DependentUpon>frmAgentTerrainAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmBdc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -393,6 +397,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ucMessageInfo.resx">
       <DependentUpon>ucMessageInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAgentTerrainAdd.resx">
+      <DependentUpon>frmAgentTerrainAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmBdc.resx">
       <DependentUpon>frmBdc.cs</DependentUpon>

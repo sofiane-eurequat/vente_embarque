@@ -78,8 +78,8 @@
             this.bar1 = new DevExpress.XtraBars.Bar();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar7 = new DevExpress.XtraBars.Bar();
-            this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem16 = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiAddAgentTerrain = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSuppAgentTerrain = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
@@ -478,8 +478,8 @@
             this.barManager1.DockControls.Add(this.standaloneBarDockControl1);
             this.barManager1.Form = this;
             this.barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.barButtonItem15,
-            this.barButtonItem16});
+            this.bbiAddAgentTerrain,
+            this.bbiSuppAgentTerrain});
             this.barManager1.MaxItemId = 4;
             // 
             // bar7
@@ -490,28 +490,29 @@
             this.bar7.DockStyle = DevExpress.XtraBars.BarDockStyle.Standalone;
             this.bar7.FloatLocation = new System.Drawing.Point(306, 419);
             this.bar7.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem15),
-            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem16)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiAddAgentTerrain),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSuppAgentTerrain)});
             this.bar7.OptionsBar.AllowQuickCustomization = false;
             this.bar7.OptionsBar.DrawDragBorder = false;
             this.bar7.StandaloneBarDockControl = this.standaloneBarDockControl1;
             resources.ApplyResources(this.bar7, "bar7");
             // 
-            // barButtonItem15
+            // bbiAddAgentTerrain
             // 
-            resources.ApplyResources(this.barButtonItem15, "barButtonItem15");
-            this.barButtonItem15.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem15.Glyph")));
-            this.barButtonItem15.Id = 2;
-            this.barButtonItem15.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem15.LargeGlyph")));
-            this.barButtonItem15.Name = "barButtonItem15";
+            resources.ApplyResources(this.bbiAddAgentTerrain, "bbiAddAgentTerrain");
+            this.bbiAddAgentTerrain.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiAddAgentTerrain.Glyph")));
+            this.bbiAddAgentTerrain.Id = 2;
+            this.bbiAddAgentTerrain.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiAddAgentTerrain.LargeGlyph")));
+            this.bbiAddAgentTerrain.Name = "bbiAddAgentTerrain";
             // 
-            // barButtonItem16
+            // bbiSuppAgentTerrain
             // 
-            resources.ApplyResources(this.barButtonItem16, "barButtonItem16");
-            this.barButtonItem16.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem16.Glyph")));
-            this.barButtonItem16.Id = 3;
-            this.barButtonItem16.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem16.LargeGlyph")));
-            this.barButtonItem16.Name = "barButtonItem16";
+            resources.ApplyResources(this.bbiSuppAgentTerrain, "bbiSuppAgentTerrain");
+            this.bbiSuppAgentTerrain.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiSuppAgentTerrain.Glyph")));
+            this.bbiSuppAgentTerrain.Id = 3;
+            this.bbiSuppAgentTerrain.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiSuppAgentTerrain.LargeGlyph")));
+            this.bbiSuppAgentTerrain.Name = "bbiSuppAgentTerrain";
+            this.bbiSuppAgentTerrain.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiSuppAgentTerrain_ItemClick);
             // 
             // barDockControlTop
             // 
@@ -626,8 +627,8 @@
         private XtraBars.BarDockControl barDockControlLeft;
         private XtraBars.BarDockControl barDockControlRight;
         private XtraBars.Bar bar7;
-        private XtraBars.BarButtonItem barButtonItem15;
-        private XtraBars.BarButtonItem barButtonItem16;
+        private XtraBars.BarButtonItem bbiAddAgentTerrain;
+        private XtraBars.BarButtonItem bbiSuppAgentTerrain;
         private XtraBars.Ribbon.ApplicationMenu applicationMenu1;
         private XtraRichEdit.UI.RichEditBarController richEditBarController1;
         private XtraBars.BarButtonItem barButtonItem13;

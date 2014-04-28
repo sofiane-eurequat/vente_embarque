@@ -44,12 +44,12 @@
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.applicationMenu1 = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.comboBoxProduit = new System.Windows.Forms.ComboBox();
             this.textEditQuantité = new DevExpress.XtraEditors.TextEdit();
             this.comboBoxStock = new System.Windows.Forms.ComboBox();
             this.labelQuantité = new DevExpress.XtraEditors.LabelControl();
             this.labelProduit = new DevExpress.XtraEditors.LabelControl();
             this.labelStock = new DevExpress.XtraEditors.LabelControl();
-            this.comboBoxProduit = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -186,6 +186,16 @@
             this.groupControl1.TabIndex = 4;
             this.groupControl1.Text = "Information sur la ligne de commande";
             // 
+            // comboBoxProduit
+            // 
+            this.comboBoxProduit.DisplayMember = "id";
+            this.comboBoxProduit.FormattingEnabled = true;
+            this.comboBoxProduit.Location = new System.Drawing.Point(290, 43);
+            this.comboBoxProduit.Name = "comboBoxProduit";
+            this.comboBoxProduit.Size = new System.Drawing.Size(147, 21);
+            this.comboBoxProduit.TabIndex = 20;
+            this.comboBoxProduit.ValueMember = "id";
+            // 
             // textEditQuantité
             // 
             this.textEditQuantité.Location = new System.Drawing.Point(516, 44);
@@ -228,16 +238,6 @@
             this.labelStock.TabIndex = 4;
             this.labelStock.Text = "Stock";
             // 
-            // comboBoxProduit
-            // 
-            this.comboBoxProduit.DisplayMember = "id";
-            this.comboBoxProduit.FormattingEnabled = true;
-            this.comboBoxProduit.Location = new System.Drawing.Point(290, 43);
-            this.comboBoxProduit.Name = "comboBoxProduit";
-            this.comboBoxProduit.Size = new System.Drawing.Size(147, 21);
-            this.comboBoxProduit.TabIndex = 20;
-            this.comboBoxProduit.ValueMember = "id";
-            // 
             // frmOrderLineAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -250,6 +250,7 @@
             this.KeyPreview = true;
             this.Name = "frmOrderLineAdd";
             this.Ribbon = this.ribbon;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StatusBar = this.ribbonStatusBar;
             this.Text = "Ajouter une ligne de commande";
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();

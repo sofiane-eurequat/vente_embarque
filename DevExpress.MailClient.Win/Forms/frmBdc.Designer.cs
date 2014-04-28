@@ -64,8 +64,8 @@
             this.standaloneBarDockControl1 = new DevExpress.XtraBars.StandaloneBarDockControl();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar4 = new DevExpress.XtraBars.Bar();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiAddOrderLine = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSuppOrderLine = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
@@ -351,8 +351,8 @@
             this.barManager1.Form = this;
             this.barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.barButtonItem2,
-            this.barButtonItem4,
-            this.barButtonItem5});
+            this.bbiAddOrderLine,
+            this.bbiSuppOrderLine});
             this.barManager1.MaxItemId = 4;
             // 
             // bar4
@@ -363,30 +363,31 @@
             this.bar4.DockStyle = DevExpress.XtraBars.BarDockStyle.Standalone;
             this.bar4.FloatLocation = new System.Drawing.Point(102, 416);
             this.bar4.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem4),
-            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem5)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiAddOrderLine),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bbiSuppOrderLine)});
             this.bar4.Offset = 1;
             this.bar4.OptionsBar.AllowQuickCustomization = false;
             this.bar4.OptionsBar.DrawDragBorder = false;
             this.bar4.StandaloneBarDockControl = this.standaloneBarDockControl1;
             resources.ApplyResources(this.bar4, "bar4");
             // 
-            // barButtonItem4
+            // bbiAddOrderLine
             // 
-            resources.ApplyResources(this.barButtonItem4, "barButtonItem4");
-            this.barButtonItem4.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.Glyph")));
-            this.barButtonItem4.Id = 2;
-            this.barButtonItem4.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.LargeGlyph")));
-            this.barButtonItem4.Name = "barButtonItem4";
-            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
+            resources.ApplyResources(this.bbiAddOrderLine, "bbiAddOrderLine");
+            this.bbiAddOrderLine.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiAddOrderLine.Glyph")));
+            this.bbiAddOrderLine.Id = 2;
+            this.bbiAddOrderLine.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiAddOrderLine.LargeGlyph")));
+            this.bbiAddOrderLine.Name = "bbiAddOrderLine";
+            this.bbiAddOrderLine.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiAddOrderLine_ItemClick);
             // 
-            // barButtonItem5
+            // bbiSuppOrderLine
             // 
-            resources.ApplyResources(this.barButtonItem5, "barButtonItem5");
-            this.barButtonItem5.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.Glyph")));
-            this.barButtonItem5.Id = 3;
-            this.barButtonItem5.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.LargeGlyph")));
-            this.barButtonItem5.Name = "barButtonItem5";
+            resources.ApplyResources(this.bbiSuppOrderLine, "bbiSuppOrderLine");
+            this.bbiSuppOrderLine.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiSuppOrderLine.Glyph")));
+            this.bbiSuppOrderLine.Id = 3;
+            this.bbiSuppOrderLine.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiSuppOrderLine.LargeGlyph")));
+            this.bbiSuppOrderLine.Name = "bbiSuppOrderLine";
+            this.bbiSuppOrderLine.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiSuppOrderLine_ItemClick);
             // 
             // barDockControlTop
             // 
@@ -474,8 +475,8 @@
         private XtraBars.BarDockControl barDockControlRight;
         private XtraBars.Bar bar4;
         private XtraBars.BarButtonItem barButtonItem2;
-        private XtraBars.BarButtonItem barButtonItem4;
-        private XtraBars.BarButtonItem barButtonItem5;
+        private XtraBars.BarButtonItem bbiAddOrderLine;
+        private XtraBars.BarButtonItem bbiSuppOrderLine;
         private XtraGrid.GridControl GCOrderLine;
         private XtraGrid.Views.Grid.GridView gridView1;
         private XtraEditors.DateEdit dateEditLivraison;

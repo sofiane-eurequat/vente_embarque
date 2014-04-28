@@ -51,13 +51,18 @@ namespace DevExpress.MailClient.Win.Forms
             sourceBdc = Bdc;
         }
 
-        private void barButtonItem4_ItemClick(object sender, ItemClickEventArgs e)
+        private void bbiAddOrderLine_ItemClick(object sender, ItemClickEventArgs e)
         {
             Cursor.Current = Cursors.WaitCursor;
             var form = new frmOrderLineAdd();
             //form.Location = new Point(OwnerForm.Left + (OwnerForm.Width - form.Width) / 2, OwnerForm.Top + (OwnerForm.Height - form.Height) / 2);
             form.Show();
             Cursor.Current = Cursors.Default;
+        }
+        
+        private void bbiSuppOrderLine_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
         }
 
         private void frmBdc_Load(object sender, EventArgs e)
@@ -94,5 +99,7 @@ namespace DevExpress.MailClient.Win.Forms
         {
             Close();
         }
+
+        
     }
 }
