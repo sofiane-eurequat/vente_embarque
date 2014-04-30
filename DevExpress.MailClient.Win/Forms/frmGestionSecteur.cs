@@ -97,5 +97,13 @@ namespace DevExpress.MailClient.Win.Forms
         {
 
         }
+
+        private void bbiAddAgentTerrain_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Cursor.Current = Cursors.WaitCursor;
+            var form = new frmAgentTerrainAdd();
+            form.Show();
+            Cursor.Current = Cursors.Default;
+        }
     }
 }

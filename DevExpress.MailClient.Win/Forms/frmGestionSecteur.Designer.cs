@@ -504,6 +504,7 @@
             this.bbiAddAgentTerrain.Id = 2;
             this.bbiAddAgentTerrain.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiAddAgentTerrain.LargeGlyph")));
             this.bbiAddAgentTerrain.Name = "bbiAddAgentTerrain";
+            this.bbiAddAgentTerrain.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiAddAgentTerrain_ItemClick);
             // 
             // bbiSuppAgentTerrain
             // 

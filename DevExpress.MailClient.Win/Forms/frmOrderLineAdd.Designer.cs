@@ -78,7 +78,7 @@
             // 
             // bbiSauvegarderFermer
             // 
-            this.bbiSauvegarderFermer.Caption = "Sauvegarder et fermer";
+            this.bbiSauvegarderFermer.Caption = "Sauvegarder et Fermer";
             this.bbiSauvegarderFermer.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvegarderFermer.Glyph")));
             this.bbiSauvegarderFermer.Id = 1;
             this.bbiSauvegarderFermer.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvegarderFermer.LargeGlyph")));

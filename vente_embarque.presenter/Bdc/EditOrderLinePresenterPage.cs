@@ -13,7 +13,8 @@ namespace vente_embarque.presenter.Bdc
         private readonly IEditBdcView _EditBdcView; 
         private IRepository<Product, Guid> _repositoryProduit;
         private IRepository<Stock, Guid> _repositoryStock;
-        private IRepository<Order, Guid> _repositoryOrder; 
+        private IRepository<Order, Guid> _repositoryOrder;
+        private IEnumerable<OrderLine> OrderLines; 
  
         public EditOrderLinePresenterPage(IEditBdcView editBdcView, IRepository<Product,Guid> repository, IRepository<Stock,Guid> repository1  )
         {
@@ -32,11 +33,17 @@ namespace vente_embarque.presenter.Bdc
         {
             throw new NotImplementedException();
         }
+
+        public void Write(Stock stock, String product, int quantiteMin)
+        {
+            var orderline = FactoryOrder.CreateOrderLine(stock, product,quantiteMin);
+           // frmBdc.OrderLines.ToList().Add(orderline);
+        }
     }
 
     internal interface IEditOrderLinePagePresenter
     {
         void Display();
-        void Write(Stock stock, Product product, int quantiteMin);
+        void Write(Stock stock, string product, int quantiteMin);
     }
 }

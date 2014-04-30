@@ -17,9 +17,29 @@ namespace DevExpress.MailClient.Win.Forms
             InitializeComponent();
         }
 
-        private void barButtonItem1_ItemClick(object sender, ItemClickEventArgs e)
+        private void bbiSauvegarder_ItemClick(object sender, ItemClickEventArgs e)
         {
 
+        }
+
+        private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
+
+        private void bbiEffacer_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            textEditNom.Text = "";
+        }
+
+        private void bbiFermer_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Close();
+        }
+
+        private void bbiNouveau_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            
         }
     }
 }

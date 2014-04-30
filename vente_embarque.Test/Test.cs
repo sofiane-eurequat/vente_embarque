@@ -226,7 +226,7 @@ namespace vente_embarque.Test
             var ligne2 = FactoryStock.CreateProductLine(stock,produit2, 20);
             var listProduct = stock.GetProductMinimale();
             Assert.AreEqual(listProduct.Count,1);
-
+        fttt fg cretare factoryclient
         }
         */
 

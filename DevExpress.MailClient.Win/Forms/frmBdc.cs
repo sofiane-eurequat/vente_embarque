@@ -21,6 +21,13 @@ namespace DevExpress.MailClient.Win.Forms
         public IEnumerable<Client> Clients { get; set; }
         public IEnumerable<Stock> Stocks { get; set; }
         public IEnumerable<Product> Produits { get; set; }
+        IEnumerable<OrderLine> IEditBdcView.OrderLines
+        {
+            get { return OrderLines; }
+            set { OrderLines = value; }
+        }
+
+        public static IEnumerable<OrderLine> OrderLines { get; set; }
         readonly ModelViewBdc sourceBdc;
         bool newBdc = true;
 
@@ -55,7 +62,6 @@ namespace DevExpress.MailClient.Win.Forms
         {
             Cursor.Current = Cursors.WaitCursor;
             var form = new frmOrderLineAdd();
-            //form.Location = new Point(OwnerForm.Left + (OwnerForm.Width - form.Width) / 2, OwnerForm.Top + (OwnerForm.Height - form.Height) / 2);
             form.Show();
             Cursor.Current = Cursors.Default;
         }

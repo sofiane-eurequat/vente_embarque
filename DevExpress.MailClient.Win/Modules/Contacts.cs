@@ -23,7 +23,7 @@ namespace DevExpress.MailClient.Win {
             gridControl1.DataSource = DataHelper.Contacts;
             gridView1.ShowFindPanel();
         }
-        protected override DevExpress.XtraGrid.GridControl Grid { get { return gridControl1; } }
+        protected override GridControl Grid { get { return gridControl1; } }
         internal override void ShowModule(bool firstShow) {
             base.ShowModule(firstShow);
             gridControl1.Focus();
@@ -44,7 +44,7 @@ namespace DevExpress.MailClient.Win {
         private void gridView1_ColumnFilterChanged(object sender, EventArgs e) {
             UpdateCurrentContact();
         }
-        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e) {
+        private void gridView1_FocusedRowChanged(object sender, FocusedRowChangedEventArgs e) {
             if(e.FocusedRowHandle == GridControl.AutoFilterRowHandle)
                 gridView1.FocusedColumn = colName;
             else if(e.FocusedRowHandle >= 0)
