@@ -23,7 +23,8 @@ namespace vente_embarque.DataLayer
                     ConnectionString = ((string)config.GetValue("connect", typeof(string)))
                 })
             {
-                var category = uow.GetObjectByKey<Category>(id);
+                var xpocategory = uow.GetObjectByKey<XpoCategory>(id);
+                var category = Map.MapInverse.MapCategory(xpocategory);
                 return category;
             }
         }
@@ -39,6 +40,7 @@ namespace vente_embarque.DataLayer
                 })
             {
                 var Categorys = new XPCollection<XpoCategory>(uow);
+                //TODO : verifier s il est pas null
                 listeCategory.AddRange(Categorys.Select(Map.MapInverse.MapCategory));
             }
             return listeCategory;

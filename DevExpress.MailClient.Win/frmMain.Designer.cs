@@ -191,7 +191,6 @@
             this.schedulerBarController1 = new DevExpress.XtraScheduler.UI.SchedulerBarController();
             this.navBarItem1 = new DevExpress.XtraNavBar.NavBarItem();
             this.nbgMail = new DevExpress.XtraNavBar.NavBarGroup();
-            this.navBarGroupControlContainer1 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
             this.nbgContacts = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarGroupControlContainer3 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
             this.ucContacts1 = new DevExpress.MailClient.Win.Controls.ucContacts();
@@ -206,6 +205,8 @@
             this.navBarItem2 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem3 = new DevExpress.XtraNavBar.NavBarItem();
             this.pcMain = new DevExpress.XtraEditors.PanelControl();
+            this.navBarItem4 = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarItem5 = new DevExpress.XtraNavBar.NavBarItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.backstageViewControl1.SuspendLayout();
             this.backstageViewClientControl1.SuspendLayout();
@@ -1610,19 +1611,16 @@
             // nbgMail
             // 
             resources.ApplyResources(this.nbgMail, "nbgMail");
-            this.nbgMail.ControlContainer = this.navBarGroupControlContainer1;
             this.nbgMail.DragDropFlags = DevExpress.XtraNavBar.NavBarDragDrop.None;
+            this.nbgMail.Expanded = true;
             this.nbgMail.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;
-            this.nbgMail.GroupClientHeight = 80;
-            this.nbgMail.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
+            this.nbgMail.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.LargeIconsText;
+            this.nbgMail.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem4),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem5)});
             this.nbgMail.LargeImage = global::DevExpress.MailClient.Win.Properties.Resources.cart_shopping_magasin_icone_5771_32;
             this.nbgMail.Name = "nbgMail";
             this.nbgMail.SmallImage = global::DevExpress.MailClient.Win.Properties.Resources.cart_shopping_magasin_icone_5771_16;
-            // 
-            // navBarGroupControlContainer1
-            // 
-            this.navBarGroupControlContainer1.Name = "navBarGroupControlContainer1";
-            resources.ApplyResources(this.navBarGroupControlContainer1, "navBarGroupControlContainer1");
             // 
             // nbgContacts
             // 
@@ -1677,10 +1675,9 @@
             // 
             // navBarControl1
             // 
-            this.navBarControl1.ActiveGroup = this.nbgBdc;
+            this.navBarControl1.ActiveGroup = this.nbgMail;
             this.navBarControl1.Controls.Add(this.navBarGroupControlContainer2);
             this.navBarControl1.Controls.Add(this.navBarGroupControlContainer3);
-            this.navBarControl1.Controls.Add(this.navBarGroupControlContainer1);
             this.navBarControl1.Controls.Add(this.navBarGroupControlContainer4);
             this.navBarControl1.Controls.Add(this.navBarGroupControlContainer5);
             resources.ApplyResources(this.navBarControl1, "navBarControl1");
@@ -1693,7 +1690,9 @@
             this.navBarControl1.Items.AddRange(new DevExpress.XtraNavBar.NavBarItem[] {
             this.navBarItem1,
             this.navBarItem2,
-            this.navBarItem3});
+            this.navBarItem3,
+            this.navBarItem4,
+            this.navBarItem5});
             this.navBarControl1.MenuManager = this.ribbonControl1;
             this.navBarControl1.Name = "navBarControl1";
             this.navBarControl1.NavigationPaneGroupClientHeight = 320;
@@ -1708,7 +1707,6 @@
             resources.ApplyResources(this.nbgBdc, "nbgBdc");
             this.nbgBdc.ControlContainer = this.navBarGroupControlContainer5;
             this.nbgBdc.DragDropFlags = DevExpress.XtraNavBar.NavBarDragDrop.None;
-            this.nbgBdc.Expanded = true;
             this.nbgBdc.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;
             this.nbgBdc.GroupClientHeight = 80;
             this.nbgBdc.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
@@ -1751,6 +1749,16 @@
             this.pcMain.Controls.Add(this.backstageViewControl1);
             resources.ApplyResources(this.pcMain, "pcMain");
             this.pcMain.Name = "pcMain";
+            // 
+            // navBarItem4
+            // 
+            resources.ApplyResources(this.navBarItem4, "navBarItem4");
+            this.navBarItem4.Name = "navBarItem4";
+            // 
+            // navBarItem5
+            // 
+            resources.ApplyResources(this.navBarItem5, "navBarItem5");
+            this.navBarItem5.Name = "navBarItem5";
             // 
             // frmMain
             // 
@@ -1954,9 +1962,10 @@
         private XtraBars.BarButtonItem bbiNewBdc;
         private XtraBars.Ribbon.RibbonPageGroup rpgNewBdc;
         private XtraNavBar.NavBarGroup nbgBdc;
-        private XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer1;
         private XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer4;
         private XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer5;
+        private XtraNavBar.NavBarItem navBarItem4;
+        private XtraNavBar.NavBarItem navBarItem5;
     }
 }
 

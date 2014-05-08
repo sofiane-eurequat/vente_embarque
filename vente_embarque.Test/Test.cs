@@ -173,14 +173,55 @@ namespace vente_embarque.Test
         [Test]
         public void CanCreateProduct()
         {
-            const string productname = "produit1";
-            const int quantiteMinimale = 10;
-            var marque = new RepositoryMarque().FindAll().First();
-            var category = new RepositoryCategory().FindAll().First();
+            const string productname = "produit2";
+            const int quantiteMinimale = 5;
+            //var marque = new RepositoryMarque().FindAll().First();
+            //var category = new RepositoryCategory().FindAll().First();
+            const string nom = "Dell";
+            var marque = FactoryMarque.CreateMarque(nom);
+            const string nom1 = "Desktop";
+            const string description = "Pc bureau";
+            var category = FactoryCategory.CreateCategory(nom, description);
             var product = FactoryProduct.CreateProduct(productname,quantiteMinimale,category,marque);
-            Assert.AreEqual(product.Name, "produit1");
-            Assert.AreEqual(product.QuantiteMin, 10);
-            //new RepositoryProduct().Save(product);
+            Assert.AreEqual(product.Name, "produit2");
+            Assert.AreEqual(product.QuantiteMin, 5);
+            new RepositoryProduct().Save(product);
+        }
+
+
+        [Test]
+        public void CanCreateProductWithMarqueAndCategoyFromDB()
+        {
+            const string productname = "produit3";
+            const int quantiteMinimale = 15;
+            var marque = new RepositoryMarque().FindAll().First();var category = new RepositoryCategory().FindAll().First();
+            var product = FactoryProduct.CreateProduct(productname, quantiteMinimale, category, marque);
+            Assert.AreEqual(product.Name, "produit3");
+            Assert.AreEqual(product.QuantiteMin, 15);
+         
+            new RepositoryProduct().Save(product);
+
+            var rp = new RepositoryMarque().FindBy(product.Marque.id);
+            Assert.AreEqual(product.Marque.id, rp.id);
+            Assert.AreEqual(product.Marque.Name, rp.Name);
+
+            var rc = new RepositoryCategory().FindBy(product.Category.id);
+            Assert.AreEqual(product.Category.id, rc.id);
+            Assert.AreEqual(product.Category.Name,rc.Name);
+            Assert.AreEqual(product.Category.Description, rc.Description);
+
+            new RepositoryProduct().Remove(product);
+        }
+
+
+
+        [Test]
+        public void CanCreateProductWithNLot()
+        {
+            const string productname = "produit4";
+            const int quantiteMinimale = 6;
+            var marque = new RepositoryMarque().FindAll().First(); var category = new RepositoryCategory().FindAll().First();
+            var product = FactoryProduct.CreateProduct(productname, quantiteMinimale, category, marque);
         }
         /*
         [Test]

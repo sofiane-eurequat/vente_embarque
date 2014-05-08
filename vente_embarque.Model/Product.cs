@@ -33,7 +33,8 @@ namespace vente_embarque.Model
                     Fournisseur =fournisseur,
                     Marque = marque,
                     Category = category,
-                    TypeGestion = typeGestion
+                    TypeGestion = typeGestion,
+                    newObject = true
                 };
             return product;
         }

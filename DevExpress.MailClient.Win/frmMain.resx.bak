@@ -126,7 +126,7 @@
     <value>0, 0</value>
   </data>
   <data name="helpControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>882, 494</value>
+    <value>882, 486</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="helpControl1.TabIndex" type="System.Int32, mscorlib">
@@ -145,10 +145,10 @@
     <value>0</value>
   </data>
   <data name="backstageViewClientControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>133, 63</value>
+    <value>133, 71</value>
   </data>
   <data name="backstageViewClientControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>882, 494</value>
+    <value>882, 486</value>
   </data>
   <data name="backstageViewClientControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -157,7 +157,7 @@
     <value>backstageViewClientControl1</value>
   </data>
   <data name="&gt;&gt;backstageViewClientControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.BackstageViewClientControl, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewClientControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;backstageViewClientControl1.Parent" xml:space="preserve">
     <value>backstageViewControl1</value>
@@ -175,7 +175,7 @@
     <value>galleryControlClient1</value>
   </data>
   <data name="&gt;&gt;galleryControlClient1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.GalleryControlClient, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.GalleryControlClient, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;galleryControlClient1.Parent" xml:space="preserve">
     <value>galleryControl1</value>
@@ -186,20 +186,11 @@
   <data name="galleryControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="galleryItemGroup1.Caption" xml:space="preserve">
-    <value>Group1</value>
-  </data>
-  <data name="galleryItem1.Caption" xml:space="preserve">
-    <value>Open Calendar</value>
-  </data>
-  <data name="galleryItem1.Description" xml:space="preserve">
-    <value>Open a calendar file (.ics)</value>
-  </data>
   <data name="galleryControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 20</value>
   </data>
   <data name="galleryControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>842, 274</value>
+    <value>842, 266</value>
   </data>
   <data name="galleryControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -211,7 +202,7 @@
     <value>galleryControl1</value>
   </data>
   <data name="&gt;&gt;galleryControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.GalleryControl, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.GalleryControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;galleryControl1.Parent" xml:space="preserve">
     <value>backstageViewClientControl2</value>
@@ -220,13 +211,13 @@
     <value>0</value>
   </data>
   <data name="backstageViewClientControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>133, 63</value>
+    <value>133, 71</value>
   </data>
   <data name="backstageViewClientControl2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>20, 20, 20, 200</value>
   </data>
   <data name="backstageViewClientControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>882, 494</value>
+    <value>882, 486</value>
   </data>
   <data name="backstageViewClientControl2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -235,7 +226,7 @@
     <value>backstageViewClientControl2</value>
   </data>
   <data name="&gt;&gt;backstageViewClientControl2.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.BackstageViewClientControl, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewClientControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;backstageViewClientControl2.Parent" xml:space="preserve">
     <value>backstageViewControl1</value>
@@ -250,7 +241,7 @@
     <value>0, 0</value>
   </data>
   <data name="printControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>882, 494</value>
+    <value>882, 486</value>
   </data>
   <data name="printControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -268,10 +259,10 @@
     <value>0</value>
   </data>
   <data name="backstageViewClientControl3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>133, 63</value>
+    <value>133, 71</value>
   </data>
   <data name="backstageViewClientControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>882, 494</value>
+    <value>882, 486</value>
   </data>
   <data name="backstageViewClientControl3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -280,7 +271,7 @@
     <value>backstageViewClientControl3</value>
   </data>
   <data name="&gt;&gt;backstageViewClientControl3.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.BackstageViewClientControl, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewClientControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;backstageViewClientControl3.Parent" xml:space="preserve">
     <value>backstageViewControl1</value>
@@ -295,7 +286,7 @@
     <value>0, 0</value>
   </data>
   <data name="exportControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>882, 494</value>
+    <value>882, 486</value>
   </data>
   <data name="exportControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -313,10 +304,10 @@
     <value>0</value>
   </data>
   <data name="backstageViewClientControl4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>133, 63</value>
+    <value>133, 71</value>
   </data>
   <data name="backstageViewClientControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>882, 494</value>
+    <value>882, 486</value>
   </data>
   <data name="backstageViewClientControl4.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -325,7 +316,7 @@
     <value>backstageViewClientControl4</value>
   </data>
   <data name="&gt;&gt;backstageViewClientControl4.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.BackstageViewClientControl, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewClientControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;backstageViewClientControl4.Parent" xml:space="preserve">
     <value>backstageViewControl1</value>
@@ -373,7 +364,7 @@
     <value>backstageViewControl1</value>
   </data>
   <data name="&gt;&gt;backstageViewControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.BackstageViewControl, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;backstageViewControl1.Parent" xml:space="preserve">
     <value>pcMain</value>
@@ -381,11 +372,11 @@
   <data name="&gt;&gt;backstageViewControl1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <assembly alias="DevExpress.XtraBars.v13.1" name="DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <assembly alias="DevExpress.XtraBars.v13.1" name="DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   <data name="ribbonControl1.Categories" type="DevExpress.XtraBars.BarManagerCategory, DevExpress.XtraBars.v13.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFCYXJzLnYxMy4xLCBWZXJzaW9uPTEz
-        LjEuNS4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAA
+        LjEuNC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAA
         ACZEZXZFeHByZXNzLlh0cmFCYXJzLkJhck1hbmFnZXJDYXRlZ29yeQMAAAAETmFtZQRHdWlkB1Zpc2li
         bGUBAwALU3lzdGVtLkd1aWQBAgAAAAYDAAAABE1haWwE/P///wtTeXN0ZW0uR3VpZAsAAAACX2ECX2IC
         X2MCX2QCX2UCX2YCX2cCX2gCX2kCX2oCX2sAAAAAAAAAAAAAAAgHBwICAgICAgICyARzqzFCa0y3OaaM
@@ -395,7 +386,7 @@
   <data name="ribbonControl1.Categories1" type="DevExpress.XtraBars.BarManagerCategory, DevExpress.XtraBars.v13.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFCYXJzLnYxMy4xLCBWZXJzaW9uPTEz
-        LjEuNS4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAA
+        LjEuNC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAA
         ACZEZXZFeHByZXNzLlh0cmFCYXJzLkJhck1hbmFnZXJDYXRlZ29yeQMAAAAETmFtZQRHdWlkB1Zpc2li
         bGUBAwALU3lzdGVtLkd1aWQBAgAAAAYDAAAACENhbGVuZGFyBPz///8LU3lzdGVtLkd1aWQLAAAAAl9h
         Al9iAl9jAl9kAl9lAl9mAl9nAl9oAl9pAl9qAl9rAAAAAAAAAAAAAAAIBwcCAgICAgICArpZ2VChFu5M
@@ -405,7 +396,7 @@
   <data name="ribbonControl1.Categories2" type="DevExpress.XtraBars.BarManagerCategory, DevExpress.XtraBars.v13.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFCYXJzLnYxMy4xLCBWZXJzaW9uPTEz
-        LjEuNS4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAA
+        LjEuNC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAA
         ACZEZXZFeHByZXNzLlh0cmFCYXJzLkJhck1hbmFnZXJDYXRlZ29yeQMAAAAETmFtZQRHdWlkB1Zpc2li
         bGUBAwALU3lzdGVtLkd1aWQBAgAAAAYDAAAACENvbnRhY3RzBPz///8LU3lzdGVtLkd1aWQLAAAAAl9h
         Al9iAl9jAl9kAl9lAl9mAl9nAl9oAl9pAl9qAl9rAAAAAAAAAAAAAAAIBwcCAgICAgICAi82Vy4fCZtF
@@ -415,7 +406,7 @@
   <data name="ribbonControl1.Categories3" type="DevExpress.XtraBars.BarManagerCategory, DevExpress.XtraBars.v13.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFCYXJzLnYxMy4xLCBWZXJzaW9uPTEz
-        LjEuNS4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAA
+        LjEuNC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAA
         ACZEZXZFeHByZXNzLlh0cmFCYXJzLkJhck1hbmFnZXJDYXRlZ29yeQMAAAAETmFtZQRHdWlkB1Zpc2li
         bGUBAwALU3lzdGVtLkd1aWQBAgAAAAYDAAAABUZlZWRzBPz///8LU3lzdGVtLkd1aWQLAAAAAl9hAl9i
         Al9jAl9kAl9lAl9mAl9nAl9oAl9pAl9qAl9rAAAAAAAAAAAAAAAIBwcCAgICAgICAoOPBvwaUAdFp5b6
@@ -425,7 +416,7 @@
   <data name="ribbonControl1.Categories4" type="DevExpress.XtraBars.BarManagerCategory, DevExpress.XtraBars.v13.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFCYXJzLnYxMy4xLCBWZXJzaW9uPTEz
-        LjEuNS4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAA
+        LjEuNC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAA
         ACZEZXZFeHByZXNzLlh0cmFCYXJzLkJhck1hbmFnZXJDYXRlZ29yeQMAAAAETmFtZQRHdWlkB1Zpc2li
         bGUBAwALU3lzdGVtLkd1aWQBAgAAAAYDAAAABVRhc2tzBPz///8LU3lzdGVtLkd1aWQLAAAAAl9hAl9i
         Al9jAl9kAl9lAl9mAl9nAl9oAl9pAl9qAl9rAAAAAAAAAAAAAAAIBwcCAgICAgICAksjBPoPzB1LuTKJ
@@ -525,19 +516,19 @@
   <data name="rgbiCurrentView.Caption" xml:space="preserve">
     <value>Current Contacts View</value>
   </data>
-  <data name="galleryItemGroup2.Caption" xml:space="preserve">
+  <data name="galleryItemGroup1.Caption" xml:space="preserve">
     <value>Group1</value>
   </data>
-  <data name="galleryItem2.Caption" xml:space="preserve">
+  <data name="galleryItem1.Caption" xml:space="preserve">
     <value>Liste</value>
   </data>
-  <data name="galleryItem3.Caption" xml:space="preserve">
+  <data name="galleryItem2.Caption" xml:space="preserve">
     <value>Alphabetique</value>
   </data>
-  <data name="galleryItem4.Caption" xml:space="preserve">
+  <data name="galleryItem3.Caption" xml:space="preserve">
     <value>Par localization</value>
   </data>
-  <data name="galleryItem5.Caption" xml:space="preserve">
+  <data name="galleryItem4.Caption" xml:space="preserve">
     <value>Carte</value>
   </data>
   <data name="beiZoom.Width" type="System.Int32, mscorlib">
@@ -558,31 +549,31 @@
   <data name="rgbiCurrentViewTasks.Caption" xml:space="preserve">
     <value>Current View</value>
   </data>
-  <data name="galleryItemGroup3.Caption" xml:space="preserve">
+  <data name="galleryItemGroup2.Caption" xml:space="preserve">
     <value>Group1</value>
   </data>
-  <data name="galleryItem6.Caption" xml:space="preserve">
+  <data name="galleryItem5.Caption" xml:space="preserve">
     <value>List by Date</value>
   </data>
-  <data name="galleryItem7.Caption" xml:space="preserve">
+  <data name="galleryItem6.Caption" xml:space="preserve">
     <value>To-Do List</value>
   </data>
-  <data name="galleryItem8.Caption" xml:space="preserve">
+  <data name="galleryItem7.Caption" xml:space="preserve">
     <value>Completed</value>
   </data>
-  <data name="galleryItem9.Caption" xml:space="preserve">
+  <data name="galleryItem8.Caption" xml:space="preserve">
     <value>Today</value>
   </data>
-  <data name="galleryItem10.Caption" xml:space="preserve">
+  <data name="galleryItem9.Caption" xml:space="preserve">
     <value>Prioritized</value>
   </data>
-  <data name="galleryItem11.Caption" xml:space="preserve">
+  <data name="galleryItem10.Caption" xml:space="preserve">
     <value>Overdue</value>
   </data>
-  <data name="galleryItem12.Caption" xml:space="preserve">
+  <data name="galleryItem11.Caption" xml:space="preserve">
     <value>Simple List</value>
   </data>
-  <data name="galleryItem13.Caption" xml:space="preserve">
+  <data name="galleryItem12.Caption" xml:space="preserve">
     <value>Deferred</value>
   </data>
   <data name="bbiTodayFlag.Caption" xml:space="preserve">
@@ -624,7 +615,7 @@
   <data name="repositoryItemDuration1.AutoHeight" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <assembly alias="DevExpress.Utils.v13.1" name="DevExpress.Utils.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <assembly alias="DevExpress.Utils.v13.1" name="DevExpress.Utils.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   <data name="repositoryItemDuration1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.1">
     <value>Combo</value>
   </data>
@@ -640,6 +631,667 @@
   <data name="barButtonItem3.Caption" xml:space="preserve">
     <value>barButtonItem3</value>
   </data>
+  <data name="barButtonItem4.Caption" xml:space="preserve">
+    <value>barButtonItem4</value>
+  </data>
+  <data name="barButtonItem5.Caption" xml:space="preserve">
+    <value>barButtonItem5</value>
+  </data>
+  <data name="barButtonGroup1.Caption" xml:space="preserve">
+    <value>barButtonGroup1</value>
+  </data>
+  <data name="barButtonGroup2.Caption" xml:space="preserve">
+    <value>barButtonGroup2</value>
+  </data>
+  <data name="bbiNewSecteur.Caption" xml:space="preserve">
+    <value>Secteur</value>
+  </data>
+  <data name="bbiNewSecteur.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAYdEVYdFRpdGxlAENvdW50cnk7V29ybGQ7RmxhZ6ibCnIAAANfSURBVDhPTZMLSJNRFMc/6eF6
+        KPai0mrOnLlqvY2lOU2YTc2m6Sozn8NXVuvlSqckbqa2dBUquba1yl5atl7aQxfpF7r1kqyICCoIXz0w
+        CIIo/n33s1kX/hzuvef87jmccykAlMGTIsvFLlpw68kq4dcukdDaFiDIqJnP4zHnHEajyf3TQCFFRGKc
+        osqvPmcB8e7UhFbhnF9DRj16i/fiacRq2AMXgV7G/2H2565nAGMeLuNT9FI+pbbcZOMIhFIZGljAIg41
+        /hzP/VtPRBC+H9fiXeoG9Kmy8KFQicvRUZ9VugopgZBMTA8d/wCxykQ2/cViqUdlqPBFi/8sfDmQibeS
+        ADgW8/AxRYbmhTyYz6h+1VmT9FzBtPHEX9v4bDiDcEUkAYxNyN9pMpxvxKkZ43Bh+kRcnOmGJk83tHlP
+        RpcsCE37EnDTcRDZpSEmxt+VQFgAs0atz+FJk4vWwkLTKNEboNilQWV1HWxGI6wZ6Tgr8GbExbWuKqhP
+        hkO8SRZF4pwA1xjlXGtZQxTyTPmov+tAmlKLzLwKPH7Xh1f9Q+h8aUf3Wxu6+2pgbI1HSELoNdIdJ2CC
+        RLFgQNckw56TxbD29CG3UI9MVQVaXw+i/f0nXKEbUG+z4OKjLJgfbIIkTTTAANycAPfgxPSfSSVZUFtp
+        VHcOoLG7H5ef9aK+4w5MLSdwoZNGjb0fO2qLoLsaB/HWgJ8MwGMEELHj1GCO4RG2ne5B8b1eVNGDMD/5
+        gsrGo7j9qgBHb+QitTwdWzR7kaQpRNCW7E8MYNJICb6rg1uitydDrq1FSo0DyktvUND8ETm1Vcg4kowT
+        99eiqnkNsiojsVGth2iz5vb/JYydvWLqxpWbvZGtkyN6dypk6kOQV7RDfrgdcaXXEaeKQZ55CYosYiyJ
+        lMAvODmBtN6ZgQupx0fsaQ1N40N5LALxBUWI1doQXdKGWI0NG/alIN+4CmEKP3BFQtKBSSNz4BOykMzC
+        aI6Hqxc30MsyL0z6O6bAinR9B7Jr7ayNzFVDIAn7PWu54AzHnTOb+AtjdMOT6B2cSCUWHmAHipA9uPPi
+        fML2d/hJS4b8o8rAZ+zcNSp6miBcztxPJsEppXWU/7qyYYCvVMuKK1awf4IMCKMpjMgnJ695/d2Tcxen
+        P7EE8Aehbs/k/EID0QAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="bbiNewSecteur.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="barButtonItem7.Caption" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="barButtonItem7.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAVdEVYdFRpdGxlAFB1Ymxpc2g7VXBsb2FkO70aPsEAAANJSURBVDhPjZJ9TMxxHMePPJU8LD3K
+        SKfdzPyjzcwqVy49nKQlTAnVUl3rQaZ2RyuOk6SaISeRWuj0oKLkwq77xR2ndNGzpFJS/ZGRjvb2/d6F
+        8Zfv9t53+34+n9fn+3lg5TJqFgAWOTMl+ZvX5VT5lJ28GTpwuqwZktKmDydlmrIwcaojsRsVKSSsq8Sf
+        2PQx03GsGVtDEkyCkgWpZ2XbdaqeM2h8V48x3RR6P+tQxFQj5Zq/7uwt3nGO49J5BDRDLGv8CzBrZ2L0
+        ZVFhBW43pGPsWws6B7X4OPEDQ0RtA02QvzmP/McBiJJwpQQw+2iB6g/AL4btHnzMAxlyOZQdL6HpZtAy
+        0I634zq9Ose+QtXTjLwn0RBd2QK3IH8PWu7vEvzi2CWSYj4Sr4ugGZpA0/AEtJ++QTtikKL1KSnpHhR9
+        sciV7wB3j2spAcz5DXAPWzOYXuqLQ7mpeNA9jvq+L2D6ifq+QvHuE0qUxZA3PsDj9izUNItxOE0wRgAm
+        tOv64xwYott7/CBE5UpcVI2gsn0c9zrGcbNBjqvVOahq0qBzZAKF8gxcr05BXUPtFAkz9YwzNwC8Y/KH
+        IqXPEZWvRcrDDzinHEaeZhQZsizUtZ+AtpdBhbIAKTfcEXPOGVKZdJKELeQJzAwAB5dNFT7RwQgQX8S+
+        C2rE3u6A8H4/BDlZqFZVQtNVgYRLG9E7okDXx4fYJVz7neM0fzVtpB5gt8HSd/1uO0SkB8Anfj98RacQ
+        kKbAldoOKF51IT7bDS+6itA2modnA8mQv8qAa6iFxpozdxHdCcowZXNti7kHHBCb7YUdwmPwEz8C83oQ
+        ydIIMv9wMO+TUdstwN3WYBQ2bkXaHT7W71pUQKdBAUYmZsZWK52WXea4eU5tF5YjJLMe6rZB8OOt4R1v
+        hW1HbCB+xCY9sgf/kDX4cVbwjrWi+2/MCjyaRCG0HlMz+zXebJ6wjuMlHq1lWlF8Xz155lJJDz9pCXLU
+        GyGqWQ6PaEsauJT60+SsVZ5i1gqXUAqh9cymHSaiM7Kcvm09EsyQyTjicJUNeBEWFLDY9aCFYQq/Nurf
+        m9p4kXonE5fIxfWu4Zagcgo2V9Ls3LD/ABhSkG8avrtkWgum3/TGn4BjElYUfyZXAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="barButtonItem7.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        8BfwAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="barButtonItem8.Caption" xml:space="preserve">
+    <value>Modifier</value>
+  </data>
+  <data name="barButtonItem8.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAVdEVYdFRpdGxlAExhbmd1YWdlO1dvcmxkOxwy6+MAAANgSURBVDhPPZN9TNR1HMd/FgucSofg
+        ww5uEHA8BExTUody2jXsfCAO61zG4jgo4kHvuiUXHSLcgSKc6yKKTtAdUgODzUAS1wMWDxqdD4jUWmKr
+        iK2ntTmrf9rcq+/3iv547bPf9/f+vH7fp58CKAsoinJf4MiGTwVMNmRy2bWeS3XrGD+8ltGaNXz2agYj
+        1el8UpXGBXvKqMiHKMfevxmkyGUVz0qIbOSvKcF1wTX486ogAH9MCj6Hu5cFEwxbkxD5UMXR0aecvBSQ
+        zYsEiyfqHhHBAN+ee5m2HA23h16Cn3y8/ngMXn0Ms4M2+LmLoYoEKVis5NsKgs1b9xQtdfk8HaPONXBn
+        nOPbouHHVpp1os55ObpFDT94cW9eDfM+zpbGScESZXvJTil4wOSo6PR/NMGIIx1+/xhX1irqNq2iduNK
+        +O4YzkdXUp0ZxUyPBb730m/RSMEy2Xz/k+UPGQprn6A/EOBDeyr8NsjBdZEwW4997XK4VceBjAj4ppby
+        NBXcbqS3UC0F4VIQarQlDDT17aJz+BTnrVqx5h7KHhbBrx08n/wgfFWFRbsMs+BKZ74Yd/Lus6ulQCUF
+        S3JK0n7xnM3j7XOnGSyPF2vvEE0O+LJKIDbx5n6YrhS1AmaswbGuvSv+F4RnFxT//Zz7RfxjU5w5ZKS/
+        REOfJYYzZjUzPj3cKIXrxTD1AtNv6PCbImnLi5JHt1TOIHzHAf+v5R1X8AzP0j05T29gjoFrc5weeofe
+        5jym2zbDVTM3WrNose7G5m65q9frtXL/gktI3JJ9IXd/IabGdsxvBbC9dwvn8Dz1PX5e62nmZL2O87ZE
+        jtt1NHT0su9gu7yFwRMIHqEmM2rvhmfiKPOYyLUXkVdzFFPzGKaWMay+EdwnXLS9uYdTH1RhLC0mKbtw
+        n+xbEMgbqIrXqQe2WbTYWnfwtLOW/MaL5LpHyG+4iPlwJe5uA0brRmI3ZQyKfIS8fEFB/NZ0WULCVKHR
+        sVnRXcl6wz2jc4Bi7zhl7V8E687KGlJz9Pdi1qd2h4WHaWQ+w+gJ/oRKXHaBUnCoWkrkhkSoYpOfite/
+        Mp5kcN9J2dWEVtSExxwTK1K3m8T75bLZfOSEkrK76V9BoqExSKyuRErktMIEkQK1QH4t+r9nOb5oIS+r
+        FPwDOqvwD5wFJBsAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="barButtonItem8.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="barButtonItem9.Caption" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="barButtonItem9.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAATdEVYdFRpdGxlAFdlYjtXb3JsZDtFeWUHRDg6AAADj0lEQVQ4T1WTe0zTVxzFL1P3YCwbJrpk
+        LJuKDCPxMYim0dlWBGXMahXYdFQdYMZEHlZgmrUIFZrKKgo4ELSARQMOEAiIijQIpRVbVqlAUArlMVas
+        wFhWUtBGPbu/zrB5k5P7x/d+P/d7cs8lCq2eACB0vSFTbvEtuM6rkZZHWU7VdEFWbRyTVhpqDmZI/Gh9
+        XplaRoroeVpz9rzqIy7bIxNdBScOS05X8h26oZ/ROdyGKccLjEw7UKa9ibSSEMfpqwEnvf0+epuCXDIq
+        O18DzP/6WGyh6Eodfr0rx9TTHvQ/7saT2eewUj2yGKHqPQflnTDEyLgXKGCB+LLuP8CueM/A/SnbkKVS
+        QWO6D4NZix5LHwZtDqf6p2agG+pCcUssRBe3wl8Qso2xO2dh1xHPa7KKr3DskggG6yyM47PonniK7sl/
+        pX7YTi01QD2aAIUqFNxvN1dTwJtzgMCDPo/l1TtxVCFBo9mGtlE7tH9Qjc5APTyBa5oKXGm+hKsd0Shu
+        /QaBESwrBbjOATaFRzr2nYyGqFaDfN0k6vtsaDDZUH5XhaKbBShv1yBPZ0VcfgrkNSFgC9Y5KMBtIy+b
+        sILPEBIcr7QeutCBGGU30prGcEYzjmLDn1A2XsbAeDM6za0wmh7g/qMeql6UX79tp4D3mddYH5RFiBeb
+        U8eL3Y+wjHwcyNNDWNGPOwN/o2vQjKpbbcgsvAGRvA4x4lokptciLqVyhheeGe/mvvQ9JhtkCWvxzvV7
+        luAHeRh4wu+QU1UPjXEUabkqlFQZ0KYfwE+yUuyOSnfuLe0mnL3YinVbZYPLVglWMAl08+R6VHAjvJCQ
+        8yWafzMgs6AFxt4x2OzPkChRoMP6F5LTziEhVYHvk3NgnZxGfdMDrGanahjAPNeF73y49IuPC739g17c
+        1vUjSdqAiSk7LE+m4R+SDKE4m8k6QvcdBpt/FObfJ6E3DmE1J91OwsXHnf+AmWThMp/grOJbJkFc6csm
+        dR/6hscRKcxy3rw34giif8xBaIQYhp4RlFbdw8oNIi1ZHpRBPmVHMRAXJqZUH3ziHcTi8rNHhKnV+KWk
+        Cbw9SfBcuwPb6Z5b1IjopDKs4UiGPT7j+8xlmgnG5tDzhLM7z2lrkYef+xrO8Xi/AOk93wCpxXfLKTqy
+        ZGzlBrF++eeHEt3cvRbRc/NfA7Bp8yZ+LmFC8r+J3mWmonJ/Jeb53mJsr2CdIP8AiUU9VjHTO8EAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="barButtonItem9.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="barButtonItem10.Caption" xml:space="preserve">
+    <value>Livreur</value>
+  </data>
+  <data name="barButtonItem10.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAydEVYdFRpdGxlAEN1c3RvbWVyO0VtcGxveWVlO1BlcnNvbjtDb250YWN0O1VzZXI7Q2xpZW50
+        fhE26AAAAzRJREFUOE91Un0s1GEcf3ROXdz1tl6QmiMpKfTmynLO3e9cUUxsZGoVOfTCdMaVlNLLvNxx
+        UmOTmqmxIno56ya9rIWboWh6WfVHuYbQVFP59Px0Wv3h2T777vk+n8/n+T7f70MyMzPJBIh5icViiwBx
+        AEcqlXLlEjmXETOWNMdh8yzlP82/m7CwMEJJUwynQtxac4Jrmk5s7qhTSVAWI3qeE+5ZGC/znB0UFGQx
+        qYFcLp9ySy0PMuZsG/qoPwaTIRsDj3LRc/Uw7maFI1W6pFEhUVhOakBLtqxJ8Xv1tjQUd9QKGDWh6Mzf
+        iiaVD2oTRUj2FYLxY7iTGkgkEm55rGj0aqIPTN0NuJOnhDbSC9nBbtCEuI4liBaNymSyyQ2km6Tc3LBV
+        74t2euPH4HP86G/HlzYdXlfux1HGGXu97N6zjf2vgu50JzIB6s5Jkbqc00Z5f//6rgE/Pxgw/DQHLyuU
+        yGCE3yLc5hfRKjmdKiFpP0yR4kj+irvSnAidggWPxxNoorwf9txIw0irBr31qWjRRuC4wrmZPWM5rUmL
+        SQtF86HFhHSkCkmHypGM9eSRcqWEHfPU9C3LE6qTZegui0FX6W5UxImQuMHuID2bdtLfnvx6EkcexjuQ
+        B8qFhBiT/7jRxX4SzrUoWy99vGNr/fEQ6CK8kB+6AsWRnqjZZW/UBc9dx17A8li+fo8dIY8TqAtN3Nhp
+        63Mv1r7uaZo72nXB6Lq0D88qktF4NhpVcT64nbQGjQecUR05r0EbOIcxG43/TM7N6AXqJ+ke+HB9F0Zb
+        UjBUvQXNR1aiPmYJqqKF0Ce6wHTJFyO3wvHmghgNSkcUB846Q7VWrIFVzY55puF7MRip3YrhK+sxdHkd
+        hsrWYrBsNQZLPfG5xAMDF1aiv9gd/SWr0VvijZLAmQNUazPetMrtc2BUu+BFlgvenHVF3/kV6NMtw6eC
+        pTBpnNGb54TeXCG6MxzQprLH/fj50En5oFr++BOyfPl+GpmgoJARGAqZGZ3FcgGKZALoZHwU+vOh9bdB
+        vsQapzdN78rayGtSr+ddjHWfqph4wnj3zZtpNFqbnQU0zjBjpjmyObZsHgWXncRvESulgDB8liMAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="barButtonItem10.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        rM8KCBK+Im4AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="barButtonItem11.Caption" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="barButtonItem11.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAATdEVYdFRpdGxlAFBlb3BsZTtBc3NpZ25+WIkkAAAClklEQVQ4T2P4//8/AyUYr2YGCGAEYiYg
+        ZkbCID5YLyEDGDdka3seKDc8dLjK+NmeEoNfy5I1TzS6y0aCDCPGAObVKZrPLs7L+XewJ+b/5aVl//e1
+        Bv9vdJH9DjSAHWwAGgA5F4RhgG1qsOK3jTX+/9fXBP7vCND5PyPW6H+ZteQXoAJusAEpCw3BGORPIP0n
+        ca7BLLNwKW6oQax1LnIHNjTE/P/24tT/l8em/J8aa/4/3UR8DVCe80SVPNgiWACxx8/W/b/2XN3/hJn6
+        p92KFRWAcqzKkoIKG2pCf359sPf/60Pd/6fFGv+VEeDQBYXB0XI5BoboKVoHoqZq/4+covk/YrLm/2tv
+        Zv3fea32f/IM0zdupQquQIWS8wp975xdUvv/YHfE/0YvhXsgsUYHUYY9BdIMDME9qv+ffNoKxZv/n3pW
+        +3/FJa//B+5U/M+b4/A7qFSlc12t14O5OXb/p6Wa/Z8WI3M70YJXDeQ6sOu9mxT+n3xS9X/eWcv/c8+Y
+        /59z2vT/7FPG/ycfNP0f1qj+r6Mz6O/jXXX/Hy0N/P9wWcD/+8si/q9Jk/41J1xocaUznyaDQ5HkXsdS
+        if+OxRL/HYrF/087pvW/boPKf8csyb+rF5T8f3tp1f9323L/v55nD8ZvFrn9f7s27P/ZTuv/U/35boEC
+        kR0UJUAsZp4u9L91hc1/jQDuK6snF/y/v737/82Jzv+vt2r/f9JvAMbXW7T+X27U/H+qVut/nwf3fwaj
+        BF4Gw3hekEHc+rHc/+Wd2NawCzDJLK8Omd7nJ769y5XnUqcL1+1uV67/XS5c/1sdOe8023NeqbVh31Fu
+        yd6JnI5YgBweIOYCYhAbhEGuA/FBLgTZAsMwdewU5USCeYGYbA4AX8/w8SLlBXQAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="barButtonItem11.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="barButtonItem12.Caption" xml:space="preserve">
+    <value>Modifier</value>
+  </data>
+  <data name="barButtonItem12.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAABHdEVYdFRpdGxlAEN1c3RvbWVyO0VtcGxveWVlO0ZpeDtQdWJsaWM7U2V0dGluZ3M7T3B0aW9u
+        cztDdXN0b21pejtHcm91cDtUZWFtaQsTiAAAAz9JREFUOE91k3tI01EUx39NyywLK4xolg4n1tT5mJZh
+        syRdbTpzmpSPJeYrX+VjbJkrc2szdWihQyOyhw/ISmfkH9kDXQ9DiuixikzQoCi0Pyq0NPLbvSt7kB34
+        /nG5fD/n3HPuYQAwM0kkErHOpPBT2rP8nppy/D63pns/r4v3LJJIJDYODg6/PDOaKVAaIbU7kcgbu6QK
+        n3pgTMZtXSRqYrjIlQiW6/X6fwHMj5hFxCKyCQkOcaySeUzebdHgwn4xTmYEQR3u/FW2JWzpjBVQsynH
+        U9yj8jPf3C94c03hO9m0y/tT99EsfOyrwq3qBKglPLNUKl1EAcXHhYzSuI75XQrJej5t9ZuHjblTvYYk
+        PG5R4oYuFlqRC0a6FOhQbIIiMmAPAcyjgPyaQCan0v8vwBxjLGe8U70VHWoZjkR7oUHuD5WQjaMJgShN
+        9R9fLwzku7m52RHArPRDXkyyehXDaM+GWkVi9sGwlT2mQ0kYf9uPd3fqYJSvRWl6EC7eVKH5Rh4ySvnP
+        YrK4mQSwgIgVu9eFYYpPBzL7iGjzuMsXu5jUcRNjQ9cxYq5CvVyAimYparrEqO6MQHWbDJk6X0RksnsJ
+        YL617dOAK7pkelxi2C0cuN98AL1VO1CSsApFtWtRfDII+YY4HDCYkK2LQdhOp2/29vZLrVP7mZ2Oz0ay
+        y5WTrfV7UVEYjLIsAeILuBNJBfETaUolFLpWvHr9HkXalqmUgtJh0TblYRaLNdc6+zS9p+seI/+U6kTA
+        lzPmRBgub0J5RwjK28KRrS6f6rs3gMGhd+R/Af0PB9Hb9xQbpIpHxLuAAmzzar0tDVfj0HY/FTXdodC2
+        C1ByzhfKUz7Iq4iG/lgH3o5+wObtGlhevkZCRgW4/M25xOtAAXNSKz2gaQuGqskHRY2eKGzkIbvBHYma
+        FZDvLUHPHQuePH+FB5YhPHk2jOr6dvCD5BbidbRWEFPofDAqn31ZkrvsUXim00Bo2mII5Y4IkC0cDIkW
+        j26MSnofv9vw7VJ3P3hr5F+5PlFmDk9cO/0E2kBbIjuieUR0PPRtVDQD7TbH3TtSE7AxD2xOcBk5s3/e
+        2/53G+lG/hF0wShwGdFCOrHpu+8Jocrm1oRyNAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="barButtonItem12.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="barButtonItem13.Caption" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="barButtonItem13.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAQdEVYdFRpdGxlAE1hc2s7Um9sZTu6seyzAAADS0lEQVQ4T1WTeTDUYRzGf52OVMLmWrvWjsR0
+        oJtKh4YySugeRqMyQkopHWr8YSZjmpraDkItjZvqLxUlldUOUim2TNthf9YxpN2Va3l6383u1B/PvPMe
+        z+f7fed9XoZhmElEUyc0hYyT6ZrsdijTmhHMtN4KIlPdGbo3jciYyITOAdA9Zlpr9m55/bVg0fP0wOjy
+        ZF+fpJ2L7Mm62YRmerly5mbFLttUkugV8+i8d2Z9mk+bi52ZuR5g/ClnB3obr6Cj6iy+lsZAlr0LLTcD
+        0SIKwMerm4n80Ja7C1+LIsBWxKEpbQ0tbaEHmMgyQzCmeYgxdTHGh+oxPtyM8d+vMParDNr+Qmh7xRhR
+        pEHdlADV2xS8SV1JAVZ6gGnLzW3Q9t2BtjMC2u4ojHYdIoZ9GHwzDwNSIQZqBVA95YPN5aKvJgaNKZ4U
+        wDEAmq8HqEaUImh74nTmUeUBjLL7MdjgjIHXQmheCtD/iAdWzEVvVSSk5xeN/QuY8e6yX+fgt3SMdh/D
+        rd2OEIXySAdhuuoaUj1ptRVOrLBERx4f3RV7ITk1X/VfB9KL65pU75NJ1QSiCGKOwLA8BAMSJ2heCKCp
+        5qOziAv2ngvYsiBUxjt9IQBLwytUX/Aq6a6JJaZojLSHYeQHuf+H9cTsqDOrHtP27aEscIc8ZwNKI7kV
+        BDDbkIOSo+5x8vxQDH0Mw/DnbRj6tJXcWwg1Masreegptocixw7KYi80p3tAFMI5TcOkB0wOX20jaExd
+        Pvj7fRSpKkTGHkfI83lQP3GALMMO6Vts0Z7NRUfRerw6zh8KcDNZbEhiQ4onTaPpw1gX8feCQKhr1kBZ
+        zkPyWmucXGmJ48stILtqA4XYDbIr7sjba1lKzpvTeOs6aDi3kAKmbPeY41x72q1L+SAIyqIlYO86QZFl
+        CzabT8yuaBevwLM4mz5/FyMPGv+aQ+aMDiA948pIk5wpxOisP8dfkuj08/ONVWjP34jOMl/8EHtDdmkB
+        qmM4/fHepqETH2nS84Oz/gLqEoVM3QmB/scZ7/E0W1wYPrfkcZS14uVhK1REWrB5O2ff3+o6fSm9Km2d
+        mg0ASQKfkRxzYGqP2jO1R2wpiH7tmTQoRHTBmj4Zbftfsx7wBwAp/CL7bMv4AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="barButtonItem13.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        VzY1LQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="bbiNewBdc.Caption" xml:space="preserve">
+    <value>Nouveau Bon de Commande</value>
+  </data>
+  <data name="bbiNewBdc.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAqdEVYdFRpdGxlAEhlYWRlcjtBZGQgR3JvdXAgSGVhZGVyO0hlYWRlcjtHcm91cMe603EAAAKu
+        SURBVDhPbZJbTxNBGIZXFIqH/2EiJggxKEK49kIT79XEQIQqGkCkoV1QwUqhHAsFarfgAYstxBgpVA5i
+        Y6BYQAFJFLkQvDHhZEtboOe+zkxbxOAmz36zO9Pne3emHMdxcYJx1qLrnQOjZw4CxTgLLeExxTCLDccO
+        dOYClHVmgRey3vO6TI4XMsnPOe5gfecUYleYDBjkFiM2V6rNwMKaAInmHCxLRVxJW3pEoBQm2eJq888I
+        AzGWser0ofV1PorVZ3FHnQ7zYg6Kms+gUEVoTBulgkMKzQQTKPqXoDAto8q0FOUH3J4gClRprHPv/CUY
+        5y/C8OUC9HPnka88DSaQt1mJIAyZYRHS7u+EbyjVL0Ci/4pfvz1oNNyCuCYVedWp6JjOQG5VCnIfpeC6
+        /NRbKoivaBlDKBSGaysA17Yfzl0C2CYJgmSOJsx5mIxm6wlkVyajafw4d+3BSbYH8feaPrBFQg/Z+Z4Z
+        aIwzaH/5Ga36T1Drp9HSNYWVdTfqusS4WpaEy3zS0BU+iaPQK4GvtyAQDMPu9sPhovhgJ9W+W/0kWYCl
+        cLl99LsTyclwFCYoVY7CHwihtXsa6hdTrKPq+SRUz2xofGpDwxMbKlos8PpDKKka2ScQSRQj8BHButOL
+        Dcqml43Xad30Yc3hxRoZe3xBFMuHqODw3gSiYvkwvL4QmqLd6jttqOv4iFodQZiAUjuB8oZ32PYGUVgx
+        SAVH9goSCyoHsUPsq3YPwYsV0nGFVvLMKjlKOnZ7Arh937xfQF9S+9+OVtRorajWjENBaR+DrHaYbeTN
+        8n4qOPpPgvzyAWZ370SgC2NE/hMBOLf82CSI+b59goRcyavRG7wJYlkUaR/EFFm0Sk3II8950jfIvmu0
+        kASivQkO0KOkG0Oj/Ydj5F0MOi8ixMUEfwDx46aY+yk71AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="bbiNewBdc.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
   <data name="ribbonControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -649,33 +1301,6 @@
   <metadata name="ribbonMiniToolbar2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>721, 17</value>
   </metadata>
-  <data name="rpcSearch.Color" type="System.Drawing.Color, System.Drawing">
-    <value>DarkOrange</value>
-  </data>
-  <data name="rpgFind.Text" xml:space="preserve">
-    <value>Filter Actions</value>
-  </data>
-  <data name="rpgFilterColumns.Text" xml:space="preserve">
-    <value>Filter Columns</value>
-  </data>
-  <data name="rbgClose.Text" xml:space="preserve">
-    <value>Close</value>
-  </data>
-  <data name="rpSearch.Text" xml:space="preserve">
-    <value>SAERCH</value>
-  </data>
-  <data name="rpcSearch.Text" xml:space="preserve">
-    <value>Search Tools</value>
-  </data>
-  <data name="rpcSearch.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="appointmentRibbonPage1.Text" xml:space="preserve">
-    <value>APPOINTMENT</value>
-  </data>
-  <data name="calendarToolsRibbonPageCategory1.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="rpgNew.Text" xml:space="preserve">
     <value>Stock / Produit</value>
   </data>
@@ -703,11 +1328,29 @@
   <data name="rpContacts.Text" xml:space="preserve">
     <value>CLIENTS</value>
   </data>
+  <data name="rpgNewBdc.Text" xml:space="preserve">
+    <value>Ajout bon de commande</value>
+  </data>
   <data name="rpBDC.Text" xml:space="preserve">
     <value>BON DE COMMANDE</value>
   </data>
   <data name="rpCalendar.Text" xml:space="preserve">
     <value>LIVRAISON</value>
+  </data>
+  <data name="rpgGestionSecteur.Text" xml:space="preserve">
+    <value>Gestion Secteur</value>
+  </data>
+  <data name="rpgGestionLivreur.Text" xml:space="preserve">
+    <value>Gestion Livreur</value>
+  </data>
+  <data name="ribbonPageGroup3.Text" xml:space="preserve">
+    <value>ribbonPageGroup3</value>
+  </data>
+  <data name="ribbonPageGroup4.Text" xml:space="preserve">
+    <value>ribbonPageGroup4</value>
+  </data>
+  <data name="rpSecteur.Text" xml:space="preserve">
+    <value>Secteur</value>
   </data>
   <data name="repositoryItemSpinEdit1.AutoHeight" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -725,7 +1368,7 @@
     <value>ribbonStatusBar1</value>
   </data>
   <data name="&gt;&gt;ribbonStatusBar1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonStatusBar, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonStatusBar, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonStatusBar1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -737,7 +1380,7 @@
     <value>ribbonControl1</value>
   </data>
   <data name="&gt;&gt;ribbonControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonControl1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -745,98 +1388,53 @@
   <data name="&gt;&gt;ribbonControl1.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="galleryItemGroup3.Caption" xml:space="preserve">
+    <value>Group1</value>
+  </data>
+  <data name="galleryItem13.Caption" xml:space="preserve">
+    <value>Open Calendar</value>
+  </data>
+  <data name="galleryItem13.Description" xml:space="preserve">
+    <value>Open a calendar file (.ics)</value>
+  </data>
+  <metadata name="pmTreeView.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="pmMessage.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>136, 17</value>
+  </metadata>
+  <metadata name="pmFlagStatus.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>253, 17</value>
+  </metadata>
+  <metadata name="schedulerBarController1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>378, 17</value>
+  </metadata>
+  <data name="navBarItem1.Caption" xml:space="preserve">
+    <value>navBarItem1</value>
+  </data>
   <data name="nbgMail.Caption" xml:space="preserve">
     <value>Stock</value>
-  </data>
-  <data name="ucMailTree1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="ucMailTree1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="ucMailTree1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 333</value>
-  </data>
-  <data name="ucMailTree1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ucMailTree1.Name" xml:space="preserve">
-    <value>ucMailTree1</value>
-  </data>
-  <data name="&gt;&gt;ucMailTree1.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.ucMailTree, DevExpress.MailClient.Win, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ucMailTree1.Parent" xml:space="preserve">
-    <value>navBarGroupControlContainer1</value>
-  </data>
-  <data name="&gt;&gt;ucMailTree1.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="navBarGroupControlContainer1.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 333</value>
   </data>
   <data name="navBarGroupControlContainer1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;navBarGroupControlContainer1.Name" xml:space="preserve">
     <value>navBarGroupControlContainer1</value>
   </data>
   <data name="&gt;&gt;navBarGroupControlContainer1.Type" xml:space="preserve">
-    <value>DevExpress.XtraNavBar.NavBarGroupControlContainer, DevExpress.XtraNavBar.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraNavBar.NavBarGroupControlContainer, DevExpress.XtraNavBar.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;navBarGroupControlContainer1.Parent" xml:space="preserve">
     <value>navBarControl1</value>
   </data>
   <data name="&gt;&gt;navBarGroupControlContainer1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
-  <data name="ucCalendar1.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
-    <value>217, 218, 224</value>
-  </data>
-  <data name="ucCalendar1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="ucCalendar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="ucCalendar1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 1, 1, 1</value>
-  </data>
-  <data name="ucCalendar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 388</value>
-  </data>
-  <data name="ucCalendar1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ucCalendar1.Name" xml:space="preserve">
-    <value>ucCalendar1</value>
-  </data>
-  <data name="&gt;&gt;ucCalendar1.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.Controls.ucCalendar, DevExpress.MailClient.Win, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ucCalendar1.Parent" xml:space="preserve">
-    <value>navBarGroupControlContainer2</value>
-  </data>
-  <data name="&gt;&gt;ucCalendar1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="navBarGroupControlContainer2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 388</value>
-  </data>
-  <data name="navBarGroupControlContainer2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;navBarGroupControlContainer2.Name" xml:space="preserve">
-    <value>navBarGroupControlContainer2</value>
-  </data>
-  <data name="&gt;&gt;navBarGroupControlContainer2.Type" xml:space="preserve">
-    <value>DevExpress.XtraNavBar.NavBarGroupControlContainer, DevExpress.XtraNavBar.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;navBarGroupControlContainer2.Parent" xml:space="preserve">
-    <value>navBarControl1</value>
-  </data>
-  <data name="&gt;&gt;navBarGroupControlContainer2.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="nbgContacts.Caption" xml:space="preserve">
+    <value>Clients</value>
   </data>
   <data name="ucContacts1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -845,7 +1443,7 @@
     <value>0, 0</value>
   </data>
   <data name="ucContacts1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 342</value>
+    <value>180, 333</value>
   </data>
   <data name="ucContacts1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -863,7 +1461,7 @@
     <value>0</value>
   </data>
   <data name="navBarGroupControlContainer3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 342</value>
+    <value>180, 333</value>
   </data>
   <data name="navBarGroupControlContainer3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -872,25 +1470,97 @@
     <value>navBarGroupControlContainer3</value>
   </data>
   <data name="&gt;&gt;navBarGroupControlContainer3.Type" xml:space="preserve">
-    <value>DevExpress.XtraNavBar.NavBarGroupControlContainer, DevExpress.XtraNavBar.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraNavBar.NavBarGroupControlContainer, DevExpress.XtraNavBar.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;navBarGroupControlContainer3.Parent" xml:space="preserve">
     <value>navBarControl1</value>
   </data>
   <data name="&gt;&gt;navBarGroupControlContainer3.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
+  </data>
+  <data name="nbgCalendar.Caption" xml:space="preserve">
+    <value>Livraison</value>
+  </data>
+  <data name="ucCalendar1.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>217, 218, 224</value>
+  </data>
+  <data name="ucCalendar1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ucCalendar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ucCalendar1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 1, 1, 1</value>
+  </data>
+  <data name="ucCalendar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 333</value>
+  </data>
+  <data name="ucCalendar1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ucCalendar1.Name" xml:space="preserve">
+    <value>ucCalendar1</value>
+  </data>
+  <data name="&gt;&gt;ucCalendar1.Type" xml:space="preserve">
+    <value>DevExpress.MailClient.Win.Controls.ucCalendar, DevExpress.MailClient.Win, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ucCalendar1.Parent" xml:space="preserve">
+    <value>navBarGroupControlContainer2</value>
+  </data>
+  <data name="&gt;&gt;ucCalendar1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="navBarGroupControlContainer2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 333</value>
+  </data>
+  <data name="navBarGroupControlContainer2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;navBarGroupControlContainer2.Name" xml:space="preserve">
+    <value>navBarGroupControlContainer2</value>
+  </data>
+  <data name="&gt;&gt;navBarGroupControlContainer2.Type" xml:space="preserve">
+    <value>DevExpress.XtraNavBar.NavBarGroupControlContainer, DevExpress.XtraNavBar.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;navBarGroupControlContainer2.Parent" xml:space="preserve">
+    <value>navBarControl1</value>
+  </data>
+  <data name="&gt;&gt;navBarGroupControlContainer2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="nbgBdc.Caption" xml:space="preserve">
+    <value>Commande</value>
+  </data>
+  <data name="navBarGroupControlContainer5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 333</value>
+  </data>
+  <data name="navBarGroupControlContainer5.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;navBarGroupControlContainer5.Name" xml:space="preserve">
+    <value>navBarGroupControlContainer5</value>
+  </data>
+  <data name="&gt;&gt;navBarGroupControlContainer5.Type" xml:space="preserve">
+    <value>DevExpress.XtraNavBar.NavBarGroupControlContainer, DevExpress.XtraNavBar.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;navBarGroupControlContainer5.Parent" xml:space="preserve">
+    <value>navBarControl1</value>
+  </data>
+  <data name="&gt;&gt;navBarGroupControlContainer5.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="navBarGroupControlContainer4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 358</value>
+    <value>180, 333</value>
   </data>
   <data name="navBarGroupControlContainer4.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;navBarGroupControlContainer4.Name" xml:space="preserve">
     <value>navBarGroupControlContainer4</value>
   </data>
   <data name="&gt;&gt;navBarGroupControlContainer4.Type" xml:space="preserve">
-    <value>DevExpress.XtraNavBar.NavBarGroupControlContainer, DevExpress.XtraNavBar.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraNavBar.NavBarGroupControlContainer, DevExpress.XtraNavBar.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;navBarGroupControlContainer4.Parent" xml:space="preserve">
     <value>navBarControl1</value>
@@ -901,14 +1571,87 @@
   <data name="navBarControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
   </data>
-  <data name="nbgContacts.Caption" xml:space="preserve">
-    <value>Clients</value>
+  <data name="nbgSecteur.Caption" xml:space="preserve">
+    <value>Secteur</value>
   </data>
-  <data name="nbgBDC.Caption" xml:space="preserve">
-    <value>Bon de commande</value>
+  <data name="nbgSecteur.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        8BfwAAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="nbgCalendar.Caption" xml:space="preserve">
-    <value>Livraison</value>
+  <data name="nbgSecteur.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAVdEVYdFRpdGxlAFB1Ymxpc2g7VXBsb2FkO70aPsEAAANJSURBVDhPjZJ9TMxxHMePPJU8LD3K
+        SKfdzPyjzcwqVy49nKQlTAnVUl3rQaZ2RyuOk6SaISeRWuj0oKLkwq77xR2ndNGzpFJS/ZGRjvb2/d6F
+        8Zfv9t53+34+n9fn+3lg5TJqFgAWOTMl+ZvX5VT5lJ28GTpwuqwZktKmDydlmrIwcaojsRsVKSSsq8Sf
+        2PQx03GsGVtDEkyCkgWpZ2XbdaqeM2h8V48x3RR6P+tQxFQj5Zq/7uwt3nGO49J5BDRDLGv8CzBrZ2L0
+        ZVFhBW43pGPsWws6B7X4OPEDQ0RtA02QvzmP/McBiJJwpQQw+2iB6g/AL4btHnzMAxlyOZQdL6HpZtAy
+        0I634zq9Ose+QtXTjLwn0RBd2QK3IH8PWu7vEvzi2CWSYj4Sr4ugGZpA0/AEtJ++QTtikKL1KSnpHhR9
+        sciV7wB3j2spAcz5DXAPWzOYXuqLQ7mpeNA9jvq+L2D6ifq+QvHuE0qUxZA3PsDj9izUNItxOE0wRgAm
+        tOv64xwYott7/CBE5UpcVI2gsn0c9zrGcbNBjqvVOahq0qBzZAKF8gxcr05BXUPtFAkz9YwzNwC8Y/KH
+        IqXPEZWvRcrDDzinHEaeZhQZsizUtZ+AtpdBhbIAKTfcEXPOGVKZdJKELeQJzAwAB5dNFT7RwQgQX8S+
+        C2rE3u6A8H4/BDlZqFZVQtNVgYRLG9E7okDXx4fYJVz7neM0fzVtpB5gt8HSd/1uO0SkB8Anfj98RacQ
+        kKbAldoOKF51IT7bDS+6itA2modnA8mQv8qAa6iFxpozdxHdCcowZXNti7kHHBCb7YUdwmPwEz8C83oQ
+        ydIIMv9wMO+TUdstwN3WYBQ2bkXaHT7W71pUQKdBAUYmZsZWK52WXea4eU5tF5YjJLMe6rZB8OOt4R1v
+        hW1HbCB+xCY9sgf/kDX4cVbwjrWi+2/MCjyaRCG0HlMz+zXebJ6wjuMlHq1lWlF8Xz155lJJDz9pCXLU
+        GyGqWQ6PaEsauJT60+SsVZ5i1gqXUAqh9cymHSaiM7Kcvm09EsyQyTjicJUNeBEWFLDY9aCFYQq/Nurf
+        m9p4kXonE5fIxfWu4Zagcgo2V9Ls3LD/ABhSkG8avrtkWgum3/TGn4BjElYUfyZXAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="navBarItem2.Caption" xml:space="preserve">
+    <value>navBarItem2</value>
+  </data>
+  <data name="navBarItem3.Caption" xml:space="preserve">
+    <value>navBarItem3</value>
   </data>
   <data name="navBarControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 144</value>
@@ -929,7 +1672,7 @@
     <value>navBarControl1</value>
   </data>
   <data name="&gt;&gt;navBarControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraNavBar.NavBarControl, DevExpress.XtraNavBar.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraNavBar.NavBarControl, DevExpress.XtraNavBar.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;navBarControl1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -953,7 +1696,7 @@
     <value>pcMain</value>
   </data>
   <data name="&gt;&gt;pcMain.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;pcMain.Parent" xml:space="preserve">
     <value>$this</value>
@@ -961,18 +1704,6 @@
   <data name="&gt;&gt;pcMain.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="pmTreeView.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="pmMessage.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>136, 17</value>
-  </metadata>
-  <metadata name="pmFlagStatus.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>253, 17</value>
-  </metadata>
-  <metadata name="schedulerBarController1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>378, 17</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -2730,790 +3461,880 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Vente Embarque</value>
   </data>
-  <data name="&gt;&gt;galleryControlGallery1.Name" xml:space="preserve">
-    <value>galleryControlGallery1</value>
+  <data name="&gt;&gt;galleryControlGallery2.Name" xml:space="preserve">
+    <value>galleryControlGallery2</value>
   </data>
-  <data name="&gt;&gt;galleryControlGallery1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.Gallery.GalleryControlGallery, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;galleryControlGallery2.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.Gallery.GalleryControlGallery, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bvbiSaveAs.Name" xml:space="preserve">
     <value>bvbiSaveAs</value>
   </data>
   <data name="&gt;&gt;bvbiSaveAs.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.BackstageViewButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bvbiSaveAttachment.Name" xml:space="preserve">
     <value>bvbiSaveAttachment</value>
   </data>
   <data name="&gt;&gt;bvbiSaveAttachment.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.BackstageViewButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bvbiSaveCalendar.Name" xml:space="preserve">
     <value>bvbiSaveCalendar</value>
   </data>
   <data name="&gt;&gt;bvbiSaveCalendar.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.BackstageViewButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bvtiInfo.Name" xml:space="preserve">
     <value>bvtiInfo</value>
   </data>
   <data name="&gt;&gt;bvtiInfo.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.BackstageViewTabItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewTabItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bvtiOpen.Name" xml:space="preserve">
     <value>bvtiOpen</value>
   </data>
   <data name="&gt;&gt;bvtiOpen.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.BackstageViewTabItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewTabItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bvtiPrint.Name" xml:space="preserve">
     <value>bvtiPrint</value>
   </data>
   <data name="&gt;&gt;bvtiPrint.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.BackstageViewTabItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewTabItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bvtiExport.Name" xml:space="preserve">
     <value>bvtiExport</value>
   </data>
   <data name="&gt;&gt;bvtiExport.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.BackstageViewTabItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewTabItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bvbiExit.Name" xml:space="preserve">
     <value>bvbiExit</value>
   </data>
   <data name="&gt;&gt;bvbiExit.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.BackstageViewButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.BackstageViewButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;rgbiSkins.Name" xml:space="preserve">
     <value>rgbiSkins</value>
   </data>
   <data name="&gt;&gt;rgbiSkins.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.RibbonGalleryBarItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.RibbonGalleryBarItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiRotateLayout.Name" xml:space="preserve">
     <value>bbiRotateLayout</value>
   </data>
   <data name="&gt;&gt;bbiRotateLayout.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiFlipLayout.Name" xml:space="preserve">
     <value>bbiFlipLayout</value>
   </data>
   <data name="&gt;&gt;bbiFlipLayout.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bciShowUnreadMessageCount.Name" xml:space="preserve">
     <value>bciShowUnreadMessageCount</value>
   </data>
   <data name="&gt;&gt;bciShowUnreadMessageCount.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarCheckItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarCheckItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bciShowAllMessageCount.Name" xml:space="preserve">
     <value>bciShowAllMessageCount</value>
   </data>
   <data name="&gt;&gt;bciShowAllMessageCount.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarCheckItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarCheckItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiDelete.Name" xml:space="preserve">
     <value>bbiDelete</value>
   </data>
   <data name="&gt;&gt;bbiDelete.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiNew.Name" xml:space="preserve">
     <value>bbiNew</value>
   </data>
   <data name="&gt;&gt;bbiNew.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiReply.Name" xml:space="preserve">
     <value>bbiReply</value>
   </data>
   <data name="&gt;&gt;bbiReply.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiForward.Name" xml:space="preserve">
     <value>bbiForward</value>
   </data>
   <data name="&gt;&gt;bbiForward.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiReplyAll.Name" xml:space="preserve">
     <value>bbiReplyAll</value>
   </data>
   <data name="&gt;&gt;bbiReplyAll.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiUnreadRead.Name" xml:space="preserve">
     <value>bbiUnreadRead</value>
   </data>
   <data name="&gt;&gt;bbiUnreadRead.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiPriority.Name" xml:space="preserve">
     <value>bbiPriority</value>
   </data>
   <data name="&gt;&gt;bbiPriority.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bsiNavigation.Name" xml:space="preserve">
     <value>bsiNavigation</value>
   </data>
   <data name="&gt;&gt;bsiNavigation.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarSubItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarSubItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiCloseSearch.Name" xml:space="preserve">
     <value>bbiCloseSearch</value>
   </data>
   <data name="&gt;&gt;bbiCloseSearch.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiShowUnread.Name" xml:space="preserve">
     <value>bbiShowUnread</value>
   </data>
   <data name="&gt;&gt;bbiShowUnread.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiImportant.Name" xml:space="preserve">
     <value>bbiImportant</value>
   </data>
   <data name="&gt;&gt;bbiImportant.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiHasAttachment.Name" xml:space="preserve">
     <value>bbiHasAttachment</value>
   </data>
   <data name="&gt;&gt;bbiHasAttachment.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiResetColumnsToDefault.Name" xml:space="preserve">
     <value>bbiResetColumnsToDefault</value>
   </data>
   <data name="&gt;&gt;bbiResetColumnsToDefault.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bsiColumns.Name" xml:space="preserve">
     <value>bsiColumns</value>
   </data>
   <data name="&gt;&gt;bsiColumns.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarSubItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarSubItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiSubjectColumn.Name" xml:space="preserve">
     <value>bbiSubjectColumn</value>
   </data>
   <data name="&gt;&gt;bbiSubjectColumn.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiFromColumn.Name" xml:space="preserve">
     <value>bbiFromColumn</value>
   </data>
   <data name="&gt;&gt;bbiFromColumn.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiDateColumn.Name" xml:space="preserve">
     <value>bbiDateColumn</value>
   </data>
   <data name="&gt;&gt;bbiDateColumn.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiPriorityColumn.Name" xml:space="preserve">
     <value>bbiPriorityColumn</value>
   </data>
   <data name="&gt;&gt;bbiPriorityColumn.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiAttachmentColumn.Name" xml:space="preserve">
     <value>bbiAttachmentColumn</value>
   </data>
   <data name="&gt;&gt;bbiAttachmentColumn.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiDate.Name" xml:space="preserve">
     <value>bbiDate</value>
   </data>
   <data name="&gt;&gt;bbiDate.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiClearFilter.Name" xml:space="preserve">
     <value>bbiClearFilter</value>
   </data>
   <data name="&gt;&gt;bbiClearFilter.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiNewFeed.Name" xml:space="preserve">
     <value>bbiNewFeed</value>
   </data>
   <data name="&gt;&gt;bbiNewFeed.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiEditFeed.Name" xml:space="preserve">
     <value>bbiEditFeed</value>
   </data>
   <data name="&gt;&gt;bbiEditFeed.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiDeleteFeed.Name" xml:space="preserve">
     <value>bbiDeleteFeed</value>
   </data>
   <data name="&gt;&gt;bbiDeleteFeed.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiRefreshFeed.Name" xml:space="preserve">
     <value>bbiRefreshFeed</value>
   </data>
   <data name="&gt;&gt;bbiRefreshFeed.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;rgbiCurrentView.Name" xml:space="preserve">
     <value>rgbiCurrentView</value>
   </data>
   <data name="&gt;&gt;rgbiCurrentView.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.RibbonGalleryBarItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.RibbonGalleryBarItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bsiInfo.Name" xml:space="preserve">
     <value>bsiInfo</value>
   </data>
   <data name="&gt;&gt;bsiInfo.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;beiZoom.Name" xml:space="preserve">
     <value>beiZoom</value>
   </data>
   <data name="&gt;&gt;beiZoom.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarEditItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarEditItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;repositoryItemZoomTrackBar1.Name" xml:space="preserve">
     <value>repositoryItemZoomTrackBar1</value>
   </data>
   <data name="&gt;&gt;repositoryItemZoomTrackBar1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar, DevExpress.XtraEditors.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiNormal.Name" xml:space="preserve">
     <value>bbiNormal</value>
   </data>
   <data name="&gt;&gt;bbiNormal.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiReading.Name" xml:space="preserve">
     <value>bbiReading</value>
   </data>
   <data name="&gt;&gt;bbiReading.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bsiTemp.Name" xml:space="preserve">
     <value>bsiTemp</value>
   </data>
   <data name="&gt;&gt;bsiTemp.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiManageView.Name" xml:space="preserve">
     <value>bbiManageView</value>
   </data>
   <data name="&gt;&gt;bbiManageView.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiSaveCurrentView.Name" xml:space="preserve">
     <value>bbiSaveCurrentView</value>
   </data>
   <data name="&gt;&gt;bbiSaveCurrentView.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;rgbiCurrentViewTasks.Name" xml:space="preserve">
     <value>rgbiCurrentViewTasks</value>
   </data>
   <data name="&gt;&gt;rgbiCurrentViewTasks.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.RibbonGalleryBarItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.RibbonGalleryBarItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiTodayFlag.Name" xml:space="preserve">
     <value>bbiTodayFlag</value>
   </data>
   <data name="&gt;&gt;bbiTodayFlag.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiTomorrowFlag.Name" xml:space="preserve">
     <value>bbiTomorrowFlag</value>
   </data>
   <data name="&gt;&gt;bbiTomorrowFlag.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiThisWeekFlag.Name" xml:space="preserve">
     <value>bbiThisWeekFlag</value>
   </data>
   <data name="&gt;&gt;bbiThisWeekFlag.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiNextWeekFlag.Name" xml:space="preserve">
     <value>bbiNextWeekFlag</value>
   </data>
   <data name="&gt;&gt;bbiNextWeekFlag.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiNoDateFlag.Name" xml:space="preserve">
     <value>bbiNoDateFlag</value>
   </data>
   <data name="&gt;&gt;bbiNoDateFlag.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiCustomFlag.Name" xml:space="preserve">
     <value>bbiCustomFlag</value>
   </data>
   <data name="&gt;&gt;bbiCustomFlag.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiNewContact.Name" xml:space="preserve">
     <value>bbiNewContact</value>
   </data>
   <data name="&gt;&gt;bbiNewContact.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiEditContact.Name" xml:space="preserve">
     <value>bbiEditContact</value>
   </data>
   <data name="&gt;&gt;bbiEditContact.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiDeleteContact.Name" xml:space="preserve">
     <value>bbiDeleteContact</value>
   </data>
   <data name="&gt;&gt;bbiDeleteContact.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiNewTask.Name" xml:space="preserve">
     <value>bbiNewTask</value>
   </data>
   <data name="&gt;&gt;bbiNewTask.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiEditTask.Name" xml:space="preserve">
     <value>bbiEditTask</value>
   </data>
   <data name="&gt;&gt;bbiEditTask.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiDeleteTask.Name" xml:space="preserve">
     <value>bbiDeleteTask</value>
   </data>
   <data name="&gt;&gt;bbiDeleteTask.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;newAppointmentItem1.Name" xml:space="preserve">
     <value>newAppointmentItem1</value>
   </data>
   <data name="&gt;&gt;newAppointmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.NewAppointmentItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.NewAppointmentItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;newRecurringAppointmentItem1.Name" xml:space="preserve">
     <value>newRecurringAppointmentItem1</value>
   </data>
   <data name="&gt;&gt;newRecurringAppointmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.NewRecurringAppointmentItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.NewRecurringAppointmentItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;navigateViewBackwardItem1.Name" xml:space="preserve">
     <value>navigateViewBackwardItem1</value>
   </data>
   <data name="&gt;&gt;navigateViewBackwardItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.NavigateViewBackwardItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.NavigateViewBackwardItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;navigateViewForwardItem1.Name" xml:space="preserve">
     <value>navigateViewForwardItem1</value>
   </data>
   <data name="&gt;&gt;navigateViewForwardItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.NavigateViewForwardItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.NavigateViewForwardItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;gotoTodayItem1.Name" xml:space="preserve">
     <value>gotoTodayItem1</value>
   </data>
   <data name="&gt;&gt;gotoTodayItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.GotoTodayItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.GotoTodayItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;viewZoomInItem1.Name" xml:space="preserve">
     <value>viewZoomInItem1</value>
   </data>
   <data name="&gt;&gt;viewZoomInItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.ViewZoomInItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.ViewZoomInItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;viewZoomOutItem1.Name" xml:space="preserve">
     <value>viewZoomOutItem1</value>
   </data>
   <data name="&gt;&gt;viewZoomOutItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.ViewZoomOutItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.ViewZoomOutItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;switchToDayViewItem1.Name" xml:space="preserve">
     <value>switchToDayViewItem1</value>
   </data>
   <data name="&gt;&gt;switchToDayViewItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.SwitchToDayViewItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.SwitchToDayViewItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;switchToWorkWeekViewItem1.Name" xml:space="preserve">
     <value>switchToWorkWeekViewItem1</value>
   </data>
   <data name="&gt;&gt;switchToWorkWeekViewItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.SwitchToWorkWeekViewItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.SwitchToWorkWeekViewItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;switchToWeekViewItem1.Name" xml:space="preserve">
     <value>switchToWeekViewItem1</value>
   </data>
   <data name="&gt;&gt;switchToWeekViewItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.SwitchToWeekViewItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.SwitchToWeekViewItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;switchToMonthViewItem1.Name" xml:space="preserve">
     <value>switchToMonthViewItem1</value>
   </data>
   <data name="&gt;&gt;switchToMonthViewItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.SwitchToMonthViewItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.SwitchToMonthViewItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;switchToTimelineViewItem1.Name" xml:space="preserve">
     <value>switchToTimelineViewItem1</value>
   </data>
   <data name="&gt;&gt;switchToTimelineViewItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.SwitchToTimelineViewItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.SwitchToTimelineViewItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;groupByNoneItem1.Name" xml:space="preserve">
     <value>groupByNoneItem1</value>
   </data>
   <data name="&gt;&gt;groupByNoneItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.GroupByNoneItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.GroupByNoneItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;groupByDateItem1.Name" xml:space="preserve">
     <value>groupByDateItem1</value>
   </data>
   <data name="&gt;&gt;groupByDateItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.GroupByDateItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.GroupByDateItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;groupByResourceItem1.Name" xml:space="preserve">
     <value>groupByResourceItem1</value>
   </data>
   <data name="&gt;&gt;groupByResourceItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.GroupByResourceItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.GroupByResourceItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;switchTimeScalesItem1.Name" xml:space="preserve">
     <value>switchTimeScalesItem1</value>
   </data>
   <data name="&gt;&gt;switchTimeScalesItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.SwitchTimeScalesItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.SwitchTimeScalesItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;switchCompressWeekendItem1.Name" xml:space="preserve">
     <value>switchCompressWeekendItem1</value>
   </data>
   <data name="&gt;&gt;switchCompressWeekendItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.SwitchCompressWeekendItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.SwitchCompressWeekendItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;switchShowWorkTimeOnlyItem1.Name" xml:space="preserve">
     <value>switchShowWorkTimeOnlyItem1</value>
   </data>
   <data name="&gt;&gt;switchShowWorkTimeOnlyItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.SwitchShowWorkTimeOnlyItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.SwitchShowWorkTimeOnlyItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;editAppointmentQueryItem1.Name" xml:space="preserve">
     <value>editAppointmentQueryItem1</value>
   </data>
   <data name="&gt;&gt;editAppointmentQueryItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.EditAppointmentQueryItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.EditAppointmentQueryItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;editOccurrenceUICommandItem1.Name" xml:space="preserve">
     <value>editOccurrenceUICommandItem1</value>
   </data>
   <data name="&gt;&gt;editOccurrenceUICommandItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.EditOccurrenceUICommandItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.EditOccurrenceUICommandItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;editSeriesUICommandItem1.Name" xml:space="preserve">
     <value>editSeriesUICommandItem1</value>
   </data>
   <data name="&gt;&gt;editSeriesUICommandItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.EditSeriesUICommandItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.EditSeriesUICommandItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;deleteAppointmentsItem1.Name" xml:space="preserve">
     <value>deleteAppointmentsItem1</value>
   </data>
   <data name="&gt;&gt;deleteAppointmentsItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.DeleteAppointmentsItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.DeleteAppointmentsItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;deleteOccurrenceItem1.Name" xml:space="preserve">
     <value>deleteOccurrenceItem1</value>
   </data>
   <data name="&gt;&gt;deleteOccurrenceItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.DeleteOccurrenceItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.DeleteOccurrenceItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;deleteSeriesItem1.Name" xml:space="preserve">
     <value>deleteSeriesItem1</value>
   </data>
   <data name="&gt;&gt;deleteSeriesItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.DeleteSeriesItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.DeleteSeriesItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;splitAppointmentItem1.Name" xml:space="preserve">
     <value>splitAppointmentItem1</value>
   </data>
   <data name="&gt;&gt;splitAppointmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.SplitAppointmentItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.SplitAppointmentItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeAppointmentStatusItem1.Name" xml:space="preserve">
     <value>changeAppointmentStatusItem1</value>
   </data>
   <data name="&gt;&gt;changeAppointmentStatusItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.ChangeAppointmentStatusItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.ChangeAppointmentStatusItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeAppointmentLabelItem1.Name" xml:space="preserve">
     <value>changeAppointmentLabelItem1</value>
   </data>
   <data name="&gt;&gt;changeAppointmentLabelItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.ChangeAppointmentLabelItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.ChangeAppointmentLabelItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleRecurrenceItem1.Name" xml:space="preserve">
     <value>toggleRecurrenceItem1</value>
   </data>
   <data name="&gt;&gt;toggleRecurrenceItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.ToggleRecurrenceItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.ToggleRecurrenceItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeAppointmentReminderItem1.Name" xml:space="preserve">
     <value>changeAppointmentReminderItem1</value>
   </data>
   <data name="&gt;&gt;changeAppointmentReminderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.ChangeAppointmentReminderItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.ChangeAppointmentReminderItem, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;repositoryItemDuration1.Name" xml:space="preserve">
     <value>repositoryItemDuration1</value>
   </data>
   <data name="&gt;&gt;repositoryItemDuration1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.RepositoryItemDuration, DevExpress.XtraScheduler.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.RepositoryItemDuration, DevExpress.XtraScheduler.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem1.Name" xml:space="preserve">
     <value>barButtonItem1</value>
   </data>
   <data name="&gt;&gt;barButtonItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem2.Name" xml:space="preserve">
     <value>barButtonItem2</value>
   </data>
   <data name="&gt;&gt;barButtonItem2.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem3.Name" xml:space="preserve">
     <value>barButtonItem3</value>
   </data>
   <data name="&gt;&gt;barButtonItem3.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem4.Name" xml:space="preserve">
+    <value>barButtonItem4</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem5.Name" xml:space="preserve">
+    <value>barButtonItem5</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem5.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonGroup1.Name" xml:space="preserve">
+    <value>barButtonGroup1</value>
+  </data>
+  <data name="&gt;&gt;barButtonGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonGroup2.Name" xml:space="preserve">
+    <value>barButtonGroup2</value>
+  </data>
+  <data name="&gt;&gt;barButtonGroup2.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bbiNewSecteur.Name" xml:space="preserve">
+    <value>bbiNewSecteur</value>
+  </data>
+  <data name="&gt;&gt;bbiNewSecteur.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem7.Name" xml:space="preserve">
+    <value>barButtonItem7</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem7.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem8.Name" xml:space="preserve">
+    <value>barButtonItem8</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem8.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem9.Name" xml:space="preserve">
+    <value>barButtonItem9</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem9.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem10.Name" xml:space="preserve">
+    <value>barButtonItem10</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem10.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem11.Name" xml:space="preserve">
+    <value>barButtonItem11</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem11.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem12.Name" xml:space="preserve">
+    <value>barButtonItem12</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem12.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem13.Name" xml:space="preserve">
+    <value>barButtonItem13</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem13.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bbiNewBdc.Name" xml:space="preserve">
+    <value>bbiNewBdc</value>
+  </data>
+  <data name="&gt;&gt;bbiNewBdc.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonMiniToolbar1.Name" xml:space="preserve">
     <value>ribbonMiniToolbar1</value>
   </data>
   <data name="&gt;&gt;ribbonMiniToolbar1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonMiniToolbar, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonMiniToolbar, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonMiniToolbar2.Name" xml:space="preserve">
     <value>ribbonMiniToolbar2</value>
   </data>
   <data name="&gt;&gt;ribbonMiniToolbar2.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonMiniToolbar, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rpcSearch.Name" xml:space="preserve">
-    <value>rpcSearch</value>
-  </data>
-  <data name="&gt;&gt;rpcSearch.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageCategory, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rpSearch.Name" xml:space="preserve">
-    <value>rpSearch</value>
-  </data>
-  <data name="&gt;&gt;rpSearch.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rpgFind.Name" xml:space="preserve">
-    <value>rpgFind</value>
-  </data>
-  <data name="&gt;&gt;rpgFind.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rpgFilterColumns.Name" xml:space="preserve">
-    <value>rpgFilterColumns</value>
-  </data>
-  <data name="&gt;&gt;rpgFilterColumns.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rbgClose.Name" xml:space="preserve">
-    <value>rbgClose</value>
-  </data>
-  <data name="&gt;&gt;rbgClose.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;calendarToolsRibbonPageCategory1.Name" xml:space="preserve">
-    <value>calendarToolsRibbonPageCategory1</value>
-  </data>
-  <data name="&gt;&gt;calendarToolsRibbonPageCategory1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.CalendarToolsRibbonPageCategory, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;appointmentRibbonPage1.Name" xml:space="preserve">
-    <value>appointmentRibbonPage1</value>
-  </data>
-  <data name="&gt;&gt;appointmentRibbonPage1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.AppointmentRibbonPage, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;actionsRibbonPageGroup1.Name" xml:space="preserve">
-    <value>actionsRibbonPageGroup1</value>
-  </data>
-  <data name="&gt;&gt;actionsRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.ActionsRibbonPageGroup, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;optionsRibbonPageGroup1.Name" xml:space="preserve">
-    <value>optionsRibbonPageGroup1</value>
-  </data>
-  <data name="&gt;&gt;optionsRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.OptionsRibbonPageGroup, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonMiniToolbar, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;rpStock.Name" xml:space="preserve">
     <value>rpStock</value>
   </data>
   <data name="&gt;&gt;rpStock.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;rpgNew.Name" xml:space="preserve">
     <value>rpgNew</value>
   </data>
   <data name="&gt;&gt;rpgNew.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;rpgDelete.Name" xml:space="preserve">
     <value>rpgDelete</value>
   </data>
   <data name="&gt;&gt;rpgDelete.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;rpgTags.Name" xml:space="preserve">
     <value>rpgTags</value>
   </data>
   <data name="&gt;&gt;rpgTags.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;rpgLayoutMail.Name" xml:space="preserve">
     <value>rpgLayoutMail</value>
   </data>
   <data name="&gt;&gt;rpgLayoutMail.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;rpContacts.Name" xml:space="preserve">
     <value>rpContacts</value>
   </data>
   <data name="&gt;&gt;rpContacts.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;rpgContacts.Name" xml:space="preserve">
     <value>rpgContacts</value>
   </data>
   <data name="&gt;&gt;rpgContacts.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;rpgCurrentView.Name" xml:space="preserve">
     <value>rpgCurrentView</value>
   </data>
   <data name="&gt;&gt;rpgCurrentView.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;rpgLayoutContacts.Name" xml:space="preserve">
     <value>rpgLayoutContacts</value>
   </data>
   <data name="&gt;&gt;rpgLayoutContacts.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;rpBDC.Name" xml:space="preserve">
     <value>rpBDC</value>
   </data>
   <data name="&gt;&gt;rpBDC.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;rpgNewBdc.Name" xml:space="preserve">
+    <value>rpgNewBdc</value>
+  </data>
+  <data name="&gt;&gt;rpgNewBdc.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;rpCalendar.Name" xml:space="preserve">
     <value>rpCalendar</value>
   </data>
   <data name="&gt;&gt;rpCalendar.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;appointmentRibbonPageGroup1.Name" xml:space="preserve">
     <value>appointmentRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;appointmentRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.AppointmentRibbonPageGroup, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.AppointmentRibbonPageGroup, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;navigatorRibbonPageGroup1.Name" xml:space="preserve">
     <value>navigatorRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;navigatorRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.NavigatorRibbonPageGroup, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.NavigatorRibbonPageGroup, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;arrangeRibbonPageGroup1.Name" xml:space="preserve">
     <value>arrangeRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;arrangeRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.ArrangeRibbonPageGroup, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.ArrangeRibbonPageGroup, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;groupByRibbonPageGroup1.Name" xml:space="preserve">
     <value>groupByRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;groupByRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.GroupByRibbonPageGroup, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.GroupByRibbonPageGroup, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;layoutRibbonPageGroup1.Name" xml:space="preserve">
     <value>layoutRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;layoutRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.LayoutRibbonPageGroup, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.LayoutRibbonPageGroup, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;rpSecteur.Name" xml:space="preserve">
+    <value>rpSecteur</value>
+  </data>
+  <data name="&gt;&gt;rpSecteur.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;rpgGestionSecteur.Name" xml:space="preserve">
+    <value>rpgGestionSecteur</value>
+  </data>
+  <data name="&gt;&gt;rpgGestionSecteur.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;rpgGestionLivreur.Name" xml:space="preserve">
+    <value>rpgGestionLivreur</value>
+  </data>
+  <data name="&gt;&gt;rpgGestionLivreur.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ribbonPageGroup3.Name" xml:space="preserve">
+    <value>ribbonPageGroup3</value>
+  </data>
+  <data name="&gt;&gt;ribbonPageGroup3.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ribbonPageGroup4.Name" xml:space="preserve">
+    <value>ribbonPageGroup4</value>
+  </data>
+  <data name="&gt;&gt;ribbonPageGroup4.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;repositoryItemSpinEdit1.Name" xml:space="preserve">
     <value>repositoryItemSpinEdit1</value>
   </data>
   <data name="&gt;&gt;repositoryItemSpinEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit, DevExpress.XtraEditors.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;nbgMail.Name" xml:space="preserve">
-    <value>nbgMail</value>
+  <data name="&gt;&gt;galleryControlGallery1.Name" xml:space="preserve">
+    <value>galleryControlGallery1</value>
   </data>
-  <data name="&gt;&gt;nbgMail.Type" xml:space="preserve">
-    <value>DevExpress.XtraNavBar.NavBarGroup, DevExpress.XtraNavBar.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;nbgContacts.Name" xml:space="preserve">
-    <value>nbgContacts</value>
-  </data>
-  <data name="&gt;&gt;nbgContacts.Type" xml:space="preserve">
-    <value>DevExpress.XtraNavBar.NavBarGroup, DevExpress.XtraNavBar.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;nbgBDC.Name" xml:space="preserve">
-    <value>nbgBDC</value>
-  </data>
-  <data name="&gt;&gt;nbgBDC.Type" xml:space="preserve">
-    <value>DevExpress.XtraNavBar.NavBarGroup, DevExpress.XtraNavBar.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;nbgCalendar.Name" xml:space="preserve">
-    <value>nbgCalendar</value>
-  </data>
-  <data name="&gt;&gt;nbgCalendar.Type" xml:space="preserve">
-    <value>DevExpress.XtraNavBar.NavBarGroup, DevExpress.XtraNavBar.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;galleryControlGallery1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.Gallery.GalleryControlGallery, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;pmTreeView.Name" xml:space="preserve">
     <value>pmTreeView</value>
   </data>
   <data name="&gt;&gt;pmTreeView.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.PopupMenu, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.PopupMenu, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;pmMessage.Name" xml:space="preserve">
     <value>pmMessage</value>
   </data>
   <data name="&gt;&gt;pmMessage.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.PopupMenu, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.PopupMenu, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;pmFlagStatus.Name" xml:space="preserve">
     <value>pmFlagStatus</value>
   </data>
   <data name="&gt;&gt;pmFlagStatus.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.PopupMenu, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.PopupMenu, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;schedulerBarController1.Name" xml:space="preserve">
     <value>schedulerBarController1</value>
   </data>
   <data name="&gt;&gt;schedulerBarController1.Type" xml:space="preserve">
-    <value>DevExpress.XtraScheduler.UI.SchedulerBarController, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraScheduler.UI.SchedulerBarController, DevExpress.XtraScheduler.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;navBarItem1.Name" xml:space="preserve">
+    <value>navBarItem1</value>
+  </data>
+  <data name="&gt;&gt;navBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraNavBar.NavBarItem, DevExpress.XtraNavBar.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;nbgMail.Name" xml:space="preserve">
+    <value>nbgMail</value>
+  </data>
+  <data name="&gt;&gt;nbgMail.Type" xml:space="preserve">
+    <value>DevExpress.XtraNavBar.NavBarGroup, DevExpress.XtraNavBar.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;nbgContacts.Name" xml:space="preserve">
+    <value>nbgContacts</value>
+  </data>
+  <data name="&gt;&gt;nbgContacts.Type" xml:space="preserve">
+    <value>DevExpress.XtraNavBar.NavBarGroup, DevExpress.XtraNavBar.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;nbgCalendar.Name" xml:space="preserve">
+    <value>nbgCalendar</value>
+  </data>
+  <data name="&gt;&gt;nbgCalendar.Type" xml:space="preserve">
+    <value>DevExpress.XtraNavBar.NavBarGroup, DevExpress.XtraNavBar.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;nbgBdc.Name" xml:space="preserve">
+    <value>nbgBdc</value>
+  </data>
+  <data name="&gt;&gt;nbgBdc.Type" xml:space="preserve">
+    <value>DevExpress.XtraNavBar.NavBarGroup, DevExpress.XtraNavBar.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;nbgSecteur.Name" xml:space="preserve">
+    <value>nbgSecteur</value>
+  </data>
+  <data name="&gt;&gt;nbgSecteur.Type" xml:space="preserve">
+    <value>DevExpress.XtraNavBar.NavBarGroup, DevExpress.XtraNavBar.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;navBarItem2.Name" xml:space="preserve">
+    <value>navBarItem2</value>
+  </data>
+  <data name="&gt;&gt;navBarItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraNavBar.NavBarItem, DevExpress.XtraNavBar.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;navBarItem3.Name" xml:space="preserve">
+    <value>navBarItem3</value>
+  </data>
+  <data name="&gt;&gt;navBarItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraNavBar.NavBarItem, DevExpress.XtraNavBar.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmMain</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonForm, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonForm, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
 </root>

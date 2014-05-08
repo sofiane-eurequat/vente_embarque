@@ -23,3 +23,13 @@ C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_emba
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.DataLayer\bin\Debug\vente_embarque.Model.dll
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.DataLayer\bin\Debug\vente_embarque.Core.pdb
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.DataLayer\bin\Debug\vente_embarque.Model.pdb
+D:\vente_embarque\vente_embarque.DataLayer\obj\Debug\vente_embarque.DataLayer.csprojResolveAssemblyReference.cache
+D:\vente_embarque\vente_embarque.DataLayer\obj\Debug\vente_embarque.DataLayer.dll
+D:\vente_embarque\vente_embarque.DataLayer\obj\Debug\vente_embarque.DataLayer.pdb
+D:\vente_embarque\vente_embarque.DataLayer\bin\Debug\vente_embarque.DataLayer.dll.config
+D:\vente_embarque\vente_embarque.DataLayer\bin\Debug\vente_embarque.DataLayer.dll
+D:\vente_embarque\vente_embarque.DataLayer\bin\Debug\vente_embarque.DataLayer.pdb
+D:\vente_embarque\vente_embarque.DataLayer\bin\Debug\vente_embarque.Core.dll
+D:\vente_embarque\vente_embarque.DataLayer\bin\Debug\vente_embarque.Model.dll
+D:\vente_embarque\vente_embarque.DataLayer\bin\Debug\vente_embarque.Core.pdb
+D:\vente_embarque\vente_embarque.DataLayer\bin\Debug\vente_embarque.Model.pdb

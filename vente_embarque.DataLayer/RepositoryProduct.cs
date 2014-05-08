@@ -14,7 +14,17 @@ namespace vente_embarque.DataLayer
     {
         public Product FindBy(Guid id)
         {
-            throw new NotImplementedException();
+            var config = new AppSettingsReader();
+            using (
+                var uow = new UnitOfWork
+                {
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
+                })
+            {
+                var xpoproduct = uow.GetObjectByKey<XpoProduct>(id);
+                var product = Map.MapInverse.MapProduct(xpoproduct);
+                return product;
+            }
         }
 
         public IEnumerable<Product> FindAll()
@@ -81,6 +91,7 @@ namespace vente_embarque.DataLayer
                     ConnectionString = ((string)config.GetValue("connect", typeof(string)))
                 })
             {
+                
                 Map.Map.MapProduct(entity, uow);
                 uow.CommitChanges();
             }
@@ -93,7 +104,17 @@ namespace vente_embarque.DataLayer
 
         public void Remove(Product entity)
         {
-            throw new NotImplementedException();
+            var config = new AppSettingsReader();
+            using (
+                var uow = new UnitOfWork
+                {
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
+                })
+            {
+                var product = uow.GetObjectByKey<XpoProduct>(entity.id);
+                uow.Delete(product); 
+                uow.CommitChanges();
+            }
         }
     }
 }

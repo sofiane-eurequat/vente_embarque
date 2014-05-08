@@ -17,7 +17,12 @@ namespace vente_embarque.Model
     {
         public static Marque CreateMarque(string name)
         {
-            var marque = new Marque { id = Guid.NewGuid(), Name = name };
+            var marque = new Marque
+                {
+                    id = Guid.NewGuid(), 
+                    Name = name,
+                    newObject = true
+                };
             return marque;
         }
     }

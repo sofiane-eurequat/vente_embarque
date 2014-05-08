@@ -47,3 +47,27 @@ C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_emba
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.Test\obj\Debug\vente_embarque.Test.pdb
 D:\Projets\vente_embarque\vente_embarque.Test\bin\Debug\vente_embarque.Test.dll.config
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.Test\bin\Debug\vente_embarque.Test.dll.config
+D:\vente_embarque\vente_embarque.Test\bin\Debug\vente_embarque.Test.dll.config
+D:\vente_embarque\vente_embarque.Test\bin\Debug\vente_embarque.Test.dll
+D:\vente_embarque\vente_embarque.Test\bin\Debug\vente_embarque.Test.pdb
+D:\vente_embarque\vente_embarque.Test\bin\Debug\Autofac.Configuration.dll
+D:\vente_embarque\vente_embarque.Test\bin\Debug\Autofac.dll
+D:\vente_embarque\vente_embarque.Test\bin\Debug\AutofacContrib.CommonServiceLocator.dll
+D:\vente_embarque\vente_embarque.Test\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\vente_embarque\vente_embarque.Test\bin\Debug\Moq.Contrib.Indy.dll
+D:\vente_embarque\vente_embarque.Test\bin\Debug\Moq.dll
+D:\vente_embarque\vente_embarque.Test\bin\Debug\nunit.framework.dll
+D:\vente_embarque\vente_embarque.Test\bin\Debug\vente_embarque.Core.dll
+D:\vente_embarque\vente_embarque.Test\bin\Debug\vente_embarque.DataLayer.dll
+D:\vente_embarque\vente_embarque.Test\bin\Debug\vente_embarque.Model.dll
+D:\vente_embarque\vente_embarque.Test\bin\Debug\vente_embarque.Core.pdb
+D:\vente_embarque\vente_embarque.Test\bin\Debug\vente_embarque.DataLayer.pdb
+D:\vente_embarque\vente_embarque.Test\bin\Debug\vente_embarque.Model.pdb
+D:\vente_embarque\vente_embarque.Test\bin\Debug\Autofac.xml
+D:\vente_embarque\vente_embarque.Test\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\vente_embarque\vente_embarque.Test\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\vente_embarque\vente_embarque.Test\bin\Debug\Moq.xml
+D:\vente_embarque\vente_embarque.Test\bin\Debug\nunit.framework.xml
+D:\vente_embarque\vente_embarque.Test\obj\Debug\vente_embarque.Test.csprojResolveAssemblyReference.cache
+D:\vente_embarque\vente_embarque.Test\obj\Debug\vente_embarque.Test.dll
+D:\vente_embarque\vente_embarque.Test\obj\Debug\vente_embarque.Test.pdb

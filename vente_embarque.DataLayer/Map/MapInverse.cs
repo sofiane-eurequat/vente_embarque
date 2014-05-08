@@ -48,7 +48,7 @@ namespace vente_embarque.DataLayer.Map
                 {
                     Name = marque.Name,
                     id = marque.Oid,
-                    
+                    newObject = false
                 };
         }
 
@@ -58,7 +58,8 @@ namespace vente_embarque.DataLayer.Map
                 {
                     id = category.Oid,
                     Name = category.Name,
-                    Description = category.Description
+                    Description = category.Description,
+                    newObject = false
                 };
         }
 

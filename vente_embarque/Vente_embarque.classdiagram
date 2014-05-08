@@ -330,6 +330,9 @@
                 <property Id="4100a22d-47c9-4639-a093-76cd9954e90f" name="Quantite" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="7ad4ddd5-442c-4cca-8b93-67dabc691887" />
                 </property>
+                <property Id="dfca1b8a-de9a-4285-a100-6c9726399a07" name="CodeReference" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d7c8b863-b50e-4677-a0ca-96f185a8939b" />
+                </property>
               </ownedAttributesInternal>
               <ownedOperationsInternal>
                 <operation Id="c84ae38c-6119-4d95-80ad-96e2a7f7448f" name="CRUD" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -520,6 +523,12 @@
                 </property>
                 <property Id="0756e316-c993-494b-aae7-924c924110de" name="Photo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="62394001-d013-4e3c-9394-a239f73c6040" />
+                </property>
+                <property Id="a94df9fa-9e34-4108-87dd-f71c99e20a19" name="codeproduit" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="990d12d0-bdbe-4cb6-a5af-9c692befb005" />
+                </property>
+                <property Id="00dc29e8-af41-4549-a551-77f1e3c3cc10" name="typeGestion" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c24fb566-2ae7-4336-a11f-d0093bfd14ba" />
                 </property>
               </ownedAttributesInternal>
               <ownedOperationsInternal>

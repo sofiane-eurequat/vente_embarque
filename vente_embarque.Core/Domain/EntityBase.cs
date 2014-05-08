@@ -6,6 +6,7 @@ namespace vente_embarque.Core.Domain
     {
         private List<BusinessRule> _brokenRules=new List<BusinessRule>() ;
         public Tid id { get; set; }
+        public bool newObject { get; set; }
 
          abstract protected void Validate();
 

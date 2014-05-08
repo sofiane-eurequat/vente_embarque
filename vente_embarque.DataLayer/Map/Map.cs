@@ -50,33 +50,61 @@ namespace vente_embarque.DataLayer.Map
 
         public static XpoProduct MapProduct(Product product, UnitOfWork uow)
         {
-            return new XpoProduct(uow)
+
+            XpoProduct ProductReturned;
+            if (product.newObject)
+            {
+                ProductReturned= new XpoProduct(uow)
                 {
-                    Oid = product.id,
-                    Name = product.Name, 
-                    QuantityMin = product.QuantiteMin,
-                    Category = MapCategory(product.Category,uow),
-                    Marque = MapMarque(product.Marque,uow)
+                    Oid = product.id
                 };
+            }
+            else
+            {
+                ProductReturned = uow.GetObjectByKey<XpoProduct>(product.id);
+            }
+            ProductReturned.Name = product.Name;
+            ProductReturned.QuantityMin = product.QuantiteMin;
+            ProductReturned.Category = MapCategory(product.Category, uow);
+            ProductReturned.Marque = MapMarque(product.Marque, uow);
+            return ProductReturned;
         }
 
         public static XpoMarque MapMarque(Marque marque, UnitOfWork uow)
         {
-            return  new XpoMarque(uow)
+            XpoMarque MarqueReturned;
+            if (marque.newObject)
+            {
+                MarqueReturned= new XpoMarque(uow)
                 {
-                    Name = marque.Name,
                     Oid = marque.id
                 };
+            }
+            else
+            {
+                MarqueReturned = uow.GetObjectByKey<XpoMarque>(marque.id);
+            }
+            MarqueReturned.Name = marque.Name;
+            return MarqueReturned;
         }
 
         public static XpoCategory MapCategory(Category category, UnitOfWork uow)
         {
-            return new XpoCategory(uow)
+            XpoCategory CategoryReturned;
+            if (category.newObject)
+            {
+                CategoryReturned = new XpoCategory(uow)
                 {
-                    Oid = category.id,
-                    Name = category.Name,
-                    Description = category.Description
+                    Oid = category.id
                 };
+            }
+            else
+            {
+                CategoryReturned = uow.GetObjectByKey<XpoCategory>(category.id);
+            }
+            CategoryReturned.Name = category.Name;
+            CategoryReturned.Description = category.Description;
+            return CategoryReturned;
         }
 
         public static void MapOrder(Order entity, UnitOfWork uow)

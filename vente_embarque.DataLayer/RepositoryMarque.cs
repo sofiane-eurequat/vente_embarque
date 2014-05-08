@@ -16,7 +16,17 @@ namespace vente_embarque.DataLayer
     {
         public Marque FindBy(Guid id)
         {
-            throw new NotImplementedException();
+            var config = new AppSettingsReader();
+            using (
+                var uow = new UnitOfWork
+                {
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
+                })
+            {
+                var xpomarque = uow.GetObjectByKey<XpoMarque>(id);
+                var marque = Map.MapInverse.MapMarque(xpomarque);
+                return marque;
+            }
         }
 
         public IEnumerable<Marque> FindAll()

@@ -44,15 +44,22 @@
   <ItemGroup>
     <Compile Include="Entities\Orders\XpoClient.cs" />
     <Compile Include="Entities\Orders\XpoOrder.cs" />
+    <Compile Include="Entities\Orders\XpoOrderLine.cs" />
+    <Compile Include="Entities\Orders\XpoSector.cs" />
     <Compile Include="Entities\Stock\XpoCategory.cs" />
     <Compile Include="Entities\Stock\XpoMarque.cs" />
     <Compile Include="Entities\Stock\XpoProduct.cs" />
     <Compile Include="Entities\Stock\XpoProductLine.cs" />
+    <Compile Include="Entities\XpoAgentTerrain.cs" />
     <Compile Include="Helper\InitDal.cs" />
     <Compile Include="Helper\XpoCommune.cs" />
     <Compile Include="Helper\XpoWilaya.cs" />
     <Compile Include="Map\Map.cs" />
     <Compile Include="Map\MapInverse.cs" />
+    <Compile Include="RepositoryAgentTerrain.cs" />
+    <Compile Include="RepositoryCategory.cs" />
+    <Compile Include="RepositoryClient.cs" />
+    <Compile Include="RepositoryMarque.cs" />
     <Compile Include="RepositoryOrder.cs" />
     <Compile Include="RepositoryProduct.cs" />
     <Compile Include="RepositoryStock.cs" />

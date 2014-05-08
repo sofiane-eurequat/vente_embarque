@@ -218,6 +218,17 @@
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
+          <property
+            Id="d7c8b863-b50e-4677-a0ca-96f185a8939b"
+            name="CodeReference"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
