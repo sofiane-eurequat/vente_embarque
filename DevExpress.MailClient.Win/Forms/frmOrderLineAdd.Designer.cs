@@ -162,7 +162,7 @@
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 303);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 359);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
             this.ribbonStatusBar.Size = new System.Drawing.Size(617, 31);
@@ -182,7 +182,7 @@
             this.groupControl1.Controls.Add(this.labelStock);
             this.groupControl1.Location = new System.Drawing.Point(0, 163);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(617, 96);
+            this.groupControl1.Size = new System.Drawing.Size(617, 154);
             this.groupControl1.TabIndex = 4;
             this.groupControl1.Text = "Information sur la ligne de commande";
             // 
@@ -190,33 +190,33 @@
             // 
             this.comboBoxProduit.DisplayMember = "id";
             this.comboBoxProduit.FormattingEnabled = true;
-            this.comboBoxProduit.Location = new System.Drawing.Point(290, 43);
+            this.comboBoxProduit.Location = new System.Drawing.Point(392, 44);
             this.comboBoxProduit.Name = "comboBoxProduit";
-            this.comboBoxProduit.Size = new System.Drawing.Size(147, 21);
+            this.comboBoxProduit.Size = new System.Drawing.Size(200, 21);
             this.comboBoxProduit.TabIndex = 20;
             this.comboBoxProduit.ValueMember = "id";
             // 
             // textEditQuantité
             // 
-            this.textEditQuantité.Location = new System.Drawing.Point(516, 44);
+            this.textEditQuantité.Location = new System.Drawing.Point(69, 100);
             this.textEditQuantité.MenuManager = this.ribbon;
             this.textEditQuantité.Name = "textEditQuantité";
-            this.textEditQuantité.Size = new System.Drawing.Size(80, 20);
+            this.textEditQuantité.Size = new System.Drawing.Size(217, 20);
             this.textEditQuantité.TabIndex = 19;
             // 
             // comboBoxStock
             // 
             this.comboBoxStock.DisplayMember = "id";
             this.comboBoxStock.FormattingEnabled = true;
-            this.comboBoxStock.Location = new System.Drawing.Point(53, 44);
+            this.comboBoxStock.Location = new System.Drawing.Point(69, 44);
             this.comboBoxStock.Name = "comboBoxStock";
-            this.comboBoxStock.Size = new System.Drawing.Size(147, 21);
+            this.comboBoxStock.Size = new System.Drawing.Size(217, 21);
             this.comboBoxStock.TabIndex = 17;
             this.comboBoxStock.ValueMember = "id";
             // 
             // labelQuantité
             // 
-            this.labelQuantité.Location = new System.Drawing.Point(461, 47);
+            this.labelQuantité.Location = new System.Drawing.Point(12, 103);
             this.labelQuantité.Name = "labelQuantité";
             this.labelQuantité.Size = new System.Drawing.Size(42, 13);
             this.labelQuantité.TabIndex = 7;
@@ -224,7 +224,7 @@
             // 
             // labelProduit
             // 
-            this.labelProduit.Location = new System.Drawing.Point(236, 47);
+            this.labelProduit.Location = new System.Drawing.Point(332, 47);
             this.labelProduit.Name = "labelProduit";
             this.labelProduit.Size = new System.Drawing.Size(34, 13);
             this.labelProduit.TabIndex = 5;
@@ -242,7 +242,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(617, 334);
+            this.ClientSize = new System.Drawing.Size(617, 390);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
