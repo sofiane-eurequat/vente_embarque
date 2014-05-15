@@ -88,9 +88,9 @@ namespace vente_embarque.DataLayer
                         ConnectionString = ((string) config.GetValue("connect", typeof (string)))
                     })
             {
-                var repositorySector = new RepositorySector();
-                var agentTerrain = repositorySector.FindBy(entity.id);
-                uow.Delete(agentTerrain);
+                var secteur = uow.GetObjectByKey<XpoSector>(entity.id);
+                uow.Delete(secteur);
+                uow.CommitChanges();
             }
         }
     }

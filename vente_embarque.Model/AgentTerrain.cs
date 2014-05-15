@@ -21,13 +21,13 @@ namespace vente_embarque.Model
     {
         public static AgentTerrain CreateAgentTerrain(string name)
         {
-            var agentterrain = new AgentTerrain {Name = name, id = Guid.NewGuid()};
+            var agentterrain = new AgentTerrain {Name = name, id = Guid.NewGuid(), newObject = true};
             return agentterrain;
         }
 
         public static AgentTerrain CreateAgentTerrain(string name, Sector secteur)
         {
-            var agentTerrainSecteur = new AgentTerrain {Name = name, id = Guid.NewGuid(), Secteur = secteur};
+            var agentTerrainSecteur = new AgentTerrain { Name = name, id = Guid.NewGuid(), Secteur = secteur, newObject = true};
             return agentTerrainSecteur;
         }
     }

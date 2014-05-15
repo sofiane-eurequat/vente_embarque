@@ -18,7 +18,7 @@ namespace vente_embarque.Model
     {
         public static Category CreateCategory(string name, string description)
         {
-            var category = new Category { id = Guid.NewGuid(), Name = name, Description = description };
+            var category = new Category { id = Guid.NewGuid(), Name = name, Description = description, newObject = true };
             return category;
         }
     }

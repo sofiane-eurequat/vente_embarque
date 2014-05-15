@@ -28,11 +28,11 @@ namespace vente_embarque.Model
     {
         public static Sector CreateSector(string name, string wilaya, string commune)
         {
-            var sector = new Sector {id = Guid.NewGuid(), Name = name, Wilaya = wilaya, Commune = commune};
+            var sector = new Sector { id = Guid.NewGuid(), Name = name, Wilaya = wilaya, Commune = commune, newObject = true };
             return sector;
         }
-
-    /*    public static Sector CreateSector(string name, Wilaya wilaya, Commune commune)
+        /*
+        public static Sector CreateSector(string name, Wilaya wilaya, Commune commune)
         {
             var sector = new Sector { Name = name, id = Guid.NewGuid(), Wilaya = wilaya, Commune = commune };
             return sector;
@@ -40,7 +40,7 @@ namespace vente_embarque.Model
  */
         public static Client CreateClient(string nom, string prenom, Sector sector)
         {
-            var client = new Client {id = Guid.NewGuid(), Name = nom, PreNom = prenom};
+            var client = new Client { id = Guid.NewGuid(), Name = nom, PreNom = prenom, newObject = true };
             if (sector.Clients == null) sector.Clients = new List<Client>();
             sector.Clients.Add(client);
             return client;

@@ -175,16 +175,19 @@ namespace vente_embarque.Test
         {
             const string productname = "produit2";
             const int quantiteMinimale = 5;
-            //var marque = new RepositoryMarque().FindAll().First();
-            //var category = new RepositoryCategory().FindAll().First();
             const string nom = "Dell";
             var marque = FactoryMarque.CreateMarque(nom);
+            Assert.AreEqual(marque.Name,nom);
             const string nom1 = "Desktop";
             const string description = "Pc bureau";
-            var category = FactoryCategory.CreateCategory(nom, description);
+            var category = FactoryCategory.CreateCategory(nom1, description);
+            Assert.AreEqual(category.Name,nom1);
+            Assert.AreEqual(category.Description,description);
             var product = FactoryProduct.CreateProduct(productname,quantiteMinimale,category,marque);
             Assert.AreEqual(product.Name, "produit2");
             Assert.AreEqual(product.QuantiteMin, 5);
+            Assert.AreEqual(product.Marque,marque);
+            Assert.AreEqual(product.Category,category);
             new RepositoryProduct().Save(product);
         }
 
@@ -381,6 +384,8 @@ namespace vente_embarque.Test
             const string nom = "nom secteur1";
             const string wilaya = "Tlemcen";
             const string commune = "Tlemcen";
+            //var wilaya = new RepositoryWilaya().FindAll().First();
+            //var commune = new RepositoryWilaya().FindAll().First().Communes.First();
             var sector = FactorySector.CreateSector(nom, wilaya, commune);
             Assert.AreEqual(sector.Name, nom);
             Assert.AreEqual(sector.Wilaya, wilaya);

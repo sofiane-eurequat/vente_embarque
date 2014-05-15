@@ -72,20 +72,15 @@ namespace vente_embarque.Model
     {
         public static Stock CreateStock(string name)
         {
-            var stock = new Stock(name);
-            stock.id = Guid.NewGuid();
+            var stock = new Stock(name) { id = Guid.NewGuid(), newObject = true };
             return stock;
         }
 
         
-
         public static ProductLine CreateProductLine(Stock stock,Product product,int quantity=0)
         {
-            var productline = new ProductLine();
-            
-            productline.Product = product;
-            productline.id = Guid.NewGuid();
-            productline.Quantity = quantity;
+            var productline = new ProductLine {Product = product, id = Guid.NewGuid(), Quantity = quantity};
+
             if(stock.ProductLines==null) stock.ProductLines=new List<ProductLine>();
             stock.ProductLines.Add(productline);
             return productline;
