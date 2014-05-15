@@ -11,7 +11,7 @@ using vente_embarque.Model;
 
 namespace vente_embarque.DataLayer
 {
-    class RepositoryOrder : IRepository<Order, Guid>
+    public class RepositoryOrder : IRepository<Order, Guid>
     {
         public Order FindBy(Guid id)
         {

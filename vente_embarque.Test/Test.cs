@@ -192,11 +192,12 @@ namespace vente_embarque.Test
         [Test]
         public void CanCreateProductWithMarqueAndCategoyFromDB()
         {
-            const string productname = "produit3";
+            const string productname = "produit1";
             const int quantiteMinimale = 15;
-            var marque = new RepositoryMarque().FindAll().First();var category = new RepositoryCategory().FindAll().First();
+            var marque = new RepositoryMarque().FindAll().First();
+            var category = new RepositoryCategory().FindAll().First();
             var product = FactoryProduct.CreateProduct(productname, quantiteMinimale, category, marque);
-            Assert.AreEqual(product.Name, "produit3");
+            Assert.AreEqual(product.Name, "produit1");
             Assert.AreEqual(product.QuantiteMin, 15);
          
             new RepositoryProduct().Save(product);
@@ -209,11 +210,42 @@ namespace vente_embarque.Test
             Assert.AreEqual(product.Category.id, rc.id);
             Assert.AreEqual(product.Category.Name,rc.Name);
             Assert.AreEqual(product.Category.Description, rc.Description);
-
+            
             new RepositoryProduct().Remove(product);
         }
 
+        [Test]
+        public void CanCreateProductwithStockAndProductLine()
+        {
+            const string productname = "produit2";
+            const int quantiteMinimale = 10;
+            var marque = new RepositoryMarque().FindAll().First();
+            var category = new RepositoryCategory().FindAll().First();
+            var product = FactoryProduct.CreateProduct(productname, quantiteMinimale, category, marque);
+            Assert.AreEqual(product.Name, "produit2");
+            Assert.AreEqual(product.QuantiteMin, 10);
 
+            new RepositoryProduct().Save(product);
+
+            var rp = new RepositoryMarque().FindBy(product.Marque.id);
+            Assert.AreEqual(product.Marque.id, rp.id);
+            Assert.AreEqual(product.Marque.Name, rp.Name);
+
+            var rc = new RepositoryCategory().FindBy(product.Category.id);
+            Assert.AreEqual(product.Category.id, rc.id);
+            Assert.AreEqual(product.Category.Name, rc.Name);
+            Assert.AreEqual(product.Category.Description, rc.Description);
+
+            const string stockname = "stock2";
+            var stock = FactoryStock.CreateStock(stockname);
+            Assert.AreEqual(stock.Name, stockname);
+
+
+            var lineStock = FactoryStock.CreateProductLine(stock, product, 5);
+            Assert.AreEqual(lineStock.Product, product);
+            Assert.AreEqual(lineStock.Quantity, 5);
+            new RepositoryStock().Save(stock);
+        }
 
         [Test]
         public void CanCreateProductWithNLot()
@@ -223,6 +255,7 @@ namespace vente_embarque.Test
             var marque = new RepositoryMarque().FindAll().First(); var category = new RepositoryCategory().FindAll().First();
             var product = FactoryProduct.CreateProduct(productname, quantiteMinimale, category, marque);
         }
+
         /*
         [Test]
         public void CanCreateStock()
@@ -380,7 +413,6 @@ namespace vente_embarque.Test
         {
             var rc = new RepositoryCategory();
             var categ = rc.FindAll().First();
-            
             rc.Remove(categ);
         }
     }

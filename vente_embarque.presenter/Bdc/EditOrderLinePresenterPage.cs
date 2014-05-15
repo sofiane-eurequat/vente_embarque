@@ -19,14 +19,14 @@ namespace vente_embarque.presenter.Bdc
         public EditOrderLinePresenterPage(IEditBdcView editBdcView, IRepository<Product,Guid> repository, IRepository<Stock,Guid> repository1  )
         {
             _EditBdcView = editBdcView;
-            //_repositoryProduit = repository;
+            _repositoryProduit = repository;
             _repositoryStock = repository1;
         }
 
         public void Display()
         {
             _EditBdcView.Stocks = _repositoryStock.FindAll();
-            //_EditBdcView.Produits = _repositoryProduit.FindAll();
+            _EditBdcView.Produits = _repositoryProduit.FindAll();
         }
 
         public void Write(Stock stock, Product product, int quantiteMin)
@@ -37,6 +37,7 @@ namespace vente_embarque.presenter.Bdc
         public void Write(Stock stock, String product, int quantiteMin)
         {
             var orderline = FactoryOrder.CreateOrderLine(stock, product,quantiteMin);
+            _EditBdcView.OrderLines.ToList().Add(orderline);
            // frmBdc.OrderLines.ToList().Add(orderline);
         }
     }

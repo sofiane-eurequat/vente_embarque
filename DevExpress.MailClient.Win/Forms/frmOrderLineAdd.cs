@@ -18,7 +18,9 @@ namespace DevExpress.MailClient.Win.Forms
     {
         public IEnumerable<Client> Clients { get; set; }
         public IEnumerable<Stock> Stocks { get; set; }
+        public IEnumerable<ProductLine> ProductLines { get; set; } 
         public IEnumerable<Product> Produits { get; set; }
+        public IEnumerable<Order> Orders { get; set; }
         public IEnumerable<OrderLine> OrderLines { get; set; }
         private EditOrderLinePresenterPage editOrderLinePresenter;
 
@@ -30,11 +32,12 @@ namespace DevExpress.MailClient.Win.Forms
             editOrderLinePresenter = new EditOrderLinePresenterPage(this, repositoryProduit, repositoryStock);
             editOrderLinePresenter.Display();
 
-           // comboBoxProduit.DataSource = Products.OrderBy(cl => cl.Name).ToList();
-           // comboBoxProduit.DisplayMember = "Name";
+            comboBoxProduit.DataSource = Produits.OrderBy(cl => cl.Name).ToList();
+            comboBoxProduit.DisplayMember = "Name";
 
             comboBoxStock.DataSource = Stocks.OrderBy(s => s.Name).ToList();
             comboBoxStock.DisplayMember = "Name";
+            comboBoxProduit.DataSource = Produits.OrderBy(p => p.Name).ToList();
         }
 
         private void bbiNouveau_ItemClick(object sender, ItemClickEventArgs e)
@@ -61,6 +64,11 @@ namespace DevExpress.MailClient.Win.Forms
         private void bbiFermer_ItemClick(object sender, ItemClickEventArgs e)
         {
             Close();
+        }
+
+        private void comboBoxStock_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

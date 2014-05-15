@@ -21,6 +21,7 @@ namespace DevExpress.MailClient.Win.Forms
         public IEnumerable<Client> Clients { get; set; }
         public IEnumerable<Stock> Stocks { get; set; }
         public IEnumerable<Product> Produits { get; set; }
+        public IEnumerable<Order> Orders { get; set; }
         IEnumerable<OrderLine> IEditBdcView.OrderLines
         {
             get { return OrderLines; }
@@ -52,6 +53,8 @@ namespace DevExpress.MailClient.Win.Forms
             comboBoxStock.DisplayMember = "Name";
 
             comboBoxPriorite.DataSource= Enum.GetValues(typeof(Priorite));
+
+            GCOrderLine.DataSource = OrderLines;
 
             this.newBdc = newBdc;
             DialogResult = DialogResult.Cancel;

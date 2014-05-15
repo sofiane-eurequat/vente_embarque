@@ -443,18 +443,6 @@
   <data name="ribbon.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="ribbonPageGroup1.Text" xml:space="preserve">
-    <value>Nouveau</value>
-  </data>
-  <data name="ribbonPageGroup2.Text" xml:space="preserve">
-    <value>Sauvegarder</value>
-  </data>
-  <data name="ribbonPageGroup3.Text" xml:space="preserve">
-    <value>Reinitialiser</value>
-  </data>
-  <data name="ribbonPageGroup4.Text" xml:space="preserve">
-    <value>Fermer</value>
-  </data>
   <data name="ribbonPage1.Text" xml:space="preserve">
     <value>Home</value>
   </data>
@@ -471,7 +459,7 @@
     <value>ribbonStatusBar</value>
   </data>
   <data name="&gt;&gt;ribbonStatusBar.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonStatusBar, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonStatusBar, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonStatusBar.Parent" xml:space="preserve">
     <value>$this</value>
@@ -483,7 +471,7 @@
     <value>ribbon</value>
   </data>
   <data name="&gt;&gt;ribbon.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbon.Parent" xml:space="preserve">
     <value>$this</value>
@@ -491,14 +479,26 @@
   <data name="&gt;&gt;ribbon.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="ribbonPageGroup1.Text" xml:space="preserve">
+    <value>Nouveau</value>
+  </data>
+  <data name="ribbonPageGroup2.Text" xml:space="preserve">
+    <value>Sauvegarder</value>
+  </data>
+  <data name="ribbonPageGroup3.Text" xml:space="preserve">
+    <value>Reinitialiser</value>
+  </data>
+  <data name="ribbonPageGroup4.Text" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
   <metadata name="applicationMenu1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <data name="comboBoxPriorite.Location" type="System.Drawing.Point, System.Drawing">
-    <value>648, 29</value>
+    <value>135, 66</value>
   </data>
   <data name="comboBoxPriorite.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 21</value>
+    <value>250, 21</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="comboBoxPriorite.TabIndex" type="System.Int32, mscorlib">
@@ -517,7 +517,7 @@
     <value>0</value>
   </data>
   <data name="labelPriorite.Location" type="System.Drawing.Point, System.Drawing">
-    <value>567, 33</value>
+    <value>14, 77</value>
   </data>
   <data name="labelPriorite.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 13</value>
@@ -532,7 +532,7 @@
     <value>labelPriorite</value>
   </data>
   <data name="&gt;&gt;labelPriorite.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelPriorite.Parent" xml:space="preserve">
     <value>groupControl1</value>
@@ -541,10 +541,10 @@
     <value>1</value>
   </data>
   <data name="comboBoxStock.Location" type="System.Drawing.Point, System.Drawing">
-    <value>75, 29</value>
+    <value>135, 29</value>
   </data>
   <data name="comboBoxStock.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 21</value>
+    <value>250, 21</value>
   </data>
   <data name="comboBoxStock.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -562,10 +562,10 @@
     <value>2</value>
   </data>
   <data name="memoEditAdresssLivraion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 61</value>
+    <value>135, 110</value>
   </data>
   <data name="memoEditAdresssLivraion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 39</value>
+    <value>250, 39</value>
   </data>
   <data name="memoEditAdresssLivraion.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -574,7 +574,7 @@
     <value>memoEditAdresssLivraion</value>
   </data>
   <data name="&gt;&gt;memoEditAdresssLivraion.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;memoEditAdresssLivraion.Parent" xml:space="preserve">
     <value>groupControl1</value>
@@ -587,9 +587,9 @@
     <value />
   </data>
   <data name="dateEditLivraison.Location" type="System.Drawing.Point, System.Drawing">
-    <value>520, 66</value>
+    <value>526, 66</value>
   </data>
-  <assembly alias="DevExpress.Utils.v13.1" name="DevExpress.Utils.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <assembly alias="DevExpress.Utils.v13.1" name="DevExpress.Utils.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   <data name="dateEditLivraison.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.1">
     <value>Combo</value>
   </data>
@@ -597,7 +597,7 @@
     <value>Combo</value>
   </data>
   <data name="dateEditLivraison.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 20</value>
+    <value>250, 20</value>
   </data>
   <data name="dateEditLivraison.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -606,7 +606,7 @@
     <value>dateEditLivraison</value>
   </data>
   <data name="&gt;&gt;dateEditLivraison.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;dateEditLivraison.Parent" xml:space="preserve">
     <value>groupControl1</value>
@@ -615,10 +615,10 @@
     <value>4</value>
   </data>
   <data name="comboBoxClients.Location" type="System.Drawing.Point, System.Drawing">
-    <value>359, 29</value>
+    <value>526, 29</value>
   </data>
   <data name="comboBoxClients.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 21</value>
+    <value>250, 21</value>
   </data>
   <data name="comboBoxClients.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -636,7 +636,7 @@
     <value>5</value>
   </data>
   <data name="labelDateLivraison.Location" type="System.Drawing.Point, System.Drawing">
-    <value>403, 69</value>
+    <value>424, 69</value>
   </data>
   <data name="labelDateLivraison.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 13</value>
@@ -651,7 +651,7 @@
     <value>labelDateLivraison</value>
   </data>
   <data name="&gt;&gt;labelDateLivraison.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelDateLivraison.Parent" xml:space="preserve">
     <value>groupControl1</value>
@@ -660,7 +660,7 @@
     <value>6</value>
   </data>
   <data name="labelAdresseLivraison.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 74</value>
+    <value>14, 126</value>
   </data>
   <data name="labelAdresseLivraison.Size" type="System.Drawing.Size, System.Drawing">
     <value>81, 13</value>
@@ -675,7 +675,7 @@
     <value>labelAdresseLivraison</value>
   </data>
   <data name="&gt;&gt;labelAdresseLivraison.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelAdresseLivraison.Parent" xml:space="preserve">
     <value>groupControl1</value>
@@ -684,7 +684,7 @@
     <value>7</value>
   </data>
   <data name="labelClient.Location" type="System.Drawing.Point, System.Drawing">
-    <value>294, 33</value>
+    <value>424, 37</value>
   </data>
   <data name="labelClient.Size" type="System.Drawing.Size, System.Drawing">
     <value>27, 13</value>
@@ -699,7 +699,7 @@
     <value>labelClient</value>
   </data>
   <data name="&gt;&gt;labelClient.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelClient.Parent" xml:space="preserve">
     <value>groupControl1</value>
@@ -723,7 +723,7 @@
     <value>labelStock</value>
   </data>
   <data name="&gt;&gt;labelStock.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelStock.Parent" xml:space="preserve">
     <value>groupControl1</value>
@@ -735,7 +735,7 @@
     <value>0, 144</value>
   </data>
   <data name="groupControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>803, 110</value>
+    <value>803, 184</value>
   </data>
   <data name="groupControl1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -747,7 +747,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;groupControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;groupControl1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -756,7 +756,67 @@
     <value>1</value>
   </data>
   <data name="xtraTabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 260</value>
+    <value>0, 334</value>
+  </data>
+  <data name="&gt;&gt;GCOrderLine.Name" xml:space="preserve">
+    <value>GCOrderLine</value>
+  </data>
+  <data name="&gt;&gt;GCOrderLine.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;GCOrderLine.Parent" xml:space="preserve">
+    <value>xtraTabPage1</value>
+  </data>
+  <data name="&gt;&gt;GCOrderLine.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;standaloneBarDockControl1.Name" xml:space="preserve">
+    <value>standaloneBarDockControl1</value>
+  </data>
+  <data name="&gt;&gt;standaloneBarDockControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.StandaloneBarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;standaloneBarDockControl1.Parent" xml:space="preserve">
+    <value>xtraTabPage1</value>
+  </data>
+  <data name="&gt;&gt;standaloneBarDockControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="xtraTabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>797, 106</value>
+  </data>
+  <data name="xtraTabPage1.Text" xml:space="preserve">
+    <value>Liste produits</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage1.Name" xml:space="preserve">
+    <value>xtraTabPage1</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage1.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage1.Parent" xml:space="preserve">
+    <value>xtraTabControl1</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="xtraTabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>803, 134</value>
+  </data>
+  <data name="xtraTabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.Name" xml:space="preserve">
+    <value>xtraTabControl1</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="GCOrderLine.Location" type="System.Drawing.Point, System.Drawing">
     <value>-1, 26</value>
@@ -783,7 +843,7 @@
     <value>GCOrderLine</value>
   </data>
   <data name="&gt;&gt;GCOrderLine.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;GCOrderLine.Parent" xml:space="preserve">
     <value>xtraTabPage1</value>
@@ -804,49 +864,13 @@
     <value>standaloneBarDockControl1</value>
   </data>
   <data name="&gt;&gt;standaloneBarDockControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.StandaloneBarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.StandaloneBarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;standaloneBarDockControl1.Parent" xml:space="preserve">
     <value>xtraTabPage1</value>
   </data>
   <data name="&gt;&gt;standaloneBarDockControl1.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="xtraTabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>797, 180</value>
-  </data>
-  <data name="xtraTabPage1.Text" xml:space="preserve">
-    <value>Liste produits</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage1.Name" xml:space="preserve">
-    <value>xtraTabPage1</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage1.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage1.Parent" xml:space="preserve">
-    <value>xtraTabControl1</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="xtraTabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>803, 208</value>
-  </data>
-  <data name="xtraTabControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl1.Name" xml:space="preserve">
-    <value>xtraTabControl1</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl1.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <metadata name="barManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>167, 17</value>
@@ -992,7 +1016,7 @@
     <value>Top</value>
   </data>
   <data name="barDockControlTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 144</value>
+    <value>0, 0</value>
   </data>
   <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
     <value>803, 0</value>
@@ -1001,7 +1025,7 @@
     <value>barDockControlTop</value>
   </data>
   <data name="&gt;&gt;barDockControlTop.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barDockControlTop.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1022,7 +1046,7 @@
     <value>barDockControlBottom</value>
   </data>
   <data name="&gt;&gt;barDockControlBottom.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barDockControlBottom.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1034,16 +1058,16 @@
     <value>Left</value>
   </data>
   <data name="barDockControlLeft.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 144</value>
+    <value>0, 0</value>
   </data>
   <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 361</value>
+    <value>0, 505</value>
   </data>
   <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
     <value>barDockControlLeft</value>
   </data>
   <data name="&gt;&gt;barDockControlLeft.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barDockControlLeft.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1055,16 +1079,16 @@
     <value>Right</value>
   </data>
   <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>803, 144</value>
+    <value>803, 0</value>
   </data>
   <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 361</value>
+    <value>0, 505</value>
   </data>
   <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
     <value>barDockControlRight</value>
   </data>
   <data name="&gt;&gt;barDockControlRight.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barDockControlRight.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1347,127 +1371,127 @@
     <value>bbiNouveau</value>
   </data>
   <data name="&gt;&gt;bbiNouveau.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem1.Name" xml:space="preserve">
     <value>barButtonItem1</value>
   </data>
   <data name="&gt;&gt;barButtonItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiSauvegarder.Name" xml:space="preserve">
     <value>bbiSauvegarder</value>
   </data>
   <data name="&gt;&gt;bbiSauvegarder.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiFermer.Name" xml:space="preserve">
     <value>bbiFermer</value>
   </data>
   <data name="&gt;&gt;bbiFermer.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiEfaccer.Name" xml:space="preserve">
     <value>bbiEfaccer</value>
   </data>
   <data name="&gt;&gt;bbiEfaccer.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiSauvegarderFermer.Name" xml:space="preserve">
     <value>bbiSauvegarderFermer</value>
   </data>
   <data name="&gt;&gt;bbiSauvegarderFermer.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonPage1.Name" xml:space="preserve">
     <value>ribbonPage1</value>
   </data>
   <data name="&gt;&gt;ribbonPage1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonPageGroup1.Name" xml:space="preserve">
     <value>ribbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;ribbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonPageGroup2.Name" xml:space="preserve">
     <value>ribbonPageGroup2</value>
   </data>
   <data name="&gt;&gt;ribbonPageGroup2.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonPageGroup3.Name" xml:space="preserve">
     <value>ribbonPageGroup3</value>
   </data>
   <data name="&gt;&gt;ribbonPageGroup3.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonPageGroup4.Name" xml:space="preserve">
     <value>ribbonPageGroup4</value>
   </data>
   <data name="&gt;&gt;ribbonPageGroup4.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;applicationMenu1.Name" xml:space="preserve">
     <value>applicationMenu1</value>
   </data>
   <data name="&gt;&gt;applicationMenu1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.ApplicationMenu, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.ApplicationMenu, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;gridView1.Name" xml:space="preserve">
     <value>gridView1</value>
   </data>
   <data name="&gt;&gt;gridView1.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;colProduct.Name" xml:space="preserve">
     <value>colProduct</value>
   </data>
   <data name="&gt;&gt;colProduct.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;colQuantity.Name" xml:space="preserve">
     <value>colQuantity</value>
   </data>
   <data name="&gt;&gt;colQuantity.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barManager1.Name" xml:space="preserve">
     <value>barManager1</value>
   </data>
   <data name="&gt;&gt;barManager1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarManager, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarManager, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bar4.Name" xml:space="preserve">
     <value>bar4</value>
   </data>
   <data name="&gt;&gt;bar4.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiAddOrderLine.Name" xml:space="preserve">
     <value>bbiAddOrderLine</value>
   </data>
   <data name="&gt;&gt;bbiAddOrderLine.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiSuppOrderLine.Name" xml:space="preserve">
     <value>bbiSuppOrderLine</value>
   </data>
   <data name="&gt;&gt;bbiSuppOrderLine.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem2.Name" xml:space="preserve">
     <value>barButtonItem2</value>
   </data>
   <data name="&gt;&gt;barButtonItem2.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmBdc</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonForm, DevExpress.XtraBars.v13.1, Version=13.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonForm, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="barButtonItem2.Caption" xml:space="preserve">
     <value>Nouveau</value>
