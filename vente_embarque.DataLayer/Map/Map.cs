@@ -43,68 +43,68 @@ namespace vente_embarque.DataLayer.Map
             {
                 Oid = sector.id,
                 Name = sector.Name,
-                wilaya = sector.Wilaya,
-                commune = sector.Commune
+                Wilaya = MapWilaya(sector.Wilaya,uow),
+                Commune = MapCommune(sector.Commune,uow)
             };
         }
 
         public static XpoProduct MapProduct(Product product, UnitOfWork uow)
         {
 
-            XpoProduct ProductReturned;
+            XpoProduct productReturned;
             if (product.newObject)
             {
-                ProductReturned= new XpoProduct(uow)
+                productReturned= new XpoProduct(uow)
                 {
                     Oid = product.id
                 };
             }
             else
             {
-                ProductReturned = uow.GetObjectByKey<XpoProduct>(product.id);
+                productReturned = uow.GetObjectByKey<XpoProduct>(product.id);
             }
-            ProductReturned.Name = product.Name;
-            ProductReturned.QuantityMin = product.QuantiteMin;
-            ProductReturned.Category = MapCategory(product.Category, uow);
-            ProductReturned.Marque = MapMarque(product.Marque, uow);
-            return ProductReturned;
+            productReturned.Name = product.Name;
+            productReturned.QuantityMin = product.QuantiteMin;
+            productReturned.Category = MapCategory(product.Category, uow);
+            productReturned.Marque = MapMarque(product.Marque, uow);
+            return productReturned;
         }
 
         public static XpoMarque MapMarque(Marque marque, UnitOfWork uow)
         {
-            XpoMarque MarqueReturned;
+            XpoMarque marqueReturned;
             if (marque.newObject)
             {
-                MarqueReturned= new XpoMarque(uow)
+                marqueReturned= new XpoMarque(uow)
                 {
                     Oid = marque.id
                 };
             }
             else
             {
-                MarqueReturned = uow.GetObjectByKey<XpoMarque>(marque.id);
+                marqueReturned = uow.GetObjectByKey<XpoMarque>(marque.id);
             }
-            MarqueReturned.Name = marque.Name;
-            return MarqueReturned;
+            marqueReturned.Name = marque.Name;
+            return marqueReturned;
         }
 
         public static XpoCategory MapCategory(Category category, UnitOfWork uow)
         {
-            XpoCategory CategoryReturned;
+            XpoCategory categoryReturned;
             if (category.newObject)
             {
-                CategoryReturned = new XpoCategory(uow)
+                categoryReturned = new XpoCategory(uow)
                 {
                     Oid = category.id
                 };
             }
             else
             {
-                CategoryReturned = uow.GetObjectByKey<XpoCategory>(category.id);
+                categoryReturned = uow.GetObjectByKey<XpoCategory>(category.id);
             }
-            CategoryReturned.Name = category.Name;
-            CategoryReturned.Description = category.Description;
-            return CategoryReturned;
+            categoryReturned.Name = category.Name;
+            categoryReturned.Description = category.Description;
+            return categoryReturned;
         }
 
         public static void MapOrder(Order entity, UnitOfWork uow)
@@ -137,12 +137,11 @@ namespace vente_embarque.DataLayer.Map
                 Oid = agentterrain.id,
             };
         }
-        /*
+        
         private static XpoWilaya MapWilaya(Wilaya wilaya, UnitOfWork uow)
         {
             var xpoWilaya = new XpoWilaya(uow)
             {
-                Oid = wilaya.id,
                 Name = wilaya.Name,
                 Code = wilaya.Code,
                 //Communes = MapCommune(wilaya.Communes,uow)
@@ -152,7 +151,6 @@ namespace vente_embarque.DataLayer.Map
             {
                 var xco = new XpoCommune(uow)
                 {
-                    Oid = co.id,
                     Name = co.Name,
                     CodeWilaya = co.CodeWilaya,
                     Wilaya = xpoWilaya
@@ -165,9 +163,8 @@ namespace vente_embarque.DataLayer.Map
         {
             return new XpoCommune(uow)
             {
-                Name = commune.Name,
-                Oid = commune.id
+                Name = commune.Name
             };
-        } */
+        } 
     }
 }

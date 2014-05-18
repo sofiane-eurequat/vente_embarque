@@ -48,7 +48,6 @@
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
@@ -236,7 +235,6 @@
             this.ribbonPageGroup2,
             this.ribbonPageGroup3,
             this.ribbonPageGroup4,
-            this.ribbonPageGroup5,
             this.ribbonPageGroup7});
             this.ribbonPage1.Name = "ribbonPage1";
             resources.ApplyResources(this.ribbonPage1, "ribbonPage1");
@@ -274,14 +272,6 @@
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             this.ribbonPageGroup4.ShowCaptionButton = false;
             resources.ApplyResources(this.ribbonPageGroup4, "ribbonPageGroup4");
-            // 
-            // ribbonPageGroup5
-            // 
-            this.ribbonPageGroup5.AllowTextClipping = false;
-            this.ribbonPageGroup5.ItemLinks.Add(this.bbiRafrichir);
-            this.ribbonPageGroup5.Name = "ribbonPageGroup5";
-            this.ribbonPageGroup5.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonPageGroup5, "ribbonPageGroup5");
             // 
             // ribbonPageGroup7
             // 
@@ -592,7 +582,6 @@
         private XtraBars.BarButtonItem bbiValider;
         private XtraBars.BarButtonItem bbiAnnuler;
         private XtraBars.BarButtonItem bbiEffacer;
-        private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
         private XtraBars.BarButtonItem bbiRafrichir;
         private XtraBars.BarButtonItem barButtonItem10;

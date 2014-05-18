@@ -65,12 +65,13 @@ namespace DevExpress.MailClient.Win.Forms
 
         private void bbiSauvegarder_ItemClick(object sender, ItemClickEventArgs e)
         {
-            editSecteurPresenter.Write(textEditSecteur.EditValue.ToString(),comboBoxWilaya.Text,comboBoxCommune.Text);
+            editSecteurPresenter.Write(textEditSecteur.EditValue.ToString(), comboBoxWilaya.SelectedItem as Wilaya, comboBoxCommune.SelectedItem as Commune);
+            MessageBox.Show("insertion réussi");
         }
 
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
         {
-            editSecteurPresenter.Write(textEditSecteur.EditValue.ToString(), comboBoxWilaya.Text, comboBoxCommune.Text);
+            editSecteurPresenter.Write(textEditSecteur.EditValue.ToString(), comboBoxWilaya.SelectedItem as Wilaya, comboBoxCommune.SelectedItem as Commune);
             Close();
         }
 

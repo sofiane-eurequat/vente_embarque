@@ -32,7 +32,7 @@ namespace vente_embarque.presenter.Secteur
             _EditSecteurView.Clients = _repositoryClient.FindAll();
         }
 
-        public void Write(string name, string wilaya, string communes)
+        public void Write(string name, Wilaya wilaya, Commune communes)
         {
             var secteur =FactorySector.CreateSector(name, wilaya, communes);
             _repositorySecteur.Save(secteur);
@@ -42,6 +42,6 @@ namespace vente_embarque.presenter.Secteur
     internal interface IEditSecteurPagePresenter
     {
         void Display();
-        void Write(string name, string wilaya, string communes);
+        void Write(string name, Wilaya wilaya, Commune communes);
     }
 }

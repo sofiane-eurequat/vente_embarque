@@ -39,17 +39,17 @@ namespace vente_embarque.DataLayer.Entities.Orders
             set { SetPropertyValue("Name", ref _Name, value); }
         }
 
-        private String _wilaya;
+        private XpoWilaya _wilaya;
 
-        public String wilaya
+        public XpoWilaya Wilaya
         {
             get { return _wilaya; }
             set { SetPropertyValue("Name", ref _wilaya, value); }
         }
 
-        private String _commune;
+        private XpoCommune _commune;
 
-        public String commune
+        public XpoCommune Commune
         {
             get { return _commune; }
             set { SetPropertyValue("Name", ref _commune, value); }

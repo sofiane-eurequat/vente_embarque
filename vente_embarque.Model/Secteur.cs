@@ -8,8 +8,8 @@ namespace vente_embarque.Model
     public class Sector:EntityBase<Guid>,IAggregateRoot
     {
         public string Name { get; set; }
-        public string Wilaya { get; set; }
-        public string Commune { get; set; }
+        public Wilaya Wilaya { get; set; }
+        public Commune Commune { get; set; }
         public List<Client> Clients { get; set; }
         //TODO: lati et long du perimetre
         protected override void Validate()
@@ -25,19 +25,19 @@ namespace vente_embarque.Model
     }
 
     public static class FactorySector
-    {
+    {/*
         public static Sector CreateSector(string name, string wilaya, string commune)
         {
             var sector = new Sector { id = Guid.NewGuid(), Name = name, Wilaya = wilaya, Commune = commune, newObject = true };
             return sector;
         }
-        /*
+        */
         public static Sector CreateSector(string name, Wilaya wilaya, Commune commune)
         {
             var sector = new Sector { Name = name, id = Guid.NewGuid(), Wilaya = wilaya, Commune = commune };
             return sector;
         }
- */
+ 
         public static Client CreateClient(string nom, string prenom, Sector sector)
         {
             var client = new Client { id = Guid.NewGuid(), Name = nom, PreNom = prenom, newObject = true };

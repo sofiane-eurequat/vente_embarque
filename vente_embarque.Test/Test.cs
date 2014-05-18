@@ -87,8 +87,10 @@ namespace vente_embarque.Test
         public void CanCreateSecteur()
         {
             const string nom = "nom secteur1";
-            const string wilaya = "Tlemcen";
-            const string commune = "Tlemcen";
+            //const string wilaya = "Tlemcen";
+            //const string commune = "Tlemcen";
+            var wilaya = new RepositoryWilaya().FindAll().First();
+            var commune = new RepositoryWilaya().FindAll().First().Communes.First();
             var sector = FactorySector.CreateSector(nom,wilaya,commune);
             Assert.AreEqual(sector.Name, "nom secteur1");
         }
@@ -99,8 +101,10 @@ namespace vente_embarque.Test
         public void CanCreateClient()
         {
             const string nomSect = "nom secteur1";
-            const string wilaya = "Tlemcen";
-            const string commune = "Tlemcen";
+            //const string wilaya = "Tlemcen";
+            //const string commune = "Tlemcen";
+            var wilaya = new RepositoryWilaya().FindAll().First();
+            var commune = new RepositoryWilaya().FindAll().First().Communes.First();
             Sector secteur = FactorySector.CreateSector(nomSect,wilaya,commune);
 
             const string nom = "NomClient1";
@@ -115,8 +119,10 @@ namespace vente_embarque.Test
         public void CanCreateClientBd()
         {
             const string nomSect = "nom secteur1";
-            const string wilaya = "Tlemcen";
-            const string commune = "Tlemcen";
+            //const string wilaya = "Tlemcen";
+            //const string commune = "Tlemcen";
+            var wilaya = new RepositoryWilaya().FindAll().First();
+            var commune = new RepositoryWilaya().FindAll().First().Communes.First();
             Sector secteur = FactorySector.CreateSector(nomSect, wilaya, commune);
             //var rs = new RepositorySector();
             //rs.Save(secteur);
@@ -287,26 +293,27 @@ namespace vente_embarque.Test
 
             //new RepositoryStock().Save(stock);
       //  }
-    /*
+    
         [Test]
         public void GetProductminimal()
         {
-            
             const string nameStock = "stock1";
             const string namepro1 = "produit1";
             const string namepro2 = "produit2";
             const int quantiteMinimale = 10;
+            var marque = new RepositoryMarque().FindAll().First();
+            var category = new RepositoryCategory().FindAll().First();
+            var marque1 = new RepositoryMarque().FindAll().Last();
+            var category1 = new RepositoryCategory().FindAll().Last();
             var stock = FactoryStock.CreateStock(nameStock);
-            var produit1 = FactoryProduct.CreateProduct(namepro1, quantiteMinimale);
-            var produit2 = FactoryProduct.CreateProduct(namepro2, 15);
+            var produit1 = FactoryProduct.CreateProduct(namepro1, quantiteMinimale, category, marque);
+            var produit2 = FactoryProduct.CreateProduct(namepro2, 15, category1, marque1);
             var ligne1 = FactoryStock.CreateProductLine(stock,produit1, 5);
             var ligne2 = FactoryStock.CreateProductLine(stock,produit2, 20);
             var listProduct = stock.GetProductMinimale();
             Assert.AreEqual(listProduct.Count,1);
-        fttt fg cretare factoryclient
         }
-        */
-
+        
 
         [Test]
         public void CanCreateBCWithoutStock()
@@ -382,10 +389,10 @@ namespace vente_embarque.Test
         public void CanCreateSecteurDb()
         {
             const string nom = "nom secteur1";
-            const string wilaya = "Tlemcen";
-            const string commune = "Tlemcen";
-            //var wilaya = new RepositoryWilaya().FindAll().First();
-            //var commune = new RepositoryWilaya().FindAll().First().Communes.First();
+            //const string wilaya = "Tlemcen";
+            //const string commune = "Tlemcen";
+            var wilaya = new RepositoryWilaya().FindAll().First();
+            var commune = new RepositoryWilaya().FindAll().First().Communes.First();
             var sector = FactorySector.CreateSector(nom, wilaya, commune);
             Assert.AreEqual(sector.Name, nom);
             Assert.AreEqual(sector.Wilaya, wilaya);
