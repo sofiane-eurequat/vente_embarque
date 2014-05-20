@@ -24,16 +24,18 @@ namespace vente_embarque.Test
         private Mock<IRepository<Sector, Guid>> sectorMock2;
         private Mock<IRepository<Product, Guid>> productMock;
         [SetUp]
-      /*  public void SetupStockMock()
+        public void SetupStockMock()
         {
 
             InitDal.Init();
             var factoryStockCreateStock = FactoryStock.CreateStock("stock1");
             
            // mock du stock
-            FactoryStock.CreateProductLine(factoryStockCreateStock, FactoryProduct.CreateProduct("product1"), 10);
-            FactoryStock.CreateProductLine(factoryStockCreateStock, FactoryProduct.CreateProduct("product2"), 10);
-            FactoryStock.CreateProductLine(factoryStockCreateStock, FactoryProduct.CreateProduct("product3"), 10);
+            var marque = FactoryMarque.CreateMarque("Nom marque");
+            var category = FactoryCategory.CreateCategory("Nom category","Description");
+            FactoryStock.CreateProductLine(factoryStockCreateStock, FactoryProduct.CreateProduct("product1",15,category,marque), 10);
+            FactoryStock.CreateProductLine(factoryStockCreateStock, FactoryProduct.CreateProduct("product2",17,category,marque), 10);
+            FactoryStock.CreateProductLine(factoryStockCreateStock, FactoryProduct.CreateProduct("product3",20,category,marque), 10);
 
             stockMock = new Mock<IRepository<Stock, Guid>>();
             stockMock.Setup(e => e.FindBy(It.IsAny<Query>())).Returns(
@@ -42,8 +44,10 @@ namespace vente_embarque.Test
 
             // mock du secteur et client
             const string nomSect = "nom secteur1";
-            const string wilaya = "Tlemcen";
-            const string commune = "Tlemcen";
+            //const string wilaya = "Tlemcen";
+            //const string commune = "Tlemcen";
+            var wilaya = new RepositoryWilaya().FindAll().First();
+            var commune = new RepositoryWilaya().FindAll().First().Communes.First();
             var sector = FactorySector.CreateSector(nomSect,wilaya,commune);
             const string nom = "NomClient1";
             const string prenom = "PrenomClient1";
@@ -55,9 +59,13 @@ namespace vente_embarque.Test
 
 
             //mock du produit 
-            var produit1=FactoryProduct.CreateProduct("MockedProduct");
-            var produit2 = FactoryProduct.CreateProduct("MockedProduct", 15, "ce produit est explosif",
-                                                        reference: "http://www.google.com");
+            const string nommarque = "Dell";
+            var marque2 = FactoryMarque.CreateMarque(nommarque);
+            const string nom1 = "Desktop";
+            const string description = "Pc bureau";
+            var category2 = FactoryCategory.CreateCategory(nom1, description);
+            var produit1 = FactoryProduct.CreateProduct("MockedProduct",10,category2,marque2);
+            var produit2 = FactoryProduct.CreateProduct("MockedProduct", 15, category2, marque2,"ce produit est explosif",reference: "http://www.google.com");
             productMock=new Mock<IRepository<Product, Guid>>();
             productMock.Setup(e => e.FindBy(It.IsAny<Query>())).Returns(
                 new List<Product>()
@@ -70,8 +78,8 @@ namespace vente_embarque.Test
             //var rw1 = new RepositoryWilaya();
             //string wilaya1 = rw1.FindBy(new Query()).First().ToString();
             //string commune1 = rw1.FindBy(new Query()).First().Communes.First().ToString();
-            const string wilaya1 = "Tlemcen";
-            const string commune1 = "Tlemcen";
+            var wilaya1 = new RepositoryWilaya().FindAll().First();
+            var commune1 = new RepositoryWilaya().FindAll().First().Communes.First();
             var secteur=FactorySector.CreateSector(nomSector,wilaya1,commune1);
             sectorMock2=new Mock<IRepository<Sector, Guid>>();
             sectorMock2.Setup(e => e.FindBy(It.IsAny<Query>())).Returns(
@@ -81,7 +89,7 @@ namespace vente_embarque.Test
                     }
                 );
 
-        }*/
+        }
 
         [Test]
         public void CanCreateSecteur()
