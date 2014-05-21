@@ -99,6 +99,8 @@ namespace DevExpress.MailClient.Win {
         public const string TaskEdit = "EditTask";
         public const string TaskDelete = "DeleteTask";
         public const string Preview = "ShowPreview";
+        public const string SaveQuestion = "Voulais vous sauvegarder";
+        public const string DeleteQuestion = "Voulais vous vraiment supprimer";
     }
     public class CollectionResources {
         public static List<string> HouseTasks = new List<string>() {"Set-up my home theater (surround sound) system", "Light Install", "Install three lamps", "Install a programmable thermostat", "Install ceiling fan",

@@ -20,15 +20,10 @@ namespace DevExpress.MailClient.Win.Forms
         private EditBdcPresenterPage editBdcPresenter;
         public IEnumerable<Client> Clients { get; set; }
         public IEnumerable<Stock> Stocks { get; set; }
-        public IEnumerable<Product> Produits { get; set; }
         public IEnumerable<Order> Orders { get; set; }
-        IEnumerable<OrderLine> IEditBdcView.OrderLines
-        {
-            get { return OrderLines; }
-            set { OrderLines = value; }
-        }
+        public OrderLine OrderLine { get; set; }
+        public List<OrderLine> OrderLines { get; set; } 
 
-        public static IEnumerable<OrderLine> OrderLines { get; set; }
         readonly ModelViewBdc sourceBdc;
         bool newBdc = true;
 
@@ -64,8 +59,14 @@ namespace DevExpress.MailClient.Win.Forms
         private void bbiAddOrderLine_ItemClick(object sender, ItemClickEventArgs e)
         {
             Cursor.Current = Cursors.WaitCursor;
-            var form = new frmOrderLineAdd();
-            form.Show();
+            var form = new frmEditOrderLine(null,true);
+            form.ShowDialog();
+            var ligneCommande = form.OrderLine;
+            if (ligneCommande != null)
+            {
+                OrderLines.Add(ligneCommande);
+            }
+            GCOrderLine.Refresh();
             Cursor.Current = Cursors.Default;
         }
         

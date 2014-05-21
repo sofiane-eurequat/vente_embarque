@@ -234,12 +234,54 @@ namespace vente_embarque.Test
         [Test]
         public void CanCreateProductwithStockAndProductLine()
         {
-            const string productname = "produit2";
+            const string productname = "Tablette Samsung";
+            const int quantiteMinimale = 10;
+            const string productname1 = "Tablette Sony";
+            const int quantiteMinimale1 = 6;
+            var marque = new RepositoryMarque().FindAll().First();
+            var category = new RepositoryCategory().FindAll().First();
+            var product = FactoryProduct.CreateProduct(productname, quantiteMinimale, category, marque);
+            var product1 = FactoryProduct.CreateProduct(productname1, quantiteMinimale1, category, marque);
+            Assert.AreEqual(product.Name, productname);
+            Assert.AreEqual(product.QuantiteMin, 10);
+            Assert.AreEqual(product1.Name, productname1);
+            Assert.AreEqual(product1.QuantiteMin, 6);
+
+            new RepositoryProduct().Save(product);
+            new RepositoryProduct().Save(product1);
+
+            var rp = new RepositoryMarque().FindBy(product.Marque.id);
+            Assert.AreEqual(product.Marque.id, rp.id);
+            Assert.AreEqual(product.Marque.Name, rp.Name);
+
+            var rc = new RepositoryCategory().FindBy(product.Category.id);
+            Assert.AreEqual(product.Category.id, rc.id);
+            Assert.AreEqual(product.Category.Name, rc.Name);
+            Assert.AreEqual(product.Category.Description, rc.Description);
+
+            const string stockname = "Stock Imama";
+            var stock = FactoryStock.CreateStock(stockname);
+            Assert.AreEqual(stock.Name, stockname);
+
+
+            var lineStock = FactoryStock.CreateProductLine(stock, product, 5);
+            var lineStock1 = FactoryStock.CreateProductLine(stock, product1, 5);
+            Assert.AreEqual(lineStock.Product, product);
+            Assert.AreEqual(lineStock.Quantity, 5);
+            Assert.AreEqual(lineStock1.Product, product1);
+            Assert.AreEqual(lineStock1.Quantity, 5);
+            new RepositoryStock().Save(stock);
+        }
+
+        [Test]
+        public void CanCreateProductwithStockFromDb()
+        {
+            const string productname = "Tablette Samsung";
             const int quantiteMinimale = 10;
             var marque = new RepositoryMarque().FindAll().First();
             var category = new RepositoryCategory().FindAll().First();
             var product = FactoryProduct.CreateProduct(productname, quantiteMinimale, category, marque);
-            Assert.AreEqual(product.Name, "produit2");
+            Assert.AreEqual(product.Name, productname);
             Assert.AreEqual(product.QuantiteMin, 10);
 
             new RepositoryProduct().Save(product);
@@ -252,11 +294,11 @@ namespace vente_embarque.Test
             Assert.AreEqual(product.Category.id, rc.id);
             Assert.AreEqual(product.Category.Name, rc.Name);
             Assert.AreEqual(product.Category.Description, rc.Description);
-
-            const string stockname = "stock2";
+            
+            const string stockname = "Stock Tlemcen";
             var stock = FactoryStock.CreateStock(stockname);
             Assert.AreEqual(stock.Name, stockname);
-
+            
 
             var lineStock = FactoryStock.CreateProductLine(stock, product, 5);
             Assert.AreEqual(lineStock.Product, product);
