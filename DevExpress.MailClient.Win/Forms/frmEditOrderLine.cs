@@ -15,21 +15,19 @@ using vente_embarque.presenter.Bdc;
 
 namespace DevExpress.MailClient.Win.Forms
 {
-    public partial class frmEditOrderLine : RibbonForm, IEditBdcView
+    public partial class FrmEditOrderLine : RibbonForm
     {
-        public IEnumerable<Client> Clients { get; set; }
         public IEnumerable<Stock> Stocks { get; set; }
         public IEnumerable<Order> Orders { get; set; }
         public OrderLine OrderLine { get; set; }
-        private bool _newOrderLine = true;
+        private readonly bool _newOrderLine = true;
         private bool _isOrderLineModified;
 
-        private EditOrderLinePresenterPage editOrderLinePresenter;
-
-        public frmEditOrderLine(OrderLine orderLine, bool newOrderLine)
+        public FrmEditOrderLine(IEnumerable<Stock> stocks, OrderLine orderLine, bool newOrderLine)
         {
             InitializeComponent();
             DialogResult = DialogResult.Cancel;
+            Stocks = stocks;
             _newOrderLine = newOrderLine;
             if (_newOrderLine) 
             {
@@ -39,9 +37,9 @@ namespace DevExpress.MailClient.Win.Forms
             {
                 _isOrderLineModified = false;
             }
-            var repositoryStock = new RepositoryStock();
-            editOrderLinePresenter = new EditOrderLinePresenterPage(this, repositoryStock);
-            editOrderLinePresenter.Display();
+            //var repositoryStock = new RepositoryStock();
+            //editOrderLinePresenter = new EditOrderLinePresenterPage(this, repositoryStock);
+            //editOrderLinePresenter.Display();
 
             comboBoxStock.DataSource = Stocks.OrderBy(s => s.Name).ToList();
             comboBoxStock.DisplayMember = "Name";
@@ -56,8 +54,11 @@ namespace DevExpress.MailClient.Win.Forms
         }
         private void bbiSauvegarder_ItemClick(object sender, ItemClickEventArgs e)
         {
+            _isOrderLineModified = false;
+            DialogResult result = QueryClose();
             OrderLine = FactoryOrder.CreateOrderLine(comboBoxStock.SelectedItem as Stock, comboBoxProduit.Text,
                                                      Convert.ToInt32(textEditQuantité.EditValue.ToString()));
+            if (result == DialogResult.Yes) Close();
         }
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
         {
@@ -80,8 +81,19 @@ namespace DevExpress.MailClient.Win.Forms
         {
             comboBoxStock.ValueMember = "Name";
             comboBoxProduit.DataSource = Stocks.First(s => s.Name == (string) comboBoxStock.SelectedValue).GetProducts().ToList();
+            _isOrderLineModified = true;
         }
-        
+
+        private void comboBoxProduit_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _isOrderLineModified = true;
+        }
+
+        private void textEditQuantité_EditValueChanged(object sender, EventArgs e)
+        {
+            _isOrderLineModified = true;
+        }
+
         DialogResult QueryDelete()
         {
             DialogResult result = XtraMessageBox.Show(this, TagResources.DeleteQuestion, Application.ProductName, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
@@ -119,5 +131,7 @@ namespace DevExpress.MailClient.Win.Forms
         {
             throw new NotImplementedException();
         }
+
+        
     }
 }

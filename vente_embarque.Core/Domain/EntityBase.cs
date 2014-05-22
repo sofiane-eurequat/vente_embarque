@@ -24,6 +24,7 @@ namespace vente_embarque.Core.Domain
 
          public override bool Equals(object obj)
          {
+             if (obj == null) return false;
              return obj != null && obj is EntityBase<Tid> && (EntityBase<Tid>) obj == this;
          }
 

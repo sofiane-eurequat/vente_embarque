@@ -12,6 +12,7 @@ using vente_embarque.DataLayer;
 using vente_embarque.Model;
 using vente_embarque.Model.Enum;
 using vente_embarque.presenter.Bdc;
+using DevExpress.Utils;
 
 namespace DevExpress.MailClient.Win.Forms
 {
@@ -22,7 +23,8 @@ namespace DevExpress.MailClient.Win.Forms
         public IEnumerable<Stock> Stocks { get; set; }
         public IEnumerable<Order> Orders { get; set; }
         public OrderLine OrderLine { get; set; }
-        public List<OrderLine> OrderLines { get; set; } 
+        public List<OrderLine> OrderLines =new List<OrderLine>();
+        public OrderLine orderLineTest =null;
 
         readonly ModelViewBdc sourceBdc;
         bool newBdc = true;
@@ -50,6 +52,7 @@ namespace DevExpress.MailClient.Win.Forms
             comboBoxPriorite.DataSource= Enum.GetValues(typeof(Priorite));
 
             GCOrderLine.DataSource = OrderLines;
+            //colProduct.FieldName = ProductName;
 
             this.newBdc = newBdc;
             DialogResult = DialogResult.Cancel;
@@ -59,14 +62,11 @@ namespace DevExpress.MailClient.Win.Forms
         private void bbiAddOrderLine_ItemClick(object sender, ItemClickEventArgs e)
         {
             Cursor.Current = Cursors.WaitCursor;
-            var form = new frmEditOrderLine(null,true);
+            var form = new FrmEditOrderLine(Stocks,null,true);
             form.ShowDialog();
             var ligneCommande = form.OrderLine;
-            if (ligneCommande != null)
-            {
-                OrderLines.Add(ligneCommande);
-            }
-            GCOrderLine.Refresh();
+            if (!ligneCommande.Equals(orderLineTest)) OrderLines.Add(ligneCommande);
+            GCOrderLine.RefreshDataSource();
             Cursor.Current = Cursors.Default;
         }
         

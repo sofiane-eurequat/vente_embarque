@@ -230,6 +230,7 @@
             // 
             // labelPriorite
             // 
+            this.labelPriorite.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelPriorite.Appearance.Font")));
             resources.ApplyResources(this.labelPriorite, "labelPriorite");
             this.labelPriorite.Name = "labelPriorite";
             // 
@@ -269,21 +270,25 @@
             // 
             // labelDateLivraison
             // 
+            this.labelDateLivraison.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelDateLivraison.Appearance.Font")));
             resources.ApplyResources(this.labelDateLivraison, "labelDateLivraison");
             this.labelDateLivraison.Name = "labelDateLivraison";
             // 
             // labelAdresseLivraison
             // 
+            this.labelAdresseLivraison.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelAdresseLivraison.Appearance.Font")));
             resources.ApplyResources(this.labelAdresseLivraison, "labelAdresseLivraison");
             this.labelAdresseLivraison.Name = "labelAdresseLivraison";
             // 
             // labelClient
             // 
+            this.labelClient.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelClient.Appearance.Font")));
             resources.ApplyResources(this.labelClient, "labelClient");
             this.labelClient.Name = "labelClient";
             // 
             // labelStock
             // 
+            this.labelStock.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelStock.Appearance.Font")));
             resources.ApplyResources(this.labelStock, "labelStock");
             this.labelStock.Name = "labelStock";
             // 

@@ -1,6 +1,6 @@
 ﻿namespace DevExpress.MailClient.Win.Forms
 {
-    partial class frmEditOrderLine
+    partial class FrmEditOrderLine
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEditOrderLine));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEditOrderLine));
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiSauvegarderFermer = new DevExpress.XtraBars.BarButtonItem();
             this.bbiNouveau = new DevExpress.XtraBars.BarButtonItem();
@@ -195,6 +195,7 @@
             this.comboBoxProduit.Size = new System.Drawing.Size(200, 21);
             this.comboBoxProduit.TabIndex = 20;
             this.comboBoxProduit.ValueMember = "id";
+            this.comboBoxProduit.SelectedIndexChanged += new System.EventHandler(this.comboBoxProduit_SelectedIndexChanged);
             // 
             // textEditQuantité
             // 
@@ -203,6 +204,7 @@
             this.textEditQuantité.Name = "textEditQuantité";
             this.textEditQuantité.Size = new System.Drawing.Size(217, 20);
             this.textEditQuantité.TabIndex = 19;
+            this.textEditQuantité.EditValueChanged += new System.EventHandler(this.textEditQuantité_EditValueChanged);
             // 
             // comboBoxStock
             // 
@@ -239,7 +241,7 @@
             this.labelStock.TabIndex = 4;
             this.labelStock.Text = "Stock";
             // 
-            // frmOrderLineAdd
+            // frmEditOrderLine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -249,7 +251,7 @@
             this.Controls.Add(this.ribbon);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Name = "frmOrderLineAdd";
+            this.Name = "FrmEditOrderLine";
             this.Ribbon = this.ribbon;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StatusBar = this.ribbonStatusBar;
