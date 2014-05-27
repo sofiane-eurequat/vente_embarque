@@ -17,7 +17,7 @@ namespace DevExpress.MailClient.Win.Forms
 {
     public partial class FrmEditOrderLine : RibbonForm
     {
-        public IEnumerable<Stock> Stocks { get; set; }
+        private IEnumerable<Stock> Stocks { get; set; }
         public IEnumerable<Order> Orders { get; set; }
         public OrderLine OrderLine { get; set; }
         private readonly bool _newOrderLine = true;
@@ -62,7 +62,7 @@ namespace DevExpress.MailClient.Win.Forms
         }
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
         {
-            
+          
             Close();
         }
         private void bbiEfaccer_ItemClick(object sender, ItemClickEventArgs e)

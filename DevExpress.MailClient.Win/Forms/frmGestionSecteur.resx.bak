@@ -886,9 +886,6 @@
   <data name="ribbonPageGroup4.Text" xml:space="preserve">
     <value>Reinitialiser</value>
   </data>
-  <data name="ribbonPageGroup5.Text" xml:space="preserve">
-    <value>Vue</value>
-  </data>
   <data name="ribbonPageGroup7.Text" xml:space="preserve">
     <value>Fermer</value>
   </data>
@@ -1856,12 +1853,6 @@
     <value>ribbonPageGroup4</value>
   </data>
   <data name="&gt;&gt;ribbonPageGroup4.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup5.Name" xml:space="preserve">
-    <value>ribbonPageGroup5</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup5.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonPageGroup7.Name" xml:space="preserve">

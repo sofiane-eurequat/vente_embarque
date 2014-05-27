@@ -24,7 +24,7 @@ namespace DevExpress.MailClient.Win.Forms
         public IEnumerable<Order> Orders { get; set; }
         public OrderLine OrderLine { get; set; }
         public List<OrderLine> OrderLines =new List<OrderLine>();
-        public OrderLine orderLineTest =null;
+        public OrderLine LigneCommande { get; set; }
 
         readonly ModelViewBdc sourceBdc;
         bool newBdc = true;
@@ -38,9 +38,11 @@ namespace DevExpress.MailClient.Win.Forms
         public frmBdc(ModelViewBdc Bdc, bool newBdc, string caption)
         {
             InitializeComponent();
+            LigneCommande = null;
             var repositoryClient = new RepositoryClient();
             var repositoryStock = new RepositoryStock();
-            editBdcPresenter = new EditBdcPresenterPage(this, repositoryClient,repositoryStock);
+            var repositoryOrder = new RepositoryOrder();
+            editBdcPresenter = new EditBdcPresenterPage(this, repositoryClient,repositoryStock,repositoryOrder);
             editBdcPresenter.Display();
 
             comboBoxClients.DataSource = Clients.OrderBy(cl => cl.Name).ToList();
@@ -62,15 +64,16 @@ namespace DevExpress.MailClient.Win.Forms
         private void bbiAddOrderLine_ItemClick(object sender, ItemClickEventArgs e)
         {
             Cursor.Current = Cursors.WaitCursor;
+            OrderLine ordernull = null;
             var form = new FrmEditOrderLine(Stocks,null,true);
             form.ShowDialog();
-            var ligneCommande = form.OrderLine;
-            if (!ligneCommande.Equals(orderLineTest)) OrderLines.Add(ligneCommande);
+            LigneCommande = form.OrderLine;
+            if (!LigneCommande.Equals(ordernull)) OrderLines.Add(LigneCommande);
             GCOrderLine.RefreshDataSource();
             Cursor.Current = Cursors.Default;
         }
         
-        private void bbiSuppOrderLine_ItemClick(object sender, ItemClickEventArgs e)
+        private void bbiSuppOrderLine_temClick(object sender, ItemClickEventArgs e)
         {
 
         }
@@ -87,7 +90,7 @@ namespace DevExpress.MailClient.Win.Forms
 
         private void bbiSauvegarder_ItemClick(object sender, ItemClickEventArgs e)
         {
-            editBdcPresenter.Write(comboBoxStock.SelectedItem as Stock, comboBoxClients.SelectedItem as Client, (Priorite) comboBoxPriorite.SelectedItem);
+            editBdcPresenter.Write(comboBoxStock.SelectedItem as Stock, comboBoxClients.SelectedItem as Client, OrderLines, (Priorite) comboBoxPriorite.SelectedItem, dateEditLivraison.DateTime, memoEditAdresssLivraion.Text);
         }
 
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
@@ -108,6 +111,11 @@ namespace DevExpress.MailClient.Win.Forms
         private void bbiFermer_ItemClick(object sender, ItemClickEventArgs e)
         {
             Close();
+        }
+
+        private void bbiSuppOrderLine_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
         }
 
         

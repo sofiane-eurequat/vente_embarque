@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DevExpress.Xpo;
+using vente_embarque.DataLayer.Entities.Stock;
+using vente_embarque.Model;
 using vente_embarque.Model.Enum;
 
 namespace vente_embarque.DataLayer.Entities.Orders
@@ -33,7 +35,7 @@ namespace vente_embarque.DataLayer.Entities.Orders
             get { return _Oid; }
             set { SetPropertyValue("Oid", ref _Oid, value); }
         }
-
+        
         private XpoClient _Client;
         [Aggregated, Association("XpoOrder-XpoClient")]
         public XpoClient Client
@@ -42,7 +44,6 @@ namespace vente_embarque.DataLayer.Entities.Orders
             set { SetPropertyValue("Client", ref _Client, value); }
         }
 
-
         private Priorite _Priorite;
         public Priorite Priorite
         {
@@ -50,14 +51,19 @@ namespace vente_embarque.DataLayer.Entities.Orders
             set { SetPropertyValue("Priorite", ref _Priorite, value); }
         }
 
-
-
         [Aggregated, Association("XpoOrder-XpoOrderLine")]
         public XPCollection<XpoOrderLine> OrderLines
         {
             get { return GetCollection<XpoOrderLine>("OrderLines"); }
         }
 
+        private Delivery _Delivery;
+
+        public Delivery Delivery
+        {
+            get { return _Delivery; }
+            set { SetPropertyValue("Delivery", ref _Delivery, value); }
+        }
 
     }
 }

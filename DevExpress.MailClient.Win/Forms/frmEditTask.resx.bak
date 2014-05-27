@@ -736,7 +736,7 @@
     <value>ucContactInfo1</value>
   </data>
   <data name="&gt;&gt;ucContactInfo1.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.Controls.ucContactInfo, DevExpress.MailClient.Win, Culture=neutral</value>
+    <value>DevExpress.MailClient.Win.Controls.ucContactInfo, DevExpress.MailClient.Win.v13.1, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;ucContactInfo1.Parent" xml:space="preserve">
     <value>splitContainerControl1.Panel2</value>

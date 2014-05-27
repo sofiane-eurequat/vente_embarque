@@ -1415,23 +1415,115 @@
   <data name="nbgMail.Caption" xml:space="preserve">
     <value>Stock</value>
   </data>
-  <data name="navBarGroupControlContainer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 333</value>
+  <data name="navBarItem4.Caption" xml:space="preserve">
+    <value>STOCK</value>
   </data>
-  <data name="navBarGroupControlContainer1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="navBarItem4.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        D731qhIYAAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="&gt;&gt;navBarGroupControlContainer1.Name" xml:space="preserve">
-    <value>navBarGroupControlContainer1</value>
+  <data name="navBarItem4.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAYdEVYdFRpdGxlAFByb2plY3Q7UG9ydGZvbGlvO/6WTy0AAAKISURBVDhPpZNdSNNRHIZXaTJk
+        TN3U/TU1dW5q+9A5E8VSsxaIK5xKmmRKJmqz/EanzUQRMZvLj9Sy3FBYVEqS5lVQ2E1leNUqG16k3VcQ
+        dBG8nZ9MXOBNeODhfLznPOdwDocHgLcXdl3ce+xQJMPancqtd2rF6yal0Nos50futhGPlX2MAwzvbbrT
+        Q13mFK7BqAyQVccKZPUyfsO1SG8Xyw8yfNxQez8JvDYdda9ctlq4bEZ8mbqCJVM+1u7X4PNkNT7dY9yt
+        wqzxNJwTlXCOXcaHsQq8v12+7BbxfJb7SvH72+v/wpqXDCbwpRPwl9oM+PFxHhuLJnx91rbFxmI7Np/v
+        sLGwk313PkV3hpQEAhL4OipPwDVvhr1cA4teitHCeLwdzMPqSAFWhwuwYjV4ZHFYm+tAa0IwCYQkEPTr
+        4tGayOEWW/zn50t0pnNoVIjQRBwRoT7O75+sVipAi1JMAn8SCIfytBgvTkPvyXD8eleIliQxBnRRGM2N
+        wUiuFBbW9sysZ1ToPxVHAhEJ/KcuZuFFTwmaE0WoiuajSe2PJxVJWDSmYKEmBbMVmq0xyhpVfpiv02FI
+        n0CCQBKIxgrYxKYcPCxVwV6swMx5BWbLVJgrV2OuTInHFxSYLorFA4MM9kIZHl1Kxc1sOQkkJAgczFHC
+        VqLFhD4KNkMMZtgkwlEkh+OcDNP5UtgN0ZjUH8aILgzjZ2PRkxZBghASBPVlSnEnV47BLA6WbTIlsGSy
+        i82QYCAjeIfjwbBmh8GskZAglAR+LRruTdfRUHQlh+CGlkNnkgRmIjEI1xMY6kB0qMVoVzGUIpgUAbgq
+        F65sX6KX+znIFuYmnNWeRLC+J5SJGd57+sr0O/8Cmq723G1DcAMAAAAASUVORK5CYII=
+</value>
   </data>
-  <data name="&gt;&gt;navBarGroupControlContainer1.Type" xml:space="preserve">
-    <value>DevExpress.XtraNavBar.NavBarGroupControlContainer, DevExpress.XtraNavBar.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="navBarItem5.Caption" xml:space="preserve">
+    <value>PRODUIT</value>
   </data>
-  <data name="&gt;&gt;navBarGroupControlContainer1.Parent" xml:space="preserve">
-    <value>navBarControl1</value>
-  </data>
-  <data name="&gt;&gt;navBarGroupControlContainer1.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="navBarItem5.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
   </data>
   <data name="nbgContacts.Caption" xml:space="preserve">
     <value>Clients</value>
@@ -1529,8 +1621,23 @@
   <data name="&gt;&gt;navBarGroupControlContainer2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="nbgBdc.Caption" xml:space="preserve">
-    <value>Commande</value>
+  <data name="navBarGroupControlContainer4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 333</value>
+  </data>
+  <data name="navBarGroupControlContainer4.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;navBarGroupControlContainer4.Name" xml:space="preserve">
+    <value>navBarGroupControlContainer4</value>
+  </data>
+  <data name="&gt;&gt;navBarGroupControlContainer4.Type" xml:space="preserve">
+    <value>DevExpress.XtraNavBar.NavBarGroupControlContainer, DevExpress.XtraNavBar.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;navBarGroupControlContainer4.Parent" xml:space="preserve">
+    <value>navBarControl1</value>
+  </data>
+  <data name="&gt;&gt;navBarGroupControlContainer4.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="navBarGroupControlContainer5.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 333</value>
@@ -1548,24 +1655,6 @@
     <value>navBarControl1</value>
   </data>
   <data name="&gt;&gt;navBarGroupControlContainer5.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="navBarGroupControlContainer4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 333</value>
-  </data>
-  <data name="navBarGroupControlContainer4.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;navBarGroupControlContainer4.Name" xml:space="preserve">
-    <value>navBarGroupControlContainer4</value>
-  </data>
-  <data name="&gt;&gt;navBarGroupControlContainer4.Type" xml:space="preserve">
-    <value>DevExpress.XtraNavBar.NavBarGroupControlContainer, DevExpress.XtraNavBar.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;navBarGroupControlContainer4.Parent" xml:space="preserve">
-    <value>navBarControl1</value>
-  </data>
-  <data name="&gt;&gt;navBarGroupControlContainer4.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="navBarControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -1646,6 +1735,9 @@
         GyGqWQ6PaEsauJT60+SsVZ5i1gqXUAqh9cymHSaiM7Kcvm09EsyQyTjicJUNeBEWFLDY9aCFYQq/Nurf
         m9p4kXonE5fIxfWu4Zagcgo2V9Ls3LD/ABhSkG8avrtkWgum3/TGn4BjElYUfyZXAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="nbgBdc.Caption" xml:space="preserve">
+    <value>Commande</value>
   </data>
   <data name="navBarItem2.Caption" xml:space="preserve">
     <value>navBarItem2</value>
@@ -4295,6 +4387,18 @@
   <data name="&gt;&gt;nbgMail.Type" xml:space="preserve">
     <value>DevExpress.XtraNavBar.NavBarGroup, DevExpress.XtraNavBar.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="&gt;&gt;navBarItem4.Name" xml:space="preserve">
+    <value>navBarItem4</value>
+  </data>
+  <data name="&gt;&gt;navBarItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraNavBar.NavBarItem, DevExpress.XtraNavBar.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;navBarItem5.Name" xml:space="preserve">
+    <value>navBarItem5</value>
+  </data>
+  <data name="&gt;&gt;navBarItem5.Type" xml:space="preserve">
+    <value>DevExpress.XtraNavBar.NavBarItem, DevExpress.XtraNavBar.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="&gt;&gt;nbgContacts.Name" xml:space="preserve">
     <value>nbgContacts</value>
   </data>
@@ -4307,16 +4411,16 @@
   <data name="&gt;&gt;nbgCalendar.Type" xml:space="preserve">
     <value>DevExpress.XtraNavBar.NavBarGroup, DevExpress.XtraNavBar.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;nbgBdc.Name" xml:space="preserve">
-    <value>nbgBdc</value>
-  </data>
-  <data name="&gt;&gt;nbgBdc.Type" xml:space="preserve">
-    <value>DevExpress.XtraNavBar.NavBarGroup, DevExpress.XtraNavBar.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="&gt;&gt;nbgSecteur.Name" xml:space="preserve">
     <value>nbgSecteur</value>
   </data>
   <data name="&gt;&gt;nbgSecteur.Type" xml:space="preserve">
+    <value>DevExpress.XtraNavBar.NavBarGroup, DevExpress.XtraNavBar.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;nbgBdc.Name" xml:space="preserve">
+    <value>nbgBdc</value>
+  </data>
+  <data name="&gt;&gt;nbgBdc.Type" xml:space="preserve">
     <value>DevExpress.XtraNavBar.NavBarGroup, DevExpress.XtraNavBar.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;navBarItem2.Name" xml:space="preserve">

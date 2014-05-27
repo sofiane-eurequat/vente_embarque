@@ -132,7 +132,7 @@
     <value>ucContactInfo1</value>
   </data>
   <data name="&gt;&gt;ucContactInfo1.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.Controls.ucContactInfo, DevExpress.MailClient.Win.v13.1, Culture=neutral</value>
+    <value>DevExpress.MailClient.Win.Controls.ucContactInfo, DevExpress.MailClient.Win.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;ucContactInfo1.Parent" xml:space="preserve">
     <value>layoutControl1</value>
@@ -146,12 +146,12 @@
   <data name="repositoryItemImageComboBox1.AutoHeight" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <assembly alias="DevExpress.Utils.v13.1" name="DevExpress.Utils.v13.1, Culture=neutral"></assembly>
-  <data name="repositoryItemImageComboBox1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.1">
+  <assembly alias="DevExpress.Utils.v13.2" name="DevExpress.Utils.v13.2, Culture=neutral"></assembly>
+  <data name="repositoryItemImageComboBox1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.2">
     <value>Combo</value>
   </data>
-  <assembly alias="DevExpress.Data.v13.1" name="DevExpress.Data.v13.1, Culture=neutral"></assembly>
-  <data name="repositoryItemImageComboBox1.GlyphAlignment" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v13.1">
+  <assembly alias="DevExpress.Data.v13.2" name="DevExpress.Data.v13.2, Culture=neutral"></assembly>
+  <data name="repositoryItemImageComboBox1.GlyphAlignment" type="DevExpress.Utils.HorzAlignment, DevExpress.Data.v13.2">
     <value>Center</value>
   </data>
   <data name="colGender.Visible" type="System.Boolean, mscorlib">
@@ -223,7 +223,7 @@
   <data name="colCity.Width" type="System.Int32, mscorlib">
     <value>147</value>
   </data>
-  <data name="gridView1.GroupSummary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v13.1">
+  <data name="gridView1.GroupSummary" type="DevExpress.Data.SummaryItemType, DevExpress.Data.v13.2">
     <value>Count</value>
   </data>
   <data name="gridView1.GroupSummary1" xml:space="preserve">
@@ -281,7 +281,7 @@
     <value>gridControl1</value>
   </data>
   <data name="&gt;&gt;gridControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;gridControl1.Parent" xml:space="preserve">
     <value>layoutControl1</value>
@@ -330,7 +330,7 @@
     <value>layoutControl1</value>
   </data>
   <data name="&gt;&gt;layoutControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;layoutControl1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -351,174 +351,174 @@
     <value>gridView1</value>
   </data>
   <data name="&gt;&gt;gridView1.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;colGender.Name" xml:space="preserve">
     <value>colGender</value>
   </data>
   <data name="&gt;&gt;colGender.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;repositoryItemImageComboBox1.Name" xml:space="preserve">
     <value>repositoryItemImageComboBox1</value>
   </data>
   <data name="&gt;&gt;repositoryItemImageComboBox1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox, DevExpress.XtraEditors.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox, DevExpress.XtraEditors.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;colName.Name" xml:space="preserve">
     <value>colName</value>
   </data>
   <data name="&gt;&gt;colName.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;colEmail.Name" xml:space="preserve">
     <value>colEmail</value>
   </data>
   <data name="&gt;&gt;colEmail.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;colState.Name" xml:space="preserve">
     <value>colState</value>
   </data>
   <data name="&gt;&gt;colState.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;colPhone.Name" xml:space="preserve">
     <value>colPhone</value>
   </data>
   <data name="&gt;&gt;colPhone.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;colCity.Name" xml:space="preserve">
     <value>colCity</value>
   </data>
   <data name="&gt;&gt;colCity.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;repositoryItemPictureEdit1.Name" xml:space="preserve">
     <value>repositoryItemPictureEdit1</value>
   </data>
   <data name="&gt;&gt;repositoryItemPictureEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit, DevExpress.XtraEditors.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit, DevExpress.XtraEditors.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;repositoryItemMemoEdit1.Name" xml:space="preserve">
     <value>repositoryItemMemoEdit1</value>
   </data>
   <data name="&gt;&gt;repositoryItemMemoEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit, DevExpress.XtraEditors.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit, DevExpress.XtraEditors.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;layoutView1.Name" xml:space="preserve">
     <value>layoutView1</value>
   </data>
   <data name="&gt;&gt;layoutView1.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Layout.LayoutView, DevExpress.XtraGrid.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutView, DevExpress.XtraGrid.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;layoutViewColumn1.Name" xml:space="preserve">
     <value>layoutViewColumn1</value>
   </data>
   <data name="&gt;&gt;layoutViewColumn1.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;layoutViewField_colGender.Name" xml:space="preserve">
     <value>layoutViewField_colGender</value>
   </data>
   <data name="&gt;&gt;layoutViewField_colGender.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;layoutViewColumn2.Name" xml:space="preserve">
     <value>layoutViewColumn2</value>
   </data>
   <data name="&gt;&gt;layoutViewColumn2.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;layoutViewField_colName.Name" xml:space="preserve">
     <value>layoutViewField_colName</value>
   </data>
   <data name="&gt;&gt;layoutViewField_colName.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;layoutViewColumn3.Name" xml:space="preserve">
     <value>layoutViewColumn3</value>
   </data>
   <data name="&gt;&gt;layoutViewColumn3.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;layoutViewField_colEmail.Name" xml:space="preserve">
     <value>layoutViewField_colEmail</value>
   </data>
   <data name="&gt;&gt;layoutViewField_colEmail.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;layoutViewColumn5.Name" xml:space="preserve">
     <value>layoutViewColumn5</value>
   </data>
   <data name="&gt;&gt;layoutViewColumn5.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;layoutViewField_colPhone.Name" xml:space="preserve">
     <value>layoutViewField_colPhone</value>
   </data>
   <data name="&gt;&gt;layoutViewField_colPhone.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;layoutViewColumn4.Name" xml:space="preserve">
     <value>layoutViewColumn4</value>
   </data>
   <data name="&gt;&gt;layoutViewColumn4.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;layoutViewField_colState.Name" xml:space="preserve">
     <value>layoutViewField_colState</value>
   </data>
   <data name="&gt;&gt;layoutViewField_colState.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;layoutViewCard1.Name" xml:space="preserve">
     <value>layoutViewCard1</value>
   </data>
   <data name="&gt;&gt;layoutViewCard1.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewCard, DevExpress.XtraGrid.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewCard, DevExpress.XtraGrid.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;Item1.Name" xml:space="preserve">
     <value>Item1</value>
   </data>
   <data name="&gt;&gt;Item1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
     <value>emptySpaceItem1</value>
   </data>
   <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;layoutControlGroup1.Name" xml:space="preserve">
     <value>layoutControlGroup1</value>
   </data>
   <data name="&gt;&gt;layoutControlGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;layoutControlItem1.Name" xml:space="preserve">
     <value>layoutControlItem1</value>
   </data>
   <data name="&gt;&gt;layoutControlItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;layoutControlItem2.Name" xml:space="preserve">
     <value>layoutControlItem2</value>
   </data>
   <data name="&gt;&gt;layoutControlItem2.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;splitterItem1.Name" xml:space="preserve">
     <value>splitterItem1</value>
   </data>
   <data name="&gt;&gt;splitterItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.SplitterItem, DevExpress.XtraLayout.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.SplitterItem, DevExpress.XtraLayout.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Contacts</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.BaseModule, DevExpress.MailClient.Win.v13.1, Culture=neutral</value>
+    <value>DevExpress.MailClient.Win.BaseModule, DevExpress.MailClient.Win.v13.2, Culture=neutral</value>
   </data>
 </root>

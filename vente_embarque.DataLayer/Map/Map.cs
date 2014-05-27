@@ -107,26 +107,47 @@ namespace vente_embarque.DataLayer.Map
             return categoryReturned;
         }
 
-        public static void MapOrder(Order entity, UnitOfWork uow)
+        public static XpoOrder MapOrder(Order order, UnitOfWork uow)
         {
             var xpoOrder= new XpoOrder(uow)
                 {
-                    Oid = entity.id,
-                    Priorite = entity.Priorite
+                    Oid = order.id,
+                    Priorite = order.Priorite,
+                    //Delivery = order.Livraison
+                    //todo : a implementer lors du lancement du module livraison
                 };
-            xpoOrder.Client = MapClient(entity.Client, uow);
-
+            xpoOrder.Client = MapClient(order.Client, uow);
+            if (order.OrderLines == null) return xpoOrder;
+            foreach (var ol in order.OrderLines)
+            {
+                var xpl = new XpoOrderLine(uow)
+                    {
+                        Oid = ol.id,
+                        Quantity = ol.Quantity,
+                        Product = uow.GetObjectByKey<XpoProduct>(ol.Product.id)
+                    };
+                xpoOrder.OrderLines.Add(xpl); 
+            }
+            return xpoOrder;
         }
-
+       
         public static XpoClient MapClient(Client client, UnitOfWork uow)
         {
-            return new XpoClient(uow)
+            XpoClient clientReturned;
+            if (client.newObject)
+            {
+                clientReturned = new XpoClient(uow)
                 {
-                    Oid = client.id,
-                    Name = client.Name,
-                    PreName = client.PreNom,
-                    Address = client.Address,
+                    Oid = client.id
                 };
+            }
+            else
+            {
+                clientReturned = uow.GetObjectByKey<XpoClient>(client.id);
+            }
+            clientReturned.Name = client.Name;
+            clientReturned.PreName = client.PreNom;
+            return clientReturned;
         }
 
         public static XpoAgentTerrain MapAgentTerrain(AgentTerrain agentterrain, UnitOfWork uow)

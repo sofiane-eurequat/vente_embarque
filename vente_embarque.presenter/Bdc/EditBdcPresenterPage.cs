@@ -13,15 +13,15 @@ namespace vente_embarque.presenter.Bdc
     {
         private readonly IEditBdcView _EditBdcView;
         private IRepository<Client, Guid> _repositoryClient; 
-        private IRepository<Product, Guid> _repositoryProduit;
         private IRepository<Stock, Guid> _repositoryStock;
         private IRepository<Order, Guid> _repositoryOrder; 
  
-        public EditBdcPresenterPage(IEditBdcView editBdcView, IRepository<Client,Guid> repository, IRepository<Stock,Guid> repository1)
+        public EditBdcPresenterPage(IEditBdcView editBdcView, IRepository<Client,Guid> repository, IRepository<Stock,Guid> repository1, IRepository<Order, Guid> repositoryOrder)
         {
             _EditBdcView = editBdcView;
             _repositoryClient = repository;
             _repositoryStock = repository1;
+            _repositoryOrder = repositoryOrder;
         }
 
         public void Display()
@@ -31,9 +31,9 @@ namespace vente_embarque.presenter.Bdc
 
         }
 
-        public void Write(Stock stock, Client client, Priorite priorite)
+        public void Write(Stock stock, Client client, IEnumerable<OrderLine> orderLine, Priorite priorite, DateTime dateLivraison, string adresseLivraison)
         {
-            var order = FactoryOrder.CreateOrder(stock, client);
+            var order = FactoryOrder.CreateOrder(stock, client,orderLine,adresseLivraison,priorite,dateLivraison);
             _repositoryOrder.Save(order);
         }
     }
@@ -41,6 +41,6 @@ namespace vente_embarque.presenter.Bdc
     internal interface IEditBdcPagePresenter
     {
         void Display();
-        void Write(Stock stock, Client client, Priorite priorite);
+        void Write(Stock stock, Client client, IEnumerable<OrderLine> orderLine,Priorite priorite, DateTime dateLivraison, string adresseLivraison);
     }
 }

@@ -364,7 +364,7 @@ namespace vente_embarque.Test
             Assert.AreEqual(listProduct.Count,1);
         }
         
-
+        /*
         [Test]
         public void CanCreateBCWithoutStock()
         {
@@ -394,7 +394,7 @@ namespace vente_embarque.Test
             Assert.IsNull(FactoryOrder.CreateOrder(stock,client, orders));
 
         }
-        
+        */
         [Test]
         public void CanUpateStock()
         {

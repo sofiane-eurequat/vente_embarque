@@ -139,7 +139,7 @@
     <value>galleryControlClient1</value>
   </data>
   <data name="&gt;&gt;galleryControlClient1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.GalleryControlClient, DevExpress.XtraBars.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraBars.Ribbon.GalleryControlClient, DevExpress.XtraBars.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;galleryControlClient1.Parent" xml:space="preserve">
     <value>exportGallery</value>
@@ -223,7 +223,7 @@
     <value>exportGallery</value>
   </data>
   <data name="&gt;&gt;exportGallery.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.GalleryControl, DevExpress.XtraBars.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraBars.Ribbon.GalleryControl, DevExpress.XtraBars.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;exportGallery.Parent" xml:space="preserve">
     <value>splitContainer1.Panel1</value>
@@ -234,8 +234,8 @@
   <data name="backstageViewLabel1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9.75pt, style=Bold</value>
   </data>
-  <assembly alias="DevExpress.XtraEditors.v13.1" name="DevExpress.XtraEditors.v13.1, Culture=neutral"></assembly>
-  <data name="backstageViewLabel1.AutoSizeMode" type="DevExpress.XtraEditors.LabelAutoSizeMode, DevExpress.XtraEditors.v13.1">
+  <assembly alias="DevExpress.XtraEditors.v13.2" name="DevExpress.XtraEditors.v13.2, Culture=neutral"></assembly>
+  <data name="backstageViewLabel1.AutoSizeMode" type="DevExpress.XtraEditors.LabelAutoSizeMode, DevExpress.XtraEditors.v13.2">
     <value>None</value>
   </data>
   <data name="backstageViewLabel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -257,7 +257,7 @@
     <value>backstageViewLabel1</value>
   </data>
   <data name="&gt;&gt;backstageViewLabel1.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.Controls.BackstageViewLabel, DevExpress.MailClient.Win.v13.1, Culture=neutral</value>
+    <value>DevExpress.MailClient.Win.Controls.BackstageViewLabel, DevExpress.MailClient.Win.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;backstageViewLabel1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel1</value>
@@ -280,7 +280,7 @@
   <data name="&gt;&gt;splitContainer1.Panel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="labelControl4.AutoSizeMode" type="DevExpress.XtraEditors.LabelAutoSizeMode, DevExpress.XtraEditors.v13.1">
+  <data name="labelControl4.AutoSizeMode" type="DevExpress.XtraEditors.LabelAutoSizeMode, DevExpress.XtraEditors.v13.2">
     <value>None</value>
   </data>
   <data name="labelControl4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -299,7 +299,7 @@
     <value>labelControl4</value>
   </data>
   <data name="&gt;&gt;labelControl4.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;labelControl4.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
@@ -359,7 +359,7 @@
     <value>galleryControlGallery1</value>
   </data>
   <data name="&gt;&gt;galleryControlGallery1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.Gallery.GalleryControlGallery, DevExpress.XtraBars.v13.1, Culture=neutral</value>
+    <value>DevExpress.XtraBars.Ribbon.Gallery.GalleryControlGallery, DevExpress.XtraBars.v13.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;saveFileDialog1.Name" xml:space="preserve">
     <value>saveFileDialog1</value>
@@ -371,6 +371,6 @@
     <value>ExportControl</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.Controls.RibbonApplicationUserControl, DevExpress.MailClient.Win.v13.1, Culture=neutral</value>
+    <value>DevExpress.MailClient.Win.Controls.RibbonApplicationUserControl, DevExpress.MailClient.Win.v13.2, Culture=neutral</value>
   </data>
 </root>
