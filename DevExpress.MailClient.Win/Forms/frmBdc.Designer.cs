@@ -47,18 +47,16 @@
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.comboBoxPriorite = new System.Windows.Forms.ComboBox();
             this.labelPriorite = new DevExpress.XtraEditors.LabelControl();
-            this.comboBoxStock = new System.Windows.Forms.ComboBox();
             this.memoEditAdresssLivraion = new DevExpress.XtraEditors.MemoEdit();
             this.dateEditLivraison = new DevExpress.XtraEditors.DateEdit();
             this.comboBoxClients = new System.Windows.Forms.ComboBox();
             this.labelDateLivraison = new DevExpress.XtraEditors.LabelControl();
             this.labelAdresseLivraison = new DevExpress.XtraEditors.LabelControl();
             this.labelClient = new DevExpress.XtraEditors.LabelControl();
-            this.labelStock = new DevExpress.XtraEditors.LabelControl();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.GCOrderLine = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridViewOrderLine = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colProduct = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colQuantity = new DevExpress.XtraGrid.Columns.GridColumn();
             this.standaloneBarDockControl1 = new DevExpress.XtraBars.StandaloneBarDockControl();
@@ -82,7 +80,7 @@
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GCOrderLine)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewOrderLine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -211,14 +209,12 @@
             // 
             this.groupControl1.Controls.Add(this.comboBoxPriorite);
             this.groupControl1.Controls.Add(this.labelPriorite);
-            this.groupControl1.Controls.Add(this.comboBoxStock);
             this.groupControl1.Controls.Add(this.memoEditAdresssLivraion);
             this.groupControl1.Controls.Add(this.dateEditLivraison);
             this.groupControl1.Controls.Add(this.comboBoxClients);
             this.groupControl1.Controls.Add(this.labelDateLivraison);
             this.groupControl1.Controls.Add(this.labelAdresseLivraison);
             this.groupControl1.Controls.Add(this.labelClient);
-            this.groupControl1.Controls.Add(this.labelStock);
             resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Name = "groupControl1";
             // 
@@ -233,14 +229,6 @@
             this.labelPriorite.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelPriorite.Appearance.Font")));
             resources.ApplyResources(this.labelPriorite, "labelPriorite");
             this.labelPriorite.Name = "labelPriorite";
-            // 
-            // comboBoxStock
-            // 
-            this.comboBoxStock.DisplayMember = "id";
-            this.comboBoxStock.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBoxStock, "comboBoxStock");
-            this.comboBoxStock.Name = "comboBoxStock";
-            this.comboBoxStock.ValueMember = "id";
             // 
             // memoEditAdresssLivraion
             // 
@@ -285,12 +273,6 @@
             resources.ApplyResources(this.labelClient, "labelClient");
             this.labelClient.Name = "labelClient";
             // 
-            // labelStock
-            // 
-            this.labelStock.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelStock.Appearance.Font")));
-            resources.ApplyResources(this.labelStock, "labelStock");
-            this.labelStock.Name = "labelStock";
-            // 
             // xtraTabControl1
             // 
             resources.ApplyResources(this.xtraTabControl1, "xtraTabControl1");
@@ -309,21 +291,21 @@
             // GCOrderLine
             // 
             resources.ApplyResources(this.GCOrderLine, "GCOrderLine");
-            this.GCOrderLine.MainView = this.gridView1;
+            this.GCOrderLine.MainView = this.gridViewOrderLine;
             this.GCOrderLine.MenuManager = this.ribbon;
             this.GCOrderLine.Name = "GCOrderLine";
             this.GCOrderLine.UseEmbeddedNavigator = true;
             this.GCOrderLine.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
+            this.gridViewOrderLine});
             // 
-            // gridView1
+            // gridViewOrderLine
             // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridViewOrderLine.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colProduct,
             this.colQuantity});
-            this.gridView1.GridControl = this.GCOrderLine;
-            this.gridView1.Name = "gridView1";
-            this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridViewOrderLine.GridControl = this.GCOrderLine;
+            this.gridViewOrderLine.Name = "gridViewOrderLine";
+            this.gridViewOrderLine.OptionsView.ShowGroupPanel = false;
             // 
             // colProduct
             // 
@@ -448,7 +430,7 @@
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GCOrderLine)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewOrderLine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             this.ResumeLayout(false);
 
@@ -468,7 +450,6 @@
         private XtraEditors.LabelControl labelDateLivraison;
         private XtraEditors.LabelControl labelAdresseLivraison;
         private XtraEditors.LabelControl labelClient;
-        private XtraEditors.LabelControl labelStock;
         private XtraTab.XtraTabControl xtraTabControl1;
         private XtraTab.XtraTabPage xtraTabPage1;
         private XtraBars.StandaloneBarDockControl standaloneBarDockControl1;
@@ -482,14 +463,13 @@
         private XtraBars.BarButtonItem bbiAddOrderLine;
         private XtraBars.BarButtonItem bbiSuppOrderLine;
         private XtraGrid.GridControl GCOrderLine;
-        private XtraGrid.Views.Grid.GridView gridView1;
+        private XtraGrid.Views.Grid.GridView gridViewOrderLine;
         private XtraEditors.DateEdit dateEditLivraison;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private XtraBars.BarButtonItem bbiSauvegarder;
         private XtraEditors.MemoEdit memoEditAdresssLivraion;
         private XtraGrid.Columns.GridColumn colProduct;
         private XtraGrid.Columns.GridColumn colQuantity;
-        private System.Windows.Forms.ComboBox comboBoxStock;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private XtraBars.BarButtonItem bbiFermer;

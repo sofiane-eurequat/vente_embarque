@@ -150,15 +150,16 @@ namespace vente_embarque.DataLayer.Map
             return clientReturned;
         }
 
-        public static XpoAgentTerrain MapAgentTerrain(AgentTerrain agentterrain, UnitOfWork uow)
+        public static void MapAgentTerrain(AgentTerrain agentterrain, UnitOfWork uow)
         {
-            return new XpoAgentTerrain(uow)
+            new XpoAgentTerrain(uow)
             {
                 Name = agentterrain.Name,
                 Oid = agentterrain.id,
             };
+            return;
         }
-        
+
         private static XpoWilaya MapWilaya(Wilaya wilaya, UnitOfWork uow)
         {
             var xpoWilaya = new XpoWilaya(uow)

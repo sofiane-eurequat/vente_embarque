@@ -12,20 +12,40 @@ namespace vente_embarque.presenter.Bdc
     public class BdcPresenterPage:IBdcPagePresenter
     {
         private readonly IBdcView _bdcView;
-        private readonly IRepository<Client, Guid> _repositoryClient;
-        private readonly IRepository<Stock, Guid> _repositoryStock; 
+        //private readonly IRepository<Client, Guid> _repositoryClient;
+        private readonly IRepository<Order, Guid> _repositoryOrder; 
 
-        public BdcPresenterPage(IBdcView bdcView,IRepository<Client,Guid> clientkRepository, IRepository<Stock,Guid> stockRepository )
+        public BdcPresenterPage(IBdcView bdcView, IRepository<Order,Guid> orderRepository )
         {
             _bdcView = bdcView;
-            _repositoryClient = clientkRepository;
-            _repositoryStock = stockRepository;
+            //_repositoryClient = clientkRepository;
+            _repositoryOrder = orderRepository;
         }
         
         public void Diplay()
         {
-            _repositoryClient.FindAll();
-            _repositoryStock.FindAll();
+            var order = _repositoryOrder.FindAll();
+            var tempOrder = new List<ModelViewBdc>();
+
+            foreach (var bdc in order)
+            {
+                var mvb = new ModelViewBdc()
+                {
+                    Client = bdc.Client.Name,
+                    Priorite = bdc.Priorite,
+                };
+
+                mvb.OrderLines=new List<ModelViewOrderLine>();
+
+                foreach (var orderLine in bdc.OrderLines)
+                {
+                    mvb.OrderLines.Add(new ModelViewOrderLine() { Id = orderLine.id, Product = orderLine.Product.Name, Quantity = orderLine.Quantity });
+                }
+
+                tempOrder.Add(mvb);
+            }
+
+            _bdcView.Orders = tempOrder;
         }
     }
 
@@ -37,14 +57,17 @@ namespace vente_embarque.presenter.Bdc
     public class ModelViewBdc
     {
         public Guid Id { get; set; }
-        public Client Client { get; set; }
-        public List<OrderLine> OrderLines { get; set; }
+        public string Client { get; set; }
+        public List<ModelViewOrderLine> OrderLines { get; set; }
         public Priorite Priorite { get; set; }
+        public DateTime DateLivraison { get; set; }
+        public string AdresseLivraison { get; set; }
     }
 
     public class ModelViewOrderLine
     {
-        public Product Product { get; set; }
+        public string Product { get; set; }
         public int Quantity { get; set; }
+        public Guid Id { get; set; }
     }
 }

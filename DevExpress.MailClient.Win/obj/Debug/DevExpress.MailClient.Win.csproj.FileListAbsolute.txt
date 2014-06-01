@@ -128,3 +128,4 @@ D:\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.
 D:\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.csproj.GenerateResource.Cache
 D:\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.exe.licenses
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Forms.frmEditOrderLine.resources
+C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Modules.Bdc2.resources

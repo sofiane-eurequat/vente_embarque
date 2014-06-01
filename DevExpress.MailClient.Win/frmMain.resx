@@ -126,7 +126,7 @@
     <value>0, 0</value>
   </data>
   <data name="helpControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>882, 486</value>
+    <value>882, 494</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="helpControl1.TabIndex" type="System.Int32, mscorlib">
@@ -136,7 +136,7 @@
     <value>helpControl1</value>
   </data>
   <data name="&gt;&gt;helpControl1.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.Controls.HelpControl, DevExpress.MailClient.Win.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.MailClient.Win.Controls.HelpControl, DevExpress.MailClient.Win, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;helpControl1.Parent" xml:space="preserve">
     <value>backstageViewClientControl1</value>
@@ -145,10 +145,10 @@
     <value>0</value>
   </data>
   <data name="backstageViewClientControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>133, 71</value>
+    <value>133, 63</value>
   </data>
   <data name="backstageViewClientControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>882, 486</value>
+    <value>882, 494</value>
   </data>
   <data name="backstageViewClientControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -190,7 +190,7 @@
     <value>20, 20</value>
   </data>
   <data name="galleryControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>842, 266</value>
+    <value>842, 274</value>
   </data>
   <data name="galleryControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -211,13 +211,13 @@
     <value>0</value>
   </data>
   <data name="backstageViewClientControl2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>133, 71</value>
+    <value>133, 63</value>
   </data>
   <data name="backstageViewClientControl2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>20, 20, 20, 200</value>
   </data>
   <data name="backstageViewClientControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>882, 486</value>
+    <value>882, 494</value>
   </data>
   <data name="backstageViewClientControl2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -241,7 +241,7 @@
     <value>0, 0</value>
   </data>
   <data name="printControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>882, 486</value>
+    <value>882, 494</value>
   </data>
   <data name="printControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -250,7 +250,7 @@
     <value>printControl1</value>
   </data>
   <data name="&gt;&gt;printControl1.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.Controls.PrintControl, DevExpress.MailClient.Win.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.MailClient.Win.Controls.PrintControl, DevExpress.MailClient.Win, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;printControl1.Parent" xml:space="preserve">
     <value>backstageViewClientControl3</value>
@@ -259,10 +259,10 @@
     <value>0</value>
   </data>
   <data name="backstageViewClientControl3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>133, 71</value>
+    <value>133, 63</value>
   </data>
   <data name="backstageViewClientControl3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>882, 486</value>
+    <value>882, 494</value>
   </data>
   <data name="backstageViewClientControl3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -286,7 +286,7 @@
     <value>0, 0</value>
   </data>
   <data name="exportControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>882, 486</value>
+    <value>882, 494</value>
   </data>
   <data name="exportControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -295,7 +295,7 @@
     <value>exportControl1</value>
   </data>
   <data name="&gt;&gt;exportControl1.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.Controls.ExportControl, DevExpress.MailClient.Win.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.MailClient.Win.Controls.ExportControl, DevExpress.MailClient.Win, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;exportControl1.Parent" xml:space="preserve">
     <value>backstageViewClientControl4</value>
@@ -304,10 +304,10 @@
     <value>0</value>
   </data>
   <data name="backstageViewClientControl4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>133, 71</value>
+    <value>133, 63</value>
   </data>
   <data name="backstageViewClientControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>882, 486</value>
+    <value>882, 494</value>
   </data>
   <data name="backstageViewClientControl4.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -375,8 +375,8 @@
   <assembly alias="DevExpress.XtraBars.v13.2" name="DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   <data name="ribbonControl1.Categories" type="DevExpress.XtraBars.BarManagerCategory, DevExpress.XtraBars.v13.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFCYXJzLnYxMy4xLCBWZXJzaW9uPTEz
-        LjEuNC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAA
+        AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFCYXJzLnYxMy4yLCBWZXJzaW9uPTEz
+        LjIuNS4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAA
         ACZEZXZFeHByZXNzLlh0cmFCYXJzLkJhck1hbmFnZXJDYXRlZ29yeQMAAAAETmFtZQRHdWlkB1Zpc2li
         bGUBAwALU3lzdGVtLkd1aWQBAgAAAAYDAAAABE1haWwE/P///wtTeXN0ZW0uR3VpZAsAAAACX2ECX2IC
         X2MCX2QCX2UCX2YCX2cCX2gCX2kCX2oCX2sAAAAAAAAAAAAAAAgHBwICAgICAgICyARzqzFCa0y3OaaM
@@ -385,8 +385,8 @@
   </data>
   <data name="ribbonControl1.Categories1" type="DevExpress.XtraBars.BarManagerCategory, DevExpress.XtraBars.v13.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFCYXJzLnYxMy4xLCBWZXJzaW9uPTEz
-        LjEuNC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAA
+        AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFCYXJzLnYxMy4yLCBWZXJzaW9uPTEz
+        LjIuNS4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAA
         ACZEZXZFeHByZXNzLlh0cmFCYXJzLkJhck1hbmFnZXJDYXRlZ29yeQMAAAAETmFtZQRHdWlkB1Zpc2li
         bGUBAwALU3lzdGVtLkd1aWQBAgAAAAYDAAAACENhbGVuZGFyBPz///8LU3lzdGVtLkd1aWQLAAAAAl9h
         Al9iAl9jAl9kAl9lAl9mAl9nAl9oAl9pAl9qAl9rAAAAAAAAAAAAAAAIBwcCAgICAgICArpZ2VChFu5M
@@ -395,8 +395,8 @@
   </data>
   <data name="ribbonControl1.Categories2" type="DevExpress.XtraBars.BarManagerCategory, DevExpress.XtraBars.v13.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFCYXJzLnYxMy4xLCBWZXJzaW9uPTEz
-        LjEuNC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAA
+        AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFCYXJzLnYxMy4yLCBWZXJzaW9uPTEz
+        LjIuNS4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAA
         ACZEZXZFeHByZXNzLlh0cmFCYXJzLkJhck1hbmFnZXJDYXRlZ29yeQMAAAAETmFtZQRHdWlkB1Zpc2li
         bGUBAwALU3lzdGVtLkd1aWQBAgAAAAYDAAAACENvbnRhY3RzBPz///8LU3lzdGVtLkd1aWQLAAAAAl9h
         Al9iAl9jAl9kAl9lAl9mAl9nAl9oAl9pAl9qAl9rAAAAAAAAAAAAAAAIBwcCAgICAgICAi82Vy4fCZtF
@@ -405,8 +405,8 @@
   </data>
   <data name="ribbonControl1.Categories3" type="DevExpress.XtraBars.BarManagerCategory, DevExpress.XtraBars.v13.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFCYXJzLnYxMy4xLCBWZXJzaW9uPTEz
-        LjEuNC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAA
+        AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFCYXJzLnYxMy4yLCBWZXJzaW9uPTEz
+        LjIuNS4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAA
         ACZEZXZFeHByZXNzLlh0cmFCYXJzLkJhck1hbmFnZXJDYXRlZ29yeQMAAAAETmFtZQRHdWlkB1Zpc2li
         bGUBAwALU3lzdGVtLkd1aWQBAgAAAAYDAAAABUZlZWRzBPz///8LU3lzdGVtLkd1aWQLAAAAAl9hAl9i
         Al9jAl9kAl9lAl9mAl9nAl9oAl9pAl9qAl9rAAAAAAAAAAAAAAAIBwcCAgICAgICAoOPBvwaUAdFp5b6
@@ -415,8 +415,8 @@
   </data>
   <data name="ribbonControl1.Categories4" type="DevExpress.XtraBars.BarManagerCategory, DevExpress.XtraBars.v13.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFCYXJzLnYxMy4xLCBWZXJzaW9uPTEz
-        LjEuNC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAA
+        AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFCYXJzLnYxMy4yLCBWZXJzaW9uPTEz
+        LjIuNS4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAA
         ACZEZXZFeHByZXNzLlh0cmFCYXJzLkJhck1hbmFnZXJDYXRlZ29yeQMAAAAETmFtZQRHdWlkB1Zpc2li
         bGUBAwALU3lzdGVtLkd1aWQBAgAAAAYDAAAABVRhc2tzBPz///8LU3lzdGVtLkd1aWQLAAAAAl9hAl9i
         Al9jAl9kAl9lAl9mAl9nAl9oAl9pAl9qAl9rAAAAAAAAAAAAAAAIBwcCAgICAgICAksjBPoPzB1LuTKJ
@@ -1292,6 +1292,47 @@
         BPyanv9YfqM+y/PxTzFr8L9i/3cV/xcBo+LeuDtdpwAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="bbiModifyBdc.Caption" xml:space="preserve">
+    <value>Modifier Bon de Commande</value>
+  </data>
+  <data name="bbiModifyBdc.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAATdEVYdFRpdGxlAEdyb3VwO0hlYWRlcjuQICpZAAACO0lEQVQ4T22U/U9SYRTHLQXs5a/sh6Ra
+        q00lwLDZGCiGL/MFAtOSUMH1Q6DONEbMQIRSt2ZWW9qPpoW8qNzLBb6dcy8ohHf77Jx77nM/z7kPZzQB
+        aKLrqtu3FZ6Y34aMfxtuxrcFF/GcmWM24aQ47kl+oHea5Xcrgmb7ZIJS5SpXoaR8CTb3Bu/aUifgIi/u
+        XfqlsFhlH9YFZg+P53/Ia6zOdRaoagUtVmdMeUgLrcF9WIJ7FX7CElAwzO6iVCrDPB5lgbpOwMUyGYxz
+        32GY+UZ8hd67C513B488O+gkOqa/oEiCnpG1BoGKi2zPnkjInhaQOUdChmqZkwLShFQso3swwgJNbQeq
+        7qGIbHf76eT9dNq+TThmP2PM+wmj3iRGPAlYHBEUpBK67OEGgZqLbE/lCjjOMiJSFFPnkfKMCJEE+r4Q
+        C1prO1DrbSHZPjaTxOjrhLzj8PQGhl/FMfgyjoGpOH17GEKhhE7LaoNAo7OuyvajjIA/TFqQ8yOOaRGH
+        xwIOKc+LRbSb37HgWm0HmnbzCgSxhKHKbvbJOJ69WEf/BOGOweaKwTTwHqdCEQ97lllwvVbQ+uDpMs7I
+        /juVJwQc0I4HHOlejn855pHLS7j/ZKlRwEW2X+wYRZ8ril7nR5o8wrEGY/8K/cQS7poWWHCjroN7pkXZ
+        njtT4IVVlJm4mAVtV6BBoL6texO60xWE1ljBEICWMVaiIYg2um8zvMWtDl/4/0G6wrPNB8OtXcJNqlXh
+        5xr+C+BP+AelC7JR9YMIvQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="bbiDeleteBdc.Caption" xml:space="preserve">
+    <value>Supprimer Bon de Commande</value>
+  </data>
+  <data name="bbiDeleteBdc.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgdEVYdFRpdGxlAFJlbW92ZTtHcm91cDtGb290ZXI7RGVsZXRlRnfRPQAAAtBJREFUOE9tkmtI
+        k2EUx1c6NcMQCpKMIoiIwm9FH+pDSVTUh/oS9CGx6IImaqh4yTbTlDFFvNtsXpbmzMs0FcOSYWJm3ua0
+        CaYsxKaC5mVXd3P/nvPqZGIv/DiH877P73nO+xwej8fbK60f7S5vVIOjQQ0pUT+Kt4wy4gOhgoTF0pqh
+        r2yNFwAeQY9XbuUgyzcflxuWuP5DtnSAVnnvEFCRPq5pm0B1mwayVg2qWn6iQjGOcsUYpOxkeVU/uG9E
+        kn4S8D0F3iLJd+6led0Js8XBogMmixMmily+ycaGC5mlfSTw2SGgoosZKprHUN7E+mc7ljVQ/yq8Yb2X
+        1qkglvbByQTpRb27BHwqkt1gcsBgtkO/jQN6VtOb7FhjOJwuCPN6SODreQK+ML+Hs0u2diuRq1BcO4Ki
+        94yaYRRWDyOrtBd2xwZSc7t3CXyoSPYVox2rBsKGFRZXtiPL9TbYmCBZrCSBn+cJfJKzlZzdc8cCtmvB
+        uyEo+2cwo1uFamIeVrsTg2odCfbT/HBDQP0kiro4+5Leir/EmpXLjexfrIyo8PvxE8wWFMKkN0CTIYb6
+        +s35rsuh19wS3/jML7DaNiBs0W6i0CKtWYupeQMmwh/C0tuKxbJcjIeFY6FEDGOnHN8uhf6hgaIT+MVm
+        dMJic0LQNAVB4zReNk5xDE4vYzBJgFlhFCwfi2Bol8Ekz8Z0TBjqT4XItgXRaZ9gtjrxvEqD2EpGxRhi
+        KsaR0/oL6sk5fL56C0tZz2AoTsBCygPIT57VnfMPOOhuwS9K0AEjmzgjmzbCYN7Esm7DcGIqtK+SsJoT
+        jbm4e1hOf4TJuEhUHztTRSNNLfg8TVQoI1PbEfFii5Q2RDBGNTp0nA/FYlYshu5cgSzkAgZuXIQu4T7y
+        A4MX6AJIsIckDP+t66ErcnMg6/CJu/Lg00uiwCN1R734x18HBNWKA4IW4/cduk3/4B9h7KCUWYA85wAA
+        AABJRU5ErkJggg==
+</value>
+  </data>
   <data name="ribbonControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -1328,8 +1369,8 @@
   <data name="rpContacts.Text" xml:space="preserve">
     <value>CLIENTS</value>
   </data>
-  <data name="rpgNewBdc.Text" xml:space="preserve">
-    <value>Ajout bon de commande</value>
+  <data name="rpgBdc.Text" xml:space="preserve">
+    <value>Gestion bon de commande</value>
   </data>
   <data name="rpBDC.Text" xml:space="preserve">
     <value>BON DE COMMANDE</value>
@@ -1544,7 +1585,7 @@
     <value>ucContacts1</value>
   </data>
   <data name="&gt;&gt;ucContacts1.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.Controls.ucContacts, DevExpress.MailClient.Win.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.MailClient.Win.Controls.ucContacts, DevExpress.MailClient.Win, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;ucContacts1.Parent" xml:space="preserve">
     <value>navBarGroupControlContainer3</value>
@@ -1595,7 +1636,7 @@
     <value>ucCalendar1</value>
   </data>
   <data name="&gt;&gt;ucCalendar1.Type" xml:space="preserve">
-    <value>DevExpress.MailClient.Win.Controls.ucCalendar, DevExpress.MailClient.Win.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.MailClient.Win.Controls.ucCalendar, DevExpress.MailClient.Win, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;ucCalendar1.Parent" xml:space="preserve">
     <value>navBarGroupControlContainer2</value>
@@ -4195,6 +4236,18 @@
   <data name="&gt;&gt;bbiNewBdc.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="&gt;&gt;bbiModifyBdc.Name" xml:space="preserve">
+    <value>bbiModifyBdc</value>
+  </data>
+  <data name="&gt;&gt;bbiModifyBdc.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bbiDeleteBdc.Name" xml:space="preserve">
+    <value>bbiDeleteBdc</value>
+  </data>
+  <data name="&gt;&gt;bbiDeleteBdc.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="&gt;&gt;ribbonMiniToolbar1.Name" xml:space="preserve">
     <value>ribbonMiniToolbar1</value>
   </data>
@@ -4267,10 +4320,10 @@
   <data name="&gt;&gt;rpBDC.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;rpgNewBdc.Name" xml:space="preserve">
-    <value>rpgNewBdc</value>
+  <data name="&gt;&gt;rpgBdc.Name" xml:space="preserve">
+    <value>rpgBdc</value>
   </data>
-  <data name="&gt;&gt;rpgNewBdc.Type" xml:space="preserve">
+  <data name="&gt;&gt;rpgBdc.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;rpCalendar.Name" xml:space="preserve">

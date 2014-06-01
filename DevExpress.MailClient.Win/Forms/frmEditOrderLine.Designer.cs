@@ -162,7 +162,7 @@
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 359);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 339);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
             this.ribbonStatusBar.Size = new System.Drawing.Size(617, 31);
@@ -241,11 +241,11 @@
             this.labelStock.TabIndex = 4;
             this.labelStock.Text = "Stock";
             // 
-            // frmEditOrderLine
+            // FrmEditOrderLine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(617, 390);
+            this.ClientSize = new System.Drawing.Size(617, 370);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);

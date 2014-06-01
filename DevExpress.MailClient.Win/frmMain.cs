@@ -89,6 +89,8 @@ namespace DevExpress.MailClient.Win {
             //InitBarButtonItem(bbiShowPreview, TagResources.Preview, Properties.Resources.ShowPreviewDescription);
             InitBarButtonItem(bbiNewSecteur, TagResources.NewSecteur);
             InitBarButtonItem(bbiNewBdc, TagResources.NewBdc);
+            InitBarButtonItem(bbiModifyBdc, TagResources.ModifyBdc);
+            InitBarButtonItem(bbiDeleteBdc, TagResources.DeleteBdc);
             InitGalleryItem(rgbiCurrentView.Gallery.Groups[0].Items[0], TagResources.ContactList, Properties.Resources.ContactListDescription);
             InitGalleryItem(rgbiCurrentView.Gallery.Groups[0].Items[1], TagResources.ContactAlphabetical, Properties.Resources.ContactAlphabeticalDescription);
             InitGalleryItem(rgbiCurrentView.Gallery.Groups[0].Items[2], TagResources.ContactByState, Properties.Resources.ContactByStateDescription);

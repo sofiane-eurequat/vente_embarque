@@ -172,7 +172,6 @@
             this.EditionRibbonPageGroup1 = new DevExpress.XtraRichEdit.UI.ParagraphRibbonPageGroup();
             this.EditionEnregistremetRibbonPageGroup = new DevExpress.XtraRichEdit.UI.EditingRibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.RPGFermer = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemRichEditStyleEdit1 = new DevExpress.XtraRichEdit.Design.RepositoryItemRichEditStyleEdit();
             this.statusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
@@ -1457,7 +1456,6 @@
             this.EditionRibbonPageGroup1,
             this.EditionEnregistremetRibbonPageGroup,
             this.ribbonPageGroup2,
-            this.ribbonPageGroup3,
             this.RPGFermer});
             this.homeRibbonPage1.Name = "homeRibbonPage1";
             resources.ApplyResources(this.homeRibbonPage1, "homeRibbonPage1");
@@ -1501,15 +1499,6 @@
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.ShowCaptionButton = false;
             resources.ApplyResources(this.ribbonPageGroup2, "ribbonPageGroup2");
-            // 
-            // ribbonPageGroup3
-            // 
-            this.ribbonPageGroup3.AllowTextClipping = false;
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem11);
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem12);
-            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            this.ribbonPageGroup3.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonPageGroup3, "ribbonPageGroup3");
             // 
             // RPGFermer
             // 
@@ -1919,11 +1908,11 @@
             this.Controls.Add(this.xtcLignesProduit);
             this.Controls.Add(this.GCInfoGeneral);
             this.Controls.Add(this.statusBar);
+            this.Controls.Add(this.ribbonControl);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
-            this.Controls.Add(this.ribbonControl);
             this.KeyPreview = true;
             this.Name = "frmEditStock";
             this.Ribbon = this.ribbonControl;
@@ -2095,7 +2084,6 @@
         //private DevExpress.MailClient.Win.Controls.ucMessageInfo ucMessageInfo1;
         private DevExpress.XtraSpellChecker.SpellChecker spellChecker1;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
-        private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
         private XtraBars.BarButtonGroup barButtonGroup8;
         private XtraBars.BarButtonItem barButtonItem1;
         private XtraBars.BarButtonItem barButtonItem2;

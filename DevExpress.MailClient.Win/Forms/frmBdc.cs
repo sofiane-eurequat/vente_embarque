@@ -8,6 +8,8 @@ using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
+using DevExpress.XtraEditors;
+using DevExpress.XtraGrid.Views.Grid;
 using vente_embarque.DataLayer;
 using vente_embarque.Model;
 using vente_embarque.Model.Enum;
@@ -48,12 +50,10 @@ namespace DevExpress.MailClient.Win.Forms
             comboBoxClients.DataSource = Clients.OrderBy(cl => cl.Name).ToList();
             comboBoxClients.DisplayMember = "Name";
 
-            comboBoxStock.DataSource = Stocks.OrderBy(s => s.Name).ToList();
-            comboBoxStock.DisplayMember = "Name";
-
             comboBoxPriorite.DataSource= Enum.GetValues(typeof(Priorite));
 
             GCOrderLine.DataSource = OrderLines;
+            gridViewOrderLine.Columns[0].FieldName = "Name";
             //colProduct.FieldName = ProductName;
 
             this.newBdc = newBdc;
@@ -90,7 +90,7 @@ namespace DevExpress.MailClient.Win.Forms
 
         private void bbiSauvegarder_ItemClick(object sender, ItemClickEventArgs e)
         {
-            editBdcPresenter.Write(comboBoxStock.SelectedItem as Stock, comboBoxClients.SelectedItem as Client, OrderLines, (Priorite) comboBoxPriorite.SelectedItem, dateEditLivraison.DateTime, memoEditAdresssLivraion.Text);
+            editBdcPresenter.Write(comboBoxClients.SelectedItem as Client, OrderLines, (Priorite) comboBoxPriorite.SelectedItem, dateEditLivraison.DateTime, memoEditAdresssLivraion.Text);
         }
 
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
@@ -101,7 +101,6 @@ namespace DevExpress.MailClient.Win.Forms
 
         private void bbiEfaccer_ItemClick(object sender, ItemClickEventArgs e)
         {
-            comboBoxStock.Text = "";
             comboBoxClients.Text = "";
             comboBoxPriorite.Text = "";
             memoEditAdresssLivraion.Text = "";
@@ -115,9 +114,12 @@ namespace DevExpress.MailClient.Win.Forms
 
         private void bbiSuppOrderLine_ItemClick(object sender, ItemClickEventArgs e)
         {
-
+            DialogResult result = XtraMessageBox.Show(this, TagResources.DeleteQuestion, Application.ProductName, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
+            if (result != DialogResult.Yes)
+                return;
+            if (gridViewOrderLine != null) gridViewOrderLine.DeleteRow(gridViewOrderLine.FocusedRowHandle);
+            GCOrderLine.RefreshDataSource();
         }
-
         
     }
 }

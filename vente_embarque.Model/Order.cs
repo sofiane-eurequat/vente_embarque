@@ -24,7 +24,7 @@ namespace vente_embarque.Model
     }
     public static class FactoryOrder
     {
-        public static Order CreateOrder(Stock stock,Client client,IEnumerable<OrderLine> orderLines, String deliveryAdress, Priorite priorite=Priorite.Normal, DateTime deliveryDate=default(DateTime))
+        public static Order CreateOrder(Client client,IEnumerable<OrderLine> orderLines, String deliveryAdress, Priorite priorite=Priorite.Normal, DateTime deliveryDate=default(DateTime))
         {
             var order = new Order { id = Guid.NewGuid(), Client = client, Priorite = priorite, newObject = true };
             
@@ -33,7 +33,7 @@ namespace vente_embarque.Model
                 if(order.OrderLines==null) order.OrderLines=new List<OrderLine>();
                 foreach (var orderLine in orderLines)
                 {
-                    if (!orderLine.VerifyQuatityWithStock(stock)) return null;
+                    //if (!orderLine.VerifyQuatityWithStock(stock)) return null;
                     order.OrderLines.Add(orderLine);
                 }
             }

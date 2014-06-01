@@ -37,9 +37,6 @@ namespace DevExpress.MailClient.Win.Forms
             {
                 _isOrderLineModified = false;
             }
-            //var repositoryStock = new RepositoryStock();
-            //editOrderLinePresenter = new EditOrderLinePresenterPage(this, repositoryStock);
-            //editOrderLinePresenter.Display();
 
             comboBoxStock.DataSource = Stocks.OrderBy(s => s.Name).ToList();
             comboBoxStock.DisplayMember = "Name";

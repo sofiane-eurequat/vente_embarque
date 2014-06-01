@@ -31,9 +31,9 @@ namespace vente_embarque.presenter.Bdc
 
         }
 
-        public void Write(Stock stock, Client client, IEnumerable<OrderLine> orderLine, Priorite priorite, DateTime dateLivraison, string adresseLivraison)
+        public void Write( Client client, IEnumerable<OrderLine> orderLine, Priorite priorite, DateTime dateLivraison, string adresseLivraison)
         {
-            var order = FactoryOrder.CreateOrder(stock, client,orderLine,adresseLivraison,priorite,dateLivraison);
+            var order = FactoryOrder.CreateOrder(client,orderLine,adresseLivraison,priorite,dateLivraison);
             _repositoryOrder.Save(order);
         }
     }
@@ -41,6 +41,6 @@ namespace vente_embarque.presenter.Bdc
     internal interface IEditBdcPagePresenter
     {
         void Display();
-        void Write(Stock stock, Client client, IEnumerable<OrderLine> orderLine,Priorite priorite, DateTime dateLivraison, string adresseLivraison);
+        void Write(Client client, IEnumerable<OrderLine> orderLine,Priorite priorite, DateTime dateLivraison, string adresseLivraison);
     }
 }

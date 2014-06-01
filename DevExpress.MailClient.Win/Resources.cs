@@ -58,6 +58,8 @@ namespace DevExpress.MailClient.Win {
         public const string NewStock = "NewStock";
         public const string NewSecteur = "NewSecteur";
         public const string NewBdc = "NewBdc";
+        public const string ModifyBdc = "ModifyBdc";
+        public const string DeleteBdc = "DeleteBdc";
         public const string Reply = "Reply";
         public const string ReplyAll = "ReplyAll";
         public const string Forward = "Forward";

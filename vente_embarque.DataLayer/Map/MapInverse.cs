@@ -22,7 +22,7 @@ namespace vente_embarque.DataLayer.Map
            return stock;
        }
 
-        public static List<ProductLine> MapProdcutLine(IEnumerable<XpoProductLine> productLines)
+        private static List<ProductLine> MapProdcutLine(IEnumerable<XpoProductLine> productLines)
         {
             return productLines.Select(xpoProductLine => new ProductLine
                 {
@@ -30,7 +30,30 @@ namespace vente_embarque.DataLayer.Map
                 }).ToList();
         }
 
-       public static Product MapProduct(XpoProduct product)
+        public static Order MapOrder(XpoOrder xpoOrder)
+        {
+            var order = new Order()
+            {
+                id = xpoOrder.Oid,
+                OrderLines = MapOrderLine(xpoOrder.OrderLines),
+                Client = MapClient(xpoOrder.Client),
+                Priorite = xpoOrder.Priorite,
+                newObject = false
+            };
+            return order;
+        }
+
+        private static List<OrderLine> MapOrderLine(IEnumerable<XpoOrderLine> orderLines)
+        {
+            return orderLines.Select(xpoOrderLine => new OrderLine
+            {
+                id = xpoOrderLine.Oid,
+                Quantity = xpoOrderLine.Quantity,
+                Product = MapProduct(xpoOrderLine.Product)
+            }).ToList();
+        }
+
+        public static Product MapProduct(XpoProduct product)
         {
             return new Product
                 {
@@ -38,7 +61,8 @@ namespace vente_embarque.DataLayer.Map
                     Name = product.Name,
                     QuantiteMin = product.QuantityMin,
                     Category = MapCategory(product.Category),
-                    Marque = MapMarque(product.Marque)
+                    Marque = MapMarque(product.Marque),
+                    newObject = false
                 };
         }
 

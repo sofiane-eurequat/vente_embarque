@@ -71,6 +71,7 @@ namespace vente_embarque.presenter
             }
 
             _stockView.Stocks = tempStock;
+    
         }
     }
     public class ModelViewStock

@@ -234,21 +234,33 @@ namespace vente_embarque.Test
         [Test]
         public void CanCreateProductwithStockAndProductLine()
         {
-            const string productname = "Tablette Samsung";
+            const string productname = "HP Desktop I3";
             const int quantiteMinimale = 10;
-            const string productname1 = "Tablette Sony";
-            const int quantiteMinimale1 = 6;
+            const string productname1 = "HP Desktop I5";
+            const int quantiteMinimale1 = 10;
+            const string productname2 = "HP Desktop I7";
+            const int quantiteMinimale2 = 10;
+            const string productname3 = "Laptop Sony";
+            const int quantiteMinimale3 = 10;
             var marque = new RepositoryMarque().FindAll().First();
             var category = new RepositoryCategory().FindAll().First();
             var product = FactoryProduct.CreateProduct(productname, quantiteMinimale, category, marque);
             var product1 = FactoryProduct.CreateProduct(productname1, quantiteMinimale1, category, marque);
+            var product2 = FactoryProduct.CreateProduct(productname2, quantiteMinimale2, category, marque);
+            var product3 = FactoryProduct.CreateProduct(productname3, quantiteMinimale3, category, marque);
             Assert.AreEqual(product.Name, productname);
-            Assert.AreEqual(product.QuantiteMin, 10);
+            Assert.AreEqual(product.QuantiteMin, quantiteMinimale);
             Assert.AreEqual(product1.Name, productname1);
-            Assert.AreEqual(product1.QuantiteMin, 6);
+            Assert.AreEqual(product1.QuantiteMin, quantiteMinimale1);
+            Assert.AreEqual(product2.Name, productname2);
+            Assert.AreEqual(product2.QuantiteMin, quantiteMinimale2);
+            Assert.AreEqual(product3.Name, productname3);
+            Assert.AreEqual(product3.QuantiteMin, quantiteMinimale3);
 
             new RepositoryProduct().Save(product);
             new RepositoryProduct().Save(product1);
+            new RepositoryProduct().Save(product2);
+            new RepositoryProduct().Save(product3);
 
             var rp = new RepositoryMarque().FindBy(product.Marque.id);
             Assert.AreEqual(product.Marque.id, rp.id);
@@ -259,17 +271,23 @@ namespace vente_embarque.Test
             Assert.AreEqual(product.Category.Name, rc.Name);
             Assert.AreEqual(product.Category.Description, rc.Description);
 
-            const string stockname = "Stock Imama";
+            const string stockname = "Stock Alger";
             var stock = FactoryStock.CreateStock(stockname);
             Assert.AreEqual(stock.Name, stockname);
 
 
-            var lineStock = FactoryStock.CreateProductLine(stock, product, 5);
-            var lineStock1 = FactoryStock.CreateProductLine(stock, product1, 5);
+            var lineStock = FactoryStock.CreateProductLine(stock, product, 30);
+            var lineStock1 = FactoryStock.CreateProductLine(stock, product1, 20);
+            var lineStock2 = FactoryStock.CreateProductLine(stock, product2, 40);
+            var lineStock3 = FactoryStock.CreateProductLine(stock, product3, 25);
             Assert.AreEqual(lineStock.Product, product);
-            Assert.AreEqual(lineStock.Quantity, 5);
+            Assert.AreEqual(lineStock.Quantity, 30);
             Assert.AreEqual(lineStock1.Product, product1);
-            Assert.AreEqual(lineStock1.Quantity, 5);
+            Assert.AreEqual(lineStock1.Quantity, 20);
+            Assert.AreEqual(lineStock2.Product, product2);
+            Assert.AreEqual(lineStock2.Quantity, 40);
+            Assert.AreEqual(lineStock3.Product, product3);
+            Assert.AreEqual(lineStock3.Quantity, 25);
             new RepositoryStock().Save(stock);
         }
 
