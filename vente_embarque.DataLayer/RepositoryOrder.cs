@@ -16,7 +16,17 @@ namespace vente_embarque.DataLayer
     {
         public Order FindBy(Guid id)
         {
-            throw new NotImplementedException();
+            var config = new AppSettingsReader();
+            using (
+                var uow = new UnitOfWork
+                {
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
+                })
+            {
+                var xpoorder = uow.GetObjectByKey<XpoOrder>(id);
+                var order = Map.MapInverse.MapOrder(xpoorder);
+                return order;
+            }
         }
 
         public IEnumerable<Order> FindAll()
@@ -76,7 +86,32 @@ namespace vente_embarque.DataLayer
 
         public void Remove(Order entity)
         {
-            throw new NotImplementedException();
+            var config = new AppSettingsReader();
+            using (
+                var uow = new UnitOfWork
+                {
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
+                })
+            {
+                var order = uow.GetObjectByKey<XpoOrder>(entity.id);
+                uow.Delete(order);
+                uow.CommitChanges();
+            }
+        }
+
+        public void Remove(Guid id)
+        {
+            var config = new AppSettingsReader();
+            using (
+                var uow = new UnitOfWork
+                {
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
+                })
+            {
+                var order = uow.GetObjectByKey<XpoOrder>(id);
+                uow.Delete(order);
+                uow.CommitChanges();
+            }
         }
     }
 }

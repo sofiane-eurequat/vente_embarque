@@ -29,17 +29,18 @@ namespace vente_embarque.presenter.Bdc
 
             foreach (var bdc in order)
             {
-                var mvb = new ModelViewBdc()
-                {
+                var mvb = new ModelViewBdc
+                    {
                     Client = bdc.Client.Name,
                     Priorite = bdc.Priorite,
+                    Id = bdc.id,
                 };
 
                 mvb.OrderLines=new List<ModelViewOrderLine>();
 
                 foreach (var orderLine in bdc.OrderLines)
                 {
-                    mvb.OrderLines.Add(new ModelViewOrderLine() { Id = orderLine.id, Product = orderLine.Product.Name, Quantity = orderLine.Quantity });
+                    mvb.OrderLines.Add(new ModelViewOrderLine { Id = orderLine.id, Product = orderLine.Product.Name, Quantity = orderLine.Quantity });
                 }
 
                 tempOrder.Add(mvb);

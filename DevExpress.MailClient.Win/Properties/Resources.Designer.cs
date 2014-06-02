@@ -2555,6 +2555,14 @@ namespace DevExpress.MailClient.Win.Properties {
                 return ResourceManager.GetString("Produit", resourceCulture);
             }
         }
+
+        internal static string Quantity 
+        {
+            get
+            {
+                return ResourceManager.GetString("Quantité", resourceCulture);
+            }
+        }
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.

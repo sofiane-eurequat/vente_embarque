@@ -53,8 +53,8 @@ namespace DevExpress.MailClient.Win.Forms
             comboBoxPriorite.DataSource= Enum.GetValues(typeof(Priorite));
 
             GCOrderLine.DataSource = OrderLines;
-            gridViewOrderLine.Columns[0].FieldName = "Name";
-            //colProduct.FieldName = ProductName;
+            //gridViewOrderLine.Columns[0].FieldName = "Name";
+            colProduct.FieldName = "Name";
 
             this.newBdc = newBdc;
             DialogResult = DialogResult.Cancel;
@@ -117,7 +117,8 @@ namespace DevExpress.MailClient.Win.Forms
             DialogResult result = XtraMessageBox.Show(this, TagResources.DeleteQuestion, Application.ProductName, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
             if (result != DialogResult.Yes)
                 return;
-            if (gridViewOrderLine != null) gridViewOrderLine.DeleteRow(gridViewOrderLine.FocusedRowHandle);
+            if (gridViewOrderLine == null) return;
+            gridViewOrderLine.DeleteRow(gridViewOrderLine.FocusedRowHandle);
             GCOrderLine.RefreshDataSource();
         }
         

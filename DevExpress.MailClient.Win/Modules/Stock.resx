@@ -132,7 +132,7 @@
     <value>0, 0</value>
   </data>
   <data name="gridControlStock.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1226, 182</value>
+    <value>1226, 167</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="gridControlStock.TabIndex" type="System.Int32, mscorlib">
@@ -166,7 +166,7 @@
     <value>0, 0</value>
   </data>
   <data name="gridControlProduct.Size" type="System.Drawing.Size, System.Drawing">
-    <value>402, 434</value>
+    <value>402, 449</value>
   </data>
   <data name="gridControlProduct.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -208,7 +208,7 @@
     <value>TemplateCard</value>
   </data>
   <data name="GCProductDisplay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>819, 434</value>
+    <value>819, 449</value>
   </data>
   <data name="GCProductDisplay.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -229,7 +229,7 @@
     <value>Panel2</value>
   </data>
   <data name="splitContainerControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1226, 434</value>
+    <value>1226, 449</value>
   </data>
   <data name="splitContainerControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -563,7 +563,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAB6
-        BwAAAk1TRnQBSQFMAgEBBAEAAagBAgGoAQIBDAEAAQwBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        BwAAAk1TRnQBSQFMAgEBBAEAAbABAgGwAQIBDAEAAQwBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABMAMAARgDAAEBAQABCAUAAYABBBgAAYACAAGAAwACgAEAAYADAAGAAQABgAEAAoACAAPAAQABwAHc
         AcABAAHwAcoBpgEAATMFAAEzAQABMwEAATMBAAIzAgADFgEAAxwBAAMiAQADKQEAA1UBAANNAQADQgEA
         AzkBAAGAAXwB/wEAAlAB/wEAAZMBAAHWAQAB/wHsAcwBAAHGAdYB7wEAAdYC5wEAAZABqQGtAgAB/wEz
