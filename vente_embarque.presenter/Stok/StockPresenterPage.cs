@@ -25,12 +25,12 @@ namespace vente_embarque.presenter
 
             foreach (var stoc in stock)
             {
-                var mvs=new ModelViewStock()
+                var mvs=new ModelViewStock
                     {
                         Name = stoc.Name,
                         wilaya = stoc.Wilaya,
-                        commune = stoc.Commune
-                        
+                        commune = stoc.Commune,
+                        Id = stoc.id
                     };
                 mvs.ProductLine=new List<ModelViewProductLine>();
                 mvs.Products=new List<ModelViewProduct>();

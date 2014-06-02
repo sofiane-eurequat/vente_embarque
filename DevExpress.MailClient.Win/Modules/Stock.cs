@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using DevExpress.MailClient.Win.Properties;
 using DevExpress.XtraEditors.Controls;
 using DevExpress.XtraEditors.Repository;
+using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
@@ -66,6 +67,7 @@ namespace DevExpress.MailClient.Win.Modules {
             gridViewProductLine.Columns[0].Visible = false;
             gridViewProductLine.Columns[3].Visible = false;
             gridViewProductLine.Columns[1].Caption = Resources.Produit;
+            gridViewStock.RowCellClick += gridViewStock_CellClick;
 
 
 
@@ -539,6 +541,20 @@ namespace DevExpress.MailClient.Win.Modules {
             gridViewStock.PreviewIndent = indent;
         }
 
+        private void gridControlStock_Click(object sender, EventArgs e)
+        {
+            if (gridViewStock == null) return;
+            gridControlProduct.DataSource =
+                Stocks.First(s => s.Id == (Guid)gridViewStock.GetFocusedRowCellValue("Id")).ProductLine;
+        }
+
+        //To accomplish this task, set the GridView.OptionsBehavior.EditorShowMode property to the EditorShowMode.MouseUp value.
+        private void gridViewStock_CellClick(object sender, RowCellClickEventArgs e)
+        {
+            if (gridViewStock == null) return;
+            gridControlProduct.DataSource =
+                Stocks.First(s => s.Id == (Guid)gridViewStock.GetFocusedRowCellValue("Id")).ProductLine;
+        }
         
     }
 }

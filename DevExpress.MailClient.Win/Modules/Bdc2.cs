@@ -31,6 +31,7 @@ namespace DevExpress.MailClient.Win.Modules
 
             gridControlOrder.DataSource = Orders;
             gridViewOrder.Columns[0].Visible = false;
+            gridViewOrder.RowCellClick += gridViewOrder_CellClick;
 
             gridControlOrderLine.DataSource = Orders.First().OrderLines;
             gridViewOrderLine.Columns[2].Visible = false;
@@ -73,7 +74,7 @@ namespace DevExpress.MailClient.Win.Modules
             if (gridViewOrder == null) return;
             var idorder = (Guid)gridViewOrder.GetFocusedRowCellValue("Id"); 
             _repositoryOrder.Remove(idorder);
-            gridControlOrder.RefreshDataSource();
+            _bdcPresenter.Diplay();
         }
 
         private void EditBdc(ModelViewBdc bdc, bool newBdc, string caption)
@@ -93,6 +94,7 @@ namespace DevExpress.MailClient.Win.Modules
 
             gridControlOrder.DataSource = Orders;
             gridViewOrder.Columns[0].Visible = false;
+            gridViewOrder.RowCellClick += gridViewOrder_CellClick;
 
             gridControlOrderLine.DataSource = Orders.First().OrderLines;
             gridViewOrderLine.Columns[2].Visible = false;
@@ -102,9 +104,16 @@ namespace DevExpress.MailClient.Win.Modules
         private void gridControlOrder_Click(object sender, EventArgs e)
         {
             if (gridViewOrder == null) return;
-            var idorder = (Guid)gridViewOrder.GetFocusedRowCellValue("Id");
             gridControlOrderLine.DataSource =
                 Orders.First(o => o.Id == (Guid) gridViewOrder.GetFocusedRowCellValue("Id")).OrderLines;
+        }
+
+        //To accomplish this task, set the GridView.OptionsBehavior.EditorShowMode property to the EditorShowMode.MouseUp value.
+        private void gridViewOrder_CellClick(object sender, RowCellClickEventArgs e)
+        {
+            if (gridViewOrder == null) return;
+            gridControlOrderLine.DataSource =
+                Orders.First(o => o.Id == (Guid)gridViewOrder.GetFocusedRowCellValue("Id")).OrderLines;
         }
     }
 }

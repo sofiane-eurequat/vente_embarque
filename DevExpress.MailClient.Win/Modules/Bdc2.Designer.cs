@@ -94,6 +94,7 @@ namespace DevExpress.MailClient.Win.Modules
             // 
             this.gridViewOrder.GridControl = this.gridControlOrder;
             this.gridViewOrder.Name = "gridViewOrder";
+            this.gridViewOrder.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.MouseUp;
             this.gridViewOrder.OptionsEditForm.ActionOnModifiedRowChange = DevExpress.XtraGrid.Views.Grid.EditFormModifiedAction.Save;
             this.gridViewOrder.OptionsFind.AlwaysVisible = true;
             this.gridViewOrder.OptionsView.ShowGroupPanel = false;

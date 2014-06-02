@@ -109,7 +109,7 @@ namespace vente_embarque.DataLayer
                 })
             {
                 var order = uow.GetObjectByKey<XpoOrder>(id);
-                uow.Delete(order);
+                order.Delete();
                 uow.CommitChanges();
             }
         }

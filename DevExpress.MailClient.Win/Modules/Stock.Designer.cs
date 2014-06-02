@@ -23,6 +23,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Stock));
             this.splitmain = new DevExpress.XtraEditors.SplitContainerControl();
             this.gridControlStock = new DevExpress.XtraGrid.GridControl();
@@ -31,7 +32,7 @@
             this.gridControlProduct = new DevExpress.XtraGrid.GridControl();
             this.gridViewProductLine = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.GCProductDisplay = new DevExpress.XtraGrid.GridControl();
-            this.modelViewProductBindingSource = new System.Windows.Forms.BindingSource();
+            this.modelViewProductBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.LayoutViewProduct = new DevExpress.XtraGrid.Views.Layout.LayoutView();
             this.colId = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
             this.layoutViewField_colId = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
@@ -51,8 +52,8 @@
             this.layoutViewField_colNom = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
             this.layoutViewCard1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewCard();
             this.Group1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.icEditors = new DevExpress.Utils.ImageCollection();
-            this.ilColumns = new System.Windows.Forms.ImageList();
+            this.icEditors = new DevExpress.Utils.ImageCollection(this.components);
+            this.ilColumns = new System.Windows.Forms.ImageList(this.components);
             this.gridSplitContainer1 = new DevExpress.XtraGrid.GridSplitContainer();
             ((System.ComponentModel.ISupportInitialize)(this.splitmain)).BeginInit();
             this.splitmain.SuspendLayout();
@@ -98,11 +99,13 @@
             this.gridControlStock.Name = "gridControlStock";
             this.gridControlStock.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewStock});
+            this.gridControlStock.Click += new System.EventHandler(this.gridControlStock_Click);
             // 
             // gridViewStock
             // 
             this.gridViewStock.GridControl = this.gridControlStock;
             this.gridViewStock.Name = "gridViewStock";
+            this.gridViewStock.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.MouseUp;
             this.gridViewStock.OptionsView.ShowGroupPanel = false;
             // 
             // splitContainerControl1
