@@ -101,9 +101,10 @@ namespace DevExpress.MailClient.Win.Modules
 
         private void gridControlOrder_Click(object sender, EventArgs e)
         {
-            {
-                //var idOrder = gridViewOrder.GetRowCellValue(gridViewOrder.FocusedRowHandle, "Id").ToString();
-            }
+            if (gridViewOrder == null) return;
+            var idorder = (Guid)gridViewOrder.GetFocusedRowCellValue("Id");
+            gridControlOrderLine.DataSource =
+                Orders.First(o => o.Id == (Guid) gridViewOrder.GetFocusedRowCellValue("Id")).OrderLines;
         }
     }
 }
