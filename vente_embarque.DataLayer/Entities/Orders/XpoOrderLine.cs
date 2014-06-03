@@ -38,7 +38,7 @@ namespace vente_embarque.DataLayer.Entities.Orders
         }
 
         private XpoProduct _Product;
-        [Aggregated, Association("XpoProduct-XpoOrderLine")]
+        [Association("XpoProduct-XpoOrderLine")]
         public XpoProduct Product
         {
             get { return _Product; }

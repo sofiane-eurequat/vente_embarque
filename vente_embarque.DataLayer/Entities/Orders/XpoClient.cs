@@ -55,7 +55,7 @@ namespace vente_embarque.DataLayer.Entities.Orders
         }
 
 
-        [Aggregated, Association("XpoOrder-XpoClient")]
+        [Association("XpoOrder-XpoClient")]
         public XPCollection<XpoOrder> Orders
         {
             get { return GetCollection<XpoOrder>("Orders"); }

@@ -37,7 +37,7 @@ namespace vente_embarque.DataLayer.Entities.Orders
         }
         
         private XpoClient _Client;
-        [Aggregated, Association("XpoOrder-XpoClient")]
+        [Association("XpoOrder-XpoClient")]
         public XpoClient Client
         {
             get { return _Client; }

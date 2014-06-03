@@ -11,6 +11,7 @@ using DevExpress.MailClient.Win.Forms;
 using DevExpress.MailClient.Win.Properties;
 using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Views.Grid;
+using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 using vente_embarque.DataLayer;
 using vente_embarque.Model;
 using vente_embarque.presenter.Bdc;
@@ -74,7 +75,8 @@ namespace DevExpress.MailClient.Win.Modules
             if (gridViewOrder == null) return;
             var idorder = (Guid)gridViewOrder.GetFocusedRowCellValue("Id"); 
             _repositoryOrder.Remove(idorder);
-            _bdcPresenter.Diplay();
+            var bdc = new ModelViewBdc();
+            Bdc2_Load(bdc, new EventArgs());
         }
 
         private void EditBdc(ModelViewBdc bdc, bool newBdc, string caption)
@@ -114,6 +116,24 @@ namespace DevExpress.MailClient.Win.Modules
             if (gridViewOrder == null) return;
             gridControlOrderLine.DataSource =
                 Orders.First(o => o.Id == (Guid)gridViewOrder.GetFocusedRowCellValue("Id")).OrderLines;
+        }
+
+        private void gridViewOrder_DoubleClick(object sender, EventArgs e)
+        {
+
+            var view = (GridView)sender;
+            Point pt = view.GridControl.PointToClient(MousePosition);
+            DoRowDoubleClick(view, pt);
+        }
+
+        private static void DoRowDoubleClick(GridView view, Point pt)
+        {
+            GridHitInfo info = view.CalcHitInfo(pt);
+            if (info.InRow || info.InRowCell)
+            {
+                string colCaption = info.Column == null ? "N/A" : info.Column.GetCaption();
+                MessageBox.Show(string.Format("DoubleClick on row: {0}, column: {1}.", info.RowHandle, colCaption));    
+            }
         }
     }
 }

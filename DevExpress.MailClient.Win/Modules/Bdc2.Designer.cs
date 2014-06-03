@@ -89,11 +89,13 @@ namespace DevExpress.MailClient.Win.Modules
             this.gridControlOrder.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewOrder});
             this.gridControlOrder.Click += new System.EventHandler(this.gridControlOrder_Click);
+            this.gridControlOrder.DoubleClick += new System.EventHandler(this.gridViewOrder_DoubleClick);
             // 
             // gridViewOrder
             // 
             this.gridViewOrder.GridControl = this.gridControlOrder;
             this.gridViewOrder.Name = "gridViewOrder";
+            this.gridViewOrder.OptionsBehavior.Editable = false;
             this.gridViewOrder.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.MouseUp;
             this.gridViewOrder.OptionsEditForm.ActionOnModifiedRowChange = DevExpress.XtraGrid.Views.Grid.EditFormModifiedAction.Save;
             this.gridViewOrder.OptionsFind.AlwaysVisible = true;
