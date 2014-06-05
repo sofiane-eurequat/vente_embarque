@@ -28,15 +28,15 @@ namespace vente_embarque.presenter
                 var mvs=new ModelViewStock
                     {
                         Name = stoc.Name,
-                        wilaya = stoc.Wilaya,
-                        commune = stoc.Commune,
+                        Wilaya = stoc.Wilaya,
+                        Commune = stoc.Commune,
                         Id = stoc.id
                     };
                 mvs.ProductLine=new List<ModelViewProductLine>();
                 mvs.Products=new List<ModelViewProduct>();
-                foreach (var ProductLine in stoc.ProductLines)
+                foreach (var productLine in stoc.ProductLines)
                 {
-                    mvs.ProductLine.Add(new ModelViewProductLine() { Id = ProductLine.id,Quantity = ProductLine.Quantity,Name = ProductLine.Product.Name,Product =ProductLine.Product });
+                    mvs.ProductLine.Add(new ModelViewProductLine() { Id = productLine.id,Quantity = productLine.Quantity,Name = productLine.Product.Name,Product =productLine.Product });
                 }
 
                 foreach (var product in stoc.GetProducts())
@@ -48,9 +48,9 @@ namespace vente_embarque.presenter
                             QuantiteMin = product.QuantiteMin,
                             Fournisseur = product.Fournisseur,
                             Reference = product.SiteReference,
-                            Categorie = product.Category,
+                            Categorie = product.Category.Name,
                             Remarque = product.Remarque,
-                            Marque = product.Marque
+                            Marque = product.Marque.Name,
                         });
                 }
 
@@ -80,8 +80,8 @@ namespace vente_embarque.presenter
         public List<ModelViewProductLine> ProductLine { get; set; }
         public string Etat { get; set; }
         public string Invendue { get; set; }
-        public string wilaya { get; set; }
-        public string commune { get; set; }
+        public string Wilaya { get; set; }
+        public string Commune { get; set; }
         public Guid Id { get; set; }
         public List<ModelViewProduct> Products { get; set; }
  
@@ -101,8 +101,8 @@ namespace vente_embarque.presenter
         public int QuantiteMin { get; set; }
         public Image Photo { get; set; }
         public string Fournisseur { get; set; }
-        public Category Categorie { get; set; }
-        public Marque Marque { get; set; }
+        public string Categorie { get; set; }
+        public string Marque { get; set; }
         public string Remarque { get; set; }
         public string Reference { get; set; }
         public string Nom { get; set; }

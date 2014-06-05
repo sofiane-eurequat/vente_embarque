@@ -2548,19 +2548,21 @@ namespace DevExpress.MailClient.Win.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap product_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("product_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Produit.
         /// </summary>
         internal static string Produit {
             get {
                 return ResourceManager.GetString("Produit", resourceCulture);
-            }
-        }
-
-        internal static string Quantity 
-        {
-            get
-            {
-                return ResourceManager.GetString("Quantité", resourceCulture);
             }
         }
         

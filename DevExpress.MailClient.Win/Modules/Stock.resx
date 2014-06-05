@@ -195,16 +195,16 @@
   <data name="GCProductDisplay.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="layoutViewCard1.CustomizationFormText" xml:space="preserve">
+  <data name="layoutViewCard2.CustomizationFormText" xml:space="preserve">
     <value>TemplateCard</value>
   </data>
-  <data name="Group1.CustomizationFormText" xml:space="preserve">
+  <data name="item2.CustomizationFormText" xml:space="preserve">
     <value>Group1</value>
   </data>
-  <data name="Group1.Text" xml:space="preserve">
-    <value>Group1</value>
+  <data name="item2.Text" xml:space="preserve">
+    <value>item2</value>
   </data>
-  <data name="layoutViewCard1.Text" xml:space="preserve">
+  <data name="layoutViewCard2.Text" xml:space="preserve">
     <value>TemplateCard</value>
   </data>
   <data name="GCProductDisplay.Size" type="System.Drawing.Size, System.Drawing">
@@ -212,6 +212,18 @@
   </data>
   <data name="GCProductDisplay.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="layoutViewCard1.CustomizationFormText" xml:space="preserve">
+    <value>TemplateCard</value>
+  </data>
+  <data name="item1.CustomizationFormText" xml:space="preserve">
+    <value>Group1</value>
+  </data>
+  <data name="item1.Text" xml:space="preserve">
+    <value>item1</value>
+  </data>
+  <data name="layoutViewCard1.Text" xml:space="preserve">
+    <value>TemplateCard</value>
   </data>
   <data name="&gt;&gt;GCProductDisplay.Name" xml:space="preserve">
     <value>GCProductDisplay</value>
@@ -272,6 +284,12 @@
   </data>
   <data name="&gt;&gt;splitmain.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="Group1.CustomizationFormText" xml:space="preserve">
+    <value>Group1</value>
+  </data>
+  <data name="Group1.Text" xml:space="preserve">
+    <value>Group1</value>
   </data>
   <metadata name="icEditors.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -562,39 +580,39 @@
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAB6
-        BwAAAk1TRnQBSQFMAgEBBAEAAcABAgHAAQIBDAEAAQwBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
-        AwABMAMAARgDAAEBAQABCAUAAYABBBgAAYACAAGAAwACgAEAAYADAAGAAQABgAEAAoACAAPAAQABwAHc
-        AcABAAHwAcoBpgEAATMFAAEzAQABMwEAATMBAAIzAgADFgEAAxwBAAMiAQADKQEAA1UBAANNAQADQgEA
-        AzkBAAGAAXwB/wEAAlAB/wEAAZMBAAHWAQAB/wHsAcwBAAHGAdYB7wEAAdYC5wEAAZABqQGtAgAB/wEz
-        AwABZgMAAZkDAAHMAgABMwMAAjMCAAEzAWYCAAEzAZkCAAEzAcwCAAEzAf8CAAFmAwABZgEzAgACZgIA
-        AWYBmQIAAWYBzAIAAWYB/wIAAZkDAAGZATMCAAGZAWYCAAKZAgABmQHMAgABmQH/AgABzAMAAcwBMwIA
-        AcwBZgIAAcwBmQIAAswCAAHMAf8CAAH/AWYCAAH/AZkCAAH/AcwBAAEzAf8CAAH/AQABMwEAATMBAAFm
-        AQABMwEAAZkBAAEzAQABzAEAATMBAAH/AQAB/wEzAgADMwEAAjMBZgEAAjMBmQEAAjMBzAEAAjMB/wEA
-        ATMBZgIAATMBZgEzAQABMwJmAQABMwFmAZkBAAEzAWYBzAEAATMBZgH/AQABMwGZAgABMwGZATMBAAEz
-        AZkBZgEAATMCmQEAATMBmQHMAQABMwGZAf8BAAEzAcwCAAEzAcwBMwEAATMBzAFmAQABMwHMAZkBAAEz
-        AswBAAEzAcwB/wEAATMB/wEzAQABMwH/AWYBAAEzAf8BmQEAATMB/wHMAQABMwL/AQABZgMAAWYBAAEz
-        AQABZgEAAWYBAAFmAQABmQEAAWYBAAHMAQABZgEAAf8BAAFmATMCAAFmAjMBAAFmATMBZgEAAWYBMwGZ
-        AQABZgEzAcwBAAFmATMB/wEAAmYCAAJmATMBAANmAQACZgGZAQACZgHMAQABZgGZAgABZgGZATMBAAFm
-        AZkBZgEAAWYCmQEAAWYBmQHMAQABZgGZAf8BAAFmAcwCAAFmAcwBMwEAAWYBzAGZAQABZgLMAQABZgHM
-        Af8BAAFmAf8CAAFmAf8BMwEAAWYB/wGZAQABZgH/AcwBAAHMAQAB/wEAAf8BAAHMAQACmQIAAZkBMwGZ
-        AQABmQEAAZkBAAGZAQABzAEAAZkDAAGZAjMBAAGZAQABZgEAAZkBMwHMAQABmQEAAf8BAAGZAWYCAAGZ
-        AWYBMwEAAZkBMwFmAQABmQFmAZkBAAGZAWYBzAEAAZkBMwH/AQACmQEzAQACmQFmAQADmQEAApkBzAEA
-        ApkB/wEAAZkBzAIAAZkBzAEzAQABZgHMAWYBAAGZAcwBmQEAAZkCzAEAAZkBzAH/AQABmQH/AgABmQH/
-        ATMBAAGZAcwBZgEAAZkB/wGZAQABmQH/AcwBAAGZAv8BAAHMAwABmQEAATMBAAHMAQABZgEAAcwBAAGZ
-        AQABzAEAAcwBAAGZATMCAAHMAjMBAAHMATMBZgEAAcwBMwGZAQABzAEzAcwBAAHMATMB/wEAAcwBZgIA
-        AcwBZgEzAQABmQJmAQABzAFmAZkBAAHMAWYBzAEAAZkBZgH/AQABzAGZAgABzAGZATMBAAHMAZkBZgEA
-        AcwCmQEAAcwBmQHMAQABzAGZAf8BAALMAgACzAEzAQACzAFmAQACzAGZAQADzAEAAswB/wEAAcwB/wIA
-        AcwB/wEzAQABmQH/AWYBAAHMAf8BmQEAAcwB/wHMAQABzAL/AQABzAEAATMBAAH/AQABZgEAAf8BAAGZ
-        AQABzAEzAgAB/wIzAQAB/wEzAWYBAAH/ATMBmQEAAf8BMwHMAQAB/wEzAf8BAAH/AWYCAAH/AWYBMwEA
-        AcwCZgEAAf8BZgGZAQAB/wFmAcwBAAHMAWYB/wEAAf8BmQIAAf8BmQEzAQAB/wGZAWYBAAH/ApkBAAH/
-        AZkBzAEAAf8BmQH/AQAB/wHMAgAB/wHMATMBAAH/AcwBZgEAAf8BzAGZAQAB/wLMAQAB/wHMAf8BAAL/
-        ATMBAAHMAf8BZgEAAv8BmQEAAv8BzAEAAmYB/wEAAWYB/wFmAQABZgL/AQAB/wJmAQAB/wFmAf8BAAL/
-        AWYBAAEhAQABpQEAA18BAAN3AQADhgEAA5YBAAPLAQADsgEAA9cBAAPdAQAD4wEAA+oBAAPxAQAD+AEA
-        AfAB+wH/AQABpAKgAQADgAMAAf8CAAH/AwAC/wEAAf8DAAH/AQAB/wEAAv8CAAP//wD/AP8A/wCFAAFC
-        AU0BPgcAAT4DAAEoAwABMAMAARgDAAEBAQABAQUAAcAXAAP/YQAB/wH8AQED/wIAA/0B+AL/AgAB+AL9
-        AfcBfwH/AgAD/QHvAb8B/wIAAf8C/QHtAbwB8wIAA/0B6gG7AW0CAAP9AeoBuwFtAgAB+AL9AeoBuwEN
-        AgAB+AH9AeEB6gG8AfMCAAH4Af0B6wH7Ab8B/wIAAfgB/QHnAfsBvwH/AgAB/QH8AQ8B/AF/Af8CAAs=
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAB4
+        BwAAAk1TRnQBSQFMAgEBBAIAAQMBAAEDAQwBAAEMAQAE/wEJAQAI/wFCAU0BNgEEBgABNgEEAgABKAMA
+        ATADAAEYAwABAQEAAQgFAAGAAQQYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
+        AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
+        AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
+        AWYDAAGZAwABzAIAATMDAAIzAgABMwFmAgABMwGZAgABMwHMAgABMwH/AgABZgMAAWYBMwIAAmYCAAFm
+        AZkCAAFmAcwCAAFmAf8CAAGZAwABmQEzAgABmQFmAgACmQIAAZkBzAIAAZkB/wIAAcwDAAHMATMCAAHM
+        AWYCAAHMAZkCAALMAgABzAH/AgAB/wFmAgAB/wGZAgAB/wHMAQABMwH/AgAB/wEAATMBAAEzAQABZgEA
+        ATMBAAGZAQABMwEAAcwBAAEzAQAB/wEAAf8BMwIAAzMBAAIzAWYBAAIzAZkBAAIzAcwBAAIzAf8BAAEz
+        AWYCAAEzAWYBMwEAATMCZgEAATMBZgGZAQABMwFmAcwBAAEzAWYB/wEAATMBmQIAATMBmQEzAQABMwGZ
+        AWYBAAEzApkBAAEzAZkBzAEAATMBmQH/AQABMwHMAgABMwHMATMBAAEzAcwBZgEAATMBzAGZAQABMwLM
+        AQABMwHMAf8BAAEzAf8BMwEAATMB/wFmAQABMwH/AZkBAAEzAf8BzAEAATMC/wEAAWYDAAFmAQABMwEA
+        AWYBAAFmAQABZgEAAZkBAAFmAQABzAEAAWYBAAH/AQABZgEzAgABZgIzAQABZgEzAWYBAAFmATMBmQEA
+        AWYBMwHMAQABZgEzAf8BAAJmAgACZgEzAQADZgEAAmYBmQEAAmYBzAEAAWYBmQIAAWYBmQEzAQABZgGZ
+        AWYBAAFmApkBAAFmAZkBzAEAAWYBmQH/AQABZgHMAgABZgHMATMBAAFmAcwBmQEAAWYCzAEAAWYBzAH/
+        AQABZgH/AgABZgH/ATMBAAFmAf8BmQEAAWYB/wHMAQABzAEAAf8BAAH/AQABzAEAApkCAAGZATMBmQEA
+        AZkBAAGZAQABmQEAAcwBAAGZAwABmQIzAQABmQEAAWYBAAGZATMBzAEAAZkBAAH/AQABmQFmAgABmQFm
+        ATMBAAGZATMBZgEAAZkBZgGZAQABmQFmAcwBAAGZATMB/wEAApkBMwEAApkBZgEAA5kBAAKZAcwBAAKZ
+        Af8BAAGZAcwCAAGZAcwBMwEAAWYBzAFmAQABmQHMAZkBAAGZAswBAAGZAcwB/wEAAZkB/wIAAZkB/wEz
+        AQABmQHMAWYBAAGZAf8BmQEAAZkB/wHMAQABmQL/AQABzAMAAZkBAAEzAQABzAEAAWYBAAHMAQABmQEA
+        AcwBAAHMAQABmQEzAgABzAIzAQABzAEzAWYBAAHMATMBmQEAAcwBMwHMAQABzAEzAf8BAAHMAWYCAAHM
+        AWYBMwEAAZkCZgEAAcwBZgGZAQABzAFmAcwBAAGZAWYB/wEAAcwBmQIAAcwBmQEzAQABzAGZAWYBAAHM
+        ApkBAAHMAZkBzAEAAcwBmQH/AQACzAIAAswBMwEAAswBZgEAAswBmQEAA8wBAALMAf8BAAHMAf8CAAHM
+        Af8BMwEAAZkB/wFmAQABzAH/AZkBAAHMAf8BzAEAAcwC/wEAAcwBAAEzAQAB/wEAAWYBAAH/AQABmQEA
+        AcwBMwIAAf8CMwEAAf8BMwFmAQAB/wEzAZkBAAH/ATMBzAEAAf8BMwH/AQAB/wFmAgAB/wFmATMBAAHM
+        AmYBAAH/AWYBmQEAAf8BZgHMAQABzAFmAf8BAAH/AZkCAAH/AZkBMwEAAf8BmQFmAQAB/wKZAQAB/wGZ
+        AcwBAAH/AZkB/wEAAf8BzAIAAf8BzAEzAQAB/wHMAWYBAAH/AcwBmQEAAf8CzAEAAf8BzAH/AQAC/wEz
+        AQABzAH/AWYBAAL/AZkBAAL/AcwBAAJmAf8BAAFmAf8BZgEAAWYC/wEAAf8CZgEAAf8BZgH/AQAC/wFm
+        AQABIQEAAaUBAANfAQADdwEAA4YBAAOWAQADywEAA7IBAAPXAQAD3QEAA+MBAAPqAQAD8QEAA/gBAAHw
+        AfsB/wEAAaQCoAEAA4ADAAH/AgAB/wMAAv8BAAH/AwAB/wEAAf8BAAL/AgAD//8A/wD/AP8AhQABQgFN
+        AT4HAAE+AwABKAMAATADAAEYAwABAQEAAQEFAAHAFwAD/2EAAf8B/AEBA/8CAAP9AfgC/wIAAfgC/QH3
+        AX8B/wIAA/0B7wG/Af8CAAH/Av0B7QG8AfMCAAP9AeoBuwFtAgAD/QHqAbsBbQIAAfgC/QHqAbsBDQIA
+        AfgB/QHhAeoBvAHzAgAB+AH9AesB+wG/Af8CAAH4Af0B5wH7Ab8B/wIAAf0B/AEPAfwBfwH/AgAL
 </value>
   </data>
   <data name="gridSplitContainer1.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
@@ -642,106 +660,118 @@
   <data name="&gt;&gt;modelViewProductBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;LayoutViewProduct.Name" xml:space="preserve">
-    <value>LayoutViewProduct</value>
+  <data name="&gt;&gt;layoutView1.Name" xml:space="preserve">
+    <value>layoutView1</value>
   </data>
-  <data name="&gt;&gt;LayoutViewProduct.Type" xml:space="preserve">
+  <data name="&gt;&gt;layoutView1.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Views.Layout.LayoutView, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;colId.Name" xml:space="preserve">
-    <value>colId</value>
+  <data name="&gt;&gt;layoutViewColumn1.Name" xml:space="preserve">
+    <value>layoutViewColumn1</value>
   </data>
-  <data name="&gt;&gt;colId.Type" xml:space="preserve">
+  <data name="&gt;&gt;layoutViewColumn1.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;layoutViewField_colId.Name" xml:space="preserve">
-    <value>layoutViewField_colId</value>
+  <data name="&gt;&gt;layoutViewField_colId1.Name" xml:space="preserve">
+    <value>layoutViewField_colId1</value>
   </data>
-  <data name="&gt;&gt;layoutViewField_colId.Type" xml:space="preserve">
+  <data name="&gt;&gt;layoutViewField_colId1.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;colQuantiteMin.Name" xml:space="preserve">
-    <value>colQuantiteMin</value>
+  <data name="&gt;&gt;layoutViewColumn2.Name" xml:space="preserve">
+    <value>layoutViewColumn2</value>
   </data>
-  <data name="&gt;&gt;colQuantiteMin.Type" xml:space="preserve">
+  <data name="&gt;&gt;layoutViewColumn2.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;layoutViewField_colQuantiteMin.Name" xml:space="preserve">
-    <value>layoutViewField_colQuantiteMin</value>
+  <data name="&gt;&gt;layoutViewField_colQuantiteMin1.Name" xml:space="preserve">
+    <value>layoutViewField_colQuantiteMin1</value>
   </data>
-  <data name="&gt;&gt;layoutViewField_colQuantiteMin.Type" xml:space="preserve">
+  <data name="&gt;&gt;layoutViewField_colQuantiteMin1.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;colPhoto.Name" xml:space="preserve">
-    <value>colPhoto</value>
+  <data name="&gt;&gt;layoutViewColumn3.Name" xml:space="preserve">
+    <value>layoutViewColumn3</value>
   </data>
-  <data name="&gt;&gt;colPhoto.Type" xml:space="preserve">
+  <data name="&gt;&gt;layoutViewColumn3.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;layoutViewField_colPhoto.Name" xml:space="preserve">
-    <value>layoutViewField_colPhoto</value>
+  <data name="&gt;&gt;layoutViewField_colPhoto1.Name" xml:space="preserve">
+    <value>layoutViewField_colPhoto1</value>
   </data>
-  <data name="&gt;&gt;layoutViewField_colPhoto.Type" xml:space="preserve">
+  <data name="&gt;&gt;layoutViewField_colPhoto1.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;colFournisseur.Name" xml:space="preserve">
-    <value>colFournisseur</value>
+  <data name="&gt;&gt;layoutViewColumn4.Name" xml:space="preserve">
+    <value>layoutViewColumn4</value>
   </data>
-  <data name="&gt;&gt;colFournisseur.Type" xml:space="preserve">
+  <data name="&gt;&gt;layoutViewColumn4.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;layoutViewField_colFournisseur.Name" xml:space="preserve">
-    <value>layoutViewField_colFournisseur</value>
+  <data name="&gt;&gt;layoutViewField_colFournisseur1.Name" xml:space="preserve">
+    <value>layoutViewField_colFournisseur1</value>
   </data>
-  <data name="&gt;&gt;layoutViewField_colFournisseur.Type" xml:space="preserve">
+  <data name="&gt;&gt;layoutViewField_colFournisseur1.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;colCategorie.Name" xml:space="preserve">
-    <value>colCategorie</value>
+  <data name="&gt;&gt;layoutViewColumn5.Name" xml:space="preserve">
+    <value>layoutViewColumn5</value>
   </data>
-  <data name="&gt;&gt;colCategorie.Type" xml:space="preserve">
+  <data name="&gt;&gt;layoutViewColumn5.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;layoutViewField_colCategorie.Name" xml:space="preserve">
-    <value>layoutViewField_colCategorie</value>
+  <data name="&gt;&gt;layoutViewField_colCategorie1.Name" xml:space="preserve">
+    <value>layoutViewField_colCategorie1</value>
   </data>
-  <data name="&gt;&gt;layoutViewField_colCategorie.Type" xml:space="preserve">
+  <data name="&gt;&gt;layoutViewField_colCategorie1.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;colRemarque.Name" xml:space="preserve">
-    <value>colRemarque</value>
+  <data name="&gt;&gt;layoutViewColumn6.Name" xml:space="preserve">
+    <value>layoutViewColumn6</value>
   </data>
-  <data name="&gt;&gt;colRemarque.Type" xml:space="preserve">
+  <data name="&gt;&gt;layoutViewColumn6.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;layoutViewField_colRemarque.Name" xml:space="preserve">
-    <value>layoutViewField_colRemarque</value>
+  <data name="&gt;&gt;layoutViewField_colRemarque1.Name" xml:space="preserve">
+    <value>layoutViewField_colRemarque1</value>
   </data>
-  <data name="&gt;&gt;layoutViewField_colRemarque.Type" xml:space="preserve">
+  <data name="&gt;&gt;layoutViewField_colRemarque1.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;colReference.Name" xml:space="preserve">
-    <value>colReference</value>
+  <data name="&gt;&gt;layoutViewColumn7.Name" xml:space="preserve">
+    <value>layoutViewColumn7</value>
   </data>
-  <data name="&gt;&gt;colReference.Type" xml:space="preserve">
+  <data name="&gt;&gt;layoutViewColumn7.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;layoutViewField_colReference.Name" xml:space="preserve">
-    <value>layoutViewField_colReference</value>
+  <data name="&gt;&gt;layoutViewField_colReference1.Name" xml:space="preserve">
+    <value>layoutViewField_colReference1</value>
   </data>
-  <data name="&gt;&gt;layoutViewField_colReference.Type" xml:space="preserve">
+  <data name="&gt;&gt;layoutViewField_colReference1.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;colNom.Name" xml:space="preserve">
-    <value>colNom</value>
+  <data name="&gt;&gt;layoutViewColumn8.Name" xml:space="preserve">
+    <value>layoutViewColumn8</value>
   </data>
-  <data name="&gt;&gt;colNom.Type" xml:space="preserve">
+  <data name="&gt;&gt;layoutViewColumn8.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;layoutViewField_colNom.Name" xml:space="preserve">
-    <value>layoutViewField_colNom</value>
+  <data name="&gt;&gt;layoutViewField_colNom1.Name" xml:space="preserve">
+    <value>layoutViewField_colNom1</value>
   </data>
-  <data name="&gt;&gt;layoutViewField_colNom.Type" xml:space="preserve">
+  <data name="&gt;&gt;layoutViewField_colNom1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewColumn9.Name" xml:space="preserve">
+    <value>layoutViewColumn9</value>
+  </data>
+  <data name="&gt;&gt;layoutViewColumn9.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colMarque1.Name" xml:space="preserve">
+    <value>layoutViewField_colMarque1</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colMarque1.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;layoutViewCard1.Name" xml:space="preserve">
@@ -749,6 +779,18 @@
   </data>
   <data name="&gt;&gt;layoutViewCard1.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Views.Layout.LayoutViewCard, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;item1.Name" xml:space="preserve">
+    <value>item1</value>
+  </data>
+  <data name="&gt;&gt;item1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;LayoutViewProduct.Name" xml:space="preserve">
+    <value>LayoutViewProduct</value>
+  </data>
+  <data name="&gt;&gt;LayoutViewProduct.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutView, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;Group1.Name" xml:space="preserve">
     <value>Group1</value>
@@ -767,6 +809,126 @@
   </data>
   <data name="&gt;&gt;ilColumns.Type" xml:space="preserve">
     <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;layoutViewColumn10.Name" xml:space="preserve">
+    <value>layoutViewColumn10</value>
+  </data>
+  <data name="&gt;&gt;layoutViewColumn10.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewColumn11.Name" xml:space="preserve">
+    <value>layoutViewColumn11</value>
+  </data>
+  <data name="&gt;&gt;layoutViewColumn11.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewColumn12.Name" xml:space="preserve">
+    <value>layoutViewColumn12</value>
+  </data>
+  <data name="&gt;&gt;layoutViewColumn12.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewColumn13.Name" xml:space="preserve">
+    <value>layoutViewColumn13</value>
+  </data>
+  <data name="&gt;&gt;layoutViewColumn13.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewColumn14.Name" xml:space="preserve">
+    <value>layoutViewColumn14</value>
+  </data>
+  <data name="&gt;&gt;layoutViewColumn14.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewColumn15.Name" xml:space="preserve">
+    <value>layoutViewColumn15</value>
+  </data>
+  <data name="&gt;&gt;layoutViewColumn15.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewColumn16.Name" xml:space="preserve">
+    <value>layoutViewColumn16</value>
+  </data>
+  <data name="&gt;&gt;layoutViewColumn16.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewColumn17.Name" xml:space="preserve">
+    <value>layoutViewColumn17</value>
+  </data>
+  <data name="&gt;&gt;layoutViewColumn17.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewColumn18.Name" xml:space="preserve">
+    <value>layoutViewColumn18</value>
+  </data>
+  <data name="&gt;&gt;layoutViewColumn18.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewCard2.Name" xml:space="preserve">
+    <value>layoutViewCard2</value>
+  </data>
+  <data name="&gt;&gt;layoutViewCard2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewCard, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colPhoto2.Name" xml:space="preserve">
+    <value>layoutViewField_colPhoto2</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colPhoto2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;item2.Name" xml:space="preserve">
+    <value>item2</value>
+  </data>
+  <data name="&gt;&gt;item2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colFournisseur2.Name" xml:space="preserve">
+    <value>layoutViewField_colFournisseur2</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colFournisseur2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colCategorie2.Name" xml:space="preserve">
+    <value>layoutViewField_colCategorie2</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colCategorie2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colReference2.Name" xml:space="preserve">
+    <value>layoutViewField_colReference2</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colReference2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colRemarque2.Name" xml:space="preserve">
+    <value>layoutViewField_colRemarque2</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colRemarque2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colMarque2.Name" xml:space="preserve">
+    <value>layoutViewField_colMarque2</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colMarque2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colNom2.Name" xml:space="preserve">
+    <value>layoutViewField_colNom2</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colNom2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colQuantiteMin2.Name" xml:space="preserve">
+    <value>layoutViewField_colQuantiteMin2</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colQuantiteMin2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colId2.Name" xml:space="preserve">
+    <value>layoutViewField_colId2</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colId2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Stock</value>

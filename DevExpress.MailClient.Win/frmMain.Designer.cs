@@ -160,6 +160,8 @@
             this.bbiNewBdc = new DevExpress.XtraBars.BarButtonItem();
             this.bbiModifyBdc = new DevExpress.XtraBars.BarButtonItem();
             this.bbiDeleteBdc = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonMiniToolbar1 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(this.components);
             this.ribbonMiniToolbar2 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(this.components);
             this.rpStock = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -173,6 +175,8 @@
             this.rpgLayoutContacts = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpBDC = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rpgBdc = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpCalendar = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.appointmentRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.AppointmentRibbonPageGroup();
             this.navigatorRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.NavigatorRibbonPageGroup();
@@ -182,8 +186,6 @@
             this.rpSecteur = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rpgGestionSecteur = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpgGestionLivreur = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemSpinEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.galleryControlGallery1 = new DevExpress.XtraBars.Ribbon.Gallery.GalleryControlGallery();
@@ -341,9 +343,11 @@
             this.barButtonItem13,
             this.bbiNewBdc,
             this.bbiModifyBdc,
-            this.bbiDeleteBdc});
+            this.bbiDeleteBdc,
+            this.barButtonItem6,
+            this.barButtonItem14});
             resources.ApplyResources(this.ribbonControl1, "ribbonControl1");
-            this.ribbonControl1.MaxItemId = 17;
+            this.ribbonControl1.MaxItemId = 3;
             this.ribbonControl1.MiniToolbars.Add(this.ribbonMiniToolbar1);
             this.ribbonControl1.MiniToolbars.Add(this.ribbonMiniToolbar2);
             this.ribbonControl1.Name = "ribbonControl1";
@@ -1330,6 +1334,22 @@
             this.bbiDeleteBdc.Id = 16;
             this.bbiDeleteBdc.Name = "bbiDeleteBdc";
             // 
+            // barButtonItem6
+            // 
+            resources.ApplyResources(this.barButtonItem6, "barButtonItem6");
+            this.barButtonItem6.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.Glyph")));
+            this.barButtonItem6.Id = 1;
+            this.barButtonItem6.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.LargeGlyph")));
+            this.barButtonItem6.Name = "barButtonItem6";
+            // 
+            // barButtonItem14
+            // 
+            resources.ApplyResources(this.barButtonItem14, "barButtonItem14");
+            this.barButtonItem14.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem14.Glyph")));
+            this.barButtonItem14.Id = 2;
+            this.barButtonItem14.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem14.LargeGlyph")));
+            this.barButtonItem14.Name = "barButtonItem14";
+            // 
             // rpStock
             // 
             this.rpStock.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -1412,7 +1432,9 @@
             // rpBDC
             // 
             this.rpBDC.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.rpgBdc});
+            this.rpgBdc,
+            this.ribbonPageGroup1,
+            this.ribbonPageGroup2});
             this.rpBDC.Name = "rpBDC";
             this.rpBDC.Tag = "BDC";
             resources.ApplyResources(this.rpBDC, "rpBDC");
@@ -1425,6 +1447,22 @@
             this.rpgBdc.Name = "rpgBdc";
             this.rpgBdc.ShowCaptionButton = false;
             resources.ApplyResources(this.rpgBdc, "rpgBdc");
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.AllowTextClipping = false;
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem6);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.ShowCaptionButton = false;
+            resources.ApplyResources(this.ribbonPageGroup1, "ribbonPageGroup1");
+            // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.AllowTextClipping = false;
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem14);
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            this.ribbonPageGroup2.ShowCaptionButton = false;
+            resources.ApplyResources(this.ribbonPageGroup2, "ribbonPageGroup2");
             // 
             // rpCalendar
             // 
@@ -1480,40 +1518,32 @@
             // 
             this.rpSecteur.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.rpgGestionSecteur,
-            this.rpgGestionLivreur,
-            this.ribbonPageGroup3,
-            this.ribbonPageGroup4});
+            this.rpgGestionLivreur});
             this.rpSecteur.Name = "rpSecteur";
             this.rpSecteur.Tag = "Secteur";
             resources.ApplyResources(this.rpSecteur, "rpSecteur");
             // 
             // rpgGestionSecteur
             // 
+            this.rpgGestionSecteur.AllowTextClipping = false;
             this.rpgGestionSecteur.ItemLinks.Add(this.bbiNewSecteur);
             this.rpgGestionSecteur.ItemLinks.Add(this.barButtonItem7);
             this.rpgGestionSecteur.ItemLinks.Add(this.barButtonItem8);
             this.rpgGestionSecteur.ItemLinks.Add(this.barButtonItem9);
             this.rpgGestionSecteur.Name = "rpgGestionSecteur";
+            this.rpgGestionSecteur.ShowCaptionButton = false;
             resources.ApplyResources(this.rpgGestionSecteur, "rpgGestionSecteur");
             // 
             // rpgGestionLivreur
             // 
+            this.rpgGestionLivreur.AllowTextClipping = false;
             this.rpgGestionLivreur.ItemLinks.Add(this.barButtonItem10);
             this.rpgGestionLivreur.ItemLinks.Add(this.barButtonItem11);
             this.rpgGestionLivreur.ItemLinks.Add(this.barButtonItem12);
             this.rpgGestionLivreur.ItemLinks.Add(this.barButtonItem13);
             this.rpgGestionLivreur.Name = "rpgGestionLivreur";
+            this.rpgGestionLivreur.ShowCaptionButton = false;
             resources.ApplyResources(this.rpgGestionLivreur, "rpgGestionLivreur");
-            // 
-            // ribbonPageGroup3
-            // 
-            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            resources.ApplyResources(this.ribbonPageGroup3, "ribbonPageGroup3");
-            // 
-            // ribbonPageGroup4
-            // 
-            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
-            resources.ApplyResources(this.ribbonPageGroup4, "ribbonPageGroup4");
             // 
             // repositoryItemSpinEdit1
             // 
@@ -1945,8 +1975,6 @@
         private XtraBars.BarButtonItem barButtonItem13;
         private XtraBars.Ribbon.RibbonPageGroup rpgGestionSecteur;
         private XtraBars.Ribbon.RibbonPageGroup rpgGestionLivreur;
-        private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
-        private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private XtraBars.Ribbon.BackstageViewControl backstageViewControl1;
         private XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl1;
         private Controls.HelpControl helpControl1;
@@ -1988,6 +2016,10 @@
         private XtraNavBar.NavBarItem navBarItem5;
         private XtraBars.BarButtonItem bbiModifyBdc;
         private XtraBars.BarButtonItem bbiDeleteBdc;
+        private XtraBars.BarButtonItem barButtonItem6;
+        private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
+        private XtraBars.BarButtonItem barButtonItem14;
     }
 }
 

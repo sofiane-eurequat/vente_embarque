@@ -1308,7 +1308,7 @@
     <value>Manual</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Commande</value>
+    <value>Bon de Commande</value>
   </data>
   <data name="&gt;&gt;bbiNouveau.Name" xml:space="preserve">
     <value>bbiNouveau</value>

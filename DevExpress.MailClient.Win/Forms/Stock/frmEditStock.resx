@@ -133,12 +133,6 @@
   <data name="ribbonControl.ApplicationButtonText" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="undoItem1.Caption" xml:space="preserve">
-    <value>Undo</value>
-  </data>
-  <data name="redoItem1.Caption" xml:space="preserve">
-    <value>Redo</value>
-  </data>
   <data name="pasteItem1.Caption" xml:space="preserve">
     <value>Paste</value>
   </data>
@@ -863,7 +857,7 @@
   <data name="bbiEffacer.Caption" xml:space="preserve">
     <value>Effacer</value>
   </data>
-  <data name="barButtonItem10.Caption" xml:space="preserve">
+  <data name="bbiRefresh.Caption" xml:space="preserve">
     <value>Rafrichir</value>
   </data>
   <data name="barButtonItem11.Caption" xml:space="preserve">
@@ -972,6 +966,9 @@
   </data>
   <data name="repositoryItemRichEditStyleEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.2">
     <value>Combo</value>
+  </data>
+  <data name="repositoryItemTextEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="ribbonControl.Size" type="System.Drawing.Size, System.Drawing">
     <value>804, 144</value>
@@ -1864,18 +1861,6 @@
   <data name="&gt;&gt;printPreviewItem1.Type" xml:space="preserve">
     <value>DevExpress.XtraRichEdit.UI.PrintPreviewItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;undoItem1.Name" xml:space="preserve">
-    <value>undoItem1</value>
-  </data>
-  <data name="&gt;&gt;undoItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.UndoItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;redoItem1.Name" xml:space="preserve">
-    <value>redoItem1</value>
-  </data>
-  <data name="&gt;&gt;redoItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.RedoItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="&gt;&gt;pasteItem1.Name" xml:space="preserve">
     <value>pasteItem1</value>
   </data>
@@ -2644,10 +2629,10 @@
   <data name="&gt;&gt;bbiEffacer.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;barButtonItem10.Name" xml:space="preserve">
-    <value>barButtonItem10</value>
+  <data name="&gt;&gt;bbiRefresh.Name" xml:space="preserve">
+    <value>bbiRefresh</value>
   </data>
-  <data name="&gt;&gt;barButtonItem10.Type" xml:space="preserve">
+  <data name="&gt;&gt;bbiRefresh.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem11.Name" xml:space="preserve">
@@ -2853,6 +2838,12 @@
   </data>
   <data name="&gt;&gt;barButtonItem15.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemTextEdit1.Name" xml:space="preserve">
+    <value>repositoryItemTextEdit1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemTextEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTextEdit, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmEditStock</value>

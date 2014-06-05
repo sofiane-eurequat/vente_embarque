@@ -555,6 +555,13 @@ namespace DevExpress.MailClient.Win.Modules {
             gridControlProduct.DataSource =
                 Stocks.First(s => s.Id == (Guid)gridViewStock.GetFocusedRowCellValue("Id")).ProductLine;
         }
+
+        private void gridControlProduct_Click(object sender, EventArgs e)
+        {
+            if (gridViewStock == null) return;
+            GCProductDisplay.DataSource =
+                Stocks.First(s => s.Id == (Guid)gridViewStock.GetFocusedRowCellValue("Id")).ProductLine.First(p => p.Id == (Guid)gridViewProductLine.GetFocusedRowCellValue("Id")).Product;
+        }
         
     }
 }

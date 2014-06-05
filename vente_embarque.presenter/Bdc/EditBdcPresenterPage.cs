@@ -14,14 +14,16 @@ namespace vente_embarque.presenter.Bdc
         private readonly IEditBdcView _EditBdcView;
         private IRepository<Client, Guid> _repositoryClient; 
         private IRepository<Stock, Guid> _repositoryStock;
-        private IRepository<Order, Guid> _repositoryOrder; 
+        private IRepository<Order, Guid> _repositoryOrder;
+        private List<OrderLine> _orderLines = new List<OrderLine>();
  
-        public EditBdcPresenterPage(IEditBdcView editBdcView, IRepository<Client,Guid> repository, IRepository<Stock,Guid> repository1, IRepository<Order, Guid> repositoryOrder)
+        public EditBdcPresenterPage(IEditBdcView editBdcView, IRepository<Client,Guid> repository, IRepository<Stock,Guid> repository1, IRepository<Order, Guid> repositoryOrder, List<OrderLine> orderLines)
         {
             _EditBdcView = editBdcView;
             _repositoryClient = repository;
             _repositoryStock = repository1;
             _repositoryOrder = repositoryOrder;
+            _orderLines = orderLines;
         }
 
         public void Display()

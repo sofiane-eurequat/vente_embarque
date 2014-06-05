@@ -126,20 +126,19 @@ namespace vente_embarque.Test
         [Test]
         public void CanCreateClientBd()
         {
-            const string nomSect = "nom secteur1";
+            const string nomSect = "Kiffane";
             //const string wilaya = "Tlemcen";
             //const string commune = "Tlemcen";
-            var wilaya = new RepositoryWilaya().FindAll().First();
-            var commune = new RepositoryWilaya().FindAll().First().Communes.First();
+            var wilaya = new RepositoryWilaya().FindAll().First(w => w.Name == "Tlemcen");
+            var commune = new RepositoryWilaya().FindAll().First(w => w.Name == "Tlemcen").Communes.First(com => com.Name == "Tlemcen");
             Sector secteur = FactorySector.CreateSector(nomSect, wilaya, commune);
-            //var rs = new RepositorySector();
+            new RepositorySector().Save(secteur);
             //rs.Save(secteur);
-            const string nom = "NomClient";
-            const string prenom = "PrenomClient1";
+            const string nom = "HAFFAF";
+            const string prenom = "Sofyane";
             //un secteur doit tjr etre defini mmee si il doit etre nommé indéfini
             var client = FactorySector.CreateClient(nom, prenom, secteur);
-            var rc = new RepositoryClient();
-            rc.Save(client);
+            new RepositoryClient().Save(client);
         }
         /*
         [Test]
@@ -456,11 +455,11 @@ namespace vente_embarque.Test
         [Test]
         public void CanCreateSecteurDb()
         {
-            const string nom = "nom secteur1";
+            const string nom = "Tlemcen";
             //const string wilaya = "Tlemcen";
             //const string commune = "Tlemcen";
-            var wilaya = new RepositoryWilaya().FindAll().First();
-            var commune = new RepositoryWilaya().FindAll().First().Communes.First();
+            var wilaya = new RepositoryWilaya().FindAll().First(w => w.Name == "Tlemcen");
+            var commune = new RepositoryWilaya().FindAll().First(w => w.Name == "Tlemcen").Communes.First(com => com.Name == "Tlemcen");
             var sector = FactorySector.CreateSector(nom, wilaya, commune);
             Assert.AreEqual(sector.Name, nom);
             Assert.AreEqual(sector.Wilaya, wilaya);

@@ -12,6 +12,5 @@ namespace vente_embarque.presenter.Bdc
         IEnumerable<Client> Clients { get; set; }
         IEnumerable<Stock> Stocks { get; set; }
         IEnumerable<Order> Orders { get; set; }
-        OrderLine OrderLine { get; set; }
     }
 }

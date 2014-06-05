@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using DevExpress.MailClient.Win.Forms;
 using DevExpress.MailClient.Win.Properties;
 using DevExpress.XtraEditors;
+using DevExpress.XtraEditors.Controls;
+using DevExpress.XtraEditors.Repository;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 using vente_embarque.DataLayer;
@@ -21,22 +23,42 @@ namespace DevExpress.MailClient.Win.Modules
     public partial class Bdc2 : BaseModule
     {
         public IEnumerable<ModelViewBdc> Orders { get; set; }
+        public IEnumerable<Product> Products { get; set; } 
         private readonly RepositoryOrder _repositoryOrder = new RepositoryOrder();
+        private readonly RepositoryProduct _repositoryProduct = new RepositoryProduct();
         private BdcPresenterPage _bdcPresenter;
+        public ModelViewBdc _order { get; set; }
         
         public Bdc2()
         {
             InitializeComponent();
-            _bdcPresenter = new BdcPresenterPage(this, _repositoryOrder);
+            _bdcPresenter = new BdcPresenterPage(this, _repositoryOrder, _repositoryProduct);
             _bdcPresenter.Diplay();
 
             gridControlOrder.DataSource = Orders;
             gridViewOrder.Columns[0].Visible = false;
             gridViewOrder.RowCellClick += gridViewOrder_CellClick;
-
+            
             gridControlOrderLine.DataSource = Orders.First().OrderLines;
             gridViewOrderLine.Columns[2].Visible = false;
+            gridViewOrderLine.Columns[3].Visible = false;
             gridViewOrderLine.Columns[0].Caption = Resources.Produit;
+            
+            GCDisplayProduct.DataSource = Orders.First().Products;
+
+            layoutViewProduct.Columns["Id"].Visible = false;
+
+            var riPictureEdit = GCDisplayProduct.RepositoryItems.Add("PictureEdit") as RepositoryItemPictureEdit;
+           
+            if (riPictureEdit != null)
+            {
+                riPictureEdit.SizeMode = PictureSizeMode.Squeeze;
+                layoutViewProduct.Columns["Photo"].ColumnEdit = riPictureEdit;
+            }
+
+            layoutViewProduct.Columns["Photo"].LayoutViewField.TextVisible = false;
+
+            layoutViewProduct.CardMinSize = new Size(350, 200);
         }
 
         protected internal override void ButtonClick(string tag)
@@ -47,10 +69,16 @@ namespace DevExpress.MailClient.Win.Modules
                     CreateBdc();
                     break;
                 case TagResources.ModifyBdc:
-                    ModifyBdc();
+                    ModifyBdc(_order);
                     break;
                 case TagResources.DeleteBdc:
                     DeleteBdc();
+                    break;
+                case TagResources.Refresh:
+                    RefreshBdc();
+                    break;
+                case TagResources.Close:
+                    Close();
                     break;
             }
         }
@@ -61,9 +89,8 @@ namespace DevExpress.MailClient.Win.Modules
             EditBdc(bdc, true, null);
         }
 
-        private void ModifyBdc()
+        private void ModifyBdc(ModelViewBdc bdc)
         {
-            var bdc = new ModelViewBdc();
             EditBdc(bdc, false, null);
         }
 
@@ -79,6 +106,17 @@ namespace DevExpress.MailClient.Win.Modules
             Bdc2_Load(bdc, new EventArgs());
         }
 
+        private void RefreshBdc()
+        {
+            var bdc = new ModelViewBdc();
+            Bdc2_Load(bdc, new EventArgs());
+        }
+
+        private void Close()
+        {
+            
+        }
+
         private void EditBdc(ModelViewBdc bdc, bool newBdc, string caption)
         {
             Cursor.Current = Cursors.WaitCursor;
@@ -91,7 +129,7 @@ namespace DevExpress.MailClient.Win.Modules
 
         private void Bdc2_Load(object sender, EventArgs e)
         {
-            _bdcPresenter = new BdcPresenterPage(this, _repositoryOrder);
+            _bdcPresenter = new BdcPresenterPage(this, _repositoryOrder,_repositoryProduct);
             _bdcPresenter.Diplay();
 
             gridControlOrder.DataSource = Orders;
@@ -101,6 +139,23 @@ namespace DevExpress.MailClient.Win.Modules
             gridControlOrderLine.DataSource = Orders.First().OrderLines;
             gridViewOrderLine.Columns[2].Visible = false;
             gridViewOrderLine.Columns[0].Caption = Resources.Produit;
+            gridViewOrderLine.RowCellClick += gridViewOrderLine_CellClick;
+            /*
+            GCDisplayProduct.DataSource = Products;
+
+            layoutViewProduct.Columns["Id"].Visible = false;
+
+            var riPictureEdit = GCDisplayProduct.RepositoryItems.Add("PictureEdit") as RepositoryItemPictureEdit;
+
+            if (riPictureEdit != null)
+            {
+                riPictureEdit.SizeMode = PictureSizeMode.Squeeze;
+                layoutViewProduct.Columns["Photo"].ColumnEdit = riPictureEdit;
+            }
+
+            layoutViewProduct.Columns["Photo"].LayoutViewField.TextVisible = false;
+
+            layoutViewProduct.CardMinSize = new Size(350, 200);*/
         }
 
         private void gridControlOrder_Click(object sender, EventArgs e)
@@ -120,20 +175,25 @@ namespace DevExpress.MailClient.Win.Modules
 
         private void gridViewOrder_DoubleClick(object sender, EventArgs e)
         {
-
-            var view = (GridView)sender;
-            Point pt = view.GridControl.PointToClient(MousePosition);
-            DoRowDoubleClick(view, pt);
+            if (gridViewOrder == null) return;
+            var order = (ModelViewBdc)gridViewOrder.GetFocusedRow();
+            //var idorder = (Guid)gridViewOrder.GetFocusedRowCellValue("Id");
+            //var order = _repositoryOrder.FindBy(idorder);
+            ModifyBdc(order);
         }
 
-        private static void DoRowDoubleClick(GridView view, Point pt)
+        private void gridControlOrderLine_Click(object sender, EventArgs e)
         {
-            GridHitInfo info = view.CalcHitInfo(pt);
-            if (info.InRow || info.InRowCell)
-            {
-                string colCaption = info.Column == null ? "N/A" : info.Column.GetCaption();
-                MessageBox.Show(string.Format("DoubleClick on row: {0}, column: {1}.", info.RowHandle, colCaption));    
-            }
+            if (gridViewOrderLine == null) return;
+            GCDisplayProduct.DataSource =
+                Orders.First(o => o.Id == (Guid)gridViewOrder.GetFocusedRowCellValue("Id")).OrderLines.First(ol => ol.Id == (Guid)gridViewOrderLine.GetFocusedRowCellValue("Id")).Product;
+        }
+
+        private void gridViewOrderLine_CellClick(object sender, RowCellClickEventArgs e)
+        {
+            if (gridViewOrder == null) return;
+            GCDisplayProduct.DataSource =
+                Orders.First(o => o.Id == (Guid)gridViewOrder.GetFocusedRowCellValue("Id")).OrderLines.First(p => p.Id == (Guid)gridViewOrderLine.GetFocusedRowCellValue("Id")).Product;
         }
     }
 }

@@ -31,8 +31,6 @@
             this.applicationMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.fileSaveItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.printPreviewItem1 = new DevExpress.XtraRichEdit.UI.PrintPreviewItem();
-            this.undoItem1 = new DevExpress.XtraRichEdit.UI.UndoItem();
-            this.redoItem1 = new DevExpress.XtraRichEdit.UI.RedoItem();
             this.pasteItem1 = new DevExpress.XtraRichEdit.UI.PasteItem();
             this.barButtonGroup1 = new DevExpress.XtraBars.BarButtonGroup();
             this.changeFontNameItem1 = new DevExpress.XtraRichEdit.UI.ChangeFontNameItem();
@@ -161,7 +159,7 @@
             this.bbiValider = new DevExpress.XtraBars.BarButtonItem();
             this.bbiAnnuler = new DevExpress.XtraBars.BarButtonItem();
             this.bbiEffacer = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiRefresh = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
@@ -214,6 +212,7 @@
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).BeginInit();
@@ -240,6 +239,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtcLignesProduit)).BeginInit();
             this.xtcLignesProduit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -251,8 +251,6 @@
             this.ribbonControl.ExpandCollapseItem,
             this.fileSaveItem1,
             this.printPreviewItem1,
-            this.undoItem1,
-            this.redoItem1,
             this.pasteItem1,
             this.barButtonGroup1,
             this.changeFontNameItem1,
@@ -376,12 +374,12 @@
             this.bbiValider,
             this.bbiAnnuler,
             this.bbiEffacer,
-            this.barButtonItem10,
+            this.bbiRefresh,
             this.barButtonItem11,
             this.barButtonItem12,
             this.barButtonItem13,
             this.bbiFermer});
-            this.ribbonControl.MaxItemId = 208;
+            this.ribbonControl.MaxItemId = 209;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.homeRibbonPage1});
@@ -391,12 +389,11 @@
             this.repositoryItemRichEditStyleEdit1,
             this.repositoryItemBorderLineStyle1,
             this.repositoryItemBorderLineWeight1,
-            this.repositoryItemFloatingObjectOutlineWeight1});
+            this.repositoryItemFloatingObjectOutlineWeight1,
+            this.repositoryItemTextEdit1});
             this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
             this.ribbonControl.StatusBar = this.statusBar;
             this.ribbonControl.Toolbar.ItemLinks.Add(this.fileSaveItem1);
-            this.ribbonControl.Toolbar.ItemLinks.Add(this.undoItem1);
-            this.ribbonControl.Toolbar.ItemLinks.Add(this.redoItem1);
             // 
             // applicationMenu
             // 
@@ -420,20 +417,6 @@
             this.printPreviewItem1.Enabled = false;
             this.printPreviewItem1.Id = 7;
             this.printPreviewItem1.Name = "printPreviewItem1";
-            // 
-            // undoItem1
-            // 
-            resources.ApplyResources(this.undoItem1, "undoItem1");
-            this.undoItem1.Enabled = false;
-            this.undoItem1.Id = 8;
-            this.undoItem1.Name = "undoItem1";
-            // 
-            // redoItem1
-            // 
-            resources.ApplyResources(this.redoItem1, "redoItem1");
-            this.redoItem1.Enabled = false;
-            this.redoItem1.Id = 9;
-            this.redoItem1.Name = "redoItem1";
             // 
             // pasteItem1
             // 
@@ -1408,13 +1391,13 @@
             this.bbiEffacer.LargeGlyph = global::DevExpress.MailClient.Win.Properties.Resources.clear_32x32;
             this.bbiEffacer.Name = "bbiEffacer";
             // 
-            // barButtonItem10
+            // bbiRefresh
             // 
-            resources.ApplyResources(this.barButtonItem10, "barButtonItem10");
-            this.barButtonItem10.Glyph = global::DevExpress.MailClient.Win.Properties.Resources.refresh2_16x16;
-            this.barButtonItem10.Id = 195;
-            this.barButtonItem10.LargeGlyph = global::DevExpress.MailClient.Win.Properties.Resources.refresh2_32x32;
-            this.barButtonItem10.Name = "barButtonItem10";
+            resources.ApplyResources(this.bbiRefresh, "bbiRefresh");
+            this.bbiRefresh.Glyph = global::DevExpress.MailClient.Win.Properties.Resources.refresh2_16x16;
+            this.bbiRefresh.Id = 195;
+            this.bbiRefresh.LargeGlyph = global::DevExpress.MailClient.Win.Properties.Resources.refresh2_32x32;
+            this.bbiRefresh.Name = "bbiRefresh";
             // 
             // barButtonItem11
             // 
@@ -1495,7 +1478,7 @@
             // ribbonPageGroup2
             // 
             this.ribbonPageGroup2.AllowTextClipping = false;
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem10);
+            this.ribbonPageGroup2.ItemLinks.Add(this.bbiRefresh);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.ShowCaptionButton = false;
             resources.ApplyResources(this.ribbonPageGroup2, "ribbonPageGroup2");
@@ -1548,8 +1531,6 @@
             // 
             this.richEditBarController1.BarItems.Add(this.fileSaveItem1);
             this.richEditBarController1.BarItems.Add(this.printPreviewItem1);
-            this.richEditBarController1.BarItems.Add(this.undoItem1);
-            this.richEditBarController1.BarItems.Add(this.redoItem1);
             this.richEditBarController1.BarItems.Add(this.pasteItem1);
             this.richEditBarController1.BarItems.Add(this.changeFontNameItem1);
             this.richEditBarController1.BarItems.Add(this.changeFontSizeItem1);
@@ -1901,6 +1882,11 @@
             this.barDockControlRight.CausesValidation = false;
             resources.ApplyResources(this.barDockControlRight, "barDockControlRight");
             // 
+            // repositoryItemTextEdit1
+            // 
+            resources.ApplyResources(this.repositoryItemTextEdit1, "repositoryItemTextEdit1");
+            this.repositoryItemTextEdit1.Name = "repositoryItemTextEdit1";
+            // 
             // frmEditStock
             // 
             resources.ApplyResources(this, "$this");
@@ -1945,6 +1931,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtcLignesProduit)).EndInit();
             this.xtcLignesProduit.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1956,8 +1943,6 @@
 
         private DevExpress.XtraBars.BarButtonItem fileSaveItem1;
         private DevExpress.XtraRichEdit.UI.PrintPreviewItem printPreviewItem1;
-        private DevExpress.XtraRichEdit.UI.UndoItem undoItem1;
-        private DevExpress.XtraRichEdit.UI.RedoItem redoItem1;
         private DevExpress.XtraRichEdit.UI.RichEditBarController richEditBarController1;
         private DevExpress.XtraRichEdit.UI.PasteItem pasteItem1;
         private DevExpress.XtraBars.BarButtonGroup barButtonGroup1;
@@ -2100,7 +2085,7 @@
         private XtraBars.BarButtonItem bbiAnnuler;
         private XtraBars.Ribbon.RibbonPageGroup SauvegarderibbonPageGroup;
         private XtraBars.BarButtonItem bbiEffacer;
-        private XtraBars.BarButtonItem barButtonItem10;
+        private XtraBars.BarButtonItem bbiRefresh;
         private XtraBars.BarButtonItem barButtonItem11;
         private XtraBars.BarButtonItem barButtonItem12;
         private XtraBars.BarButtonItem barButtonItem13;
@@ -2139,5 +2124,6 @@
         private XtraEditors.Repository.RepositoryItemSearchLookUpEdit RISLUProduct;
         private XtraGrid.Views.Grid.GridView repositoryItemSearchLookUpEdit1View;
         private System.Windows.Forms.BindingSource communesBindingSource;
+        private XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit1;
     }
 }

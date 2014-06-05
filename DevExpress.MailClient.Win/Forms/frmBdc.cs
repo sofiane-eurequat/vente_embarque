@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -24,7 +25,6 @@ namespace DevExpress.MailClient.Win.Forms
         public IEnumerable<Client> Clients { get; set; }
         public IEnumerable<Stock> Stocks { get; set; }
         public IEnumerable<Order> Orders { get; set; }
-        public OrderLine OrderLine { get; set; }
         public List<OrderLine> OrderLines =new List<OrderLine>();
         public OrderLine LigneCommande { get; set; }
 
@@ -40,21 +40,35 @@ namespace DevExpress.MailClient.Win.Forms
         public frmBdc(ModelViewBdc Bdc, bool newBdc, string caption)
         {
             InitializeComponent();
-            LigneCommande = null;
+            LigneCommande = null; 
             var repositoryClient = new RepositoryClient();
             var repositoryStock = new RepositoryStock();
             var repositoryOrder = new RepositoryOrder();
-            editBdcPresenter = new EditBdcPresenterPage(this, repositoryClient,repositoryStock,repositoryOrder);
+            editBdcPresenter = new EditBdcPresenterPage(this, repositoryClient,repositoryStock,repositoryOrder,OrderLines);
             editBdcPresenter.Display();
 
             comboBoxClients.DataSource = Clients.OrderBy(cl => cl.Name).ToList();
             comboBoxClients.DisplayMember = "Name";
+            comboBoxPriorite.DataSource = Enum.GetValues(typeof(Priorite));
 
-            comboBoxPriorite.DataSource= Enum.GetValues(typeof(Priorite));
-
-            GCOrderLine.DataSource = OrderLines;
-            //gridViewOrderLine.Columns[0].FieldName = "Name";
-            colProduct.FieldName = "Name";
+            if (!newBdc)
+            {
+                var clientName = Bdc.Client;
+                comboBoxClients.DisplayMember = "Name";
+                //var cl = Clients.First(c => c.Name == clientName);
+                //comboBoxClients.SelectedItem = Clients.First(c=>c.Name == clientName);
+                comboBoxPriorite.SelectedItem = Bdc.Priorite;
+                dateEditLivraison.Text = Bdc.DateLivraison.ToShortDateString();
+                memoEditAdresssLivraion.Text = Bdc.AdresseLivraison;
+                GCOrderLine.DataSource = Bdc.OrderLines;
+                
+            }
+            else
+            {
+                GCOrderLine.DataSource = OrderLines;
+                //gridViewOrderLine.Columns[0].FieldName = "Name";
+                colProduct.FieldName = "Name";
+            }
 
             this.newBdc = newBdc;
             DialogResult = DialogResult.Cancel;
@@ -72,16 +86,6 @@ namespace DevExpress.MailClient.Win.Forms
             GCOrderLine.RefreshDataSource();
             Cursor.Current = Cursors.Default;
         }
-        
-        private void bbiSuppOrderLine_temClick(object sender, ItemClickEventArgs e)
-        {
-
-        }
-
-        private void frmBdc_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void bbiNouveau_ItemClick(object sender, ItemClickEventArgs e)
         {
@@ -95,7 +99,7 @@ namespace DevExpress.MailClient.Win.Forms
 
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
         {
-
+            editBdcPresenter.Write(comboBoxClients.SelectedItem as Client, OrderLines, (Priorite)comboBoxPriorite.SelectedItem, dateEditLivraison.DateTime, memoEditAdresssLivraion.Text);
             Close();
         }
 

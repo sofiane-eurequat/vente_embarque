@@ -480,6 +480,7 @@
     <None Include="Resources\textbox_32x32.png" />
     <None Include="Resources\textbox_32x321.png" />
     <None Include="Resources\textbox_32x322.png" />
+    <None Include="Resources\product_32x32.png" />
     <Content Include="Resources\Valid_12x12.png" />
     <Content Include="Resources\Valid_32x32.png" />
     <Content Include="Resources\Mail_32x32.png" />
