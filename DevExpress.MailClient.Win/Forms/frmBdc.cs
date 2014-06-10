@@ -50,7 +50,7 @@ namespace DevExpress.MailClient.Win.Forms
             comboBoxClients.DataSource = Clients.OrderBy(cl => cl.Name).ToList();
             comboBoxClients.DisplayMember = "Name";
             comboBoxPriorite.DataSource = Enum.GetValues(typeof(Priorite));
-
+            
             if (!newBdc)
             {
                 var clientName = Bdc.Client;
@@ -60,12 +60,19 @@ namespace DevExpress.MailClient.Win.Forms
                 comboBoxPriorite.SelectedItem = Bdc.Priorite;
                 dateEditLivraison.Text = Bdc.DateLivraison.ToShortDateString();
                 memoEditAdresssLivraion.Text = Bdc.AdresseLivraison;
-                GCOrderLine.DataSource = Bdc.OrderLines;
-                
+                //OrderLines  = Bdc.OrderLines;
+                var orderline1 = new OrderLine();
+                foreach (var lc in Bdc.OrderLines)
+                {
+                    orderline1.id = lc.Id;
+                    orderline1.Product = lc.Product;
+                    orderline1.Quantity = lc.Quantity;
+                    OrderLines.Add(orderline1);
+                }
+                GCOrderLine.DataSource = OrderLines;
             }
             else
             {
-                GCOrderLine.DataSource = OrderLines;
                 //gridViewOrderLine.Columns[0].FieldName = "Name";
                 colProduct.FieldName = "Name";
             }

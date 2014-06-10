@@ -9,18 +9,6 @@ D:\Projets\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.Mode
 D:\Projets\vente_embarque\vente_embarque.presenter\obj\Debug\vente_embarque.presenter.csprojResolveAssemblyReference.cache
 D:\Projets\vente_embarque\vente_embarque.presenter\obj\Debug\vente_embarque.presenter.dll
 D:\Projets\vente_embarque\vente_embarque.presenter\obj\Debug\vente_embarque.presenter.pdb
-C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.presenter.dll
-C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.presenter.pdb
-C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.Core.dll
-C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.DataLayer.dll
-C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.Model.dll
-C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.Core.pdb
-C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.DataLayer.pdb
-C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.Model.pdb
-C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\obj\Debug\vente_embarque.presenter.csprojResolveAssemblyReference.cache
-C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\obj\Debug\vente_embarque.presenter.dll
-C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\obj\Debug\vente_embarque.presenter.pdb
-C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\obj\Debug\vente_embarque.presenter.dll.licenses
 D:\vente_embarque\vente_embarque.presenter\obj\Debug\vente_embarque.presenter.csprojResolveAssemblyReference.cache
 D:\vente_embarque\vente_embarque.presenter\obj\Debug\vente_embarque.presenter.dll.licenses
 D:\vente_embarque\vente_embarque.presenter\obj\Debug\vente_embarque.presenter.dll
@@ -33,3 +21,15 @@ D:\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.Model.dll
 D:\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.Core.pdb
 D:\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.DataLayer.pdb
 D:\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.Model.pdb
+C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.presenter.dll
+C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.presenter.pdb
+C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.Core.dll
+C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.DataLayer.dll
+C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.Model.dll
+C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.Core.pdb
+C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.DataLayer.pdb
+C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\bin\Debug\vente_embarque.Model.pdb
+C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\obj\Debug\vente_embarque.presenter.csprojResolveAssemblyReference.cache
+C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\obj\Debug\vente_embarque.presenter.dll.licenses
+C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\obj\Debug\vente_embarque.presenter.dll
+C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\vente_embarque.presenter\obj\Debug\vente_embarque.presenter.pdb

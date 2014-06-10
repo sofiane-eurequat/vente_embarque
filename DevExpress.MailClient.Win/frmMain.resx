@@ -444,7 +444,7 @@
   <data name="bbiNew.Caption" xml:space="preserve">
     <value>Nouveau Stock</value>
   </data>
-  <data name="bbiReply.Caption" xml:space="preserve">
+  <data name="bbiNewProduct.Caption" xml:space="preserve">
     <value>Ajouter Produit</value>
   </data>
   <data name="bbiForward.Caption" xml:space="preserve">
@@ -1650,7 +1650,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOwwAADsMBx2+oZAAAJJ5JREFUeF7teweQnlWW
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOwgAADsIBFShKgAAAJJ5JREFUeF7teweQnlWW
         3dq7VS5P1dZsGNtVO7MzXmDYWQZEEAgQkhBCEsqppe5WB3W3Ouecc84555xzzjlHdc7qqA7KEkGAJDg+
         72va1oIAFZbLLtd08er7E///vvPOvffc857+Cn/5+wECf/UXTH6IwHMH5Vv+xjfffMvxDb55/AjffvNY
         GuLxN+IqXhfj22/B/yA+///a33MB5fHjb/Ho4UM8+OILrC3NY6yrHmMt+RirCMd0TQSmayMxXhWB0ZoE
@@ -3979,10 +3979,10 @@
   <data name="&gt;&gt;bbiNew.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;bbiReply.Name" xml:space="preserve">
-    <value>bbiReply</value>
+  <data name="&gt;&gt;bbiNewProduct.Name" xml:space="preserve">
+    <value>bbiNewProduct</value>
   </data>
-  <data name="&gt;&gt;bbiReply.Type" xml:space="preserve">
+  <data name="&gt;&gt;bbiNewProduct.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiForward.Name" xml:space="preserve">

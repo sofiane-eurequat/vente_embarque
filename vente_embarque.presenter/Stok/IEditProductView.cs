@@ -7,8 +7,10 @@ using vente_embarque.Model;
 
 namespace vente_embarque.presenter.Stok
 {
-    public interface IEditStockView
+    public interface IEditProductView
     {
-        IEnumerable<Wilaya> Wilayas { get; set; } 
+        IEnumerable<Stock> Stocks { get; set; }
+        IEnumerable<Category> Categories { get; set; }
+        IEnumerable<Marque> Marques { get; set; } 
     }
 }

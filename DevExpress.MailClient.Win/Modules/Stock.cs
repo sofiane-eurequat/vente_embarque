@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
+using DevExpress.MailClient.Win.Forms;
 using DevExpress.MailClient.Win.Properties;
 using DevExpress.XtraEditors.Controls;
 using DevExpress.XtraEditors.Repository;
@@ -286,8 +287,8 @@ namespace DevExpress.MailClient.Win.Modules {
                 case TagResources.NewStock:
                     CreateStock();
                     break;
-                case TagResources.Reply:
-                    CreateReplyMailMessage();
+                case TagResources.NewProduct:
+                    CreateProduct();
                     break;
                 case TagResources.ReplyAll:
                     CreateReplyAllMailMessages();
@@ -338,16 +339,32 @@ namespace DevExpress.MailClient.Win.Modules {
             var stock = new ModelViewStock();
             EditStock(stock, true, null);
         }
+
+        void CreateProduct()
+        {
+            EditProduct();
+        }
+
         void EditStock(ModelViewStock stock, bool newStock, string caption)
         {
             Cursor.Current = Cursors.WaitCursor;
-            frmEditStock form = new frmEditStock(stock, newStock, caption);
+            var form = new frmEditStock(stock, newStock, caption);
             form.Load += OnEditMailFormLoad;
             form.FormClosed += OnEditMailFormClosed;
             form.Location = new Point(OwnerForm.Left + (OwnerForm.Width - form.Width) / 2, OwnerForm.Top + (OwnerForm.Height - form.Height) / 2);
             form.Show();
             Cursor.Current = Cursors.Default;
         }
+
+        void EditProduct()
+        {
+            Cursor.Current = Cursors.WaitCursor;
+            var form = new frmEditProduct();
+            form.Location = new Point(OwnerForm.Left + (OwnerForm.Width - form.Width) / 2, OwnerForm.Top + (OwnerForm.Height - form.Height) / 2);
+            form.ShowDialog();
+            Cursor.Current = Cursors.Default;
+        }
+
         void CreateReplyAllMailMessages() {
             foreach (int row in gridViewStock.GetSelectedRows())
                 CreateReplyMailMessage(row);

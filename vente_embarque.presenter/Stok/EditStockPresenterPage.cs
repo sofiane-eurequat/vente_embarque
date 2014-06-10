@@ -11,11 +11,12 @@ namespace vente_embarque.presenter.Stok
 {
     public class EditStockPresenterPage:IEditStockPagePresenter
     {
-        private readonly IEditStockView _EditStockView;
-        private IRepository<Wilaya, Guid> _repositoryWilaya;
+        private readonly IEditStockView _editStockView;
+        private readonly IRepository<Wilaya, Guid> _repositoryWilaya;
+
         public EditStockPresenterPage(IEditStockView editStockView,IRepository<Wilaya,Guid> repository)
         {
-            _EditStockView = editStockView;
+            _editStockView = editStockView;
             _repositoryWilaya = repository;
         }
 
@@ -23,7 +24,7 @@ namespace vente_embarque.presenter.Stok
 
         public void Display()
         {
-            _EditStockView.Wilayas = _repositoryWilaya.FindAll();
+            _editStockView.Wilayas = _repositoryWilaya.FindAll();
         }
 
         public void Write()

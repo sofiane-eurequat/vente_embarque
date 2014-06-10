@@ -177,8 +177,6 @@ namespace DevExpress.MailClient.Win.Modules
         {
             if (gridViewOrder == null) return;
             var order = (ModelViewBdc)gridViewOrder.GetFocusedRow();
-            //var idorder = (Guid)gridViewOrder.GetFocusedRowCellValue("Id");
-            //var order = _repositoryOrder.FindBy(idorder);
             ModifyBdc(order);
         }
 

@@ -172,6 +172,7 @@
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.RPGFermer = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemRichEditStyleEdit1 = new DevExpress.XtraRichEdit.Design.RepositoryItemRichEditStyleEdit();
+            this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.statusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.spellChecker1 = new DevExpress.XtraSpellChecker.SpellChecker(this.components);
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
@@ -212,7 +213,6 @@
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).BeginInit();
@@ -221,6 +221,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemBorderLineWeight1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFloatingObjectOutlineWeight1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRichEditStyleEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.richEditBarController1)).BeginInit();
@@ -239,7 +240,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtcLignesProduit)).BeginInit();
             this.xtcLignesProduit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -1499,6 +1499,11 @@
             this.repositoryItemRichEditStyleEdit1.Control = null;
             this.repositoryItemRichEditStyleEdit1.Name = "repositoryItemRichEditStyleEdit1";
             // 
+            // repositoryItemTextEdit1
+            // 
+            resources.ApplyResources(this.repositoryItemTextEdit1, "repositoryItemTextEdit1");
+            this.repositoryItemTextEdit1.Name = "repositoryItemTextEdit1";
+            // 
             // statusBar
             // 
             resources.ApplyResources(this.statusBar, "statusBar");
@@ -1693,21 +1698,25 @@
             // 
             // labelAdress
             // 
+            this.labelAdress.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelAdress.Appearance.Font")));
             resources.ApplyResources(this.labelAdress, "labelAdress");
             this.labelAdress.Name = "labelAdress";
             // 
             // labelWilaya
             // 
+            this.labelWilaya.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelWilaya.Appearance.Font")));
             resources.ApplyResources(this.labelWilaya, "labelWilaya");
             this.labelWilaya.Name = "labelWilaya";
             // 
             // labelComune
             // 
+            this.labelComune.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelComune.Appearance.Font")));
             resources.ApplyResources(this.labelComune, "labelComune");
             this.labelComune.Name = "labelComune";
             // 
             // labelNameStock
             // 
+            this.labelNameStock.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelNameStock.Appearance.Font")));
             resources.ApplyResources(this.labelNameStock, "labelNameStock");
             this.labelNameStock.Name = "labelNameStock";
             // 
@@ -1882,11 +1891,6 @@
             this.barDockControlRight.CausesValidation = false;
             resources.ApplyResources(this.barDockControlRight, "barDockControlRight");
             // 
-            // repositoryItemTextEdit1
-            // 
-            resources.ApplyResources(this.repositoryItemTextEdit1, "repositoryItemTextEdit1");
-            this.repositoryItemTextEdit1.Name = "repositoryItemTextEdit1";
-            // 
             // frmEditStock
             // 
             resources.ApplyResources(this, "$this");
@@ -1912,6 +1916,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemBorderLineWeight1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFloatingObjectOutlineWeight1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRichEditStyleEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.richEditBarController1)).EndInit();
@@ -1931,7 +1936,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtcLignesProduit)).EndInit();
             this.xtcLignesProduit.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
             this.ResumeLayout(false);
 
         }

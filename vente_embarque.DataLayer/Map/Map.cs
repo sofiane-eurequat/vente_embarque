@@ -109,26 +109,36 @@ namespace vente_embarque.DataLayer.Map
 
         public static XpoOrder MapOrder(Order order, UnitOfWork uow)
         {
-            var xpoOrder= new XpoOrder(uow)
-                {
-                    Oid = order.id,
-                    Priorite = order.Priorite,
-                    //Delivery = order.Livraison
-                    //todo : a implementer lors du lancement du module livraison
-                };
-            xpoOrder.Client = MapClient(order.Client, uow);
-            if (order.OrderLines == null) return xpoOrder;
+            XpoOrder orderReturned;
+            order.newObject = false;
+            if (order.newObject)
+            {
+                orderReturned = new XpoOrder(uow)
+                    {
+                        Oid = order.id
+                    };
+            }
+            else
+            {
+                orderReturned = uow.GetObjectByKey<XpoOrder>(order.id);
+            }
+            orderReturned.Client = MapClient(order.Client, uow);
+            orderReturned.Priorite = order.Priorite;
+            //orderReturned.Delivery=order.Livraison
+            //todo : a implementer lors du lancement du module livraison 
+
+            if (order.OrderLines == null) return orderReturned;
             foreach (var ol in order.OrderLines)
             {
                 var xpl = new XpoOrderLine(uow)
-                    {
-                        Oid = ol.id,
-                        Quantity = ol.Quantity,
-                        Product = uow.GetObjectByKey<XpoProduct>(ol.Product.id)
-                    };
-                xpoOrder.OrderLines.Add(xpl); 
+                {
+                    Oid = ol.id,
+                    Quantity = ol.Quantity,
+                    Product = uow.GetObjectByKey<XpoProduct>(ol.Product.id)
+                };
+                orderReturned.OrderLines.Add(xpl);
             }
-            return xpoOrder;
+            return orderReturned;
         }
        
         public static XpoClient MapClient(Client client, UnitOfWork uow)

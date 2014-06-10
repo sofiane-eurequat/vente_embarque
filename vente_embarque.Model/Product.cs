@@ -30,7 +30,7 @@ namespace vente_embarque.Model
                     id = Guid.NewGuid(),
                     Remarque = remarque,
                     SiteReference = reference,
-                    Fournisseur =fournisseur,
+                    Fournisseur = fournisseur,
                     Marque = marque,
                     Category = category,
                     TypeGestion = typeGestion,

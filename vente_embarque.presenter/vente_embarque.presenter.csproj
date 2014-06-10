@@ -56,7 +56,9 @@
     <Compile Include="Secteur\IEditSecteurView.cs" />
     <Compile Include="Secteur\ISecteurView.cs" />
     <Compile Include="Secteur\SecteurPresenterPage.cs" />
+    <Compile Include="Stok\EditProductPresenterPage.cs" />
     <Compile Include="Stok\EditStockPresenterPage.cs" />
+    <Compile Include="Stok\IEditProductView.cs" />
     <Compile Include="Stok\IEditStockView.cs" />
     <Compile Include="Stok\IStockView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

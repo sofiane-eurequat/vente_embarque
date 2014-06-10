@@ -1108,11 +1108,14 @@
   <data name="&gt;&gt;comboBoxWilaya.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="labelAdress.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.25pt</value>
+  </data>
   <data name="labelAdress.Location" type="System.Drawing.Point, System.Drawing">
     <value>422, 83</value>
   </data>
   <data name="labelAdress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 13</value>
+    <value>50, 14</value>
   </data>
   <data name="labelAdress.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1132,11 +1135,14 @@
   <data name="&gt;&gt;labelAdress.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="labelWilaya.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.25pt</value>
+  </data>
   <data name="labelWilaya.Location" type="System.Drawing.Point, System.Drawing">
     <value>422, 37</value>
   </data>
   <data name="labelWilaya.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 13</value>
+    <value>34, 14</value>
   </data>
   <data name="labelWilaya.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1156,11 +1162,14 @@
   <data name="&gt;&gt;labelWilaya.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="labelComune.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.25pt</value>
+  </data>
   <data name="labelComune.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 77</value>
   </data>
   <data name="labelComune.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 13</value>
+    <value>55, 14</value>
   </data>
   <data name="labelComune.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1180,11 +1189,14 @@
   <data name="&gt;&gt;labelComune.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="labelNameStock.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
   <data name="labelNameStock.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 37</value>
   </data>
   <data name="labelNameStock.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 13</value>
+    <value>79, 14</value>
   </data>
   <data name="labelNameStock.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1573,7 +1585,7 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>71</value>
+    <value>84</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
@@ -2707,6 +2719,12 @@
   <data name="&gt;&gt;repositoryItemRichEditStyleEdit1.Type" xml:space="preserve">
     <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditStyleEdit, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="&gt;&gt;repositoryItemTextEdit1.Name" xml:space="preserve">
+    <value>repositoryItemTextEdit1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemTextEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTextEdit, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="&gt;&gt;spellChecker1.Name" xml:space="preserve">
     <value>spellChecker1</value>
   </data>
@@ -2838,12 +2856,6 @@
   </data>
   <data name="&gt;&gt;barButtonItem15.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;repositoryItemTextEdit1.Name" xml:space="preserve">
-    <value>repositoryItemTextEdit1</value>
-  </data>
-  <data name="&gt;&gt;repositoryItemTextEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemTextEdit, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmEditStock</value>

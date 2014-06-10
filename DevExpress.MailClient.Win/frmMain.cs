@@ -57,7 +57,7 @@ namespace DevExpress.MailClient.Win {
             InitBarButtonItem(bbiFlipLayout, TagResources.FlipLayout, Properties.Resources.FlipLayoutDescription);
             InitBarButtonItem(bbiDelete, TagResources.DeleteItem, Properties.Resources.DeleteItemDescription);
             InitBarButtonItem(bbiNew, TagResources.NewStock, Properties.Resources.NewItemDescription);
-            InitBarButtonItem(bbiReply, TagResources.Reply, Properties.Resources.ReplyDescription);
+            InitBarButtonItem(bbiNewProduct, TagResources.NewProduct, Properties.Resources.NewItemDescription);
             InitBarButtonItem(bbiReplyAll, TagResources.ReplyAll, Properties.Resources.ReplyAllDescription);
             InitBarButtonItem(bbiForward, TagResources.Forward, Properties.Resources.ForwardDescription);
             InitBarButtonItem(bbiUnreadRead, TagResources.UnreadRead, Properties.Resources.UnreadReadDescription);
@@ -178,7 +178,7 @@ namespace DevExpress.MailClient.Win {
             bbiPriority.Enabled = enabled;
         }
         internal void EnableMail(bool enabled, bool unread) {
-            bbiReply.Enabled = enabled && currentMailType == MailType.Inbox;
+            bbiNewProduct.Enabled = enabled && currentMailType == MailType.Inbox;
             bbiReplyAll.Enabled = enabled && currentMailType == MailType.Inbox;
             bbiForward.Enabled = enabled && currentMailType == MailType.Inbox;
         }
