@@ -16,10 +16,9 @@ using vente_embarque.presenter.Stok;
 
 namespace DevExpress.MailClient.Win.Forms
 {
-    public partial class frmEditProduct : RibbonForm, IEditProductView
+    public partial class frmEditProduct : RibbonForm
     {
         private EditProductPresenterPage editProductPresenter;
-        public IEnumerable<Stock> Stocks { get; set; }
         public IEnumerable<Category> Categories { get; set; }
         public IEnumerable<Marque> Marques { get; set; }
 
@@ -27,15 +26,13 @@ namespace DevExpress.MailClient.Win.Forms
         {
             InitializeComponent();
 
-            var repositoryStock = new RepositoryStock();
             var repositoryCategory = new RepositoryCategory();
             var repositoryMarque = new RepositoryMarque();
+            var repositoryProduit = new RepositoryProduct();
 
-            editProductPresenter=new EditProductPresenterPage(this,repositoryStock,repositoryCategory,repositoryMarque);
+            editProductPresenter=new EditProductPresenterPage(this,repositoryCategory,repositoryMarque,repositoryProduit);
             editProductPresenter.Display();
 
-            comboBoxStock.DataSource = Stocks;
-            comboBoxStock.DisplayMember = "Name";
             comboBoxCategory.DataSource = Categories;
             comboBoxCategory.DisplayMember = "Name";
             comboBoxMarque.DataSource = Marques;
@@ -51,18 +48,18 @@ namespace DevExpress.MailClient.Win.Forms
 
         private void bbiSave_ItemClick(object sender, ItemClickEventArgs e)
         {
-
+            editProductPresenter.Write(textEditNameProduct.Text,comboBoxCategory.SelectedItem as Category, comboBoxMarque.SelectedItem as Marque,textEditFournisseur.Text,Convert.ToInt32(textEditQuantité.Text), (GestionProduit)comboBoxTypeGestion.SelectedItem);
         }
 
         private void bbiSaveClsoe_ItemClick(object sender, ItemClickEventArgs e)
         {
-
+            editProductPresenter.Write(textEditNameProduct.Text, comboBoxCategory.SelectedItem as Category, comboBoxMarque.SelectedItem as Marque, textEditFournisseur.Text, Convert.ToInt32(textEditQuantité.Text), (GestionProduit)comboBoxTypeGestion.SelectedItem);
+            Close();
         }
 
         private void bbiClear_ItemClick(object sender, ItemClickEventArgs e)
         {
             textEditNameProduct.Text = "";
-            comboBoxStock.Text = "";
             comboBoxCategory.Text = "";
             comboBoxMarque.Text = "";
             textEditFournisseur.Text = "";

@@ -59,9 +59,7 @@ namespace DevExpress.MailClient.Win.Forms{
             this.comboBoxMarque = new System.Windows.Forms.ComboBox();
             this.textEditNameProduct = new DevExpress.XtraEditors.TextEdit();
             this.labelNameProduit = new DevExpress.XtraEditors.LabelControl();
-            this.comboBoxStock = new System.Windows.Forms.ComboBox();
             this.labelMarque = new DevExpress.XtraEditors.LabelControl();
-            this.labelNameStock = new DevExpress.XtraEditors.LabelControl();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -215,9 +213,7 @@ namespace DevExpress.MailClient.Win.Forms{
             this.GCInfoGeneral.Controls.Add(this.comboBoxMarque);
             this.GCInfoGeneral.Controls.Add(this.textEditNameProduct);
             this.GCInfoGeneral.Controls.Add(this.labelNameProduit);
-            this.GCInfoGeneral.Controls.Add(this.comboBoxStock);
             this.GCInfoGeneral.Controls.Add(this.labelMarque);
-            this.GCInfoGeneral.Controls.Add(this.labelNameStock);
             resources.ApplyResources(this.GCInfoGeneral, "GCInfoGeneral");
             this.GCInfoGeneral.Name = "GCInfoGeneral";
             // 
@@ -306,25 +302,11 @@ namespace DevExpress.MailClient.Win.Forms{
             resources.ApplyResources(this.labelNameProduit, "labelNameProduit");
             this.labelNameProduit.Name = "labelNameProduit";
             // 
-            // comboBoxStock
-            // 
-            this.comboBoxStock.DisplayMember = "id";
-            this.comboBoxStock.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBoxStock, "comboBoxStock");
-            this.comboBoxStock.Name = "comboBoxStock";
-            this.comboBoxStock.ValueMember = "id";
-            // 
             // labelMarque
             // 
             this.labelMarque.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelMarque.Appearance.Font")));
             resources.ApplyResources(this.labelMarque, "labelMarque");
             this.labelMarque.Name = "labelMarque";
-            // 
-            // labelNameStock
-            // 
-            this.labelNameStock.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelNameStock.Appearance.Font")));
-            resources.ApplyResources(this.labelNameStock, "labelNameStock");
-            this.labelNameStock.Name = "labelNameStock";
             // 
             // ribbonPageGroup2
             // 
@@ -418,8 +400,6 @@ namespace DevExpress.MailClient.Win.Forms{
         private XtraRichEdit.UI.RichEditBarController richEditBarController1;
         private XtraEditors.GroupControl GCInfoGeneral;
         private XtraEditors.LabelControl labelMarque;
-        private XtraEditors.LabelControl labelNameStock;
-        private System.Windows.Forms.ComboBox comboBoxStock;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;

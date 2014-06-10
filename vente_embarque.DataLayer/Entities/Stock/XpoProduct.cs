@@ -22,56 +22,55 @@ namespace vente_embarque.DataLayer.Entities.Stock
             // Do not place any code here.
         }
 
-
-        private Guid _Oid;
+        private Guid _oid;
         [Key]
         public Guid Oid
         {
-            get { return _Oid; }
-            set { SetPropertyValue("Oid", ref _Oid, value); }
+            get { return _oid; }
+            set { SetPropertyValue("Oid", ref _oid, value); }
         }
 
-
-        private String _Name;
+        private String _name;
         public String Name
         {
-            get { return _Name; }
-            set { SetPropertyValue("Name", ref _Name, value); }
+            get { return _name; }
+            set { SetPropertyValue("Name", ref _name, value); }
         }
 
-
-
-        private GestionProduit _TypeGestion;
+        private GestionProduit _typeGestion;
         public GestionProduit TypeGestion
         {
-            get { return _TypeGestion; }
-            set { SetPropertyValue("TypeGestion", ref _TypeGestion, value); }
+            get { return _typeGestion; }
+            set { SetPropertyValue("TypeGestion", ref _typeGestion, value); }
         }
 
-        private int _QuantityMin;
+        private int _quantityMin;
         public int QuantityMin
         {
-            get { return _QuantityMin; }
-            set { SetPropertyValue("QuantityMin", ref _QuantityMin, value); }
+            get { return _quantityMin; }
+            set { SetPropertyValue("QuantityMin", ref _quantityMin, value); }
         }
 
-
-        private XpoCategory _Category;
-
+        private XpoCategory _category;
         public XpoCategory Category
         {
-            get { return _Category; }
-            set { SetPropertyValue("Category", ref _Category, value); }
+            get { return _category; }
+            set { SetPropertyValue("Category", ref _category, value); }
         }
 
-        private XpoMarque _Marque;
-
+        private XpoMarque _marque;
         public XpoMarque Marque
         {
-            get { return _Marque; }
-            set { SetPropertyValue("Marque", ref _Marque, value); }
+            get { return _marque; }
+            set { SetPropertyValue("Marque", ref _marque, value); }
         }
 
+        private String _fournisseur;
+        public String Fournisseur
+        {
+            get { return _fournisseur; }
+            set { SetPropertyValue("Name", ref _fournisseur, value); }
+        }
 
         [Aggregated, Association("XpoProduct-XpoproductLine")]
         XPCollection<XpoProductLine> ProductLines
@@ -79,9 +78,6 @@ namespace vente_embarque.DataLayer.Entities.Stock
             get { return GetCollection<XpoProductLine>("ProductLines"); }
         }
 
-
-
-      
         [Association("XpoProduct-XpoOrderLine")]
         XPCollection<XpoOrderLine> OrderLines
         {

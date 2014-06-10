@@ -9,7 +9,6 @@ namespace vente_embarque.presenter.Stok
 {
     public interface IEditProductView
     {
-        IEnumerable<Stock> Stocks { get; set; }
         IEnumerable<Category> Categories { get; set; }
         IEnumerable<Marque> Marques { get; set; } 
     }
