@@ -1,4 +1,5 @@
 ﻿using vente_embarque.presenter.Bdc;
+using ModelViewProduct = vente_embarque.presenter.Stok.ModelViewProduct;
 
 namespace DevExpress.MailClient.Win.Modules
 {
@@ -212,7 +213,7 @@ namespace DevExpress.MailClient.Win.Modules
             // 
             // modelViewProductBindingSource
             // 
-            this.modelViewProductBindingSource.DataSource = typeof(vente_embarque.presenter.ModelViewProduct);
+            this.modelViewProductBindingSource.DataSource = typeof(ModelViewProduct);
             // 
             // layoutViewProduct
             // 

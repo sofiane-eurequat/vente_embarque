@@ -1,7 +1,7 @@
 ﻿using vente_embarque.presenter.Stok;
 
 namespace DevExpress.MailClient.Win.Forms{
-    partial class frmEditProduct : IEditProductView
+    partial class FrmEditProduct : IEditProductView
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace DevExpress.MailClient.Win.Forms{
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEditProduct));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEditProduct));
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.applicationMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.bbiNew = new DevExpress.XtraBars.BarButtonItem();
@@ -372,7 +372,7 @@ namespace DevExpress.MailClient.Win.Forms{
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
             this.KeyPreview = true;
-            this.Name = "frmEditProduct";
+            this.Name = "FrmEditProduct";
             this.Ribbon = this.ribbon;
             this.StatusBar = this.ribbonStatusBar;
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();

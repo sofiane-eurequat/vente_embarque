@@ -17,6 +17,9 @@ namespace vente_embarque.DataLayer.Map
            var stock = new Stock(xpoStock.Name)
                {
                    id = xpoStock.Oid,
+                   Wilaya = MapWilaya(xpoStock.Wilaya),
+                   Commune = MapCommune(xpoStock.Commune),
+                   Adress = xpoStock.Adress,
                    ProductLines = MapProdcutLine(xpoStock.ProductLines),
                };
            return stock;
@@ -32,12 +35,15 @@ namespace vente_embarque.DataLayer.Map
 
         public static Order MapOrder(XpoOrder xpoOrder)
         {
-            var order = new Order()
-            {
+            var order = new Order
+                {
                 id = xpoOrder.Oid,
                 OrderLines = MapOrderLine(xpoOrder.OrderLines),
+                NumCommande = xpoOrder.NumCommadne,
                 Client = MapClient(xpoOrder.Client),
                 Priorite = xpoOrder.Priorite,
+                Etat = xpoOrder.Etat,
+                LivraisonSurPlace = xpoOrder.LivraisonSurPlace,
                 newObject = false
             };
             return order;
@@ -98,16 +104,25 @@ namespace vente_embarque.DataLayer.Map
                 };
         }
 
-        private static IEnumerable<Commune> MapCommunes(XPCollection<XpoCommune> communes)
+        private static Commune MapCommune(XpoCommune xpoCommune)
+        {
+            return new Commune
+            {
+                Name = xpoCommune.Name,
+                id = xpoCommune.Oid,
+            };
+        }
+
+        private static IEnumerable<Commune> MapCommunes(IEnumerable<XpoCommune> communes)
         {
 
-            var ListeCommunes = communes.Select(xpoCommune => new Commune
+            var listeCommunes = communes.Select(xpoCommune => new Commune
                 {
                     Name = xpoCommune.Name,
                     id = xpoCommune.Oid
                 });
 
-            return ListeCommunes;
+            return listeCommunes;
         }
 
         public static AgentTerrain MapAgentTerrain(XpoAgentTerrain xpoAgentTerrain)

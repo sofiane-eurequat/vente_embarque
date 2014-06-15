@@ -161,6 +161,12 @@
     <Compile Include="Controls\ucMessageInfo.Designer.cs">
       <DependentUpon>ucMessageInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\fmEditProductLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fmEditProductLine.Designer.cs">
+      <DependentUpon>fmEditProductLine.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmAgentTerrainAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -333,6 +339,9 @@
     <EmbeddedResource Include="Controls\ucMessageInfo.resx">
       <DependentUpon>ucMessageInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fmEditProductLine.resx">
+      <DependentUpon>fmEditProductLine.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmAgentTerrainAdd.resx">
       <DependentUpon>frmAgentTerrainAdd.cs</DependentUpon>
     </EmbeddedResource>
@@ -354,6 +363,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmEditProduct.resx">
       <DependentUpon>frmEditProduct.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Stock\frmEditStock.resx">
       <DependentUpon>frmEditStock.cs</DependentUpon>

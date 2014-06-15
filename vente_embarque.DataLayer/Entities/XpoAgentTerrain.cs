@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DevExpress.Xpo;
 using vente_embarque.DataLayer.Entities.Orders;
 
@@ -11,7 +7,6 @@ namespace vente_embarque.DataLayer.Entities
     public class XpoAgentTerrain: XPBaseObject
     {
         public XpoAgentTerrain()
-            : base()
         {
             
         }
@@ -22,29 +17,29 @@ namespace vente_embarque.DataLayer.Entities
 
         }
 
-        private Guid _Oid;
+        private Guid _oid;
         [Key]
         public Guid Oid
         {
-            get { return _Oid; }
-            set { SetPropertyValue("Oid", ref _Oid, value); }
+            get { return _oid; }
+            set { SetPropertyValue("Oid", ref _oid, value); }
         }
 
 
-        private String _Name;
+        private String _name;
         public String Name
         {
-            get { return _Name; }
-            set { SetPropertyValue("Name", ref _Name, value); }
+            get { return _name; }
+            set { SetPropertyValue("Name", ref _name, value); }
         }
 
 
-        private XpoSector _Secteur;
+        private XpoSector _secteur;
         [Association("XpoAgentTerrain-XpoSector")]
         public XpoSector Secteur
         {
-            get { return _Secteur; }
-            set { SetPropertyValue("Secteur", ref _Secteur, value); }
+            get { return _secteur; }
+            set { SetPropertyValue("Secteur", ref _secteur, value); }
         }
     }
 }

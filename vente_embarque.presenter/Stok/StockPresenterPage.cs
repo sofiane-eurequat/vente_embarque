@@ -4,7 +4,8 @@ using vente_embarque.Core.Domain;
 using vente_embarque.Model;
 using vente_embarque.Model.Enum;
 using System.Drawing;
-namespace vente_embarque.presenter
+
+namespace vente_embarque.presenter.Stok
 {
     public class StockPresenterPage:IStockPagePresenter
     {
@@ -21,6 +22,8 @@ namespace vente_embarque.presenter
         public void Display()
         {
             var stock = _repositorystock.FindAll();
+            if (stock == null) return;
+        
             var tempStock = new List<ModelViewStock>();
 
             foreach (var stoc in stock)
@@ -28,8 +31,8 @@ namespace vente_embarque.presenter
                 var mvs=new ModelViewStock
                     {
                         Name = stoc.Name,
-                        Wilaya = stoc.Wilaya,
-                        Commune = stoc.Commune,
+                        Wilaya = stoc.Wilaya.Name,
+                        Commune = stoc.Commune.Name,
                         Id = stoc.id
                     };
                 mvs.ProductLine=new List<ModelViewProductLine>();

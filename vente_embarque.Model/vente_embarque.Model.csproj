@@ -44,6 +44,7 @@
     <Compile Include="Client.cs" />
     <Compile Include="Commune.cs" />
     <Compile Include="Delivery.cs" />
+    <Compile Include="Enum\GestionCommande.cs" />
     <Compile Include="Enum\GestionProduit.cs" />
     <Compile Include="Enum\Priorite.cs" />
     <Compile Include="Enum\ProduitInvendue.cs" />
@@ -53,7 +54,7 @@
     <Compile Include="OrderLine.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="ProductLine.cs" />
-    <Compile Include="Secteur.cs" />
+    <Compile Include="Sector.cs" />
     <Compile Include="Stock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Wilaya.cs" />

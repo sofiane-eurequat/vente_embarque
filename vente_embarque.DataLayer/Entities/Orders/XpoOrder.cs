@@ -28,27 +28,48 @@ namespace vente_embarque.DataLayer.Entities.Orders
         }
 
 
-        private Guid _Oid;
+        private Guid _oid;
         [Key]
          public Guid Oid
         {
-            get { return _Oid; }
-            set { SetPropertyValue("Oid", ref _Oid, value); }
+            get { return _oid; }
+            set { SetPropertyValue("Oid", ref _oid, value); }
+        }
+
+        private int _numCommande;
+        public int NumCommadne
+        {
+            get { return _numCommande; }
+            set { SetPropertyValue("Name", ref _numCommande, value); }
         }
         
-        private XpoClient _Client;
+        private XpoClient _client;
         [Association("XpoOrder-XpoClient")]
         public XpoClient Client
         {
-            get { return _Client; }
-            set { SetPropertyValue("Client", ref _Client, value); }
+            get { return _client; }
+            set { SetPropertyValue("Client", ref _client, value); }
         }
 
-        private Priorite _Priorite;
+        private Priorite _priorite;
         public Priorite Priorite
         {
-            get { return _Priorite; }
-            set { SetPropertyValue("Priorite", ref _Priorite, value); }
+            get { return _priorite; }
+            set { SetPropertyValue("Priorite", ref _priorite, value); }
+        }
+
+        private bool _livraisonSurPlace;
+        public bool LivraisonSurPlace
+        {
+            get { return _livraisonSurPlace; }
+            set { SetPropertyValue("Priorite", ref _livraisonSurPlace, value); }
+        }
+
+        private GestionCommande _etat;
+        public GestionCommande Etat
+        {
+            get { return _etat; }
+            set { SetPropertyValue("Priorite", ref _etat, value); }
         }
 
         [Aggregated, Association("XpoOrder-XpoOrderLine")]
@@ -57,12 +78,12 @@ namespace vente_embarque.DataLayer.Entities.Orders
             get { return GetCollection<XpoOrderLine>("OrderLines"); }
         }
 
-        private Delivery _Delivery;
+        private Delivery _delivery;
 
         public Delivery Delivery
         {
-            get { return _Delivery; }
-            set { SetPropertyValue("Delivery", ref _Delivery, value); }
+            get { return _delivery; }
+            set { SetPropertyValue("Delivery", ref _delivery, value); }
         }
 
     }

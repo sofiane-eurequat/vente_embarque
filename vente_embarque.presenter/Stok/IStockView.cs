@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using vente_embarque.Model;
+﻿using System.Collections.Generic;
 
-namespace vente_embarque.presenter
+namespace vente_embarque.presenter.Stok
 {
     public interface IStockView
     {

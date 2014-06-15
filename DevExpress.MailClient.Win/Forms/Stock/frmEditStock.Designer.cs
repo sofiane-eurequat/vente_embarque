@@ -175,8 +175,8 @@
             this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.statusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.spellChecker1 = new DevExpress.XtraSpellChecker.SpellChecker(this.components);
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
+            this.textEditNameStock = new DevExpress.XtraEditors.TextEdit();
+            this.textEditAdress = new DevExpress.XtraEditors.TextEdit();
             this.richEditBarController1 = new DevExpress.XtraRichEdit.UI.RichEditBarController();
             this.showFontFormItem1 = new DevExpress.XtraRichEdit.UI.ShowFontFormItem();
             this.showParagraphFormItem1 = new DevExpress.XtraRichEdit.UI.ShowParagraphFormItem();
@@ -222,8 +222,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFloatingObjectOutlineWeight1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRichEditStyleEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditNameStock.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditAdress.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.richEditBarController1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GCInfoGeneral)).BeginInit();
             this.GCInfoGeneral.SuspendLayout();
@@ -1358,6 +1358,7 @@
             this.bbiSauvegarderFermer.Id = 171;
             this.bbiSauvegarderFermer.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvegarderFermer.LargeGlyph")));
             this.bbiSauvegarderFermer.Name = "bbiSauvegarderFermer";
+            this.bbiSauvegarderFermer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiSauvegarderFermer_ItemClick);
             // 
             // bbiSupprimer
             // 
@@ -1448,6 +1449,7 @@
             this.NouveauRibbonPageGroup1.AllowTextClipping = false;
             this.NouveauRibbonPageGroup1.ItemLinks.Add(this.bbiNouveau);
             this.NouveauRibbonPageGroup1.Name = "NouveauRibbonPageGroup1";
+            this.NouveauRibbonPageGroup1.ShowCaptionButtonMode = DevExpress.XtraBars.Commands.Ribbon.ShowCaptionButtonMode.Hide;
             resources.ApplyResources(this.NouveauRibbonPageGroup1, "NouveauRibbonPageGroup1");
             // 
             // SauvegarderibbonPageGroup
@@ -1466,6 +1468,7 @@
             this.EditionRibbonPageGroup1.ItemLinks.Add(this.bbiValider);
             this.EditionRibbonPageGroup1.ItemLinks.Add(this.bbiAnnuler);
             this.EditionRibbonPageGroup1.Name = "EditionRibbonPageGroup1";
+            this.EditionRibbonPageGroup1.ShowCaptionButtonMode = DevExpress.XtraBars.Commands.Ribbon.ShowCaptionButtonMode.Hide;
             resources.ApplyResources(this.EditionRibbonPageGroup1, "EditionRibbonPageGroup1");
             // 
             // EditionEnregistremetRibbonPageGroup
@@ -1473,6 +1476,7 @@
             this.EditionEnregistremetRibbonPageGroup.AllowTextClipping = false;
             this.EditionEnregistremetRibbonPageGroup.ItemLinks.Add(this.bbiEffacer);
             this.EditionEnregistremetRibbonPageGroup.Name = "EditionEnregistremetRibbonPageGroup";
+            this.EditionEnregistremetRibbonPageGroup.ShowCaptionButtonMode = DevExpress.XtraBars.Commands.Ribbon.ShowCaptionButtonMode.Hide;
             resources.ApplyResources(this.EditionEnregistremetRibbonPageGroup, "EditionEnregistremetRibbonPageGroup");
             // 
             // ribbonPageGroup2
@@ -1516,21 +1520,21 @@
             this.spellChecker1.ParentContainer = null;
             this.spellChecker1.SpellCheckMode = DevExpress.XtraSpellChecker.SpellCheckMode.AsYouType;
             // 
-            // textEdit1
+            // textEditNameStock
             // 
-            resources.ApplyResources(this.textEdit1, "textEdit1");
-            this.textEdit1.MenuManager = this.ribbonControl;
-            this.textEdit1.Name = "textEdit1";
-            this.spellChecker1.SetShowSpellCheckMenu(this.textEdit1, true);
-            this.spellChecker1.SetSpellCheckerOptions(this.textEdit1, optionsSpelling1);
+            resources.ApplyResources(this.textEditNameStock, "textEditNameStock");
+            this.textEditNameStock.MenuManager = this.ribbonControl;
+            this.textEditNameStock.Name = "textEditNameStock";
+            this.spellChecker1.SetShowSpellCheckMenu(this.textEditNameStock, true);
+            this.spellChecker1.SetSpellCheckerOptions(this.textEditNameStock, optionsSpelling1);
             // 
-            // textEdit4
+            // textEditAdress
             // 
-            resources.ApplyResources(this.textEdit4, "textEdit4");
-            this.textEdit4.MenuManager = this.ribbonControl;
-            this.textEdit4.Name = "textEdit4";
-            this.spellChecker1.SetShowSpellCheckMenu(this.textEdit4, true);
-            this.spellChecker1.SetSpellCheckerOptions(this.textEdit4, optionsSpelling2);
+            resources.ApplyResources(this.textEditAdress, "textEditAdress");
+            this.textEditAdress.MenuManager = this.ribbonControl;
+            this.textEditAdress.Name = "textEditAdress";
+            this.spellChecker1.SetShowSpellCheckMenu(this.textEditAdress, true);
+            this.spellChecker1.SetSpellCheckerOptions(this.textEditAdress, optionsSpelling2);
             // 
             // richEditBarController1
             // 
@@ -1674,11 +1678,11 @@
             // 
             this.GCInfoGeneral.Controls.Add(this.comboBoxCommune);
             this.GCInfoGeneral.Controls.Add(this.comboBoxWilaya);
-            this.GCInfoGeneral.Controls.Add(this.textEdit4);
+            this.GCInfoGeneral.Controls.Add(this.textEditAdress);
             this.GCInfoGeneral.Controls.Add(this.labelAdress);
             this.GCInfoGeneral.Controls.Add(this.labelWilaya);
             this.GCInfoGeneral.Controls.Add(this.labelComune);
-            this.GCInfoGeneral.Controls.Add(this.textEdit1);
+            this.GCInfoGeneral.Controls.Add(this.textEditNameStock);
             this.GCInfoGeneral.Controls.Add(this.labelNameStock);
             resources.ApplyResources(this.GCInfoGeneral, "GCInfoGeneral");
             this.GCInfoGeneral.Name = "GCInfoGeneral";
@@ -1917,8 +1921,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFloatingObjectOutlineWeight1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRichEditStyleEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditNameStock.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditAdress.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.richEditBarController1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GCInfoGeneral)).EndInit();
             this.GCInfoGeneral.ResumeLayout(false);
@@ -2097,7 +2101,7 @@
         private XtraEditors.LabelControl labelAdress;
         private XtraEditors.LabelControl labelWilaya;
         private XtraEditors.LabelControl labelComune;
-        private XtraEditors.TextEdit textEdit1;
+        private XtraEditors.TextEdit textEditNameStock;
         private XtraEditors.LabelControl labelNameStock;
         private XtraTab.XtraTabPage xtpLigneProduit;
         private XtraTab.XtraTabControl xtcLignesProduit;
@@ -2114,7 +2118,7 @@
         private XtraGrid.Views.Grid.GridView GVProductLine;
         private System.Windows.Forms.ComboBox comboBoxCommune;
         private System.Windows.Forms.ComboBox comboBoxWilaya;
-        private XtraEditors.TextEdit textEdit4;
+        private XtraEditors.TextEdit textEditAdress;
         private XtraBars.BarButtonItem bbiFermer;
         private XtraBars.Ribbon.RibbonPageGroup RPGFermer;
         private System.Windows.Forms.BindingSource modelViewProductLineBindingSource;

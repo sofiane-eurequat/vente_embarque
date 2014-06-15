@@ -10,10 +10,12 @@ namespace vente_embarque.Model
 {
     public class Order : EntityBase<Guid>,IAggregateRoot
     {
-
+        public int NumCommande { get; set; }
         public Client Client { get; set; }
         public List<OrderLine> OrderLines { get; set; }
         public Priorite Priorite { get; set; }
+        public GestionCommande Etat { get; set; }
+        public bool LivraisonSurPlace { get; set; }
         //public Delivery Livraison { get; set; }
         protected override void Validate()
         {
@@ -24,9 +26,9 @@ namespace vente_embarque.Model
     }
     public static class FactoryOrder
     {
-        public static Order CreateOrder(Client client,IEnumerable<OrderLine> orderLines, String deliveryAdress, Priorite priorite=Priorite.Normal, DateTime deliveryDate=default(DateTime))
+        public static Order CreateOrder(int numCommande, Client client, IEnumerable<OrderLine> orderLines, String deliveryAdress, bool livraisonSurPlace, Priorite priorite=Priorite.Normal, GestionCommande etat=GestionCommande.EnCours, DateTime deliveryDate=default(DateTime))
         {
-            var order = new Order { id = Guid.NewGuid(), Client = client, Priorite = priorite, newObject = true };
+            var order = new Order { id = Guid.NewGuid(), NumCommande = numCommande, Client = client, Priorite = priorite, Etat = etat, LivraisonSurPlace = livraisonSurPlace, newObject = true };
             
             if (orderLines != null)
             {

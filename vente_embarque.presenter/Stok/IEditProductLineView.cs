@@ -7,11 +7,9 @@ using vente_embarque.Model;
 
 namespace vente_embarque.presenter.Stok
 {
-    public interface IEditProductView
+    public interface IEditProductLineView
     {
-        IEnumerable<Category> Categories { get; set; }
-        IEnumerable<Marque> Marques { get; set; }
-        IEnumerable<Stock> Stocks { get; set; } 
+        IEnumerable<Stock> Stocks { get; set; }
         IEnumerable<Product> Products { get; set; } 
     }
 }

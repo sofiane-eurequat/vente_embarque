@@ -13,12 +13,9 @@ using vente_embarque.Model.Enum;
 
 namespace vente_embarque.Test
 {
-  
-
-
     [TestFixture]
     public class Test
-    {
+    {/*
         private Mock<IRepository<Stock, Guid>> stockMock;
         private Mock<IRepository<Sector, Guid>> sectorMock;
         private Mock<IRepository<Sector, Guid>> sectorMock2;
@@ -54,7 +51,7 @@ namespace vente_embarque.Test
             FactorySector.CreateClient(nom, prenom, sector);
             sectorMock=new Mock<IRepository<Sector, Guid>>();
             sectorMock.Setup(e => e.FindBy(It.IsAny<Query>())).Returns(
-                new List<Sector>() {sector}
+                new List<Sector> {sector}
                 );
 
 
@@ -122,7 +119,7 @@ namespace vente_embarque.Test
             Assert.AreEqual(client.Name, "NomClient1");
             Assert.AreEqual(client.PreNom, "PrenomClient1");
         }
-
+        */
         [Test]
         public void CanCreateClientBd()
         {
@@ -134,8 +131,8 @@ namespace vente_embarque.Test
             Sector secteur = FactorySector.CreateSector(nomSect, wilaya, commune);
             new RepositorySector().Save(secteur);
             //rs.Save(secteur);
-            const string nom = "HAFFAF";
-            const string prenom = "Sofyane";
+            const string nom = "nomClient1";
+            const string prenom = "prenomClient1";
             //un secteur doit tjr etre defini mmee si il doit etre nommé indéfini
             var client = FactorySector.CreateClient(nom, prenom, secteur);
             new RepositoryClient().Save(client);
@@ -181,8 +178,8 @@ namespace vente_embarque.Test
             //test de la sauvegarde dans une base de données 
             var repStock = new RepositoryStock();
             repStock.Save(stock);
-        }*/
-
+        }
+    
         [Test]
         public void CanCreateProduct()
         {
@@ -332,7 +329,7 @@ namespace vente_embarque.Test
             var product = FactoryProduct.CreateProduct(productname, quantiteMinimale, category, marque);
         }
 
-        /*
+        
         [Test]
         public void CanCreateStock()
         {
@@ -359,7 +356,7 @@ namespace vente_embarque.Test
             /*************************************************/
 
             //new RepositoryStock().Save(stock);
-      //  }
+   /*     }
     
         [Test]
         public void GetProductminimal()
@@ -381,9 +378,9 @@ namespace vente_embarque.Test
             Assert.AreEqual(listProduct.Count,1);
         }
         
-        /*
+        
         [Test]
-        public void CanCreateBCWithoutStock()
+        public void CanCreateBcWithoutStock()
         {
 
             var stockRepository = stockMock.Object;
@@ -411,7 +408,7 @@ namespace vente_embarque.Test
             Assert.IsNull(FactoryOrder.CreateOrder(stock,client, orders));
 
         }
-        */
+        
         [Test]
         public void CanUpateStock()
         {
@@ -442,57 +439,59 @@ namespace vente_embarque.Test
             var rs = new RepositoryStock();
             rs.Save(stock);
         }
-
+        */
         [Test]
-        public void CanCreateAgentTerraindatabae()
+        public void CanCreateAgentTerrainBd()
         {
             const string agentterrain1 = "agentterrain1";
             var agentterrain = FactoryAgentTerrain.CreateAgentTerrain(agentterrain1);
-            var ra = new RepositoryAgentTerrain();
-            ra.Save(agentterrain);
+            new RepositoryAgentTerrain().Save(agentterrain);
         }
 
         [Test]
         public void CanCreateSecteurDb()
         {
             const string nom = "Tlemcen";
-            //const string wilaya = "Tlemcen";
-            //const string commune = "Tlemcen";
             var wilaya = new RepositoryWilaya().FindAll().First(w => w.Name == "Tlemcen");
             var commune = new RepositoryWilaya().FindAll().First(w => w.Name == "Tlemcen").Communes.First(com => com.Name == "Tlemcen");
             var sector = FactorySector.CreateSector(nom, wilaya, commune);
             Assert.AreEqual(sector.Name, nom);
             Assert.AreEqual(sector.Wilaya, wilaya);
             Assert.AreEqual(sector.Commune, commune);
-            var rs = new RepositorySector();
-            rs.Save(sector);
+            new RepositorySector().Save(sector);
         }
-
+        
         [Test]
         public void CanCreateMarqueDb()
         {
             const string nom = "Hp";
             var marque = FactoryMarque.CreateMarque(nom);
-            var rm = new RepositoryMarque();
-            rm.Save(marque);
+            new RepositoryMarque().Save(marque);
         }
-
+    
         [Test]
         public void CanCreateCategoryDb()
         {
-            const string nom = "Laptop";
-            const string description = "Pc portable";
-            var marque = FactoryCategory.CreateCategory(nom,description);
-            var rc = new RepositoryCategory();
-            rc.Save(marque);
+            const string nom = "Desktop";
+            const string description = "Pc de bureau";
+            var categ = FactoryCategory.CreateCategory(nom, description);
+            new RepositoryCategory().Save(categ);
         }
 
         [Test]
-        public void CanDeleteCategorydb()
+        public void CanDeleteCategoryBb()
         {
             var rc = new RepositoryCategory();
             var categ = rc.FindAll().First();
             rc.Remove(categ);
+        }
+
+        [Test]
+        public void CanDeleteMarqueBb()
+        {
+            var rc = new RepositoryMarque();
+            var marque = rc.FindAll().First();
+            rc.Remove(marque);
         }
     }
 }

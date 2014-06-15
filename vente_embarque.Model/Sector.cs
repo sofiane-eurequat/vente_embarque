@@ -25,16 +25,10 @@ namespace vente_embarque.Model
     }
 
     public static class FactorySector
-    {/*
-        public static Sector CreateSector(string name, string wilaya, string commune)
-        {
-            var sector = new Sector { id = Guid.NewGuid(), Name = name, Wilaya = wilaya, Commune = commune, newObject = true };
-            return sector;
-        }
-        */
+    {
         public static Sector CreateSector(string name, Wilaya wilaya, Commune commune)
         {
-            var sector = new Sector { Name = name, id = Guid.NewGuid(), Wilaya = wilaya, Commune = commune };
+            var sector = new Sector { Name = name, id = Guid.NewGuid(), Wilaya = wilaya, Commune = commune, newObject = true };
             return sector;
         }
  

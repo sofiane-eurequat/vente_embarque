@@ -56,10 +56,13 @@ namespace DevExpress.MailClient.Win {
             InitBarButtonItem(bbiRotateLayout, TagResources.RotateLayout, Properties.Resources.RotateLayoutDescription);
             InitBarButtonItem(bbiFlipLayout, TagResources.FlipLayout, Properties.Resources.FlipLayoutDescription);
             InitBarButtonItem(bbiDelete, TagResources.DeleteItem, Properties.Resources.DeleteItemDescription);
-            InitBarButtonItem(bbiNew, TagResources.NewStock, Properties.Resources.NewItemDescription);
+            InitBarButtonItem(bbiNewStock, TagResources.NewStock, Properties.Resources.NewItemDescription);
             InitBarButtonItem(bbiNewProduct, TagResources.NewProduct, Properties.Resources.NewItemDescription);
-            InitBarButtonItem(bbiReplyAll, TagResources.ReplyAll, Properties.Resources.ReplyAllDescription);
-            InitBarButtonItem(bbiForward, TagResources.Forward, Properties.Resources.ForwardDescription);
+            InitBarButtonItem(bbiModifyProduct, TagResources.ModifyProduct);
+            InitBarButtonItem(bbiDeleteProduct, TagResources.DeleteProduct, Properties.Resources.DeleteItemDescription);
+            InitBarButtonItem(bbiNewProductLine, TagResources.NewProductLine, Properties.Resources.NewItemDescription);
+            InitBarButtonItem(bbiModifyProductLine, TagResources.ModifyProductLine);
+            InitBarButtonItem(bbiDeleteProductLine, TagResources.DeleteProductLine, Properties.Resources.DeleteItemDescription);
             InitBarButtonItem(bbiUnreadRead, TagResources.UnreadRead, Properties.Resources.UnreadReadDescription);
             InitBarButtonItem(bbiCloseSearch, TagResources.CloseSearch, Properties.Resources.CloseSearchDescription);
             InitBarButtonItem(bbiSubjectColumn, TagResources.SubjectColumn);
@@ -179,8 +182,8 @@ namespace DevExpress.MailClient.Win {
         }
         internal void EnableMail(bool enabled, bool unread) {
             bbiNewProduct.Enabled = enabled && currentMailType == MailType.Inbox;
-            bbiReplyAll.Enabled = enabled && currentMailType == MailType.Inbox;
-            bbiForward.Enabled = enabled && currentMailType == MailType.Inbox;
+            bbiModifyProduct.Enabled = enabled && currentMailType == MailType.Inbox;
+            bbiDeleteProduct.Enabled = enabled && currentMailType == MailType.Inbox;
         }
         internal void EnableEditFeed(bool enabled) {
             bbiDeleteFeed.Enabled = enabled;

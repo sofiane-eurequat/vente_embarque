@@ -69,6 +69,12 @@
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.comboBoxEtat = new System.Windows.Forms.ComboBox();
+            this.labelEtat = new DevExpress.XtraEditors.LabelControl();
+            this.textEditNumCommande = new DevExpress.XtraEditors.TextEdit();
+            this.labelNumCommande = new DevExpress.XtraEditors.LabelControl();
+            this.labelLivraison = new DevExpress.XtraEditors.LabelControl();
+            this.radiogroupLivraisonSurPlace = new DevExpress.XtraEditors.RadioGroup();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -82,6 +88,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.GCOrderLine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewOrderLine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditNumCommande.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radiogroupLivraisonSurPlace.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
@@ -211,6 +219,12 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.radiogroupLivraisonSurPlace);
+            this.groupControl1.Controls.Add(this.labelLivraison);
+            this.groupControl1.Controls.Add(this.textEditNumCommande);
+            this.groupControl1.Controls.Add(this.labelNumCommande);
+            this.groupControl1.Controls.Add(this.comboBoxEtat);
+            this.groupControl1.Controls.Add(this.labelEtat);
             this.groupControl1.Controls.Add(this.comboBoxPriorite);
             this.groupControl1.Controls.Add(this.labelPriorite);
             this.groupControl1.Controls.Add(this.memoEditAdresssLivraion);
@@ -405,6 +419,47 @@
             this.barButtonItem2.Id = 0;
             this.barButtonItem2.Name = "barButtonItem2";
             // 
+            // comboBoxEtat
+            // 
+            this.comboBoxEtat.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxEtat, "comboBoxEtat");
+            this.comboBoxEtat.Name = "comboBoxEtat";
+            // 
+            // labelEtat
+            // 
+            this.labelEtat.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl1.Appearance.Font1")));
+            resources.ApplyResources(this.labelEtat, "labelEtat");
+            this.labelEtat.Name = "labelEtat";
+            // 
+            // textEditNumCommande
+            // 
+            resources.ApplyResources(this.textEditNumCommande, "textEditNumCommande");
+            this.textEditNumCommande.Name = "textEditNumCommande";
+            // 
+            // labelNumCommande
+            // 
+            this.labelNumCommande.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelNameProduit.Appearance.Font")));
+            this.labelNumCommande.LineVisible = true;
+            resources.ApplyResources(this.labelNumCommande, "labelNumCommande");
+            this.labelNumCommande.Name = "labelNumCommande";
+            // 
+            // labelLivraison
+            // 
+            this.labelLivraison.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl1.Appearance.Font")));
+            resources.ApplyResources(this.labelLivraison, "labelLivraison");
+            this.labelLivraison.Name = "labelLivraison";
+            // 
+            // radiogroupLivraisonSurPlace
+            // 
+            resources.ApplyResources(this.radiogroupLivraisonSurPlace, "radiogroupLivraisonSurPlace");
+            this.radiogroupLivraisonSurPlace.MenuManager = this.ribbon;
+            this.radiogroupLivraisonSurPlace.Name = "radiogroupLivraisonSurPlace";
+            this.radiogroupLivraisonSurPlace.Properties.Columns = 2;
+            this.radiogroupLivraisonSurPlace.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Default;
+            this.radiogroupLivraisonSurPlace.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("radioGroup1.Properties.Items"))), resources.GetString("radioGroup1.Properties.Items1")),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("radioGroup1.Properties.Items2"))), resources.GetString("radioGroup1.Properties.Items3"))});
+            // 
             // frmBdc
             // 
             resources.ApplyResources(this, "$this");
@@ -435,6 +490,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.GCOrderLine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewOrderLine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditNumCommande.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radiogroupLivraisonSurPlace.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -480,5 +537,11 @@
         private XtraBars.BarButtonItem bbiSauvegarderFermer;
         private XtraEditors.LabelControl labelPriorite;
         private System.Windows.Forms.ComboBox comboBoxPriorite;
+        private System.Windows.Forms.ComboBox comboBoxEtat;
+        private XtraEditors.LabelControl labelEtat;
+        private XtraEditors.LabelControl labelLivraison;
+        private XtraEditors.TextEdit textEditNumCommande;
+        private XtraEditors.LabelControl labelNumCommande;
+        private XtraEditors.RadioGroup radiogroupLivraisonSurPlace;
     }
 }

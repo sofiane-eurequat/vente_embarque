@@ -26,16 +26,20 @@ namespace vente_embarque.presenter.Bdc
         public void Diplay()
         {
             var order = _repositoryOrder.FindAll();
-            //var product = _repositoryProduct.FindAll();
+            if (order == null) return;
+
             var tempOrder = new List<ModelViewBdc>();
 
             foreach (var bdc in order)
             {
                 var mvb = new ModelViewBdc
                     {
-                    Client = bdc.Client.Name,
-                    Priorite = bdc.Priorite,
-                    Id = bdc.id,
+                        NumCommande = bdc.NumCommande,
+                        Client = bdc.Client.Name,
+                        Priorite = bdc.Priorite,
+                        Etat = bdc.Etat,
+                        LivraisonSurPlace = bdc.LivraisonSurPlace,
+                        Id = bdc.id,
                     };
 
                 mvb.OrderLines=new List<ModelViewOrderLine>();
@@ -73,19 +77,22 @@ namespace vente_embarque.presenter.Bdc
     public class ModelViewBdc
     {
         public Guid Id { get; set; }
+        public int NumCommande { get; set; }
         public string Client { get; set; }
         public List<ModelViewOrderLine> OrderLines { get; set; }
         public Priorite Priorite { get; set; }
+        public GestionCommande Etat { get; set; }
         public DateTime DateLivraison { get; set; }
         public string AdresseLivraison { get; set; }
+        public bool LivraisonSurPlace { get; set; }
         public List<ModelViewProduct> Products { get; set; } 
     }
 
     public class ModelViewOrderLine
     {
+        public Guid Id { get; set; }
         public string ProductName { get; set; }
         public int Quantity { get; set; }
-        public Guid Id { get; set; }
         public Product Product { get; set; }
     }
 

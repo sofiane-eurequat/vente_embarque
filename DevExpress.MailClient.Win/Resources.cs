@@ -57,6 +57,11 @@ namespace DevExpress.MailClient.Win {
         public const string DeleteItem = "DeleteItem";
         public const string NewStock = "NewStock";
         public const string NewProduct = "NewProduct";
+        public const string ModifyProduct = "ModifyProduct";
+        public const string DeleteProduct = "DeleteProduct";
+        public const string NewProductLine = "NewProductLine";
+        public const string ModifyProductLine = "ModifyProductLine";
+        public const string DeleteProductLine = "DeleteProductLine";
         public const string NewSecteur = "NewSecteur";
         public const string NewBdc = "NewBdc";
         public const string ModifyBdc = "ModifyBdc";

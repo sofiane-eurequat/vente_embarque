@@ -66,10 +66,10 @@
             this.bciShowUnreadMessageCount = new DevExpress.XtraBars.BarCheckItem();
             this.bciShowAllMessageCount = new DevExpress.XtraBars.BarCheckItem();
             this.bbiDelete = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiNew = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiNewStock = new DevExpress.XtraBars.BarButtonItem();
             this.bbiNewProduct = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiForward = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiReplyAll = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiDeleteProduct = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiModifyProduct = new DevExpress.XtraBars.BarButtonItem();
             this.bbiUnreadRead = new DevExpress.XtraBars.BarButtonItem();
             this.bbiPriority = new DevExpress.XtraBars.BarButtonItem();
             this.bsiNavigation = new DevExpress.XtraBars.BarSubItem();
@@ -162,10 +162,14 @@
             this.bbiDeleteBdc = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiNewProductLine = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiModifyProductLine = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiDeleteProductLine = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonMiniToolbar1 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(this.components);
             this.ribbonMiniToolbar2 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(this.components);
             this.rpStock = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.rpgNew = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpgStock = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpgProduit = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpgDelete = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpgTags = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpgLayoutMail = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -252,10 +256,10 @@
             this.bciShowUnreadMessageCount,
             this.bciShowAllMessageCount,
             this.bbiDelete,
-            this.bbiNew,
+            this.bbiNewStock,
             this.bbiNewProduct,
-            this.bbiForward,
-            this.bbiReplyAll,
+            this.bbiDeleteProduct,
+            this.bbiModifyProduct,
             this.bbiUnreadRead,
             this.bbiPriority,
             this.bsiNavigation,
@@ -345,9 +349,12 @@
             this.bbiModifyBdc,
             this.bbiDeleteBdc,
             this.barButtonItem6,
-            this.barButtonItem14});
+            this.barButtonItem14,
+            this.bbiNewProductLine,
+            this.bbiModifyProductLine,
+            this.bbiDeleteProductLine});
             resources.ApplyResources(this.ribbonControl1, "ribbonControl1");
-            this.ribbonControl1.MaxItemId = 3;
+            this.ribbonControl1.MaxItemId = 6;
             this.ribbonControl1.MiniToolbars.Add(this.ribbonMiniToolbar1);
             this.ribbonControl1.MiniToolbars.Add(this.ribbonMiniToolbar2);
             this.ribbonControl1.Name = "ribbonControl1";
@@ -542,14 +549,14 @@
             this.bbiDelete.LargeGlyph = global::DevExpress.MailClient.Win.Properties.Resources.Delete_32x32;
             this.bbiDelete.Name = "bbiDelete";
             // 
-            // bbiNew
+            // bbiNewStock
             // 
-            resources.ApplyResources(this.bbiNew, "bbiNew");
-            this.bbiNew.Glyph = global::DevExpress.MailClient.Win.Properties.Resources.NewMail_16x16;
-            this.bbiNew.Id = 7;
-            this.bbiNew.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N));
-            this.bbiNew.LargeGlyph = global::DevExpress.MailClient.Win.Properties.Resources.new_stock;
-            this.bbiNew.Name = "bbiNew";
+            resources.ApplyResources(this.bbiNewStock, "bbiNewStock");
+            this.bbiNewStock.Glyph = global::DevExpress.MailClient.Win.Properties.Resources.NewMail_16x16;
+            this.bbiNewStock.Id = 7;
+            this.bbiNewStock.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N));
+            this.bbiNewStock.LargeGlyph = global::DevExpress.MailClient.Win.Properties.Resources.new_stock;
+            this.bbiNewStock.Name = "bbiNewStock";
             // 
             // bbiNewProduct
             // 
@@ -559,22 +566,22 @@
             this.bbiNewProduct.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R));
             this.bbiNewProduct.Name = "bbiNewProduct";
             // 
-            // bbiForward
+            // bbiDeleteProduct
             // 
-            resources.ApplyResources(this.bbiForward, "bbiForward");
-            this.bbiForward.Glyph = global::DevExpress.MailClient.Win.Properties.Resources.panier_supprimer_icone_4936_16;
-            this.bbiForward.Id = 9;
-            this.bbiForward.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F));
-            this.bbiForward.Name = "bbiForward";
+            resources.ApplyResources(this.bbiDeleteProduct, "bbiDeleteProduct");
+            this.bbiDeleteProduct.Glyph = global::DevExpress.MailClient.Win.Properties.Resources.panier_supprimer_icone_4936_16;
+            this.bbiDeleteProduct.Id = 9;
+            this.bbiDeleteProduct.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F));
+            this.bbiDeleteProduct.Name = "bbiDeleteProduct";
             // 
-            // bbiReplyAll
+            // bbiModifyProduct
             // 
-            resources.ApplyResources(this.bbiReplyAll, "bbiReplyAll");
-            this.bbiReplyAll.Glyph = global::DevExpress.MailClient.Win.Properties.Resources.modifier_le_panier_icone_4494_16;
-            this.bbiReplyAll.Id = 10;
-            this.bbiReplyAll.ItemShortcut = new DevExpress.XtraBars.BarShortcut(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            resources.ApplyResources(this.bbiModifyProduct, "bbiModifyProduct");
+            this.bbiModifyProduct.Glyph = global::DevExpress.MailClient.Win.Properties.Resources.modifier_le_panier_icone_4494_16;
+            this.bbiModifyProduct.Id = 10;
+            this.bbiModifyProduct.ItemShortcut = new DevExpress.XtraBars.BarShortcut(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
                 | System.Windows.Forms.Keys.R));
-            this.bbiReplyAll.Name = "bbiReplyAll";
+            this.bbiModifyProduct.Name = "bbiModifyProduct";
             // 
             // bbiUnreadRead
             // 
@@ -1350,10 +1357,32 @@
             this.barButtonItem14.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem14.LargeGlyph")));
             this.barButtonItem14.Name = "barButtonItem14";
             // 
+            // bbiNewProductLine
+            // 
+            resources.ApplyResources(this.bbiNewProductLine, "bbiNewProductLine");
+            this.bbiNewProductLine.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiNewProductLine.Glyph")));
+            this.bbiNewProductLine.Id = 3;
+            this.bbiNewProductLine.Name = "bbiNewProductLine";
+            // 
+            // bbiModifyProductLine
+            // 
+            resources.ApplyResources(this.bbiModifyProductLine, "bbiModifyProductLine");
+            this.bbiModifyProductLine.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiModifyProductLine.Glyph")));
+            this.bbiModifyProductLine.Id = 4;
+            this.bbiModifyProductLine.Name = "bbiModifyProductLine";
+            // 
+            // bbiDeleteProductLine
+            // 
+            resources.ApplyResources(this.bbiDeleteProductLine, "bbiDeleteProductLine");
+            this.bbiDeleteProductLine.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiDeleteProductLine.Glyph")));
+            this.bbiDeleteProductLine.Id = 5;
+            this.bbiDeleteProductLine.Name = "bbiDeleteProductLine";
+            // 
             // rpStock
             // 
             this.rpStock.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.rpgNew,
+            this.rpgStock,
+            this.rpgProduit,
             this.rpgDelete,
             this.rpgTags,
             this.rpgLayoutMail});
@@ -1361,15 +1390,26 @@
             this.rpStock.Tag = "Stock";
             resources.ApplyResources(this.rpStock, "rpStock");
             // 
-            // rpgNew
+            // rpgStock
             // 
-            this.rpgNew.ItemLinks.Add(this.bbiNew);
-            this.rpgNew.ItemLinks.Add(this.bbiNewProduct, true);
-            this.rpgNew.ItemLinks.Add(this.bbiReplyAll);
-            this.rpgNew.ItemLinks.Add(this.bbiForward);
-            this.rpgNew.Name = "rpgNew";
-            this.rpgNew.ShowCaptionButton = false;
-            resources.ApplyResources(this.rpgNew, "rpgNew");
+            this.rpgStock.AllowTextClipping = false;
+            this.rpgStock.ItemLinks.Add(this.bbiNewStock);
+            this.rpgStock.ItemLinks.Add(this.bbiNewProductLine, true);
+            this.rpgStock.ItemLinks.Add(this.bbiModifyProductLine);
+            this.rpgStock.ItemLinks.Add(this.bbiDeleteProductLine);
+            this.rpgStock.Name = "rpgStock";
+            this.rpgStock.ShowCaptionButton = false;
+            resources.ApplyResources(this.rpgStock, "rpgStock");
+            // 
+            // rpgProduit
+            // 
+            this.rpgProduit.AllowTextClipping = false;
+            this.rpgProduit.ItemLinks.Add(this.bbiNewProduct);
+            this.rpgProduit.ItemLinks.Add(this.bbiModifyProduct);
+            this.rpgProduit.ItemLinks.Add(this.bbiDeleteProduct);
+            this.rpgProduit.Name = "rpgProduit";
+            this.rpgProduit.ShowCaptionButton = false;
+            resources.ApplyResources(this.rpgProduit, "rpgProduit");
             // 
             // rpgDelete
             // 
@@ -1602,8 +1642,8 @@
             // pmMessage
             // 
             this.pmMessage.ItemLinks.Add(this.bbiNewProduct);
-            this.pmMessage.ItemLinks.Add(this.bbiReplyAll);
-            this.pmMessage.ItemLinks.Add(this.bbiForward);
+            this.pmMessage.ItemLinks.Add(this.bbiModifyProduct);
+            this.pmMessage.ItemLinks.Add(this.bbiDeleteProduct);
             this.pmMessage.ItemLinks.Add(this.bbiDelete, true);
             this.pmMessage.ItemLinks.Add(this.bbiUnreadRead, true);
             this.pmMessage.ItemLinks.Add(this.bbiPriority);
@@ -1852,7 +1892,7 @@
 
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
         private DevExpress.XtraBars.Ribbon.RibbonPage rpStock;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup rpgNew;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup rpgStock;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup rpgDelete;
         private DevExpress.XtraBars.Ribbon.RibbonPage rpCalendar;
@@ -1866,10 +1906,10 @@
         private DevExpress.XtraBars.PopupMenu pmTreeView;
         private DevExpress.XtraBars.BarButtonItem bbiDelete;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup rpgTags;
-        private DevExpress.XtraBars.BarButtonItem bbiNew;
+        private DevExpress.XtraBars.BarButtonItem bbiNewStock;
         private DevExpress.XtraBars.BarButtonItem bbiNewProduct;
-        private DevExpress.XtraBars.BarButtonItem bbiForward;
-        private DevExpress.XtraBars.BarButtonItem bbiReplyAll;
+        private DevExpress.XtraBars.BarButtonItem bbiDeleteProduct;
+        private DevExpress.XtraBars.BarButtonItem bbiModifyProduct;
         private DevExpress.XtraBars.BarButtonItem bbiUnreadRead;
         private DevExpress.XtraBars.BarButtonItem bbiPriority;
         private DevExpress.XtraBars.PopupMenu pmMessage;
@@ -2020,6 +2060,10 @@
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private XtraBars.BarButtonItem barButtonItem14;
+        private XtraBars.Ribbon.RibbonPageGroup rpgProduit;
+        private XtraBars.BarButtonItem bbiNewProductLine;
+        private XtraBars.BarButtonItem bbiModifyProductLine;
+        private XtraBars.BarButtonItem bbiDeleteProductLine;
     }
 }
 

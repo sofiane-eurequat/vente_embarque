@@ -11,8 +11,9 @@ namespace vente_embarque.Model
     {
         public string Name { get; set; }
         public List<ProductLine> ProductLines { get; set; }
-        public string Wilaya { get; set; }
-        public string Commune { get; set; }
+        public Wilaya Wilaya { get; set; }
+        public Commune Commune { get; set; }
+        public string Adress { get; set; }
 
         public Stock(string name)
         {
@@ -70,9 +71,9 @@ namespace vente_embarque.Model
     }
     public static class FactoryStock
     {
-        public static Stock CreateStock(string name)
+        public static Stock CreateStock(string name, Wilaya wilaya, Commune commune, string adress)
         {
-            var stock = new Stock(name) { id = Guid.NewGuid(), newObject = true };
+            var stock = new Stock(name) { id = Guid.NewGuid(), newObject = true, Wilaya = wilaya, Commune = commune, Adress = adress };
             return stock;
         }
 

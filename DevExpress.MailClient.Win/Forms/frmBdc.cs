@@ -21,7 +21,7 @@ namespace DevExpress.MailClient.Win.Forms
 {
     public partial class frmBdc : RibbonForm, IEditBdcView
     {
-        private EditBdcPresenterPage editBdcPresenter;
+        private readonly EditBdcPresenterPage _editBdcPresenter;
         public IEnumerable<Client> Clients { get; set; }
         public IEnumerable<Stock> Stocks { get; set; }
         public IEnumerable<Order> Orders { get; set; }
@@ -44,13 +44,16 @@ namespace DevExpress.MailClient.Win.Forms
             var repositoryClient = new RepositoryClient();
             var repositoryStock = new RepositoryStock();
             var repositoryOrder = new RepositoryOrder();
-            editBdcPresenter = new EditBdcPresenterPage(this, repositoryClient,repositoryStock,repositoryOrder,OrderLines);
-            editBdcPresenter.Display();
+            _editBdcPresenter = new EditBdcPresenterPage(this, repositoryClient,repositoryStock,repositoryOrder,OrderLines);
+            _editBdcPresenter.Display();
 
             comboBoxClients.DataSource = Clients.OrderBy(cl => cl.Name).ToList();
             comboBoxClients.DisplayMember = "Name";
             comboBoxPriorite.DataSource = Enum.GetValues(typeof(Priorite));
-            
+            comboBoxEtat.DataSource = Enum.GetValues(typeof (GestionCommande));
+            GCOrderLine.DataSource = OrderLines;
+
+            /*
             if (!newBdc)
             {
                 var clientName = Bdc.Client;
@@ -75,7 +78,10 @@ namespace DevExpress.MailClient.Win.Forms
             {
                 //gridViewOrderLine.Columns[0].FieldName = "Name";
                 colProduct.FieldName = "Name";
+                GCOrderLine.DataSource = OrderLines;
             }
+            */
+
 
             this.newBdc = newBdc;
             DialogResult = DialogResult.Cancel;
@@ -101,12 +107,12 @@ namespace DevExpress.MailClient.Win.Forms
 
         private void bbiSauvegarder_ItemClick(object sender, ItemClickEventArgs e)
         {
-            editBdcPresenter.Write(comboBoxClients.SelectedItem as Client, OrderLines, (Priorite) comboBoxPriorite.SelectedItem, dateEditLivraison.DateTime, memoEditAdresssLivraion.Text);
+            _editBdcPresenter.Write(Convert.ToInt32(textEditNumCommande.Text), comboBoxClients.SelectedItem as Client, dateEditLivraison.DateTime, memoEditAdresssLivraion.Text, (Priorite)comboBoxPriorite.SelectedItem, (GestionCommande)comboBoxEtat.SelectedItem, Convert.ToBoolean(radiogroupLivraisonSurPlace.Text), OrderLines);
         }
 
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
         {
-            editBdcPresenter.Write(comboBoxClients.SelectedItem as Client, OrderLines, (Priorite)comboBoxPriorite.SelectedItem, dateEditLivraison.DateTime, memoEditAdresssLivraion.Text);
+            _editBdcPresenter.Write(Convert.ToInt32(textEditNumCommande.Text), comboBoxClients.SelectedItem as Client, dateEditLivraison.DateTime, memoEditAdresssLivraion.Text, (Priorite)comboBoxPriorite.SelectedItem, (GestionCommande)comboBoxEtat.SelectedItem, Convert.ToBoolean(radiogroupLivraisonSurPlace.Text), OrderLines);
             Close();
         }
 

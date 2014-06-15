@@ -1009,46 +1009,46 @@
   <metadata name="spellChecker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>331, 17</value>
   </metadata>
-  <data name="textEdit1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="textEditNameStock.Location" type="System.Drawing.Point, System.Drawing">
     <value>101, 34</value>
   </data>
-  <data name="textEdit1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="textEditNameStock.Size" type="System.Drawing.Size, System.Drawing">
     <value>262, 20</value>
   </data>
-  <data name="textEdit1.TabIndex" type="System.Int32, mscorlib">
+  <data name="textEditNameStock.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;textEdit1.Name" xml:space="preserve">
-    <value>textEdit1</value>
+  <data name="&gt;&gt;textEditNameStock.Name" xml:space="preserve">
+    <value>textEditNameStock</value>
   </data>
-  <data name="&gt;&gt;textEdit1.Type" xml:space="preserve">
+  <data name="&gt;&gt;textEditNameStock.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;textEdit1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;textEditNameStock.Parent" xml:space="preserve">
     <value>GCInfoGeneral</value>
   </data>
-  <data name="&gt;&gt;textEdit1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;textEditNameStock.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="textEdit4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="textEditAdress.Location" type="System.Drawing.Point, System.Drawing">
     <value>520, 80</value>
   </data>
-  <data name="textEdit4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="textEditAdress.Size" type="System.Drawing.Size, System.Drawing">
     <value>254, 20</value>
   </data>
-  <data name="textEdit4.TabIndex" type="System.Int32, mscorlib">
+  <data name="textEditAdress.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;textEdit4.Name" xml:space="preserve">
-    <value>textEdit4</value>
+  <data name="&gt;&gt;textEditAdress.Name" xml:space="preserve">
+    <value>textEditAdress</value>
   </data>
-  <data name="&gt;&gt;textEdit4.Type" xml:space="preserve">
+  <data name="&gt;&gt;textEditAdress.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;textEdit4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;textEditAdress.Parent" xml:space="preserve">
     <value>GCInfoGeneral</value>
   </data>
-  <data name="&gt;&gt;textEdit4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;textEditAdress.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <metadata name="richEditBarController1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

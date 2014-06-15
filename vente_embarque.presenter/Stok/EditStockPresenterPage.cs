@@ -13,11 +13,13 @@ namespace vente_embarque.presenter.Stok
     {
         private readonly IEditStockView _editStockView;
         private readonly IRepository<Wilaya, Guid> _repositoryWilaya;
+        private readonly IRepository<Stock, Guid> _repositoryStock; 
 
-        public EditStockPresenterPage(IEditStockView editStockView,IRepository<Wilaya,Guid> repository)
+        public EditStockPresenterPage(IEditStockView editStockView,IRepository<Wilaya,Guid> repositoryWilaya, IRepository<Stock,Guid> repositoryStock)
         {
             _editStockView = editStockView;
-            _repositoryWilaya = repository;
+            _repositoryWilaya = repositoryWilaya;
+            _repositoryStock = repositoryStock;
         }
 
      
@@ -27,15 +29,16 @@ namespace vente_embarque.presenter.Stok
             _editStockView.Wilayas = _repositoryWilaya.FindAll();
         }
 
-        public void Write()
+        public void Write(string name, Wilaya wilaya, Commune commune, string adress)
         {
-            throw new NotImplementedException();
+            var stock = FactoryStock.CreateStock(name, wilaya, commune, adress);
+            _repositoryStock.Save(stock);
         }
     }
 
     internal interface IEditStockPagePresenter
     {
         void Display();
-        void Write();
+        void Write(string name, Wilaya wilaya, Commune commune, string adress);
     }
 }

@@ -21,36 +21,36 @@ namespace vente_embarque.DataLayer.Entities.Stock
         }
 
 
-        private Guid _Oid;
+        private Guid _oid;
         [Key]
         public Guid Oid
         {
-            get { return _Oid; }
-            set { SetPropertyValue("Oid", ref _Oid, value); }
+            get { return _oid; }
+            set { SetPropertyValue("Oid", ref _oid, value); }
         }
 
-        private XpoProduct _Product;
+        private XpoProduct _product;
         [ Association("XpoProduct-XpoproductLine")]
         public XpoProduct Product
         {
-            get { return _Product; }
-            set { SetPropertyValue("Product", ref _Product, value); }
+            get { return _product; }
+            set { SetPropertyValue("Product", ref _product, value); }
         }
 
 
-        private int _Quantity;
+        private int _quantity;
         public int Quantity
         {
-            get { return _Quantity; }
-            set { SetPropertyValue("Quantity", ref _Quantity, value); }
+            get { return _quantity; }
+            set { SetPropertyValue("Quantity", ref _quantity, value); }
         }
 
-        private XpoStock _Stock;
+        private XpoStock _stock;
         [Aggregated, Association("XpoStock-XpoproductLine")]
         public XpoStock Stock
         {
-            get { return _Stock; }
-            set { SetPropertyValue("Stock", ref _Stock, value); }
+            get { return _stock; }
+            set { SetPropertyValue("Stock", ref _stock, value); }
         }
 
     }

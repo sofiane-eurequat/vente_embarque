@@ -20,7 +20,7 @@ namespace DevExpress.MailClient.Win {
     {
 
         public IEnumerable<Wilaya> Wilayas { get; set; }
-        private EditStockPresenterPage editStockPresenter;
+        private readonly EditStockPresenterPage _editStockPresenter;
         bool isMessageModified;
         bool newStock = true;
         readonly ModelViewStock sourceStock;
@@ -33,9 +33,10 @@ namespace DevExpress.MailClient.Win {
         {
             InitializeComponent();
             DictionaryHelper.InitDictionary(spellChecker1);
-            var RepositoryWilaya = new RepositoryWilaya();
-            editStockPresenter = new EditStockPresenterPage(this, RepositoryWilaya);
-            editStockPresenter.Display();
+            var repositoryWilaya = new RepositoryWilaya();
+            var repositoryStock = new RepositoryStock();
+            _editStockPresenter = new EditStockPresenterPage(this, repositoryWilaya,repositoryStock);
+            _editStockPresenter.Display();
 
             comboBoxWilaya.DataSource = Wilayas.OrderBy(c => c.Code).ToList();
             comboBoxWilaya.ValueMember = "Code";
@@ -178,9 +179,13 @@ namespace DevExpress.MailClient.Win {
 
         private void bbiSauvergarder_ItemClick(object sender, ItemClickEventArgs e)
         {
-
+            _editStockPresenter.Write(textEditNameStock.Text,comboBoxWilaya.SelectedItem as Wilaya,comboBoxCommune.SelectedItem as Commune, textEditAdress.Text);
         }
 
-
+        private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            _editStockPresenter.Write(textEditNameStock.Text, comboBoxWilaya.SelectedItem as Wilaya, comboBoxCommune.SelectedItem as Commune, textEditAdress.Text);
+            Close();
+        }
     }
 }

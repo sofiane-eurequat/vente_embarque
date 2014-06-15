@@ -1,12 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
 using vente_embarque.DataLayer;
@@ -16,13 +9,15 @@ using vente_embarque.presenter.Stok;
 
 namespace DevExpress.MailClient.Win.Forms
 {
-    public partial class frmEditProduct : RibbonForm
+    public partial class FrmEditProduct : RibbonForm
     {
-        private EditProductPresenterPage editProductPresenter;
+        private readonly EditProductPresenterPage _editProductPresenter;
         public IEnumerable<Category> Categories { get; set; }
         public IEnumerable<Marque> Marques { get; set; }
+        public IEnumerable<Stock> Stocks { get; set; }
+        public IEnumerable<Product> Products { get; set; }
 
-        public frmEditProduct()
+        public FrmEditProduct()
         {
             InitializeComponent();
 
@@ -30,8 +25,8 @@ namespace DevExpress.MailClient.Win.Forms
             var repositoryMarque = new RepositoryMarque();
             var repositoryProduit = new RepositoryProduct();
 
-            editProductPresenter=new EditProductPresenterPage(this,repositoryCategory,repositoryMarque,repositoryProduit);
-            editProductPresenter.Display();
+            _editProductPresenter=new EditProductPresenterPage(this,repositoryCategory,repositoryMarque,repositoryProduit);
+            _editProductPresenter.Display();
 
             comboBoxCategory.DataSource = Categories;
             comboBoxCategory.DisplayMember = "Name";
@@ -48,12 +43,12 @@ namespace DevExpress.MailClient.Win.Forms
 
         private void bbiSave_ItemClick(object sender, ItemClickEventArgs e)
         {
-            editProductPresenter.Write(textEditNameProduct.Text,comboBoxCategory.SelectedItem as Category, comboBoxMarque.SelectedItem as Marque,textEditFournisseur.Text,Convert.ToInt32(textEditQuantité.Text), (GestionProduit)comboBoxTypeGestion.SelectedItem);
+            _editProductPresenter.Write(textEditNameProduct.Text,comboBoxCategory.SelectedItem as Category, comboBoxMarque.SelectedItem as Marque,textEditFournisseur.Text,Convert.ToInt32(textEditQuantité.Text), (GestionProduit)comboBoxTypeGestion.SelectedItem);
         }
 
         private void bbiSaveClsoe_ItemClick(object sender, ItemClickEventArgs e)
         {
-            editProductPresenter.Write(textEditNameProduct.Text, comboBoxCategory.SelectedItem as Category, comboBoxMarque.SelectedItem as Marque, textEditFournisseur.Text, Convert.ToInt32(textEditQuantité.Text), (GestionProduit)comboBoxTypeGestion.SelectedItem);
+            _editProductPresenter.Write(textEditNameProduct.Text, comboBoxCategory.SelectedItem as Category, comboBoxMarque.SelectedItem as Marque, textEditFournisseur.Text, Convert.ToInt32(textEditQuantité.Text), (GestionProduit)comboBoxTypeGestion.SelectedItem);
             Close();
         }
 

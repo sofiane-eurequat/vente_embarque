@@ -12,9 +12,9 @@ namespace vente_embarque.presenter.Stok
     public class EditProductPresenterPage:IEditProductPagePresenter
     {
         private readonly IEditProductView _editProductView;
-        private IRepository<Category, Guid> _repositoryCategory;
-        private IRepository<Marque, Guid> _repositoryMarque;
-        private IRepository<Product, Guid> _repositoryProduct;
+        private readonly IRepository<Category, Guid> _repositoryCategory;
+        private readonly IRepository<Marque, Guid> _repositoryMarque;
+        private readonly IRepository<Product, Guid> _repositoryProduct;
 
         public EditProductPresenterPage(IEditProductView editProductView,IRepository<Category,Guid> repositoryCategory,IRepository<Marque,Guid> repositoryMarque, IRepository<Product,Guid> repositoryProduct )
         {

@@ -69,7 +69,6 @@ namespace vente_embarque.DataLayer
                 Map.Map.MapStock(entity,uow);
                 uow.CommitChanges();
             }
-
         }
 
         public void Add(Stock entity)
@@ -79,7 +78,17 @@ namespace vente_embarque.DataLayer
 
         public void Remove(Stock entity)
         {
-            throw new NotImplementedException();
+            var config = new AppSettingsReader();
+            using (
+                var uow = new UnitOfWork
+                {
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
+                })
+            {
+                var stock = uow.GetObjectByKey<XpoStock>(entity.id);
+                uow.Delete(stock);
+                uow.CommitChanges();
+            }
         }
     }
 }

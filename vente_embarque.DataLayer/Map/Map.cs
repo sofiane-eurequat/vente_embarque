@@ -17,12 +17,25 @@ namespace vente_embarque.DataLayer.Map
     {
         public static XpoStock MapStock( Stock stock,UnitOfWork uow)
         {
-            var xpostock = new XpoStock(uow)
+            XpoStock xpoStock;
+            if (stock.newObject)
+            {
+                xpoStock = new XpoStock(uow)
                 {
-                    Name =stock.Name,
                     Oid = stock.id
                 };
-            if (stock.ProductLines == null) return xpostock;
+            }
+            else
+            {
+                xpoStock = uow.GetObjectByKey<XpoStock>(stock.id);
+            }
+
+            xpoStock.Name = stock.Name;
+            xpoStock.Wilaya = MapWilaya(stock.Wilaya, uow);
+            xpoStock.Commune = MapCommune(stock.Commune, uow);
+            xpoStock.Adress = stock.Adress;
+                
+            if (stock.ProductLines == null) return xpoStock;
             foreach (var pl in stock.ProductLines)
             {
                 var crierion = new Criterion(propertyName: "Name", value: pl.Product.Name,criteriaOperator:CriteriaOperator.Equal);
@@ -30,11 +43,11 @@ namespace vente_embarque.DataLayer.Map
                     {
                         Oid = pl.id,
                         Quantity = pl.Quantity,
-                        Stock = xpostock,
+                        Stock = xpoStock,
                         Product = uow.GetObjectByKey<XpoProduct>(pl.Product.id)
                     };
             }
-            return xpostock;
+            return xpoStock;
         }
 
         public static XpoSector MapSector(Sector sector, UnitOfWork uow)
@@ -111,7 +124,7 @@ namespace vente_embarque.DataLayer.Map
         public static XpoOrder MapOrder(Order order, UnitOfWork uow)
         {
             XpoOrder orderReturned;
-            order.newObject = false;
+            //order.newObject = false;
             if (order.newObject)
             {
                 orderReturned = new XpoOrder(uow)
@@ -123,8 +136,11 @@ namespace vente_embarque.DataLayer.Map
             {
                 orderReturned = uow.GetObjectByKey<XpoOrder>(order.id);
             }
+            orderReturned.NumCommadne = order.NumCommande;
             orderReturned.Client = MapClient(order.Client, uow);
             orderReturned.Priorite = order.Priorite;
+            orderReturned.Etat = order.Etat;
+            orderReturned.LivraisonSurPlace = order.LivraisonSurPlace;
             //orderReturned.Delivery=order.Livraison
             //todo : a implementer lors du lancement du module livraison 
 

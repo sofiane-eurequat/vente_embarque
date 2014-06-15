@@ -37,16 +37,20 @@ namespace DevExpress.MailClient.Win.Modules
 
             gridControlOrder.DataSource = Orders;
             gridViewOrder.Columns[0].Visible = false;
+
+            if (!Orders.Any()) return;
+
             gridViewOrder.RowCellClick += gridViewOrder_CellClick;
-            
+            gridViewOrderLine.RowCellClick += gridViewOrderLine_CellClick;
+
             gridControlOrderLine.DataSource = Orders.First().OrderLines;
-            gridViewOrderLine.Columns[2].Visible = false;
-            gridViewOrderLine.Columns[3].Visible = false;
-            gridViewOrderLine.Columns[0].Caption = Resources.Produit;
+            gridViewOrderLine.Columns[0].Visible = false;
+            gridViewOrderLine.Columns[2].Caption = Resources.Produit;
             
             GCDisplayProduct.DataSource = Orders.First().Products;
-
             layoutViewProduct.Columns["Id"].Visible = false;
+            layoutViewProduct.Columns["Photo"].LayoutViewField.TextVisible = false;
+            layoutViewProduct.CardMinSize = new Size(350, 200);
 
             var riPictureEdit = GCDisplayProduct.RepositoryItems.Add("PictureEdit") as RepositoryItemPictureEdit;
            
@@ -55,10 +59,6 @@ namespace DevExpress.MailClient.Win.Modules
                 riPictureEdit.SizeMode = PictureSizeMode.Squeeze;
                 layoutViewProduct.Columns["Photo"].ColumnEdit = riPictureEdit;
             }
-
-            layoutViewProduct.Columns["Photo"].LayoutViewField.TextVisible = false;
-
-            layoutViewProduct.CardMinSize = new Size(350, 200);
         }
 
         protected internal override void ButtonClick(string tag)
@@ -129,21 +129,25 @@ namespace DevExpress.MailClient.Win.Modules
 
         private void Bdc2_Load(object sender, EventArgs e)
         {
-            _bdcPresenter = new BdcPresenterPage(this, _repositoryOrder,_repositoryProduct);
+            _bdcPresenter = new BdcPresenterPage(this, _repositoryOrder, _repositoryProduct);
             _bdcPresenter.Diplay();
 
             gridControlOrder.DataSource = Orders;
             gridViewOrder.Columns[0].Visible = false;
+
+            if (!Orders.Any()) return;
+
             gridViewOrder.RowCellClick += gridViewOrder_CellClick;
+            gridViewOrderLine.RowCellClick += gridViewOrderLine_CellClick;
 
             gridControlOrderLine.DataSource = Orders.First().OrderLines;
-            gridViewOrderLine.Columns[2].Visible = false;
-            gridViewOrderLine.Columns[0].Caption = Resources.Produit;
-            gridViewOrderLine.RowCellClick += gridViewOrderLine_CellClick;
-            /*
-            GCDisplayProduct.DataSource = Products;
+            gridViewOrderLine.Columns[0].Visible = false;
+            gridViewOrderLine.Columns[2].Caption = Resources.Produit;
 
+            GCDisplayProduct.DataSource = Orders.First().Products;
             layoutViewProduct.Columns["Id"].Visible = false;
+            layoutViewProduct.Columns["Photo"].LayoutViewField.TextVisible = false;
+            layoutViewProduct.CardMinSize = new Size(350, 200);
 
             var riPictureEdit = GCDisplayProduct.RepositoryItems.Add("PictureEdit") as RepositoryItemPictureEdit;
 
@@ -152,10 +156,6 @@ namespace DevExpress.MailClient.Win.Modules
                 riPictureEdit.SizeMode = PictureSizeMode.Squeeze;
                 layoutViewProduct.Columns["Photo"].ColumnEdit = riPictureEdit;
             }
-
-            layoutViewProduct.Columns["Photo"].LayoutViewField.TextVisible = false;
-
-            layoutViewProduct.CardMinSize = new Size(350, 200);*/
         }
 
         private void gridControlOrder_Click(object sender, EventArgs e)

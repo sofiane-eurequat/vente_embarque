@@ -11,15 +11,15 @@ namespace vente_embarque.presenter.Bdc
 {
     public class EditBdcPresenterPage:IEditBdcPagePresenter
     {
-        private readonly IEditBdcView _EditBdcView;
-        private IRepository<Client, Guid> _repositoryClient; 
-        private IRepository<Stock, Guid> _repositoryStock;
-        private IRepository<Order, Guid> _repositoryOrder;
+        private readonly IEditBdcView _editBdcView;
+        private readonly IRepository<Client, Guid> _repositoryClient; 
+        private readonly IRepository<Stock, Guid> _repositoryStock;
+        private readonly IRepository<Order, Guid> _repositoryOrder;
         private List<OrderLine> _orderLines = new List<OrderLine>();
  
         public EditBdcPresenterPage(IEditBdcView editBdcView, IRepository<Client,Guid> repository, IRepository<Stock,Guid> repository1, IRepository<Order, Guid> repositoryOrder, List<OrderLine> orderLines)
         {
-            _EditBdcView = editBdcView;
+            _editBdcView = editBdcView;
             _repositoryClient = repository;
             _repositoryStock = repository1;
             _repositoryOrder = repositoryOrder;
@@ -28,14 +28,14 @@ namespace vente_embarque.presenter.Bdc
 
         public void Display()
         {
-            _EditBdcView.Clients = _repositoryClient.FindAll();
-            _EditBdcView.Stocks = _repositoryStock.FindAll();
+            _editBdcView.Clients = _repositoryClient.FindAll();
+            _editBdcView.Stocks = _repositoryStock.FindAll();
 
         }
 
-        public void Write( Client client, IEnumerable<OrderLine> orderLine, Priorite priorite, DateTime dateLivraison, string adresseLivraison)
+        public void Write(int numCommande, Client client, DateTime dateLivraison, string adresseLivraison, Priorite priorite, GestionCommande etat, bool livraisonSurPlace, IEnumerable<OrderLine> orderLine)
         {
-            var order = FactoryOrder.CreateOrder(client,orderLine,adresseLivraison,priorite,dateLivraison);
+            var order = FactoryOrder.CreateOrder(numCommande,client,orderLine,adresseLivraison,livraisonSurPlace,priorite,etat,dateLivraison);
             _repositoryOrder.Save(order);
         }
     }
@@ -43,6 +43,8 @@ namespace vente_embarque.presenter.Bdc
     internal interface IEditBdcPagePresenter
     {
         void Display();
-        void Write(Client client, IEnumerable<OrderLine> orderLine,Priorite priorite, DateTime dateLivraison, string adresseLivraison);
+
+        void Write(int numCommande, Client client, DateTime dateLivraison, string adresseLivraison, Priorite priorite,
+                   GestionCommande etat, bool livraisonSurPlace, IEnumerable<OrderLine> orderLine);
     }
 }

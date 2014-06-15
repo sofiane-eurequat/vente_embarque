@@ -443,18 +443,6 @@
   <data name="ribbon.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="ribbonPageGroup1.Text" xml:space="preserve">
-    <value>Nouveau</value>
-  </data>
-  <data name="ribbonPageGroup2.Text" xml:space="preserve">
-    <value>Sauvegarder</value>
-  </data>
-  <data name="ribbonPageGroup3.Text" xml:space="preserve">
-    <value>Reinitialiser</value>
-  </data>
-  <data name="ribbonPageGroup4.Text" xml:space="preserve">
-    <value>Fermer</value>
-  </data>
   <data name="ribbonPage1.Text" xml:space="preserve">
     <value>Home</value>
   </data>
@@ -491,16 +479,184 @@
   <data name="&gt;&gt;ribbon.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="ribbonPageGroup1.Text" xml:space="preserve">
+    <value>Nouveau</value>
+  </data>
+  <data name="ribbonPageGroup2.Text" xml:space="preserve">
+    <value>Sauvegarder</value>
+  </data>
+  <data name="ribbonPageGroup3.Text" xml:space="preserve">
+    <value>Reinitialiser</value>
+  </data>
+  <data name="ribbonPageGroup4.Text" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
   <metadata name="applicationMenu1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="radiogroupLivraisonSurPlace.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 136</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="radioGroup1.Properties.Items" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioGroup1.Properties.Items1" xml:space="preserve">
+    <value>Oui</value>
+  </data>
+  <data name="radioGroup1.Properties.Items2" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="radioGroup1.Properties.Items3" xml:space="preserve">
+    <value>Non</value>
+  </data>
+  <data name="radiogroupLivraisonSurPlace.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 24</value>
+  </data>
+  <data name="radiogroupLivraisonSurPlace.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;radiogroupLivraisonSurPlace.Name" xml:space="preserve">
+    <value>radiogroupLivraisonSurPlace</value>
+  </data>
+  <data name="&gt;&gt;radiogroupLivraisonSurPlace.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.RadioGroup, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;radiogroupLivraisonSurPlace.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;radiogroupLivraisonSurPlace.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelControl1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
+  </data>
+  <data name="labelLivraison.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 140</value>
+  </data>
+  <data name="labelLivraison.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 16</value>
+  </data>
+  <data name="labelLivraison.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="labelLivraison.Text" xml:space="preserve">
+    <value>Livraison sur place</value>
+  </data>
+  <data name="&gt;&gt;labelLivraison.Name" xml:space="preserve">
+    <value>labelLivraison</value>
+  </data>
+  <data name="&gt;&gt;labelLivraison.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelLivraison.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;labelLivraison.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textEditNumCommande.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 32</value>
+  </data>
+  <data name="textEditNumCommande.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 20</value>
+  </data>
+  <data name="textEditNumCommande.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;textEditNumCommande.Name" xml:space="preserve">
+    <value>textEditNumCommande</value>
+  </data>
+  <data name="&gt;&gt;textEditNumCommande.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEditNumCommande.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;textEditNumCommande.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelNameProduit.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
+  <data name="labelNumCommande.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 35</value>
+  </data>
+  <data name="labelNumCommande.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 14</value>
+  </data>
+  <data name="labelNumCommande.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="labelNumCommande.Text" xml:space="preserve">
+    <value>Numero de Commande</value>
+  </data>
+  <data name="&gt;&gt;labelNumCommande.Name" xml:space="preserve">
+    <value>labelNumCommande</value>
+  </data>
+  <data name="&gt;&gt;labelNumCommande.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelNumCommande.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;labelNumCommande.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="comboBoxEtat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>540, 102</value>
+  </data>
+  <data name="comboBoxEtat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 21</value>
+  </data>
+  <data name="comboBoxEtat.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;comboBoxEtat.Name" xml:space="preserve">
+    <value>comboBoxEtat</value>
+  </data>
+  <data name="&gt;&gt;comboBoxEtat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxEtat.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;comboBoxEtat.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="labelControl1.Appearance.Font1" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
+  </data>
+  <data name="labelEtat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>423, 105</value>
+  </data>
+  <data name="labelEtat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 16</value>
+  </data>
+  <data name="labelEtat.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="labelEtat.Text" xml:space="preserve">
+    <value>Etat</value>
+  </data>
+  <data name="&gt;&gt;labelEtat.Name" xml:space="preserve">
+    <value>labelEtat</value>
+  </data>
+  <data name="&gt;&gt;labelEtat.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelEtat.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;labelEtat.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="comboBoxPriorite.Location" type="System.Drawing.Point, System.Drawing">
-    <value>526, 32</value>
+    <value>150, 102</value>
   </data>
   <data name="comboBoxPriorite.Size" type="System.Drawing.Size, System.Drawing">
     <value>250, 21</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="comboBoxPriorite.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
   </data>
@@ -514,13 +670,13 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;comboBoxPriorite.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>6</value>
   </data>
   <data name="labelPriorite.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt</value>
   </data>
   <data name="labelPriorite.Location" type="System.Drawing.Point, System.Drawing">
-    <value>413, 32</value>
+    <value>14, 105</value>
   </data>
   <data name="labelPriorite.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 16</value>
@@ -541,10 +697,10 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;labelPriorite.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>7</value>
   </data>
   <data name="memoEditAdresssLivraion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>526, 68</value>
+    <value>540, 67</value>
   </data>
   <data name="memoEditAdresssLivraion.Size" type="System.Drawing.Size, System.Drawing">
     <value>250, 21</value>
@@ -562,14 +718,14 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;memoEditAdresssLivraion.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>8</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="dateEditLivraison.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="dateEditLivraison.Location" type="System.Drawing.Point, System.Drawing">
-    <value>125, 69</value>
+    <value>150, 67</value>
   </data>
   <assembly alias="DevExpress.Utils.v13.2" name="DevExpress.Utils.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   <data name="dateEditLivraison.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.2">
@@ -594,10 +750,10 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;dateEditLivraison.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>9</value>
   </data>
   <data name="comboBoxClients.Location" type="System.Drawing.Point, System.Drawing">
-    <value>125, 31</value>
+    <value>540, 32</value>
   </data>
   <data name="comboBoxClients.Size" type="System.Drawing.Size, System.Drawing">
     <value>250, 21</value>
@@ -615,7 +771,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;comboBoxClients.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>10</value>
   </data>
   <data name="labelDateLivraison.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt</value>
@@ -642,13 +798,13 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;labelDateLivraison.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>11</value>
   </data>
   <data name="labelAdresseLivraison.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt</value>
   </data>
   <data name="labelAdresseLivraison.Location" type="System.Drawing.Point, System.Drawing">
-    <value>413, 69</value>
+    <value>423, 70</value>
   </data>
   <data name="labelAdresseLivraison.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 16</value>
@@ -669,13 +825,13 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;labelAdresseLivraison.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>12</value>
   </data>
   <data name="labelClient.Appearance.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt</value>
   </data>
   <data name="labelClient.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 32</value>
+    <value>423, 35</value>
   </data>
   <data name="labelClient.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 16</value>
@@ -696,13 +852,13 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;labelClient.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>13</value>
   </data>
   <data name="groupControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 144</value>
   </data>
   <data name="groupControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>803, 108</value>
+    <value>803, 169</value>
   </data>
   <data name="groupControl1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -723,7 +879,67 @@
     <value>1</value>
   </data>
   <data name="xtraTabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 258</value>
+    <value>0, 319</value>
+  </data>
+  <data name="&gt;&gt;GCOrderLine.Name" xml:space="preserve">
+    <value>GCOrderLine</value>
+  </data>
+  <data name="&gt;&gt;GCOrderLine.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;GCOrderLine.Parent" xml:space="preserve">
+    <value>xtraTabPage1</value>
+  </data>
+  <data name="&gt;&gt;GCOrderLine.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;standaloneBarDockControl1.Name" xml:space="preserve">
+    <value>standaloneBarDockControl1</value>
+  </data>
+  <data name="&gt;&gt;standaloneBarDockControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.StandaloneBarDockControl, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;standaloneBarDockControl1.Parent" xml:space="preserve">
+    <value>xtraTabPage1</value>
+  </data>
+  <data name="&gt;&gt;standaloneBarDockControl1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="xtraTabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>797, 121</value>
+  </data>
+  <data name="xtraTabPage1.Text" xml:space="preserve">
+    <value>Liste produits</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage1.Name" xml:space="preserve">
+    <value>xtraTabPage1</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage1.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage1.Parent" xml:space="preserve">
+    <value>xtraTabControl1</value>
+  </data>
+  <data name="&gt;&gt;xtraTabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="xtraTabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>803, 149</value>
+  </data>
+  <data name="xtraTabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.Name" xml:space="preserve">
+    <value>xtraTabControl1</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;xtraTabControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="GCOrderLine.Location" type="System.Drawing.Point, System.Drawing">
     <value>-1, 26</value>
@@ -778,42 +994,6 @@
   </data>
   <data name="&gt;&gt;standaloneBarDockControl1.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="xtraTabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>797, 182</value>
-  </data>
-  <data name="xtraTabPage1.Text" xml:space="preserve">
-    <value>Liste produits</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage1.Name" xml:space="preserve">
-    <value>xtraTabPage1</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage1.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage1.Parent" xml:space="preserve">
-    <value>xtraTabControl1</value>
-  </data>
-  <data name="&gt;&gt;xtraTabPage1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="xtraTabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>803, 210</value>
-  </data>
-  <data name="xtraTabControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl1.Name" xml:space="preserve">
-    <value>xtraTabControl1</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;xtraTabControl1.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <metadata name="barManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>167, 17</value>

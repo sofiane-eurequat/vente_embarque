@@ -21,6 +21,7 @@ using DevExpress.XtraGrid.Columns;
 using vente_embarque.DataLayer;
 using vente_embarque.Model;
 using vente_embarque.presenter;
+using vente_embarque.presenter.Stok;
 
 namespace DevExpress.MailClient.Win.Modules {
     public partial class Stock : BaseModule,IStockView {
@@ -28,11 +29,9 @@ namespace DevExpress.MailClient.Win.Modules {
 
 
         public IEnumerable<ModelViewStock> Stocks { get; set; }
-        private StockPresenterPage _StockPresenter;
+        private StockPresenterPage _stockPresenter;
         public Stock() {
             InitializeComponent();
-          
-
 
         }
 
@@ -56,15 +55,14 @@ namespace DevExpress.MailClient.Win.Modules {
 
 
             var repositoryStock = new RepositoryStock();
-            _StockPresenter = new StockPresenterPage(this, repositoryStock);
-            _StockPresenter.Display();
+            _stockPresenter = new StockPresenterPage(this, repositoryStock);
+            _stockPresenter.Display();
 
             gridControlStock.DataSource = Stocks;
             gridViewStock.Columns[5].Visible = false;
 
-
-            var LignesProduits = Stocks.First().ProductLine;
-            gridControlProduct.DataSource = LignesProduits;
+            var lignesProduits = Stocks.First().ProductLine;
+            gridControlProduct.DataSource = lignesProduits;
             gridViewProductLine.Columns[0].Visible = false;
             gridViewProductLine.Columns[3].Visible = false;
             gridViewProductLine.Columns[1].Caption = Resources.Produit;
@@ -220,7 +218,7 @@ namespace DevExpress.MailClient.Win.Modules {
             OwnerForm.EnableDelete(enabled);
         }
         private void RaiseEnableMail(bool enabled) {
-            OwnerForm.EnableMail(enabled, enabled && CurrentMessage != null ? CurrentMessage.IsUnread : false);
+            OwnerForm.EnableMail(enabled, enabled && CurrentMessage != null && CurrentMessage.IsUnread);
         }
         void SetPriorityMenu() {
             OwnerForm.SetPriorityMenu(PriorityMenu);
@@ -257,7 +255,7 @@ namespace DevExpress.MailClient.Win.Modules {
             if(gridViewStock.FocusedRowHandle >= 0)
                 CurrentMessage = gridViewStock.GetFocusedRow() as Message;
             else {
-                List<Message> rows = new List<Message>();
+                var rows = new List<Message>();
                 GridHelper.GetChildDataRowHandles(gridViewStock, gridViewStock.FocusedRowHandle, rows);
                 //ucMailViewer1.ShowMessagesInfo(rows);
                 CurrentMessage = null;
@@ -276,7 +274,7 @@ namespace DevExpress.MailClient.Win.Modules {
                 case TagResources.DeleteItem:
                     foreach(int row in gridViewStock.GetSelectedRows())
                         if(row >= 0) {
-                            Message message = ((Message)gridViewStock.GetRow(row));
+                            var message = ((Message)gridViewStock.GetRow(row));
                             if(message.MailType == MailType.Deleted)
                                 message.Deleted = true;
                             else
@@ -289,6 +287,9 @@ namespace DevExpress.MailClient.Win.Modules {
                     break;
                 case TagResources.NewProduct:
                     CreateProduct();
+                    break;
+                case TagResources.NewProductLine:
+                    CreateProductLine();
                     break;
                 case TagResources.ReplyAll:
                     CreateReplyAllMailMessages();
@@ -345,6 +346,11 @@ namespace DevExpress.MailClient.Win.Modules {
             EditProduct();
         }
 
+        void CreateProductLine()
+        {
+            EditProductLine();
+        }
+
         void EditStock(ModelViewStock stock, bool newStock, string caption)
         {
             Cursor.Current = Cursors.WaitCursor;
@@ -352,14 +358,24 @@ namespace DevExpress.MailClient.Win.Modules {
             form.Load += OnEditMailFormLoad;
             form.FormClosed += OnEditMailFormClosed;
             form.Location = new Point(OwnerForm.Left + (OwnerForm.Width - form.Width) / 2, OwnerForm.Top + (OwnerForm.Height - form.Height) / 2);
-            form.Show();
+            form.ShowDialog();
+            Mail_Load(stock,new EventArgs());
             Cursor.Current = Cursors.Default;
         }
 
         void EditProduct()
         {
             Cursor.Current = Cursors.WaitCursor;
-            var form = new frmEditProduct();
+            var form = new FrmEditProduct();
+            form.Location = new Point(OwnerForm.Left + (OwnerForm.Width - form.Width) / 2, OwnerForm.Top + (OwnerForm.Height - form.Height) / 2);
+            form.ShowDialog();
+            Cursor.Current = Cursors.Default;
+        }
+        
+        void EditProductLine()
+        {
+            Cursor.Current = Cursors.WaitCursor;
+            var form = new FrmEditProductLine();
             form.Location = new Point(OwnerForm.Left + (OwnerForm.Width - form.Width) / 2, OwnerForm.Top + (OwnerForm.Height - form.Height) / 2);
             form.ShowDialog();
             Cursor.Current = Cursors.Default;
@@ -378,13 +394,13 @@ namespace DevExpress.MailClient.Win.Modules {
         }
         void CreateReplyMailMessage(int row) {
             if (row >= 0) {
-                Message message = ((Message)gridViewStock.GetRow(row));
+                var message = ((Message)gridViewStock.GetRow(row));
                 if (message.MailType != MailType.Deleted && !message.Deleted)
                     CreateReplyMailMessage(message);
             }
         }
         void CreateReplyMailMessage(Message originalMessage) {
-            Message message = new Message();
+            var message = new Message();
             message.MailType = MailType.Draft;
             message.From = originalMessage.From;
             message.Subject = originalMessage.Subject;
@@ -406,7 +422,7 @@ namespace DevExpress.MailClient.Win.Modules {
             }
         }
         void CreateForwardMailMessage(Message originalMessage) {
-            Message message = new Message();
+            var message = new Message();
             message.MailType = MailType.Draft;
             message.Subject = originalMessage.Subject;
             message.Text = CreateForwardMessageText(originalMessage.Text, String.Empty);
@@ -414,14 +430,14 @@ namespace DevExpress.MailClient.Win.Modules {
         }
 
         string CreateReplyMessageText(string text, string to, DateTime originalMessageDate) {
-            using (RichEditDocumentServer server = new RichEditDocumentServer()) {
+            using (var server = new RichEditDocumentServer()) {
                 server.HtmlText = text;
                 QuoteReplyMessage(server, to, originalMessageDate);
                 return server.HtmlText;
             }
         }
         string CreateForwardMessageText(string text, string to) {
-            using (RichEditDocumentServer server = new RichEditDocumentServer()) {
+            using (var server = new RichEditDocumentServer()) {
                 server.HtmlText = text;
                 QuoteForwardMessage(server, to);
                 return server.HtmlText;
@@ -453,13 +469,13 @@ namespace DevExpress.MailClient.Win.Modules {
             document.AppendText(Properties.Resources.ForwardTextStart);
         }
         void OnEditMailFormLoad(object sender, EventArgs e) {
-            frmEditStock form = sender as frmEditStock;
+            var form = sender as frmEditStock;
             if (form != null)
                 form.SaveMessage += OnEditMailFormSaveMessage;
         }
 
         void OnEditMailFormSaveMessage(object sender, EventArgs e) {
-            frmEditStock form = sender as frmEditStock;
+            var form = sender as frmEditStock;
             if (form == null)
                 return;
 
@@ -469,7 +485,7 @@ namespace DevExpress.MailClient.Win.Modules {
         }
 
         void OnEditMailFormClosed(object sender, FormClosedEventArgs e) {
-            frmEditStock form = sender as frmEditStock;
+            var form = sender as frmEditStock;
             if (form != null)
                 form.SaveMessage -= OnEditMailFormSaveMessage;
         }
@@ -500,7 +516,7 @@ namespace DevExpress.MailClient.Win.Modules {
         FindControl FindControl {
             get {
                 foreach(Control ctrl in gridControlStock.Controls) {
-                    FindControl ret = ctrl as FindControl;
+                    var ret = ctrl as FindControl;
                     if(ret != null) return ret;
                 }
                 return null;
@@ -515,9 +531,8 @@ namespace DevExpress.MailClient.Win.Modules {
         }
         PopupMenu DateFilterMenu {
             get {
-                if(dateFilterMenu == null)
-                    dateFilterMenu = new DateFilterMenu(ribbon.Manager, gridViewStock, filterCriteriaManager);
-                return dateFilterMenu;
+                return dateFilterMenu ??
+                       (dateFilterMenu = new DateFilterMenu(ribbon.Manager, gridViewStock, filterCriteriaManager));
             }
         }
         void MakeFocusedRowVisible() {
@@ -560,7 +575,7 @@ namespace DevExpress.MailClient.Win.Modules {
 
         private void gridControlStock_Click(object sender, EventArgs e)
         {
-            if (gridViewStock == null) return;
+            if (!Stocks.Any()) return;
             gridControlProduct.DataSource =
                 Stocks.First(s => s.Id == (Guid)gridViewStock.GetFocusedRowCellValue("Id")).ProductLine;
         }
@@ -568,14 +583,14 @@ namespace DevExpress.MailClient.Win.Modules {
         //To accomplish this task, set the GridView.OptionsBehavior.EditorShowMode property to the EditorShowMode.MouseUp value.
         private void gridViewStock_CellClick(object sender, RowCellClickEventArgs e)
         {
-            if (gridViewStock == null) return;
+            if (!Stocks.Any()) return;
             gridControlProduct.DataSource =
                 Stocks.First(s => s.Id == (Guid)gridViewStock.GetFocusedRowCellValue("Id")).ProductLine;
         }
 
         private void gridControlProduct_Click(object sender, EventArgs e)
         {
-            if (gridViewStock == null) return;
+            if (!Stocks.Any()) return;
             GCProductDisplay.DataSource =
                 Stocks.First(s => s.Id == (Guid)gridViewStock.GetFocusedRowCellValue("Id")).ProductLine.First(p => p.Id == (Guid)gridViewProductLine.GetFocusedRowCellValue("Id")).Product;
         }

@@ -10,18 +10,18 @@ namespace vente_embarque.presenter.Bdc
 {
     public class EditOrderLinePresenterPage:IEditOrderLinePagePresenter
     {
-        private readonly IEditBdcView _EditBdcView; 
-        private IRepository<Stock, Guid> _repositoryStock;
+        private readonly IEditBdcView _editBdcView; 
+        private readonly IRepository<Stock, Guid> _repositoryStock;
  
         public EditOrderLinePresenterPage(IEditBdcView editBdcView, IRepository<Stock,Guid> repository1)
         {
-            _EditBdcView = editBdcView;
+            _editBdcView = editBdcView;
             _repositoryStock = repository1;
         }
 
         public void Display()
         {
-            _EditBdcView.Stocks = _repositoryStock.FindAll();
+            _editBdcView.Stocks = _repositoryStock.FindAll();
         }
 
     }

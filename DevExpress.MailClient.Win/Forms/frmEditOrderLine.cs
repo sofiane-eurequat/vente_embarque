@@ -41,6 +41,7 @@ namespace DevExpress.MailClient.Win.Forms
             comboBoxStock.DataSource = Stocks.OrderBy(s => s.Name).ToList();
             comboBoxStock.DisplayMember = "Name";
 
+            if (!Stocks.Any()) return;
             comboBoxProduit.DataSource = Stocks.First(s => s.Name == (string)comboBoxStock.SelectedValue).GetProducts().ToList();
             comboBoxProduit.DisplayMember = "Name";
         }
