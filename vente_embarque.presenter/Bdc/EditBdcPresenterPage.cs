@@ -33,9 +33,9 @@ namespace vente_embarque.presenter.Bdc
 
         }
 
-        public void Write(int numCommande, Client client, DateTime dateLivraison, string adresseLivraison, Priorite priorite, GestionCommande etat, bool livraisonSurPlace, IEnumerable<OrderLine> orderLine)
+        public void Write(int numCommande, Client client, DateTime dateLivraison, string adresseLivraison, Priorite priorite, GestionCommande etat, bool livraisonSurPlace, DateTime dateCommande, IEnumerable<OrderLine> orderLine)
         {
-            var order = FactoryOrder.CreateOrder(numCommande,client,orderLine,adresseLivraison,livraisonSurPlace,priorite,etat,dateLivraison);
+            var order = FactoryOrder.CreateOrder(numCommande,client,orderLine,adresseLivraison,livraisonSurPlace,priorite,etat,dateLivraison,dateCommande);
             _repositoryOrder.Save(order);
         }
     }
@@ -45,6 +45,6 @@ namespace vente_embarque.presenter.Bdc
         void Display();
 
         void Write(int numCommande, Client client, DateTime dateLivraison, string adresseLivraison, Priorite priorite,
-                   GestionCommande etat, bool livraisonSurPlace, IEnumerable<OrderLine> orderLine);
+                   GestionCommande etat, bool livraisonSurPlace, DateTime dateCommande, IEnumerable<OrderLine> orderLine);
     }
 }

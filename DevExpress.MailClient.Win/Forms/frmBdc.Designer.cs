@@ -45,6 +45,12 @@
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.applicationMenu1 = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.radiogroupLivraisonSurPlace = new DevExpress.XtraEditors.RadioGroup();
+            this.labelLivraison = new DevExpress.XtraEditors.LabelControl();
+            this.textEditNumCommande = new DevExpress.XtraEditors.TextEdit();
+            this.labelNumCommande = new DevExpress.XtraEditors.LabelControl();
+            this.comboBoxEtat = new System.Windows.Forms.ComboBox();
+            this.labelEtat = new DevExpress.XtraEditors.LabelControl();
             this.comboBoxPriorite = new System.Windows.Forms.ComboBox();
             this.labelPriorite = new DevExpress.XtraEditors.LabelControl();
             this.memoEditAdresssLivraion = new DevExpress.XtraEditors.MemoEdit();
@@ -69,16 +75,14 @@
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.comboBoxEtat = new System.Windows.Forms.ComboBox();
-            this.labelEtat = new DevExpress.XtraEditors.LabelControl();
-            this.textEditNumCommande = new DevExpress.XtraEditors.TextEdit();
-            this.labelNumCommande = new DevExpress.XtraEditors.LabelControl();
-            this.labelLivraison = new DevExpress.XtraEditors.LabelControl();
-            this.radiogroupLivraisonSurPlace = new DevExpress.XtraEditors.RadioGroup();
+            this.dateEditCommande = new DevExpress.XtraEditors.DateEdit();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radiogroupLivraisonSurPlace.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditNumCommande.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memoEditAdresssLivraion.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditLivraison.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditLivraison.Properties)).BeginInit();
@@ -88,8 +92,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.GCOrderLine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewOrderLine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditNumCommande.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radiogroupLivraisonSurPlace.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditCommande.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditCommande.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
@@ -219,6 +223,8 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.dateEditCommande);
+            this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Controls.Add(this.radiogroupLivraisonSurPlace);
             this.groupControl1.Controls.Add(this.labelLivraison);
             this.groupControl1.Controls.Add(this.textEditNumCommande);
@@ -235,6 +241,47 @@
             this.groupControl1.Controls.Add(this.labelClient);
             resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Name = "groupControl1";
+            // 
+            // radiogroupLivraisonSurPlace
+            // 
+            resources.ApplyResources(this.radiogroupLivraisonSurPlace, "radiogroupLivraisonSurPlace");
+            this.radiogroupLivraisonSurPlace.MenuManager = this.ribbon;
+            this.radiogroupLivraisonSurPlace.Name = "radiogroupLivraisonSurPlace";
+            this.radiogroupLivraisonSurPlace.Properties.Columns = 2;
+            this.radiogroupLivraisonSurPlace.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Default;
+            this.radiogroupLivraisonSurPlace.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("radiogroupLivraisonSurPlace.Properties.Items"))), resources.GetString("radiogroupLivraisonSurPlace.Properties.Items1")),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("radiogroupLivraisonSurPlace.Properties.Items2"))), resources.GetString("radiogroupLivraisonSurPlace.Properties.Items3"))});
+            // 
+            // labelLivraison
+            // 
+            this.labelLivraison.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelLivraison.Appearance.Font")));
+            resources.ApplyResources(this.labelLivraison, "labelLivraison");
+            this.labelLivraison.Name = "labelLivraison";
+            // 
+            // textEditNumCommande
+            // 
+            resources.ApplyResources(this.textEditNumCommande, "textEditNumCommande");
+            this.textEditNumCommande.Name = "textEditNumCommande";
+            // 
+            // labelNumCommande
+            // 
+            this.labelNumCommande.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelNumCommande.Appearance.Font")));
+            this.labelNumCommande.LineVisible = true;
+            resources.ApplyResources(this.labelNumCommande, "labelNumCommande");
+            this.labelNumCommande.Name = "labelNumCommande";
+            // 
+            // comboBoxEtat
+            // 
+            this.comboBoxEtat.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxEtat, "comboBoxEtat");
+            this.comboBoxEtat.Name = "comboBoxEtat";
+            // 
+            // labelEtat
+            // 
+            this.labelEtat.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelEtat.Appearance.Font")));
+            resources.ApplyResources(this.labelEtat, "labelEtat");
+            this.labelEtat.Name = "labelEtat";
             // 
             // comboBoxPriorite
             // 
@@ -419,46 +466,21 @@
             this.barButtonItem2.Id = 0;
             this.barButtonItem2.Name = "barButtonItem2";
             // 
-            // comboBoxEtat
+            // dateEditCommande
             // 
-            this.comboBoxEtat.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBoxEtat, "comboBoxEtat");
-            this.comboBoxEtat.Name = "comboBoxEtat";
+            resources.ApplyResources(this.dateEditCommande, "dateEditCommande");
+            this.dateEditCommande.MenuManager = this.ribbon;
+            this.dateEditCommande.Name = "dateEditCommande";
+            this.dateEditCommande.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEdit1.Properties.Buttons"))))});
+            this.dateEditCommande.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEdit1.Properties.CalendarTimeProperties.Buttons"))))});
             // 
-            // labelEtat
+            // labelControl1
             // 
-            this.labelEtat.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl1.Appearance.Font1")));
-            resources.ApplyResources(this.labelEtat, "labelEtat");
-            this.labelEtat.Name = "labelEtat";
-            // 
-            // textEditNumCommande
-            // 
-            resources.ApplyResources(this.textEditNumCommande, "textEditNumCommande");
-            this.textEditNumCommande.Name = "textEditNumCommande";
-            // 
-            // labelNumCommande
-            // 
-            this.labelNumCommande.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelNameProduit.Appearance.Font")));
-            this.labelNumCommande.LineVisible = true;
-            resources.ApplyResources(this.labelNumCommande, "labelNumCommande");
-            this.labelNumCommande.Name = "labelNumCommande";
-            // 
-            // labelLivraison
-            // 
-            this.labelLivraison.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl1.Appearance.Font")));
-            resources.ApplyResources(this.labelLivraison, "labelLivraison");
-            this.labelLivraison.Name = "labelLivraison";
-            // 
-            // radiogroupLivraisonSurPlace
-            // 
-            resources.ApplyResources(this.radiogroupLivraisonSurPlace, "radiogroupLivraisonSurPlace");
-            this.radiogroupLivraisonSurPlace.MenuManager = this.ribbon;
-            this.radiogroupLivraisonSurPlace.Name = "radiogroupLivraisonSurPlace";
-            this.radiogroupLivraisonSurPlace.Properties.Columns = 2;
-            this.radiogroupLivraisonSurPlace.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Default;
-            this.radiogroupLivraisonSurPlace.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("radioGroup1.Properties.Items"))), resources.GetString("radioGroup1.Properties.Items1")),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("radioGroup1.Properties.Items2"))), resources.GetString("radioGroup1.Properties.Items3"))});
+            this.labelControl1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl1.Appearance.Font")));
+            resources.ApplyResources(this.labelControl1, "labelControl1");
+            this.labelControl1.Name = "labelControl1";
             // 
             // frmBdc
             // 
@@ -481,6 +503,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radiogroupLivraisonSurPlace.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditNumCommande.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.memoEditAdresssLivraion.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditLivraison.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditLivraison.Properties)).EndInit();
@@ -490,8 +514,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.GCOrderLine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewOrderLine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditNumCommande.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radiogroupLivraisonSurPlace.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditCommande.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditCommande.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -543,5 +567,7 @@
         private XtraEditors.TextEdit textEditNumCommande;
         private XtraEditors.LabelControl labelNumCommande;
         private XtraEditors.RadioGroup radiogroupLivraisonSurPlace;
+        private XtraEditors.DateEdit dateEditCommande;
+        private XtraEditors.LabelControl labelControl1;
     }
 }

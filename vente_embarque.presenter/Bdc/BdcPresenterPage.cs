@@ -38,7 +38,9 @@ namespace vente_embarque.presenter.Bdc
                         Client = bdc.Client.Name,
                         Priorite = bdc.Priorite,
                         Etat = bdc.Etat,
+                        Datecommande = bdc.DateCommande,
                         LivraisonSurPlace = bdc.LivraisonSurPlace,
+                        Montant = bdc.Montant,
                         Id = bdc.id,
                     };
 
@@ -85,6 +87,8 @@ namespace vente_embarque.presenter.Bdc
         public DateTime DateLivraison { get; set; }
         public string AdresseLivraison { get; set; }
         public bool LivraisonSurPlace { get; set; }
+        public int Montant { get; set; }
+        public DateTime Datecommande { get; set; }
         public List<ModelViewProduct> Products { get; set; } 
     }
 

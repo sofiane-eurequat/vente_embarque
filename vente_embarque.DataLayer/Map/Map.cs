@@ -141,6 +141,8 @@ namespace vente_embarque.DataLayer.Map
             orderReturned.Priorite = order.Priorite;
             orderReturned.Etat = order.Etat;
             orderReturned.LivraisonSurPlace = order.LivraisonSurPlace;
+            orderReturned.DateCommande = order.DateCommande;
+            orderReturned.Montant = order.Montant;
             //orderReturned.Delivery=order.Livraison
             //todo : a implementer lors du lancement du module livraison 
 

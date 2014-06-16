@@ -44,6 +44,8 @@ namespace vente_embarque.DataLayer.Map
                 Priorite = xpoOrder.Priorite,
                 Etat = xpoOrder.Etat,
                 LivraisonSurPlace = xpoOrder.LivraisonSurPlace,
+                DateCommande = xpoOrder.DateCommande,
+                Montant = xpoOrder.Montant,
                 newObject = false
             };
             return order;

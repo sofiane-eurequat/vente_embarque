@@ -72,6 +72,20 @@ namespace vente_embarque.DataLayer.Entities.Orders
             set { SetPropertyValue("Priorite", ref _etat, value); }
         }
 
+        private DateTime _dateCommande;
+        public DateTime DateCommande
+        {
+            get { return _dateCommande; }
+            set { SetPropertyValue("Priorite", ref _dateCommande, value); }
+        }
+
+        private int _montant;
+        public int Montant
+        {
+            get { return _montant; }
+            set { SetPropertyValue("Name", ref _montant, value); }
+        }
+
         [Aggregated, Association("XpoOrder-XpoOrderLine")]
         public XPCollection<XpoOrderLine> OrderLines
         {

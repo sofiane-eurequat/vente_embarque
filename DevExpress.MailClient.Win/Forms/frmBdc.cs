@@ -107,21 +107,24 @@ namespace DevExpress.MailClient.Win.Forms
 
         private void bbiSauvegarder_ItemClick(object sender, ItemClickEventArgs e)
         {
-            _editBdcPresenter.Write(Convert.ToInt32(textEditNumCommande.Text), comboBoxClients.SelectedItem as Client, dateEditLivraison.DateTime, memoEditAdresssLivraion.Text, (Priorite)comboBoxPriorite.SelectedItem, (GestionCommande)comboBoxEtat.SelectedItem, Convert.ToBoolean(radiogroupLivraisonSurPlace.Text), OrderLines);
+            _editBdcPresenter.Write(Convert.ToInt32(textEditNumCommande.Text), comboBoxClients.SelectedItem as Client, dateEditLivraison.DateTime, memoEditAdresssLivraion.Text, (Priorite)comboBoxPriorite.SelectedItem, (GestionCommande)comboBoxEtat.SelectedItem, Convert.ToBoolean(radiogroupLivraisonSurPlace.Text), dateEditCommande.DateTime, OrderLines);
         }
 
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
         {
-            _editBdcPresenter.Write(Convert.ToInt32(textEditNumCommande.Text), comboBoxClients.SelectedItem as Client, dateEditLivraison.DateTime, memoEditAdresssLivraion.Text, (Priorite)comboBoxPriorite.SelectedItem, (GestionCommande)comboBoxEtat.SelectedItem, Convert.ToBoolean(radiogroupLivraisonSurPlace.Text), OrderLines);
+            _editBdcPresenter.Write(Convert.ToInt32(textEditNumCommande.Text), comboBoxClients.SelectedItem as Client, dateEditLivraison.DateTime, memoEditAdresssLivraion.Text, (Priorite)comboBoxPriorite.SelectedItem, (GestionCommande)comboBoxEtat.SelectedItem, Convert.ToBoolean(radiogroupLivraisonSurPlace.Text), dateEditCommande.DateTime, OrderLines);
             Close();
         }
 
         private void bbiEfaccer_ItemClick(object sender, ItemClickEventArgs e)
         {
+            textEditNumCommande.Text = "";
             comboBoxClients.Text = "";
             comboBoxPriorite.Text = "";
+            comboBoxEtat.Text = "";
             memoEditAdresssLivraion.Text = "";
             dateEditLivraison.Text = "";
+            dateEditCommande.Text = "";
         }
 
         private void bbiFermer_ItemClick(object sender, ItemClickEventArgs e)

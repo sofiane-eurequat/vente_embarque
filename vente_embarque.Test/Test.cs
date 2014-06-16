@@ -464,7 +464,7 @@ namespace vente_embarque.Test
         [Test]
         public void CanCreateMarqueDb()
         {
-            const string nom = "Hp";
+            const string nom = "Samsung";
             var marque = FactoryMarque.CreateMarque(nom);
             new RepositoryMarque().Save(marque);
         }
@@ -472,8 +472,8 @@ namespace vente_embarque.Test
         [Test]
         public void CanCreateCategoryDb()
         {
-            const string nom = "Desktop";
-            const string description = "Pc de bureau";
+            const string nom = "Tablette";
+            const string description = "Tablette 7 pouces";
             var categ = FactoryCategory.CreateCategory(nom, description);
             new RepositoryCategory().Save(categ);
         }

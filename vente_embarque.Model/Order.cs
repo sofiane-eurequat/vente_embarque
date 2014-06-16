@@ -16,6 +16,8 @@ namespace vente_embarque.Model
         public Priorite Priorite { get; set; }
         public GestionCommande Etat { get; set; }
         public bool LivraisonSurPlace { get; set; }
+        public DateTime DateCommande { get; set; }
+        public int Montant { get; set; }
         //public Delivery Livraison { get; set; }
         protected override void Validate()
         {
@@ -26,9 +28,9 @@ namespace vente_embarque.Model
     }
     public static class FactoryOrder
     {
-        public static Order CreateOrder(int numCommande, Client client, IEnumerable<OrderLine> orderLines, String deliveryAdress, bool livraisonSurPlace, Priorite priorite=Priorite.Normal, GestionCommande etat=GestionCommande.EnCours, DateTime deliveryDate=default(DateTime))
+        public static Order CreateOrder(int numCommande, Client client, IEnumerable<OrderLine> orderLines, String deliveryAdress, bool livraisonSurPlace, Priorite priorite = Priorite.Normal, GestionCommande etat = GestionCommande.EnCours, DateTime deliveryDate = default(DateTime), DateTime dateCommande = default(DateTime))
         {
-            var order = new Order { id = Guid.NewGuid(), NumCommande = numCommande, Client = client, Priorite = priorite, Etat = etat, LivraisonSurPlace = livraisonSurPlace, newObject = true };
+            var order = new Order { id = Guid.NewGuid(), NumCommande = numCommande, Client = client, Priorite = priorite, Etat = etat, LivraisonSurPlace = livraisonSurPlace, DateCommande = dateCommande, newObject = true };
             
             if (orderLines != null)
             {
