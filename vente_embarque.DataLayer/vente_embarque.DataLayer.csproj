@@ -51,6 +51,7 @@
     <Compile Include="Entities\Stock\XpoProduct.cs" />
     <Compile Include="Entities\Stock\XpoProductLine.cs" />
     <Compile Include="Entities\XpoAgentTerrain.cs" />
+    <Compile Include="Entities\XpoUser.cs" />
     <Compile Include="Helper\InitDal.cs" />
     <Compile Include="Helper\XpoCommune.cs" />
     <Compile Include="Helper\XpoWilaya.cs" />

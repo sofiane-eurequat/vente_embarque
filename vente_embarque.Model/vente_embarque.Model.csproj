@@ -57,6 +57,7 @@
     <Compile Include="Sector.cs" />
     <Compile Include="Stock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs" />
     <Compile Include="Wilaya.cs" />
   </ItemGroup>
   <ItemGroup>
