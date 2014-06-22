@@ -25,6 +25,18 @@ namespace vente_embarque.DataLayer.Map
            return stock;
        }
 
+       public static Sector MapSector(XpoSector xpoSector)
+       {
+           var sector = new Sector
+               {
+               id = xpoSector.Oid,
+               Name = xpoSector.Name,
+               Wilaya = MapWilaya(xpoSector.Wilaya),
+               Commune = MapCommune(xpoSector.Commune)
+           };
+           return sector;
+       }
+
         private static List<ProductLine> MapProdcutLine(IEnumerable<XpoProductLine> productLines)
         {
             return productLines.Select(xpoProductLine => new ProductLine
@@ -70,6 +82,7 @@ namespace vente_embarque.DataLayer.Map
                     QuantiteMin = product.QuantityMin,
                     Category = MapCategory(product.Category),
                     Marque = MapMarque(product.Marque),
+                    Fournisseur = product.Fournisseur,
                     newObject = false
                 };
         }

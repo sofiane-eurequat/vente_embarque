@@ -8,6 +8,7 @@ using DevExpress.Data.Filtering;
 using DevExpress.Xpo;
 using vente_embarque.Core.Domain;
 using vente_embarque.Core.Domain.Query;
+using vente_embarque.DataLayer.Entities;
 using vente_embarque.DataLayer.Entities.Orders;
 using vente_embarque.DataLayer.Helper;
 using vente_embarque.Model;
@@ -33,7 +34,18 @@ namespace vente_embarque.DataLayer
 
         public IEnumerable<Sector> FindAll()
         {
-            throw new NotImplementedException();
+            var listeSector = new List<Sector>();
+            var config = new AppSettingsReader();
+            using (
+                var uow = new UnitOfWork
+                    {
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
+                })
+            {
+                var sectors = new XPCollection<XpoSector>(uow);
+                listeSector.AddRange(sectors.Select(Map.MapInverse.MapSector));
+            }
+            return listeSector;
         }
 
         public IEnumerable<Sector> FindBy(Query query)

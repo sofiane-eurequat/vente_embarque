@@ -23,20 +23,20 @@ namespace vente_embarque.DataLayer.Entities.Orders
         }
 
 
-        private Guid _Oid;
+        private Guid _oid;
         [Key]
         public Guid Oid
         {
-            get { return _Oid; }
-            set { SetPropertyValue("Oid", ref _Oid, value); }
+            get { return _oid; }
+            set { SetPropertyValue("Oid", ref _oid, value); }
         }
 
-        private String _Name;
+        private String _name;
 
         public String Name
         {
-            get { return _Name; }
-            set { SetPropertyValue("Name", ref _Name, value); }
+            get { return _name; }
+            set { SetPropertyValue("Name", ref _name, value); }
         }
 
         private XpoWilaya _wilaya;

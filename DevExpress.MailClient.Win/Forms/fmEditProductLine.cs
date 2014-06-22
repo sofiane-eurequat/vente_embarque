@@ -24,7 +24,7 @@ namespace DevExpress.MailClient.Win.Forms
         private readonly bool _newProductLine = true;
         private bool _isProductLineModified;
 
-        public FrmEditProductLine()
+        public FrmEditProductLine(ModelViewProductLine productLine, bool newProductLine)
         {
             InitializeComponent();
 

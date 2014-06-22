@@ -5,6 +5,7 @@ using System.Linq;
 using System.Windows.Forms;
 using DevExpress.MailClient.Win.Forms;
 using DevExpress.MailClient.Win.Properties;
+using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Controls;
 using DevExpress.XtraEditors.Repository;
 using DevExpress.XtraGrid.Views.Grid;
@@ -30,6 +31,9 @@ namespace DevExpress.MailClient.Win.Modules {
 
         public IEnumerable<ModelViewStock> Stocks { get; set; }
         private StockPresenterPage _stockPresenter;
+        private readonly RepositoryStock _repositoryStock = new RepositoryStock();
+        public ModelViewStock MvStock { get; set; }
+
         public Stock() {
             InitializeComponent();
 
@@ -271,7 +275,7 @@ namespace DevExpress.MailClient.Win.Modules {
                     break;
                 case TagResources.FlipLayout:
                     break;
-                case TagResources.DeleteItem:
+               /* case TagResources.DeleteItem:
                     foreach(int row in gridViewStock.GetSelectedRows())
                         if(row >= 0) {
                             var message = ((Message)gridViewStock.GetRow(row));
@@ -281,9 +285,18 @@ namespace DevExpress.MailClient.Win.Modules {
                                 message.MailType = MailType.Deleted;
                         }
                     RaiseUpdateTreeViewMessages();
+                    break;*/
+                case TagResources.DeleteItem:
+                    DeleteStock();
                     break;
                 case TagResources.NewStock:
                     CreateStock();
+                    break;
+                case TagResources.ModifyStock:
+                    ModifyStock(MvStock);
+                    break;
+                case TagResources.DeleteStock:
+                    DeleteStock();
                     break;
                 case TagResources.NewProduct:
                     CreateProduct();
@@ -341,14 +354,50 @@ namespace DevExpress.MailClient.Win.Modules {
             EditStock(stock, true, null);
         }
 
+        private void ModifyStock(ModelViewStock stock)
+        {
+            EditStock(stock, false, null);
+        }
+
+        private void DeleteStock()
+        {
+            DialogResult result = XtraMessageBox.Show(this, TagResources.DeleteQuestion, Application.ProductName, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
+            if (result != DialogResult.Yes)
+                return;
+            if (gridViewStock == null) return;
+            var idstock = (Guid)gridViewStock.GetFocusedRowCellValue("Id");
+            _repositoryStock.Remove(idstock);
+            var stock = new ModelViewStock();
+            Mail_Load(stock,new EventArgs());
+        }
+
         void CreateProduct()
         {
-            EditProduct();
+            var product = new ModelViewProduct();
+            EditProduct(product, true);
         }
 
         void CreateProductLine()
         {
-            EditProductLine();
+            var productLine = new ModelViewProductLine();
+            EditProductLine(productLine, true);
+        }
+
+        private void ModifyProductLine(ModelViewProductLine productLine)
+        {
+            EditProductLine(productLine, false);
+        }
+
+        private void DeleteProductLine()
+        {
+            DialogResult result = XtraMessageBox.Show(this, TagResources.DeleteQuestion, Application.ProductName, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
+            if (result != DialogResult.Yes)
+                return;
+            if (gridViewProductLine == null) return;
+            var idProductLine = (Guid)gridViewProductLine.GetFocusedRowCellValue("Id");
+            _repositoryStock.RemovePl(idProductLine);
+            var stock = new ModelViewStock();
+            Mail_Load(stock, new EventArgs());
         }
 
         void EditStock(ModelViewStock stock, bool newStock, string caption)
@@ -363,21 +412,23 @@ namespace DevExpress.MailClient.Win.Modules {
             Cursor.Current = Cursors.Default;
         }
 
-        void EditProduct()
+        void EditProduct(ModelViewProduct product, bool newProduct)
         {
             Cursor.Current = Cursors.WaitCursor;
-            var form = new FrmEditProduct();
+            var form = new FrmEditProduct(product, newProduct);
             form.Location = new Point(OwnerForm.Left + (OwnerForm.Width - form.Width) / 2, OwnerForm.Top + (OwnerForm.Height - form.Height) / 2);
             form.ShowDialog();
+            Mail_Load(product,new EventArgs());
             Cursor.Current = Cursors.Default;
         }
-        
-        void EditProductLine()
+
+        void EditProductLine(ModelViewProductLine productLine, bool newProductLine)
         {
             Cursor.Current = Cursors.WaitCursor;
-            var form = new FrmEditProductLine();
+            var form = new FrmEditProductLine(productLine,newProductLine);
             form.Location = new Point(OwnerForm.Left + (OwnerForm.Width - form.Width) / 2, OwnerForm.Top + (OwnerForm.Height - form.Height) / 2);
             form.ShowDialog();
+            Mail_Load(productLine, new EventArgs());
             Cursor.Current = Cursors.Default;
         }
 
@@ -588,11 +639,25 @@ namespace DevExpress.MailClient.Win.Modules {
                 Stocks.First(s => s.Id == (Guid)gridViewStock.GetFocusedRowCellValue("Id")).ProductLine;
         }
 
+        private void gridViewStock_DoubleClick(object sender, EventArgs e)
+        {
+            if (gridViewStock == null) return;
+            var stock = (ModelViewStock)gridViewStock.GetFocusedRow();
+            ModifyStock(stock);
+        }
+
         private void gridControlProduct_Click(object sender, EventArgs e)
         {
             if (!Stocks.Any()) return;
             GCProductDisplay.DataSource =
                 Stocks.First(s => s.Id == (Guid)gridViewStock.GetFocusedRowCellValue("Id")).ProductLine.First(p => p.Id == (Guid)gridViewProductLine.GetFocusedRowCellValue("Id")).Product;
+        }
+
+        private void gridViewProductLine_DoubleClick(object sender, EventArgs e)
+        {
+            if (gridViewProductLine == null) return;
+            var productLine = (ModelViewProductLine)gridViewProductLine.GetFocusedRow();
+            ModifyProductLine(productLine);
         }
         
     }

@@ -90,5 +90,39 @@ namespace vente_embarque.DataLayer
                 uow.CommitChanges();
             }
         }
+
+        public void Remove(Guid id)
+        {
+            var config = new AppSettingsReader();
+            using (
+                var uow = new UnitOfWork
+                {
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
+                })
+            {
+                var stock = uow.GetObjectByKey<XpoStock>(id);
+               // foreach (var productLine in stock.ProductLines.ToList())
+               // {
+                //    productLine.Delete();
+               // }
+                stock.Delete();
+                uow.CommitChanges();
+            }
+        }
+
+        public void RemovePl(Guid id)
+        {
+            var config = new AppSettingsReader();
+            using (
+                var uow = new UnitOfWork
+                {
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
+                })
+            {
+                var productLine = uow.GetObjectByKey<XpoProductLine>(id);
+                productLine.Delete();
+                uow.CommitChanges();
+            }
+        }
     }
 }

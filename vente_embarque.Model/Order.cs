@@ -50,7 +50,7 @@ namespace vente_embarque.Model
         }
         public static OrderLine CreateOrderLine(Stock stock,string productName, int quantity)
         {
-            var orderline = new OrderLine {id = Guid.NewGuid()};
+            var orderline = new OrderLine {id = Guid.NewGuid(), newObject = true};
             var product = stock.GetProduct(productName);
             if(product.Equals(null))  return null; 
             orderline.Product = product;

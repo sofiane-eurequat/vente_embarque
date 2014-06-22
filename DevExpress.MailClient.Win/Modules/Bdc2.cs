@@ -27,7 +27,7 @@ namespace DevExpress.MailClient.Win.Modules
         private readonly RepositoryOrder _repositoryOrder = new RepositoryOrder();
         private readonly RepositoryProduct _repositoryProduct = new RepositoryProduct();
         private BdcPresenterPage _bdcPresenter;
-        public ModelViewBdc _order { get; set; }
+        public ModelViewBdc Order { get; set; }
         
         public Bdc2()
         {
@@ -37,6 +37,7 @@ namespace DevExpress.MailClient.Win.Modules
 
             gridControlOrder.DataSource = Orders;
             gridViewOrder.Columns[0].Visible = false;
+            gridViewOrder.Columns[3].Visible = false;
 
             if (!Orders.Any()) return;
 
@@ -45,7 +46,8 @@ namespace DevExpress.MailClient.Win.Modules
 
             gridControlOrderLine.DataSource = Orders.First().OrderLines;
             gridViewOrderLine.Columns[0].Visible = false;
-            gridViewOrderLine.Columns[2].Caption = Resources.Produit;
+            gridViewOrderLine.Columns[3].Visible = false;
+            gridViewOrderLine.Columns[1].Caption = Resources.Produit;
             
             GCDisplayProduct.DataSource = Orders.First().Products;
             layoutViewProduct.Columns["Id"].Visible = false;
@@ -69,7 +71,7 @@ namespace DevExpress.MailClient.Win.Modules
                     CreateBdc();
                     break;
                 case TagResources.ModifyBdc:
-                    ModifyBdc(_order);
+                    ModifyBdc(Order);
                     break;
                 case TagResources.DeleteBdc:
                     DeleteBdc();
@@ -134,6 +136,7 @@ namespace DevExpress.MailClient.Win.Modules
 
             gridControlOrder.DataSource = Orders;
             gridViewOrder.Columns[0].Visible = false;
+            gridViewOrder.Columns[3].Visible = false;
 
             if (!Orders.Any()) return;
 
@@ -142,7 +145,8 @@ namespace DevExpress.MailClient.Win.Modules
 
             gridControlOrderLine.DataSource = Orders.First().OrderLines;
             gridViewOrderLine.Columns[0].Visible = false;
-            gridViewOrderLine.Columns[2].Caption = Resources.Produit;
+            gridViewOrderLine.Columns[3].Visible = false;
+            gridViewOrderLine.Columns[1].Caption = Resources.Produit;
 
             GCDisplayProduct.DataSource = Orders.First().Products;
             layoutViewProduct.Columns["Id"].Visible = false;

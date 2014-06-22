@@ -24,13 +24,13 @@ namespace vente_embarque.DataLayer
             var listeAgentTerrain = new List<AgentTerrain>();
             var config = new AppSettingsReader();
             using (
-                var uow = new UnitOfWork()
-                {
+                var uow = new UnitOfWork
+                    {
                     ConnectionString = ((string)config.GetValue("connect", typeof(string)))
                 })
             {
-                var AgentTerrains = new XPCollection<XpoAgentTerrain>(uow);
-                listeAgentTerrain.AddRange(AgentTerrains.Select(Map.MapInverse.MapAgentTerrain));
+                var agentTerrains = new XPCollection<XpoAgentTerrain>(uow);
+                listeAgentTerrain.AddRange(agentTerrains.Select(Map.MapInverse.MapAgentTerrain));
             }
             return listeAgentTerrain;
         }

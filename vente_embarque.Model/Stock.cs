@@ -80,7 +80,7 @@ namespace vente_embarque.Model
         
         public static ProductLine CreateProductLine(Stock stock,Product product,int quantity=0)
         {
-            var productline = new ProductLine {Product = product, id = Guid.NewGuid(), Quantity = quantity};
+            var productline = new ProductLine {Product = product, id = Guid.NewGuid(), Quantity = quantity, newObject = true};
 
             if(stock.ProductLines==null) stock.ProductLines=new List<ProductLine>();
             stock.ProductLines.Add(productline);

@@ -39,26 +39,45 @@ namespace vente_embarque.DataLayer.Map
             foreach (var pl in stock.ProductLines)
             {
                 var crierion = new Criterion(propertyName: "Name", value: pl.Product.Name,criteriaOperator:CriteriaOperator.Equal);
-                var xpl = new XpoProductLine(uow)
+                XpoProductLine productLineReturned;
+                if (pl.newObject)
+                {
+                    productLineReturned = new XpoProductLine(uow)
                     {
-                        Oid = pl.id,
-                        Quantity = pl.Quantity,
-                        Stock = xpoStock,
-                        Product = uow.GetObjectByKey<XpoProduct>(pl.Product.id)
+                        Oid = pl.id
                     };
+                }
+                else
+                {
+                    productLineReturned = uow.GetObjectByKey<XpoProductLine>(pl.id);
+                }
+
+                productLineReturned.Quantity = pl.Quantity;
+                productLineReturned.Product = uow.GetObjectByKey<XpoProduct>(pl.Product.id);
+                productLineReturned.Stock = xpoStock;
             }
             return xpoStock;
         }
 
         public static XpoSector MapSector(Sector sector, UnitOfWork uow)
         {
-            return new XpoSector(uow)
+            XpoSector sectorReturned;
+            if (sector.newObject)
             {
-                Oid = sector.id,
-                Name = sector.Name,
-                Wilaya = MapWilaya(sector.Wilaya,uow),
-                Commune = MapCommune(sector.Commune,uow)
-            };
+                sectorReturned = new XpoSector(uow)
+                {
+                    Oid = sector.id
+                };
+            }
+            else
+            {
+                sectorReturned = uow.GetObjectByKey<XpoSector>(sector.id);
+            }
+
+            sectorReturned.Name = sector.Name;
+            sectorReturned.Wilaya = MapWilaya(sector.Wilaya, uow);
+            sectorReturned.Commune = MapCommune(sector.Commune, uow);
+            return sectorReturned;
         }
 
         public static XpoProduct MapProduct(Product product, UnitOfWork uow)
@@ -124,7 +143,6 @@ namespace vente_embarque.DataLayer.Map
         public static XpoOrder MapOrder(Order order, UnitOfWork uow)
         {
             XpoOrder orderReturned;
-            //order.newObject = false;
             if (order.newObject)
             {
                 orderReturned = new XpoOrder(uow)
@@ -145,17 +163,26 @@ namespace vente_embarque.DataLayer.Map
             orderReturned.Montant = order.Montant;
             //orderReturned.Delivery=order.Livraison
             //todo : a implementer lors du lancement du module livraison 
-
             if (order.OrderLines == null) return orderReturned;
             foreach (var ol in order.OrderLines)
             {
-                var xpl = new XpoOrderLine(uow)
+                XpoOrderLine orderLineReturned;
+                if (ol.newObject)
                 {
-                    Oid = ol.id,
-                    Quantity = ol.Quantity,
-                    Product = uow.GetObjectByKey<XpoProduct>(ol.Product.id)
-                };
-                orderReturned.OrderLines.Add(xpl);
+                    orderLineReturned = new XpoOrderLine(uow)
+                    {
+                        Oid = ol.id
+                    };
+                }
+                else
+                {
+                    orderLineReturned = uow.GetObjectByKey<XpoOrderLine>(ol.id);
+                }
+
+                orderLineReturned.Quantity = ol.Quantity;
+                orderLineReturned.Product = uow.GetObjectByKey<XpoProduct>(ol.Product.id);
+                
+                orderReturned.OrderLines.Add(orderLineReturned);
             }
             return orderReturned;
         }
@@ -200,12 +227,12 @@ namespace vente_embarque.DataLayer.Map
 
             foreach (var co in wilaya.Communes)
             {
-                var xco = new XpoCommune(uow)
-                {
-                    Name = co.Name,
-                    CodeWilaya = co.CodeWilaya,
-                    Wilaya = xpoWilaya
-                };
+                var xpocom = new XpoCommune(uow)
+                    {
+                        Name = co.Name,
+                        CodeWilaya = co.CodeWilaya,
+                        Wilaya = xpoWilaya
+                    };
             }
             return xpoWilaya;
         }

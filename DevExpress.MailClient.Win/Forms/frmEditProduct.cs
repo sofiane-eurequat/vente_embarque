@@ -17,7 +17,7 @@ namespace DevExpress.MailClient.Win.Forms
         public IEnumerable<Stock> Stocks { get; set; }
         public IEnumerable<Product> Products { get; set; }
 
-        public FrmEditProduct()
+        public FrmEditProduct(ModelViewProduct product, bool newProduct)
         {
             InitializeComponent();
 

@@ -123,16 +123,15 @@ namespace vente_embarque.Test
         [Test]
         public void CanCreateClientBd()
         {
-            const string nomSect = "Kiffane";
+         //   const string nomSect = "Kiffane";
             //const string wilaya = "Tlemcen";
             //const string commune = "Tlemcen";
-            var wilaya = new RepositoryWilaya().FindAll().First(w => w.Name == "Tlemcen");
-            var commune = new RepositoryWilaya().FindAll().First(w => w.Name == "Tlemcen").Communes.First(com => com.Name == "Tlemcen");
-            Sector secteur = FactorySector.CreateSector(nomSect, wilaya, commune);
-            new RepositorySector().Save(secteur);
-            //rs.Save(secteur);
-            const string nom = "nomClient1";
-            const string prenom = "prenomClient1";
+         //   var wilaya = new RepositoryWilaya().FindAll().First(w => w.Name == "Tlemcen");
+         //   var commune = new RepositoryWilaya().FindAll().First(w => w.Name == "Tlemcen").Communes.First(com => com.Name == "Tlemcen");
+         //   Sector secteur = FactorySector.CreateSector(nomSect, wilaya, commune);
+            var secteur = new RepositorySector().FindAll().First(s => s.Name == "Kiffane");
+            const string nom = "nomClient3";
+            const string prenom = "prenomClient3";
             //un secteur doit tjr etre defini mmee si il doit etre nommé indéfini
             var client = FactorySector.CreateClient(nom, prenom, secteur);
             new RepositoryClient().Save(client);

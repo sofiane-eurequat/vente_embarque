@@ -140,6 +140,7 @@ namespace DevExpress.MailClient.Win.Modules {
             this.gridControlStock.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewStock});
             this.gridControlStock.Click += new System.EventHandler(this.gridControlStock_Click);
+            this.gridControlStock.DoubleClick += new System.EventHandler(this.gridViewStock_DoubleClick);
             // 
             // gridViewStock
             // 
@@ -167,11 +168,14 @@ namespace DevExpress.MailClient.Win.Modules {
             this.gridControlProduct.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewProductLine});
             this.gridControlProduct.Click += new System.EventHandler(this.gridControlProduct_Click);
+            this.gridControlProduct.DoubleClick += new System.EventHandler(this.gridViewProductLine_DoubleClick);
             // 
             // gridViewProductLine
             // 
             this.gridViewProductLine.GridControl = this.gridControlProduct;
             this.gridViewProductLine.Name = "gridViewProductLine";
+            this.gridViewProductLine.OptionsBehavior.Editable = false;
+            this.gridViewProductLine.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.MouseUp;
             this.gridViewProductLine.OptionsFind.AlwaysVisible = true;
             this.gridViewProductLine.OptionsView.ShowGroupPanel = false;
             // 

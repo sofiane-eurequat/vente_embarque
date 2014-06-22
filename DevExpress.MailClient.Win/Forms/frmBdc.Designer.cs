@@ -45,6 +45,8 @@
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.applicationMenu1 = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.dateEditCommande = new DevExpress.XtraEditors.DateEdit();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.radiogroupLivraisonSurPlace = new DevExpress.XtraEditors.RadioGroup();
             this.labelLivraison = new DevExpress.XtraEditors.LabelControl();
             this.textEditNumCommande = new DevExpress.XtraEditors.TextEdit();
@@ -75,12 +77,12 @@
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.dateEditCommande = new DevExpress.XtraEditors.DateEdit();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditCommande.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditCommande.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radiogroupLivraisonSurPlace.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditNumCommande.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memoEditAdresssLivraion.Properties)).BeginInit();
@@ -92,8 +94,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.GCOrderLine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewOrderLine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEditCommande.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEditCommande.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
@@ -242,6 +242,22 @@
             resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Name = "groupControl1";
             // 
+            // dateEditCommande
+            // 
+            resources.ApplyResources(this.dateEditCommande, "dateEditCommande");
+            this.dateEditCommande.MenuManager = this.ribbon;
+            this.dateEditCommande.Name = "dateEditCommande";
+            this.dateEditCommande.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEditCommande.Properties.Buttons"))))});
+            this.dateEditCommande.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEditCommande.Properties.CalendarTimeProperties.Buttons"))))});
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl1.Appearance.Font")));
+            resources.ApplyResources(this.labelControl1, "labelControl1");
+            this.labelControl1.Name = "labelControl1";
+            // 
             // radiogroupLivraisonSurPlace
             // 
             resources.ApplyResources(this.radiogroupLivraisonSurPlace, "radiogroupLivraisonSurPlace");
@@ -376,6 +392,7 @@
             // 
             this.colProduct.FieldName = "Product";
             this.colProduct.Name = "colProduct";
+            this.colProduct.ShowUnboundExpressionMenu = true;
             resources.ApplyResources(this.colProduct, "colProduct");
             // 
             // colQuantity
@@ -466,22 +483,6 @@
             this.barButtonItem2.Id = 0;
             this.barButtonItem2.Name = "barButtonItem2";
             // 
-            // dateEditCommande
-            // 
-            resources.ApplyResources(this.dateEditCommande, "dateEditCommande");
-            this.dateEditCommande.MenuManager = this.ribbon;
-            this.dateEditCommande.Name = "dateEditCommande";
-            this.dateEditCommande.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEdit1.Properties.Buttons"))))});
-            this.dateEditCommande.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEdit1.Properties.CalendarTimeProperties.Buttons"))))});
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Appearance.Font = ((System.Drawing.Font)(resources.GetObject("labelControl1.Appearance.Font")));
-            resources.ApplyResources(this.labelControl1, "labelControl1");
-            this.labelControl1.Name = "labelControl1";
-            // 
             // frmBdc
             // 
             resources.ApplyResources(this, "$this");
@@ -503,6 +504,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditCommande.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditCommande.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radiogroupLivraisonSurPlace.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditNumCommande.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.memoEditAdresssLivraion.Properties)).EndInit();
@@ -514,8 +517,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.GCOrderLine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewOrderLine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEditCommande.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEditCommande.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
