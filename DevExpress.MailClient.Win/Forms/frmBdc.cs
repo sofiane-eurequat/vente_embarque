@@ -50,15 +50,14 @@ namespace DevExpress.MailClient.Win.Forms
 
             comboBoxClients.DataSource = Clients.OrderBy(cl => cl.Name).ToList();
             comboBoxClients.DisplayMember = "Name";
+            comboBoxClients.ValueMember = "Name";
             comboBoxPriorite.DataSource = Enum.GetValues(typeof(Priorite));
             comboBoxEtat.DataSource = Enum.GetValues(typeof (GestionCommande));
 
             if (!newBdc)
             {
-                //var clientName = bdc.IdClient;
-                //var cl = Clients.First(c => c.Name == clientName);
                 textEditNumCommande.Text = bdc.NumCommande.ToString(CultureInfo.InvariantCulture);
-                //comboBoxClients.SelectedItem = Clients.First(c => c.id == bdc.IdClient);
+                comboBoxClients.SelectedValue = bdc.NameClient;
                 dateEditLivraison.Text = bdc.DateLivraison.ToShortDateString();
                 memoEditAdresssLivraion.Text = bdc.AdresseLivraison;
                 comboBoxPriorite.SelectedItem = bdc.Priorite;

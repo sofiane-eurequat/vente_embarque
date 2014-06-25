@@ -33,6 +33,7 @@ namespace DevExpress.MailClient.Win.Modules {
         private StockPresenterPage _stockPresenter;
         private readonly RepositoryStock _repositoryStock = new RepositoryStock();
         public ModelViewStock MvStock { get; set; }
+        public ModelViewProductLine MvPl { get; set; }
 
         public Stock() {
             InitializeComponent();
@@ -69,6 +70,7 @@ namespace DevExpress.MailClient.Win.Modules {
             gridControlProduct.DataSource = lignesProduits;
             gridViewProductLine.Columns[0].Visible = false;
             gridViewProductLine.Columns[3].Visible = false;
+            gridViewProductLine.Columns[4].Visible = false;
             gridViewProductLine.Columns[1].Caption = Resources.Produit;
             gridViewStock.RowCellClick += gridViewStock_CellClick;
 
@@ -304,6 +306,12 @@ namespace DevExpress.MailClient.Win.Modules {
                 case TagResources.NewProductLine:
                     CreateProductLine();
                     break;
+                case TagResources.ModifyProductLine:
+                    ModifyProductLine(MvPl);
+                    break;
+                case TagResources.DeleteProductLine:
+                    DeleteProductLine();
+                    break;
                 case TagResources.ReplyAll:
                     CreateReplyAllMailMessages();
                     break;
@@ -428,6 +436,11 @@ namespace DevExpress.MailClient.Win.Modules {
             var form = new FrmEditProductLine(productLine,newProductLine);
             form.Location = new Point(OwnerForm.Left + (OwnerForm.Width - form.Width) / 2, OwnerForm.Top + (OwnerForm.Height - form.Height) / 2);
             form.ShowDialog();
+            /*if (form.DialogResult == DialogResult.OK)
+            {
+                var resultat=form.productLineOut;
+                
+            }*/
             Mail_Load(productLine, new EventArgs());
             Cursor.Current = Cursors.Default;
         }

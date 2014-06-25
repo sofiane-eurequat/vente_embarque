@@ -30,7 +30,7 @@ namespace vente_embarque.DataLayer.Entities.Stock
         }
 
         private XpoProduct _product;
-        [ Association("XpoProduct-XpoproductLine")]
+        [Association("XpoProduct-XpoproductLine")]
         public XpoProduct Product
         {
             get { return _product; }
@@ -46,7 +46,7 @@ namespace vente_embarque.DataLayer.Entities.Stock
         }
 
         private XpoStock _stock;
-        [Aggregated, Association("XpoStock-XpoproductLine")]
+        [Association("XpoStock-XpoproductLine")]
         public XpoStock Stock
         {
             get { return _stock; }

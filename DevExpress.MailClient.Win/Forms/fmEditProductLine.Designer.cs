@@ -221,7 +221,7 @@ namespace DevExpress.MailClient.Win.Forms
             this.comboBoxStock.Size = new System.Drawing.Size(217, 21);
             this.comboBoxStock.TabIndex = 17;
             this.comboBoxStock.ValueMember = "id";
-            this.comboBoxStock.SelectedIndexChanged += new System.EventHandler(this.comboBoxStock_SelectedIndexChanged);
+            this.comboBoxStock.SelectedValueChanged += new System.EventHandler(this.comboBoxStock_SelectedValueChanged);
             // 
             // labelQuantité
             // 

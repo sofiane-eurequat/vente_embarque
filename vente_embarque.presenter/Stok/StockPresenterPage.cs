@@ -39,12 +39,12 @@ namespace vente_embarque.presenter.Stok
                 mvs.Products=new List<ModelViewProduct>();
                 foreach (var productLine in stoc.ProductLines)
                 {
-                    mvs.ProductLine.Add(new ModelViewProductLine() { Id = productLine.id,Quantity = productLine.Quantity,Name = productLine.Product.Name,Product =productLine.Product });
+                    mvs.ProductLine.Add(new ModelViewProductLine { Id = productLine.id,Quantity = productLine.Quantity,Name = productLine.Product.Name,Product =productLine.Product, Stock = stoc});
                 }
 
                 foreach (var product in stoc.GetProducts())
                 {
-                    mvs.Products.Add(new ModelViewProduct()
+                    mvs.Products.Add(new ModelViewProduct
                         {
                             Nom = product.Name,
                             Id = product.id,
@@ -96,6 +96,7 @@ namespace vente_embarque.presenter.Stok
         public string Name { get; set; }
         public int Quantity { get; set; }
         public Guid Id { get; set; }
+        public Stock Stock { get; set; }
     }
 
     public class ModelViewProduct

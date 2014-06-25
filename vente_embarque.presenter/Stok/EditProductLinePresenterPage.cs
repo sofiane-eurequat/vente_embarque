@@ -14,7 +14,7 @@ namespace vente_embarque.presenter.Stok
         private readonly IRepository<Stock, Guid> _repositoryStock;
         private readonly IRepository<Product, Guid> _repositoryProduct; 
 
-        public EditProductLinePresenterPage(IEditProductLineView editProductLineView,IRepository<Stock,Guid> repositoryStock, IRepository<Product,Guid> repositoryProduct )
+        public EditProductLinePresenterPage(IEditProductLineView editProductLineView,IRepository<Stock,Guid> repositoryStock, IRepository<Product,Guid> repositoryProduct)
         {
             _editProductLineView = editProductLineView;
             _repositoryStock = repositoryStock;
@@ -32,11 +32,17 @@ namespace vente_embarque.presenter.Stok
             var productLine = FactoryStock.CreateProductLine(stock, product, quantite);
             _repositoryStock.Save(stock);
         }
+
+        public void Update(Stock stock, Product product, int quantite)
+        {
+            //var id= 
+        }
     }
 
     internal interface IEditProductLinePagePresenter
     {
         void Display();
         void Write(Stock stock,Product product, int quantite);
+        void Update(Stock stock, Product product, int quantite);
     }
 }

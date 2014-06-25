@@ -36,7 +36,7 @@ namespace vente_embarque.presenter.Bdc
                     {
                         NumCommande = bdc.NumCommande,
                         Client = bdc.Client.Name + " " + bdc.Client.PreNom,
-                        IdClient = bdc.Client.id,
+                        NameClient = bdc.Client.Name,
                         Priorite = bdc.Priorite,
                         Etat = bdc.Etat,
                         Datecommande = bdc.DateCommande,
@@ -82,7 +82,7 @@ namespace vente_embarque.presenter.Bdc
         public Guid Id { get; set; }
         public int NumCommande { get; set; }
         public string Client { get; set; }
-        public Guid IdClient { get; set; }
+        public string NameClient { get; set; }
         public List<ModelViewOrderLine> OrderLines { get; set; }
         public Priorite Priorite { get; set; }
         public GestionCommande Etat { get; set; }
