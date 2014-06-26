@@ -30,12 +30,7 @@ namespace vente_embarque.presenter.Stok
         public void Write(Stock stock, Product product, int quantite)
         {
             var productLine = FactoryStock.CreateProductLine(stock, product, quantite);
-            _repositoryStock.Save(stock);
-        }
-
-        public void Update(Stock stock, Product product, int quantite)
-        {
-            //var id= 
+            _repositoryStock.Add(stock);
         }
     }
 
@@ -43,6 +38,5 @@ namespace vente_embarque.presenter.Stok
     {
         void Display();
         void Write(Stock stock,Product product, int quantite);
-        void Update(Stock stock, Product product, int quantite);
     }
 }

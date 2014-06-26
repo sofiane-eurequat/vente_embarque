@@ -58,22 +58,39 @@ namespace vente_embarque.DataLayer
 
         public void Save(Stock entity)
         {
-            var config=new AppSettingsReader();
-            
+            throw new NotImplementedException();
+        }
+        
+        public void Save(Stock stock, ProductLine pl)
+        {
+            var config = new AppSettingsReader();
             using (
                 var uow = new UnitOfWork
-                    {
-                        ConnectionString = ((string)config.GetValue("connect", typeof(string)))
-                    })
+                {
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
+                })
             {
-                Map.Map.MapStock(entity,uow);
+                var productLine = uow.GetObjectByKey<XpoProductLine>(pl.id);
+                var product = uow.GetObjectByKey<XpoProduct>(pl.Product.id);
+                productLine.Product = product;
+                productLine.Quantity = pl.Quantity;
                 uow.CommitChanges();
             }
         }
 
         public void Add(Stock entity)
         {
-            throw new NotImplementedException();
+            var config = new AppSettingsReader();
+
+            using (
+                var uow = new UnitOfWork
+                {
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
+                })
+            {
+                Map.Map.MapStock(entity, uow);
+                uow.CommitChanges();
+            }
         }
 
         public void Remove(Stock entity)

@@ -32,7 +32,7 @@ namespace vente_embarque.presenter.Stok
         public void Write(string name, Wilaya wilaya, Commune commune, string adress)
         {
             var stock = FactoryStock.CreateStock(name, wilaya, commune, adress);
-            _repositoryStock.Save(stock);
+            _repositoryStock.Add(stock);
         }
     }
 

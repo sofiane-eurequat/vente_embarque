@@ -24,11 +24,13 @@ namespace DevExpress.MailClient.Win.Forms
         public IEnumerable<Product> Products { get; set; }
         private readonly bool _newProductLine;
         private bool _isProductLineModified;
-        public ModelViewProductLine productLineOut;
+        public ModelViewProductLine ProductLineOut;
+
         public FrmEditProductLine(ModelViewProductLine productLine, bool newProductLine)
         {
             InitializeComponent();
             _newProductLine = newProductLine;
+            ProductLineOut = productLine;
             var repositoryStock = new RepositoryStock();
             var repositoryProduit = new RepositoryProduct();
 
@@ -70,14 +72,27 @@ namespace DevExpress.MailClient.Win.Forms
         private void bbiSauvegarder_ItemClick(object sender, ItemClickEventArgs e)
         {
             _isProductLineModified = false;
-            /*
-            productLineOut.Stock = comboBoxStock.SelectedItem as Stock;
-            productLineOut.Product = comboBoxProduit.SelectedItem as Product;
-            productLineOut.Quantity = Convert.ToInt32(textEditQuantité.EditValue.ToString());
             this.DialogResult=DialogResult.OK;
-            */
+            
+            if (_newProductLine)
+            {
                 _editProductLinePresenter.Write(comboBoxStock.SelectedItem as Stock, comboBoxProduit.SelectedItem as Product,
                                                      Convert.ToInt32(textEditQuantité.EditValue.ToString()));
+            }
+            else
+            {
+                var productLineModif = new ProductLine
+                {
+                    id = ProductLineOut.Id,
+                    Product = comboBoxProduit.SelectedItem as Product,
+                    Quantity = Convert.ToInt32(textEditQuantité.EditValue.ToString())
+                };
+
+                var stock = comboBoxStock.SelectedItem as Stock;
+                var repositoryStock = new RepositoryStock();
+                repositoryStock.Save(stock, productLineModif);
+            }
+            
         }
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
         {

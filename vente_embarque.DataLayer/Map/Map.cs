@@ -218,31 +218,26 @@ namespace vente_embarque.DataLayer.Map
 
         private static XpoWilaya MapWilaya(Wilaya wilaya, UnitOfWork uow)
         {
-            var xpoWilaya = new XpoWilaya(uow)
-            {
-                Name = wilaya.Name,
-                Code = wilaya.Code,
-                //Communes = MapCommune(wilaya.Communes,uow)
-            };
+            var xpoWilaya = uow.GetObjectByKey<XpoWilaya>(wilaya.id);
 
+            xpoWilaya.Name = wilaya.Name;
+            xpoWilaya.Code = wilaya.Code;
+  
             foreach (var co in wilaya.Communes)
             {
-                var xpocom = new XpoCommune(uow)
-                    {
-                        Name = co.Name,
-                        CodeWilaya = co.CodeWilaya,
-                        Wilaya = xpoWilaya
-                    };
+                var xpoCommune = uow.GetObjectByKey<XpoCommune>(co.id);
+                xpoCommune.Name = co.Name;
+                xpoCommune.CodeWilaya = co.CodeWilaya;
+                xpoCommune.Wilaya = xpoWilaya;
             }
             return xpoWilaya;
         }
         
         private static XpoCommune MapCommune(Commune commune, UnitOfWork uow)
         {
-            return new XpoCommune(uow)
-            {
-                Name = commune.Name
-            };
+            var xpoCommune = uow.GetObjectByKey<XpoCommune>(commune.id);
+            xpoCommune.Name = commune.Name;
+            return xpoCommune;
         } 
     }
 }
