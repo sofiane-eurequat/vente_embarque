@@ -88,9 +88,8 @@ namespace DevExpress.MailClient.Win.Forms
                     Quantity = Convert.ToInt32(textEditQuantité.EditValue.ToString())
                 };
 
-                var stock = comboBoxStock.SelectedItem as Stock;
                 var repositoryStock = new RepositoryStock();
-                repositoryStock.Save(stock, productLineModif);
+                repositoryStock.Save(comboBoxStock.SelectedItem as Stock, productLineModif);
             }
             
         }
