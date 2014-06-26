@@ -393,6 +393,8 @@ namespace DevExpress.MailClient.Win.Modules {
 
         private void ModifyProductLine(ModelViewProductLine productLine)
         {
+            if (gridViewProductLine == null) return;
+            productLine = (ModelViewProductLine)gridViewProductLine.GetFocusedRow();
             EditProductLine(productLine, false);
         }
 
