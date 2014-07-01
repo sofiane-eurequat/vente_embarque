@@ -14,18 +14,19 @@ namespace vente_embarque.presenter.Bdc
     {
         private readonly IBdcView _bdcView;
         private readonly IRepository<Order, Guid> _repositoryOrder;
-        private readonly IRepository<Product, Guid> _repositoryProduct;
+        private readonly IRepository<Stock, Guid> _repositoryStock;
 
-        public BdcPresenterPage(IBdcView bdcView, IRepository<Order, Guid> orderRepository, IRepository<Product, Guid> productRepository)
+        public BdcPresenterPage(IBdcView bdcView, IRepository<Order, Guid> orderRepository, IRepository<Stock, Guid> stockRepository)
         {
             _bdcView = bdcView;
             _repositoryOrder = orderRepository;
-            _repositoryProduct = productRepository;
+            _repositoryStock = stockRepository;
         }
         
         public void Diplay()
         {
             var order = _repositoryOrder.FindAll();
+            _bdcView.Stocks = _repositoryStock.FindAll();
             if (order == null) return;
 
             var tempOrder = new List<ModelViewBdc>();
@@ -49,7 +50,7 @@ namespace vente_embarque.presenter.Bdc
                 mvb.Products=new List<ModelViewProduct>();
                 foreach (var orderLine in bdc.OrderLines)
                 {
-                    mvb.OrderLines.Add(new ModelViewOrderLine { Id = orderLine.id, ProductName = orderLine.Product.Name, Quantity = orderLine.Quantity, Product = orderLine.Product});
+                    mvb.OrderLines.Add(new ModelViewOrderLine { Id = orderLine.id, ProductName = orderLine.Product.Name, Quantity = orderLine.Quantity, Product = orderLine.Product, IdOrder = bdc.id});
                     
                     foreach (var pr in bdc.OrderLines)
                     {
@@ -100,6 +101,7 @@ namespace vente_embarque.presenter.Bdc
         public string ProductName { get; set; }
         public int Quantity { get; set; }
         public Product Product { get; set; }
+        public Guid IdOrder { get; set; }
     }
 
     public class ModelViewProduct

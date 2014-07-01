@@ -134,6 +134,7 @@ namespace DevExpress.MailClient.Win.Forms
             memoEditAdresssLivraion.Text = "";
             dateEditLivraison.Text = "";
             dateEditCommande.Text = "";
+            radiogroupLivraisonSurPlace.EditValue = "";
         }
 
         private void bbiFermer_ItemClick(object sender, ItemClickEventArgs e)

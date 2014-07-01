@@ -160,8 +160,8 @@
             this.bbiNewBdc = new DevExpress.XtraBars.BarButtonItem();
             this.bbiModifyBdc = new DevExpress.XtraBars.BarButtonItem();
             this.bbiDeleteBdc = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiRefreshBdc = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiClose = new DevExpress.XtraBars.BarButtonItem();
             this.bbiNewProductLine = new DevExpress.XtraBars.BarButtonItem();
             this.bbiModifyProductLine = new DevExpress.XtraBars.BarButtonItem();
             this.bbiDeleteProductLine = new DevExpress.XtraBars.BarButtonItem();
@@ -215,6 +215,9 @@
             this.navBarItem2 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem3 = new DevExpress.XtraNavBar.NavBarItem();
             this.pcMain = new DevExpress.XtraEditors.PanelControl();
+            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.bbiModifyOrderLine = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiDeleteOrderLine = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.backstageViewControl1.SuspendLayout();
             this.backstageViewClientControl1.SuspendLayout();
@@ -348,13 +351,15 @@
             this.bbiNewBdc,
             this.bbiModifyBdc,
             this.bbiDeleteBdc,
-            this.barButtonItem6,
-            this.barButtonItem14,
+            this.bbiRefreshBdc,
+            this.bbiClose,
             this.bbiNewProductLine,
             this.bbiModifyProductLine,
-            this.bbiDeleteProductLine});
+            this.bbiDeleteProductLine,
+            this.bbiModifyOrderLine,
+            this.bbiDeleteOrderLine});
             resources.ApplyResources(this.ribbonControl1, "ribbonControl1");
-            this.ribbonControl1.MaxItemId = 6;
+            this.ribbonControl1.MaxItemId = 8;
             this.ribbonControl1.MiniToolbars.Add(this.ribbonMiniToolbar1);
             this.ribbonControl1.MiniToolbars.Add(this.ribbonMiniToolbar2);
             this.ribbonControl1.Name = "ribbonControl1";
@@ -1341,21 +1346,21 @@
             this.bbiDeleteBdc.Id = 16;
             this.bbiDeleteBdc.Name = "bbiDeleteBdc";
             // 
-            // barButtonItem6
+            // bbiRefreshBdc
             // 
-            resources.ApplyResources(this.barButtonItem6, "barButtonItem6");
-            this.barButtonItem6.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.Glyph")));
-            this.barButtonItem6.Id = 1;
-            this.barButtonItem6.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.LargeGlyph")));
-            this.barButtonItem6.Name = "barButtonItem6";
+            resources.ApplyResources(this.bbiRefreshBdc, "bbiRefreshBdc");
+            this.bbiRefreshBdc.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiRefreshBdc.Glyph")));
+            this.bbiRefreshBdc.Id = 1;
+            this.bbiRefreshBdc.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiRefreshBdc.LargeGlyph")));
+            this.bbiRefreshBdc.Name = "bbiRefreshBdc";
             // 
-            // barButtonItem14
+            // bbiClose
             // 
-            resources.ApplyResources(this.barButtonItem14, "barButtonItem14");
-            this.barButtonItem14.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem14.Glyph")));
-            this.barButtonItem14.Id = 2;
-            this.barButtonItem14.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem14.LargeGlyph")));
-            this.barButtonItem14.Name = "barButtonItem14";
+            resources.ApplyResources(this.bbiClose, "bbiClose");
+            this.bbiClose.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiClose.Glyph")));
+            this.bbiClose.Id = 2;
+            this.bbiClose.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiClose.LargeGlyph")));
+            this.bbiClose.Name = "bbiClose";
             // 
             // bbiNewProductLine
             // 
@@ -1473,6 +1478,7 @@
             // 
             this.rpBDC.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.rpgBdc,
+            this.ribbonPageGroup3,
             this.ribbonPageGroup1,
             this.ribbonPageGroup2});
             this.rpBDC.Name = "rpBDC";
@@ -1481,6 +1487,7 @@
             // 
             // rpgBdc
             // 
+            this.rpgBdc.AllowTextClipping = false;
             this.rpgBdc.ItemLinks.Add(this.bbiNewBdc);
             this.rpgBdc.ItemLinks.Add(this.bbiModifyBdc);
             this.rpgBdc.ItemLinks.Add(this.bbiDeleteBdc);
@@ -1491,7 +1498,7 @@
             // ribbonPageGroup1
             // 
             this.ribbonPageGroup1.AllowTextClipping = false;
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem6);
+            this.ribbonPageGroup1.ItemLinks.Add(this.bbiRefreshBdc);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.ShowCaptionButton = false;
             resources.ApplyResources(this.ribbonPageGroup1, "ribbonPageGroup1");
@@ -1499,7 +1506,7 @@
             // ribbonPageGroup2
             // 
             this.ribbonPageGroup2.AllowTextClipping = false;
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem14);
+            this.ribbonPageGroup2.ItemLinks.Add(this.bbiClose);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.ShowCaptionButton = false;
             resources.ApplyResources(this.ribbonPageGroup2, "ribbonPageGroup2");
@@ -1850,6 +1857,29 @@
             resources.ApplyResources(this.pcMain, "pcMain");
             this.pcMain.Name = "pcMain";
             // 
+            // ribbonPageGroup3
+            // 
+            this.ribbonPageGroup3.AllowTextClipping = false;
+            this.ribbonPageGroup3.ItemLinks.Add(this.bbiModifyOrderLine);
+            this.ribbonPageGroup3.ItemLinks.Add(this.bbiDeleteOrderLine);
+            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
+            this.ribbonPageGroup3.ShowCaptionButton = false;
+            resources.ApplyResources(this.ribbonPageGroup3, "ribbonPageGroup3");
+            // 
+            // bbiModifyOrderLine
+            // 
+            resources.ApplyResources(this.bbiModifyOrderLine, "bbiModifyOrderLine");
+            this.bbiModifyOrderLine.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiModifyOrderLine.Glyph")));
+            this.bbiModifyOrderLine.Id = 6;
+            this.bbiModifyOrderLine.Name = "bbiModifyOrderLine";
+            // 
+            // bbiDeleteOrderLine
+            // 
+            resources.ApplyResources(this.bbiDeleteOrderLine, "bbiDeleteOrderLine");
+            this.bbiDeleteOrderLine.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiDeleteOrderLine.Glyph")));
+            this.bbiDeleteOrderLine.Id = 7;
+            this.bbiDeleteOrderLine.Name = "bbiDeleteOrderLine";
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -2056,14 +2086,17 @@
         private XtraNavBar.NavBarItem navBarItem5;
         private XtraBars.BarButtonItem bbiModifyBdc;
         private XtraBars.BarButtonItem bbiDeleteBdc;
-        private XtraBars.BarButtonItem barButtonItem6;
+        private XtraBars.BarButtonItem bbiRefreshBdc;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
-        private XtraBars.BarButtonItem barButtonItem14;
+        private XtraBars.BarButtonItem bbiClose;
         private XtraBars.Ribbon.RibbonPageGroup rpgProduit;
         private XtraBars.BarButtonItem bbiNewProductLine;
         private XtraBars.BarButtonItem bbiModifyProductLine;
         private XtraBars.BarButtonItem bbiDeleteProductLine;
+        private XtraBars.BarButtonItem bbiModifyOrderLine;
+        private XtraBars.BarButtonItem bbiDeleteOrderLine;
+        private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
     }
 }
 

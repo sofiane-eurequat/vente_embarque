@@ -7,7 +7,6 @@ namespace vente_embarque.DataLayer.Entities.Stock
     {
 
         public XpoProductLine()
-            : base()
         {
             // This constructor is used when an object is loaded from a persistent storage.
             // Do not place any code here.

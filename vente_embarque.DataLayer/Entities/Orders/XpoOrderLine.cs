@@ -8,7 +8,6 @@ namespace vente_embarque.DataLayer.Entities.Orders
     {
 
         public XpoOrderLine()
-            : base()
         {
             // This constructor is used when an object is loaded from a persistent storage.
             // Do not place any code here.
@@ -22,36 +21,36 @@ namespace vente_embarque.DataLayer.Entities.Orders
         }
 
 
-        private Guid _Oid;
+        private Guid _oid;
         [Key]
         public Guid Oid
         {
-            get { return _Oid; }
-            set { SetPropertyValue("Oid", ref _Oid, value); }
+            get { return _oid; }
+            set { SetPropertyValue("Oid", ref _oid, value); }
         }
 
-        private int _Quantity;
+        private int _quantity;
         public int Quantity
         {
-            get { return _Quantity; }
-            set { SetPropertyValue("Quantity", ref _Quantity, value); }
+            get { return _quantity; }
+            set { SetPropertyValue("Quantity", ref _quantity, value); }
         }
 
-        private XpoProduct _Product;
+        private XpoProduct _product;
         [Association("XpoProduct-XpoOrderLine")]
         public XpoProduct Product
         {
-            get { return _Product; }
-            set { SetPropertyValue("Product", ref _Product, value); }
+            get { return _product; }
+            set { SetPropertyValue("Product", ref _product, value); }
         }
 
 
-        private XpoOrder _Order;
-        [Aggregated, Association("XpoOrder-XpoOrderLine")]
+        private XpoOrder _order;
+        [Association("XpoOrder-XpoOrderLine")]
         public XpoOrder Order
         {
-            get { return _Order; }
-            set { SetPropertyValue("Order", ref _Order, value); }
+            get { return _order; }
+            set { SetPropertyValue("Order", ref _order, value); }
         }
     }
 }

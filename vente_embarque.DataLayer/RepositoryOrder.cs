@@ -8,6 +8,7 @@ using DevExpress.Xpo;
 using vente_embarque.Core.Domain;
 using vente_embarque.Core.Domain.Query;
 using vente_embarque.DataLayer.Entities.Orders;
+using vente_embarque.DataLayer.Entities.Stock;
 using vente_embarque.Model;
 
 namespace vente_embarque.DataLayer
@@ -67,6 +68,28 @@ namespace vente_embarque.DataLayer
 
         public void Save(Order entity)
         {
+            
+        }
+
+        public void Save(Guid idOrder, OrderLine ol)
+        {
+            var config = new AppSettingsReader();
+            using (
+                var uow = new UnitOfWork
+                {
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
+                })
+            {
+                var orderLine = uow.GetObjectByKey<XpoOrderLine>(ol.id);
+                var product = uow.GetObjectByKey<XpoProduct>(ol.Product.id);
+                orderLine.Product = product;
+                orderLine.Quantity = ol.Quantity;
+                uow.CommitChanges();
+            }
+        }
+
+        public void Add(Order entity)
+        {
             var config = new AppSettingsReader();
             using (
                 var uow = new UnitOfWork()
@@ -77,11 +100,6 @@ namespace vente_embarque.DataLayer
                 Map.Map.MapOrder(entity, uow);
                 uow.CommitChanges();
             }
-        }
-
-        public void Add(Order entity)
-        {
-            throw new NotImplementedException();
         }
 
         public void Remove(Order entity)
@@ -114,6 +132,21 @@ namespace vente_embarque.DataLayer
                     orderLine.Delete();
                 }
                 order.Delete();
+                uow.CommitChanges();
+            }
+        }
+
+        public void RemoveOl(Guid id)
+        {
+            var config = new AppSettingsReader();
+            using (
+                var uow = new UnitOfWork
+                {
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
+                })
+            {
+                var orderLine = uow.GetObjectByKey<XpoOrderLine>(id);
+                orderLine.Delete();
                 uow.CommitChanges();
             }
         }

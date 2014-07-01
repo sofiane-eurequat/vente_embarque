@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -20,14 +21,16 @@ namespace DevExpress.MailClient.Win.Forms
         private IEnumerable<Stock> Stocks { get; set; }
         public IEnumerable<Order> Orders { get; set; }
         public OrderLine OrderLine { get; set; }
-        private readonly bool _newOrderLine = true;
+        private readonly bool _newOrderLine;
         private bool _isOrderLineModified;
+        public ModelViewOrderLine OrderLineOut;
 
-        public FrmEditOrderLine(IEnumerable<Stock> stocks, OrderLine orderLine, bool newOrderLine)
+        public FrmEditOrderLine(IEnumerable<Stock> stocks, ModelViewOrderLine orderLine, bool newOrderLine)
         {
             InitializeComponent();
             DialogResult = DialogResult.Cancel;
             Stocks = stocks;
+            OrderLineOut = orderLine;
             _newOrderLine = newOrderLine;
             if (_newOrderLine) 
             {
@@ -44,6 +47,13 @@ namespace DevExpress.MailClient.Win.Forms
             if (!Stocks.Any()) return;
             comboBoxProduit.DataSource = Stocks.First(s => s.Name == (string)comboBoxStock.SelectedValue).GetProducts().ToList();
             comboBoxProduit.DisplayMember = "Name";
+
+            if (!newOrderLine)
+            {
+                //comboBoxStock.SelectedValue = orderLine.Product.s
+                comboBoxProduit.SelectedValue = orderLine.ProductName;
+                textEditQuantité.Text = orderLine.Quantity.ToString(CultureInfo.InvariantCulture);
+            }
         }
 
         private void bbiNouveau_ItemClick(object sender, ItemClickEventArgs e)
@@ -53,10 +63,26 @@ namespace DevExpress.MailClient.Win.Forms
         private void bbiSauvegarder_ItemClick(object sender, ItemClickEventArgs e)
         {
             _isOrderLineModified = false;
-            DialogResult result = QueryClose();
-            OrderLine = FactoryOrder.CreateOrderLine(comboBoxStock.SelectedItem as Stock, comboBoxProduit.Text,
+            //DialogResult result = QueryClose();
+            if (_newOrderLine)
+            {
+                OrderLine = FactoryOrder.CreateOrderLine(comboBoxStock.SelectedItem as Stock, comboBoxProduit.Text,
                                                      Convert.ToInt32(textEditQuantité.EditValue.ToString()));
-            if (result == DialogResult.Yes) Close();
+            }
+            else
+            {
+                var orderLineModif = new OrderLine
+                    {
+                    id = OrderLineOut.Id,
+                    Product = comboBoxProduit.SelectedItem as Product,
+                    Quantity = Convert.ToInt32(textEditQuantité.EditValue.ToString())
+                };
+
+                var repositoryOrder = new RepositoryOrder();
+                repositoryOrder.Save(OrderLineOut.IdOrder, orderLineModif);
+            }
+            
+            //if (result == DialogResult.Yes) Close();
         }
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
         {

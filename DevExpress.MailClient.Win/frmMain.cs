@@ -63,6 +63,8 @@ namespace DevExpress.MailClient.Win {
             InitBarButtonItem(bbiNewProductLine, TagResources.NewProductLine, Properties.Resources.NewItemDescription);
             InitBarButtonItem(bbiModifyProductLine, TagResources.ModifyProductLine);
             InitBarButtonItem(bbiDeleteProductLine, TagResources.DeleteProductLine, Properties.Resources.DeleteItemDescription);
+            InitBarButtonItem(bbiRefreshBdc,TagResources.Refresh);
+            InitBarButtonItem(bbiClose,TagResources.Close);
             InitBarButtonItem(bbiUnreadRead, TagResources.UnreadRead, Properties.Resources.UnreadReadDescription);
             InitBarButtonItem(bbiCloseSearch, TagResources.CloseSearch, Properties.Resources.CloseSearchDescription);
             InitBarButtonItem(bbiSubjectColumn, TagResources.SubjectColumn);
@@ -94,6 +96,8 @@ namespace DevExpress.MailClient.Win {
             InitBarButtonItem(bbiNewBdc, TagResources.NewBdc);
             InitBarButtonItem(bbiModifyBdc, TagResources.ModifyBdc);
             InitBarButtonItem(bbiDeleteBdc, TagResources.DeleteBdc);
+            InitBarButtonItem(bbiModifyOrderLine, TagResources.ModifyOrderLine);
+            InitBarButtonItem(bbiDeleteOrderLine, TagResources.DeleteOrderLine);
             InitGalleryItem(rgbiCurrentView.Gallery.Groups[0].Items[0], TagResources.ContactList, Properties.Resources.ContactListDescription);
             InitGalleryItem(rgbiCurrentView.Gallery.Groups[0].Items[1], TagResources.ContactAlphabetical, Properties.Resources.ContactAlphabeticalDescription);
             InitGalleryItem(rgbiCurrentView.Gallery.Groups[0].Items[2], TagResources.ContactByState, Properties.Resources.ContactByStateDescription);

@@ -162,11 +162,14 @@ namespace DevExpress.MailClient.Win.Modules
             this.gridControlOrderLine.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewOrderLine});
             this.gridControlOrderLine.Click += new System.EventHandler(this.gridControlOrderLine_Click);
+            this.gridControlOrderLine.DoubleClick += new System.EventHandler(this.gridViewOrderLine_DoubleClick);
             // 
             // gridViewOrderLine
             // 
             this.gridViewOrderLine.GridControl = this.gridControlOrderLine;
             this.gridViewOrderLine.Name = "gridViewOrderLine";
+            this.gridViewOrderLine.OptionsBehavior.Editable = false;
+            this.gridViewOrderLine.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.MouseUp;
             this.gridViewOrderLine.OptionsView.ShowGroupPanel = false;
             // 
             // splitMain
@@ -213,7 +216,7 @@ namespace DevExpress.MailClient.Win.Modules
             // 
             // modelViewProductBindingSource
             // 
-            this.modelViewProductBindingSource.DataSource = typeof(ModelViewProduct);
+            this.modelViewProductBindingSource.DataSource = typeof(vente_embarque.presenter.Stok.ModelViewProduct);
             // 
             // layoutViewProduct
             // 

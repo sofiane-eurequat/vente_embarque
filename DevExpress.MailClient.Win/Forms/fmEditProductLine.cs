@@ -1,18 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Globalization;
 using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
-using DevExpress.XtraEditors;
 using vente_embarque.DataLayer;
 using vente_embarque.Model;
-using vente_embarque.presenter.Bdc;
 using vente_embarque.presenter.Stok;
 
 namespace DevExpress.MailClient.Win.Forms
@@ -36,7 +30,7 @@ namespace DevExpress.MailClient.Win.Forms
 
             _editProductLinePresenter = new EditProductLinePresenterPage(this,repositoryStock,repositoryProduit);
             _editProductLinePresenter.Display();
-            comboBoxStock.DataSource = Stocks.OrderBy(s => s.Name).ToList();
+            
             comboBoxStock.DisplayMember = "Name";
             comboBoxStock.ValueMember = "Name";
             comboBoxProduit.DataSource = Products;
@@ -45,9 +39,14 @@ namespace DevExpress.MailClient.Win.Forms
 
             if (!newProductLine)
             {
-                comboBoxStock.SelectedValue = productLine.Stock.Name;
+                comboBoxStock.DataSource = Stocks.Where(s => s.Name == productLine.Stock.Name).ToList();
+                //comboBoxStock.SelectedValue = productLine.Stock.Name;
                 comboBoxProduit.SelectedValue = productLine.Name;
                 textEditQuantité.Text = productLine.Quantity.ToString(CultureInfo.InvariantCulture);
+            }
+            else
+            {
+                comboBoxStock.DataSource = Stocks.OrderBy(s => s.Name).ToList();
             }
             /*
             DialogResult = DialogResult.Cancel;
@@ -72,7 +71,7 @@ namespace DevExpress.MailClient.Win.Forms
         private void bbiSauvegarder_ItemClick(object sender, ItemClickEventArgs e)
         {
             _isProductLineModified = false;
-            this.DialogResult=DialogResult.OK;
+            DialogResult=DialogResult.OK;
             
             if (_newProductLine)
             {
