@@ -28,6 +28,7 @@ namespace DevExpress.MailClient.Win.Forms
         public List<OrderLine> OrderLines = new List<OrderLine>();
         public List<OrderLine> orderLines = new List<OrderLine>();
         public OrderLine LigneCommande { get; set; }
+        public Guid IdOrder { get; set; }
 
         readonly ModelViewBdc _sourceBdc;
         bool _newBdc = true;
@@ -56,6 +57,7 @@ namespace DevExpress.MailClient.Win.Forms
 
             if (!newBdc)
             {
+                IdOrder = bdc.Id;
                 textEditNumCommande.Text = bdc.NumCommande.ToString(CultureInfo.InvariantCulture);
                 comboBoxClients.SelectedValue = bdc.NameClient;
                 dateEditLivraison.Text = bdc.DateLivraison.ToShortDateString();
@@ -116,7 +118,25 @@ namespace DevExpress.MailClient.Win.Forms
 
         private void bbiSauvegarder_ItemClick(object sender, ItemClickEventArgs e)
         {
-            _editBdcPresenter.Write(Convert.ToInt32(textEditNumCommande.Text), comboBoxClients.SelectedItem as Client, dateEditLivraison.DateTime, memoEditAdresssLivraion.Text, (Priorite)comboBoxPriorite.SelectedItem, (GestionCommande)comboBoxEtat.SelectedItem, Convert.ToBoolean(radiogroupLivraisonSurPlace.Text), dateEditCommande.DateTime, OrderLines);
+            if (_newBdc)
+            {
+                _editBdcPresenter.Write(Convert.ToInt32(textEditNumCommande.Text), comboBoxClients.SelectedItem as Client,
+                                    dateEditLivraison.DateTime, memoEditAdresssLivraion.Text,
+                                    (Priorite) comboBoxPriorite.SelectedItem,
+                                    (GestionCommande) comboBoxEtat.SelectedItem,
+                                    Convert.ToBoolean(radiogroupLivraisonSurPlace.Text), dateEditCommande.DateTime,
+                                    OrderLines);
+            }
+            else
+            {
+                _editBdcPresenter.Save(IdOrder, Convert.ToInt32(textEditNumCommande.Text), comboBoxClients.SelectedItem as Client,
+                                    dateEditLivraison.DateTime, memoEditAdresssLivraion.Text,
+                                    (Priorite)comboBoxPriorite.SelectedItem,
+                                    (GestionCommande)comboBoxEtat.SelectedItem,
+                                    Convert.ToBoolean(radiogroupLivraisonSurPlace.Text), dateEditCommande.DateTime,
+                                    OrderLines);
+            }
+            
         }
 
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)

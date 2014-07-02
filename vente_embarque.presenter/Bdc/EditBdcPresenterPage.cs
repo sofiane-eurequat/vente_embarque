@@ -36,7 +36,30 @@ namespace vente_embarque.presenter.Bdc
         public void Write(int numCommande, Client client, DateTime dateLivraison, string adresseLivraison, Priorite priorite, GestionCommande etat, bool livraisonSurPlace, DateTime dateCommande, IEnumerable<OrderLine> orderLine)
         {
             var order = FactoryOrder.CreateOrder(numCommande,client,orderLine,adresseLivraison,livraisonSurPlace,priorite,etat,dateLivraison,dateCommande);
-            _repositoryOrder.Add(order);
+            _repositoryOrder.Save(order);
+        }
+
+        public void Save(Guid idOrder, int numCommande, Client client, DateTime dateLivraison, string adresseLivraison, Priorite priorite, GestionCommande etat, bool livraisonSurPlace, DateTime dateCommande, IEnumerable<OrderLine> orderLine)
+        {
+            var order = new Order
+                {
+                    id = idOrder,
+                    NumCommande = numCommande,
+                    Client = client,
+                    Priorite = priorite,
+                    Etat = etat,
+                    LivraisonSurPlace = livraisonSurPlace,
+                    DateCommande = dateCommande
+                };
+            if (orderLine == null) return;
+            if (order.OrderLines == null) order.OrderLines = new List<OrderLine>();
+            foreach (var ol in orderLine)
+            {
+                //if (!orderLine.VerifyQuatityWithStock(stock)) return null;
+                order.OrderLines.Add(ol);
+            }
+
+            _repositoryOrder.Save(order);
         }
     }
 
@@ -46,5 +69,7 @@ namespace vente_embarque.presenter.Bdc
 
         void Write(int numCommande, Client client, DateTime dateLivraison, string adresseLivraison, Priorite priorite,
                    GestionCommande etat, bool livraisonSurPlace, DateTime dateCommande, IEnumerable<OrderLine> orderLine);
+
+        void Save(Guid idOrder, int numCommande, Client client, DateTime dateLivraison, string adresseLivraison, Priorite priorite, GestionCommande etat, bool livraisonSurPlace, DateTime dateCommande, IEnumerable<OrderLine> orderLine);
     }
 }

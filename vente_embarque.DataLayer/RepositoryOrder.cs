@@ -68,7 +68,16 @@ namespace vente_embarque.DataLayer
 
         public void Save(Order entity)
         {
-            
+            var config = new AppSettingsReader();
+            using (
+                var uow = new UnitOfWork()
+                {
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
+                })
+            {
+                Map.Map.MapOrder(entity, uow);
+                uow.CommitChanges();
+            }
         }
 
         public void Save(Guid idOrder, OrderLine ol)
@@ -90,16 +99,7 @@ namespace vente_embarque.DataLayer
 
         public void Add(Order entity)
         {
-            var config = new AppSettingsReader();
-            using (
-                var uow = new UnitOfWork()
-                {
-                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
-                })
-            {
-                Map.Map.MapOrder(entity, uow);
-                uow.CommitChanges();
-            }
+            throw new NotImplementedException();
         }
 
         public void Remove(Order entity)
