@@ -1,4 +1,4 @@
-﻿namespace DevExpress.MailClient.Win {
+namespace DevExpress.MailClient.Win {
     partial class frmEditStock {
         /// <summary>
         /// Required designer variable.
@@ -156,8 +156,6 @@
             this.bbiSauvergarder = new DevExpress.XtraBars.BarButtonItem();
             this.bbiSauvegarderFermer = new DevExpress.XtraBars.BarButtonItem();
             this.bbiSupprimer = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiValider = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiAnnuler = new DevExpress.XtraBars.BarButtonItem();
             this.bbiEffacer = new DevExpress.XtraBars.BarButtonItem();
             this.bbiRefresh = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
@@ -167,9 +165,7 @@
             this.homeRibbonPage1 = new DevExpress.XtraRichEdit.UI.HomeRibbonPage();
             this.NouveauRibbonPageGroup1 = new DevExpress.XtraRichEdit.UI.ClipboardRibbonPageGroup();
             this.SauvegarderibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.EditionRibbonPageGroup1 = new DevExpress.XtraRichEdit.UI.ParagraphRibbonPageGroup();
             this.EditionEnregistremetRibbonPageGroup = new DevExpress.XtraRichEdit.UI.EditingRibbonPageGroup();
-            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.RPGFermer = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemRichEditStyleEdit1 = new DevExpress.XtraRichEdit.Design.RepositoryItemRichEditStyleEdit();
             this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
@@ -371,15 +367,13 @@
             this.bbiSauvergarder,
             this.bbiSauvegarderFermer,
             this.bbiSupprimer,
-            this.bbiValider,
-            this.bbiAnnuler,
             this.bbiEffacer,
             this.bbiRefresh,
             this.barButtonItem11,
             this.barButtonItem12,
             this.barButtonItem13,
             this.bbiFermer});
-            this.ribbonControl.MaxItemId = 209;
+            this.ribbonControl.MaxItemId = 210;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.homeRibbonPage1});
@@ -1367,22 +1361,7 @@
             this.bbiSupprimer.Id = 175;
             this.bbiSupprimer.LargeGlyph = global::DevExpress.MailClient.Win.Properties.Resources.Delete_32x32;
             this.bbiSupprimer.Name = "bbiSupprimer";
-            // 
-            // bbiValider
-            // 
-            resources.ApplyResources(this.bbiValider, "bbiValider");
-            this.bbiValider.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiValider.Glyph")));
-            this.bbiValider.Id = 176;
-            this.bbiValider.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiValider.LargeGlyph")));
-            this.bbiValider.Name = "bbiValider";
-            // 
-            // bbiAnnuler
-            // 
-            resources.ApplyResources(this.bbiAnnuler, "bbiAnnuler");
-            this.bbiAnnuler.Glyph = global::DevExpress.MailClient.Win.Properties.Resources.undo_16x16;
-            this.bbiAnnuler.Id = 177;
-            this.bbiAnnuler.LargeGlyph = global::DevExpress.MailClient.Win.Properties.Resources.undo_32x32;
-            this.bbiAnnuler.Name = "bbiAnnuler";
+            this.bbiSupprimer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiSupprimer_ItemClick);
             // 
             // bbiEffacer
             // 
@@ -1391,13 +1370,11 @@
             this.bbiEffacer.Id = 185;
             this.bbiEffacer.LargeGlyph = global::DevExpress.MailClient.Win.Properties.Resources.clear_32x32;
             this.bbiEffacer.Name = "bbiEffacer";
+            this.bbiEffacer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiEffacer_ItemClick);
             // 
             // bbiRefresh
             // 
-            resources.ApplyResources(this.bbiRefresh, "bbiRefresh");
-            this.bbiRefresh.Glyph = global::DevExpress.MailClient.Win.Properties.Resources.refresh2_16x16;
-            this.bbiRefresh.Id = 195;
-            this.bbiRefresh.LargeGlyph = global::DevExpress.MailClient.Win.Properties.Resources.refresh2_32x32;
+            this.bbiRefresh.Id = 209;
             this.bbiRefresh.Name = "bbiRefresh";
             // 
             // barButtonItem11
@@ -1431,15 +1408,14 @@
             this.bbiFermer.Id = 207;
             this.bbiFermer.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiFermer.LargeGlyph")));
             this.bbiFermer.Name = "bbiFermer";
+            this.bbiFermer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiFermer_ItemClick);
             // 
             // homeRibbonPage1
             // 
             this.homeRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.NouveauRibbonPageGroup1,
             this.SauvegarderibbonPageGroup,
-            this.EditionRibbonPageGroup1,
             this.EditionEnregistremetRibbonPageGroup,
-            this.ribbonPageGroup2,
             this.RPGFermer});
             this.homeRibbonPage1.Name = "homeRibbonPage1";
             resources.ApplyResources(this.homeRibbonPage1, "homeRibbonPage1");
@@ -1461,16 +1437,6 @@
             this.SauvegarderibbonPageGroup.ShowCaptionButton = false;
             resources.ApplyResources(this.SauvegarderibbonPageGroup, "SauvegarderibbonPageGroup");
             // 
-            // EditionRibbonPageGroup1
-            // 
-            this.EditionRibbonPageGroup1.AllowTextClipping = false;
-            this.EditionRibbonPageGroup1.ItemLinks.Add(this.bbiSupprimer);
-            this.EditionRibbonPageGroup1.ItemLinks.Add(this.bbiValider);
-            this.EditionRibbonPageGroup1.ItemLinks.Add(this.bbiAnnuler);
-            this.EditionRibbonPageGroup1.Name = "EditionRibbonPageGroup1";
-            this.EditionRibbonPageGroup1.ShowCaptionButtonMode = DevExpress.XtraBars.Commands.Ribbon.ShowCaptionButtonMode.Hide;
-            resources.ApplyResources(this.EditionRibbonPageGroup1, "EditionRibbonPageGroup1");
-            // 
             // EditionEnregistremetRibbonPageGroup
             // 
             this.EditionEnregistremetRibbonPageGroup.AllowTextClipping = false;
@@ -1478,14 +1444,6 @@
             this.EditionEnregistremetRibbonPageGroup.Name = "EditionEnregistremetRibbonPageGroup";
             this.EditionEnregistremetRibbonPageGroup.ShowCaptionButtonMode = DevExpress.XtraBars.Commands.Ribbon.ShowCaptionButtonMode.Hide;
             resources.ApplyResources(this.EditionEnregistremetRibbonPageGroup, "EditionEnregistremetRibbonPageGroup");
-            // 
-            // ribbonPageGroup2
-            // 
-            this.ribbonPageGroup2.AllowTextClipping = false;
-            this.ribbonPageGroup2.ItemLinks.Add(this.bbiRefresh);
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonPageGroup2, "ribbonPageGroup2");
             // 
             // RPGFermer
             // 
@@ -2068,7 +2026,6 @@
         private DevExpress.XtraRichEdit.UI.FloatingObjectSendBehindTextItem floatingObjectSendBehindTextItem1;
         private DevExpress.XtraRichEdit.UI.HomeRibbonPage homeRibbonPage1;
         private DevExpress.XtraRichEdit.UI.ClipboardRibbonPageGroup NouveauRibbonPageGroup1;
-        private DevExpress.XtraRichEdit.UI.ParagraphRibbonPageGroup EditionRibbonPageGroup1;
         private DevExpress.XtraRichEdit.UI.EditingRibbonPageGroup EditionEnregistremetRibbonPageGroup;
         private DevExpress.XtraRichEdit.UI.ShowFontFormItem showFontFormItem1;
         private DevExpress.XtraRichEdit.UI.ShowParagraphFormItem showParagraphFormItem1;
@@ -2076,7 +2033,6 @@
         private DevExpress.XtraRichEdit.UI.ShowInsertTableCellsFormItem showInsertTableCellsFormItem1;
         //private DevExpress.MailClient.Win.Controls.ucMessageInfo ucMessageInfo1;
         private DevExpress.XtraSpellChecker.SpellChecker spellChecker1;
-        private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private XtraBars.BarButtonGroup barButtonGroup8;
         private XtraBars.BarButtonItem barButtonItem1;
         private XtraBars.BarButtonItem barButtonItem2;
@@ -2089,8 +2045,6 @@
         private XtraBars.BarButtonItem bbiSauvergarder;
         private XtraBars.BarButtonItem bbiSauvegarderFermer;
         private XtraBars.BarButtonItem bbiSupprimer;
-        private XtraBars.BarButtonItem bbiValider;
-        private XtraBars.BarButtonItem bbiAnnuler;
         private XtraBars.Ribbon.RibbonPageGroup SauvegarderibbonPageGroup;
         private XtraBars.BarButtonItem bbiEffacer;
         private XtraBars.BarButtonItem bbiRefresh;

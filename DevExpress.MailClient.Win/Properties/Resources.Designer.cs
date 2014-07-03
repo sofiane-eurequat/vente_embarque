@@ -2604,6 +2604,15 @@ namespace DevExpress.MailClient.Win.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Quantité.
+        /// </summary>
+        internal static string Quantité {
+            get {
+                return ResourceManager.GetString("Quantité", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap reading {

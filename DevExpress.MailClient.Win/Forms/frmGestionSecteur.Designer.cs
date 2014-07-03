@@ -537,11 +537,11 @@
             this.Controls.Add(this.xtraTabControl1);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.ribbonStatusBar);
+            this.Controls.Add(this.ribbon);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
-            this.Controls.Add(this.ribbon);
             this.KeyPreview = true;
             this.Name = "frmGestionSecteur";
             this.Ribbon = this.ribbon;

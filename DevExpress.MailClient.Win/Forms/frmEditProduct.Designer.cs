@@ -240,9 +240,9 @@ namespace DevExpress.MailClient.Win.Forms{
             this.dateEditEntree.MenuManager = this.ribbon;
             this.dateEditEntree.Name = "dateEditEntree";
             this.dateEditEntree.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEditLivraison.Properties.Buttons"))))});
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEditEntree.Properties.Buttons"))))});
             this.dateEditEntree.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEditLivraison.Properties.CalendarTimeProperties.Buttons"))))});
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEditEntree.Properties.CalendarTimeProperties.Buttons"))))});
             // 
             // labelQuantity
             // 
@@ -364,7 +364,7 @@ namespace DevExpress.MailClient.Win.Forms{
             this.ribbonPageGroup9.ShowCaptionButton = false;
             resources.ApplyResources(this.ribbonPageGroup9, "ribbonPageGroup9");
             // 
-            // frmEditProduct
+            // FrmEditProduct
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

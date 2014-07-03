@@ -941,11 +941,17 @@
   <data name="GCOrderLine.Location" type="System.Drawing.Point, System.Drawing">
     <value>-1, 26</value>
   </data>
+  <data name="colProduct.Caption" xml:space="preserve">
+    <value>Produit</value>
+  </data>
   <data name="colProduct.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="colProduct.VisibleIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="colQuantity.Caption" xml:space="preserve">
+    <value>Quantité</value>
   </data>
   <data name="colQuantity.Visible" type="System.Boolean, mscorlib">
     <value>True</value>

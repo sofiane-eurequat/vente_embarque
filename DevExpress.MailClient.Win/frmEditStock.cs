@@ -1,29 +1,26 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
-using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraBars;
-using DevExpress.XtraEditors.Repository;
+using DevExpress.XtraBars.Ribbon;
+using DevExpress.XtraEditors;
 using vente_embarque.DataLayer;
 using vente_embarque.Model;
-using vente_embarque.presenter;
 using vente_embarque.presenter.Stok;
 
-namespace DevExpress.MailClient.Win {
+namespace DevExpress.MailClient.Win.Froms 
+{
     public partial class frmEditStock : RibbonForm,IEditStockView
     {
 
         public IEnumerable<Wilaya> Wilayas { get; set; }
         private readonly EditStockPresenterPage _editStockPresenter;
-        bool isMessageModified;
-        bool newStock = true;
         readonly ModelViewStock sourceStock;
+        //bool isMessageModified;
+        bool newStock = true;
+        
 
         public frmEditStock() {
             InitializeComponent();
@@ -53,11 +50,11 @@ namespace DevExpress.MailClient.Win {
             GCLigneStock.RepositoryItems.Add
                 (
                     GVProductLine.Columns["Name"].ColumnEdit = riLookUpProduct
-                );*/
+                );
 
-           GCLigneStock.DataSource = new List<ModelViewProductLine>()
-                {
-                    new ModelViewProductLine()
+           GCLigneStock.DataSource = new List<ModelViewProductLine>
+               {
+                    new ModelViewProductLine
                         {
                             Name = "test",
                             Quantity = 20
@@ -86,17 +83,17 @@ namespace DevExpress.MailClient.Win {
                 edtTo.Properties.ReadOnly = true;
                 edtSubject.Properties.ReadOnly = true;
                 richEditControl.ReadOnly = true;
-            }*/
+            }
         }
         protected override void OnClosing(CancelEventArgs e) {
             base.OnClosing(e);
             /*if(!newStock)
-                LayoutOption.MailCollapsed = splitContainerControl1.Collapsed;*/
+                LayoutOption.MailCollapsed = splitContainerControl1.Collapsed;
         }
         public ModelViewStock SourceMessage { get { return sourceStock; } }
 
         public bool IsMessageModified {
-            get { return false; /*isMessageModified || richEditControl.Modified;*/ }
+            get { return false; /*isMessageModified || richEditControl.Modified; }
             set {
                 isMessageModified = value;
                // richEditControl.Modified = value;
@@ -114,7 +111,7 @@ namespace DevExpress.MailClient.Win {
        /* void richEditControl_SelectionChanged(object sender, EventArgs e) {
             tableToolsRibbonPageCategory1.Visible = richEditControl.IsSelectionInTable();
             floatingPictureToolsRibbonPageCategory1.Visible = richEditControl.IsFloatingObjectSelected;
-        }*/
+        }
         void edtTo_EditValueChanged(object sender, EventArgs e) {
             isMessageModified = true;
         }
@@ -163,13 +160,13 @@ namespace DevExpress.MailClient.Win {
             sourceStock.Text = richEditControl.HtmlText;
             sourceStock.SetPlainText(ObjectHelper.GetPlainText(richEditControl.Text.TrimStart()));
             sourceStock.Subject = edtSubject.Text;
-            sourceStock.From = edtTo.Text;*/
+            sourceStock.From = edtTo.Text;
 
             IsMessageModified = false;
 
             RaiseSaveMessage();
         }
-
+        */
         private void comboBoxWilaya_SelectedIndexChanged(object sender, EventArgs e)
         {
             comboBoxWilaya.ValueMember = "Code";
@@ -185,6 +182,24 @@ namespace DevExpress.MailClient.Win {
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
         {
             _editStockPresenter.Write(textEditNameStock.Text, comboBoxWilaya.SelectedItem as Wilaya, comboBoxCommune.SelectedItem as Commune, textEditAdress.Text);
+            Close();
+        }
+
+        private void bbiSupprimer_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
+
+        private void bbiEffacer_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            textEditNameStock.Text = "";
+            comboBoxWilaya.Text = "";
+            comboBoxCommune.Text = "";
+            textEditAdress.Text = "";
+        }
+        
+        private void bbiFermer_ItemClick(object sender, ItemClickEventArgs e)
+        {
             Close();
         }
     }

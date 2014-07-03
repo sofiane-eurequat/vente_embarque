@@ -30,7 +30,7 @@ namespace vente_embarque.presenter.Stok
             {
                 var mvs=new ModelViewStock
                     {
-                        Name = stoc.Name,
+                        Nom = stoc.Name,
                         Wilaya = stoc.Wilaya.Name,
                         Commune = stoc.Commune.Name,
                         Id = stoc.id
@@ -79,7 +79,7 @@ namespace vente_embarque.presenter.Stok
     }
     public class ModelViewStock
     {
-        public string Name { get; set; }
+        public string Nom { get; set; }
         public List<ModelViewProductLine> ProductLine { get; set; }
         public string Etat { get; set; }
         public string Invendue { get; set; }

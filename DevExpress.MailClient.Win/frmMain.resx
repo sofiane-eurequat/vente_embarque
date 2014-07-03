@@ -438,8 +438,8 @@
   <data name="bciShowAllMessageCount.Caption" xml:space="preserve">
     <value>Show All Message Count</value>
   </data>
-  <data name="bbiDelete.Caption" xml:space="preserve">
-    <value>Supprimer</value>
+  <data name="bbiDeleteStock.Caption" xml:space="preserve">
+    <value>Supprimer Stock</value>
   </data>
   <data name="bbiNewStock.Caption" xml:space="preserve">
     <value>Nouveau Stock</value>
@@ -1701,6 +1701,9 @@
         rkJggg==
 </value>
   </data>
+  <data name="bbiModifyStock.Caption" xml:space="preserve">
+    <value>Modifier Stock</value>
+  </data>
   <data name="ribbonControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -1715,9 +1718,6 @@
   </data>
   <data name="rpgProduit.Text" xml:space="preserve">
     <value>Produit</value>
-  </data>
-  <data name="rpgDelete.Text" xml:space="preserve">
-    <value>Delete</value>
   </data>
   <data name="rpgTags.Text" xml:space="preserve">
     <value>Affichage produit</value>
@@ -1880,7 +1880,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvQAADr0BR/uQrQAAJJ5JREFUeF7teweQnlWW
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAAOvAAADrwBlbxySQAAJJ5JREFUeF7teweQnlWW
         3dq7VS5P1dZsGNtVO7MzXmDYWQZEEAgQkhBCEsqppe5WB3W3Ouecc84555xzzjlHdc7qqA7KEkGAJDg+
         72va1oIAFZbLLtd08er7E///vvPOvffc857+Cn/5+wECf/UXTH6IwHMH5Vv+xjfffMvxDb55/AjffvNY
         GuLxN+IqXhfj22/B/yA+///a33MB5fHjb/Ho4UM8+OILrC3NY6yrHmMt+RirCMd0TQSmayMxXhWB0ZoE
@@ -4197,10 +4197,10 @@
   <data name="&gt;&gt;bciShowAllMessageCount.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarCheckItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;bbiDelete.Name" xml:space="preserve">
-    <value>bbiDelete</value>
+  <data name="&gt;&gt;bbiDeleteStock.Name" xml:space="preserve">
+    <value>bbiDeleteStock</value>
   </data>
-  <data name="&gt;&gt;bbiDelete.Type" xml:space="preserve">
+  <data name="&gt;&gt;bbiDeleteStock.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiNewStock.Name" xml:space="preserve">
@@ -4797,6 +4797,24 @@
   <data name="&gt;&gt;bbiDeleteProductLine.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="&gt;&gt;bbiModifyOrderLine.Name" xml:space="preserve">
+    <value>bbiModifyOrderLine</value>
+  </data>
+  <data name="&gt;&gt;bbiModifyOrderLine.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bbiDeleteOrderLine.Name" xml:space="preserve">
+    <value>bbiDeleteOrderLine</value>
+  </data>
+  <data name="&gt;&gt;bbiDeleteOrderLine.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bbiModifyStock.Name" xml:space="preserve">
+    <value>bbiModifyStock</value>
+  </data>
+  <data name="&gt;&gt;bbiModifyStock.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="&gt;&gt;ribbonMiniToolbar1.Name" xml:space="preserve">
     <value>ribbonMiniToolbar1</value>
   </data>
@@ -4825,12 +4843,6 @@
     <value>rpgProduit</value>
   </data>
   <data name="&gt;&gt;rpgProduit.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;rpgDelete.Name" xml:space="preserve">
-    <value>rpgDelete</value>
-  </data>
-  <data name="&gt;&gt;rpgDelete.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;rpgTags.Name" xml:space="preserve">
@@ -4879,6 +4891,12 @@
     <value>rpgBdc</value>
   </data>
   <data name="&gt;&gt;rpgBdc.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ribbonPageGroup3.Name" xml:space="preserve">
+    <value>ribbonPageGroup3</value>
+  </data>
+  <data name="&gt;&gt;ribbonPageGroup3.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonPageGroup1.Name" xml:space="preserve">
@@ -5042,24 +5060,6 @@
   </data>
   <data name="&gt;&gt;navBarItem3.Type" xml:space="preserve">
     <value>DevExpress.XtraNavBar.NavBarItem, DevExpress.XtraNavBar.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup3.Name" xml:space="preserve">
-    <value>ribbonPageGroup3</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup3.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bbiModifyOrderLine.Name" xml:space="preserve">
-    <value>bbiModifyOrderLine</value>
-  </data>
-  <data name="&gt;&gt;bbiModifyOrderLine.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bbiDeleteOrderLine.Name" xml:space="preserve">
-    <value>bbiDeleteOrderLine</value>
-  </data>
-  <data name="&gt;&gt;bbiDeleteOrderLine.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmMain</value>

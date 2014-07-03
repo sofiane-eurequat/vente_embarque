@@ -443,6 +443,18 @@
   <data name="ribbon.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="ribbonPageGroup1.Text" xml:space="preserve">
+    <value>Nouveau</value>
+  </data>
+  <data name="ribbonPageGroup10.Text" xml:space="preserve">
+    <value>Sauvegarder</value>
+  </data>
+  <data name="ribbonPageGroup11.Text" xml:space="preserve">
+    <value>Reinitialiser</value>
+  </data>
+  <data name="ribbonPageGroup12.Text" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
   <data name="ribbonPage1.Text" xml:space="preserve">
     <value>Home</value>
   </data>
@@ -478,18 +490,6 @@
   </data>
   <data name="&gt;&gt;ribbon.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="ribbonPageGroup1.Text" xml:space="preserve">
-    <value>Nouveau</value>
-  </data>
-  <data name="ribbonPageGroup10.Text" xml:space="preserve">
-    <value>Sauvegarder</value>
-  </data>
-  <data name="ribbonPageGroup11.Text" xml:space="preserve">
-    <value>Reinitialiser</value>
-  </data>
-  <data name="ribbonPageGroup12.Text" xml:space="preserve">
-    <value>Fermer</value>
   </data>
   <metadata name="richEditBarController1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>166, 19</value>
@@ -572,10 +572,10 @@
     <value>130, 150</value>
   </data>
   <assembly alias="DevExpress.Utils.v13.2" name="DevExpress.Utils.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="dateEditLivraison.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.2">
+  <data name="dateEditEntree.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.2">
     <value>Combo</value>
   </data>
-  <data name="dateEditLivraison.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.2">
+  <data name="dateEditEntree.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.2">
     <value>Combo</value>
   </data>
   <data name="dateEditEntree.Size" type="System.Drawing.Size, System.Drawing">
@@ -1159,7 +1159,7 @@
     <value>Manual</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Product</value>
+    <value>Produit</value>
   </data>
   <data name="&gt;&gt;applicationMenu.Name" xml:space="preserve">
     <value>applicationMenu</value>

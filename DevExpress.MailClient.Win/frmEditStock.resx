@@ -133,12 +133,6 @@
   <data name="ribbonControl.ApplicationButtonText" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="undoItem1.Caption" xml:space="preserve">
-    <value>Undo</value>
-  </data>
-  <data name="redoItem1.Caption" xml:space="preserve">
-    <value>Redo</value>
-  </data>
   <data name="pasteItem1.Caption" xml:space="preserve">
     <value>Paste</value>
   </data>
@@ -146,14 +140,14 @@
   <data name="repositoryItemFontEdit1.AutoHeight" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <assembly alias="DevExpress.Utils.v13.1" name="DevExpress.Utils.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="repositoryItemFontEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.1">
+  <assembly alias="DevExpress.Utils.v13.2" name="DevExpress.Utils.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="repositoryItemFontEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.2">
     <value>Combo</value>
   </data>
   <data name="repositoryItemRichEditFontSizeEdit1.AutoHeight" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="repositoryItemRichEditFontSizeEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.1">
+  <data name="repositoryItemRichEditFontSizeEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.2">
     <value>Combo</value>
   </data>
   <data name="fontSizeIncreaseItem1.Caption" xml:space="preserve">
@@ -267,13 +261,13 @@
   <data name="repositoryItemBorderLineStyle1.AutoHeight" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="repositoryItemBorderLineStyle1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.1">
+  <data name="repositoryItemBorderLineStyle1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.2">
     <value>Combo</value>
   </data>
   <data name="repositoryItemBorderLineWeight1.AutoHeight" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="repositoryItemBorderLineWeight1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.1">
+  <data name="repositoryItemBorderLineWeight1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.2">
     <value>Combo</value>
   </data>
   <data name="changeTableBorderColorItem1.Caption" xml:space="preserve">
@@ -381,7 +375,7 @@
   <data name="repositoryItemFloatingObjectOutlineWeight1.AutoHeight" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="repositoryItemFloatingObjectOutlineWeight1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.1">
+  <data name="repositoryItemFloatingObjectOutlineWeight1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.2">
     <value>Combo</value>
   </data>
   <data name="changeFloatingObjectTextWrapTypeItem1.Caption" xml:space="preserve">
@@ -804,67 +798,8 @@
   <data name="bbiSupprimer.Caption" xml:space="preserve">
     <value>Supprimer</value>
   </data>
-  <data name="bbiValider.Caption" xml:space="preserve">
-    <value>Valider</value>
-  </data>
-  <data name="bbiValider.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAKnSURBVDhPpZNtSFNhFMdP6tSa7eZkLuYLywk5xW1C0tT5bkRKhZnRtESidGaJlak1V0hQSstS
-        JNos0WVmorbUUlmFqRUElQTR++hDH4L6UphJJqfzXOcoCvrghf+Hy3l+5/ec+zwXEBEWk0XBTAy33ne4
-        c9Npg/53bWB/2wq9r1rg2gsLdD4/D5efNUP4Hk6nKQudCs1bfhwAllB4+Z+wk+A3BL9uge7f4SJOl1Kj
-        mj79wIj6piyUbl56gngPdwNmHnC2/9MctotLYvCx0X2otkqwoCcLFflSUoMP34DB2jpZ4boG5Y+YmsCt
-        C9tm25TvFKUmm1TfGay5KEFFgxBlJT4oThc0uBswuKhrI151NqLemjYbWR6QS0VPuV6UQWaC96OGzAqz
-        EIMI9k/xbqa6yD1Culn588yTw5h/LxbNkxW45VzS7KodXF2Kcd6sJnO4eRnBvuif5G0lUMwEC0cPMUZp
-        blxdyNyGntWYOajE2oelWGDZhMzMZg4ns4xgTidoJVDC4KbxU+7jZ6fhEVEq1qtN0rmE9mCM7wxGw3AO
-        DyvIzGbmErxttG5lmmkC00zjmFrDB1j4c6bHS54nqoyoEqPKEoCRVs71wcgcL7hCdRlbk2ocR9ujGUw8
-        Moq1Q1OQWD0K/CVxXQy/oByhI8zoh4p6lzlO0EW1YGZmMAMvTEyj9tBtigO1FQ6EtslGuPT4LGviSZFK
-        1vuOSbeTeR4O4c205e6nM9hy/xvWj3zBqr7PaOj4iGvKhhDkhSIIzfeDoG1CfhRKoDDaK5vNzN5XZAgg
-        2TiGuqq7uPagA6t7P6Fqbz9GG/pRXTL495/oGoc14q8qS/LRMTg58hViD4xgse0DRhXbMbvxJUQV2ed/
-        iP+FNUiovAOx5cOoKR2gBtdRubuPGtyAX5aW64BTl0yXAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="bbiValider.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAZDSURBVFhH7ZdpTFRXFMfvmxmG2Zh9wIowLA4CKkphWGRHqjVCFZVqNK5VCxpJXatTEVuxgsZo
-        EbQWLS5YLUqFQaGKogh1idrglzbVmjQ2TZpU03S10San57x5jxmZaW0iqV/6ksObedx5v//5n3Pvu48B
-        AHue8VzhlPj/Anw6wJ7xEHtKuA2HZzH4S549x39J3WVmKdVmlrzTxOzbjcy+zcgSqows/l0DG7XJwOI2
-        6tnIMh0b4dCy2LUaFr1Kw2wrNGxoqYZFLFWz8GIlsy5WMOtCJQuZp2DBs+Vs0Ew5sQgslWo5+uJHn+ma
-        foKkTwT/geBVDRsHNAS4n8zA6UwFshbjy9IteE0tCCFhPJv/k4SZD6QAvLcEQy7TcQZLgfx0yb6ZMOnt
-        HNCO5bbhdS39TxjjEkC2D5QAES4N4EzmAnkbwffc2gxTnImQUBoJARlsO47R9TlBAhK3DYwDAtxfquEs
-        lnx5+xKE70Z4YUsixB3UQEyNGkaXRIA6nZETSn48L6Dy2R0Q4Aqpmgsy58s/JThlXthi5+GxtWqwVSnA
-        XCQBVRrbIfSDS0B8hVuA0DxUQ+pYOnNPK48I9zNywZaJfmdE+BQRXqPi4SaCJ7NaHG/B8OdZJICmGkEE
-        uGzYioBVGGct6XIDXpMR4O9ECEKVMhMXHFjg30E1393rtt0zc2USex/HDxLspwRdB81zER6D8Bk1OeBo
-        WQjRpYZOXZwfqeW71lOEMJ5uopQZuSFBBQoBXuG2HWsu2q5MZntx7GAMlSDaNQ2Fg+albNjygNXTa7Kh
-        4e5WeOvmq/BStQ1sxdqLmigZqVbQDz2cIrgK53mIJV9xjs/8FsHdDdcHt7M6HBuMQeuAVJXlXg1FAZLo
-        lZS5Gz6u3QR5bSbI3TkUIudrL6nCJHQD6lwqCYVKpudCA0V4bwU/1fo3nNLO9uHYEAyNmEB/ARzWWh6z
-        UttBtjsw87x2M4w9jXCMnFYTZG+PBOssTY//YIkVbxJAgXArws+7phrCfWe+H8eGesLJQV8OSE2pcmNM
-        qf4C2c7DT5kgq9UImS1GyGg2QEZVBAwuUl/GTo/BRWYY2t7paji37bG17m5XJrIPESwK5ksnhi8B1AN+
-        2hGyQNvr2i6yPecUwRGM8LQmA6Se0EPalggImqy8EThR0S3CfdqeyOrxfmGCW0/AvRygTrSVUm+41m/N
-        UNkLVPMstD3jpAHSEZ6G8OTjekhq1EFaZQQU75shZO69yGDmBA8X4NQrXuvIEw6QgEh8pArdTSIUylBJ
-        iHVWQE/m1ghIbdJDSiPBtZB4DOMjLRQ0x0GhM6FveRUXGYQfwN9HYGjzyi+3jt3wGeSW9VA4c8q6Wc56
-        DDx7CQgvUfbVhzqVuh0bLoxqnrYlnM/cjvAEhMcfDoDRhzSubhdWOFpePeE0Swh8tPdPOPL5Y8h0XISG
-        m4/YkZuPWca6Lm8BYYtUngL4TQSGWh7IRQ4qVF1JrQh3ww8LcI+1HeEHcXwkZS5MUS7LcQkOX/8DVjX/
-        CmPWdEL91d9Z/dWHbMzq894CaCfjY5Wj+mlwiY3CpruW/I4VRotwz8wT3PC88p7W3LJuyHJ0QfraC7D/
-        8m+w5NgDSFlxFpKWU5yhcHqVIHSev9d+gJpHyEYrM7AY83j5dXu5FW1XQ5TwVOufee6GHmi48Qjqrz2E
-        up5fYE/XjzC//juYs/8evNfxA1Sfu497gjbwEjBkjtznhsRDhE6qZSMMuX7X49eE8I9UX7Znr++GAwhf
-        ilkvPPQ9zK67B9P33IVpu27DVIxpNbdhVInTWwBtIP/hacevERh6FDFcly27gk+1D4Sp1ldz+j3W3Zn+
-        5gVIWdkB9jfOQFHtHZi04wsYWdwCwxefhOGLMBY3e5cgaLofCyySMctUKTNPljHTK1JmyJcw/QSO6cbx
-        +0dRhEai5R8qZmpSseHIUopMRxer6/mZ1XQ+YAml7VDZ+i2Mr+yF2EWfQFnjHVZ+/GsWvaDJuwn7vxsS
-        0cchzg5yg98jCML6hmasu8j2dv/Eqs/fZy8ua4PNzd9A7qYbEP1aE6w98iVzHP2KRc077v1e8C8FiE48
-        8ZLhKTQTBYxZfY5hp7P4ZW3OOKw32R694ITTNreRRc4+xmxzP366gP/ybfm5v5z+BZiJo4zL0QxuAAAA
-        AElFTkSuQmCC
-</value>
-  </data>
-  <data name="bbiAnnuler.Caption" xml:space="preserve">
-    <value>Annuler</value>
-  </data>
   <data name="bbiEffacer.Caption" xml:space="preserve">
     <value>Effacer</value>
-  </data>
-  <data name="barButtonItem10.Caption" xml:space="preserve">
-    <value>Rafrichir</value>
   </data>
   <data name="barButtonItem11.Caption" xml:space="preserve">
     <value>Precedent</value>
@@ -952,17 +887,8 @@
   <data name="SauvegarderibbonPageGroup.Text" xml:space="preserve">
     <value>Sauvegarder</value>
   </data>
-  <data name="EditionRibbonPageGroup1.Text" xml:space="preserve">
-    <value>Editer</value>
-  </data>
   <data name="EditionEnregistremetRibbonPageGroup.Text" xml:space="preserve">
     <value>Reinitialiser</value>
-  </data>
-  <data name="ribbonPageGroup2.Text" xml:space="preserve">
-    <value>Vue</value>
-  </data>
-  <data name="ribbonPageGroup3.Text" xml:space="preserve">
-    <value>Navigation Enregistrement</value>
   </data>
   <data name="RPGFermer.Text" xml:space="preserve">
     <value>Fermer</value>
@@ -973,8 +899,11 @@
   <data name="repositoryItemRichEditStyleEdit1.AutoHeight" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="repositoryItemRichEditStyleEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.1">
+  <data name="repositoryItemRichEditStyleEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.2">
     <value>Combo</value>
+  </data>
+  <data name="repositoryItemTextEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="ribbonControl.Size" type="System.Drawing.Size, System.Drawing">
     <value>804, 144</value>
@@ -992,7 +921,7 @@
     <value>statusBar</value>
   </data>
   <data name="&gt;&gt;statusBar.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonStatusBar, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonStatusBar, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;statusBar.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1004,57 +933,57 @@
     <value>ribbonControl</value>
   </data>
   <data name="&gt;&gt;ribbonControl.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonControl.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ribbonControl.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>3</value>
   </data>
   <metadata name="spellChecker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>331, 17</value>
   </metadata>
-  <data name="textEdit1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="textEditNameStock.Location" type="System.Drawing.Point, System.Drawing">
     <value>101, 34</value>
   </data>
-  <data name="textEdit1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="textEditNameStock.Size" type="System.Drawing.Size, System.Drawing">
     <value>262, 20</value>
   </data>
-  <data name="textEdit1.TabIndex" type="System.Int32, mscorlib">
+  <data name="textEditNameStock.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;textEdit1.Name" xml:space="preserve">
-    <value>textEdit1</value>
+  <data name="&gt;&gt;textEditNameStock.Name" xml:space="preserve">
+    <value>textEditNameStock</value>
   </data>
-  <data name="&gt;&gt;textEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;textEditNameStock.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;textEdit1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;textEditNameStock.Parent" xml:space="preserve">
     <value>GCInfoGeneral</value>
   </data>
-  <data name="&gt;&gt;textEdit1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;textEditNameStock.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="textEdit4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="textEditAdress.Location" type="System.Drawing.Point, System.Drawing">
     <value>520, 80</value>
   </data>
-  <data name="textEdit4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="textEditAdress.Size" type="System.Drawing.Size, System.Drawing">
     <value>254, 20</value>
   </data>
-  <data name="textEdit4.TabIndex" type="System.Int32, mscorlib">
+  <data name="textEditAdress.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;textEdit4.Name" xml:space="preserve">
-    <value>textEdit4</value>
+  <data name="&gt;&gt;textEditAdress.Name" xml:space="preserve">
+    <value>textEditAdress</value>
   </data>
-  <data name="&gt;&gt;textEdit4.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;textEditAdress.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;textEdit4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;textEditAdress.Parent" xml:space="preserve">
     <value>GCInfoGeneral</value>
   </data>
-  <data name="&gt;&gt;textEdit4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;textEditAdress.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <metadata name="richEditBarController1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -1114,11 +1043,14 @@
   <data name="&gt;&gt;comboBoxWilaya.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="labelAdress.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.25pt</value>
+  </data>
   <data name="labelAdress.Location" type="System.Drawing.Point, System.Drawing">
     <value>422, 83</value>
   </data>
   <data name="labelAdress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 13</value>
+    <value>50, 14</value>
   </data>
   <data name="labelAdress.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1130,7 +1062,7 @@
     <value>labelAdress</value>
   </data>
   <data name="&gt;&gt;labelAdress.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelAdress.Parent" xml:space="preserve">
     <value>GCInfoGeneral</value>
@@ -1138,11 +1070,14 @@
   <data name="&gt;&gt;labelAdress.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="labelWilaya.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.25pt</value>
+  </data>
   <data name="labelWilaya.Location" type="System.Drawing.Point, System.Drawing">
     <value>422, 37</value>
   </data>
   <data name="labelWilaya.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 13</value>
+    <value>34, 14</value>
   </data>
   <data name="labelWilaya.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1154,7 +1089,7 @@
     <value>labelWilaya</value>
   </data>
   <data name="&gt;&gt;labelWilaya.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelWilaya.Parent" xml:space="preserve">
     <value>GCInfoGeneral</value>
@@ -1162,11 +1097,14 @@
   <data name="&gt;&gt;labelWilaya.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="labelComune.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.25pt</value>
+  </data>
   <data name="labelComune.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 77</value>
   </data>
   <data name="labelComune.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 13</value>
+    <value>55, 14</value>
   </data>
   <data name="labelComune.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1178,7 +1116,7 @@
     <value>labelComune</value>
   </data>
   <data name="&gt;&gt;labelComune.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelComune.Parent" xml:space="preserve">
     <value>GCInfoGeneral</value>
@@ -1186,11 +1124,14 @@
   <data name="&gt;&gt;labelComune.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="labelNameStock.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
   <data name="labelNameStock.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 37</value>
   </data>
   <data name="labelNameStock.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 13</value>
+    <value>79, 14</value>
   </data>
   <data name="labelNameStock.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1202,7 +1143,7 @@
     <value>labelNameStock</value>
   </data>
   <data name="&gt;&gt;labelNameStock.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;labelNameStock.Parent" xml:space="preserve">
     <value>GCInfoGeneral</value>
@@ -1226,7 +1167,7 @@
     <value>GCInfoGeneral</value>
   </data>
   <data name="&gt;&gt;GCInfoGeneral.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;GCInfoGeneral.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1252,7 +1193,7 @@
   <data name="RISLUProduct.AutoHeight" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="RISLUProduct.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.1">
+  <data name="RISLUProduct.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.2">
     <value>Combo</value>
   </data>
   <metadata name="modelViewProductBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -1276,7 +1217,7 @@
   <data name="repositoryItemGridLookUpEdit1.AutoHeight" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="repositoryItemGridLookUpEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.1">
+  <data name="repositoryItemGridLookUpEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.2">
     <value>Combo</value>
   </data>
   <data name="GCLigneStock.Size" type="System.Drawing.Size, System.Drawing">
@@ -1289,7 +1230,7 @@
     <value>GCLigneStock</value>
   </data>
   <data name="&gt;&gt;GCLigneStock.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;GCLigneStock.Parent" xml:space="preserve">
     <value>xtpLigneProduit</value>
@@ -1313,7 +1254,7 @@
     <value>standaloneBarDockControl1</value>
   </data>
   <data name="&gt;&gt;standaloneBarDockControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.StandaloneBarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.StandaloneBarDockControl, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;standaloneBarDockControl1.Parent" xml:space="preserve">
     <value>xtpLigneProduit</value>
@@ -1331,7 +1272,7 @@
     <value>xtpLigneProduit</value>
   </data>
   <data name="&gt;&gt;xtpLigneProduit.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;xtpLigneProduit.Parent" xml:space="preserve">
     <value>xtcLignesProduit</value>
@@ -1352,7 +1293,7 @@
     <value>xtcLignesProduit</value>
   </data>
   <data name="&gt;&gt;xtcLignesProduit.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;xtcLignesProduit.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1495,7 +1436,7 @@
     <value>Top</value>
   </data>
   <data name="barDockControlTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 144</value>
+    <value>0, 0</value>
   </data>
   <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
     <value>804, 0</value>
@@ -1504,13 +1445,13 @@
     <value>barDockControlTop</value>
   </data>
   <data name="&gt;&gt;barDockControlTop.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barDockControlTop.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;barDockControlTop.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="barDockControlBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
@@ -1525,61 +1466,61 @@
     <value>barDockControlBottom</value>
   </data>
   <data name="&gt;&gt;barDockControlBottom.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barDockControlBottom.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;barDockControlBottom.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="barDockControlLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
   </data>
   <data name="barDockControlLeft.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 144</value>
+    <value>0, 0</value>
   </data>
   <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 334</value>
+    <value>0, 478</value>
   </data>
   <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
     <value>barDockControlLeft</value>
   </data>
   <data name="&gt;&gt;barDockControlLeft.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barDockControlLeft.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;barDockControlLeft.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="barDockControlRight.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Right</value>
   </data>
   <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>804, 144</value>
+    <value>804, 0</value>
   </data>
   <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 334</value>
+    <value>0, 478</value>
   </data>
   <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
     <value>barDockControlRight</value>
   </data>
   <data name="&gt;&gt;barDockControlRight.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barDockControlRight.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;barDockControlRight.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>71</value>
+    <value>84</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
@@ -1853,919 +1794,883 @@
     <value>applicationMenu</value>
   </data>
   <data name="&gt;&gt;applicationMenu.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.ApplicationMenu, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.ApplicationMenu, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;fileSaveItem1.Name" xml:space="preserve">
     <value>fileSaveItem1</value>
   </data>
   <data name="&gt;&gt;fileSaveItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;printPreviewItem1.Name" xml:space="preserve">
     <value>printPreviewItem1</value>
   </data>
   <data name="&gt;&gt;printPreviewItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.PrintPreviewItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;undoItem1.Name" xml:space="preserve">
-    <value>undoItem1</value>
-  </data>
-  <data name="&gt;&gt;undoItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.UndoItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;redoItem1.Name" xml:space="preserve">
-    <value>redoItem1</value>
-  </data>
-  <data name="&gt;&gt;redoItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.RedoItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.PrintPreviewItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;pasteItem1.Name" xml:space="preserve">
     <value>pasteItem1</value>
   </data>
   <data name="&gt;&gt;pasteItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.PasteItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.PasteItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonGroup1.Name" xml:space="preserve">
     <value>barButtonGroup1</value>
   </data>
   <data name="&gt;&gt;barButtonGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeFontNameItem1.Name" xml:space="preserve">
     <value>changeFontNameItem1</value>
   </data>
   <data name="&gt;&gt;changeFontNameItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFontNameItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFontNameItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;repositoryItemFontEdit1.Name" xml:space="preserve">
     <value>repositoryItemFontEdit1</value>
   </data>
   <data name="&gt;&gt;repositoryItemFontEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemFontEdit, DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemFontEdit, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeFontSizeItem1.Name" xml:space="preserve">
     <value>changeFontSizeItem1</value>
   </data>
   <data name="&gt;&gt;changeFontSizeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFontSizeItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFontSizeItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;repositoryItemRichEditFontSizeEdit1.Name" xml:space="preserve">
     <value>repositoryItemRichEditFontSizeEdit1</value>
   </data>
   <data name="&gt;&gt;repositoryItemRichEditFontSizeEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditFontSizeEdit, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditFontSizeEdit, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;fontSizeIncreaseItem1.Name" xml:space="preserve">
     <value>fontSizeIncreaseItem1</value>
   </data>
   <data name="&gt;&gt;fontSizeIncreaseItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FontSizeIncreaseItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.FontSizeIncreaseItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;fontSizeDecreaseItem1.Name" xml:space="preserve">
     <value>fontSizeDecreaseItem1</value>
   </data>
   <data name="&gt;&gt;fontSizeDecreaseItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FontSizeDecreaseItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.FontSizeDecreaseItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonGroup2.Name" xml:space="preserve">
     <value>barButtonGroup2</value>
   </data>
   <data name="&gt;&gt;barButtonGroup2.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleFontBoldItem1.Name" xml:space="preserve">
     <value>toggleFontBoldItem1</value>
   </data>
   <data name="&gt;&gt;toggleFontBoldItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleFontBoldItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleFontBoldItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleFontItalicItem1.Name" xml:space="preserve">
     <value>toggleFontItalicItem1</value>
   </data>
   <data name="&gt;&gt;toggleFontItalicItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleFontItalicItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleFontItalicItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleFontUnderlineItem1.Name" xml:space="preserve">
     <value>toggleFontUnderlineItem1</value>
   </data>
   <data name="&gt;&gt;toggleFontUnderlineItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleFontUnderlineItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleFontUnderlineItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonGroup3.Name" xml:space="preserve">
     <value>barButtonGroup3</value>
   </data>
   <data name="&gt;&gt;barButtonGroup3.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeFontColorItem1.Name" xml:space="preserve">
     <value>changeFontColorItem1</value>
   </data>
   <data name="&gt;&gt;changeFontColorItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFontColorItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFontColorItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeFontBackColorItem1.Name" xml:space="preserve">
     <value>changeFontBackColorItem1</value>
   </data>
   <data name="&gt;&gt;changeFontBackColorItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFontBackColorItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFontBackColorItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonGroup4.Name" xml:space="preserve">
     <value>barButtonGroup4</value>
   </data>
   <data name="&gt;&gt;barButtonGroup4.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleBulletedListItem1.Name" xml:space="preserve">
     <value>toggleBulletedListItem1</value>
   </data>
   <data name="&gt;&gt;toggleBulletedListItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleBulletedListItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleBulletedListItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleNumberingListItem1.Name" xml:space="preserve">
     <value>toggleNumberingListItem1</value>
   </data>
   <data name="&gt;&gt;toggleNumberingListItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleNumberingListItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleNumberingListItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonGroup5.Name" xml:space="preserve">
     <value>barButtonGroup5</value>
   </data>
   <data name="&gt;&gt;barButtonGroup5.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;decreaseIndentItem1.Name" xml:space="preserve">
     <value>decreaseIndentItem1</value>
   </data>
   <data name="&gt;&gt;decreaseIndentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.DecreaseIndentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.DecreaseIndentItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;increaseIndentItem1.Name" xml:space="preserve">
     <value>increaseIndentItem1</value>
   </data>
   <data name="&gt;&gt;increaseIndentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.IncreaseIndentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.IncreaseIndentItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonGroup6.Name" xml:space="preserve">
     <value>barButtonGroup6</value>
   </data>
   <data name="&gt;&gt;barButtonGroup6.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleParagraphAlignmentLeftItem1.Name" xml:space="preserve">
     <value>toggleParagraphAlignmentLeftItem1</value>
   </data>
   <data name="&gt;&gt;toggleParagraphAlignmentLeftItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentLeftItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentLeftItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleParagraphAlignmentCenterItem1.Name" xml:space="preserve">
     <value>toggleParagraphAlignmentCenterItem1</value>
   </data>
   <data name="&gt;&gt;toggleParagraphAlignmentCenterItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentCenterItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentCenterItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleParagraphAlignmentRightItem1.Name" xml:space="preserve">
     <value>toggleParagraphAlignmentRightItem1</value>
   </data>
   <data name="&gt;&gt;toggleParagraphAlignmentRightItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentRightItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleParagraphAlignmentRightItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonGroup7.Name" xml:space="preserve">
     <value>barButtonGroup7</value>
   </data>
   <data name="&gt;&gt;barButtonGroup7.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeParagraphBackColorItem1.Name" xml:space="preserve">
     <value>changeParagraphBackColorItem1</value>
   </data>
   <data name="&gt;&gt;changeParagraphBackColorItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeParagraphBackColorItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeParagraphBackColorItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;findItem1.Name" xml:space="preserve">
     <value>findItem1</value>
   </data>
   <data name="&gt;&gt;findItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FindItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.FindItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;replaceItem1.Name" xml:space="preserve">
     <value>replaceItem1</value>
   </data>
   <data name="&gt;&gt;replaceItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ReplaceItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ReplaceItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;insertTableItem1.Name" xml:space="preserve">
     <value>insertTableItem1</value>
   </data>
   <data name="&gt;&gt;insertTableItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertTableItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertTableItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;insertPictureItem1.Name" xml:space="preserve">
     <value>insertPictureItem1</value>
   </data>
   <data name="&gt;&gt;insertPictureItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertPictureItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertPictureItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;insertFloatingPictureItem1.Name" xml:space="preserve">
     <value>insertFloatingPictureItem1</value>
   </data>
   <data name="&gt;&gt;insertFloatingPictureItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertFloatingPictureItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertFloatingPictureItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;insertHyperlinkItem1.Name" xml:space="preserve">
     <value>insertHyperlinkItem1</value>
   </data>
   <data name="&gt;&gt;insertHyperlinkItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertHyperlinkItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertHyperlinkItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;insertTextBoxItem1.Name" xml:space="preserve">
     <value>insertTextBoxItem1</value>
   </data>
   <data name="&gt;&gt;insertTextBoxItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertTextBoxItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertTextBoxItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;insertSymbolItem1.Name" xml:space="preserve">
     <value>insertSymbolItem1</value>
   </data>
   <data name="&gt;&gt;insertSymbolItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertSymbolItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertSymbolItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeTableCellsShadingItem1.Name" xml:space="preserve">
     <value>changeTableCellsShadingItem1</value>
   </data>
   <data name="&gt;&gt;changeTableCellsShadingItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeTableCellsShadingItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeTableCellsShadingItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeTableBordersItem1.Name" xml:space="preserve">
     <value>changeTableBordersItem1</value>
   </data>
   <data name="&gt;&gt;changeTableBordersItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeTableBordersItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeTableBordersItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomBorderItem1.Name" xml:space="preserve">
     <value>toggleTableCellsBottomBorderItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomBorderItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomBorderItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopBorderItem1.Name" xml:space="preserve">
     <value>toggleTableCellsTopBorderItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopBorderItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopBorderItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsLeftBorderItem1.Name" xml:space="preserve">
     <value>toggleTableCellsLeftBorderItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsLeftBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsLeftBorderItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsLeftBorderItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsRightBorderItem1.Name" xml:space="preserve">
     <value>toggleTableCellsRightBorderItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsRightBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsRightBorderItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsRightBorderItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;resetTableCellsAllBordersItem1.Name" xml:space="preserve">
     <value>resetTableCellsAllBordersItem1</value>
   </data>
   <data name="&gt;&gt;resetTableCellsAllBordersItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ResetTableCellsAllBordersItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ResetTableCellsAllBordersItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsAllBordersItem1.Name" xml:space="preserve">
     <value>toggleTableCellsAllBordersItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsAllBordersItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsAllBordersItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsAllBordersItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsOutsideBorderItem1.Name" xml:space="preserve">
     <value>toggleTableCellsOutsideBorderItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsOutsideBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsOutsideBorderItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsOutsideBorderItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsInsideBorderItem1.Name" xml:space="preserve">
     <value>toggleTableCellsInsideBorderItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsInsideBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsInsideBorderItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsInsideBorderItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsInsideHorizontalBorderItem1.Name" xml:space="preserve">
     <value>toggleTableCellsInsideHorizontalBorderItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsInsideHorizontalBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsInsideHorizontalBorderItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsInsideHorizontalBorderItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsInsideVerticalBorderItem1.Name" xml:space="preserve">
     <value>toggleTableCellsInsideVerticalBorderItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsInsideVerticalBorderItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsInsideVerticalBorderItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsInsideVerticalBorderItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleShowTableGridLinesItem1.Name" xml:space="preserve">
     <value>toggleShowTableGridLinesItem1</value>
   </data>
   <data name="&gt;&gt;toggleShowTableGridLinesItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleShowTableGridLinesItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleShowTableGridLinesItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeTableBorderLineStyleItem1.Name" xml:space="preserve">
     <value>changeTableBorderLineStyleItem1</value>
   </data>
   <data name="&gt;&gt;changeTableBorderLineStyleItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeTableBorderLineStyleItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeTableBorderLineStyleItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;repositoryItemBorderLineStyle1.Name" xml:space="preserve">
     <value>repositoryItemBorderLineStyle1</value>
   </data>
   <data name="&gt;&gt;repositoryItemBorderLineStyle1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemBorderLineStyle, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemBorderLineStyle, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeTableBorderLineWeightItem1.Name" xml:space="preserve">
     <value>changeTableBorderLineWeightItem1</value>
   </data>
   <data name="&gt;&gt;changeTableBorderLineWeightItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeTableBorderLineWeightItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeTableBorderLineWeightItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;repositoryItemBorderLineWeight1.Name" xml:space="preserve">
     <value>repositoryItemBorderLineWeight1</value>
   </data>
   <data name="&gt;&gt;repositoryItemBorderLineWeight1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemBorderLineWeight, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemBorderLineWeight, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeTableBorderColorItem1.Name" xml:space="preserve">
     <value>changeTableBorderColorItem1</value>
   </data>
   <data name="&gt;&gt;changeTableBorderColorItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeTableBorderColorItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeTableBorderColorItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;selectTableElementsItem1.Name" xml:space="preserve">
     <value>selectTableElementsItem1</value>
   </data>
   <data name="&gt;&gt;selectTableElementsItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SelectTableElementsItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SelectTableElementsItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;selectTableCellItem1.Name" xml:space="preserve">
     <value>selectTableCellItem1</value>
   </data>
   <data name="&gt;&gt;selectTableCellItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SelectTableCellItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SelectTableCellItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;selectTableColumnItem1.Name" xml:space="preserve">
     <value>selectTableColumnItem1</value>
   </data>
   <data name="&gt;&gt;selectTableColumnItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SelectTableColumnItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SelectTableColumnItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;selectTableRowItem1.Name" xml:space="preserve">
     <value>selectTableRowItem1</value>
   </data>
   <data name="&gt;&gt;selectTableRowItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SelectTableRowItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SelectTableRowItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;selectTableItem1.Name" xml:space="preserve">
     <value>selectTableItem1</value>
   </data>
   <data name="&gt;&gt;selectTableItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SelectTableItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SelectTableItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;showTablePropertiesFormItem1.Name" xml:space="preserve">
     <value>showTablePropertiesFormItem1</value>
   </data>
   <data name="&gt;&gt;showTablePropertiesFormItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowTablePropertiesFormItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowTablePropertiesFormItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;deleteTableElementsItem1.Name" xml:space="preserve">
     <value>deleteTableElementsItem1</value>
   </data>
   <data name="&gt;&gt;deleteTableElementsItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.DeleteTableElementsItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.DeleteTableElementsItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;showDeleteTableCellsFormItem1.Name" xml:space="preserve">
     <value>showDeleteTableCellsFormItem1</value>
   </data>
   <data name="&gt;&gt;showDeleteTableCellsFormItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowDeleteTableCellsFormItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowDeleteTableCellsFormItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;deleteTableColumnsItem1.Name" xml:space="preserve">
     <value>deleteTableColumnsItem1</value>
   </data>
   <data name="&gt;&gt;deleteTableColumnsItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.DeleteTableColumnsItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.DeleteTableColumnsItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;deleteTableRowsItem1.Name" xml:space="preserve">
     <value>deleteTableRowsItem1</value>
   </data>
   <data name="&gt;&gt;deleteTableRowsItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.DeleteTableRowsItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.DeleteTableRowsItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;deleteTableItem1.Name" xml:space="preserve">
     <value>deleteTableItem1</value>
   </data>
   <data name="&gt;&gt;deleteTableItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.DeleteTableItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.DeleteTableItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;insertTableRowAboveItem1.Name" xml:space="preserve">
     <value>insertTableRowAboveItem1</value>
   </data>
   <data name="&gt;&gt;insertTableRowAboveItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertTableRowAboveItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertTableRowAboveItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;insertTableRowBelowItem1.Name" xml:space="preserve">
     <value>insertTableRowBelowItem1</value>
   </data>
   <data name="&gt;&gt;insertTableRowBelowItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertTableRowBelowItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertTableRowBelowItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;insertTableColumnToLeftItem1.Name" xml:space="preserve">
     <value>insertTableColumnToLeftItem1</value>
   </data>
   <data name="&gt;&gt;insertTableColumnToLeftItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertTableColumnToLeftItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertTableColumnToLeftItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;insertTableColumnToRightItem1.Name" xml:space="preserve">
     <value>insertTableColumnToRightItem1</value>
   </data>
   <data name="&gt;&gt;insertTableColumnToRightItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.InsertTableColumnToRightItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.InsertTableColumnToRightItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;mergeTableCellsItem1.Name" xml:space="preserve">
     <value>mergeTableCellsItem1</value>
   </data>
   <data name="&gt;&gt;mergeTableCellsItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.MergeTableCellsItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.MergeTableCellsItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;showSplitTableCellsForm1.Name" xml:space="preserve">
     <value>showSplitTableCellsForm1</value>
   </data>
   <data name="&gt;&gt;showSplitTableCellsForm1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowSplitTableCellsForm, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowSplitTableCellsForm, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;splitTableItem1.Name" xml:space="preserve">
     <value>splitTableItem1</value>
   </data>
   <data name="&gt;&gt;splitTableItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SplitTableItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SplitTableItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableAutoFitItem1.Name" xml:space="preserve">
     <value>toggleTableAutoFitItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableAutoFitItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableAutoFitItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableAutoFitItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableAutoFitContentsItem1.Name" xml:space="preserve">
     <value>toggleTableAutoFitContentsItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableAutoFitContentsItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableAutoFitContentsItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableAutoFitContentsItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableAutoFitWindowItem1.Name" xml:space="preserve">
     <value>toggleTableAutoFitWindowItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableAutoFitWindowItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableAutoFitWindowItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableAutoFitWindowItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableFixedColumnWidthItem1.Name" xml:space="preserve">
     <value>toggleTableFixedColumnWidthItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableFixedColumnWidthItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableFixedColumnWidthItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableFixedColumnWidthItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopLeftAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsTopLeftAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopLeftAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopLeftAlignmentItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopLeftAlignmentItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsMiddleLeftAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsMiddleLeftAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsMiddleLeftAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsMiddleLeftAlignmentItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsMiddleLeftAlignmentItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomLeftAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsBottomLeftAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomLeftAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomLeftAlignmentItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomLeftAlignmentItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopCenterAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsTopCenterAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopCenterAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopCenterAlignmentItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopCenterAlignmentItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsMiddleCenterAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsMiddleCenterAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsMiddleCenterAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsMiddleCenterAlignmentItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsMiddleCenterAlignmentItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomCenterAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsBottomCenterAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomCenterAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomCenterAlignmentItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomCenterAlignmentItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopRightAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsTopRightAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsTopRightAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopRightAlignmentItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsTopRightAlignmentItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsMiddleRightAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsMiddleRightAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsMiddleRightAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsMiddleRightAlignmentItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsMiddleRightAlignmentItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomRightAlignmentItem1.Name" xml:space="preserve">
     <value>toggleTableCellsBottomRightAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;toggleTableCellsBottomRightAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomRightAlignmentItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ToggleTableCellsBottomRightAlignmentItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectFillColorItem1.Name" xml:space="preserve">
     <value>changeFloatingObjectFillColorItem1</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectFillColorItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectFillColorItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectFillColorItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectOutlineColorItem1.Name" xml:space="preserve">
     <value>changeFloatingObjectOutlineColorItem1</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectOutlineColorItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectOutlineColorItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectOutlineColorItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectOutlineWeightItem1.Name" xml:space="preserve">
     <value>changeFloatingObjectOutlineWeightItem1</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectOutlineWeightItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectOutlineWeightItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectOutlineWeightItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;repositoryItemFloatingObjectOutlineWeight1.Name" xml:space="preserve">
     <value>repositoryItemFloatingObjectOutlineWeight1</value>
   </data>
   <data name="&gt;&gt;repositoryItemFloatingObjectOutlineWeight1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemFloatingObjectOutlineWeight, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemFloatingObjectOutlineWeight, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectTextWrapTypeItem1.Name" xml:space="preserve">
     <value>changeFloatingObjectTextWrapTypeItem1</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectTextWrapTypeItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectTextWrapTypeItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectSquareTextWrapTypeItem1.Name" xml:space="preserve">
     <value>setFloatingObjectSquareTextWrapTypeItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectSquareTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectSquareTextWrapTypeItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectSquareTextWrapTypeItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTightTextWrapTypeItem1.Name" xml:space="preserve">
     <value>setFloatingObjectTightTextWrapTypeItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTightTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTightTextWrapTypeItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTightTextWrapTypeItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectThroughTextWrapTypeItem1.Name" xml:space="preserve">
     <value>setFloatingObjectThroughTextWrapTypeItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectThroughTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectThroughTextWrapTypeItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectThroughTextWrapTypeItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopAndBottomTextWrapTypeItem1.Name" xml:space="preserve">
     <value>setFloatingObjectTopAndBottomTextWrapTypeItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopAndBottomTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopAndBottomTextWrapTypeItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopAndBottomTextWrapTypeItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBehindTextWrapTypeItem1.Name" xml:space="preserve">
     <value>setFloatingObjectBehindTextWrapTypeItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBehindTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBehindTextWrapTypeItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBehindTextWrapTypeItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectInFrontOfTextWrapTypeItem1.Name" xml:space="preserve">
     <value>setFloatingObjectInFrontOfTextWrapTypeItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectInFrontOfTextWrapTypeItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectInFrontOfTextWrapTypeItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectInFrontOfTextWrapTypeItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectAlignmentItem1.Name" xml:space="preserve">
     <value>changeFloatingObjectAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;changeFloatingObjectAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ChangeFloatingObjectAlignmentItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopLeftAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectTopLeftAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopLeftAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopLeftAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopLeftAlignmentItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopCenterAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectTopCenterAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopCenterAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopCenterAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopCenterAlignmentItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopRightAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectTopRightAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectTopRightAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopRightAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectTopRightAlignmentItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectMiddleLeftAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectMiddleLeftAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectMiddleLeftAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectMiddleLeftAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectMiddleLeftAlignmentItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectMiddleCenterAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectMiddleCenterAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectMiddleCenterAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectMiddleCenterAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectMiddleCenterAlignmentItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectMiddleRightAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectMiddleRightAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectMiddleRightAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectMiddleRightAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectMiddleRightAlignmentItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBottomLeftAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectBottomLeftAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBottomLeftAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBottomLeftAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBottomLeftAlignmentItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBottomCenterAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectBottomCenterAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBottomCenterAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBottomCenterAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBottomCenterAlignmentItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBottomRightAlignmentItem1.Name" xml:space="preserve">
     <value>setFloatingObjectBottomRightAlignmentItem1</value>
   </data>
   <data name="&gt;&gt;setFloatingObjectBottomRightAlignmentItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBottomRightAlignmentItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.SetFloatingObjectBottomRightAlignmentItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringForwardSubItem1.Name" xml:space="preserve">
     <value>floatingObjectBringForwardSubItem1</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringForwardSubItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringForwardSubItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringForwardSubItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringForwardItem1.Name" xml:space="preserve">
     <value>floatingObjectBringForwardItem1</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringForwardItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringForwardItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringForwardItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringToFrontItem1.Name" xml:space="preserve">
     <value>floatingObjectBringToFrontItem1</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringToFrontItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringToFrontItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringToFrontItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringInFrontOfTextItem1.Name" xml:space="preserve">
     <value>floatingObjectBringInFrontOfTextItem1</value>
   </data>
   <data name="&gt;&gt;floatingObjectBringInFrontOfTextItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringInFrontOfTextItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectBringInFrontOfTextItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendBackwardSubItem1.Name" xml:space="preserve">
     <value>floatingObjectSendBackwardSubItem1</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendBackwardSubItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendBackwardSubItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendBackwardSubItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendBackwardItem1.Name" xml:space="preserve">
     <value>floatingObjectSendBackwardItem1</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendBackwardItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendBackwardItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendBackwardItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendToBackItem1.Name" xml:space="preserve">
     <value>floatingObjectSendToBackItem1</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendToBackItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendToBackItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendToBackItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendBehindTextItem1.Name" xml:space="preserve">
     <value>floatingObjectSendBehindTextItem1</value>
   </data>
   <data name="&gt;&gt;floatingObjectSendBehindTextItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendBehindTextItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.FloatingObjectSendBehindTextItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonGroup8.Name" xml:space="preserve">
     <value>barButtonGroup8</value>
   </data>
   <data name="&gt;&gt;barButtonGroup8.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem1.Name" xml:space="preserve">
     <value>barButtonItem1</value>
   </data>
   <data name="&gt;&gt;barButtonItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem2.Name" xml:space="preserve">
     <value>barButtonItem2</value>
   </data>
   <data name="&gt;&gt;barButtonItem2.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonGroup9.Name" xml:space="preserve">
     <value>barButtonGroup9</value>
   </data>
   <data name="&gt;&gt;barButtonGroup9.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonGroup10.Name" xml:space="preserve">
     <value>barButtonGroup10</value>
   </data>
   <data name="&gt;&gt;barButtonGroup10.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiNouveau.Name" xml:space="preserve">
     <value>bbiNouveau</value>
   </data>
   <data name="&gt;&gt;bbiNouveau.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem4.Name" xml:space="preserve">
     <value>barButtonItem4</value>
   </data>
   <data name="&gt;&gt;barButtonItem4.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem5.Name" xml:space="preserve">
     <value>barButtonItem5</value>
   </data>
   <data name="&gt;&gt;barButtonItem5.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem6.Name" xml:space="preserve">
     <value>barButtonItem6</value>
   </data>
   <data name="&gt;&gt;barButtonItem6.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiSauvergarder.Name" xml:space="preserve">
     <value>bbiSauvergarder</value>
   </data>
   <data name="&gt;&gt;bbiSauvergarder.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiSauvegarderFermer.Name" xml:space="preserve">
     <value>bbiSauvegarderFermer</value>
   </data>
   <data name="&gt;&gt;bbiSauvegarderFermer.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiSupprimer.Name" xml:space="preserve">
     <value>bbiSupprimer</value>
   </data>
   <data name="&gt;&gt;bbiSupprimer.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bbiValider.Name" xml:space="preserve">
-    <value>bbiValider</value>
-  </data>
-  <data name="&gt;&gt;bbiValider.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bbiAnnuler.Name" xml:space="preserve">
-    <value>bbiAnnuler</value>
-  </data>
-  <data name="&gt;&gt;bbiAnnuler.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiEffacer.Name" xml:space="preserve">
     <value>bbiEffacer</value>
   </data>
   <data name="&gt;&gt;bbiEffacer.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;barButtonItem10.Name" xml:space="preserve">
-    <value>barButtonItem10</value>
+  <data name="&gt;&gt;bbiRefresh.Name" xml:space="preserve">
+    <value>bbiRefresh</value>
   </data>
-  <data name="&gt;&gt;barButtonItem10.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;bbiRefresh.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem11.Name" xml:space="preserve">
     <value>barButtonItem11</value>
   </data>
   <data name="&gt;&gt;barButtonItem11.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem12.Name" xml:space="preserve">
     <value>barButtonItem12</value>
   </data>
   <data name="&gt;&gt;barButtonItem12.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem13.Name" xml:space="preserve">
     <value>barButtonItem13</value>
   </data>
   <data name="&gt;&gt;barButtonItem13.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiFermer.Name" xml:space="preserve">
     <value>bbiFermer</value>
   </data>
   <data name="&gt;&gt;bbiFermer.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;homeRibbonPage1.Name" xml:space="preserve">
     <value>homeRibbonPage1</value>
   </data>
   <data name="&gt;&gt;homeRibbonPage1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.HomeRibbonPage, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.HomeRibbonPage, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;NouveauRibbonPageGroup1.Name" xml:space="preserve">
     <value>NouveauRibbonPageGroup1</value>
   </data>
   <data name="&gt;&gt;NouveauRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ClipboardRibbonPageGroup, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ClipboardRibbonPageGroup, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;SauvegarderibbonPageGroup.Name" xml:space="preserve">
     <value>SauvegarderibbonPageGroup</value>
   </data>
   <data name="&gt;&gt;SauvegarderibbonPageGroup.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;EditionRibbonPageGroup1.Name" xml:space="preserve">
-    <value>EditionRibbonPageGroup1</value>
-  </data>
-  <data name="&gt;&gt;EditionRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ParagraphRibbonPageGroup, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;EditionEnregistremetRibbonPageGroup.Name" xml:space="preserve">
     <value>EditionEnregistremetRibbonPageGroup</value>
   </data>
   <data name="&gt;&gt;EditionEnregistremetRibbonPageGroup.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.EditingRibbonPageGroup, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup2.Name" xml:space="preserve">
-    <value>ribbonPageGroup2</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup2.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup3.Name" xml:space="preserve">
-    <value>ribbonPageGroup3</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup3.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.EditingRibbonPageGroup, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;RPGFermer.Name" xml:space="preserve">
     <value>RPGFermer</value>
   </data>
   <data name="&gt;&gt;RPGFermer.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;repositoryItemRichEditStyleEdit1.Name" xml:space="preserve">
     <value>repositoryItemRichEditStyleEdit1</value>
   </data>
   <data name="&gt;&gt;repositoryItemRichEditStyleEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditStyleEdit, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditStyleEdit, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemTextEdit1.Name" xml:space="preserve">
+    <value>repositoryItemTextEdit1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemTextEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemTextEdit, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;spellChecker1.Name" xml:space="preserve">
     <value>spellChecker1</value>
   </data>
   <data name="&gt;&gt;spellChecker1.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpellChecker.SpellChecker, DevExpress.XtraSpellChecker.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraSpellChecker.SpellChecker, DevExpress.XtraSpellChecker.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;richEditBarController1.Name" xml:space="preserve">
     <value>richEditBarController1</value>
   </data>
   <data name="&gt;&gt;richEditBarController1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.RichEditBarController, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.RichEditBarController, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;showFontFormItem1.Name" xml:space="preserve">
     <value>showFontFormItem1</value>
   </data>
   <data name="&gt;&gt;showFontFormItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowFontFormItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowFontFormItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;showParagraphFormItem1.Name" xml:space="preserve">
     <value>showParagraphFormItem1</value>
   </data>
   <data name="&gt;&gt;showParagraphFormItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowParagraphFormItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowParagraphFormItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;showEditStyleFormItem1.Name" xml:space="preserve">
     <value>showEditStyleFormItem1</value>
   </data>
   <data name="&gt;&gt;showEditStyleFormItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowEditStyleFormItem, DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowEditStyleFormItem, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;showInsertTableCellsFormItem1.Name" xml:space="preserve">
     <value>showInsertTableCellsFormItem1</value>
   </data>
   <data name="&gt;&gt;showInsertTableCellsFormItem1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ShowInsertTableCellsFormItem, DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraRichEdit.UI.ShowInsertTableCellsFormItem, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;communesBindingSource.Name" xml:space="preserve">
     <value>communesBindingSource</value>
@@ -2783,25 +2688,25 @@
     <value>GVProductLine</value>
   </data>
   <data name="&gt;&gt;GVProductLine.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;colProduct.Name" xml:space="preserve">
     <value>colProduct</value>
   </data>
   <data name="&gt;&gt;colProduct.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;colName.Name" xml:space="preserve">
     <value>colName</value>
   </data>
   <data name="&gt;&gt;colName.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;RISLUProduct.Name" xml:space="preserve">
     <value>RISLUProduct</value>
   </data>
   <data name="&gt;&gt;RISLUProduct.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;modelViewProductBindingSource.Name" xml:space="preserve">
     <value>modelViewProductBindingSource</value>
@@ -2813,60 +2718,60 @@
     <value>repositoryItemSearchLookUpEdit1View</value>
   </data>
   <data name="&gt;&gt;repositoryItemSearchLookUpEdit1View.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;colQuantity.Name" xml:space="preserve">
     <value>colQuantity</value>
   </data>
   <data name="&gt;&gt;colQuantity.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;colId.Name" xml:space="preserve">
     <value>colId</value>
   </data>
   <data name="&gt;&gt;colId.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;repositoryItemGridLookUpEdit1.Name" xml:space="preserve">
     <value>repositoryItemGridLookUpEdit1</value>
   </data>
   <data name="&gt;&gt;repositoryItemGridLookUpEdit1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;repositoryItemGridLookUpEdit1View.Name" xml:space="preserve">
     <value>repositoryItemGridLookUpEdit1View</value>
   </data>
   <data name="&gt;&gt;repositoryItemGridLookUpEdit1View.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barManager1.Name" xml:space="preserve">
     <value>barManager1</value>
   </data>
   <data name="&gt;&gt;barManager1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarManager, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarManager, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bar1.Name" xml:space="preserve">
     <value>bar1</value>
   </data>
   <data name="&gt;&gt;bar1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem14.Name" xml:space="preserve">
     <value>barButtonItem14</value>
   </data>
   <data name="&gt;&gt;barButtonItem14.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barButtonItem15.Name" xml:space="preserve">
     <value>barButtonItem15</value>
   </data>
   <data name="&gt;&gt;barButtonItem15.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmEditStock</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonForm, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonForm, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
 </root>

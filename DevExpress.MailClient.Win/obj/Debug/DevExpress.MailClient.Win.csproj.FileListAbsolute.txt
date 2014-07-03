@@ -103,13 +103,11 @@ C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Controls.ucMessageInfo.resources
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Forms.FrmEditProductLine.resources
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Forms.frmAgentTerrainAdd.resources
-C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Forms.frmBdc.resources
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Forms.frmEditTask.resources
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Forms.frmEditContact.resources
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Forms.frmGestionSecteur.resources
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Forms.FrmEditOrderLine.resources
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Forms.FrmEditProduct.resources
-C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.frmEditStock.resources
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Controls.ucCalendar.resources
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Controls.ucContactInfo.resources
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Controls.ucContacts.resources
@@ -131,3 +129,5 @@ C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.exe.licenses
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.exe
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.pdb
+C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Forms.FrmEditBdc.resources
+C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Forms.frmEditStock.resources

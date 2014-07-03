@@ -94,8 +94,27 @@ namespace DevExpress.MailClient.Win.Forms
         }
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
         {
-            _editProductLinePresenter.Write(comboBoxStock.SelectedItem as Stock, comboBoxProduit.SelectedItem as Product,
+            _isProductLineModified = false;
+            DialogResult = DialogResult.OK;
+
+            if (_newProductLine)
+            {
+                _editProductLinePresenter.Write(comboBoxStock.SelectedItem as Stock, comboBoxProduit.SelectedItem as Product,
                                                      Convert.ToInt32(textEditQuantité.EditValue.ToString()));
+            }
+            else
+            {
+                var productLineModif = new ProductLine
+                {
+                    id = ProductLineOut.Id,
+                    Product = comboBoxProduit.SelectedItem as Product,
+                    Quantity = Convert.ToInt32(textEditQuantité.EditValue.ToString())
+                };
+
+                var repositoryStock = new RepositoryStock();
+                repositoryStock.Save(comboBoxStock.SelectedItem as Stock, productLineModif);
+            }
+
             Close();
         }
         private void bbiEfaccer_ItemClick(object sender, ItemClickEventArgs e)

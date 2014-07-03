@@ -121,7 +121,7 @@ namespace DevExpress.MailClient.Win.Modules
         private void EditBdc(ModelViewBdc bdc, bool newBdc, string caption)
         {
             Cursor.Current = Cursors.WaitCursor;
-            var form = new frmBdc(bdc, newBdc, caption);
+            var form = new FrmEditBdc(bdc, newBdc, caption);
             form.Location = new Point(OwnerForm.Left + (OwnerForm.Width - form.Width) / 2, OwnerForm.Top + (OwnerForm.Height - form.Height) / 2);
             form.ShowDialog();
             Bdc2_Load(bdc,new EventArgs());
@@ -158,6 +158,7 @@ namespace DevExpress.MailClient.Win.Modules
             gridViewOrderLine.Columns[3].Visible = false;
             gridViewOrderLine.Columns[4].Visible = false;
             gridViewOrderLine.Columns[1].Caption = Resources.Produit;
+            gridViewOrderLine.Columns[2].Caption = Resources.Quantité;
 
             GCDisplayProduct.DataSource = Orders.First().Products;
             layoutViewProduct.Columns["Id"].Visible = false;

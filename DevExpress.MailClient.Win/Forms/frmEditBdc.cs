@@ -1,25 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Globalization;
 using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraEditors;
-using DevExpress.XtraGrid.Views.Grid;
 using vente_embarque.DataLayer;
 using vente_embarque.Model;
 using vente_embarque.Model.Enum;
 using vente_embarque.presenter.Bdc;
-using DevExpress.Utils;
 
 namespace DevExpress.MailClient.Win.Forms
 {
-    public partial class frmBdc : RibbonForm, IEditBdcView
+    public partial class FrmEditBdc : RibbonForm, IEditBdcView
     {
         private readonly EditBdcPresenterPage _editBdcPresenter;
         public IEnumerable<Client> Clients { get; set; }
@@ -33,13 +27,13 @@ namespace DevExpress.MailClient.Win.Forms
         readonly ModelViewBdc _sourceBdc;
         bool _newBdc = true;
 
-        public frmBdc()
+        public FrmEditBdc()
         {
             InitializeComponent();
             DialogResult = DialogResult.Cancel;
         }
 
-        internal frmBdc(ModelViewBdc bdc, bool newBdc, string caption)
+        internal FrmEditBdc(ModelViewBdc bdc, bool newBdc, string caption)
         {
             InitializeComponent();
             LigneCommande = null; 
@@ -54,6 +48,8 @@ namespace DevExpress.MailClient.Win.Forms
             comboBoxClients.ValueMember = "Name";
             comboBoxPriorite.DataSource = Enum.GetValues(typeof(Priorite));
             comboBoxEtat.DataSource = Enum.GetValues(typeof (GestionCommande));
+
+            gridViewOrderLine.Columns[0].FieldName = "Product.Name";
 
             if (!newBdc)
             {
@@ -74,23 +70,10 @@ namespace DevExpress.MailClient.Win.Forms
                     OrderLines.Add(new OrderLine{id = lc.Id, Product = lc.Product, Quantity = lc.Quantity});
                 }
                 radiogroupLivraisonSurPlace.EditValue = bdc.LivraisonSurPlace;
-                /*var mvo = new List<ModelViewOrderLine>();
-                foreach (var orderLine in OrderLines)
-                {
-                    mvo.Add(new ModelViewOrderLine { Produit = orderLine.Product.Name, Quantity = orderLine.Quantity });
-                }
-                GCOrderLine.DataSource = mvo;*/
                 GCOrderLine.DataSource = OrderLines;
             }
             else
             {
-                //gridViewOrderLine.Columns[0].FieldName = "Name";
-                //colProduct.FieldName = "Name";
-                var mvo = new List<ModelViewOrderLine>();
-                foreach (var orderLine in OrderLines)
-                {
-                    mvo.Add(new ModelViewOrderLine { Produit = orderLine.Product.Name, Quantity = orderLine.Quantity});
-                }
                 GCOrderLine.DataSource = OrderLines;
             }
 
@@ -136,12 +119,28 @@ namespace DevExpress.MailClient.Win.Forms
                                     Convert.ToBoolean(radiogroupLivraisonSurPlace.Text), dateEditCommande.DateTime,
                                     OrderLines);
             }
-            
         }
 
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
         {
-            _editBdcPresenter.Write(Convert.ToInt32(textEditNumCommande.Text), comboBoxClients.SelectedItem as Client, dateEditLivraison.DateTime, memoEditAdresssLivraion.Text, (Priorite)comboBoxPriorite.SelectedItem, (GestionCommande)comboBoxEtat.SelectedItem, Convert.ToBoolean(radiogroupLivraisonSurPlace.Text), dateEditCommande.DateTime, OrderLines);
+            if (_newBdc)
+            {
+                _editBdcPresenter.Write(Convert.ToInt32(textEditNumCommande.Text), comboBoxClients.SelectedItem as Client,
+                                    dateEditLivraison.DateTime, memoEditAdresssLivraion.Text,
+                                    (Priorite)comboBoxPriorite.SelectedItem,
+                                    (GestionCommande)comboBoxEtat.SelectedItem,
+                                    Convert.ToBoolean(radiogroupLivraisonSurPlace.Text), dateEditCommande.DateTime,
+                                    OrderLines);
+            }
+            else
+            {
+                _editBdcPresenter.Save(IdOrder, Convert.ToInt32(textEditNumCommande.Text), comboBoxClients.SelectedItem as Client,
+                                    dateEditLivraison.DateTime, memoEditAdresssLivraion.Text,
+                                    (Priorite)comboBoxPriorite.SelectedItem,
+                                    (GestionCommande)comboBoxEtat.SelectedItem,
+                                    Convert.ToBoolean(radiogroupLivraisonSurPlace.Text), dateEditCommande.DateTime,
+                                    OrderLines);
+            }
             Close();
         }
 

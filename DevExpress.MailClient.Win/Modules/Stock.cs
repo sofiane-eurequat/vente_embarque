@@ -72,6 +72,7 @@ namespace DevExpress.MailClient.Win.Modules {
             gridViewProductLine.Columns[3].Visible = false;
             gridViewProductLine.Columns[4].Visible = false;
             gridViewProductLine.Columns[1].Caption = Resources.Produit;
+            gridViewProductLine.Columns[2].Caption = Resources.Quantité;
             gridViewStock.RowCellClick += gridViewStock_CellClick;
 
 
@@ -288,9 +289,6 @@ namespace DevExpress.MailClient.Win.Modules {
                         }
                     RaiseUpdateTreeViewMessages();
                     break;*/
-                case TagResources.DeleteItem:
-                    DeleteStock();
-                    break;
                 case TagResources.NewStock:
                     CreateStock();
                     break;

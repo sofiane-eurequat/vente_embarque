@@ -798,67 +798,8 @@
   <data name="bbiSupprimer.Caption" xml:space="preserve">
     <value>Supprimer</value>
   </data>
-  <data name="bbiValider.Caption" xml:space="preserve">
-    <value>Valider</value>
-  </data>
-  <data name="bbiValider.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAKnSURBVDhPpZNtSFNhFMdP6tSa7eZkLuYLywk5xW1C0tT5bkRKhZnRtESidGaJlak1V0hQSstS
-        JNos0WVmorbUUlmFqRUElQTR++hDH4L6UphJJqfzXOcoCvrghf+Hy3l+5/ec+zwXEBEWk0XBTAy33ne4
-        c9Npg/53bWB/2wq9r1rg2gsLdD4/D5efNUP4Hk6nKQudCs1bfhwAllB4+Z+wk+A3BL9uge7f4SJOl1Kj
-        mj79wIj6piyUbl56gngPdwNmHnC2/9MctotLYvCx0X2otkqwoCcLFflSUoMP34DB2jpZ4boG5Y+YmsCt
-        C9tm25TvFKUmm1TfGay5KEFFgxBlJT4oThc0uBswuKhrI151NqLemjYbWR6QS0VPuV6UQWaC96OGzAqz
-        EIMI9k/xbqa6yD1Culn588yTw5h/LxbNkxW45VzS7KodXF2Kcd6sJnO4eRnBvuif5G0lUMwEC0cPMUZp
-        blxdyNyGntWYOajE2oelWGDZhMzMZg4ns4xgTidoJVDC4KbxU+7jZ6fhEVEq1qtN0rmE9mCM7wxGw3AO
-        DyvIzGbmErxttG5lmmkC00zjmFrDB1j4c6bHS54nqoyoEqPKEoCRVs71wcgcL7hCdRlbk2ocR9ujGUw8
-        Moq1Q1OQWD0K/CVxXQy/oByhI8zoh4p6lzlO0EW1YGZmMAMvTEyj9tBtigO1FQ6EtslGuPT4LGviSZFK
-        1vuOSbeTeR4O4c205e6nM9hy/xvWj3zBqr7PaOj4iGvKhhDkhSIIzfeDoG1CfhRKoDDaK5vNzN5XZAgg
-        2TiGuqq7uPagA6t7P6Fqbz9GG/pRXTL495/oGoc14q8qS/LRMTg58hViD4xgse0DRhXbMbvxJUQV2ed/
-        iP+FNUiovAOx5cOoKR2gBtdRubuPGtyAX5aW64BTl0yXAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="bbiValider.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        AElFTkSuQmCC
-</value>
-  </data>
-  <data name="bbiAnnuler.Caption" xml:space="preserve">
-    <value>Annuler</value>
-  </data>
   <data name="bbiEffacer.Caption" xml:space="preserve">
     <value>Effacer</value>
-  </data>
-  <data name="bbiRefresh.Caption" xml:space="preserve">
-    <value>Rafrichir</value>
   </data>
   <data name="barButtonItem11.Caption" xml:space="preserve">
     <value>Precedent</value>
@@ -946,14 +887,8 @@
   <data name="SauvegarderibbonPageGroup.Text" xml:space="preserve">
     <value>Sauvegarder</value>
   </data>
-  <data name="EditionRibbonPageGroup1.Text" xml:space="preserve">
-    <value>Editer</value>
-  </data>
   <data name="EditionEnregistremetRibbonPageGroup.Text" xml:space="preserve">
     <value>Reinitialiser</value>
-  </data>
-  <data name="ribbonPageGroup2.Text" xml:space="preserve">
-    <value>Vue</value>
   </data>
   <data name="RPGFermer.Text" xml:space="preserve">
     <value>Fermer</value>
@@ -2623,18 +2558,6 @@
   <data name="&gt;&gt;bbiSupprimer.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;bbiValider.Name" xml:space="preserve">
-    <value>bbiValider</value>
-  </data>
-  <data name="&gt;&gt;bbiValider.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bbiAnnuler.Name" xml:space="preserve">
-    <value>bbiAnnuler</value>
-  </data>
-  <data name="&gt;&gt;bbiAnnuler.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="&gt;&gt;bbiEffacer.Name" xml:space="preserve">
     <value>bbiEffacer</value>
   </data>
@@ -2689,23 +2612,11 @@
   <data name="&gt;&gt;SauvegarderibbonPageGroup.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;EditionRibbonPageGroup1.Name" xml:space="preserve">
-    <value>EditionRibbonPageGroup1</value>
-  </data>
-  <data name="&gt;&gt;EditionRibbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.ParagraphRibbonPageGroup, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="&gt;&gt;EditionEnregistremetRibbonPageGroup.Name" xml:space="preserve">
     <value>EditionEnregistremetRibbonPageGroup</value>
   </data>
   <data name="&gt;&gt;EditionEnregistremetRibbonPageGroup.Type" xml:space="preserve">
     <value>DevExpress.XtraRichEdit.UI.EditingRibbonPageGroup, DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup2.Name" xml:space="preserve">
-    <value>ribbonPageGroup2</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup2.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;RPGFermer.Name" xml:space="preserve">
     <value>RPGFermer</value>

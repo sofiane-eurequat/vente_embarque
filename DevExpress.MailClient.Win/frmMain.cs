@@ -55,8 +55,10 @@ namespace DevExpress.MailClient.Win {
         void RibbonButtonsInitialize() {
             InitBarButtonItem(bbiRotateLayout, TagResources.RotateLayout, Properties.Resources.RotateLayoutDescription);
             InitBarButtonItem(bbiFlipLayout, TagResources.FlipLayout, Properties.Resources.FlipLayoutDescription);
-            InitBarButtonItem(bbiDelete, TagResources.DeleteItem, Properties.Resources.DeleteItemDescription);
+            InitBarButtonItem(bbiDeleteStock, TagResources.DeleteItem, Properties.Resources.DeleteItemDescription);
             InitBarButtonItem(bbiNewStock, TagResources.NewStock, Properties.Resources.NewItemDescription);
+            InitBarButtonItem(bbiModifyStock, TagResources.ModifyStock);
+            InitBarButtonItem(bbiDeleteStock, TagResources.DeleteStock, Properties.Resources.DeleteItemDescription);
             InitBarButtonItem(bbiNewProduct, TagResources.NewProduct, Properties.Resources.NewItemDescription);
             InitBarButtonItem(bbiModifyProduct, TagResources.ModifyProduct);
             InitBarButtonItem(bbiDeleteProduct, TagResources.DeleteProduct, Properties.Resources.DeleteItemDescription);
@@ -180,7 +182,7 @@ namespace DevExpress.MailClient.Win {
            // ucMailTree1.UpdateTreeViewMessages();
         }
         internal void EnableDelete(bool enabled) {
-            bbiDelete.Enabled = enabled;
+            bbiDeleteStock.Enabled = enabled;
             bbiUnreadRead.Enabled = enabled;
             bbiPriority.Enabled = enabled;
         }

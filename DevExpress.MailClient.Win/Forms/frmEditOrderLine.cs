@@ -81,13 +81,30 @@ namespace DevExpress.MailClient.Win.Forms
                 var repositoryOrder = new RepositoryOrder();
                 repositoryOrder.Save(OrderLineOut.IdOrder, orderLineModif);
             }
-            
-            //if (result == DialogResult.Yes) Close();
         }
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
         {
-          
-            Close();
+            _isOrderLineModified = false;
+            DialogResult result = QueryClose();
+            if (_newOrderLine)
+            {
+                OrderLine = FactoryOrder.CreateOrderLine(comboBoxStock.SelectedItem as Stock, comboBoxProduit.Text,
+                                                     Convert.ToInt32(textEditQuantité.EditValue.ToString()));
+            }
+            else
+            {
+                var orderLineModif = new OrderLine
+                {
+                    id = OrderLineOut.Id,
+                    Product = comboBoxProduit.SelectedItem as Product,
+                    Quantity = Convert.ToInt32(textEditQuantité.EditValue.ToString())
+                };
+
+                var repositoryOrder = new RepositoryOrder();
+                repositoryOrder.Save(OrderLineOut.IdOrder, orderLineModif);
+            }
+
+            if (result == DialogResult.Yes) Close();
         }
         private void bbiEfaccer_ItemClick(object sender, ItemClickEventArgs e)
         {

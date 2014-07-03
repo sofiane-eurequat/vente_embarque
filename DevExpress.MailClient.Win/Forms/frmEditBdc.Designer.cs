@@ -1,6 +1,6 @@
 ﻿namespace DevExpress.MailClient.Win.Forms
 {
-    partial class frmBdc
+    partial class FrmEditBdc
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBdc));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEditBdc));
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiNouveau = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
@@ -390,16 +390,16 @@
             // 
             // colProduct
             // 
+            resources.ApplyResources(this.colProduct, "colProduct");
             this.colProduct.FieldName = "Product";
             this.colProduct.Name = "colProduct";
             this.colProduct.ShowUnboundExpressionMenu = true;
-            resources.ApplyResources(this.colProduct, "colProduct");
             // 
             // colQuantity
             // 
+            resources.ApplyResources(this.colQuantity, "colQuantity");
             this.colQuantity.FieldName = "Quantity";
             this.colQuantity.Name = "colQuantity";
-            resources.ApplyResources(this.colQuantity, "colQuantity");
             // 
             // standaloneBarDockControl1
             // 
