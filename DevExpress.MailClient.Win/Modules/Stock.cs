@@ -65,6 +65,7 @@ namespace DevExpress.MailClient.Win.Modules {
 
             gridControlStock.DataSource = Stocks;
             gridViewStock.Columns[5].Visible = false;
+            gridViewStock.Columns[7].Visible = false;
 
             var lignesProduits = Stocks.First().ProductLine;
             gridControlProduct.DataSource = lignesProduits;

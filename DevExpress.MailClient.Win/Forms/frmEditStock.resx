@@ -795,9 +795,6 @@
         MsBMsddzI/+v9+c6Mxn4D+ddlw/KgskcAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bbiSupprimer.Caption" xml:space="preserve">
-    <value>Supprimer</value>
-  </data>
   <data name="bbiEffacer.Caption" xml:space="preserve">
     <value>Effacer</value>
   </data>
@@ -1178,9 +1175,6 @@
   <metadata name="communesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 56</value>
   </metadata>
-  <metadata name="modelViewProductLineBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>583, 17</value>
-  </metadata>
   <data name="GCLigneStock.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 31</value>
   </data>
@@ -1280,6 +1274,9 @@
   <data name="&gt;&gt;xtpLigneProduit.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="modelViewProductLineBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>583, 17</value>
+  </metadata>
   <data name="xtcLignesProduit.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 280</value>
   </data>
@@ -2550,12 +2547,6 @@
     <value>bbiSauvegarderFermer</value>
   </data>
   <data name="&gt;&gt;bbiSauvegarderFermer.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bbiSupprimer.Name" xml:space="preserve">
-    <value>bbiSupprimer</value>
-  </data>
-  <data name="&gt;&gt;bbiSupprimer.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;bbiEffacer.Name" xml:space="preserve">

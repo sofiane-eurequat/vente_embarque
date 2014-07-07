@@ -1683,7 +1683,6 @@
             // 
             // GCLigneStock
             // 
-            this.GCLigneStock.DataSource = this.modelViewProductLineBindingSource;
             resources.ApplyResources(this.GCLigneStock, "GCLigneStock");
             this.GCLigneStock.MainView = this.GVProductLine;
             this.GCLigneStock.MenuManager = this.ribbonControl;
@@ -1857,7 +1856,6 @@
             this.Name = "frmEditStock";
             this.Ribbon = this.ribbonControl;
             this.StatusBar = this.statusBar;
-//            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmEditMail_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).EndInit();

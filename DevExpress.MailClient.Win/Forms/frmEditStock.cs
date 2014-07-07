@@ -15,8 +15,8 @@ namespace DevExpress.MailClient.Win.Forms
 
         public IEnumerable<Wilaya> Wilayas { get; set; }
         private readonly EditStockPresenterPage _editStockPresenter;
-        bool isMessageModified;
-        bool newStock = true;
+        //bool isMessageModified;
+        bool _newStock = true;
         readonly ModelViewStock sourceStock;
 
         public frmEditStock() {
@@ -24,10 +24,10 @@ namespace DevExpress.MailClient.Win.Forms
             DialogResult = DialogResult.Cancel;
         }
 
-        public frmEditStock(ModelViewStock Stock, bool newStock, string caption)
+        public frmEditStock(ModelViewStock stock, bool newStock, string caption)
         {
             InitializeComponent();
-            DictionaryHelper.InitDictionary(spellChecker1);
+            //DictionaryHelper.InitDictionary(spellChecker1);
             var repositoryWilaya = new RepositoryWilaya();
             var repositoryStock = new RepositoryStock();
             _editStockPresenter = new EditStockPresenterPage(this, repositoryWilaya, repositoryStock);
@@ -39,12 +39,21 @@ namespace DevExpress.MailClient.Win.Forms
             comboBoxCommune.DataSource =
                 Wilayas.First(w => w.Code == (int) comboBoxWilaya.SelectedValue).Communes.OrderBy(c => c.Name).ToList();
             comboBoxCommune.DisplayMember = "Name";
+            comboBoxCommune.ValueMember = "Name";
 
-            this.newStock = newStock;
+            if (!newStock)
+            {
+                textEditNameStock.Text = stock.Nom;
+                comboBoxWilaya.SelectedValue = stock.CodeWilaya;
+                comboBoxCommune.SelectedValue = stock.Commune;
+                textEditAdress.Text = stock.Adresse;
+                GCLigneStock.DataSource = stock.ProductLine;
+            }
+
+            _newStock = newStock;
             DialogResult = DialogResult.Cancel;
-            sourceStock = Stock;
+            sourceStock = stock;
         }
-
 
         /*  var riLookUpProduct = new RepositoryItemLookUpEdit();
             GCLigneStock.RepositoryItems.Add

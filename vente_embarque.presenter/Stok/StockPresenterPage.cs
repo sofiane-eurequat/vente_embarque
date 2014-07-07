@@ -18,7 +18,6 @@ namespace vente_embarque.presenter.Stok
             _repositorystock = stockRepository;
         }
 
-
         public void Display()
         {
             var stock = _repositorystock.FindAll();
@@ -33,7 +32,9 @@ namespace vente_embarque.presenter.Stok
                         Nom = stoc.Name,
                         Wilaya = stoc.Wilaya.Name,
                         Commune = stoc.Commune.Name,
-                        Id = stoc.id
+                        Id = stoc.id,
+                        Adresse = stoc.Adress,
+                        CodeWilaya = stoc.Wilaya.Code
                     };
                 mvs.ProductLine=new List<ModelViewProductLine>();
                 mvs.Products=new List<ModelViewProduct>();
@@ -66,11 +67,7 @@ namespace vente_embarque.presenter.Stok
                 if (produitinvendue == 1) mvs.Invendue = ProduitInvendue.un_produit_invendue.ToString();
                 if (produitinvendue > 1) mvs.Invendue = ProduitInvendue.plusieur_invendue.ToString();
 
-                
-
                 tempStock.Add(mvs);
-
-
             }
 
             _stockView.Stocks = tempStock;
@@ -87,7 +84,8 @@ namespace vente_embarque.presenter.Stok
         public string Commune { get; set; }
         public Guid Id { get; set; }
         public List<ModelViewProduct> Products { get; set; }
- 
+        public string Adresse { get; set; }
+        public int CodeWilaya { get; set; }
     }
 
     public class ModelViewProductLine

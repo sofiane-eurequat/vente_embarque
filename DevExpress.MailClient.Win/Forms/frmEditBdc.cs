@@ -25,7 +25,7 @@ namespace DevExpress.MailClient.Win.Forms
         public Guid IdOrder { get; set; }
 
         readonly ModelViewBdc _sourceBdc;
-        bool _newBdc = true;
+        readonly bool _newBdc = true;
 
         public FrmEditBdc()
         {
