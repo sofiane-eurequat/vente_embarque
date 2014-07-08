@@ -187,18 +187,18 @@
             this.communesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.xtpLigneProduit = new DevExpress.XtraTab.XtraTabPage();
             this.GCLigneStock = new DevExpress.XtraGrid.GridControl();
-            this.modelViewProductLineBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.GVProductLine = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colProduct = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.RISLUProduct = new DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit();
-            this.modelViewProductBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.repositoryItemSearchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colQuantity = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colId = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemGridLookUpEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit();
+            this.modelViewProductBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.repositoryItemGridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.RISLUProduct = new DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit();
+            this.repositoryItemSearchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.standaloneBarDockControl1 = new DevExpress.XtraBars.StandaloneBarDockControl();
+            this.modelViewProductLineBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.xtcLignesProduit = new DevExpress.XtraTab.XtraTabControl();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar1 = new DevExpress.XtraBars.Bar();
@@ -225,13 +225,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.communesBindingSource)).BeginInit();
             this.xtpLigneProduit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GCLigneStock)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.modelViewProductLineBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GVProductLine)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RISLUProduct)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.modelViewProductBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSearchLookUpEdit1View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.modelViewProductBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit1View)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RISLUProduct)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSearchLookUpEdit1View)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.modelViewProductLineBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtcLignesProduit)).BeginInit();
             this.xtcLignesProduit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
@@ -240,7 +240,6 @@
             // ribbonControl
             // 
             resources.ApplyResources(this.ribbonControl, "ribbonControl");
-            this.ribbonControl.ApplicationButtonDropDownControl = this.applicationMenu;
             this.ribbonControl.ExpandCollapseItem.Id = 0;
             this.ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl.ExpandCollapseItem,
@@ -1713,26 +1712,8 @@
             // colName
             // 
             resources.ApplyResources(this.colName, "colName");
-            this.colName.ColumnEdit = this.RISLUProduct;
             this.colName.FieldName = "Name";
             this.colName.Name = "colName";
-            // 
-            // RISLUProduct
-            // 
-            resources.ApplyResources(this.RISLUProduct, "RISLUProduct");
-            this.RISLUProduct.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("RISLUProduct.Buttons"))))});
-            this.RISLUProduct.DataSource = this.modelViewProductBindingSource;
-            this.RISLUProduct.Name = "RISLUProduct";
-            this.RISLUProduct.ShowAddNewButton = true;
-            this.RISLUProduct.View = this.repositoryItemSearchLookUpEdit1View;
-            // 
-            // repositoryItemSearchLookUpEdit1View
-            // 
-            this.repositoryItemSearchLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.repositoryItemSearchLookUpEdit1View.Name = "repositoryItemSearchLookUpEdit1View";
-            this.repositoryItemSearchLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.repositoryItemSearchLookUpEdit1View.OptionsView.ShowGroupPanel = false;
             // 
             // colQuantity
             // 
@@ -1760,6 +1741,23 @@
             this.repositoryItemGridLookUpEdit1View.Name = "repositoryItemGridLookUpEdit1View";
             this.repositoryItemGridLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.repositoryItemGridLookUpEdit1View.OptionsView.ShowGroupPanel = false;
+            // 
+            // RISLUProduct
+            // 
+            resources.ApplyResources(this.RISLUProduct, "RISLUProduct");
+            this.RISLUProduct.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("RISLUProduct.Buttons"))))});
+            this.RISLUProduct.DataSource = this.modelViewProductBindingSource;
+            this.RISLUProduct.Name = "RISLUProduct";
+            this.RISLUProduct.ShowAddNewButton = true;
+            this.RISLUProduct.View = this.repositoryItemSearchLookUpEdit1View;
+            // 
+            // repositoryItemSearchLookUpEdit1View
+            // 
+            this.repositoryItemSearchLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.repositoryItemSearchLookUpEdit1View.Name = "repositoryItemSearchLookUpEdit1View";
+            this.repositoryItemSearchLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.repositoryItemSearchLookUpEdit1View.OptionsView.ShowGroupPanel = false;
             // 
             // standaloneBarDockControl1
             // 
@@ -1874,13 +1872,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.communesBindingSource)).EndInit();
             this.xtpLigneProduit.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GCLigneStock)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.modelViewProductLineBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GVProductLine)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RISLUProduct)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.modelViewProductBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSearchLookUpEdit1View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.modelViewProductBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemGridLookUpEdit1View)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RISLUProduct)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSearchLookUpEdit1View)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.modelViewProductLineBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtcLignesProduit)).EndInit();
             this.xtcLignesProduit.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();

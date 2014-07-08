@@ -58,7 +58,17 @@ namespace vente_embarque.DataLayer
 
         public void Save(Stock entity)
         {
-            throw new NotImplementedException();
+            var config = new AppSettingsReader();
+
+            using (
+                var uow = new UnitOfWork
+                {
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
+                })
+            {
+                Map.Map.MapStock(entity, uow);
+                uow.CommitChanges();
+            }
         }
         
         public void Save(Stock stock, ProductLine pl)
@@ -80,17 +90,7 @@ namespace vente_embarque.DataLayer
 
         public void Add(Stock entity)
         {
-            var config = new AppSettingsReader();
-
-            using (
-                var uow = new UnitOfWork
-                {
-                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
-                })
-            {
-                Map.Map.MapStock(entity, uow);
-                uow.CommitChanges();
-            }
+            throw new NotImplementedException();
         }
 
         public void Remove(Stock entity)

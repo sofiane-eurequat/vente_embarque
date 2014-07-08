@@ -112,7 +112,7 @@ namespace DevExpress.MailClient.Win.Forms
             }
             else
             {
-                _editBdcPresenter.Save(IdOrder, Convert.ToInt32(textEditNumCommande.Text), comboBoxClients.SelectedItem as Client,
+                _editBdcPresenter.Write(IdOrder, Convert.ToInt32(textEditNumCommande.Text), comboBoxClients.SelectedItem as Client,
                                     dateEditLivraison.DateTime, memoEditAdresssLivraion.Text,
                                     (Priorite)comboBoxPriorite.SelectedItem,
                                     (GestionCommande)comboBoxEtat.SelectedItem,
@@ -134,7 +134,7 @@ namespace DevExpress.MailClient.Win.Forms
             }
             else
             {
-                _editBdcPresenter.Save(IdOrder, Convert.ToInt32(textEditNumCommande.Text), comboBoxClients.SelectedItem as Client,
+                _editBdcPresenter.Write(IdOrder, Convert.ToInt32(textEditNumCommande.Text), comboBoxClients.SelectedItem as Client,
                                     dateEditLivraison.DateTime, memoEditAdresssLivraion.Text,
                                     (Priorite)comboBoxPriorite.SelectedItem,
                                     (GestionCommande)comboBoxEtat.SelectedItem,

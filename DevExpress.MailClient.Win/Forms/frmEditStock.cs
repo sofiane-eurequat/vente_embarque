@@ -16,7 +16,8 @@ namespace DevExpress.MailClient.Win.Forms
         public IEnumerable<Wilaya> Wilayas { get; set; }
         private readonly EditStockPresenterPage _editStockPresenter;
         //bool isMessageModified;
-        bool _newStock = true;
+        readonly bool _newStock = true;
+        public Guid IdStock { get; set; }
         readonly ModelViewStock sourceStock;
 
         public frmEditStock() {
@@ -43,6 +44,7 @@ namespace DevExpress.MailClient.Win.Forms
 
             if (!newStock)
             {
+                IdStock = stock.Id;
                 textEditNameStock.Text = stock.Nom;
                 comboBoxWilaya.SelectedValue = stock.CodeWilaya;
                 comboBoxCommune.SelectedValue = stock.Commune;
@@ -185,12 +187,30 @@ namespace DevExpress.MailClient.Win.Forms
 
         private void bbiSauvergarder_ItemClick(object sender, ItemClickEventArgs e)
         {
-            _editStockPresenter.Write(textEditNameStock.Text,comboBoxWilaya.SelectedItem as Wilaya,comboBoxCommune.SelectedItem as Commune, textEditAdress.Text);
+            if (_newStock)
+            {
+                _editStockPresenter.Write(textEditNameStock.Text, comboBoxWilaya.SelectedItem as Wilaya,
+                                          comboBoxCommune.SelectedItem as Commune, textEditAdress.Text);
+            }
+            else
+            {
+                _editStockPresenter.Write(IdStock, textEditNameStock.Text, comboBoxWilaya.SelectedItem as Wilaya,
+                                          comboBoxCommune.SelectedItem as Commune, textEditAdress.Text);
+            }
         }
 
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
         {
-            _editStockPresenter.Write(textEditNameStock.Text, comboBoxWilaya.SelectedItem as Wilaya, comboBoxCommune.SelectedItem as Commune, textEditAdress.Text);
+            if (_newStock)
+            {
+                _editStockPresenter.Write(textEditNameStock.Text, comboBoxWilaya.SelectedItem as Wilaya,
+                                          comboBoxCommune.SelectedItem as Commune, textEditAdress.Text);
+            }
+            else
+            {
+                _editStockPresenter.Write(IdStock, textEditNameStock.Text, comboBoxWilaya.SelectedItem as Wilaya,
+                                          comboBoxCommune.SelectedItem as Commune, textEditAdress.Text);
+            }
             Close();
         }
 

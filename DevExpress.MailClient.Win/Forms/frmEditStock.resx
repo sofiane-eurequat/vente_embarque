@@ -120,18 +120,15 @@
   <data name="ribbonControl.AccessibleName" xml:space="preserve">
     <value />
   </data>
-  <metadata name="applicationMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ribbonControl.ApplicationButtonText" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
   <data name="fileSaveItem1.Caption" xml:space="preserve">
     <value>Save</value>
   </data>
   <data name="printPreviewItem1.Caption" xml:space="preserve">
     <value>Print Pre&amp;view</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ribbonControl.ApplicationButtonText" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
   </data>
   <data name="pasteItem1.Caption" xml:space="preserve">
     <value>Paste</value>
@@ -938,6 +935,9 @@
   <data name="&gt;&gt;ribbonControl.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <metadata name="applicationMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="spellChecker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>331, 17</value>
   </metadata>
@@ -1149,10 +1149,10 @@
     <value>7</value>
   </data>
   <data name="GCInfoGeneral.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 150</value>
+    <value>0, 150</value>
   </data>
   <data name="GCInfoGeneral.Size" type="System.Drawing.Size, System.Drawing">
-    <value>784, 114</value>
+    <value>804, 114</value>
   </data>
   <data name="GCInfoGeneral.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1175,6 +1175,9 @@
   <metadata name="communesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 56</value>
   </metadata>
+  <data name="GCLigneStock.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="GCLigneStock.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 31</value>
   </data>
@@ -1184,15 +1187,6 @@
   <data name="colName.Caption" xml:space="preserve">
     <value>Produit</value>
   </data>
-  <data name="RISLUProduct.AutoHeight" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="RISLUProduct.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.2">
-    <value>Combo</value>
-  </data>
-  <metadata name="modelViewProductBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>839, 17</value>
-  </metadata>
   <data name="colName.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1214,8 +1208,17 @@
   <data name="repositoryItemGridLookUpEdit1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.2">
     <value>Combo</value>
   </data>
+  <metadata name="modelViewProductBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>839, 17</value>
+  </metadata>
+  <data name="RISLUProduct.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RISLUProduct.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.2">
+    <value>Combo</value>
+  </data>
   <data name="GCLigneStock.Size" type="System.Drawing.Size, System.Drawing">
-    <value>779, 123</value>
+    <value>798, 123</value>
   </data>
   <data name="GCLigneStock.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1239,7 +1242,7 @@
     <value>0, 0</value>
   </data>
   <data name="standaloneBarDockControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>783, 31</value>
+    <value>798, 31</value>
   </data>
   <data name="standaloneBarDockControl1.Text" xml:space="preserve">
     <value>standaloneBarDockControl1</value>
@@ -1257,7 +1260,7 @@
     <value>1</value>
   </data>
   <data name="xtpLigneProduit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>783, 154</value>
+    <value>798, 154</value>
   </data>
   <data name="xtpLigneProduit.Text" xml:space="preserve">
     <value>Contenue du stock</value>
@@ -1278,10 +1281,10 @@
     <value>583, 17</value>
   </metadata>
   <data name="xtcLignesProduit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 280</value>
+    <value>0, 270</value>
   </data>
   <data name="xtcLignesProduit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>789, 182</value>
+    <value>804, 182</value>
   </data>
   <data name="xtcLignesProduit.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2669,12 +2672,6 @@
   <data name="&gt;&gt;communesBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;modelViewProductLineBindingSource.Name" xml:space="preserve">
-    <value>modelViewProductLineBindingSource</value>
-  </data>
-  <data name="&gt;&gt;modelViewProductLineBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;GVProductLine.Name" xml:space="preserve">
     <value>GVProductLine</value>
   </data>
@@ -2692,24 +2689,6 @@
   </data>
   <data name="&gt;&gt;colName.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;RISLUProduct.Name" xml:space="preserve">
-    <value>RISLUProduct</value>
-  </data>
-  <data name="&gt;&gt;RISLUProduct.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;modelViewProductBindingSource.Name" xml:space="preserve">
-    <value>modelViewProductBindingSource</value>
-  </data>
-  <data name="&gt;&gt;modelViewProductBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;repositoryItemSearchLookUpEdit1View.Name" xml:space="preserve">
-    <value>repositoryItemSearchLookUpEdit1View</value>
-  </data>
-  <data name="&gt;&gt;repositoryItemSearchLookUpEdit1View.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;colQuantity.Name" xml:space="preserve">
     <value>colQuantity</value>
@@ -2729,11 +2708,35 @@
   <data name="&gt;&gt;repositoryItemGridLookUpEdit1.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="&gt;&gt;modelViewProductBindingSource.Name" xml:space="preserve">
+    <value>modelViewProductBindingSource</value>
+  </data>
+  <data name="&gt;&gt;modelViewProductBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;repositoryItemGridLookUpEdit1View.Name" xml:space="preserve">
     <value>repositoryItemGridLookUpEdit1View</value>
   </data>
   <data name="&gt;&gt;repositoryItemGridLookUpEdit1View.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;RISLUProduct.Name" xml:space="preserve">
+    <value>RISLUProduct</value>
+  </data>
+  <data name="&gt;&gt;RISLUProduct.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemSearchLookUpEdit1View.Name" xml:space="preserve">
+    <value>repositoryItemSearchLookUpEdit1View</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemSearchLookUpEdit1View.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;modelViewProductLineBindingSource.Name" xml:space="preserve">
+    <value>modelViewProductLineBindingSource</value>
+  </data>
+  <data name="&gt;&gt;modelViewProductLineBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;barManager1.Name" xml:space="preserve">
     <value>barManager1</value>

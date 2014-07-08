@@ -483,7 +483,7 @@
             this.barButtonItem2.Id = 0;
             this.barButtonItem2.Name = "barButtonItem2";
             // 
-            // frmBdc
+            // FrmEditBdc
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -496,7 +496,7 @@
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.KeyPreview = true;
-            this.Name = "frmBdc";
+            this.Name = "FrmEditBdc";
             this.Ribbon = this.ribbon;
             this.StatusBar = this.ribbonStatusBar;
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();

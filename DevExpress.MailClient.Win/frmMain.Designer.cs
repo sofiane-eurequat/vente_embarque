@@ -1400,6 +1400,7 @@
             // bbiModifyStock
             // 
             resources.ApplyResources(this.bbiModifyStock, "bbiModifyStock");
+            this.bbiModifyStock.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiModifyStock.Glyph")));
             this.bbiModifyStock.Id = 8;
             this.bbiModifyStock.Name = "bbiModifyStock";
             // 

@@ -363,6 +363,8 @@ namespace DevExpress.MailClient.Win.Modules {
 
         private void ModifyStock(ModelViewStock stock)
         {
+            if (gridViewStock == null) return;
+            stock = (ModelViewStock)gridViewStock.GetFocusedRow();
             EditStock(stock, false, null);
         }
 
@@ -402,7 +404,11 @@ namespace DevExpress.MailClient.Win.Modules {
             DialogResult result = XtraMessageBox.Show(this, TagResources.DeleteQuestion, Application.ProductName, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
             if (result != DialogResult.Yes)
                 return;
-            if (gridViewProductLine == null) return;
+            if (gridViewProductLine.RowCount == 0)
+            {
+                XtraMessageBox.Show(this, "Aucune ligne a supprimer", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
             var idProductLine = (Guid)gridViewProductLine.GetFocusedRowCellValue("Id");
             _repositoryStock.RemovePl(idProductLine);
             var stock = new ModelViewStock();

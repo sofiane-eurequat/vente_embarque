@@ -32,7 +32,20 @@ namespace vente_embarque.presenter.Stok
         public void Write(string name, Wilaya wilaya, Commune commune, string adress)
         {
             var stock = FactoryStock.CreateStock(name, wilaya, commune, adress);
-            _repositoryStock.Add(stock);
+            _repositoryStock.Save(stock);
+        }
+
+        public void Write(Guid id, string name, Wilaya wilaya, Commune commune, string adress)
+        {
+            var stock = new Stock(name)
+                {
+                    id = id,
+                    Name = name,
+                    Wilaya = wilaya,
+                    Commune = commune,
+                    Adress = adress
+                };
+            _repositoryStock.Save(stock);
         }
     }
 
@@ -40,5 +53,6 @@ namespace vente_embarque.presenter.Stok
     {
         void Display();
         void Write(string name, Wilaya wilaya, Commune commune, string adress);
+        void Write(Guid id, string name, Wilaya wilaya, Commune commune, string adress);
     }
 }

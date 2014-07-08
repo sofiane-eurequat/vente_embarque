@@ -39,7 +39,7 @@ namespace vente_embarque.presenter.Bdc
             _repositoryOrder.Save(order);
         }
 
-        public void Save(Guid idOrder, int numCommande, Client client, DateTime dateLivraison, string adresseLivraison, Priorite priorite, GestionCommande etat, bool livraisonSurPlace, DateTime dateCommande, IEnumerable<OrderLine> orderLine)
+        public void Write(Guid idOrder, int numCommande, Client client, DateTime dateLivraison, string adresseLivraison, Priorite priorite, GestionCommande etat, bool livraisonSurPlace, DateTime dateCommande, IEnumerable<OrderLine> orderLine)
         {
             var order = new Order
                 {
@@ -70,6 +70,6 @@ namespace vente_embarque.presenter.Bdc
         void Write(int numCommande, Client client, DateTime dateLivraison, string adresseLivraison, Priorite priorite,
                    GestionCommande etat, bool livraisonSurPlace, DateTime dateCommande, IEnumerable<OrderLine> orderLine);
 
-        void Save(Guid idOrder, int numCommande, Client client, DateTime dateLivraison, string adresseLivraison, Priorite priorite, GestionCommande etat, bool livraisonSurPlace, DateTime dateCommande, IEnumerable<OrderLine> orderLine);
+        void Write(Guid idOrder, int numCommande, Client client, DateTime dateLivraison, string adresseLivraison, Priorite priorite, GestionCommande etat, bool livraisonSurPlace, DateTime dateCommande, IEnumerable<OrderLine> orderLine);
     }
 }
