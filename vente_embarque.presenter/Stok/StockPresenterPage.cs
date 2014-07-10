@@ -55,6 +55,7 @@ namespace vente_embarque.presenter.Stok
                             Categorie = product.Category.Name,
                             Remarque = product.Remarque,
                             Marque = product.Marque.Name,
+                            DateEntree = product.DateEntree,
                         });
                 }
 
@@ -108,7 +109,7 @@ namespace vente_embarque.presenter.Stok
         public string Remarque { get; set; }
         public string Reference { get; set; }
         public string Nom { get; set; }
-
+        public DateTime DateEntree { get; set; }
     }
 
     public interface IStockPagePresenter

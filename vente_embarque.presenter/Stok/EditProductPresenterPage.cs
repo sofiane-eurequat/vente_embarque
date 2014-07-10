@@ -30,10 +30,10 @@ namespace vente_embarque.presenter.Stok
             _editProductView.Marques = _repositoryMarque.FindAll();
         }
 
-        public void Write(string name, Category category, Marque marque, string fournisseur, int quantiteMin, GestionProduit typeGestion)
+        public void Write(string name, Category category, Marque marque, string fournisseur, int quantiteMin, DateTime dateEntree, GestionProduit typeGestion)
         {
             var product = FactoryProduct.CreateProduct(name, quantiteMin, category, marque, null, null, fournisseur,
-                                                       typeGestion);
+                                                       dateEntree, typeGestion);
             _repositoryProduct.Save(product);
         }
     }
@@ -41,6 +41,6 @@ namespace vente_embarque.presenter.Stok
     internal interface IEditProductPagePresenter
     {
         void Display();
-        void Write(string name, Category category, Marque marque, string fournisseur, int quantitéMin, GestionProduit typeGestion);
+        void Write(string name, Category category, Marque marque, string fournisseur, int quantitéMin, DateTime dateEntree, GestionProduit typeGestion);
     }
 }

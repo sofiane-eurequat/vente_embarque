@@ -184,7 +184,7 @@
             this.groupControl1.Controls.Add(this.labelQuantité);
             this.groupControl1.Controls.Add(this.labelProduit);
             this.groupControl1.Controls.Add(this.labelStock);
-            this.groupControl1.Location = new System.Drawing.Point(0, 163);
+            this.groupControl1.Location = new System.Drawing.Point(0, 150);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(617, 154);
             this.groupControl1.TabIndex = 4;

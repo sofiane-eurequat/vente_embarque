@@ -40,7 +40,7 @@ namespace DevExpress.MailClient.Win.Modules
         private void EditSecteur(ModelViewSecteur secteur, bool newSecteur, string caption)
         {
             Cursor.Current = Cursors.WaitCursor;
-            frmGestionSecteur form = new frmGestionSecteur(secteur, newSecteur, caption);
+            frmEditSector form = new frmEditSector(secteur, newSecteur, caption);
             //form.Load += OnEditMailFormLoad;
             //form.FormClosed += OnEditMailFormClosed;
             form.Location = new Point(OwnerForm.Left + (OwnerForm.Width - form.Width) / 2, OwnerForm.Top + (OwnerForm.Height - form.Height) / 2);

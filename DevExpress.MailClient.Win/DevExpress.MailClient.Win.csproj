@@ -167,11 +167,11 @@
     <Compile Include="Forms\fmEditProductLine.Designer.cs">
       <DependentUpon>fmEditProductLine.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmAgentTerrainAdd.cs">
+    <Compile Include="Forms\frmEditAgentTerrain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmAgentTerrainAdd.Designer.cs">
-      <DependentUpon>frmAgentTerrainAdd.cs</DependentUpon>
+    <Compile Include="Forms\frmEditAgentTerrain.Designer.cs">
+      <DependentUpon>frmEditAgentTerrain.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmEditBdc.cs">
       <SubType>Form</SubType>
@@ -191,11 +191,11 @@
     <Compile Include="Forms\frmEditContact.Designer.cs">
       <DependentUpon>frmEditContact.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmGestionSecteur.cs">
+    <Compile Include="Forms\frmEditSector.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmGestionSecteur.Designer.cs">
-      <DependentUpon>frmGestionSecteur.cs</DependentUpon>
+    <Compile Include="Forms\frmEditSector.Designer.cs">
+      <DependentUpon>frmEditSector.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmEditOrderLine.cs">
       <SubType>Form</SubType>
@@ -342,8 +342,8 @@
     <EmbeddedResource Include="Forms\fmEditProductLine.resx">
       <DependentUpon>fmEditProductLine.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmAgentTerrainAdd.resx">
-      <DependentUpon>frmAgentTerrainAdd.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmEditAgentTerrain.resx">
+      <DependentUpon>frmEditAgentTerrain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmEditBdc.resx">
       <DependentUpon>frmEditBdc.cs</DependentUpon>
@@ -355,8 +355,8 @@
     <EmbeddedResource Include="Forms\frmEditContact.resx">
       <DependentUpon>frmEditContact.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmGestionSecteur.resx">
-      <DependentUpon>frmGestionSecteur.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmEditSector.resx">
+      <DependentUpon>frmEditSector.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmEditOrderLine.resx">
       <DependentUpon>frmEditOrderLine.cs</DependentUpon>

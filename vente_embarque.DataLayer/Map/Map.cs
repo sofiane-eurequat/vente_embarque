@@ -99,6 +99,7 @@ namespace vente_embarque.DataLayer.Map
             productReturned.QuantityMin = product.QuantiteMin;
             productReturned.Category = MapCategory(product.Category, uow);
             productReturned.Marque = MapMarque(product.Marque, uow);
+            productReturned.DateEntree = product.DateEntree;
             productReturned.Fournisseur = product.Fournisseur;
             return productReturned;
         }

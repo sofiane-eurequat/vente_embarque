@@ -62,7 +62,7 @@ namespace vente_embarque.DataLayer.Entities.Orders
         }
 
         private XpoSector _Sector;
-        [Aggregated, Association("XpoSector-XpoClient")]
+        [ Association("XpoSector-XpoClient")]
         public XpoSector Sector
         {
             get { return _Sector; }

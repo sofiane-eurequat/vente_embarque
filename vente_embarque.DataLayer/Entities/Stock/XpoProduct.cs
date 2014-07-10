@@ -65,6 +65,13 @@ namespace vente_embarque.DataLayer.Entities.Stock
             set { SetPropertyValue("Marque", ref _marque, value); }
         }
 
+        private DateTime _dateEntree;
+        public DateTime DateEntree
+        {
+            get { return _dateEntree; }
+            set { SetPropertyValue("Priorite", ref _dateEntree, value); }
+        }
+
         private String _fournisseur;
         public String Fournisseur
         {

@@ -1,8 +1,6 @@
-﻿using vente_embarque.presenter.Stok;
-
-namespace DevExpress.MailClient.Win.Forms
+﻿namespace DevExpress.MailClient.Win.Forms
 {
-    partial class FrmEditProductLine : IEditProductLineView
+    partial class frmEditAgentTerrain
     {
         /// <summary>
         /// Required designer variable.
@@ -31,44 +29,41 @@ namespace DevExpress.MailClient.Win.Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEditProductLine));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEditAgentTerrain));
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.bbiSauvegarderFermer = new DevExpress.XtraBars.BarButtonItem();
+            this.applicationMenu1 = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.bbiNouveau = new DevExpress.XtraBars.BarButtonItem();
             this.bbiSauvegarder = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiSauvegarderFermer = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiEffacer = new DevExpress.XtraBars.BarButtonItem();
             this.bbiFermer = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiEfaccer = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.applicationMenu1 = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.comboBoxProduit = new System.Windows.Forms.ComboBox();
-            this.textEditQuantité = new DevExpress.XtraEditors.TextEdit();
-            this.comboBoxStock = new System.Windows.Forms.ComboBox();
-            this.labelQuantité = new DevExpress.XtraEditors.LabelControl();
-            this.labelProduit = new DevExpress.XtraEditors.LabelControl();
+            this.textEditNom = new DevExpress.XtraEditors.TextEdit();
             this.labelStock = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditQuantité.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditNom.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
             // 
+            this.ribbon.ApplicationButtonDropDownControl = this.applicationMenu1;
             this.ribbon.ExpandCollapseItem.Id = 0;
             this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbon.ExpandCollapseItem,
-            this.bbiSauvegarderFermer,
             this.bbiNouveau,
             this.bbiSauvegarder,
-            this.bbiFermer,
-            this.bbiEfaccer});
+            this.bbiSauvegarderFermer,
+            this.bbiEffacer,
+            this.bbiFermer});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
             this.ribbon.MaxItemId = 7;
             this.ribbon.Name = "ribbon";
@@ -78,20 +73,16 @@ namespace DevExpress.MailClient.Win.Forms
             this.ribbon.Size = new System.Drawing.Size(617, 144);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
-            // bbiSauvegarderFermer
+            // applicationMenu1
             // 
-            this.bbiSauvegarderFermer.Caption = "Sauvegarder et Fermer";
-            this.bbiSauvegarderFermer.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvegarderFermer.Glyph")));
-            this.bbiSauvegarderFermer.Id = 1;
-            this.bbiSauvegarderFermer.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvegarderFermer.LargeGlyph")));
-            this.bbiSauvegarderFermer.Name = "bbiSauvegarderFermer";
-            this.bbiSauvegarderFermer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiSauvegarderFermer_ItemClick);
+            this.applicationMenu1.Name = "applicationMenu1";
+            this.applicationMenu1.Ribbon = this.ribbon;
             // 
             // bbiNouveau
             // 
             this.bbiNouveau.Caption = "Nouveau";
             this.bbiNouveau.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiNouveau.Glyph")));
-            this.bbiNouveau.Id = 3;
+            this.bbiNouveau.Id = 1;
             this.bbiNouveau.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiNouveau.LargeGlyph")));
             this.bbiNouveau.Name = "bbiNouveau";
             this.bbiNouveau.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiNouveau_ItemClick);
@@ -100,28 +91,37 @@ namespace DevExpress.MailClient.Win.Forms
             // 
             this.bbiSauvegarder.Caption = "Sauvegarder";
             this.bbiSauvegarder.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvegarder.Glyph")));
-            this.bbiSauvegarder.Id = 4;
+            this.bbiSauvegarder.Id = 2;
             this.bbiSauvegarder.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvegarder.LargeGlyph")));
             this.bbiSauvegarder.Name = "bbiSauvegarder";
             this.bbiSauvegarder.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiSauvegarder_ItemClick);
+            // 
+            // bbiSauvegarderFermer
+            // 
+            this.bbiSauvegarderFermer.Caption = "Sauvegarder et Fermer";
+            this.bbiSauvegarderFermer.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvegarderFermer.Glyph")));
+            this.bbiSauvegarderFermer.Id = 4;
+            this.bbiSauvegarderFermer.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvegarderFermer.LargeGlyph")));
+            this.bbiSauvegarderFermer.Name = "bbiSauvegarderFermer";
+            this.bbiSauvegarderFermer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiSauvegarderFermer_ItemClick);
+            // 
+            // bbiEffacer
+            // 
+            this.bbiEffacer.Caption = "Effacer";
+            this.bbiEffacer.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiEffacer.Glyph")));
+            this.bbiEffacer.Id = 5;
+            this.bbiEffacer.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiEffacer.LargeGlyph")));
+            this.bbiEffacer.Name = "bbiEffacer";
+            this.bbiEffacer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiEffacer_ItemClick);
             // 
             // bbiFermer
             // 
             this.bbiFermer.Caption = "Fermer";
             this.bbiFermer.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiFermer.Glyph")));
-            this.bbiFermer.Id = 5;
+            this.bbiFermer.Id = 6;
             this.bbiFermer.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiFermer.LargeGlyph")));
             this.bbiFermer.Name = "bbiFermer";
             this.bbiFermer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiFermer_ItemClick);
-            // 
-            // bbiEfaccer
-            // 
-            this.bbiEfaccer.Caption = "Effacer";
-            this.bbiEfaccer.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiEfaccer.Glyph")));
-            this.bbiEfaccer.Id = 6;
-            this.bbiEfaccer.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiEfaccer.LargeGlyph")));
-            this.bbiEfaccer.Name = "bbiEfaccer";
-            this.bbiEfaccer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiEfaccer_ItemClick);
             // 
             // ribbonPage1
             // 
@@ -153,7 +153,7 @@ namespace DevExpress.MailClient.Win.Forms
             // ribbonPageGroup3
             // 
             this.ribbonPageGroup3.AllowTextClipping = false;
-            this.ribbonPageGroup3.ItemLinks.Add(this.bbiEfaccer);
+            this.ribbonPageGroup3.ItemLinks.Add(this.bbiEffacer);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.ShowCaptionButton = false;
             this.ribbonPageGroup3.Text = "Reinitialiser";
@@ -168,106 +168,57 @@ namespace DevExpress.MailClient.Win.Forms
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 339);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 303);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
             this.ribbonStatusBar.Size = new System.Drawing.Size(617, 31);
             // 
-            // applicationMenu1
-            // 
-            this.applicationMenu1.Name = "applicationMenu1";
-            this.applicationMenu1.Ribbon = this.ribbon;
-            // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.comboBoxProduit);
-            this.groupControl1.Controls.Add(this.textEditQuantité);
-            this.groupControl1.Controls.Add(this.comboBoxStock);
-            this.groupControl1.Controls.Add(this.labelQuantité);
-            this.groupControl1.Controls.Add(this.labelProduit);
+            this.groupControl1.Controls.Add(this.textEditNom);
             this.groupControl1.Controls.Add(this.labelStock);
             this.groupControl1.Location = new System.Drawing.Point(0, 150);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(617, 154);
-            this.groupControl1.TabIndex = 4;
-            this.groupControl1.Text = "Information sur la ligne de stock";
+            this.groupControl1.Size = new System.Drawing.Size(617, 96);
+            this.groupControl1.TabIndex = 5;
+            this.groupControl1.Text = "Information sur l\'agent de terrain";
             // 
-            // comboBoxProduit
+            // textEditNom
             // 
-            this.comboBoxProduit.DisplayMember = "id";
-            this.comboBoxProduit.FormattingEnabled = true;
-            this.comboBoxProduit.Location = new System.Drawing.Point(392, 44);
-            this.comboBoxProduit.Name = "comboBoxProduit";
-            this.comboBoxProduit.Size = new System.Drawing.Size(200, 21);
-            this.comboBoxProduit.TabIndex = 20;
-            this.comboBoxProduit.ValueMember = "id";
-            this.comboBoxProduit.SelectedIndexChanged += new System.EventHandler(this.comboBoxProduit_SelectedIndexChanged);
-            // 
-            // textEditQuantité
-            // 
-            this.textEditQuantité.Location = new System.Drawing.Point(69, 100);
-            this.textEditQuantité.MenuManager = this.ribbon;
-            this.textEditQuantité.Name = "textEditQuantité";
-            this.textEditQuantité.Size = new System.Drawing.Size(217, 20);
-            this.textEditQuantité.TabIndex = 19;
-            this.textEditQuantité.EditValueChanged += new System.EventHandler(this.textEditQuantité_EditValueChanged);
-            // 
-            // comboBoxStock
-            // 
-            this.comboBoxStock.DisplayMember = "id";
-            this.comboBoxStock.FormattingEnabled = true;
-            this.comboBoxStock.Location = new System.Drawing.Point(69, 44);
-            this.comboBoxStock.Name = "comboBoxStock";
-            this.comboBoxStock.Size = new System.Drawing.Size(217, 21);
-            this.comboBoxStock.TabIndex = 17;
-            this.comboBoxStock.ValueMember = "id";
-            this.comboBoxStock.SelectedValueChanged += new System.EventHandler(this.comboBoxStock_SelectedValueChanged);
-            // 
-            // labelQuantité
-            // 
-            this.labelQuantité.Location = new System.Drawing.Point(12, 103);
-            this.labelQuantité.Name = "labelQuantité";
-            this.labelQuantité.Size = new System.Drawing.Size(42, 13);
-            this.labelQuantité.TabIndex = 7;
-            this.labelQuantité.Text = "Quantité";
-            // 
-            // labelProduit
-            // 
-            this.labelProduit.Location = new System.Drawing.Point(332, 47);
-            this.labelProduit.Name = "labelProduit";
-            this.labelProduit.Size = new System.Drawing.Size(34, 13);
-            this.labelProduit.TabIndex = 5;
-            this.labelProduit.Text = "Produit";
+            this.textEditNom.Location = new System.Drawing.Point(77, 44);
+            this.textEditNom.MenuManager = this.ribbon;
+            this.textEditNom.Name = "textEditNom";
+            this.textEditNom.Size = new System.Drawing.Size(140, 20);
+            this.textEditNom.TabIndex = 19;
             // 
             // labelStock
             // 
-            this.labelStock.Location = new System.Drawing.Point(12, 47);
+            this.labelStock.Location = new System.Drawing.Point(22, 47);
             this.labelStock.Name = "labelStock";
-            this.labelStock.Size = new System.Drawing.Size(26, 13);
+            this.labelStock.Size = new System.Drawing.Size(21, 13);
             this.labelStock.TabIndex = 4;
-            this.labelStock.Text = "Stock";
+            this.labelStock.Text = "Nom";
             // 
-            // FrmEditProductLine
+            // frmEditAgentTerrain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(617, 370);
+            this.ClientSize = new System.Drawing.Size(617, 334);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.KeyPreview = true;
-            this.Name = "FrmEditProductLine";
+            this.Name = "frmEditAgentTerrain";
             this.Ribbon = this.ribbon;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StatusBar = this.ribbonStatusBar;
-            this.Text = "Ligne de stock";
+            this.Text = "Agent terrain";
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditQuantité.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditNom.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -278,21 +229,17 @@ namespace DevExpress.MailClient.Win.Forms
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
-        private XtraBars.BarButtonItem bbiSauvegarderFermer;
         private XtraBars.Ribbon.ApplicationMenu applicationMenu1;
-        private XtraEditors.GroupControl groupControl1;
-        private System.Windows.Forms.ComboBox comboBoxStock;
-        private XtraEditors.LabelControl labelQuantité;
-        private XtraEditors.LabelControl labelProduit;
-        private XtraEditors.LabelControl labelStock;
-        private XtraEditors.TextEdit textEditQuantité;
-        private XtraBars.BarButtonItem bbiNouveau;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
-        private XtraBars.BarButtonItem bbiSauvegarder;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
+        private XtraBars.BarButtonItem bbiNouveau;
+        private XtraBars.BarButtonItem bbiSauvegarder;
+        private XtraBars.BarButtonItem bbiSauvegarderFermer;
+        private XtraBars.BarButtonItem bbiEffacer;
         private XtraBars.BarButtonItem bbiFermer;
-        private XtraBars.BarButtonItem bbiEfaccer;
-        private System.Windows.Forms.ComboBox comboBoxProduit;
+        private XtraEditors.GroupControl groupControl1;
+        private XtraEditors.TextEdit textEditNom;
+        private XtraEditors.LabelControl labelStock;
     }
 }

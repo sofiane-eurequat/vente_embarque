@@ -43,12 +43,18 @@ namespace DevExpress.MailClient.Win.Forms
 
         private void bbiSave_ItemClick(object sender, ItemClickEventArgs e)
         {
-            _editProductPresenter.Write(textEditNameProduct.Text,comboBoxCategory.SelectedItem as Category, comboBoxMarque.SelectedItem as Marque,textEditFournisseur.Text,Convert.ToInt32(textEditQuantité.Text), (GestionProduit)comboBoxTypeGestion.SelectedItem);
+            _editProductPresenter.Write(textEditNameProduct.Text, comboBoxCategory.SelectedItem as Category,
+                                        comboBoxMarque.SelectedItem as Marque, textEditFournisseur.Text,
+                                        Convert.ToInt32(textEditQuantité.Text), dateEditEntree.DateTime,
+                                        (GestionProduit) comboBoxTypeGestion.SelectedItem);
         }
 
         private void bbiSaveClsoe_ItemClick(object sender, ItemClickEventArgs e)
         {
-            _editProductPresenter.Write(textEditNameProduct.Text, comboBoxCategory.SelectedItem as Category, comboBoxMarque.SelectedItem as Marque, textEditFournisseur.Text, Convert.ToInt32(textEditQuantité.Text), (GestionProduit)comboBoxTypeGestion.SelectedItem);
+            _editProductPresenter.Write(textEditNameProduct.Text, comboBoxCategory.SelectedItem as Category,
+                                        comboBoxMarque.SelectedItem as Marque, textEditFournisseur.Text,
+                                        Convert.ToInt32(textEditQuantité.Text), dateEditEntree.DateTime,
+                                        (GestionProduit) comboBoxTypeGestion.SelectedItem);
             Close();
         }
 

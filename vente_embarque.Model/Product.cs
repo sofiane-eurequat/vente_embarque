@@ -14,6 +14,7 @@ namespace vente_embarque.Model
         public string Remarque { get; set; }
         public string SiteReference { get; set; }
         public GestionProduit TypeGestion { get; set; }
+        public DateTime DateEntree { get; set; }
         protected override void Validate()
         {
             throw new NotImplementedException();
@@ -21,7 +22,7 @@ namespace vente_embarque.Model
     }
     public class FactoryProduct
     {
-        public static Product CreateProduct(string name, int quantiteMin,Category category, Marque marque, string remarque = "", string reference = "", string fournisseur = "", GestionProduit typeGestion = GestionProduit.Aucune)
+        public static Product CreateProduct(string name, int quantiteMin,Category category, Marque marque, string remarque = "", string reference = "", string fournisseur = "", DateTime dateEntree = default(DateTime), GestionProduit typeGestion = GestionProduit.Aucune)
         {
             var product = new Product
                 {
@@ -33,6 +34,7 @@ namespace vente_embarque.Model
                     Fournisseur = fournisseur,
                     Marque = marque,
                     Category = category,
+                    DateEntree = dateEntree,
                     TypeGestion = typeGestion,
                     newObject = true
                 };

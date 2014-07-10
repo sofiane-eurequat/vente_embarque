@@ -93,9 +93,9 @@ namespace vente_embarque.DataLayer
                     ConnectionString = ((string)config.GetValue("connect", typeof(string)))
                 })
             {
-                var repositoryMarque = new RepositoryMarque();
-                var marque = repositoryMarque.FindBy(entity.id);
-                uow.Delete(marque);
+                var marque = uow.GetObjectByKey<XpoMarque>(entity.id);
+                marque.Delete();
+                uow.CommitChanges();
             }
         }
     }

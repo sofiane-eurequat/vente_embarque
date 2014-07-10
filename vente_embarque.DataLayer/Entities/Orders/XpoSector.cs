@@ -54,16 +54,8 @@ namespace vente_embarque.DataLayer.Entities.Orders
             get { return _commune; }
             set { SetPropertyValue("Name", ref _commune, value); }
         }
-        /*
-        private XpoCommune _Commune;
-        [Association("XpoCommune-XpoSectors")]
-        public XpoCommune Commune
-        {
-            get { return _Commune; }
-            set { SetPropertyValue("Commune", ref _Commune, value); }
-        }
-        */
-        [Aggregated, Association("XpoSector-XpoClient")]
+
+        [Association("XpoSector-XpoClient")]
         public XPCollection<XpoClient> Clients
         {
             get { return GetCollection<XpoClient>("Clients"); }

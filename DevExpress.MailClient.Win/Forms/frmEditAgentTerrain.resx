@@ -117,14 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="applicationMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="applicationMenu1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="bbiNew.Caption" xml:space="preserve">
-    <value>Nouveau</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bbiNew.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bbiNouveau.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAA9dEVYdFRpdGxlAE5ldztQYWdlO0JhcnM7UmliYm9uO1N0YW5kYXJkO0l0ZW07Qmxhbms7RGVm
@@ -140,7 +137,7 @@
         VM6OLH75/0s8xB/6ZLbSnFYGZZ+y1EjOtO7j8hcgW/gLc7LkWZrHKOEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bbiNew.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bbiNouveau.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAA9dEVYdFRpdGxlAE5ldztQYWdlO0JhcnM7UmliYm9uO1N0YW5kYXJkO0l0ZW07Qmxhbms7RGVm
@@ -174,10 +171,7 @@
         QmCC
 </value>
   </data>
-  <data name="bbiSave.Caption" xml:space="preserve">
-    <value>Sauvegarder</value>
-  </data>
-  <data name="bbiSave.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bbiSauvegarder.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAALdEVYdFRpdGxlAFNhdmU7+ej5CQAAAvZJREFUOE+Fk1tI01Ecxy2zELF7mpShGQNBM21uuvl3
@@ -196,7 +190,7 @@
         tTMewtqAvwXi/m52XeinAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bbiSave.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bbiSauvegarder.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAALdEVYdFRpdGxlAFNhdmU7+ej5CQAACU9JREFUWEfFV2dUVGcadku2JBtj1E22/t1fcTcqShHp
@@ -242,10 +236,7 @@
         BX+gspv/C6gNX/RPBgtbCj92lKQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bbiSaveClsoe.Caption" xml:space="preserve">
-    <value>Sauvegarder et Fermer</value>
-  </data>
-  <data name="bbiSaveClsoe.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bbiSauvegarderFermer.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAgdEVYdFRpdGxlAFNhdmUgQW5kIENsb3NlO1NhdmU7Q2xvc2U7KoQIewAAAuRJREFUOE99k2lI
@@ -264,7 +255,7 @@
         /hv6j0ZnuCn4BczNDQxXmLvMAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bbiSaveClsoe.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bbiSauvegarderFermer.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAgdEVYdFRpdGxlAFNhdmUgQW5kIENsb3NlO1NhdmU7Q2xvc2U7KoQIewAACQJJREFUWEfFlwlQ
@@ -309,10 +300,7 @@
         MsBMsddzI/+v9+c6Mxn4D+ddlw/KgskcAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bbiClear.Caption" xml:space="preserve">
-    <value>Effacer</value>
-  </data>
-  <data name="bbiClear.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bbiEffacer.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAldEVYdFRpdGxlAENsZWFyO0VyYXNlO1JlbW92ZTtCYXJzO1JpYmJvbjuHgINzAAACi0lEQVQ4
@@ -330,7 +318,7 @@
         TkSuQmCC
 </value>
   </data>
-  <data name="bbiClear.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bbiEffacer.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAldEVYdFRpdGxlAENsZWFyO0VyYXNlO1JlbW92ZTtCYXJzO1JpYmJvbjuHgINzAAAISUlEQVRY
@@ -372,10 +360,7 @@
         Iq9bv2az/+GxN/nXnLv/DXouN+liGKKqAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bbiClose.Caption" xml:space="preserve">
-    <value>Fermer</value>
-  </data>
-  <data name="bbiClose.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bbiFermer.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAddEVYdFRpdGxlAENsb3NlO0V4aXQ7QmFycztSaWJib247RgO56AAAAwxJREFUOE+Nk1lIVFEY
@@ -395,7 +380,7 @@
         RU5ErkJggg==
 </value>
   </data>
-  <data name="bbiClose.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bbiFermer.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAddEVYdFRpdGxlAENsb3NlO0V4aXQ7QmFycztSaWJib247RgO56AAACQdJREFUWEfFl3lQVFcW
@@ -439,465 +424,6 @@
         qWod4A5ngffr/E/F85SnClfr6/D4vc5IuqaOUXRdCd/nFZA3pFxzv/syUmZC3Xchp+tN34b/6XXltybv
         P5UfwVyDA44/+jr+X91Xif4bxhR8KfRCVHgAAAAASUVORK5CYII=
 </value>
-  </data>
-  <data name="ribbon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="ribbonPageGroup1.Text" xml:space="preserve">
-    <value>Nouveau</value>
-  </data>
-  <data name="ribbonPageGroup10.Text" xml:space="preserve">
-    <value>Sauvegarder</value>
-  </data>
-  <data name="ribbonPageGroup11.Text" xml:space="preserve">
-    <value>Reinitialiser</value>
-  </data>
-  <data name="ribbonPageGroup12.Text" xml:space="preserve">
-    <value>Fermer</value>
-  </data>
-  <data name="ribbonPage1.Text" xml:space="preserve">
-    <value>Home</value>
-  </data>
-  <data name="ribbon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>804, 144</value>
-  </data>
-  <data name="ribbonStatusBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 447</value>
-  </data>
-  <data name="ribbonStatusBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>804, 31</value>
-  </data>
-  <data name="&gt;&gt;ribbonStatusBar.Name" xml:space="preserve">
-    <value>ribbonStatusBar</value>
-  </data>
-  <data name="&gt;&gt;ribbonStatusBar.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonStatusBar, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonStatusBar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ribbonStatusBar.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;ribbon.Name" xml:space="preserve">
-    <value>ribbon</value>
-  </data>
-  <data name="&gt;&gt;ribbon.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbon.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ribbon.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="richEditBarController1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>166, 19</value>
-  </metadata>
-  <data name="textEditFournisseur.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 112</value>
-  </data>
-  <data name="textEditFournisseur.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 20</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="textEditFournisseur.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="&gt;&gt;textEditFournisseur.Name" xml:space="preserve">
-    <value>textEditFournisseur</value>
-  </data>
-  <data name="&gt;&gt;textEditFournisseur.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;textEditFournisseur.Parent" xml:space="preserve">
-    <value>GCInfoGeneral</value>
-  </data>
-  <data name="&gt;&gt;textEditFournisseur.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="labelNameFournisseur.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.25pt</value>
-  </data>
-  <data name="labelNameFournisseur.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 115</value>
-  </data>
-  <data name="labelNameFournisseur.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 14</value>
-  </data>
-  <data name="labelNameFournisseur.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="labelNameFournisseur.Text" xml:space="preserve">
-    <value>Fournisseur</value>
-  </data>
-  <data name="&gt;&gt;labelNameFournisseur.Name" xml:space="preserve">
-    <value>labelNameFournisseur</value>
-  </data>
-  <data name="&gt;&gt;labelNameFournisseur.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;labelNameFournisseur.Parent" xml:space="preserve">
-    <value>GCInfoGeneral</value>
-  </data>
-  <data name="&gt;&gt;labelNameFournisseur.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="textEditQuantité.Location" type="System.Drawing.Point, System.Drawing">
-    <value>533, 112</value>
-  </data>
-  <data name="textEditQuantité.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 20</value>
-  </data>
-  <data name="textEditQuantité.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;textEditQuantité.Name" xml:space="preserve">
-    <value>textEditQuantité</value>
-  </data>
-  <data name="&gt;&gt;textEditQuantité.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;textEditQuantité.Parent" xml:space="preserve">
-    <value>GCInfoGeneral</value>
-  </data>
-  <data name="&gt;&gt;textEditQuantité.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="dateEditEntree.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="dateEditEntree.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 150</value>
-  </data>
-  <assembly alias="DevExpress.Utils.v13.2" name="DevExpress.Utils.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="dateEditEntree.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.2">
-    <value>Combo</value>
-  </data>
-  <data name="dateEditEntree.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.2">
-    <value>Combo</value>
-  </data>
-  <data name="dateEditEntree.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 20</value>
-  </data>
-  <data name="dateEditEntree.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="&gt;&gt;dateEditEntree.Name" xml:space="preserve">
-    <value>dateEditEntree</value>
-  </data>
-  <data name="&gt;&gt;dateEditEntree.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;dateEditEntree.Parent" xml:space="preserve">
-    <value>GCInfoGeneral</value>
-  </data>
-  <data name="&gt;&gt;dateEditEntree.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="labelQuantity.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.25pt</value>
-  </data>
-  <data name="labelQuantity.Location" type="System.Drawing.Point, System.Drawing">
-    <value>416, 115</value>
-  </data>
-  <data name="labelQuantity.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 14</value>
-  </data>
-  <data name="labelQuantity.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="labelQuantity.Text" xml:space="preserve">
-    <value>Quantité Minimale </value>
-  </data>
-  <data name="&gt;&gt;labelQuantity.Name" xml:space="preserve">
-    <value>labelQuantity</value>
-  </data>
-  <data name="&gt;&gt;labelQuantity.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;labelQuantity.Parent" xml:space="preserve">
-    <value>GCInfoGeneral</value>
-  </data>
-  <data name="&gt;&gt;labelQuantity.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="labelDateEntree.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt</value>
-  </data>
-  <data name="labelDateEntree.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 153</value>
-  </data>
-  <data name="labelDateEntree.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 16</value>
-  </data>
-  <data name="labelDateEntree.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="labelDateEntree.Text" xml:space="preserve">
-    <value>Date Entrée</value>
-  </data>
-  <data name="&gt;&gt;labelDateEntree.Name" xml:space="preserve">
-    <value>labelDateEntree</value>
-  </data>
-  <data name="&gt;&gt;labelDateEntree.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;labelDateEntree.Parent" xml:space="preserve">
-    <value>GCInfoGeneral</value>
-  </data>
-  <data name="&gt;&gt;labelDateEntree.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="comboBoxTypeGestion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>533, 150</value>
-  </data>
-  <data name="comboBoxTypeGestion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 21</value>
-  </data>
-  <data name="comboBoxTypeGestion.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;comboBoxTypeGestion.Name" xml:space="preserve">
-    <value>comboBoxTypeGestion</value>
-  </data>
-  <data name="&gt;&gt;comboBoxTypeGestion.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBoxTypeGestion.Parent" xml:space="preserve">
-    <value>GCInfoGeneral</value>
-  </data>
-  <data name="&gt;&gt;comboBoxTypeGestion.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="labelTypeGestion.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt</value>
-  </data>
-  <data name="labelTypeGestion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>416, 153</value>
-  </data>
-  <data name="labelTypeGestion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 16</value>
-  </data>
-  <data name="labelTypeGestion.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="labelTypeGestion.Text" xml:space="preserve">
-    <value>Type de Gestion</value>
-  </data>
-  <data name="&gt;&gt;labelTypeGestion.Name" xml:space="preserve">
-    <value>labelTypeGestion</value>
-  </data>
-  <data name="&gt;&gt;labelTypeGestion.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;labelTypeGestion.Parent" xml:space="preserve">
-    <value>GCInfoGeneral</value>
-  </data>
-  <data name="&gt;&gt;labelTypeGestion.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="comboBoxCategory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 74</value>
-  </data>
-  <data name="comboBoxCategory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 21</value>
-  </data>
-  <data name="comboBoxCategory.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;comboBoxCategory.Name" xml:space="preserve">
-    <value>comboBoxCategory</value>
-  </data>
-  <data name="&gt;&gt;comboBoxCategory.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBoxCategory.Parent" xml:space="preserve">
-    <value>GCInfoGeneral</value>
-  </data>
-  <data name="&gt;&gt;comboBoxCategory.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="labelCategory.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.25pt</value>
-  </data>
-  <data name="labelCategory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 77</value>
-  </data>
-  <data name="labelCategory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 14</value>
-  </data>
-  <data name="labelCategory.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="labelCategory.Text" xml:space="preserve">
-    <value>Catégorie</value>
-  </data>
-  <data name="&gt;&gt;labelCategory.Name" xml:space="preserve">
-    <value>labelCategory</value>
-  </data>
-  <data name="&gt;&gt;labelCategory.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;labelCategory.Parent" xml:space="preserve">
-    <value>GCInfoGeneral</value>
-  </data>
-  <data name="&gt;&gt;labelCategory.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="comboBoxMarque.Location" type="System.Drawing.Point, System.Drawing">
-    <value>533, 74</value>
-  </data>
-  <data name="comboBoxMarque.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 21</value>
-  </data>
-  <data name="comboBoxMarque.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;comboBoxMarque.Name" xml:space="preserve">
-    <value>comboBoxMarque</value>
-  </data>
-  <data name="&gt;&gt;comboBoxMarque.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBoxMarque.Parent" xml:space="preserve">
-    <value>GCInfoGeneral</value>
-  </data>
-  <data name="&gt;&gt;comboBoxMarque.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="textEditNameProduct.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 36</value>
-  </data>
-  <data name="textEditNameProduct.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 20</value>
-  </data>
-  <data name="textEditNameProduct.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;textEditNameProduct.Name" xml:space="preserve">
-    <value>textEditNameProduct</value>
-  </data>
-  <data name="&gt;&gt;textEditNameProduct.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;textEditNameProduct.Parent" xml:space="preserve">
-    <value>GCInfoGeneral</value>
-  </data>
-  <data name="&gt;&gt;textEditNameProduct.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="labelNameProduit.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt</value>
-  </data>
-  <data name="labelNameProduit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 39</value>
-  </data>
-  <data name="labelNameProduit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 14</value>
-  </data>
-  <data name="labelNameProduit.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="labelNameProduit.Text" xml:space="preserve">
-    <value>Nom du Produit</value>
-  </data>
-  <data name="&gt;&gt;labelNameProduit.Name" xml:space="preserve">
-    <value>labelNameProduit</value>
-  </data>
-  <data name="&gt;&gt;labelNameProduit.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;labelNameProduit.Parent" xml:space="preserve">
-    <value>GCInfoGeneral</value>
-  </data>
-  <data name="&gt;&gt;labelNameProduit.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="labelMarque.Appearance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.25pt</value>
-  </data>
-  <data name="labelMarque.Location" type="System.Drawing.Point, System.Drawing">
-    <value>416, 77</value>
-  </data>
-  <data name="labelMarque.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 14</value>
-  </data>
-  <data name="labelMarque.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="labelMarque.Text" xml:space="preserve">
-    <value>Marque</value>
-  </data>
-  <data name="&gt;&gt;labelMarque.Name" xml:space="preserve">
-    <value>labelMarque</value>
-  </data>
-  <data name="&gt;&gt;labelMarque.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;labelMarque.Parent" xml:space="preserve">
-    <value>GCInfoGeneral</value>
-  </data>
-  <data name="&gt;&gt;labelMarque.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="GCInfoGeneral.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 150</value>
-  </data>
-  <data name="GCInfoGeneral.Size" type="System.Drawing.Size, System.Drawing">
-    <value>804, 222</value>
-  </data>
-  <data name="GCInfoGeneral.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="GCInfoGeneral.Text" xml:space="preserve">
-    <value>Information Generale</value>
-  </data>
-  <data name="&gt;&gt;GCInfoGeneral.Name" xml:space="preserve">
-    <value>GCInfoGeneral</value>
-  </data>
-  <data name="&gt;&gt;GCInfoGeneral.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;GCInfoGeneral.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;GCInfoGeneral.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="ribbonPageGroup2.Text" xml:space="preserve">
-    <value>Nouveau</value>
-  </data>
-  <data name="ribbonPageGroup3.Text" xml:space="preserve">
-    <value>Sauvegarder</value>
-  </data>
-  <data name="ribbonPageGroup4.Text" xml:space="preserve">
-    <value>Reinitialiser</value>
-  </data>
-  <data name="ribbonPageGroup5.Text" xml:space="preserve">
-    <value>Fermer</value>
-  </data>
-  <data name="ribbonPageGroup6.Text" xml:space="preserve">
-    <value>Nouveau</value>
-  </data>
-  <data name="ribbonPageGroup7.Text" xml:space="preserve">
-    <value>Sauvegarder</value>
-  </data>
-  <data name="ribbonPageGroup8.Text" xml:space="preserve">
-    <value>Reinitialiser</value>
-  </data>
-  <data name="ribbonPageGroup9.Text" xml:space="preserve">
-    <value>Fermer</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>804, 478</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1154,137 +680,5 @@
         7f8ieu//IX3y/yCA9P8ggPT/IID0vQAArEEAAKxBAACsQQAArEEAAKxBAACsQQAArEEAAKxBAACsQQAA
         rEEAAKxBAACsQQAArEEAAKxBAACsQQAArEE=
 </value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>Manual</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Produit</value>
-  </data>
-  <data name="&gt;&gt;applicationMenu.Name" xml:space="preserve">
-    <value>applicationMenu</value>
-  </data>
-  <data name="&gt;&gt;applicationMenu.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.ApplicationMenu, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bbiNew.Name" xml:space="preserve">
-    <value>bbiNew</value>
-  </data>
-  <data name="&gt;&gt;bbiNew.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bbiSave.Name" xml:space="preserve">
-    <value>bbiSave</value>
-  </data>
-  <data name="&gt;&gt;bbiSave.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bbiSaveClsoe.Name" xml:space="preserve">
-    <value>bbiSaveClsoe</value>
-  </data>
-  <data name="&gt;&gt;bbiSaveClsoe.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bbiClear.Name" xml:space="preserve">
-    <value>bbiClear</value>
-  </data>
-  <data name="&gt;&gt;bbiClear.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bbiClose.Name" xml:space="preserve">
-    <value>bbiClose</value>
-  </data>
-  <data name="&gt;&gt;bbiClose.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPage1.Name" xml:space="preserve">
-    <value>ribbonPage1</value>
-  </data>
-  <data name="&gt;&gt;ribbonPage1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup1.Name" xml:space="preserve">
-    <value>ribbonPageGroup1</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup10.Name" xml:space="preserve">
-    <value>ribbonPageGroup10</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup10.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup11.Name" xml:space="preserve">
-    <value>ribbonPageGroup11</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup11.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup12.Name" xml:space="preserve">
-    <value>ribbonPageGroup12</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup12.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;richEditBarController1.Name" xml:space="preserve">
-    <value>richEditBarController1</value>
-  </data>
-  <data name="&gt;&gt;richEditBarController1.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.UI.RichEditBarController, DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup2.Name" xml:space="preserve">
-    <value>ribbonPageGroup2</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup2.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup3.Name" xml:space="preserve">
-    <value>ribbonPageGroup3</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup3.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup4.Name" xml:space="preserve">
-    <value>ribbonPageGroup4</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup4.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup5.Name" xml:space="preserve">
-    <value>ribbonPageGroup5</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup5.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup6.Name" xml:space="preserve">
-    <value>ribbonPageGroup6</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup6.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup7.Name" xml:space="preserve">
-    <value>ribbonPageGroup7</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup7.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup8.Name" xml:space="preserve">
-    <value>ribbonPageGroup8</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup8.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup9.Name" xml:space="preserve">
-    <value>ribbonPageGroup9</value>
-  </data>
-  <data name="&gt;&gt;ribbonPageGroup9.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FrmEditProduct</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonForm, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
 </root>
