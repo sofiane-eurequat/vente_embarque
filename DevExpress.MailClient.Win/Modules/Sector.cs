@@ -14,9 +14,9 @@ using vente_embarque.presenter.Secteur;
 
 namespace DevExpress.MailClient.Win.Modules
 {
-    public partial class Secteur : BaseModule
+    public partial class Sector : BaseModule
     {
-        public Secteur()
+        public Sector()
         {
             InitializeComponent();
         }

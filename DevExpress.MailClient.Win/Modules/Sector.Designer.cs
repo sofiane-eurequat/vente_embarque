@@ -1,6 +1,6 @@
 ﻿namespace DevExpress.MailClient.Win.Modules
 {
-    partial class Secteur
+    partial class Sector
     {
         /// <summary> 
         /// Required designer variable.

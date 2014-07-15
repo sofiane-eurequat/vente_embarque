@@ -190,7 +190,7 @@
             this.arrangeRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.ArrangeRibbonPageGroup();
             this.groupByRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.GroupByRibbonPageGroup();
             this.layoutRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.LayoutRibbonPageGroup();
-            this.rpSecteur = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.rpSector = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rpgGestionSecteur = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpgGestionLivreur = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemSpinEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit();
@@ -218,6 +218,7 @@
             this.navBarItem2 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem3 = new DevExpress.XtraNavBar.NavBarItem();
             this.pcMain = new DevExpress.XtraEditors.PanelControl();
+            this.rpProduct = new DevExpress.XtraBars.Ribbon.RibbonPage();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.backstageViewControl1.SuspendLayout();
             this.backstageViewClientControl1.SuspendLayout();
@@ -369,7 +370,8 @@
             this.rpContacts,
             this.rpBDC,
             this.rpCalendar,
-            this.rpSecteur});
+            this.rpSector,
+            this.rpProduct});
             this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemZoomTrackBar1,
             this.repositoryItemSpinEdit1,
@@ -1584,14 +1586,14 @@
             this.layoutRibbonPageGroup1.ItemLinks.Add(this.switchTimeScalesItem1);
             this.layoutRibbonPageGroup1.Name = "layoutRibbonPageGroup1";
             // 
-            // rpSecteur
+            // rpSector
             // 
-            this.rpSecteur.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.rpSector.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.rpgGestionSecteur,
             this.rpgGestionLivreur});
-            this.rpSecteur.Name = "rpSecteur";
-            this.rpSecteur.Tag = "Secteur";
-            resources.ApplyResources(this.rpSecteur, "rpSecteur");
+            this.rpSector.Name = "rpSector";
+            this.rpSector.Tag = "Secteur";
+            resources.ApplyResources(this.rpSector, "rpSector");
             // 
             // rpgGestionSecteur
             // 
@@ -1880,6 +1882,11 @@
             resources.ApplyResources(this.pcMain, "pcMain");
             this.pcMain.Name = "pcMain";
             // 
+            // rpProduct
+            // 
+            this.rpProduct.Name = "rpProduct";
+            resources.ApplyResources(this.rpProduct, "rpProduct");
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -2029,7 +2036,7 @@
         private XtraBars.Ribbon.RibbonMiniToolbar ribbonMiniToolbar1;
         private XtraBars.Ribbon.RibbonMiniToolbar ribbonMiniToolbar2;
         private XtraBars.Ribbon.RibbonPage rpBDC;
-        private XtraBars.Ribbon.RibbonPage rpSecteur;
+        private XtraBars.Ribbon.RibbonPage rpSector;
         private XtraBars.BarButtonItem barButtonItem4;
         private XtraBars.BarButtonItem barButtonItem5;
         private XtraBars.BarButtonGroup barButtonGroup1;
@@ -2097,6 +2104,7 @@
         private XtraBars.BarButtonItem bbiDeleteOrderLine;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
         private XtraBars.BarButtonItem bbiModifyStock;
+        private XtraBars.Ribbon.RibbonPage rpProduct;
     }
 }
 

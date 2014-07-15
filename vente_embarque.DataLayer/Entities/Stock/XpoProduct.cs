@@ -79,7 +79,7 @@ namespace vente_embarque.DataLayer.Entities.Stock
             set { SetPropertyValue("Name", ref _fournisseur, value); }
         }
 
-        [Aggregated, Association("XpoProduct-XpoproductLine")]
+        [Association("XpoProduct-XpoproductLine")]
         XPCollection<XpoProductLine> ProductLines
         {
             get { return GetCollection<XpoProductLine>("ProductLines"); }

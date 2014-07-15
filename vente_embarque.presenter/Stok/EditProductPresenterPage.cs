@@ -36,11 +36,28 @@ namespace vente_embarque.presenter.Stok
                                                        dateEntree, typeGestion);
             _repositoryProduct.Save(product);
         }
+
+        public void Write(Guid idProduct, string name, Category category, Marque marque, string fournisseur, int quantiteMin, DateTime dateEntree, GestionProduit typeGestion)
+        {
+            var product = new Product
+                {
+                    id = idProduct,
+                    Name = name,
+                    Category = category,
+                    Marque = marque,
+                    Fournisseur = fournisseur,
+                    QuantiteMin = quantiteMin,
+                    DateEntree = dateEntree,
+                    TypeGestion = typeGestion
+                };
+            _repositoryProduct.Save(product);
+        }
     }
 
     internal interface IEditProductPagePresenter
     {
         void Display();
         void Write(string name, Category category, Marque marque, string fournisseur, int quantitéMin, DateTime dateEntree, GestionProduit typeGestion);
+        void Write(Guid id, string name, Category category, Marque marque, string fournisseur, int quantitéMin, DateTime dateEntree, GestionProduit typeGestion);
     }
 }

@@ -101,6 +101,7 @@ namespace vente_embarque.DataLayer.Map
             productReturned.Marque = MapMarque(product.Marque, uow);
             productReturned.DateEntree = product.DateEntree;
             productReturned.Fournisseur = product.Fournisseur;
+            productReturned.TypeGestion = product.TypeGestion;
             return productReturned;
         }
 

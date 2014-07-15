@@ -171,7 +171,7 @@ namespace DevExpress.MailClient.Win {
             nbgMail.Tag = new NavBarGroupTagObject("Stock", typeof(Stock));
             nbgCalendar.Tag = new NavBarGroupTagObject("Calendar", typeof(Calendar));
             nbgContacts.Tag = new NavBarGroupTagObject("Contacts", typeof(Contacts));
-            nbgSecteur.Tag = new NavBarGroupTagObject("Secteur", typeof (Secteur));
+            nbgSecteur.Tag = new NavBarGroupTagObject("Secteur", typeof (Sector));
             nbgBdc.Tag = new NavBarGroupTagObject("BDC", typeof(Bdc2));
             //nbgTasks.Tag = new NavBarGroupTagObject("Tasks", typeof(DevExpress.MailClient.Win.Tasks));
         }

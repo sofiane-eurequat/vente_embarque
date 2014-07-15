@@ -304,11 +304,11 @@
     <Compile Include="Modules\BDC.Designer.cs">
       <DependentUpon>BDC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\Secteur.cs">
+    <Compile Include="Modules\Sector.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Modules\Secteur.Designer.cs">
-      <DependentUpon>Secteur.cs</DependentUpon>
+    <Compile Include="Modules\Sector.Designer.cs">
+      <DependentUpon>Sector.cs</DependentUpon>
     </Compile>
     <Compile Include="Modules\Stock.cs">
       <SubType>UserControl</SubType>
@@ -409,8 +409,8 @@
     <EmbeddedResource Include="Modules\BDC.resx">
       <DependentUpon>BDC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\Secteur.resx">
-      <DependentUpon>Secteur.cs</DependentUpon>
+    <EmbeddedResource Include="Modules\Sector.resx">
+      <DependentUpon>Sector.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Stock.resx">
       <DependentUpon>Stock.cs</DependentUpon>

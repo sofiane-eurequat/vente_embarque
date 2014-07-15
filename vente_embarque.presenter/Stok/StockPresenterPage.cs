@@ -110,6 +110,7 @@ namespace vente_embarque.presenter.Stok
         public string Reference { get; set; }
         public string Nom { get; set; }
         public DateTime DateEntree { get; set; }
+        public GestionProduit TypeGestion { get; set; }
     }
 
     public interface IStockPagePresenter

@@ -581,7 +581,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAB6
-        BwAAAk1TRnQBSQFMAgEBBAEAATABAwEwAQMBDAEAAQwBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        BwAAAk1TRnQBSQFMAgEBBAEAATgBAwE4AQMBDAEAAQwBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABMAMAARgDAAEBAQABCAUAAYABBBgAAYACAAGAAwACgAEAAYADAAGAAQABgAEAAoACAAPAAQABwAHc
         AcABAAHwAcoBpgEAATMFAAEzAQABMwEAATMBAAIzAgADFgEAAxwBAAMiAQADKQEAA1UBAANNAQADQgEA
         AzkBAAGAAXwB/wEAAlAB/wEAAZMBAAHWAQAB/wHsAcwBAAHGAdYB7wEAAdYC5wEAAZABqQGtAgAB/wEz
@@ -672,23 +672,11 @@
   <data name="&gt;&gt;layoutViewColumn10.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;layoutViewField_colId2.Name" xml:space="preserve">
-    <value>layoutViewField_colId2</value>
-  </data>
-  <data name="&gt;&gt;layoutViewField_colId2.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="&gt;&gt;layoutViewColumn11.Name" xml:space="preserve">
     <value>layoutViewColumn11</value>
   </data>
   <data name="&gt;&gt;layoutViewColumn11.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;layoutViewField_colQuantiteMin2.Name" xml:space="preserve">
-    <value>layoutViewField_colQuantiteMin2</value>
-  </data>
-  <data name="&gt;&gt;layoutViewField_colQuantiteMin2.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;layoutViewColumn12.Name" xml:space="preserve">
     <value>layoutViewColumn12</value>
@@ -696,23 +684,11 @@
   <data name="&gt;&gt;layoutViewColumn12.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;layoutViewField_colPhoto2.Name" xml:space="preserve">
-    <value>layoutViewField_colPhoto2</value>
-  </data>
-  <data name="&gt;&gt;layoutViewField_colPhoto2.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="&gt;&gt;layoutViewColumn13.Name" xml:space="preserve">
     <value>layoutViewColumn13</value>
   </data>
   <data name="&gt;&gt;layoutViewColumn13.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;layoutViewField_colFournisseur2.Name" xml:space="preserve">
-    <value>layoutViewField_colFournisseur2</value>
-  </data>
-  <data name="&gt;&gt;layoutViewField_colFournisseur2.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;layoutViewColumn14.Name" xml:space="preserve">
     <value>layoutViewColumn14</value>
@@ -720,23 +696,11 @@
   <data name="&gt;&gt;layoutViewColumn14.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;layoutViewField_colCategorie2.Name" xml:space="preserve">
-    <value>layoutViewField_colCategorie2</value>
-  </data>
-  <data name="&gt;&gt;layoutViewField_colCategorie2.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="&gt;&gt;layoutViewColumn15.Name" xml:space="preserve">
     <value>layoutViewColumn15</value>
   </data>
   <data name="&gt;&gt;layoutViewColumn15.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;layoutViewField_colRemarque2.Name" xml:space="preserve">
-    <value>layoutViewField_colRemarque2</value>
-  </data>
-  <data name="&gt;&gt;layoutViewField_colRemarque2.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;layoutViewColumn16.Name" xml:space="preserve">
     <value>layoutViewColumn16</value>
@@ -744,23 +708,11 @@
   <data name="&gt;&gt;layoutViewColumn16.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;layoutViewField_colReference2.Name" xml:space="preserve">
-    <value>layoutViewField_colReference2</value>
-  </data>
-  <data name="&gt;&gt;layoutViewField_colReference2.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="&gt;&gt;layoutViewColumn17.Name" xml:space="preserve">
     <value>layoutViewColumn17</value>
   </data>
   <data name="&gt;&gt;layoutViewColumn17.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;layoutViewField_colNom2.Name" xml:space="preserve">
-    <value>layoutViewField_colNom2</value>
-  </data>
-  <data name="&gt;&gt;layoutViewField_colNom2.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;layoutViewColumn18.Name" xml:space="preserve">
     <value>layoutViewColumn18</value>
@@ -768,23 +720,11 @@
   <data name="&gt;&gt;layoutViewColumn18.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;layoutViewField_colMarque2.Name" xml:space="preserve">
-    <value>layoutViewField_colMarque2</value>
+  <data name="&gt;&gt;colDateEntree.Name" xml:space="preserve">
+    <value>colDateEntree</value>
   </data>
-  <data name="&gt;&gt;layoutViewField_colMarque2.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;layoutViewCard2.Name" xml:space="preserve">
-    <value>layoutViewCard2</value>
-  </data>
-  <data name="&gt;&gt;layoutViewCard2.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewCard, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;item2.Name" xml:space="preserve">
-    <value>item2</value>
-  </data>
-  <data name="&gt;&gt;item2.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;colDateEntree.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;layoutView1.Name" xml:space="preserve">
     <value>layoutView1</value>
@@ -930,16 +870,76 @@
   <data name="&gt;&gt;ilColumns.Type" xml:space="preserve">
     <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;colDateEntree.Name" xml:space="preserve">
-    <value>colDateEntree</value>
+  <data name="&gt;&gt;layoutViewCard2.Name" xml:space="preserve">
+    <value>layoutViewCard2</value>
   </data>
-  <data name="&gt;&gt;colDateEntree.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.LayoutViewColumn, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;layoutViewCard2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewCard, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colPhoto2.Name" xml:space="preserve">
+    <value>layoutViewField_colPhoto2</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colPhoto2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;item2.Name" xml:space="preserve">
+    <value>item2</value>
+  </data>
+  <data name="&gt;&gt;item2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colFournisseur2.Name" xml:space="preserve">
+    <value>layoutViewField_colFournisseur2</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colFournisseur2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colRemarque2.Name" xml:space="preserve">
+    <value>layoutViewField_colRemarque2</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colRemarque2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colMarque2.Name" xml:space="preserve">
+    <value>layoutViewField_colMarque2</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colMarque2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colReference2.Name" xml:space="preserve">
+    <value>layoutViewField_colReference2</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colReference2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colCategorie2.Name" xml:space="preserve">
+    <value>layoutViewField_colCategorie2</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colCategorie2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;layoutViewField_colDateEntree.Name" xml:space="preserve">
     <value>layoutViewField_colDateEntree</value>
   </data>
   <data name="&gt;&gt;layoutViewField_colDateEntree.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colNom2.Name" xml:space="preserve">
+    <value>layoutViewField_colNom2</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colNom2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colQuantiteMin2.Name" xml:space="preserve">
+    <value>layoutViewField_colQuantiteMin2</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colQuantiteMin2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colId2.Name" xml:space="preserve">
+    <value>layoutViewField_colId2</value>
+  </data>
+  <data name="&gt;&gt;layoutViewField_colId2.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Views.Layout.LayoutViewField, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

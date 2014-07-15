@@ -83,6 +83,8 @@ namespace vente_embarque.DataLayer.Map
                     Category = MapCategory(product.Category),
                     Marque = MapMarque(product.Marque),
                     Fournisseur = product.Fournisseur,
+                    DateEntree = product.DateEntree,
+                    TypeGestion = product.TypeGestion,
                     newObject = false
                 };
         }

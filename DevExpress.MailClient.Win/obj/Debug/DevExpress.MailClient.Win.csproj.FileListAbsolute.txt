@@ -119,7 +119,6 @@ C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Calendar.resources
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Contacts.resources
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.BDC.resources
-C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Modules.Secteur.resources
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Modules.Stock.resources
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Tasks.resources
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Properties.Resources.resources
@@ -131,3 +130,4 @@ C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Forms.frmEditStock.resources
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Forms.frmEditAgentTerrain.resources
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Forms.frmEditSector.resources
+C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Modules.Sector.resources
