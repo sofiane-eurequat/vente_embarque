@@ -10,17 +10,17 @@ namespace vente_embarque.presenter.Stok
     public class StockPresenterPage:IStockPagePresenter
     {
         private readonly IStockView _stockView;
-        private readonly IRepository<Stock, Guid> _repositorystock; 
+        private readonly IRepository<Stock, Guid> _repositoryStock; 
 
         public StockPresenterPage(IStockView stockView,IRepository<Stock,Guid> stockRepository)
         {
             _stockView = stockView;
-            _repositorystock = stockRepository;
+            _repositoryStock = stockRepository;
         }
 
         public void Display()
         {
-            var stock = _repositorystock.FindAll();
+            var stock = _repositoryStock.FindAll();
             if (stock == null) return;
         
             var tempStock = new List<ModelViewStock>();

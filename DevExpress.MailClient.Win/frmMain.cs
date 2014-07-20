@@ -20,22 +20,22 @@ using DevExpress.XtraPrinting;
 using DevExpress.Utils.About;
 
 namespace DevExpress.MailClient.Win {
-    public partial class frmMain : RibbonForm {
-        MailType currentMailType = MailType.Inbox;
-        ModulesNavigator modulesNavigator;
+    public partial class FrmMain : RibbonForm {
+        MailType _currentMailType = MailType.Inbox;
+        readonly ModulesNavigator _modulesNavigator;
         internal FilterColumnsManager FilterColumnManager;
-        ZoomManager zoomManager;
-        List<BarItem> AllowCustomizationMenuList = new List<BarItem>();
+        readonly ZoomManager _zoomManager;
+        readonly List<BarItem> _allowCustomizationMenuList = new List<BarItem>();
 
-        public frmMain() {
+        public FrmMain() {
             InitializeComponent();
             //rpcSearch.Text = TagResources.SearchTools;
             InitNavBarGroups();
             SkinHelper.InitSkinGallery(rgbiSkins);
             RibbonButtonsInitialize();
-            modulesNavigator = new ModulesNavigator(ribbonControl1, pcMain);
-            zoomManager = new ZoomManager(ribbonControl1, modulesNavigator, beiZoom);
-            modulesNavigator.ChangeGroup(navBarControl1.ActiveGroup, this);
+            _modulesNavigator = new ModulesNavigator(ribbonControl1, pcMain);
+            _zoomManager = new ZoomManager(ribbonControl1, _modulesNavigator, beiZoom);
+            _modulesNavigator.ChangeGroup(navBarControl1.ActiveGroup, this);
             NavigationInitialize();
             SetPageLayoutStyle();
         }
@@ -66,7 +66,7 @@ namespace DevExpress.MailClient.Win {
             InitBarButtonItem(bbiModifyProductLine, TagResources.ModifyProductLine);
             InitBarButtonItem(bbiDeleteProductLine, TagResources.DeleteProductLine, Properties.Resources.DeleteItemDescription);
             InitBarButtonItem(bbiRefreshBdc,TagResources.Refresh);
-            InitBarButtonItem(bbiClose,TagResources.Close);
+            InitBarButtonItem(bbiCloseBdc,TagResources.Close);
             InitBarButtonItem(bbiUnreadRead, TagResources.UnreadRead, Properties.Resources.UnreadReadDescription);
             InitBarButtonItem(bbiCloseSearch, TagResources.CloseSearch, Properties.Resources.CloseSearchDescription);
             InitBarButtonItem(bbiSubjectColumn, TagResources.SubjectColumn);
@@ -126,20 +126,22 @@ namespace DevExpress.MailClient.Win {
             bbiResetColumnsToDefault.Hint = Properties.Resources.SearchResetDescription;
             bbiCloseSearch.Hint = Properties.Resources.SearchCloseDescription;
 
-            var items = new List<BarButtonItem>();
-            items.Add(bbiSubjectColumn);
-            items.Add(bbiFromColumn);
-            items.Add(bbiDateColumn);
-            items.Add(bbiPriorityColumn);
-            items.Add(bbiAttachmentColumn);
-            items.Add(bbiDate);
+            var items = new List<BarButtonItem>
+                {
+                    bbiSubjectColumn,
+                    bbiFromColumn,
+                    bbiDateColumn,
+                    bbiPriorityColumn,
+                    bbiAttachmentColumn,
+                    bbiDate
+                };
             FilterColumnManager = new FilterColumnsManager(items);
             ucContacts1.SynchronizeGalleryItems(rgbiCurrentView);
             ucCalendar1.SetBarController(schedulerBarController1);
-            AllowCustomizationMenuList.Add(bbiFlipLayout); 
-            AllowCustomizationMenuList.Add(bbiRotateLayout);
-            AllowCustomizationMenuList.Add(bsiNavigation);
-            AllowCustomizationMenuList.Add(rgbiSkins);
+            _allowCustomizationMenuList.Add(bbiFlipLayout); 
+            _allowCustomizationMenuList.Add(bbiRotateLayout);
+            _allowCustomizationMenuList.Add(bsiNavigation);
+            _allowCustomizationMenuList.Add(rgbiSkins);
             ribbonControl1.Toolbar.ItemLinks.Add(rgbiSkins);
         }
 
@@ -148,7 +150,7 @@ namespace DevExpress.MailClient.Win {
             galleryItem.Hint = description;
         }
         //internal bool ShowPreview { get { return bbiShowPreview.Down; } }
-        internal ZoomManager ZoomManager { get { return zoomManager; } }
+        internal ZoomManager ZoomManager { get { return _zoomManager; } }
         internal BarButtonItem ShowUnreadItem { get { return bbiShowUnread; } }
         internal BarButtonItem ImportantItem { get { return bbiImportant; } }
         internal BarButtonItem HasAttachmentItem { get { return bbiHasAttachment; } }
@@ -158,10 +160,10 @@ namespace DevExpress.MailClient.Win {
         internal BackstageViewButtonItem SaveCalendar { get { return bvbiSaveCalendar; } }
         internal InRibbonGallery TaskGallery { get { return rgbiCurrentViewTasks.Gallery; } }
         internal PopupMenu FlagStatusMenu { get { return pmFlagStatus; } }
-        void InitBarButtonItem(DevExpress.XtraBars.BarButtonItem buttonItem, object tag) {
+        void InitBarButtonItem(BarButtonItem buttonItem, object tag) {
             InitBarButtonItem(buttonItem, tag, string.Empty);
         }
-        void InitBarButtonItem(DevExpress.XtraBars.BarButtonItem buttonItem, object tag, string description) {
+        void InitBarButtonItem(BarButtonItem buttonItem, object tag, string description) {
             //TODO: ici on gere l'evenement du click sur un des items de la barre
             buttonItem.ItemClick += bbi_ItemClick;
             buttonItem.Hint = description;
@@ -173,6 +175,7 @@ namespace DevExpress.MailClient.Win {
             nbgContacts.Tag = new NavBarGroupTagObject("Contacts", typeof(Contacts));
             nbgSecteur.Tag = new NavBarGroupTagObject("Secteur", typeof (Sector));
             nbgBdc.Tag = new NavBarGroupTagObject("BDC", typeof(Bdc2));
+            nbgProduct.Tag = new NavBarGroupTagObject("Produit", typeof (Product));
             //nbgTasks.Tag = new NavBarGroupTagObject("Tasks", typeof(DevExpress.MailClient.Win.Tasks));
         }
         public void ReadMessagesChanged() {
@@ -187,9 +190,9 @@ namespace DevExpress.MailClient.Win {
             bbiPriority.Enabled = enabled;
         }
         internal void EnableMail(bool enabled, bool unread) {
-            bbiNewProduct.Enabled = enabled && currentMailType == MailType.Inbox;
-            bbiModifyProduct.Enabled = enabled && currentMailType == MailType.Inbox;
-            bbiDeleteProduct.Enabled = enabled && currentMailType == MailType.Inbox;
+            bbiNewProduct.Enabled = enabled && _currentMailType == MailType.Inbox;
+            bbiModifyProduct.Enabled = enabled && _currentMailType == MailType.Inbox;
+            bbiDeleteProduct.Enabled = enabled && _currentMailType == MailType.Inbox;
         }
         internal void EnableEditFeed(bool enabled) {
             bbiDeleteFeed.Enabled = enabled;
@@ -233,23 +236,23 @@ namespace DevExpress.MailClient.Win {
             HtmlText = string.Format("{0}{1}", GetModuleName(), GetModulePartName());
         }
         string GetModuleName() {
-            if(string.IsNullOrEmpty(modulesNavigator.CurrentModule.PartName)) return CurrentModuleName;
+            if(string.IsNullOrEmpty(_modulesNavigator.CurrentModule.PartName)) return CurrentModuleName;
             return string.Format("<b>{0}</b>", CurrentModuleName);
         }
         string GetModulePartName() {
-            if(string.IsNullOrEmpty(modulesNavigator.CurrentModule.PartName)) return null;
-            return string.Format(" - {0}", modulesNavigator.CurrentModule.PartName);
+            if(string.IsNullOrEmpty(_modulesNavigator.CurrentModule.PartName)) return null;
+            return string.Format(" - {0}", _modulesNavigator.CurrentModule.PartName);
         }
-        private void navBarControl1_ActiveGroupChanged(object sender, DevExpress.XtraNavBar.NavBarGroupEventArgs e) {
+        private void navBarControl1_ActiveGroupChanged(object sender, NavBarGroupEventArgs e) {
             object data = GetModuleData((NavBarGroupTagObject)e.Group.Tag);
-            modulesNavigator.ChangeGroup(e.Group, data);
+            _modulesNavigator.ChangeGroup(e.Group, data);
         }
-        private void bbi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) {
-            modulesNavigator.CurrentModule.ButtonClick(string.Format("{0}", e.Item.Tag));
+        private void bbi_ItemClick(object sender, ItemClickEventArgs e) {
+            _modulesNavigator.CurrentModule.ButtonClick(string.Format("{0}", e.Item.Tag));
         }
         private void ucMailTree1_DataSourceChanged(object sender, DataSourceChangedEventArgs e) {
-            currentMailType = e.Type;
-            modulesNavigator.CurrentModule.MessagesDataChanged(e);
+            _currentMailType = e.Type;
+            _modulesNavigator.CurrentModule.MessagesDataChanged(e);
             ShowInfo(e.List.Count);
         }
         private void ucMailTree1_ShowMenu(object sender, MouseEventArgs e) {
@@ -268,7 +271,7 @@ namespace DevExpress.MailClient.Win {
             //ucMailTree1.RefreshTreeList();
         }
         private void frmMain_KeyDown(object sender, KeyEventArgs e) {
-            modulesNavigator.CurrentModule.SendKeyDown(e);   
+            _modulesNavigator.CurrentModule.SendKeyDown(e);   
         }
         protected object GetModuleData(NavBarGroupTagObject tag) {
             if(tag == null) return null;
@@ -282,7 +285,7 @@ namespace DevExpress.MailClient.Win {
             SetPageLayoutStyle();
         }
         private void ucContacts1_CheckedChanged(object sender, EventArgs e) {
-            modulesNavigator.CurrentModule.ButtonClick(string.Format("{0}", ((CheckEdit)sender).Tag));
+            _modulesNavigator.CurrentModule.ButtonClick(string.Format("{0}", ((CheckEdit)sender).Tag));
         }
 
         private void bvbiExit_ItemClick(object sender, BackstageViewItemEventArgs e) {
@@ -295,12 +298,12 @@ namespace DevExpress.MailClient.Win {
                 this.Refresh();
                 navBarControl1.ActiveGroup = nbgCalendar;
             }
-            modulesNavigator.CurrentModule.ButtonClick(string.Format("{0}", e.Item.Tag));
+            _modulesNavigator.CurrentModule.ButtonClick(string.Format("{0}", e.Item.Tag));
         }
 
         private void backstageViewControl1_ItemClick(object sender, BackstageViewItemEventArgs e) {
-            if(modulesNavigator.CurrentModule == null) return;
-            modulesNavigator.CurrentModule.ButtonClick(string.Format("{0}", e.Item.Tag));
+            if(_modulesNavigator.CurrentModule == null) return;
+            _modulesNavigator.CurrentModule.ButtonClick(string.Format("{0}", e.Item.Tag));
         }
         void SetPageLayoutStyle() {
             bbiNormal.Down = navBarControl1.OptionsNavPane.NavPaneState == NavPaneState.Expanded;
@@ -326,7 +329,7 @@ namespace DevExpress.MailClient.Win {
         }
         
         private void rgbiCurrentViewTasks_GalleryItemClick(object sender, GalleryItemClickEventArgs e) {
-            modulesNavigator.CurrentModule.ButtonClick(string.Format("{0}", e.Item.Tag));
+            _modulesNavigator.CurrentModule.ButtonClick(string.Format("{0}", e.Item.Tag));
         }
 
         private void ucCalendar1_VisibleChanged(object sender, EventArgs e) {
@@ -343,14 +346,14 @@ namespace DevExpress.MailClient.Win {
             bvtiPrint.Enabled = CurrentRichEdit != null || CurrentPrintableComponent != null;
             bvtiExport.Enabled = CurrentExportComponent != null;
         }
-        public IPrintable CurrentPrintableComponent { get { return modulesNavigator.CurrentModule.PrintableComponent; } }
-        public IPrintable CurrentExportComponent { get { return modulesNavigator.CurrentModule.ExportComponent; } }
-        public RichEditControl CurrentRichEdit { get { return modulesNavigator.CurrentModule.CurrentRichEdit; } }
-        public string CurrentModuleName { get { return modulesNavigator.CurrentModule.ModuleName; } }
+        public IPrintable CurrentPrintableComponent { get { return _modulesNavigator.CurrentModule.PrintableComponent; } }
+        public IPrintable CurrentExportComponent { get { return _modulesNavigator.CurrentModule.ExportComponent; } }
+        public RichEditControl CurrentRichEdit { get { return _modulesNavigator.CurrentModule.CurrentRichEdit; } }
+        public string CurrentModuleName { get { return _modulesNavigator.CurrentModule.ModuleName; } }
 
         private void ribbonControl1_ShowCustomizationMenu(object sender, RibbonCustomizationMenuEventArgs e) {
             e.CustomizationMenu.InitializeMenu();
-            if(e.Link == null || !AllowCustomizationMenuList.Contains(e.Link.Item))
+            if(e.Link == null || !_allowCustomizationMenuList.Contains(e.Link.Item))
                 e.CustomizationMenu.RemoveLink(e.CustomizationMenu.ItemLinks[0]);
         }
 

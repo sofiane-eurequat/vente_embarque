@@ -10,9 +10,9 @@ using DevExpress.XtraBars.Ribbon;
 
 namespace DevExpress.MailClient.Win.Forms
 {
-    public partial class frmEditAgentTerrain : RibbonForm
+    public partial class FrmEditAgentTerrain : RibbonForm
     {
-        public frmEditAgentTerrain()
+        public FrmEditAgentTerrain()
         {
             InitializeComponent();
         }

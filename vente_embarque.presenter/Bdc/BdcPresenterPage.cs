@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using vente_embarque.Core.Domain;
 using vente_embarque.Model;
 using vente_embarque.Model.Enum;
@@ -44,10 +41,10 @@ namespace vente_embarque.presenter.Bdc
                         LivraisonSurPlace = bdc.LivraisonSurPlace,
                         Montant = bdc.Montant,
                         Id = bdc.id,
+                        OrderLines = new List<ModelViewOrderLine>(),
+                        Products = new List<ModelViewProduct>(),
                     };
 
-                mvb.OrderLines=new List<ModelViewOrderLine>();
-                mvb.Products=new List<ModelViewProduct>();
                 foreach (var orderLine in bdc.OrderLines)
                 {
                     mvb.OrderLines.Add(new ModelViewOrderLine { Id = orderLine.id, ProductName = orderLine.Product.Name, Quantity = orderLine.Quantity, Product = orderLine.Product, IdOrder = bdc.id});

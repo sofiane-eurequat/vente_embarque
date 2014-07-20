@@ -208,14 +208,24 @@ namespace vente_embarque.DataLayer.Map
             return clientReturned;
         }
 
-        public static void MapAgentTerrain(AgentTerrain agentterrain, UnitOfWork uow)
+        public static XpoAgentTerrain MapAgentTerrain(AgentTerrain agentterrain, UnitOfWork uow)
         {
-            new XpoAgentTerrain(uow)
+            XpoAgentTerrain agentTerrainReturned;
+            if(agentterrain.newObject)
             {
-                Name = agentterrain.Name,
-                Oid = agentterrain.id,
-            };
-            return;
+                agentTerrainReturned = new XpoAgentTerrain(uow)
+                    {
+                        Oid = agentterrain.id
+                    };
+                
+            }
+            else
+            {
+                agentTerrainReturned = uow.GetObjectByKey<XpoAgentTerrain>(agentterrain.id);
+            }
+            agentTerrainReturned.Name = agentterrain.Name;
+            agentTerrainReturned.Secteur = MapSector(agentterrain.Secteur, uow);
+            return agentTerrainReturned;
         }
 
         private static XpoWilaya MapWilaya(Wilaya wilaya, UnitOfWork uow)

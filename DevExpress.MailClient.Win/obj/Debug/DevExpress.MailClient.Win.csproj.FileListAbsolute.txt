@@ -131,3 +131,4 @@ C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Forms.frmEditAgentTerrain.resources
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Forms.frmEditSector.resources
 C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Modules.Sector.resources
+C:\Users\Sofyane\Documents\Visual Studio 2012\Projects\vente_embarque\DevExpress.MailClient.Win\obj\Debug\DevExpress.MailClient.Win.Modules.Product.resources

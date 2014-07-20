@@ -54,7 +54,7 @@ namespace DevExpress.MailClient.Win.Controls {
             }
         }
         public void InitPrintingSystem() {
-            frmMain frm = BackstageView.Ribbon.FindForm() as frmMain;
+            FrmMain frm = BackstageView.Ribbon.FindForm() as FrmMain;
             BarManager manager = frm == null || frm.Ribbon == null? null: frm.Ribbon.Manager;
             ((GalleryDropDown)this.ddbOrientation.DropDownControl).Manager = manager;
             ((GalleryDropDown)this.ddbMargins.DropDownControl).Manager = manager;
@@ -79,7 +79,7 @@ namespace DevExpress.MailClient.Win.Controls {
             UpdatePagesInfo();
         }
         void CreateLink(PrintingSystem ps) {
-            frmMain frm = BackstageView.Ribbon.FindForm() as frmMain;
+            FrmMain frm = BackstageView.Ribbon.FindForm() as FrmMain;
             bool showMemo = memoStyle.Checked && frm.CurrentRichEdit != null;
             if(showMemo) {
                 Link link = new Link(ps);

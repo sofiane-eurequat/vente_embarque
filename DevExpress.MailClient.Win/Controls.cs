@@ -392,10 +392,10 @@ namespace DevExpress.MailClient.Win {
     }
     public class BaseModule : BaseControl {
         protected string partName = string.Empty;
-        internal frmMain OwnerForm { get { return this.FindForm() as frmMain; } }
+        internal FrmMain OwnerForm { get { return this.FindForm() as FrmMain; } }
         public BaseModule() { }
         internal virtual void ShowModule(bool firstShow) {
-            frmMain owner = OwnerForm;
+            FrmMain owner = OwnerForm;
             if (owner == null) return;
             owner.SaveAsMenuItem.Enabled = SaveAsEnable;
             owner.SaveAttachmentMenuItem.Enabled = SaveAttachmentEnable;

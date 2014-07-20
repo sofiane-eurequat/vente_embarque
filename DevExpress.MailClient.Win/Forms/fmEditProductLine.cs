@@ -17,7 +17,7 @@ namespace DevExpress.MailClient.Win.Forms
         public IEnumerable<Stock> Stocks { get; set; }
         public IEnumerable<Product> Products { get; set; }
         private readonly bool _newProductLine;
-        private bool _isProductLineModified;
+        public bool IsProductLineModified;
         public ModelViewProductLine ProductLineOut;
 
         public FrmEditProductLine(ModelViewProductLine productLine, bool newProductLine)
@@ -70,7 +70,7 @@ namespace DevExpress.MailClient.Win.Forms
         }
         private void bbiSauvegarder_ItemClick(object sender, ItemClickEventArgs e)
         {
-            _isProductLineModified = false;
+            IsProductLineModified = false;
             DialogResult=DialogResult.OK;
             
             if (_newProductLine)
@@ -94,7 +94,7 @@ namespace DevExpress.MailClient.Win.Forms
         }
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
         {
-            _isProductLineModified = false;
+            IsProductLineModified = false;
             DialogResult = DialogResult.OK;
 
             if (_newProductLine)
@@ -133,17 +133,17 @@ namespace DevExpress.MailClient.Win.Forms
         {
             //comboBoxStock.ValueMember = "Name";
             //comboBoxProduit.DataSource = Stocks.First(s => s.Name == (string) comboBoxStock.SelectedValue).GetProducts().ToList();
-            _isProductLineModified = true;
+            IsProductLineModified = true;
         }
 
         private void comboBoxProduit_SelectedIndexChanged(object sender, EventArgs e)
         {
-            _isProductLineModified = true;
+            IsProductLineModified = true;
         }
 
         private void textEditQuantité_EditValueChanged(object sender, EventArgs e)
         {
-            _isProductLineModified = true;
+            IsProductLineModified = true;
         }
     }
 }

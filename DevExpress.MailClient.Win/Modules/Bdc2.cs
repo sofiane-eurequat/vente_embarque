@@ -92,7 +92,7 @@ namespace DevExpress.MailClient.Win.Modules
         {
             if (gridViewOrderLine == null) return;
             orderLine = (ModelViewOrderLine)gridViewOrderLine.GetFocusedRow();
-            EditOrderLine(orderLine, false, null);
+            EditOrderLine(orderLine, false);
         }
 
         private void DeleteOrderLine()
@@ -128,7 +128,7 @@ namespace DevExpress.MailClient.Win.Modules
             Cursor.Current = Cursors.Default;
         }
 
-        private void EditOrderLine(ModelViewOrderLine orderLine, bool newBdc, string caption)
+        private void EditOrderLine(ModelViewOrderLine orderLine, bool newBdc)
         {
             Cursor.Current = Cursors.WaitCursor;
             var form = new FrmEditOrderLine(Stocks,orderLine, newBdc);

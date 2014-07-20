@@ -1,5 +1,5 @@
 ﻿namespace DevExpress.MailClient.Win {
-    partial class frmMain {
+    partial class FrmMain {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -22,9 +22,10 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent() {
+        private void InitializeComponent()
+        {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem1 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem2 = new DevExpress.XtraBars.Ribbon.GalleryItem();
@@ -161,18 +162,19 @@
             this.bbiModifyBdc = new DevExpress.XtraBars.BarButtonItem();
             this.bbiDeleteBdc = new DevExpress.XtraBars.BarButtonItem();
             this.bbiRefreshBdc = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiClose = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiCloseBdc = new DevExpress.XtraBars.BarButtonItem();
             this.bbiNewProductLine = new DevExpress.XtraBars.BarButtonItem();
             this.bbiModifyProductLine = new DevExpress.XtraBars.BarButtonItem();
             this.bbiDeleteProductLine = new DevExpress.XtraBars.BarButtonItem();
             this.bbiModifyOrderLine = new DevExpress.XtraBars.BarButtonItem();
             this.bbiDeleteOrderLine = new DevExpress.XtraBars.BarButtonItem();
             this.bbiModifyStock = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiCloseProduct = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiRefreshProduct = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonMiniToolbar1 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(this.components);
             this.ribbonMiniToolbar2 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(this.components);
             this.rpStock = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rpgStock = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rpgProduit = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpgTags = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpgLayoutMail = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpContacts = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -181,9 +183,9 @@
             this.rpgLayoutContacts = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpBDC = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rpgBdc = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpgOrderLine = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpgRefresh = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpgClose = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpCalendar = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.appointmentRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.AppointmentRibbonPageGroup();
             this.navigatorRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.NavigatorRibbonPageGroup();
@@ -193,6 +195,10 @@
             this.rpSector = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rpgGestionSecteur = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpgGestionLivreur = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpProduct = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.rpgProduit = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpgRefreshProduct = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpgCloseProduct = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemSpinEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.galleryControlGallery1 = new DevExpress.XtraBars.Ribbon.Gallery.GalleryControlGallery();
@@ -211,6 +217,8 @@
             this.navBarGroupControlContainer2 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
             this.ucCalendar1 = new DevExpress.MailClient.Win.Controls.ucCalendar();
             this.navBarControl1 = new DevExpress.XtraNavBar.NavBarControl();
+            this.nbgProduct = new DevExpress.XtraNavBar.NavBarGroup();
+            this.navBarGroupControlContainer1 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
             this.navBarGroupControlContainer4 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
             this.navBarGroupControlContainer5 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
             this.nbgSecteur = new DevExpress.XtraNavBar.NavBarGroup();
@@ -218,7 +226,8 @@
             this.navBarItem2 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem3 = new DevExpress.XtraNavBar.NavBarItem();
             this.pcMain = new DevExpress.XtraEditors.PanelControl();
-            this.rpProduct = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.backstageViewControl1.SuspendLayout();
             this.backstageViewClientControl1.SuspendLayout();
@@ -353,15 +362,17 @@
             this.bbiModifyBdc,
             this.bbiDeleteBdc,
             this.bbiRefreshBdc,
-            this.bbiClose,
+            this.bbiCloseBdc,
             this.bbiNewProductLine,
             this.bbiModifyProductLine,
             this.bbiDeleteProductLine,
             this.bbiModifyOrderLine,
             this.bbiDeleteOrderLine,
-            this.bbiModifyStock});
+            this.bbiModifyStock,
+            this.bbiCloseProduct,
+            this.bbiRefreshProduct});
             resources.ApplyResources(this.ribbonControl1, "ribbonControl1");
-            this.ribbonControl1.MaxItemId = 9;
+            this.ribbonControl1.MaxItemId = 12;
             this.ribbonControl1.MiniToolbars.Add(this.ribbonMiniToolbar1);
             this.ribbonControl1.MiniToolbars.Add(this.ribbonMiniToolbar2);
             this.ribbonControl1.Name = "ribbonControl1";
@@ -1356,13 +1367,13 @@
             this.bbiRefreshBdc.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiRefreshBdc.LargeGlyph")));
             this.bbiRefreshBdc.Name = "bbiRefreshBdc";
             // 
-            // bbiClose
+            // bbiCloseBdc
             // 
-            resources.ApplyResources(this.bbiClose, "bbiClose");
-            this.bbiClose.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiClose.Glyph")));
-            this.bbiClose.Id = 2;
-            this.bbiClose.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiClose.LargeGlyph")));
-            this.bbiClose.Name = "bbiClose";
+            resources.ApplyResources(this.bbiCloseBdc, "bbiCloseBdc");
+            this.bbiCloseBdc.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiCloseBdc.Glyph")));
+            this.bbiCloseBdc.Id = 2;
+            this.bbiCloseBdc.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiCloseBdc.LargeGlyph")));
+            this.bbiCloseBdc.Name = "bbiCloseBdc";
             // 
             // bbiNewProductLine
             // 
@@ -1406,11 +1417,26 @@
             this.bbiModifyStock.Id = 8;
             this.bbiModifyStock.Name = "bbiModifyStock";
             // 
+            // bbiCloseProduct
+            // 
+            resources.ApplyResources(this.bbiCloseProduct, "bbiCloseProduct");
+            this.bbiCloseProduct.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiCloseProduct.Glyph")));
+            this.bbiCloseProduct.Id = 10;
+            this.bbiCloseProduct.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiCloseProduct.LargeGlyph")));
+            this.bbiCloseProduct.Name = "bbiCloseProduct";
+            // 
+            // bbiRefreshProduct
+            // 
+            resources.ApplyResources(this.bbiRefreshProduct, "bbiRefreshProduct");
+            this.bbiRefreshProduct.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiRefreshProduct.Glyph")));
+            this.bbiRefreshProduct.Id = 11;
+            this.bbiRefreshProduct.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiRefreshProduct.LargeGlyph")));
+            this.bbiRefreshProduct.Name = "bbiRefreshProduct";
+            // 
             // rpStock
             // 
             this.rpStock.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.rpgStock,
-            this.rpgProduit,
             this.rpgTags,
             this.rpgLayoutMail});
             this.rpStock.Name = "rpStock";
@@ -1429,16 +1455,6 @@
             this.rpgStock.Name = "rpgStock";
             this.rpgStock.ShowCaptionButton = false;
             resources.ApplyResources(this.rpgStock, "rpgStock");
-            // 
-            // rpgProduit
-            // 
-            this.rpgProduit.AllowTextClipping = false;
-            this.rpgProduit.ItemLinks.Add(this.bbiNewProduct);
-            this.rpgProduit.ItemLinks.Add(this.bbiModifyProduct);
-            this.rpgProduit.ItemLinks.Add(this.bbiDeleteProduct);
-            this.rpgProduit.Name = "rpgProduit";
-            this.rpgProduit.ShowCaptionButton = false;
-            resources.ApplyResources(this.rpgProduit, "rpgProduit");
             // 
             // rpgTags
             // 
@@ -1494,9 +1510,9 @@
             // 
             this.rpBDC.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.rpgBdc,
-            this.ribbonPageGroup3,
-            this.ribbonPageGroup1,
-            this.ribbonPageGroup2});
+            this.rpgOrderLine,
+            this.rpgRefresh,
+            this.rpgClose});
             this.rpBDC.Name = "rpBDC";
             this.rpBDC.Tag = "BDC";
             resources.ApplyResources(this.rpBDC, "rpBDC");
@@ -1511,30 +1527,30 @@
             this.rpgBdc.ShowCaptionButton = false;
             resources.ApplyResources(this.rpgBdc, "rpgBdc");
             // 
-            // ribbonPageGroup3
+            // rpgOrderLine
             // 
-            this.ribbonPageGroup3.AllowTextClipping = false;
-            this.ribbonPageGroup3.ItemLinks.Add(this.bbiModifyOrderLine);
-            this.ribbonPageGroup3.ItemLinks.Add(this.bbiDeleteOrderLine);
-            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            this.ribbonPageGroup3.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonPageGroup3, "ribbonPageGroup3");
+            this.rpgOrderLine.AllowTextClipping = false;
+            this.rpgOrderLine.ItemLinks.Add(this.bbiModifyOrderLine);
+            this.rpgOrderLine.ItemLinks.Add(this.bbiDeleteOrderLine);
+            this.rpgOrderLine.Name = "rpgOrderLine";
+            this.rpgOrderLine.ShowCaptionButton = false;
+            resources.ApplyResources(this.rpgOrderLine, "rpgOrderLine");
             // 
-            // ribbonPageGroup1
+            // rpgRefresh
             // 
-            this.ribbonPageGroup1.AllowTextClipping = false;
-            this.ribbonPageGroup1.ItemLinks.Add(this.bbiRefreshBdc);
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonPageGroup1, "ribbonPageGroup1");
+            this.rpgRefresh.AllowTextClipping = false;
+            this.rpgRefresh.ItemLinks.Add(this.bbiRefreshBdc);
+            this.rpgRefresh.Name = "rpgRefresh";
+            this.rpgRefresh.ShowCaptionButton = false;
+            resources.ApplyResources(this.rpgRefresh, "rpgRefresh");
             // 
-            // ribbonPageGroup2
+            // rpgClose
             // 
-            this.ribbonPageGroup2.AllowTextClipping = false;
-            this.ribbonPageGroup2.ItemLinks.Add(this.bbiClose);
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonPageGroup2, "ribbonPageGroup2");
+            this.rpgClose.AllowTextClipping = false;
+            this.rpgClose.ItemLinks.Add(this.bbiCloseBdc);
+            this.rpgClose.Name = "rpgClose";
+            this.rpgClose.ShowCaptionButton = false;
+            resources.ApplyResources(this.rpgClose, "rpgClose");
             // 
             // rpCalendar
             // 
@@ -1616,6 +1632,42 @@
             this.rpgGestionLivreur.Name = "rpgGestionLivreur";
             this.rpgGestionLivreur.ShowCaptionButton = false;
             resources.ApplyResources(this.rpgGestionLivreur, "rpgGestionLivreur");
+            // 
+            // rpProduct
+            // 
+            this.rpProduct.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.rpgProduit,
+            this.rpgRefreshProduct,
+            this.rpgCloseProduct});
+            this.rpProduct.Name = "rpProduct";
+            this.rpProduct.Tag = "Produit";
+            resources.ApplyResources(this.rpProduct, "rpProduct");
+            // 
+            // rpgProduit
+            // 
+            this.rpgProduit.AllowTextClipping = false;
+            this.rpgProduit.ItemLinks.Add(this.bbiNewProduct);
+            this.rpgProduit.ItemLinks.Add(this.bbiModifyProduct);
+            this.rpgProduit.ItemLinks.Add(this.bbiDeleteProduct);
+            this.rpgProduit.Name = "rpgProduit";
+            this.rpgProduit.ShowCaptionButton = false;
+            resources.ApplyResources(this.rpgProduit, "rpgProduit");
+            // 
+            // rpgRefreshProduct
+            // 
+            this.rpgRefreshProduct.AllowTextClipping = false;
+            this.rpgRefreshProduct.ItemLinks.Add(this.bbiRefreshProduct);
+            this.rpgRefreshProduct.Name = "rpgRefreshProduct";
+            this.rpgRefreshProduct.ShowCaptionButton = false;
+            resources.ApplyResources(this.rpgRefreshProduct, "rpgRefreshProduct");
+            // 
+            // rpgCloseProduct
+            // 
+            this.rpgCloseProduct.AllowTextClipping = false;
+            this.rpgCloseProduct.ItemLinks.Add(this.bbiCloseProduct);
+            this.rpgCloseProduct.Name = "rpgCloseProduct";
+            this.rpgCloseProduct.ShowCaptionButton = false;
+            resources.ApplyResources(this.rpgCloseProduct, "rpgCloseProduct");
             // 
             // repositoryItemSpinEdit1
             // 
@@ -1812,13 +1864,15 @@
             this.navBarControl1.Controls.Add(this.navBarGroupControlContainer3);
             this.navBarControl1.Controls.Add(this.navBarGroupControlContainer4);
             this.navBarControl1.Controls.Add(this.navBarGroupControlContainer5);
+            this.navBarControl1.Controls.Add(this.navBarGroupControlContainer1);
             resources.ApplyResources(this.navBarControl1, "navBarControl1");
             this.navBarControl1.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
             this.nbgMail,
             this.nbgContacts,
             this.nbgCalendar,
             this.nbgSecteur,
-            this.nbgBdc});
+            this.nbgBdc,
+            this.nbgProduct});
             this.navBarControl1.Items.AddRange(new DevExpress.XtraNavBar.NavBarItem[] {
             this.navBarItem1,
             this.navBarItem2,
@@ -1833,6 +1887,21 @@
             this.navBarControl1.View = new DevExpress.XtraNavBar.ViewInfo.SkinNavigationPaneViewInfoRegistrator();
             this.navBarControl1.NavPaneStateChanged += new System.EventHandler(this.navBarControl1_NavPaneStateChanged);
             this.navBarControl1.ActiveGroupChanged += new DevExpress.XtraNavBar.NavBarGroupEventHandler(this.navBarControl1_ActiveGroupChanged);
+            // 
+            // nbgProduct
+            // 
+            resources.ApplyResources(this.nbgProduct, "nbgProduct");
+            this.nbgProduct.ControlContainer = this.navBarGroupControlContainer1;
+            this.nbgProduct.DragDropFlags = DevExpress.XtraNavBar.NavBarDragDrop.None;
+            this.nbgProduct.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;
+            this.nbgProduct.GroupClientHeight = 80;
+            this.nbgProduct.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
+            this.nbgProduct.Name = "nbgProduct";
+            // 
+            // navBarGroupControlContainer1
+            // 
+            this.navBarGroupControlContainer1.Name = "navBarGroupControlContainer1";
+            resources.ApplyResources(this.navBarGroupControlContainer1, "navBarGroupControlContainer1");
             // 
             // navBarGroupControlContainer4
             // 
@@ -1882,12 +1951,23 @@
             resources.ApplyResources(this.pcMain, "pcMain");
             this.pcMain.Name = "pcMain";
             // 
-            // rpProduct
+            // ribbonPageGroup4
             // 
-            this.rpProduct.Name = "rpProduct";
-            resources.ApplyResources(this.rpProduct, "rpProduct");
+            this.ribbonPageGroup4.AllowTextClipping = false;
+            this.ribbonPageGroup4.ItemLinks.Add(this.bbiRefreshBdc);
+            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
+            this.ribbonPageGroup4.ShowCaptionButton = false;
+            resources.ApplyResources(this.ribbonPageGroup4, "ribbonPageGroup4");
             // 
-            // frmMain
+            // ribbonPageGroup5
+            // 
+            this.ribbonPageGroup5.AllowTextClipping = false;
+            this.ribbonPageGroup5.ItemLinks.Add(this.bbiCloseBdc);
+            this.ribbonPageGroup5.Name = "ribbonPageGroup5";
+            this.ribbonPageGroup5.ShowCaptionButton = false;
+            resources.ApplyResources(this.ribbonPageGroup5, "ribbonPageGroup5");
+            // 
+            // FrmMain
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1896,7 +1976,7 @@
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
             this.KeyPreview = true;
-            this.Name = "frmMain";
+            this.Name = "FrmMain";
             this.Ribbon = this.ribbonControl1;
             this.StatusBar = this.ribbonStatusBar1;
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMain_KeyDown);
@@ -2093,18 +2173,26 @@
         private XtraBars.BarButtonItem bbiModifyBdc;
         private XtraBars.BarButtonItem bbiDeleteBdc;
         private XtraBars.BarButtonItem bbiRefreshBdc;
-        private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
-        private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
-        private XtraBars.BarButtonItem bbiClose;
+        private XtraBars.Ribbon.RibbonPageGroup rpgRefresh;
+        private XtraBars.Ribbon.RibbonPageGroup rpgClose;
+        private XtraBars.BarButtonItem bbiCloseBdc;
         private XtraBars.Ribbon.RibbonPageGroup rpgProduit;
         private XtraBars.BarButtonItem bbiNewProductLine;
         private XtraBars.BarButtonItem bbiModifyProductLine;
         private XtraBars.BarButtonItem bbiDeleteProductLine;
         private XtraBars.BarButtonItem bbiModifyOrderLine;
         private XtraBars.BarButtonItem bbiDeleteOrderLine;
-        private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
+        private XtraBars.Ribbon.RibbonPageGroup rpgOrderLine;
         private XtraBars.BarButtonItem bbiModifyStock;
         private XtraBars.Ribbon.RibbonPage rpProduct;
+        private XtraNavBar.NavBarGroup nbgProduct;
+        private XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer1;
+        private XtraBars.BarButtonItem bbiCloseProduct;
+        private XtraBars.Ribbon.RibbonPageGroup rpgRefreshProduct;
+        private XtraBars.Ribbon.RibbonPageGroup rpgCloseProduct;
+        private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
+        private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
+        private XtraBars.BarButtonItem bbiRefreshProduct;
     }
 }
 

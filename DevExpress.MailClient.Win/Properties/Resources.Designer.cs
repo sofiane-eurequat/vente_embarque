@@ -3022,6 +3022,15 @@ namespace DevExpress.MailClient.Win.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Insertion réussi.
+        /// </summary>
+        internal static string succesAdd {
+            get {
+                return ResourceManager.GetString("succesAdd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Supprimer un produit.
         /// </summary>
         internal static string Supprimer_produit {

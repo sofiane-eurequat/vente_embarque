@@ -1,6 +1,6 @@
 ﻿namespace DevExpress.MailClient.Win.Forms
 {
-    partial class frmEditSector
+    partial class FrmEditSector
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEditSector));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEditSector));
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiNouveau = new DevExpress.XtraBars.BarButtonItem();
             this.bbiSauvegarder = new DevExpress.XtraBars.BarButtonItem();
@@ -46,7 +46,6 @@
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
@@ -233,7 +232,6 @@
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1,
             this.ribbonPageGroup2,
-            this.ribbonPageGroup3,
             this.ribbonPageGroup4,
             this.ribbonPageGroup7});
             this.ribbonPage1.Name = "ribbonPage1";
@@ -255,15 +253,6 @@
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.ShowCaptionButton = false;
             resources.ApplyResources(this.ribbonPageGroup2, "ribbonPageGroup2");
-            // 
-            // ribbonPageGroup3
-            // 
-            this.ribbonPageGroup3.ItemLinks.Add(this.bbiSupprimer);
-            this.ribbonPageGroup3.ItemLinks.Add(this.bbiValider);
-            this.ribbonPageGroup3.ItemLinks.Add(this.bbiAnnuler);
-            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            this.ribbonPageGroup3.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonPageGroup3, "ribbonPageGroup3");
             // 
             // ribbonPageGroup4
             // 
@@ -530,7 +519,7 @@
             this.applicationMenu1.Name = "applicationMenu1";
             this.applicationMenu1.Ribbon = this.ribbon;
             // 
-            // frmGestionSecteur
+            // FrmEditSector
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -543,7 +532,7 @@
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.KeyPreview = true;
-            this.Name = "frmGestionSecteur";
+            this.Name = "FrmEditSector";
             this.Ribbon = this.ribbon;
             this.StatusBar = this.ribbonStatusBar;
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
@@ -574,7 +563,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
         private XtraBars.BarButtonItem bbiNouveau;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
-        private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private XtraBars.BarButtonItem bbiSauvegarder;
         private XtraBars.BarButtonItem bbiSauvegarderFermer;

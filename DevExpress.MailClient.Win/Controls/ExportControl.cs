@@ -18,7 +18,7 @@ namespace DevExpress.MailClient.Win.Controls {
         List<ImageFormat> formats = new List<ImageFormat> { ImageFormat.Bmp, ImageFormat.Gif, ImageFormat.Jpeg, ImageFormat.Png, ImageFormat.Tiff, ImageFormat.Emf, ImageFormat.Wmf, ImageFormat.Png };
         private void galleryControlGallery1_ItemClick(object sender, DevExpress.XtraBars.Ribbon.GalleryItemClickEventArgs e) {
             string index = string.Format("{0}", e.Item.Tag);
-            frmMain frm = BackstageView.Ribbon.FindForm() as frmMain;
+            FrmMain frm = BackstageView.Ribbon.FindForm() as FrmMain;
             if(frm == null) return;
             if(index.Contains("PDF"))
                 saveFileDialog1.Filter = Properties.Resources.PDFFilter;

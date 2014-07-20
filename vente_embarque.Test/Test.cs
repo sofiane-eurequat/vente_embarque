@@ -361,7 +361,7 @@ namespace vente_embarque.Test
         [Test]
         public void CanCreateAgentTerrain()
         {
-            const string agentterrain1 = "agentterrain1";
+            const string agentterrain1 = "agentterrain2";
             var agentterrain = FactoryAgentTerrain.CreateAgentTerrain(agentterrain1);
             Assert.AreEqual(agentterrain.Name, agentterrain1);
             new RepositoryAgentTerrain().Save(agentterrain);

@@ -116,5 +116,20 @@ namespace vente_embarque.DataLayer
                 uow.CommitChanges();
             }
         }
+
+        public void Remove(Guid id)
+        {
+            var config = new AppSettingsReader();
+            using (
+                var uow = new UnitOfWork
+                {
+                    ConnectionString = ((string)config.GetValue("connect", typeof(string)))
+                })
+            {
+                var product = uow.GetObjectByKey<XpoProduct>(id);
+                product.Delete();
+                uow.CommitChanges();
+            }
+        }
     }
 }

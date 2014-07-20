@@ -12,6 +12,6 @@ namespace vente_embarque.presenter.Secteur
         IEnumerable<Wilaya> Wilayas { get; set; }
         IEnumerable<AgentTerrain> AgentTerrains { get; set; }
         IEnumerable<Client> Clients { get; set; } 
-        Sector Secteurs { get; set; }
+        IEnumerable<Sector> Secteurs { get; set; }
     }
 }

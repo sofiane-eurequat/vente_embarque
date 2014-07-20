@@ -26,7 +26,7 @@ namespace DevExpress.MailClient.Win {
             SplashScreenManager.ShowForm(null, typeof(ssMain), true, true, false, 1000);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMain());
+            Application.Run(new FrmMain());
         }
     }
 }

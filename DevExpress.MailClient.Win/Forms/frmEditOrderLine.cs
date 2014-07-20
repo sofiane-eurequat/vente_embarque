@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Globalization;
 using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
@@ -32,14 +28,7 @@ namespace DevExpress.MailClient.Win.Forms
             Stocks = stocks;
             OrderLineOut = orderLine;
             _newOrderLine = newOrderLine;
-            if (_newOrderLine) 
-            {
-                _isOrderLineModified = true;
-            }
-            else
-            {
-                _isOrderLineModified = false;
-            }
+            _isOrderLineModified = _newOrderLine;
 
             comboBoxStock.DataSource = Stocks.OrderBy(s => s.Name).ToList();
             comboBoxStock.DisplayMember = "Name";

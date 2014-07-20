@@ -16,7 +16,7 @@ namespace DevExpress.MailClient.Win.Controls {
         }
 
         void HelpControl_Load(object sender, EventArgs e) {
-            aboutPanel = new AboutForm12(new DevExpress.Utils.About.ProductInfo(string.Empty, typeof(frmMain), DevExpress.Utils.About.ProductKind.DXperiencePro, DevExpress.Utils.About.ProductInfoStage.Registered));
+            aboutPanel = new AboutForm12(new DevExpress.Utils.About.ProductInfo(string.Empty, typeof(FrmMain), DevExpress.Utils.About.ProductKind.DXperiencePro, DevExpress.Utils.About.ProductInfoStage.Registered));
             aboutPanel.TopLevel = false;
             aboutPanel.Parent = splitContainer1.Panel2;
             ResizeAbout();

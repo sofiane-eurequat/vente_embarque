@@ -1211,4 +1211,7 @@ Left:	19 mm	Right:	19 mm</value>
 	<data name="Quantité" xml:space="preserve">
     <value>Quantité</value>
   </data>
+	<data name="succesAdd" xml:space="preserve">
+    <value>Insertion réussi</value>
+  </data>
 </root>
