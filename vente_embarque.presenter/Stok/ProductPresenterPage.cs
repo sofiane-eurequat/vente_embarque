@@ -29,7 +29,15 @@ namespace vente_embarque.presenter.Stok
             {
                 var mvp = new ModelViewProduct
                     {
+                        Id = p.id,
                         Nom = p.Name,
+                        QuantiteMin = p.QuantiteMin,
+                        Fournisseur = p.Fournisseur,
+                        Categorie = p.Category.Name,
+                        Marque = p.Marque.Name,
+                        DateEntree = p.DateEntree,
+                        TypeGestion = p.TypeGestion,
+                        
                     };
             tempProduct.Add(mvp);
             }

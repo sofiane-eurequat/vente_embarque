@@ -33,10 +33,10 @@ namespace DevExpress.MailClient.Win.Modules
                 case TagResources.NewProduct:
                     CreateProduct();
                     break;
-                case TagResources.ModifyBdc:
+                case TagResources.ModifyProduct:
                     ModifyProduct(Produit);
                     break;
-                case TagResources.DeleteBdc:
+                case TagResources.DeleteProduct:
                     DeleteProduct();
                     break;
                 case TagResources.Refresh:
@@ -100,6 +100,8 @@ namespace DevExpress.MailClient.Win.Modules
             _productPresenter.Display();
 
             gridControlProduct.DataSource = Produits;
+            gridViewProduct.Columns["Id"].Visible = false;
+            gridViewProduct.Columns["Photo"].Visible = false;
         }
     }
 }

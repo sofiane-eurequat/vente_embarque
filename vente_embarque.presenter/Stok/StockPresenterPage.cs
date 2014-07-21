@@ -34,10 +34,10 @@ namespace vente_embarque.presenter.Stok
                         Commune = stoc.Commune.Name,
                         Id = stoc.id,
                         Adresse = stoc.Adress,
-                        CodeWilaya = stoc.Wilaya.Code
+                        CodeWilaya = stoc.Wilaya.Code,
+                        ProductLine = new List<ModelViewProductLine>(),
+                        Products = new List<ModelViewProduct>()
                     };
-                mvs.ProductLine=new List<ModelViewProductLine>();
-                mvs.Products=new List<ModelViewProduct>();
                 foreach (var productLine in stoc.ProductLines)
                 {
                     mvs.ProductLine.Add(new ModelViewProductLine { Id = productLine.id,Quantity = productLine.Quantity,Name = productLine.Product.Name,Product =productLine.Product, Stock = stoc});
@@ -101,6 +101,7 @@ namespace vente_embarque.presenter.Stok
     public class ModelViewProduct
     {
         public Guid Id { get; set; }
+        public string Nom { get; set; }
         public int QuantiteMin { get; set; }
         public Image Photo { get; set; }
         public string Fournisseur { get; set; }
@@ -108,7 +109,7 @@ namespace vente_embarque.presenter.Stok
         public string Marque { get; set; }
         public string Remarque { get; set; }
         public string Reference { get; set; }
-        public string Nom { get; set; }
+        
         public DateTime DateEntree { get; set; }
         public GestionProduit TypeGestion { get; set; }
     }

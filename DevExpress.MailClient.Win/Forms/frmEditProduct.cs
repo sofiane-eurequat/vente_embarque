@@ -33,8 +33,10 @@ namespace DevExpress.MailClient.Win.Forms
 
             comboBoxCategory.DataSource = Categories;
             comboBoxCategory.DisplayMember = "Name";
+            comboBoxCategory.ValueMember = "Name";
             comboBoxMarque.DataSource = Marques;
             comboBoxMarque.DisplayMember = "Name";
+            comboBoxMarque.ValueMember = "Name";
             comboBoxTypeGestion.DataSource = Enum.GetValues(typeof (GestionProduit));
 
             if (!newProduct)
@@ -78,10 +80,20 @@ namespace DevExpress.MailClient.Win.Forms
 
         private void bbiSaveClsoe_ItemClick(object sender, ItemClickEventArgs e)
         {
-            _editProductPresenter.Write(textEditNameProduct.Text, comboBoxCategory.SelectedItem as Category,
+            if (_newProduct)
+            {
+                _editProductPresenter.Write(textEditNameProduct.Text, comboBoxCategory.SelectedItem as Category,
                                         comboBoxMarque.SelectedItem as Marque, textEditFournisseur.Text,
                                         Convert.ToInt32(textEditQuantité.Text), dateEditEntree.DateTime,
-                                        (GestionProduit) comboBoxTypeGestion.SelectedItem);
+                                        (GestionProduit)comboBoxTypeGestion.SelectedItem);
+            }
+            else
+            {
+                _editProductPresenter.Write(IdProduct, textEditNameProduct.Text, comboBoxCategory.SelectedItem as Category,
+                                        comboBoxMarque.SelectedItem as Marque, textEditFournisseur.Text,
+                                        Convert.ToInt32(textEditQuantité.Text), dateEditEntree.DateTime,
+                                        (GestionProduit)comboBoxTypeGestion.SelectedItem);
+            }
             Close();
         }
 

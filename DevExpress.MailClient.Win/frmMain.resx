@@ -5296,12 +5296,6 @@
   <data name="&gt;&gt;nbgCalendar.Type" xml:space="preserve">
     <value>DevExpress.XtraNavBar.NavBarGroup, DevExpress.XtraNavBar.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;nbgProduct.Name" xml:space="preserve">
-    <value>nbgProduct</value>
-  </data>
-  <data name="&gt;&gt;nbgProduct.Type" xml:space="preserve">
-    <value>DevExpress.XtraNavBar.NavBarGroup, DevExpress.XtraNavBar.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="&gt;&gt;nbgSecteur.Name" xml:space="preserve">
     <value>nbgSecteur</value>
   </data>
@@ -5312,6 +5306,12 @@
     <value>nbgBdc</value>
   </data>
   <data name="&gt;&gt;nbgBdc.Type" xml:space="preserve">
+    <value>DevExpress.XtraNavBar.NavBarGroup, DevExpress.XtraNavBar.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;nbgProduct.Name" xml:space="preserve">
+    <value>nbgProduct</value>
+  </data>
+  <data name="&gt;&gt;nbgProduct.Type" xml:space="preserve">
     <value>DevExpress.XtraNavBar.NavBarGroup, DevExpress.XtraNavBar.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;navBarItem2.Name" xml:space="preserve">

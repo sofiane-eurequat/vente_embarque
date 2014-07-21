@@ -67,6 +67,8 @@ namespace DevExpress.MailClient.Win {
             InitBarButtonItem(bbiDeleteProductLine, TagResources.DeleteProductLine, Properties.Resources.DeleteItemDescription);
             InitBarButtonItem(bbiRefreshBdc,TagResources.Refresh);
             InitBarButtonItem(bbiCloseBdc,TagResources.Close);
+            InitBarButtonItem(bbiRefreshProduct, TagResources.Refresh);
+            InitBarButtonItem(bbiCloseProduct, TagResources.Close);
             InitBarButtonItem(bbiUnreadRead, TagResources.UnreadRead, Properties.Resources.UnreadReadDescription);
             InitBarButtonItem(bbiCloseSearch, TagResources.CloseSearch, Properties.Resources.CloseSearchDescription);
             InitBarButtonItem(bbiSubjectColumn, TagResources.SubjectColumn);
