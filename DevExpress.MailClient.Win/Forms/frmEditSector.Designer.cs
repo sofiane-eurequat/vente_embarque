@@ -39,10 +39,8 @@
             this.bbiAnnuler = new DevExpress.XtraBars.BarButtonItem();
             this.bbiEffacer = new DevExpress.XtraBars.BarButtonItem();
             this.bbiRafrichir = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.bbiFermer = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -53,7 +51,7 @@
             this.comboBoxClients = new System.Windows.Forms.ComboBox();
             this.comboBoxCommune = new System.Windows.Forms.ComboBox();
             this.comboBoxWilaya = new System.Windows.Forms.ComboBox();
-            this.textEditSecteur = new DevExpress.XtraEditors.TextEdit();
+            this.textEditNameSector = new DevExpress.XtraEditors.TextEdit();
             this.labelCommune = new DevExpress.XtraEditors.LabelControl();
             this.labelWilaya = new DevExpress.XtraEditors.LabelControl();
             this.labelClient = new DevExpress.XtraEditors.LabelControl();
@@ -87,7 +85,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditSecteur.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditNameSector.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GCAgentTerrain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.modelViewAgentTerrainBindingSource)).BeginInit();
@@ -114,10 +112,8 @@
             this.bbiAnnuler,
             this.bbiEffacer,
             this.bbiRafrichir,
-            this.barButtonItem10,
             this.bbiFermer,
-            this.barButtonItem13,
-            this.barButtonItem14});
+            this.barButtonItem13});
             resources.ApplyResources(this.ribbon, "ribbon");
             this.ribbon.MaxItemId = 18;
             this.ribbon.Name = "ribbon";
@@ -126,7 +122,6 @@
             this.ribbon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
             this.ribbon.StatusBar = this.ribbonStatusBar;
             this.ribbon.Toolbar.ItemLinks.Add(this.barButtonItem13);
-            this.ribbon.Toolbar.ItemLinks.Add(this.barButtonItem14);
             // 
             // bbiNouveau
             // 
@@ -196,14 +191,6 @@
             this.bbiRafrichir.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiRafrichir.LargeGlyph")));
             this.bbiRafrichir.Name = "bbiRafrichir";
             // 
-            // barButtonItem10
-            // 
-            resources.ApplyResources(this.barButtonItem10, "barButtonItem10");
-            this.barButtonItem10.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.Glyph")));
-            this.barButtonItem10.Id = 12;
-            this.barButtonItem10.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.LargeGlyph")));
-            this.barButtonItem10.Name = "barButtonItem10";
-            // 
             // bbiFermer
             // 
             resources.ApplyResources(this.bbiFermer, "bbiFermer");
@@ -220,12 +207,6 @@
             this.barButtonItem13.Id = 16;
             this.barButtonItem13.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.LargeGlyph")));
             this.barButtonItem13.Name = "barButtonItem13";
-            // 
-            // barButtonItem14
-            // 
-            resources.ApplyResources(this.barButtonItem14, "barButtonItem14");
-            this.barButtonItem14.Id = 17;
-            this.barButtonItem14.Name = "barButtonItem14";
             // 
             // ribbonPage1
             // 
@@ -281,7 +262,7 @@
             this.groupControl1.Controls.Add(this.comboBoxClients);
             this.groupControl1.Controls.Add(this.comboBoxCommune);
             this.groupControl1.Controls.Add(this.comboBoxWilaya);
-            this.groupControl1.Controls.Add(this.textEditSecteur);
+            this.groupControl1.Controls.Add(this.textEditNameSector);
             this.groupControl1.Controls.Add(this.labelCommune);
             this.groupControl1.Controls.Add(this.labelWilaya);
             this.groupControl1.Controls.Add(this.labelClient);
@@ -296,12 +277,14 @@
             resources.ApplyResources(this.comboBoxClients, "comboBoxClients");
             this.comboBoxClients.Name = "comboBoxClients";
             this.comboBoxClients.ValueMember = "id";
+            this.comboBoxClients.SelectedIndexChanged += new System.EventHandler(this.comboBoxClients_SelectedIndexChanged);
             // 
             // comboBoxCommune
             // 
             this.comboBoxCommune.FormattingEnabled = true;
             resources.ApplyResources(this.comboBoxCommune, "comboBoxCommune");
             this.comboBoxCommune.Name = "comboBoxCommune";
+            this.comboBoxCommune.SelectedIndexChanged += new System.EventHandler(this.comboBoxCommune_SelectedIndexChanged);
             // 
             // comboBoxWilaya
             // 
@@ -312,11 +295,12 @@
             this.comboBoxWilaya.ValueMember = "id";
             this.comboBoxWilaya.SelectedIndexChanged += new System.EventHandler(this.comboBoxWilaya_SelectedIndexChanged);
             // 
-            // textEditSecteur
+            // textEditNameSector
             // 
-            resources.ApplyResources(this.textEditSecteur, "textEditSecteur");
-            this.textEditSecteur.MenuManager = this.ribbon;
-            this.textEditSecteur.Name = "textEditSecteur";
+            resources.ApplyResources(this.textEditNameSector, "textEditNameSector");
+            this.textEditNameSector.MenuManager = this.ribbon;
+            this.textEditNameSector.Name = "textEditNameSector";
+            this.textEditNameSector.EditValueChanged += new System.EventHandler(this.textEditNameSector_EditValueChanged);
             // 
             // labelCommune
             // 
@@ -535,11 +519,12 @@
             this.Name = "FrmEditSector";
             this.Ribbon = this.ribbon;
             this.StatusBar = this.ribbonStatusBar;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmEditSector_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditSecteur.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditNameSector.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GCAgentTerrain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.modelViewAgentTerrainBindingSource)).EndInit();
@@ -572,14 +557,13 @@
         private XtraBars.BarButtonItem bbiEffacer;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
         private XtraBars.BarButtonItem bbiRafrichir;
-        private XtraBars.BarButtonItem barButtonItem10;
         private XtraBars.BarButtonItem bbiFermer;
         private XtraEditors.GroupControl groupControl1;
         private XtraEditors.LabelControl labelCommune;
         private XtraEditors.LabelControl labelWilaya;
         private XtraEditors.LabelControl labelClient;
         private XtraEditors.LabelControl labelSecteur;
-        private XtraEditors.TextEdit textEditSecteur;
+        private XtraEditors.TextEdit textEditNameSector;
         private System.Windows.Forms.ComboBox comboBoxClients;
         private System.Windows.Forms.ComboBox comboBoxCommune;
         private System.Windows.Forms.ComboBox comboBoxWilaya;
@@ -610,6 +594,5 @@
         private XtraBars.Ribbon.ApplicationMenu applicationMenu1;
         private XtraRichEdit.UI.RichEditBarController richEditBarController1;
         private XtraBars.BarButtonItem barButtonItem13;
-        private XtraBars.BarButtonItem barButtonItem14;
     }
 }

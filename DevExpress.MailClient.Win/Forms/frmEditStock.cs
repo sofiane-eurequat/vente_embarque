@@ -226,5 +226,10 @@ namespace DevExpress.MailClient.Win.Forms
         {
             Close();
         }
+
+        private void textEditNameStock_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

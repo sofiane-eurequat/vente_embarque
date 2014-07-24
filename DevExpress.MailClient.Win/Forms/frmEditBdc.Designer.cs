@@ -251,6 +251,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEditCommande.Properties.Buttons"))))});
             this.dateEditCommande.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEditCommande.Properties.CalendarTimeProperties.Buttons"))))});
+            this.dateEditCommande.EditValueChanged += new System.EventHandler(this.dateEditCommande_EditValueChanged);
             // 
             // labelControl1
             // 
@@ -268,6 +269,7 @@
             this.radiogroupLivraisonSurPlace.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("radiogroupLivraisonSurPlace.Properties.Items"))), resources.GetString("radiogroupLivraisonSurPlace.Properties.Items1")),
             new DevExpress.XtraEditors.Controls.RadioGroupItem(((object)(resources.GetObject("radiogroupLivraisonSurPlace.Properties.Items2"))), resources.GetString("radiogroupLivraisonSurPlace.Properties.Items3"))});
+            this.radiogroupLivraisonSurPlace.SelectedIndexChanged += new System.EventHandler(this.radiogroupLivraisonSurPlace_SelectedIndexChanged);
             // 
             // labelLivraison
             // 
@@ -279,6 +281,7 @@
             // 
             resources.ApplyResources(this.textEditNumCommande, "textEditNumCommande");
             this.textEditNumCommande.Name = "textEditNumCommande";
+            this.textEditNumCommande.EditValueChanged += new System.EventHandler(this.textEditNumCommande_EditValueChanged);
             // 
             // labelNumCommande
             // 
@@ -292,6 +295,7 @@
             this.comboBoxEtat.FormattingEnabled = true;
             resources.ApplyResources(this.comboBoxEtat, "comboBoxEtat");
             this.comboBoxEtat.Name = "comboBoxEtat";
+            this.comboBoxEtat.SelectedIndexChanged += new System.EventHandler(this.comboBoxEtat_SelectedIndexChanged);
             // 
             // labelEtat
             // 
@@ -304,6 +308,7 @@
             this.comboBoxPriorite.FormattingEnabled = true;
             resources.ApplyResources(this.comboBoxPriorite, "comboBoxPriorite");
             this.comboBoxPriorite.Name = "comboBoxPriorite";
+            this.comboBoxPriorite.SelectedIndexChanged += new System.EventHandler(this.comboBoxPriorite_SelectedIndexChanged);
             // 
             // labelPriorite
             // 
@@ -317,6 +322,7 @@
             this.memoEditAdresssLivraion.MenuManager = this.ribbon;
             this.memoEditAdresssLivraion.Name = "memoEditAdresssLivraion";
             this.memoEditAdresssLivraion.UseOptimizedRendering = true;
+            this.memoEditAdresssLivraion.EditValueChanged += new System.EventHandler(this.memoEditAdresssLivraion_EditValueChanged);
             // 
             // dateEditLivraison
             // 
@@ -327,6 +333,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEditLivraison.Properties.Buttons"))))});
             this.dateEditLivraison.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEditLivraison.Properties.CalendarTimeProperties.Buttons"))))});
+            this.dateEditLivraison.EditValueChanged += new System.EventHandler(this.dateEditLivraison_EditValueChanged);
             // 
             // comboBoxClients
             // 
@@ -335,6 +342,7 @@
             resources.ApplyResources(this.comboBoxClients, "comboBoxClients");
             this.comboBoxClients.Name = "comboBoxClients";
             this.comboBoxClients.ValueMember = "id";
+            this.comboBoxClients.SelectedIndexChanged += new System.EventHandler(this.comboBoxClients_SelectedIndexChanged);
             // 
             // labelDateLivraison
             // 
@@ -499,6 +507,7 @@
             this.Name = "FrmEditBdc";
             this.Ribbon = this.ribbon;
             this.StatusBar = this.ribbonStatusBar;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmEditBdc_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();

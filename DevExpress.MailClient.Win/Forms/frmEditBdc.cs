@@ -22,6 +22,7 @@ namespace DevExpress.MailClient.Win.Forms
         public List<OrderLine> OrderLines = new List<OrderLine>();
         public List<OrderLine> orderLines = new List<OrderLine>();
         public OrderLine LigneCommande { get; set; }
+        public bool IsBdcModified;
         public Guid IdOrder { get; set; }
 
         readonly ModelViewBdc _sourceBdc;
@@ -76,9 +77,8 @@ namespace DevExpress.MailClient.Win.Forms
             {
                 GCOrderLine.DataSource = OrderLines;
             }
-
+            IsBdcModified = false;
             _newBdc = newBdc;
-            DialogResult = DialogResult.Cancel;
             _sourceBdc = bdc;
         }
 
@@ -176,6 +176,63 @@ namespace DevExpress.MailClient.Win.Forms
             public string Produit { get; set; }
             public int Quantity { get; set; }
 
+        }
+
+        private void textEditNumCommande_EditValueChanged(object sender, EventArgs e)
+        {
+            IsBdcModified = true;
+        }
+
+        private void comboBoxClients_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            IsBdcModified = true;
+        }
+
+        private void dateEditLivraison_EditValueChanged(object sender, EventArgs e)
+        {
+            IsBdcModified = true;
+        }
+
+        private void memoEditAdresssLivraion_EditValueChanged(object sender, EventArgs e)
+        {
+            IsBdcModified = true;
+        }
+
+        private void comboBoxPriorite_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            IsBdcModified = true;
+        }
+
+        private void comboBoxEtat_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            IsBdcModified = true;
+        }
+
+        private void radiogroupLivraisonSurPlace_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            IsBdcModified = true;
+        }
+
+        private void dateEditCommande_EditValueChanged(object sender, EventArgs e)
+        {
+            IsBdcModified = true;
+        }
+
+        private void FrmEditBdc_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (IsBdcModified)
+            {
+                DialogResult result = XtraMessageBox.Show(this, TagResources.SaveBeforeClose, Application.ProductName, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
+                if (result == DialogResult.Yes)
+                    _editBdcPresenter.Write(IdOrder, Convert.ToInt32(textEditNumCommande.Text), comboBoxClients.SelectedItem as Client,
+                                    dateEditLivraison.DateTime, memoEditAdresssLivraion.Text,
+                                    (Priorite)comboBoxPriorite.SelectedItem,
+                                    (GestionCommande)comboBoxEtat.SelectedItem,
+                                    Convert.ToBoolean(radiogroupLivraisonSurPlace.Text), dateEditCommande.DateTime,
+                                    OrderLines);
+                    
+                if (result == DialogResult.Cancel) e.Cancel = true;
+            }
         }
     }
 }

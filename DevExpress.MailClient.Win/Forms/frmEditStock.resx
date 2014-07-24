@@ -1790,12 +1790,6 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Stock</value>
   </data>
-  <data name="&gt;&gt;applicationMenu.Name" xml:space="preserve">
-    <value>applicationMenu</value>
-  </data>
-  <data name="&gt;&gt;applicationMenu.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.ApplicationMenu, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="&gt;&gt;fileSaveItem1.Name" xml:space="preserve">
     <value>fileSaveItem1</value>
   </data>
@@ -2629,6 +2623,12 @@
   </data>
   <data name="&gt;&gt;repositoryItemTextEdit1.Type" xml:space="preserve">
     <value>DevExpress.XtraEditors.Repository.RepositoryItemTextEdit, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;applicationMenu.Name" xml:space="preserve">
+    <value>applicationMenu</value>
+  </data>
+  <data name="&gt;&gt;applicationMenu.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.ApplicationMenu, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;spellChecker1.Name" xml:space="preserve">
     <value>spellChecker1</value>

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Windows.Forms;
 using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
+using DevExpress.XtraEditors;
 using vente_embarque.DataLayer;
 using vente_embarque.Model;
 using vente_embarque.presenter.Stok;
@@ -48,20 +49,8 @@ namespace DevExpress.MailClient.Win.Forms
             {
                 comboBoxStock.DataSource = Stocks.OrderBy(s => s.Name).ToList();
             }
-            /*
-            DialogResult = DialogResult.Cancel;
-            Stocks = stocks;
-            _newOrderLine = newOrderLine;
-            if (_newOrderLine) 
-            {
-                _isOrderLineModified = true;
-            }
-            else
-            {
-                _isOrderLineModified = false;
-            }
-            */
-            
+
+            IsProductLineModified = false;
         }
         
         private void bbiNouveau_ItemClick(object sender, ItemClickEventArgs e)
@@ -144,6 +133,28 @@ namespace DevExpress.MailClient.Win.Forms
         private void textEditQuantité_EditValueChanged(object sender, EventArgs e)
         {
             IsProductLineModified = true;
+        }
+
+        private void FrmEditProductLine_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (IsProductLineModified)
+            {
+                DialogResult result = XtraMessageBox.Show(this, TagResources.SaveBeforeClose, Application.ProductName, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
+                if (result == DialogResult.Yes)
+                {
+                    var productLineModif = new ProductLine
+                    {
+                        id = ProductLineOut.Id,
+                        Product = comboBoxProduit.SelectedItem as Product,
+                        Quantity = Convert.ToInt32(textEditQuantité.EditValue.ToString())
+                    };
+
+                    var repositoryStock = new RepositoryStock();
+                    repositoryStock.Save(comboBoxStock.SelectedItem as Stock, productLineModif);
+                }
+                    
+                if (result == DialogResult.Cancel) e.Cancel = true;
+            }
         }
     }
 }

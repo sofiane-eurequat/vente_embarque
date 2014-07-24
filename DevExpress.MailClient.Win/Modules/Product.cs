@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.MailClient.Win.Forms;
 using DevExpress.XtraEditors;
+using DevExpress.XtraGrid.Views.Grid;
 using vente_embarque.DataLayer;
 using vente_embarque.presenter.Stok;
 
@@ -102,6 +103,14 @@ namespace DevExpress.MailClient.Win.Modules
             gridControlProduct.DataSource = Produits;
             gridViewProduct.Columns["Id"].Visible = false;
             gridViewProduct.Columns["Photo"].Visible = false;
+        }
+
+        //To accomplish this task, set the GridView.OptionsBehavior.EditorShowMode property to the EditorShowMode.MouseUp value.
+        private void gridViewProduct_DoubleClick(object sender, EventArgs e)
+        {
+            if (gridViewProduct == null) return;
+            var product = (ModelViewProduct)gridViewProduct.GetFocusedRow();
+            ModifyProduct(product);
         }
     }
 }

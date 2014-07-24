@@ -221,6 +221,7 @@ namespace DevExpress.MailClient.Win.Forms{
             // 
             resources.ApplyResources(this.textEditFournisseur, "textEditFournisseur");
             this.textEditFournisseur.Name = "textEditFournisseur";
+            this.textEditFournisseur.EditValueChanged += new System.EventHandler(this.textEditFournisseur_EditValueChanged);
             // 
             // labelNameFournisseur
             // 
@@ -233,6 +234,7 @@ namespace DevExpress.MailClient.Win.Forms{
             resources.ApplyResources(this.textEditQuantité, "textEditQuantité");
             this.textEditQuantité.MenuManager = this.ribbon;
             this.textEditQuantité.Name = "textEditQuantité";
+            this.textEditQuantité.EditValueChanged += new System.EventHandler(this.textEditQuantité_EditValueChanged);
             // 
             // dateEditEntree
             // 
@@ -243,6 +245,7 @@ namespace DevExpress.MailClient.Win.Forms{
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEditEntree.Properties.Buttons"))))});
             this.dateEditEntree.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("dateEditEntree.Properties.CalendarTimeProperties.Buttons"))))});
+            this.dateEditEntree.EditValueChanged += new System.EventHandler(this.dateEditEntree_EditValueChanged);
             // 
             // labelQuantity
             // 
@@ -261,6 +264,7 @@ namespace DevExpress.MailClient.Win.Forms{
             this.comboBoxTypeGestion.FormattingEnabled = true;
             resources.ApplyResources(this.comboBoxTypeGestion, "comboBoxTypeGestion");
             this.comboBoxTypeGestion.Name = "comboBoxTypeGestion";
+            this.comboBoxTypeGestion.SelectedIndexChanged += new System.EventHandler(this.comboBoxTypeGestion_SelectedIndexChanged);
             // 
             // labelTypeGestion
             // 
@@ -275,6 +279,7 @@ namespace DevExpress.MailClient.Win.Forms{
             resources.ApplyResources(this.comboBoxCategory, "comboBoxCategory");
             this.comboBoxCategory.Name = "comboBoxCategory";
             this.comboBoxCategory.ValueMember = "id";
+            this.comboBoxCategory.SelectedIndexChanged += new System.EventHandler(this.comboBoxCategory_SelectedIndexChanged);
             // 
             // labelCategory
             // 
@@ -289,11 +294,13 @@ namespace DevExpress.MailClient.Win.Forms{
             resources.ApplyResources(this.comboBoxMarque, "comboBoxMarque");
             this.comboBoxMarque.Name = "comboBoxMarque";
             this.comboBoxMarque.ValueMember = "id";
+            this.comboBoxMarque.SelectedIndexChanged += new System.EventHandler(this.comboBoxMarque_SelectedIndexChanged);
             // 
             // textEditNameProduct
             // 
             resources.ApplyResources(this.textEditNameProduct, "textEditNameProduct");
             this.textEditNameProduct.Name = "textEditNameProduct";
+            this.textEditNameProduct.EditValueChanged += new System.EventHandler(this.textEditNameProduct_EditValueChanged);
             // 
             // labelNameProduit
             // 
@@ -375,6 +382,7 @@ namespace DevExpress.MailClient.Win.Forms{
             this.Name = "FrmEditProduct";
             this.Ribbon = this.ribbon;
             this.StatusBar = this.ribbonStatusBar;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmEditProduct_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.richEditBarController1)).EndInit();

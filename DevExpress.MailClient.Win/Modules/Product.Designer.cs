@@ -63,11 +63,14 @@ namespace DevExpress.MailClient.Win.Modules
             this.gridControlProduct.TabIndex = 0;
             this.gridControlProduct.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewProduct});
+            this.gridControlProduct.DoubleClick += new System.EventHandler(this.gridViewProduct_DoubleClick);
             // 
             // gridViewProduct
             // 
             this.gridViewProduct.GridControl = this.gridControlProduct;
             this.gridViewProduct.Name = "gridViewProduct";
+            this.gridViewProduct.OptionsBehavior.Editable = false;
+            this.gridViewProduct.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.MouseUp;
             this.gridViewProduct.OptionsView.ShowGroupPanel = false;
             // 
             // Product

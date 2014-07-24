@@ -113,6 +113,7 @@ namespace DevExpress.MailClient.Win {
         public const string Preview = "ShowPreview";
         public const string SaveQuestion = "Voulais vous sauvegarder";
         public const string DeleteQuestion = "Voulais vous vraiment supprimer";
+        public const string SaveBeforeClose = "Il y a eu des modifications, voulez vous les sauvegarder";
         public const string Refresh = "Rafraichir";
         public const string Close = "Fermer";
     }

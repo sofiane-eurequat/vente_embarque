@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Windows.Forms;
 using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
+using DevExpress.XtraEditors;
 using vente_embarque.DataLayer;
 using vente_embarque.Model;
 using vente_embarque.Model.Enum;
@@ -18,6 +20,7 @@ namespace DevExpress.MailClient.Win.Forms
         public IEnumerable<Stock> Stocks { get; set; }
         public IEnumerable<Product> Products { get; set; }
         public Guid IdProduct { get; set; }
+        public bool IsProductModified;
         readonly bool _newProduct = true;
 
         public FrmEditProduct(ModelViewProduct product, bool newProduct)
@@ -50,7 +53,7 @@ namespace DevExpress.MailClient.Win.Forms
                 dateEditEntree.Text = product.DateEntree.ToShortDateString();
                 comboBoxTypeGestion.SelectedItem = product.TypeGestion;
             }
-
+            IsProductModified = false;
             _newProduct = newProduct;
         }
 
@@ -111,6 +114,55 @@ namespace DevExpress.MailClient.Win.Forms
         private void bbiClose_ItemClick(object sender, ItemClickEventArgs e)
         {
             Close();
+        }
+
+        private void FrmEditProduct_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (IsProductModified)
+            {
+                DialogResult result = XtraMessageBox.Show(this, TagResources.SaveBeforeClose, Application.ProductName, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
+                if (result == DialogResult.Yes)
+                    _editProductPresenter.Write(IdProduct, textEditNameProduct.Text, comboBoxCategory.SelectedItem as Category,
+                                        comboBoxMarque.SelectedItem as Marque, textEditFournisseur.Text,
+                                        Convert.ToInt32(textEditQuantité.Text), dateEditEntree.DateTime,
+                                        (GestionProduit)comboBoxTypeGestion.SelectedItem);
+                if (result == DialogResult.Cancel) e.Cancel = true;
+            }
+        }
+        
+        private void textEditNameProduct_EditValueChanged(object sender, EventArgs e)
+        {
+            IsProductModified = true;
+        }
+
+        private void comboBoxCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            IsProductModified = true;
+        }
+
+        private void comboBoxMarque_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            IsProductModified = true;
+        }
+
+        private void textEditFournisseur_EditValueChanged(object sender, EventArgs e)
+        {
+            IsProductModified = true;
+        }
+
+        private void textEditQuantité_EditValueChanged(object sender, EventArgs e)
+        {
+            IsProductModified = true;
+        }
+
+        private void dateEditEntree_EditValueChanged(object sender, EventArgs e)
+        {
+            IsProductModified = true;
+        }
+
+        private void comboBoxTypeGestion_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            IsProductModified = true;
         }
     }
 }

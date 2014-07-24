@@ -28,7 +28,6 @@
             DevExpress.XtraSpellChecker.OptionsSpelling optionsSpelling1 = new DevExpress.XtraSpellChecker.OptionsSpelling();
             DevExpress.XtraSpellChecker.OptionsSpelling optionsSpelling2 = new DevExpress.XtraSpellChecker.OptionsSpelling();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.applicationMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.fileSaveItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.printPreviewItem1 = new DevExpress.XtraRichEdit.UI.PrintPreviewItem();
             this.pasteItem1 = new DevExpress.XtraRichEdit.UI.PasteItem();
@@ -169,6 +168,7 @@
             this.repositoryItemRichEditStyleEdit1 = new DevExpress.XtraRichEdit.Design.RepositoryItemRichEditStyleEdit();
             this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.statusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
+            this.applicationMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.spellChecker1 = new DevExpress.XtraSpellChecker.SpellChecker(this.components);
             this.textEditNameStock = new DevExpress.XtraEditors.TextEdit();
             this.textEditAdress = new DevExpress.XtraEditors.TextEdit();
@@ -209,7 +209,6 @@
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.applicationMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRichEditFontSizeEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemBorderLineStyle1)).BeginInit();
@@ -217,6 +216,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFloatingObjectOutlineWeight1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRichEditStyleEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.applicationMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditNameStock.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditAdress.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.richEditBarController1)).BeginInit();
@@ -385,13 +385,6 @@
             this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
             this.ribbonControl.StatusBar = this.statusBar;
             this.ribbonControl.Toolbar.ItemLinks.Add(this.fileSaveItem1);
-            // 
-            // applicationMenu
-            // 
-            this.applicationMenu.ItemLinks.Add(this.fileSaveItem1);
-            this.applicationMenu.ItemLinks.Add(this.printPreviewItem1);
-            this.applicationMenu.Name = "applicationMenu";
-            this.applicationMenu.Ribbon = this.ribbonControl;
             // 
             // fileSaveItem1
             // 
@@ -1459,6 +1452,13 @@
             this.statusBar.Name = "statusBar";
             this.statusBar.Ribbon = this.ribbonControl;
             // 
+            // applicationMenu
+            // 
+            this.applicationMenu.ItemLinks.Add(this.fileSaveItem1);
+            this.applicationMenu.ItemLinks.Add(this.printPreviewItem1);
+            this.applicationMenu.Name = "applicationMenu";
+            this.applicationMenu.Ribbon = this.ribbonControl;
+            // 
             // spellChecker1
             // 
             this.spellChecker1.Culture = new System.Globalization.CultureInfo("en-US");
@@ -1472,6 +1472,7 @@
             this.textEditNameStock.Name = "textEditNameStock";
             this.spellChecker1.SetShowSpellCheckMenu(this.textEditNameStock, true);
             this.spellChecker1.SetSpellCheckerOptions(this.textEditNameStock, optionsSpelling1);
+            this.textEditNameStock.EditValueChanged += new System.EventHandler(this.textEditNameStock_EditValueChanged);
             // 
             // textEditAdress
             // 
@@ -1855,7 +1856,6 @@
             this.Ribbon = this.ribbonControl;
             this.StatusBar = this.statusBar;
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.applicationMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRichEditFontSizeEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemBorderLineStyle1)).EndInit();
@@ -1863,6 +1863,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFloatingObjectOutlineWeight1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRichEditStyleEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.applicationMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditNameStock.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditAdress.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.richEditBarController1)).EndInit();

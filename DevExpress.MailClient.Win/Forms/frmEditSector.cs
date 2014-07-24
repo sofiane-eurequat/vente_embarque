@@ -28,6 +28,7 @@ namespace DevExpress.MailClient.Win.Forms
         private readonly EditSectorPresenterPage _editSecteurPresenter;
         readonly ModelViewSecteur _sourceSecteur;
         bool _newSecteur = true;
+        private bool _sectorModified = false;
 
         public FrmEditSector() {
             InitializeComponent();
@@ -63,34 +64,33 @@ namespace DevExpress.MailClient.Win.Forms
         {
             comboBoxWilaya.ValueMember = "Code";
             comboBoxCommune.DataSource = Wilayas.First(w => w.Code == (int)comboBoxWilaya.SelectedValue).Communes.OrderBy(c => c.Name).ToList();
+            _sectorModified = true;
         }
-
-        private void bbiSauvegarder_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            _editSecteurPresenter.Write(textEditSecteur.EditValue.ToString(), comboBoxWilaya.SelectedItem as Wilaya, comboBoxCommune.SelectedItem as Commune);
-            MessageBox.Show(Resources.succesAdd);
-        }
-
-        private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            _editSecteurPresenter.Write(textEditSecteur.EditValue.ToString(), comboBoxWilaya.SelectedItem as Wilaya, comboBoxCommune.SelectedItem as Commune);
-            Close();
-        }
-
-        
 
         private void bbiNouveau_ItemClick(object sender, ItemClickEventArgs e)
         {
 
         }
+        
+        private void bbiSauvegarder_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            _editSecteurPresenter.Write(textEditNameSector.EditValue.ToString(), comboBoxWilaya.SelectedItem as Wilaya, comboBoxCommune.SelectedItem as Commune);
+            MessageBox.Show(Resources.succesAdd);
+        }
+
+        private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            _editSecteurPresenter.Write(textEditNameSector.EditValue.ToString(), comboBoxWilaya.SelectedItem as Wilaya, comboBoxCommune.SelectedItem as Commune);
+            MessageBox.Show(Resources.succesAdd);
+            Close();
+        }
 
         private void bbiEffacer_ItemClick(object sender, ItemClickEventArgs e)
         {
-            textEditSecteur.Text = "";
+            textEditNameSector.Text = "";
             comboBoxClients.Text = "";
             comboBoxWilaya.Text = "";
             comboBoxCommune.Text = "";
-
         }
         
         private void bbiFermer_ItemClick(object sender, ItemClickEventArgs e)
@@ -115,6 +115,31 @@ namespace DevExpress.MailClient.Win.Forms
             var form = new FrmEditAgentTerrain();
             form.ShowDialog();
             Cursor.Current = Cursors.Default;
+        }
+
+        private void textEditNameSector_EditValueChanged(object sender, EventArgs e)
+        {
+            _sectorModified = true;
+        }
+        
+        private void comboBoxClients_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _sectorModified = true;
+        }
+
+        private void comboBoxCommune_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _sectorModified = true;
+        }
+
+        private void FrmEditSector_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (_sectorModified)
+            {
+                DialogResult result = XtraMessageBox.Show(this, TagResources.SaveBeforeClose, Application.ProductName, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
+                if (result != DialogResult.Yes)
+                    return;
+            }
         }
     }
 }

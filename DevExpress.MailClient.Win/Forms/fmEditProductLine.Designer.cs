@@ -262,6 +262,7 @@ namespace DevExpress.MailClient.Win.Forms
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StatusBar = this.ribbonStatusBar;
             this.Text = "Ligne de stock";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmEditProductLine_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
