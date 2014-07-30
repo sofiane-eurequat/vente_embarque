@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
+using DevExpress.MailClient.Win.Properties;
 using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraEditors;
@@ -18,7 +19,7 @@ namespace DevExpress.MailClient.Win.Forms
         public IEnumerable<Order> Orders { get; set; }
         public OrderLine OrderLine { get; set; }
         private readonly bool _newOrderLine;
-        private bool _isOrderLineModified;
+        public bool IsOrderLineModified;
         public ModelViewOrderLine OrderLineOut;
 
         public FrmEditOrderLine(IEnumerable<Stock> stocks, ModelViewOrderLine orderLine, bool newOrderLine)
@@ -28,7 +29,7 @@ namespace DevExpress.MailClient.Win.Forms
             Stocks = stocks;
             OrderLineOut = orderLine;
             _newOrderLine = newOrderLine;
-            _isOrderLineModified = _newOrderLine;
+            IsOrderLineModified = _newOrderLine;
 
             comboBoxStock.DataSource = Stocks.OrderBy(s => s.Name).ToList();
             comboBoxStock.DisplayMember = "Name";
@@ -51,12 +52,13 @@ namespace DevExpress.MailClient.Win.Forms
         }
         private void bbiSauvegarder_ItemClick(object sender, ItemClickEventArgs e)
         {
-            _isOrderLineModified = false;
-            //DialogResult result = QueryClose();
+            IsOrderLineModified = false;
+
             if (_newOrderLine)
             {
                 OrderLine = FactoryOrder.CreateOrderLine(comboBoxStock.SelectedItem as Stock, comboBoxProduit.Text,
                                                      Convert.ToInt32(textEditQuantité.EditValue.ToString()));
+                MessageBox.Show(Resources.succesAdd);
             }
             else
             {
@@ -69,16 +71,18 @@ namespace DevExpress.MailClient.Win.Forms
 
                 var repositoryOrder = new RepositoryOrder();
                 repositoryOrder.Save(OrderLineOut.IdOrder, orderLineModif);
+                MessageBox.Show(Resources.succesUpdate);
             }
         }
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
         {
-            _isOrderLineModified = false;
-            DialogResult result = QueryClose();
+            IsOrderLineModified = false;
+
             if (_newOrderLine)
             {
                 OrderLine = FactoryOrder.CreateOrderLine(comboBoxStock.SelectedItem as Stock, comboBoxProduit.Text,
                                                      Convert.ToInt32(textEditQuantité.EditValue.ToString()));
+                MessageBox.Show(Resources.succesAdd);
             }
             else
             {
@@ -91,9 +95,10 @@ namespace DevExpress.MailClient.Win.Forms
 
                 var repositoryOrder = new RepositoryOrder();
                 repositoryOrder.Save(OrderLineOut.IdOrder, orderLineModif);
+                MessageBox.Show(Resources.succesUpdate);
             }
 
-            if (result == DialogResult.Yes) Close();
+            Close();
         }
         private void bbiEfaccer_ItemClick(object sender, ItemClickEventArgs e)
         {
@@ -111,19 +116,43 @@ namespace DevExpress.MailClient.Win.Forms
         {
             comboBoxStock.ValueMember = "Name";
             comboBoxProduit.DataSource = Stocks.First(s => s.Name == (string) comboBoxStock.SelectedValue).GetProducts().ToList();
-            _isOrderLineModified = true;
+            IsOrderLineModified = true;
         }
 
         private void comboBoxProduit_SelectedIndexChanged(object sender, EventArgs e)
         {
-            _isOrderLineModified = true;
+            IsOrderLineModified = true;
         }
 
         private void textEditQuantité_EditValueChanged(object sender, EventArgs e)
         {
-            _isOrderLineModified = true;
+            IsOrderLineModified = true;
         }
 
+        private void FrmEditOrderLine_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (IsOrderLineModified)
+            {
+                DialogResult result = XtraMessageBox.Show(this, TagResources.SaveBeforeClose, Application.ProductName, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
+                if (result == DialogResult.Yes)
+                {
+                    var orderLineModif = new OrderLine
+                    {
+                        id = OrderLineOut.Id,
+                        Product = comboBoxProduit.SelectedItem as Product,
+                        Quantity = Convert.ToInt32(textEditQuantité.EditValue.ToString())
+                    };
+
+                    var repositoryOrder = new RepositoryOrder();
+                    repositoryOrder.Save(OrderLineOut.IdOrder, orderLineModif);
+                    IsOrderLineModified = false;
+                    MessageBox.Show(Resources.succesUpdate);
+                }
+
+                if (result == DialogResult.Cancel) e.Cancel = true;
+            }
+        }
+        
         DialogResult QueryDelete()
         {
             DialogResult result = XtraMessageBox.Show(this, TagResources.DeleteQuestion, Application.ProductName, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
@@ -141,7 +170,7 @@ namespace DevExpress.MailClient.Win.Forms
 
         DialogResult QueryClose()
         {
-            if (!_isOrderLineModified)
+            if (!IsOrderLineModified)
                 return DialogResult.Yes;
 
             DialogResult result = XtraMessageBox.Show(this, TagResources.SaveQuestion, Application.ProductName, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
@@ -161,7 +190,5 @@ namespace DevExpress.MailClient.Win.Forms
         {
             throw new NotImplementedException();
         }
-
-        
     }
 }

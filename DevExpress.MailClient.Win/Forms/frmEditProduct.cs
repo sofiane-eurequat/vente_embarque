@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Windows.Forms;
+using DevExpress.MailClient.Win.Properties;
 using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraEditors;
@@ -53,6 +54,7 @@ namespace DevExpress.MailClient.Win.Forms
                 dateEditEntree.Text = product.DateEntree.ToShortDateString();
                 comboBoxTypeGestion.SelectedItem = product.TypeGestion;
             }
+
             IsProductModified = false;
             _newProduct = newProduct;
         }
@@ -64,12 +66,15 @@ namespace DevExpress.MailClient.Win.Forms
 
         private void bbiSave_ItemClick(object sender, ItemClickEventArgs e)
         {
+            IsProductModified = false;
+
             if (_newProduct)
             {
                 _editProductPresenter.Write(textEditNameProduct.Text, comboBoxCategory.SelectedItem as Category,
                                         comboBoxMarque.SelectedItem as Marque, textEditFournisseur.Text,
                                         Convert.ToInt32(textEditQuantité.Text), dateEditEntree.DateTime,
                                         (GestionProduit) comboBoxTypeGestion.SelectedItem);
+                MessageBox.Show(Resources.succesAdd);
             }
             else
             {
@@ -77,18 +82,22 @@ namespace DevExpress.MailClient.Win.Forms
                                         comboBoxMarque.SelectedItem as Marque, textEditFournisseur.Text,
                                         Convert.ToInt32(textEditQuantité.Text), dateEditEntree.DateTime,
                                         (GestionProduit)comboBoxTypeGestion.SelectedItem);
+                MessageBox.Show(Resources.succesUpdate);
             }
             
         }
 
         private void bbiSaveClsoe_ItemClick(object sender, ItemClickEventArgs e)
         {
+            IsProductModified = false;
+
             if (_newProduct)
             {
                 _editProductPresenter.Write(textEditNameProduct.Text, comboBoxCategory.SelectedItem as Category,
                                         comboBoxMarque.SelectedItem as Marque, textEditFournisseur.Text,
                                         Convert.ToInt32(textEditQuantité.Text), dateEditEntree.DateTime,
                                         (GestionProduit)comboBoxTypeGestion.SelectedItem);
+                MessageBox.Show(Resources.succesAdd);
             }
             else
             {
@@ -96,6 +105,7 @@ namespace DevExpress.MailClient.Win.Forms
                                         comboBoxMarque.SelectedItem as Marque, textEditFournisseur.Text,
                                         Convert.ToInt32(textEditQuantité.Text), dateEditEntree.DateTime,
                                         (GestionProduit)comboBoxTypeGestion.SelectedItem);
+                MessageBox.Show(Resources.succesUpdate);
             }
             Close();
         }
@@ -122,10 +132,15 @@ namespace DevExpress.MailClient.Win.Forms
             {
                 DialogResult result = XtraMessageBox.Show(this, TagResources.SaveBeforeClose, Application.ProductName, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
                 if (result == DialogResult.Yes)
+                {
                     _editProductPresenter.Write(IdProduct, textEditNameProduct.Text, comboBoxCategory.SelectedItem as Category,
                                         comboBoxMarque.SelectedItem as Marque, textEditFournisseur.Text,
                                         Convert.ToInt32(textEditQuantité.Text), dateEditEntree.DateTime,
                                         (GestionProduit)comboBoxTypeGestion.SelectedItem);
+                    MessageBox.Show(Resources.succesUpdate);
+                    IsProductModified = false;
+                }
+                    
                 if (result == DialogResult.Cancel) e.Cancel = true;
             }
         }

@@ -1214,4 +1214,7 @@ Left:	19 mm	Right:	19 mm</value>
 	<data name="succesAdd" xml:space="preserve">
     <value>Insertion réussi</value>
   </data>
+	<data name="succesUpdate" xml:space="preserve">
+    <value>Mise à jour réussie</value>
+  </data>
 </root>

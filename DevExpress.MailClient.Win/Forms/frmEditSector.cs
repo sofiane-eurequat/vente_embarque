@@ -27,8 +27,9 @@ namespace DevExpress.MailClient.Win.Forms
         public IEnumerable<Sector> Secteurs { get; set; }
         private readonly EditSectorPresenterPage _editSecteurPresenter;
         readonly ModelViewSecteur _sourceSecteur;
-        bool _newSecteur = true;
-        private bool _sectorModified = false;
+        public Guid IdSecteur { get; set; }
+        readonly bool _newSecteur = true;
+        public bool IsSectorModified;
 
         public FrmEditSector() {
             InitializeComponent();
@@ -48,13 +49,23 @@ namespace DevExpress.MailClient.Win.Forms
 
             comboBoxClients.DataSource = Clients.OrderBy(cl => cl.Name).ToList();
             comboBoxClients.DisplayMember = "Name";
+            comboBoxClients.ValueMember = "Name";
             comboBoxWilaya.DataSource = Wilayas.OrderBy(c=>c.Code).ToList();
             comboBoxWilaya.ValueMember = "Code";
             comboBoxCommune.DataSource = Wilayas.First(w=>w.Code==(int)comboBoxWilaya.SelectedValue).Communes.OrderBy(c=>c.Name).ToList();
             comboBoxCommune.DisplayMember = "Name";
+            comboBoxCommune.ValueMember = "Name";
+
+            if (!newSecteur)
+            {
+                IdSecteur = secteur.Id;
+                textEditNameSector.Text = secteur.Name;
+                comboBoxWilaya.SelectedValue = secteur.CodeWilaya;
+                comboBoxCommune.SelectedValue = secteur.Commune;
+            }
 
             _newSecteur = newSecteur;
-            DialogResult = DialogResult.Cancel;
+            IsSectorModified = false;
             _sourceSecteur = secteur;
 
             GCAgentTerrain.DataSource = AgentTerrains;
@@ -64,7 +75,7 @@ namespace DevExpress.MailClient.Win.Forms
         {
             comboBoxWilaya.ValueMember = "Code";
             comboBoxCommune.DataSource = Wilayas.First(w => w.Code == (int)comboBoxWilaya.SelectedValue).Communes.OrderBy(c => c.Name).ToList();
-            _sectorModified = true;
+            IsSectorModified = true;
         }
 
         private void bbiNouveau_ItemClick(object sender, ItemClickEventArgs e)
@@ -74,14 +85,44 @@ namespace DevExpress.MailClient.Win.Forms
         
         private void bbiSauvegarder_ItemClick(object sender, ItemClickEventArgs e)
         {
-            _editSecteurPresenter.Write(textEditNameSector.EditValue.ToString(), comboBoxWilaya.SelectedItem as Wilaya, comboBoxCommune.SelectedItem as Commune);
-            MessageBox.Show(Resources.succesAdd);
+            IsSectorModified = false;
+
+            if (_newSecteur)
+            {
+                _editSecteurPresenter.Write(textEditNameSector.EditValue.ToString(),
+                                            comboBoxWilaya.SelectedItem as Wilaya,
+                                            comboBoxCommune.SelectedItem as Commune);
+                MessageBox.Show(Resources.succesAdd);
+            }
+            else
+            {
+                _editSecteurPresenter.Write(IdSecteur, textEditNameSector.EditValue.ToString(),
+                                            comboBoxWilaya.SelectedItem as Wilaya,
+                                            comboBoxCommune.SelectedItem as Commune);
+                MessageBox.Show(Resources.succesUpdate);
+            }
+            
         }
 
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
         {
-            _editSecteurPresenter.Write(textEditNameSector.EditValue.ToString(), comboBoxWilaya.SelectedItem as Wilaya, comboBoxCommune.SelectedItem as Commune);
-            MessageBox.Show(Resources.succesAdd);
+            IsSectorModified = false;
+
+            if (_newSecteur)
+            {
+                _editSecteurPresenter.Write(textEditNameSector.EditValue.ToString(),
+                                            comboBoxWilaya.SelectedItem as Wilaya,
+                                            comboBoxCommune.SelectedItem as Commune);
+                MessageBox.Show(Resources.succesAdd);
+            }
+            else
+            {
+                _editSecteurPresenter.Write(IdSecteur, textEditNameSector.EditValue.ToString(),
+                                            comboBoxWilaya.SelectedItem as Wilaya,
+                                            comboBoxCommune.SelectedItem as Commune);
+                MessageBox.Show(Resources.succesUpdate);
+            }
+
             Close();
         }
 
@@ -119,26 +160,34 @@ namespace DevExpress.MailClient.Win.Forms
 
         private void textEditNameSector_EditValueChanged(object sender, EventArgs e)
         {
-            _sectorModified = true;
+            IsSectorModified = true;
         }
         
         private void comboBoxClients_SelectedIndexChanged(object sender, EventArgs e)
         {
-            _sectorModified = true;
+            IsSectorModified = true;
         }
 
         private void comboBoxCommune_SelectedIndexChanged(object sender, EventArgs e)
         {
-            _sectorModified = true;
+            IsSectorModified = true;
         }
 
         private void FrmEditSector_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (_sectorModified)
+            if (IsSectorModified)
             {
                 DialogResult result = XtraMessageBox.Show(this, TagResources.SaveBeforeClose, Application.ProductName, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
-                if (result != DialogResult.Yes)
-                    return;
+                if (result == DialogResult.Yes)
+                {
+                    _editSecteurPresenter.Write(IdSecteur, textEditNameSector.EditValue.ToString(),
+                                            comboBoxWilaya.SelectedItem as Wilaya,
+                                            comboBoxCommune.SelectedItem as Commune);
+                    IsSectorModified = false;
+                    MessageBox.Show(Resources.succesUpdate);
+                }
+
+                if (result == DialogResult.Cancel) e.Cancel = true;
             }
         }
     }

@@ -30,7 +30,7 @@ namespace vente_embarque.presenter.Stok
         public void Write(Stock stock, Product product, int quantite)
         {
             var productLine = FactoryStock.CreateProductLine(stock, product, quantite);
-            _repositoryStock.Add(stock);
+            _repositoryStock.Save(stock);
         }
     }
 

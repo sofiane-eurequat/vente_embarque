@@ -32,9 +32,21 @@ namespace vente_embarque.presenter.Secteur
             _editSecteurView.Clients = _repositoryClient.FindAll();
         }
 
-        public void Write(string name, Wilaya wilaya, Commune communes)
+        public void Write(string name, Wilaya wilaya, Commune commune)
         {
-            var secteur =FactorySector.CreateSector(name, wilaya, communes);
+            var secteur =FactorySector.CreateSector(name, wilaya, commune);
+            _repositorySecteur.Save(secteur);
+        }
+
+        public void Write(Guid id, string name, Wilaya wilaya, Commune commune)
+        {
+            var secteur = new Sector
+                {
+                id = id,
+                Name = name,
+                Wilaya = wilaya,
+                Commune = commune
+            };
             _repositorySecteur.Save(secteur);
         }
     }
@@ -43,5 +55,6 @@ namespace vente_embarque.presenter.Secteur
     {
         void Display();
         void Write(string name, Wilaya wilaya, Commune communes);
+        void Write(Guid id, string name, Wilaya wilaya, Commune communes);
     }
 }

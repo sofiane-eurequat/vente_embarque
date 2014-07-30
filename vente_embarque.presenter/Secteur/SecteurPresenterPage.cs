@@ -21,7 +21,15 @@ namespace vente_embarque.presenter.Secteur
 
         public void Diplay()
         {
-            _repositorysecteur.FindAll();
+            var secteur = _repositorysecteur.FindAll();
+            if (secteur == null) return;
+
+            var tempSecteur = secteur.Select(sector => new ModelViewSecteur
+                {
+                    Name = sector.Name, Wilaya = sector.Wilaya.Name, Commune = sector.Commune.Name, Id = sector.id, CodeWilaya = sector.Wilaya.Code,
+                }).ToList();
+
+            _secteurView.Secteurs = tempSecteur;
         }
     }
 
@@ -31,6 +39,9 @@ namespace vente_embarque.presenter.Secteur
         public string Name { get; set; }
         public Client Client { get; set; }
         public AgentTerrain AgentTerrain { get; set; }
+        public string Wilaya { get; set; }
+        public string Commune { get; set; }
+        public int CodeWilaya { get; set; }
     }
 
     public class ModelViewAgentTerrain

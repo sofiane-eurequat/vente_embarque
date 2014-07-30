@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
+using DevExpress.MailClient.Win.Properties;
 using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraEditors;
@@ -77,6 +78,7 @@ namespace DevExpress.MailClient.Win.Forms
             {
                 GCOrderLine.DataSource = OrderLines;
             }
+
             IsBdcModified = false;
             _newBdc = newBdc;
             _sourceBdc = bdc;
@@ -101,6 +103,8 @@ namespace DevExpress.MailClient.Win.Forms
 
         private void bbiSauvegarder_ItemClick(object sender, ItemClickEventArgs e)
         {
+            IsBdcModified = false;
+
             if (_newBdc)
             {
                 _editBdcPresenter.Write(Convert.ToInt32(textEditNumCommande.Text), comboBoxClients.SelectedItem as Client,
@@ -109,6 +113,7 @@ namespace DevExpress.MailClient.Win.Forms
                                     (GestionCommande) comboBoxEtat.SelectedItem,
                                     Convert.ToBoolean(radiogroupLivraisonSurPlace.Text), dateEditCommande.DateTime,
                                     OrderLines);
+                MessageBox.Show(Resources.succesAdd);
             }
             else
             {
@@ -118,11 +123,14 @@ namespace DevExpress.MailClient.Win.Forms
                                     (GestionCommande)comboBoxEtat.SelectedItem,
                                     Convert.ToBoolean(radiogroupLivraisonSurPlace.Text), dateEditCommande.DateTime,
                                     OrderLines);
+                MessageBox.Show(Resources.succesUpdate);
             }
         }
 
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
         {
+            IsBdcModified = false;
+
             if (_newBdc)
             {
                 _editBdcPresenter.Write(Convert.ToInt32(textEditNumCommande.Text), comboBoxClients.SelectedItem as Client,
@@ -131,6 +139,7 @@ namespace DevExpress.MailClient.Win.Forms
                                     (GestionCommande)comboBoxEtat.SelectedItem,
                                     Convert.ToBoolean(radiogroupLivraisonSurPlace.Text), dateEditCommande.DateTime,
                                     OrderLines);
+                MessageBox.Show(Resources.succesAdd);
             }
             else
             {
@@ -140,7 +149,9 @@ namespace DevExpress.MailClient.Win.Forms
                                     (GestionCommande)comboBoxEtat.SelectedItem,
                                     Convert.ToBoolean(radiogroupLivraisonSurPlace.Text), dateEditCommande.DateTime,
                                     OrderLines);
+                MessageBox.Show(Resources.succesUpdate);
             }
+
             Close();
         }
 
@@ -224,13 +235,17 @@ namespace DevExpress.MailClient.Win.Forms
             {
                 DialogResult result = XtraMessageBox.Show(this, TagResources.SaveBeforeClose, Application.ProductName, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
                 if (result == DialogResult.Yes)
+                {
                     _editBdcPresenter.Write(IdOrder, Convert.ToInt32(textEditNumCommande.Text), comboBoxClients.SelectedItem as Client,
                                     dateEditLivraison.DateTime, memoEditAdresssLivraion.Text,
                                     (Priorite)comboBoxPriorite.SelectedItem,
                                     (GestionCommande)comboBoxEtat.SelectedItem,
                                     Convert.ToBoolean(radiogroupLivraisonSurPlace.Text), dateEditCommande.DateTime,
                                     OrderLines);
-                    
+                    IsBdcModified = false;
+                    MessageBox.Show(Resources.succesUpdate);
+                }
+                  
                 if (result == DialogResult.Cancel) e.Cancel = true;
             }
         }

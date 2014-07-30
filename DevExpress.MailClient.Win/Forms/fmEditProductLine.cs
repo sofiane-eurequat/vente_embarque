@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
+using DevExpress.MailClient.Win.Properties;
 using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraEditors;
@@ -60,12 +61,12 @@ namespace DevExpress.MailClient.Win.Forms
         private void bbiSauvegarder_ItemClick(object sender, ItemClickEventArgs e)
         {
             IsProductLineModified = false;
-            DialogResult=DialogResult.OK;
-            
+
             if (_newProductLine)
             {
                 _editProductLinePresenter.Write(comboBoxStock.SelectedItem as Stock, comboBoxProduit.SelectedItem as Product,
                                                      Convert.ToInt32(textEditQuantité.EditValue.ToString()));
+                MessageBox.Show(Resources.succesAdd);
             }
             else
             {
@@ -78,18 +79,19 @@ namespace DevExpress.MailClient.Win.Forms
 
                 var repositoryStock = new RepositoryStock();
                 repositoryStock.Save(comboBoxStock.SelectedItem as Stock, productLineModif);
+                MessageBox.Show(Resources.succesUpdate);
             }
             
         }
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
         {
             IsProductLineModified = false;
-            DialogResult = DialogResult.OK;
 
             if (_newProductLine)
             {
                 _editProductLinePresenter.Write(comboBoxStock.SelectedItem as Stock, comboBoxProduit.SelectedItem as Product,
                                                      Convert.ToInt32(textEditQuantité.EditValue.ToString()));
+                MessageBox.Show(Resources.succesAdd);
             }
             else
             {
@@ -102,6 +104,7 @@ namespace DevExpress.MailClient.Win.Forms
 
                 var repositoryStock = new RepositoryStock();
                 repositoryStock.Save(comboBoxStock.SelectedItem as Stock, productLineModif);
+                MessageBox.Show(Resources.succesUpdate);
             }
 
             Close();
@@ -151,6 +154,8 @@ namespace DevExpress.MailClient.Win.Forms
 
                     var repositoryStock = new RepositoryStock();
                     repositoryStock.Save(comboBoxStock.SelectedItem as Stock, productLineModif);
+                    IsProductLineModified = false;
+                    MessageBox.Show(Resources.succesUpdate);
                 }
                     
                 if (result == DialogResult.Cancel) e.Cancel = true;

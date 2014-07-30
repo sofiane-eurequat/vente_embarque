@@ -3031,6 +3031,15 @@ namespace DevExpress.MailClient.Win.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Mise à jour réussie.
+        /// </summary>
+        internal static string succesUpdate {
+            get {
+                return ResourceManager.GetString("succesUpdate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Supprimer un produit.
         /// </summary>
         internal static string Supprimer_produit {

@@ -418,7 +418,7 @@ namespace DevExpress.MailClient.Win.Modules {
         void EditStock(ModelViewStock stock, bool newStock, string caption)
         {
             Cursor.Current = Cursors.WaitCursor;
-            var form = new frmEditStock(stock, newStock, caption);
+            var form = new FrmEditStock(stock, newStock, caption);
             form.Load += OnEditMailFormLoad;
             form.FormClosed += OnEditMailFormClosed;
             form.Location = new Point(OwnerForm.Left + (OwnerForm.Width - form.Width) / 2, OwnerForm.Top + (OwnerForm.Height - form.Height) / 2);
@@ -540,13 +540,13 @@ namespace DevExpress.MailClient.Win.Modules {
             document.AppendText(Properties.Resources.ForwardTextStart);
         }
         void OnEditMailFormLoad(object sender, EventArgs e) {
-            var form = sender as frmEditStock;
+            var form = sender as FrmEditStock;
             if (form != null)
                 form.SaveMessage += OnEditMailFormSaveMessage;
         }
 
         void OnEditMailFormSaveMessage(object sender, EventArgs e) {
-            var form = sender as frmEditStock;
+            var form = sender as FrmEditStock;
             if (form == null)
                 return;
 
@@ -556,7 +556,7 @@ namespace DevExpress.MailClient.Win.Modules {
         }
 
         void OnEditMailFormClosed(object sender, FormClosedEventArgs e) {
-            var form = sender as frmEditStock;
+            var form = sender as FrmEditStock;
             if (form != null)
                 form.SaveMessage -= OnEditMailFormSaveMessage;
         }

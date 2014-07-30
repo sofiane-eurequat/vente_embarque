@@ -2,30 +2,32 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using DevExpress.MailClient.Win.Properties;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraBars;
+using DevExpress.XtraEditors;
 using vente_embarque.DataLayer;
 using vente_embarque.Model;
 using vente_embarque.presenter.Stok;
 
 namespace DevExpress.MailClient.Win.Forms 
 {
-    public partial class frmEditStock : RibbonForm,IEditStockView
+    public partial class FrmEditStock : RibbonForm,IEditStockView
     {
 
         public IEnumerable<Wilaya> Wilayas { get; set; }
         private readonly EditStockPresenterPage _editStockPresenter;
-        //bool isMessageModified;
+        public bool IsStockModified;
         readonly bool _newStock = true;
         public Guid IdStock { get; set; }
-        readonly ModelViewStock sourceStock;
+        readonly ModelViewStock _sourceStock;
 
-        public frmEditStock() {
+        public FrmEditStock() {
             InitializeComponent();
             DialogResult = DialogResult.Cancel;
         }
 
-        public frmEditStock(ModelViewStock stock, bool newStock, string caption)
+        public FrmEditStock(ModelViewStock stock, bool newStock, string caption)
         {
             InitializeComponent();
             //DictionaryHelper.InitDictionary(spellChecker1);
@@ -53,8 +55,8 @@ namespace DevExpress.MailClient.Win.Forms
             }
 
             _newStock = newStock;
-            DialogResult = DialogResult.Cancel;
-            sourceStock = stock;
+            IsStockModified = false;
+            _sourceStock = stock;
         }
 
         /*  var riLookUpProduct = new RepositoryItemLookUpEdit();
@@ -182,34 +184,43 @@ namespace DevExpress.MailClient.Win.Forms
         {
             comboBoxWilaya.ValueMember = "Code";
             comboBoxCommune.DataSource = Wilayas.First(w => w.Code == (int)comboBoxWilaya.SelectedValue).Communes.OrderBy(c => c.Name).ToList();
+            IsStockModified = true;
 
         }
 
         private void bbiSauvergarder_ItemClick(object sender, ItemClickEventArgs e)
         {
+            IsStockModified = false;
+            
             if (_newStock)
             {
                 _editStockPresenter.Write(textEditNameStock.Text, comboBoxWilaya.SelectedItem as Wilaya,
                                           comboBoxCommune.SelectedItem as Commune, textEditAdress.Text);
+                MessageBox.Show(Resources.succesAdd);
             }
             else
             {
                 _editStockPresenter.Write(IdStock, textEditNameStock.Text, comboBoxWilaya.SelectedItem as Wilaya,
                                           comboBoxCommune.SelectedItem as Commune, textEditAdress.Text);
+                MessageBox.Show(Resources.succesUpdate);
             }
         }
 
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
         {
+            IsStockModified = false;
+
             if (_newStock)
             {
                 _editStockPresenter.Write(textEditNameStock.Text, comboBoxWilaya.SelectedItem as Wilaya,
                                           comboBoxCommune.SelectedItem as Commune, textEditAdress.Text);
+                MessageBox.Show(Resources.succesAdd);
             }
             else
             {
                 _editStockPresenter.Write(IdStock, textEditNameStock.Text, comboBoxWilaya.SelectedItem as Wilaya,
                                           comboBoxCommune.SelectedItem as Commune, textEditAdress.Text);
+                MessageBox.Show(Resources.succesUpdate);
             }
             Close();
         }
@@ -229,7 +240,33 @@ namespace DevExpress.MailClient.Win.Forms
 
         private void textEditNameStock_EditValueChanged(object sender, EventArgs e)
         {
+            IsStockModified = true;
+        }
 
+        private void comboBoxCommune_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            IsStockModified = true;
+        }
+
+        private void textEditAdress_EditValueChanged(object sender, EventArgs e)
+        {
+            IsStockModified = true;
+        }
+
+        private void frmEditStock_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (IsStockModified)
+            {
+                DialogResult result = XtraMessageBox.Show(this, TagResources.SaveBeforeClose, Application.ProductName, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
+                if (result == DialogResult.Yes)
+                {
+                    _editStockPresenter.Write(IdStock, textEditNameStock.Text, comboBoxWilaya.SelectedItem as Wilaya,
+                                          comboBoxCommune.SelectedItem as Commune, textEditAdress.Text);
+                    IsStockModified = false;
+                    MessageBox.Show(Resources.succesUpdate);
+                }
+                if (result == DialogResult.Cancel) e.Cancel = true;
+            }
         }
     }
 }

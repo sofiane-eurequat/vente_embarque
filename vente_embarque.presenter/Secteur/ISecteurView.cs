@@ -8,5 +8,6 @@ namespace vente_embarque.presenter.Secteur
 {
     public interface ISecteurView
     {
+        IEnumerable<ModelViewSecteur> Secteurs { get; set; } 
     }
 }

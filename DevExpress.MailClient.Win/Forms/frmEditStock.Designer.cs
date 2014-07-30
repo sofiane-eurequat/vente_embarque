@@ -1,5 +1,5 @@
 ﻿namespace DevExpress.MailClient.Win.Forms {
-    partial class frmEditStock {
+    partial class FrmEditStock {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -24,9 +24,9 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEditStock));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEditStock));
+            DevExpress.XtraSpellChecker.OptionsSpelling optionsSpelling3 = new DevExpress.XtraSpellChecker.OptionsSpelling();
             DevExpress.XtraSpellChecker.OptionsSpelling optionsSpelling1 = new DevExpress.XtraSpellChecker.OptionsSpelling();
-            DevExpress.XtraSpellChecker.OptionsSpelling optionsSpelling2 = new DevExpress.XtraSpellChecker.OptionsSpelling();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.fileSaveItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.printPreviewItem1 = new DevExpress.XtraRichEdit.UI.PrintPreviewItem();
@@ -1471,7 +1471,7 @@
             this.textEditNameStock.MenuManager = this.ribbonControl;
             this.textEditNameStock.Name = "textEditNameStock";
             this.spellChecker1.SetShowSpellCheckMenu(this.textEditNameStock, true);
-            this.spellChecker1.SetSpellCheckerOptions(this.textEditNameStock, optionsSpelling1);
+            this.spellChecker1.SetSpellCheckerOptions(this.textEditNameStock, optionsSpelling3);
             this.textEditNameStock.EditValueChanged += new System.EventHandler(this.textEditNameStock_EditValueChanged);
             // 
             // textEditAdress
@@ -1480,7 +1480,8 @@
             this.textEditAdress.MenuManager = this.ribbonControl;
             this.textEditAdress.Name = "textEditAdress";
             this.spellChecker1.SetShowSpellCheckMenu(this.textEditAdress, true);
-            this.spellChecker1.SetSpellCheckerOptions(this.textEditAdress, optionsSpelling2);
+            this.spellChecker1.SetSpellCheckerOptions(this.textEditAdress, optionsSpelling1);
+            this.textEditAdress.EditValueChanged += new System.EventHandler(this.textEditAdress_EditValueChanged);
             // 
             // richEditBarController1
             // 
@@ -1638,6 +1639,7 @@
             this.comboBoxCommune.FormattingEnabled = true;
             resources.ApplyResources(this.comboBoxCommune, "comboBoxCommune");
             this.comboBoxCommune.Name = "comboBoxCommune";
+            this.comboBoxCommune.SelectedIndexChanged += new System.EventHandler(this.comboBoxCommune_SelectedIndexChanged);
             // 
             // comboBoxWilaya
             // 
@@ -1855,6 +1857,7 @@
             this.Name = "frmEditStock";
             this.Ribbon = this.ribbonControl;
             this.StatusBar = this.statusBar;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmEditStock_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRichEditFontSizeEdit1)).EndInit();
