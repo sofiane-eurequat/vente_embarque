@@ -72,8 +72,8 @@ namespace vente_embarque.DataLayer.Entities.Stock
             set { SetPropertyValue("Priorite", ref _dateEntree, value); }
         }
 
-        private String _fournisseur;
-        public String Fournisseur
+        private XpoFournisseur _fournisseur;
+        public XpoFournisseur Fournisseur
         {
             get { return _fournisseur; }
             set { SetPropertyValue("Name", ref _fournisseur, value); }

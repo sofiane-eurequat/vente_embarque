@@ -2,17 +2,11 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DevExpress.Data.Filtering;
 using DevExpress.Xpo;
 using vente_embarque.Core.Domain;
 using vente_embarque.Core.Domain.Query;
-using vente_embarque.DataLayer.Entities;
 using vente_embarque.DataLayer.Entities.Orders;
-using vente_embarque.DataLayer.Helper;
 using vente_embarque.Model;
-using vente_embarque.DataLayer;
 
 namespace vente_embarque.DataLayer
 {

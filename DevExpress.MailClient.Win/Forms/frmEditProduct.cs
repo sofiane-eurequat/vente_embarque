@@ -18,6 +18,7 @@ namespace DevExpress.MailClient.Win.Forms
         private readonly EditProductPresenterPage _editProductPresenter;
         public IEnumerable<Category> Categories { get; set; }
         public IEnumerable<Marque> Marques { get; set; }
+        public IEnumerable<Fournisseur> Fournisseurs { get; set; }
         public IEnumerable<Stock> Stocks { get; set; }
         public IEnumerable<Product> Products { get; set; }
         public Guid IdProduct { get; set; }
@@ -30,14 +31,18 @@ namespace DevExpress.MailClient.Win.Forms
 
             var repositoryCategory = new RepositoryCategory();
             var repositoryMarque = new RepositoryMarque();
+            var repositoryFournisseur = new RepositoryFournisseur();
             var repositoryProduit = new RepositoryProduct();
 
-            _editProductPresenter=new EditProductPresenterPage(this,repositoryCategory,repositoryMarque,repositoryProduit);
+            _editProductPresenter = new EditProductPresenterPage(this, repositoryCategory, repositoryMarque, repositoryFournisseur,repositoryProduit);
             _editProductPresenter.Display();
 
             comboBoxCategory.DataSource = Categories;
             comboBoxCategory.DisplayMember = "Name";
             comboBoxCategory.ValueMember = "Name";
+            comboBoxFournisseur.DataSource = Fournisseurs;
+            comboBoxFournisseur.DisplayMember = "Name";
+            comboBoxFournisseur.ValueMember = "Name";
             comboBoxMarque.DataSource = Marques;
             comboBoxMarque.DisplayMember = "Name";
             comboBoxMarque.ValueMember = "Name";
@@ -48,8 +53,8 @@ namespace DevExpress.MailClient.Win.Forms
                 IdProduct = product.Id;
                 textEditNameProduct.Text = product.Nom;
                 comboBoxCategory.SelectedValue = product.Categorie;
-                comboBoxMarque.SelectedValue = product.Marque;
-                textEditFournisseur.Text = product.Fournisseur;
+                comboBoxMarque.SelectedValue = product.Fournisseur;
+                comboBoxFournisseur.SelectedValue = product.Marque;
                 textEditQuantité.Text = product.QuantiteMin.ToString(CultureInfo.InvariantCulture);
                 dateEditEntree.Text = product.DateEntree.ToShortDateString();
                 comboBoxTypeGestion.SelectedItem = product.TypeGestion;
@@ -71,17 +76,20 @@ namespace DevExpress.MailClient.Win.Forms
             if (_newProduct)
             {
                 _editProductPresenter.Write(textEditNameProduct.Text, comboBoxCategory.SelectedItem as Category,
-                                        comboBoxMarque.SelectedItem as Marque, textEditFournisseur.Text,
-                                        Convert.ToInt32(textEditQuantité.Text), dateEditEntree.DateTime,
-                                        (GestionProduit) comboBoxTypeGestion.SelectedItem);
+                                            comboBoxMarque.SelectedItem as Marque,
+                                            comboBoxFournisseur.SelectedItem as Fournisseur,
+                                            Convert.ToInt32(textEditQuantité.Text), dateEditEntree.DateTime,
+                                            (GestionProduit) comboBoxTypeGestion.SelectedItem);
                 MessageBox.Show(Resources.succesAdd);
             }
             else
             {
-                _editProductPresenter.Write(IdProduct,textEditNameProduct.Text, comboBoxCategory.SelectedItem as Category,
-                                        comboBoxMarque.SelectedItem as Marque, textEditFournisseur.Text,
-                                        Convert.ToInt32(textEditQuantité.Text), dateEditEntree.DateTime,
-                                        (GestionProduit)comboBoxTypeGestion.SelectedItem);
+                _editProductPresenter.Write(IdProduct, textEditNameProduct.Text,
+                                            comboBoxCategory.SelectedItem as Category,
+                                            comboBoxMarque.SelectedItem as Marque,
+                                            comboBoxFournisseur.SelectedItem as Fournisseur,
+                                            Convert.ToInt32(textEditQuantité.Text), dateEditEntree.DateTime,
+                                            (GestionProduit) comboBoxTypeGestion.SelectedItem);
                 MessageBox.Show(Resources.succesUpdate);
             }
             
@@ -94,15 +102,16 @@ namespace DevExpress.MailClient.Win.Forms
             if (_newProduct)
             {
                 _editProductPresenter.Write(textEditNameProduct.Text, comboBoxCategory.SelectedItem as Category,
-                                        comboBoxMarque.SelectedItem as Marque, textEditFournisseur.Text,
-                                        Convert.ToInt32(textEditQuantité.Text), dateEditEntree.DateTime,
-                                        (GestionProduit)comboBoxTypeGestion.SelectedItem);
+                                            comboBoxMarque.SelectedItem as Marque,
+                                            comboBoxFournisseur.SelectedItem as Fournisseur,
+                                            Convert.ToInt32(textEditQuantité.Text), dateEditEntree.DateTime,
+                                            (GestionProduit) comboBoxTypeGestion.SelectedItem);
                 MessageBox.Show(Resources.succesAdd);
             }
             else
             {
                 _editProductPresenter.Write(IdProduct, textEditNameProduct.Text, comboBoxCategory.SelectedItem as Category,
-                                        comboBoxMarque.SelectedItem as Marque, textEditFournisseur.Text,
+                                        comboBoxMarque.SelectedItem as Marque, comboBoxFournisseur.SelectedItem as Fournisseur,
                                         Convert.ToInt32(textEditQuantité.Text), dateEditEntree.DateTime,
                                         (GestionProduit)comboBoxTypeGestion.SelectedItem);
                 MessageBox.Show(Resources.succesUpdate);
@@ -134,7 +143,7 @@ namespace DevExpress.MailClient.Win.Forms
                 if (result == DialogResult.Yes)
                 {
                     _editProductPresenter.Write(IdProduct, textEditNameProduct.Text, comboBoxCategory.SelectedItem as Category,
-                                        comboBoxMarque.SelectedItem as Marque, textEditFournisseur.Text,
+                                        comboBoxMarque.SelectedItem as Marque, comboBoxFournisseur.SelectedItem as Fournisseur,
                                         Convert.ToInt32(textEditQuantité.Text), dateEditEntree.DateTime,
                                         (GestionProduit)comboBoxTypeGestion.SelectedItem);
                     MessageBox.Show(Resources.succesUpdate);
@@ -160,7 +169,7 @@ namespace DevExpress.MailClient.Win.Forms
             IsProductModified = true;
         }
 
-        private void textEditFournisseur_EditValueChanged(object sender, EventArgs e)
+        private void comboBoxFournisseur_SelectedIndexChanged(object sender, EventArgs e)
         {
             IsProductModified = true;
         }

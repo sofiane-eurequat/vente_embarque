@@ -100,7 +100,7 @@ namespace vente_embarque.DataLayer.Map
             productReturned.Category = MapCategory(product.Category, uow);
             productReturned.Marque = MapMarque(product.Marque, uow);
             productReturned.DateEntree = product.DateEntree;
-            productReturned.Fournisseur = product.Fournisseur;
+            productReturned.Fournisseur = MapFournisseur(product.Fournisseur, uow);
             productReturned.TypeGestion = product.TypeGestion;
             return productReturned;
         }
@@ -140,6 +140,24 @@ namespace vente_embarque.DataLayer.Map
             categoryReturned.Name = category.Name;
             categoryReturned.Description = category.Description;
             return categoryReturned;
+        }
+
+        public static XpoFournisseur MapFournisseur(Fournisseur fournisseur, UnitOfWork uow)
+        {
+            XpoFournisseur fournisseurReturned;
+            if (fournisseur.newObject)
+            {
+                fournisseurReturned = new XpoFournisseur(uow)
+                {
+                    Oid = fournisseur.id
+                };
+            }
+            else
+            {
+                fournisseurReturned = uow.GetObjectByKey<XpoFournisseur>(fournisseur.id);
+            }
+            fournisseurReturned.Name = fournisseur.Name;
+            return fournisseurReturned;
         }
 
         public static XpoOrder MapOrder(Order order, UnitOfWork uow)

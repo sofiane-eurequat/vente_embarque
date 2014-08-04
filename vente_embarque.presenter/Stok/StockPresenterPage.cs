@@ -50,7 +50,7 @@ namespace vente_embarque.presenter.Stok
                             Nom = product.Name,
                             Id = product.id,
                             QuantiteMin = product.QuantiteMin,
-                            Fournisseur = product.Fournisseur,
+                            Fournisseur = product.Fournisseur.Name,
                             Reference = product.SiteReference,
                             Categorie = product.Category.Name,
                             Remarque = product.Remarque,

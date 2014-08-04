@@ -10,7 +10,7 @@ namespace vente_embarque.Model
         public string Name { get; set; }
         public int QuantiteMin { get; set; }
         public Category Category { get; set; }
-        public string Fournisseur { get; set; }
+        public Fournisseur Fournisseur { get; set; }
         public string Remarque { get; set; }
         public string SiteReference { get; set; }
         public GestionProduit TypeGestion { get; set; }
@@ -22,7 +22,7 @@ namespace vente_embarque.Model
     }
     public class FactoryProduct
     {
-        public static Product CreateProduct(string name, int quantiteMin,Category category, Marque marque, string remarque = "", string reference = "", string fournisseur = "", DateTime dateEntree = default(DateTime), GestionProduit typeGestion = GestionProduit.Aucune)
+        public static Product CreateProduct(string name, int quantiteMin,Category category, Marque marque,Fournisseur fournisseur, string remarque = "", string reference = "", DateTime dateEntree = default(DateTime), GestionProduit typeGestion = GestionProduit.Aucune)
         {
             var product = new Product
                 {

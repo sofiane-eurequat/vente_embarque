@@ -3,17 +3,16 @@ using DevExpress.Xpo;
 
 namespace vente_embarque.DataLayer.Entities.Stock
 {
-    public class XpoCategory: XPBaseObject
+    public class XpoFournisseur:XPBaseObject
     {
-
-        public XpoCategory()
+        public XpoFournisseur()
             : base()
         {
             // This constructor is used when an object is loaded from a persistent storage.
             // Do not place any code here.
         }
 
-        public XpoCategory(Session session)
+        public XpoFournisseur(Session session)
             : base(session)
         {
             // This constructor is used when an object is loaded from a persistent storage.
@@ -36,13 +35,5 @@ namespace vente_embarque.DataLayer.Entities.Stock
             get { return _name; }
             set { SetPropertyValue("Name", ref _name, value); }
         }
-
-        private String _description;
-        public String Description
-        {
-            get { return _description; }
-            set { SetPropertyValue("Description", ref _description, value); }
-        }
-
     }
 }

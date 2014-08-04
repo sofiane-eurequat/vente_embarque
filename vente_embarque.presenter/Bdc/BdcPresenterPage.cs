@@ -56,7 +56,7 @@ namespace vente_embarque.presenter.Bdc
                                 Nom = pr.Product.Name,
                                 Id = pr.Product.id,
                                 QuantiteMin = pr.Product.QuantiteMin,
-                                Fournisseur = pr.Product.Fournisseur,
+                                Fournisseur = pr.Product.Fournisseur.Name,
                                 Reference = pr.Product.SiteReference,
                                 Categorie = pr.Product.Category.Name,
                                 Remarque = pr.Product.Remarque,

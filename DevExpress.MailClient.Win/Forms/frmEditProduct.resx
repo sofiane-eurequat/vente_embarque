@@ -443,18 +443,6 @@
   <data name="ribbon.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="ribbonPageGroup1.Text" xml:space="preserve">
-    <value>Nouveau</value>
-  </data>
-  <data name="ribbonPageGroup10.Text" xml:space="preserve">
-    <value>Sauvegarder</value>
-  </data>
-  <data name="ribbonPageGroup11.Text" xml:space="preserve">
-    <value>Reinitialiser</value>
-  </data>
-  <data name="ribbonPageGroup12.Text" xml:space="preserve">
-    <value>Fermer</value>
-  </data>
   <data name="ribbonPage1.Text" xml:space="preserve">
     <value>Home</value>
   </data>
@@ -477,7 +465,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ribbonStatusBar.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;ribbon.Name" xml:space="preserve">
     <value>ribbon</value>
@@ -489,31 +477,43 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ribbon.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
+  </data>
+  <data name="ribbonPageGroup1.Text" xml:space="preserve">
+    <value>Nouveau</value>
+  </data>
+  <data name="ribbonPageGroup10.Text" xml:space="preserve">
+    <value>Sauvegarder</value>
+  </data>
+  <data name="ribbonPageGroup11.Text" xml:space="preserve">
+    <value>Reinitialiser</value>
+  </data>
+  <data name="ribbonPageGroup12.Text" xml:space="preserve">
+    <value>Fermer</value>
   </data>
   <metadata name="richEditBarController1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>166, 19</value>
   </metadata>
-  <data name="textEditFournisseur.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 112</value>
+  <data name="comboBoxFournisseur.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 111</value>
   </data>
-  <data name="textEditFournisseur.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 20</value>
+  <data name="comboBoxFournisseur.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 21</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="textEditFournisseur.TabIndex" type="System.Int32, mscorlib">
+  <data name="comboBoxFournisseur.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
   </data>
-  <data name="&gt;&gt;textEditFournisseur.Name" xml:space="preserve">
-    <value>textEditFournisseur</value>
+  <data name="&gt;&gt;comboBoxFournisseur.Name" xml:space="preserve">
+    <value>comboBoxFournisseur</value>
   </data>
-  <data name="&gt;&gt;textEditFournisseur.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="&gt;&gt;comboBoxFournisseur.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textEditFournisseur.Parent" xml:space="preserve">
+  <data name="&gt;&gt;comboBoxFournisseur.Parent" xml:space="preserve">
     <value>GCInfoGeneral</value>
   </data>
-  <data name="&gt;&gt;textEditFournisseur.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;comboBoxFournisseur.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="labelNameFournisseur.Appearance.Font" type="System.Drawing.Font, System.Drawing">
@@ -864,6 +864,27 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;GCInfoGeneral.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textEditFournisseur.Location" type="System.Drawing.Point, System.Drawing">
+    <value>251, 399</value>
+  </data>
+  <data name="textEditFournisseur.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 20</value>
+  </data>
+  <data name="textEditFournisseur.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;textEditFournisseur.Name" xml:space="preserve">
+    <value>textEditFournisseur</value>
+  </data>
+  <data name="&gt;&gt;textEditFournisseur.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;textEditFournisseur.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textEditFournisseur.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="ribbonPageGroup2.Text" xml:space="preserve">

@@ -49,6 +49,7 @@
     <Compile Include="Enum\Priorite.cs" />
     <Compile Include="Enum\ProduitInvendue.cs" />
     <Compile Include="Enum\StockBas.cs" />
+    <Compile Include="Fournisseur.cs" />
     <Compile Include="Marque.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="OrderLine.cs" />

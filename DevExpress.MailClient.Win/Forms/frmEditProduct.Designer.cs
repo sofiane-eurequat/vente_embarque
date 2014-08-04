@@ -68,6 +68,7 @@ namespace DevExpress.MailClient.Win.Forms{
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.comboBoxFournisseur = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.richEditBarController1)).BeginInit();
@@ -200,7 +201,7 @@ namespace DevExpress.MailClient.Win.Forms{
             // 
             // GCInfoGeneral
             // 
-            this.GCInfoGeneral.Controls.Add(this.textEditFournisseur);
+            this.GCInfoGeneral.Controls.Add(this.comboBoxFournisseur);
             this.GCInfoGeneral.Controls.Add(this.labelNameFournisseur);
             this.GCInfoGeneral.Controls.Add(this.textEditQuantité);
             this.GCInfoGeneral.Controls.Add(this.dateEditEntree);
@@ -216,12 +217,6 @@ namespace DevExpress.MailClient.Win.Forms{
             this.GCInfoGeneral.Controls.Add(this.labelMarque);
             resources.ApplyResources(this.GCInfoGeneral, "GCInfoGeneral");
             this.GCInfoGeneral.Name = "GCInfoGeneral";
-            // 
-            // textEditFournisseur
-            // 
-            resources.ApplyResources(this.textEditFournisseur, "textEditFournisseur");
-            this.textEditFournisseur.Name = "textEditFournisseur";
-            this.textEditFournisseur.EditValueChanged += new System.EventHandler(this.textEditFournisseur_EditValueChanged);
             // 
             // labelNameFournisseur
             // 
@@ -371,10 +366,20 @@ namespace DevExpress.MailClient.Win.Forms{
             this.ribbonPageGroup9.ShowCaptionButton = false;
             resources.ApplyResources(this.ribbonPageGroup9, "ribbonPageGroup9");
             // 
+            // comboBoxFournisseur
+            // 
+            this.comboBoxFournisseur.DisplayMember = "id";
+            this.comboBoxFournisseur.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxFournisseur, "comboBoxFournisseur");
+            this.comboBoxFournisseur.Name = "comboBoxFournisseur";
+            this.comboBoxFournisseur.ValueMember = "id";
+            this.comboBoxFournisseur.SelectedIndexChanged += new System.EventHandler(this.comboBoxFournisseur_SelectedIndexChanged);
+            // 
             // FrmEditProduct
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.textEditFournisseur);
             this.Controls.Add(this.GCInfoGeneral);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
@@ -437,5 +442,6 @@ namespace DevExpress.MailClient.Win.Forms{
         private XtraEditors.LabelControl labelDateEntree;
         private XtraEditors.LabelControl labelNameFournisseur;
         private XtraEditors.TextEdit textEditFournisseur;
+        private System.Windows.Forms.ComboBox comboBoxFournisseur;
     }
 }

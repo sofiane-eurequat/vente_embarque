@@ -82,7 +82,7 @@ namespace vente_embarque.DataLayer.Map
                     QuantiteMin = product.QuantityMin,
                     Category = MapCategory(product.Category),
                     Marque = MapMarque(product.Marque),
-                    Fournisseur = product.Fournisseur,
+                    Fournisseur = MapFournisseur(product.Fournisseur),
                     DateEntree = product.DateEntree,
                     TypeGestion = product.TypeGestion,
                     newObject = false
@@ -108,6 +108,16 @@ namespace vente_embarque.DataLayer.Map
                     Description = category.Description,
                     newObject = false
                 };
+        }
+
+        public static Fournisseur MapFournisseur(XpoFournisseur fournisseur)
+        {
+            return new Fournisseur
+            {
+                Name = fournisseur.Name,
+                id = fournisseur.Oid,
+                newObject = false
+            };
         }
 
         public static Wilaya MapWilaya(XpoWilaya xpoWilaya)

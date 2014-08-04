@@ -32,9 +32,10 @@ namespace vente_embarque.Test
            // mock du stock
             var marque = FactoryMarque.CreateMarque("Nom marque");
             var category = FactoryCategory.CreateCategory("Nom category","Description");
-            FactoryStock.CreateProductLine(factoryStockCreateStock, FactoryProduct.CreateProduct("product1",15,category,marque), 10);
-            FactoryStock.CreateProductLine(factoryStockCreateStock, FactoryProduct.CreateProduct("product2",17,category,marque), 10);
-            FactoryStock.CreateProductLine(factoryStockCreateStock, FactoryProduct.CreateProduct("product3",20,category,marque), 10);
+            var fournisseur1 = FactoryFournisseur.CreateFournisseur("Nom fournisseur");
+            FactoryStock.CreateProductLine(factoryStockCreateStock, FactoryProduct.CreateProduct("product1",15,category,marque,fournisseur1), 10);
+            FactoryStock.CreateProductLine(factoryStockCreateStock, FactoryProduct.CreateProduct("product2",17,category,marque,fournisseur1), 10);
+            FactoryStock.CreateProductLine(factoryStockCreateStock, FactoryProduct.CreateProduct("product3",20,category,marque,fournisseur1), 10);
 
             stockMock = new Mock<IRepository<Stock, Guid>>();
             stockMock.Setup(e => e.FindBy(It.IsAny<Query>())).Returns(
@@ -59,8 +60,10 @@ namespace vente_embarque.Test
             const string nom1 = "Desktop";
             const string description = "Pc bureau";
             var category2 = FactoryCategory.CreateCategory(nom1, description);
-            var produit1 = FactoryProduct.CreateProduct("MockedProduct",10,category2,marque2);
-            var produit2 = FactoryProduct.CreateProduct("MockedProduct", 15, category2, marque2,"ce produit est explosif",reference: "http://www.google.com");
+            const string nomfournisseur = "Solinf";
+            var fournisseur = FactoryFournisseur.CreateFournisseur(nomfournisseur);
+            var produit1 = FactoryProduct.CreateProduct("MockedProduct",10,category2,marque2,fournisseur);
+            var produit2 = FactoryProduct.CreateProduct("MockedProduct", 15, category2, marque2,fournisseur,"ce produit est explosif",reference: "http://www.google.com");
             productMock=new Mock<IRepository<Product, Guid>>();
             productMock.Setup(e => e.FindBy(It.IsAny<Query>())).Returns(
                 new List<Product>
@@ -153,7 +156,8 @@ namespace vente_embarque.Test
             const int quantiteMinimale = 15;
             var marque = new RepositoryMarque().FindAll().First();
             var category = new RepositoryCategory().FindAll().First();
-            var product = FactoryProduct.CreateProduct(productname, quantiteMinimale, category, marque);
+            var fournisseur = new RepositoryFournisseur().FindAll().First();
+            var product = FactoryProduct.CreateProduct(productname, quantiteMinimale, category, marque,fournisseur);
             Assert.AreEqual(product.Name, "produit1");
             Assert.AreEqual(product.QuantiteMin, 15);
 
@@ -184,10 +188,11 @@ namespace vente_embarque.Test
             const int quantiteMinimale3 = 10;
             var marque = new RepositoryMarque().FindAll().First();
             var category = new RepositoryCategory().FindAll().First();
-            var product = FactoryProduct.CreateProduct(productname, quantiteMinimale, category, marque);
-            var product1 = FactoryProduct.CreateProduct(productname1, quantiteMinimale1, category, marque);
-            var product2 = FactoryProduct.CreateProduct(productname2, quantiteMinimale2, category, marque);
-            var product3 = FactoryProduct.CreateProduct(productname3, quantiteMinimale3, category, marque);
+            var fournisseur = new RepositoryFournisseur().FindAll().First();
+            var product = FactoryProduct.CreateProduct(productname, quantiteMinimale, category, marque,fournisseur);
+            var product1 = FactoryProduct.CreateProduct(productname1, quantiteMinimale1, category, marque,fournisseur);
+            var product2 = FactoryProduct.CreateProduct(productname2, quantiteMinimale2, category, marque,fournisseur);
+            var product3 = FactoryProduct.CreateProduct(productname3, quantiteMinimale3, category, marque,fournisseur);
             Assert.AreEqual(product.Name, productname);
             Assert.AreEqual(product.QuantiteMin, quantiteMinimale);
             Assert.AreEqual(product1.Name, productname1);
@@ -248,8 +253,9 @@ namespace vente_embarque.Test
             const int quantiteMinimale1 = 10;
             var marque = new RepositoryMarque().FindAll().First();
             var category = new RepositoryCategory().FindAll().First();
-            var product = FactoryProduct.CreateProduct(productname, quantiteMinimale, category, marque);
-            var product1 = FactoryProduct.CreateProduct(productname1, quantiteMinimale1, category, marque);
+            var fournisseur = new RepositoryFournisseur().FindAll().First();
+            var product = FactoryProduct.CreateProduct(productname, quantiteMinimale, category, marque,fournisseur);
+            var product1 = FactoryProduct.CreateProduct(productname1, quantiteMinimale1, category, marque,fournisseur);
             Assert.AreEqual(product.Name, productname);
             Assert.AreEqual(product.QuantiteMin, quantiteMinimale);
             Assert.AreEqual(product1.Name, productname1);

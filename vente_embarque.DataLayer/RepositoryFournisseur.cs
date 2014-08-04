@@ -10,9 +10,9 @@ using vente_embarque.Model;
 
 namespace vente_embarque.DataLayer
 {
-    public class RepositoryMarque: IRepository<Marque,Guid>
+    public class RepositoryFournisseur:IRepository<Fournisseur,Guid>
     {
-        public Marque FindBy(Guid id)
+        public Fournisseur FindBy(Guid id)
         {
             var config = new AppSettingsReader();
             using (
@@ -21,15 +21,15 @@ namespace vente_embarque.DataLayer
                     ConnectionString = ((string)config.GetValue("connect", typeof(string)))
                 })
             {
-                var xpomarque = uow.GetObjectByKey<XpoMarque>(id);
-                var marque = Map.MapInverse.MapMarque(xpomarque);
-                return marque;
+                var xpoFournisseur = uow.GetObjectByKey<XpoFournisseur>(id);
+                var fournisseur = Map.MapInverse.MapFournisseur(xpoFournisseur);
+                return fournisseur;
             }
         }
 
-        public IEnumerable<Marque> FindAll()
+        public IEnumerable<Fournisseur> FindAll()
         {
-            var listeMarque = new List<Marque>();
+            var listeFournisseur = new List<Fournisseur>();
             var config = new AppSettingsReader();
             using (
                 var uow = new UnitOfWork
@@ -37,33 +37,33 @@ namespace vente_embarque.DataLayer
                     ConnectionString = ((string)config.GetValue("connect", typeof(string)))
                 })
             {
-                var marques = new XPCollection<XpoMarque>(uow);
-                listeMarque.AddRange(marques.Select(Map.MapInverse.MapMarque));
+                var fournisseurs = new XPCollection<XpoFournisseur>(uow);
+                listeFournisseur.AddRange(fournisseurs.Select(Map.MapInverse.MapFournisseur));
             }
-            return listeMarque;
+            return listeFournisseur;
         }
 
-        public IEnumerable<Marque> FindBy(Query query)
+        public IEnumerable<Fournisseur> FindBy(Query query)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Marque> FindBy(Query query, int index, int count)
+        public IEnumerable<Fournisseur> FindBy(Query query, int index, int count)
         {
             throw new NotImplementedException();
         }
 
-        public void SaveAll(IEnumerable<Marque> entities)
+        public void SaveAll(IEnumerable<Fournisseur> entities)
         {
             throw new NotImplementedException();
         }
 
-        public List<Marque> FindAll(List<Query> entities)
+        public List<Fournisseur> FindAll(List<Query> entities)
         {
             throw new NotImplementedException();
         }
 
-        public void Save(Marque entity)
+        public void Save(Fournisseur entity)
         {
             var config = new AppSettingsReader();
             using (
@@ -72,17 +72,17 @@ namespace vente_embarque.DataLayer
                     ConnectionString = ((string)config.GetValue("connect", typeof(string)))
                 })
             {
-                Map.Map.MapMarque(entity, uow);
+                Map.Map.MapFournisseur(entity, uow);
                 uow.CommitChanges();
             }
         }
 
-        public void Add(Marque entity)
+        public void Add(Fournisseur entity)
         {
             throw new NotImplementedException();
         }
 
-        public void Remove(Marque entity)
+        public void Remove(Fournisseur entity)
         {
             var config = new AppSettingsReader();
             using (
@@ -91,8 +91,8 @@ namespace vente_embarque.DataLayer
                     ConnectionString = ((string)config.GetValue("connect", typeof(string)))
                 })
             {
-                var marque = uow.GetObjectByKey<XpoMarque>(entity.id);
-                marque.Delete();
+                var fournisseur = uow.GetObjectByKey<XpoFournisseur>(entity.id);
+                fournisseur.Delete();
                 uow.CommitChanges();
             }
         }

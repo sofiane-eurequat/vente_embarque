@@ -11,6 +11,7 @@ namespace vente_embarque.presenter.Stok
     {
         IEnumerable<Category> Categories { get; set; }
         IEnumerable<Marque> Marques { get; set; }
+        IEnumerable<Fournisseur> Fournisseurs { get; set; }
         IEnumerable<Stock> Stocks { get; set; } 
         IEnumerable<Product> Products { get; set; } 
     }
