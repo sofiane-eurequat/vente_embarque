@@ -10,20 +10,20 @@ namespace vente_embarque.presenter.Secteur
 {
     public class EditAgentTerrainPresenterPage 
     {
-        private readonly IEditSecteurView _editSecteurView;
+        private readonly IEditAgentTerrainView _editAgentTerrainView;
         private readonly IRepository<AgentTerrain, Guid> _repositoryAgentTerrain;
         private readonly IRepository<Sector, Guid> _repositorySecteur;
 
-        public EditAgentTerrainPresenterPage(IEditSecteurView editSecteurView,IRepository<Wilaya,Guid> repository, IRepository<AgentTerrain,Guid> repository1, IRepository<Sector,Guid> repository2, IRepository<Client,Guid> repository3 )
+        public EditAgentTerrainPresenterPage(IEditAgentTerrainView editAgentTerrainView, IRepository<AgentTerrain,Guid> repository1, IRepository<Sector,Guid> repository2 )
         {
-            _editSecteurView = editSecteurView;
+            _editAgentTerrainView = editAgentTerrainView;
             _repositoryAgentTerrain = repository1;
             _repositorySecteur = repository2;
         }
 
         public void Display()
         {
-            _editSecteurView.Secteurs = _repositorySecteur.FindAll();
+            _editAgentTerrainView.Secteurs = _repositorySecteur.FindAll();
         }
 
         public void Write(string name, Sector sector)

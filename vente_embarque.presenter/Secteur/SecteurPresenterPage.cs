@@ -19,7 +19,7 @@ namespace vente_embarque.presenter.Secteur
             _repositorysecteur = secteurkRepository;
         }
 
-        public void Diplay()
+        public void Display()
         {
             var secteur = _repositorysecteur.FindAll();
             if (secteur == null) return;
@@ -52,6 +52,6 @@ namespace vente_embarque.presenter.Secteur
 
     public interface ISecteurPagePresenter
     {
-        void Diplay();
+        void Display();
     }
 }

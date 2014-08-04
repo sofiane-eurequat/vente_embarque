@@ -1,20 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.MailClient.Win.Properties;
 using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraEditors;
-using vente_embarque.Core.Domain;
 using vente_embarque.DataLayer;
 using vente_embarque.Model;
-using vente_embarque.presenter;
 using vente_embarque.presenter.Secteur;
 
 namespace DevExpress.MailClient.Win.Forms
@@ -26,17 +19,16 @@ namespace DevExpress.MailClient.Win.Forms
         public IEnumerable<Client> Clients { get; set; } 
         public IEnumerable<Sector> Secteurs { get; set; }
         private readonly EditSectorPresenterPage _editSecteurPresenter;
-        readonly ModelViewSecteur _sourceSecteur;
+        private ModelViewSecteur SourceSecteur { get; set; }
         public Guid IdSecteur { get; set; }
         readonly bool _newSecteur = true;
         public bool IsSectorModified;
 
         public FrmEditSector() {
             InitializeComponent();
-            DialogResult = DialogResult.Cancel;
         }
 
-        public FrmEditSector(ModelViewSecteur secteur, bool newSecteur, string caption)
+        public FrmEditSector(ModelViewSecteur secteur, bool newSecteur)
         {
             InitializeComponent();
             //DictionaryHelper.InitDictionary(spellChecker1);
@@ -66,7 +58,7 @@ namespace DevExpress.MailClient.Win.Forms
 
             _newSecteur = newSecteur;
             IsSectorModified = false;
-            _sourceSecteur = secteur;
+            SourceSecteur = secteur;
 
             GCAgentTerrain.DataSource = AgentTerrains;
         }

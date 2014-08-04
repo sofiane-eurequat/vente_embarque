@@ -42,25 +42,14 @@ namespace DevExpress.MailClient.Win.Modules
             this.modelViewProductBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.layoutViewProduct = new DevExpress.XtraGrid.Views.Layout.LayoutView();
             this.layoutViewColumn10 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
-            this.layoutViewField_colId1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
             this.layoutViewColumn11 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
-            this.layoutViewField_colQuantiteMin3 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
             this.layoutViewColumn12 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
-            this.layoutViewField_colPhoto1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
             this.layoutViewColumn13 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
-            this.layoutViewField_colFournisseur1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
             this.layoutViewColumn14 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
-            this.layoutViewField_colCategorie1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
             this.layoutViewColumn15 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
-            this.layoutViewField_colRemarque1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
             this.layoutViewColumn16 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
-            this.layoutViewField_colReference1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
             this.layoutViewColumn17 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
-            this.layoutViewField_colNom3 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
             this.layoutViewColumn18 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
-            this.layoutViewField_colMarque1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
-            this.layoutViewCard3 = new DevExpress.XtraGrid.Views.Layout.LayoutViewCard();
-            this.item2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutView1 = new DevExpress.XtraGrid.Views.Layout.LayoutView();
             this.layoutViewColumn1 = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
             this.layoutViewField_colId2 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
@@ -87,6 +76,19 @@ namespace DevExpress.MailClient.Win.Modules
             this.layoutViewCard2 = new DevExpress.XtraGrid.Views.Layout.LayoutViewCard();
             this.layoutViewField_colQuantiteMin1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
             this.layoutViewField_colNom1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.colDateEntree = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
+            this.layoutViewCard3 = new DevExpress.XtraGrid.Views.Layout.LayoutViewCard();
+            this.layoutViewField_colPhoto3 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.item3 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutViewField_colFournisseur3 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.layoutViewField_colRemarque3 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.layoutViewField_colMarque3 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.layoutViewField_colReference3 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.layoutViewField_colCategorie3 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.layoutViewField_colDateEntree = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.layoutViewField_colNom4 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.layoutViewField_colQuantiteMin4 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
+            this.layoutViewField_colId3 = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlOrder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewOrder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlOrderLine)).BeginInit();
@@ -98,17 +100,6 @@ namespace DevExpress.MailClient.Win.Modules
             ((System.ComponentModel.ISupportInitialize)(this.GCDisplayProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.modelViewProductBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewProduct)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colId1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colQuantiteMin3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colPhoto1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colFournisseur1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colCategorie1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colRemarque1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colReference1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colNom3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colMarque1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.item2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colId2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colQuantiteMin2)).BeginInit();
@@ -126,6 +117,18 @@ namespace DevExpress.MailClient.Win.Modules
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colQuantiteMin1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colNom1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colPhoto3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.item3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colFournisseur3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colRemarque3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colMarque3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colReference3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colCategorie3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colDateEntree)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colNom4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colQuantiteMin4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colId3)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControlOrder
@@ -220,7 +223,7 @@ namespace DevExpress.MailClient.Win.Modules
             // 
             // layoutViewProduct
             // 
-            this.layoutViewProduct.CardMinSize = new System.Drawing.Size(511, 329);
+            this.layoutViewProduct.CardMinSize = new System.Drawing.Size(529, 333);
             this.layoutViewProduct.Columns.AddRange(new DevExpress.XtraGrid.Columns.LayoutViewColumn[] {
             this.layoutViewColumn10,
             this.layoutViewColumn11,
@@ -230,10 +233,11 @@ namespace DevExpress.MailClient.Win.Modules
             this.layoutViewColumn15,
             this.layoutViewColumn16,
             this.layoutViewColumn17,
-            this.layoutViewColumn18});
+            this.layoutViewColumn18,
+            this.colDateEntree});
             this.layoutViewProduct.GridControl = this.GCDisplayProduct;
             this.layoutViewProduct.HiddenItems.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutViewField_colId1});
+            this.layoutViewField_colId3});
             this.layoutViewProduct.Name = "layoutViewProduct";
             this.layoutViewProduct.OptionsBehavior.AllowExpandCollapse = false;
             this.layoutViewProduct.OptionsBehavior.AllowRuntimeCustomization = false;
@@ -241,7 +245,7 @@ namespace DevExpress.MailClient.Win.Modules
             this.layoutViewProduct.OptionsBehavior.ReadOnly = true;
             this.layoutViewProduct.OptionsCustomization.AllowFilter = false;
             this.layoutViewProduct.OptionsCustomization.AllowSort = false;
-            this.layoutViewProduct.OptionsItemText.TextToControlDistance = 3;
+            this.layoutViewProduct.OptionsItemText.TextToControlDistance = 4;
             this.layoutViewProduct.OptionsView.ShowCardBorderIfCaptionHidden = false;
             this.layoutViewProduct.OptionsView.ShowCardExpandButton = false;
             this.layoutViewProduct.OptionsView.ShowHeaderPanel = false;
@@ -250,180 +254,56 @@ namespace DevExpress.MailClient.Win.Modules
             // layoutViewColumn10
             // 
             this.layoutViewColumn10.FieldName = "Id";
-            this.layoutViewColumn10.LayoutViewField = this.layoutViewField_colId1;
+            this.layoutViewColumn10.LayoutViewField = this.layoutViewField_colId3;
             this.layoutViewColumn10.Name = "layoutViewColumn10";
-            // 
-            // layoutViewField_colId1
-            // 
-            this.layoutViewField_colId1.EditorPreferredWidth = 20;
-            this.layoutViewField_colId1.Location = new System.Drawing.Point(0, 0);
-            this.layoutViewField_colId1.Name = "layoutViewField_colId1";
-            this.layoutViewField_colId1.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
-            this.layoutViewField_colId1.Size = new System.Drawing.Size(476, 277);
-            this.layoutViewField_colId1.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.layoutViewField_colId1.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutViewField_colId1.TextToControlDistance = 0;
-            this.layoutViewField_colId1.TextVisible = false;
             // 
             // layoutViewColumn11
             // 
             this.layoutViewColumn11.FieldName = "QuantiteMin";
-            this.layoutViewColumn11.LayoutViewField = this.layoutViewField_colQuantiteMin3;
+            this.layoutViewColumn11.LayoutViewField = this.layoutViewField_colQuantiteMin4;
             this.layoutViewColumn11.Name = "layoutViewColumn11";
-            // 
-            // layoutViewField_colQuantiteMin3
-            // 
-            this.layoutViewField_colQuantiteMin3.EditorPreferredWidth = 207;
-            this.layoutViewField_colQuantiteMin3.Location = new System.Drawing.Point(0, 46);
-            this.layoutViewField_colQuantiteMin3.Name = "layoutViewField_colQuantiteMin3";
-            this.layoutViewField_colQuantiteMin3.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
-            this.layoutViewField_colQuantiteMin3.Size = new System.Drawing.Size(301, 46);
-            this.layoutViewField_colQuantiteMin3.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.layoutViewField_colQuantiteMin3.TextSize = new System.Drawing.Size(65, 13);
             // 
             // layoutViewColumn12
             // 
             this.layoutViewColumn12.FieldName = "Photo";
-            this.layoutViewColumn12.LayoutViewField = this.layoutViewField_colPhoto1;
+            this.layoutViewColumn12.LayoutViewField = this.layoutViewField_colPhoto3;
             this.layoutViewColumn12.Name = "layoutViewColumn12";
-            // 
-            // layoutViewField_colPhoto1
-            // 
-            this.layoutViewField_colPhoto1.EditorPreferredWidth = 121;
-            this.layoutViewField_colPhoto1.Location = new System.Drawing.Point(0, 0);
-            this.layoutViewField_colPhoto1.Name = "layoutViewField_colPhoto1";
-            this.layoutViewField_colPhoto1.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
-            this.layoutViewField_colPhoto1.Size = new System.Drawing.Size(147, 139);
-            this.layoutViewField_colPhoto1.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.layoutViewField_colPhoto1.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutViewField_colPhoto1.TextToControlDistance = 0;
-            this.layoutViewField_colPhoto1.TextVisible = false;
             // 
             // layoutViewColumn13
             // 
             this.layoutViewColumn13.FieldName = "Fournisseur";
-            this.layoutViewColumn13.LayoutViewField = this.layoutViewField_colFournisseur1;
+            this.layoutViewColumn13.LayoutViewField = this.layoutViewField_colFournisseur3;
             this.layoutViewColumn13.Name = "layoutViewColumn13";
-            // 
-            // layoutViewField_colFournisseur1
-            // 
-            this.layoutViewField_colFournisseur1.EditorPreferredWidth = 149;
-            this.layoutViewField_colFournisseur1.Location = new System.Drawing.Point(0, 139);
-            this.layoutViewField_colFournisseur1.Name = "layoutViewField_colFournisseur1";
-            this.layoutViewField_colFournisseur1.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
-            this.layoutViewField_colFournisseur1.Size = new System.Drawing.Size(238, 46);
-            this.layoutViewField_colFournisseur1.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.layoutViewField_colFournisseur1.TextSize = new System.Drawing.Size(60, 13);
             // 
             // layoutViewColumn14
             // 
             this.layoutViewColumn14.FieldName = "Categorie";
-            this.layoutViewColumn14.LayoutViewField = this.layoutViewField_colCategorie1;
+            this.layoutViewColumn14.LayoutViewField = this.layoutViewField_colCategorie3;
             this.layoutViewColumn14.Name = "layoutViewColumn14";
-            // 
-            // layoutViewField_colCategorie1
-            // 
-            this.layoutViewField_colCategorie1.EditorPreferredWidth = 149;
-            this.layoutViewField_colCategorie1.Location = new System.Drawing.Point(238, 139);
-            this.layoutViewField_colCategorie1.Name = "layoutViewField_colCategorie1";
-            this.layoutViewField_colCategorie1.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
-            this.layoutViewField_colCategorie1.Size = new System.Drawing.Size(238, 46);
-            this.layoutViewField_colCategorie1.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.layoutViewField_colCategorie1.TextSize = new System.Drawing.Size(60, 13);
             // 
             // layoutViewColumn15
             // 
             this.layoutViewColumn15.FieldName = "Remarque";
-            this.layoutViewColumn15.LayoutViewField = this.layoutViewField_colRemarque1;
+            this.layoutViewColumn15.LayoutViewField = this.layoutViewField_colRemarque3;
             this.layoutViewColumn15.Name = "layoutViewColumn15";
-            // 
-            // layoutViewField_colRemarque1
-            // 
-            this.layoutViewField_colRemarque1.EditorPreferredWidth = 387;
-            this.layoutViewField_colRemarque1.Location = new System.Drawing.Point(0, 231);
-            this.layoutViewField_colRemarque1.Name = "layoutViewField_colRemarque1";
-            this.layoutViewField_colRemarque1.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
-            this.layoutViewField_colRemarque1.Size = new System.Drawing.Size(476, 46);
-            this.layoutViewField_colRemarque1.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.layoutViewField_colRemarque1.TextSize = new System.Drawing.Size(60, 13);
             // 
             // layoutViewColumn16
             // 
             this.layoutViewColumn16.FieldName = "Reference";
-            this.layoutViewColumn16.LayoutViewField = this.layoutViewField_colReference1;
+            this.layoutViewColumn16.LayoutViewField = this.layoutViewField_colReference3;
             this.layoutViewColumn16.Name = "layoutViewColumn16";
-            // 
-            // layoutViewField_colReference1
-            // 
-            this.layoutViewField_colReference1.EditorPreferredWidth = 149;
-            this.layoutViewField_colReference1.Location = new System.Drawing.Point(0, 185);
-            this.layoutViewField_colReference1.Name = "layoutViewField_colReference1";
-            this.layoutViewField_colReference1.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
-            this.layoutViewField_colReference1.Size = new System.Drawing.Size(238, 46);
-            this.layoutViewField_colReference1.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.layoutViewField_colReference1.TextSize = new System.Drawing.Size(60, 13);
             // 
             // layoutViewColumn17
             // 
             this.layoutViewColumn17.FieldName = "Nom";
-            this.layoutViewColumn17.LayoutViewField = this.layoutViewField_colNom3;
+            this.layoutViewColumn17.LayoutViewField = this.layoutViewField_colNom4;
             this.layoutViewColumn17.Name = "layoutViewColumn17";
-            // 
-            // layoutViewField_colNom3
-            // 
-            this.layoutViewField_colNom3.EditorPreferredWidth = 207;
-            this.layoutViewField_colNom3.Location = new System.Drawing.Point(0, 0);
-            this.layoutViewField_colNom3.Name = "layoutViewField_colNom3";
-            this.layoutViewField_colNom3.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
-            this.layoutViewField_colNom3.Size = new System.Drawing.Size(301, 46);
-            this.layoutViewField_colNom3.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.layoutViewField_colNom3.TextSize = new System.Drawing.Size(65, 13);
             // 
             // layoutViewColumn18
             // 
             this.layoutViewColumn18.FieldName = "Marque";
-            this.layoutViewColumn18.LayoutViewField = this.layoutViewField_colMarque1;
+            this.layoutViewColumn18.LayoutViewField = this.layoutViewField_colMarque3;
             this.layoutViewColumn18.Name = "layoutViewColumn18";
-            // 
-            // layoutViewField_colMarque1
-            // 
-            this.layoutViewField_colMarque1.EditorPreferredWidth = 149;
-            this.layoutViewField_colMarque1.Location = new System.Drawing.Point(238, 185);
-            this.layoutViewField_colMarque1.Name = "layoutViewField_colMarque1";
-            this.layoutViewField_colMarque1.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
-            this.layoutViewField_colMarque1.Size = new System.Drawing.Size(238, 46);
-            this.layoutViewField_colMarque1.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.layoutViewField_colMarque1.TextSize = new System.Drawing.Size(60, 13);
-            this.layoutViewField_colMarque1.TextToControlDistance = 3;
-            // 
-            // layoutViewCard3
-            // 
-            this.layoutViewCard3.CustomizationFormText = "TemplateCard";
-            this.layoutViewCard3.ExpandButtonLocation = DevExpress.Utils.GroupElementLocation.AfterText;
-            this.layoutViewCard3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutViewField_colPhoto1,
-            this.item2,
-            this.layoutViewField_colFournisseur1,
-            this.layoutViewField_colCategorie1,
-            this.layoutViewField_colReference1,
-            this.layoutViewField_colRemarque1,
-            this.layoutViewField_colMarque1});
-            this.layoutViewCard3.Name = "layoutViewTemplateCard";
-            this.layoutViewCard3.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
-            this.layoutViewCard3.Text = "TemplateCard";
-            // 
-            // item2
-            // 
-            this.item2.CustomizationFormText = "Group1";
-            this.item2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutViewField_colNom3,
-            this.layoutViewField_colQuantiteMin3});
-            this.item2.Location = new System.Drawing.Point(147, 0);
-            this.item2.Name = "item2";
-            this.item2.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
-            this.item2.Size = new System.Drawing.Size(329, 139);
-            this.item2.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.item2.Text = "item2";
             // 
             // layoutView1
             // 
@@ -688,6 +568,148 @@ namespace DevExpress.MailClient.Win.Modules
             this.layoutViewField_colNom1.TextSize = new System.Drawing.Size(65, 13);
             this.layoutViewField_colNom1.TextToControlDistance = 5;
             // 
+            // colDateEntree
+            // 
+            this.colDateEntree.FieldName = "DateEntree";
+            this.colDateEntree.LayoutViewField = this.layoutViewField_colDateEntree;
+            this.colDateEntree.Name = "colDateEntree";
+            // 
+            // layoutViewCard3
+            // 
+            this.layoutViewCard3.CustomizationFormText = "TemplateCard";
+            this.layoutViewCard3.ExpandButtonLocation = DevExpress.Utils.GroupElementLocation.AfterText;
+            this.layoutViewCard3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutViewField_colPhoto3,
+            this.item3,
+            this.layoutViewField_colFournisseur3,
+            this.layoutViewField_colRemarque3,
+            this.layoutViewField_colMarque3,
+            this.layoutViewField_colReference3,
+            this.layoutViewField_colCategorie3,
+            this.layoutViewField_colDateEntree});
+            this.layoutViewCard3.Name = "layoutViewCard3";
+            this.layoutViewCard3.OptionsItemText.TextToControlDistance = 4;
+            this.layoutViewCard3.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
+            this.layoutViewCard3.Text = "TemplateCard";
+            // 
+            // layoutViewField_colPhoto3
+            // 
+            this.layoutViewField_colPhoto3.EditorPreferredWidth = 132;
+            this.layoutViewField_colPhoto3.Location = new System.Drawing.Point(0, 0);
+            this.layoutViewField_colPhoto3.Name = "layoutViewField_colPhoto3";
+            this.layoutViewField_colPhoto3.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
+            this.layoutViewField_colPhoto3.Size = new System.Drawing.Size(158, 139);
+            this.layoutViewField_colPhoto3.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.layoutViewField_colPhoto3.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutViewField_colPhoto3.TextToControlDistance = 0;
+            this.layoutViewField_colPhoto3.TextVisible = false;
+            // 
+            // item3
+            // 
+            this.item3.CustomizationFormText = "Group1";
+            this.item3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutViewField_colNom4,
+            this.layoutViewField_colQuantiteMin4});
+            this.item3.Location = new System.Drawing.Point(158, 0);
+            this.item3.Name = "item3";
+            this.item3.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
+            this.item3.Size = new System.Drawing.Size(353, 139);
+            this.item3.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.item3.Text = "item2";
+            // 
+            // layoutViewField_colFournisseur3
+            // 
+            this.layoutViewField_colFournisseur3.EditorPreferredWidth = 163;
+            this.layoutViewField_colFournisseur3.Location = new System.Drawing.Point(0, 139);
+            this.layoutViewField_colFournisseur3.Name = "layoutViewField_colFournisseur3";
+            this.layoutViewField_colFournisseur3.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
+            this.layoutViewField_colFournisseur3.Size = new System.Drawing.Size(255, 46);
+            this.layoutViewField_colFournisseur3.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.layoutViewField_colFournisseur3.TextSize = new System.Drawing.Size(62, 13);
+            // 
+            // layoutViewField_colRemarque3
+            // 
+            this.layoutViewField_colRemarque3.EditorPreferredWidth = 163;
+            this.layoutViewField_colRemarque3.Location = new System.Drawing.Point(0, 231);
+            this.layoutViewField_colRemarque3.Name = "layoutViewField_colRemarque3";
+            this.layoutViewField_colRemarque3.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
+            this.layoutViewField_colRemarque3.Size = new System.Drawing.Size(255, 65);
+            this.layoutViewField_colRemarque3.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.layoutViewField_colRemarque3.TextSize = new System.Drawing.Size(62, 13);
+            // 
+            // layoutViewField_colMarque3
+            // 
+            this.layoutViewField_colMarque3.EditorPreferredWidth = 164;
+            this.layoutViewField_colMarque3.Location = new System.Drawing.Point(255, 185);
+            this.layoutViewField_colMarque3.Name = "layoutViewField_colMarque3";
+            this.layoutViewField_colMarque3.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
+            this.layoutViewField_colMarque3.Size = new System.Drawing.Size(256, 46);
+            this.layoutViewField_colMarque3.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.layoutViewField_colMarque3.TextSize = new System.Drawing.Size(62, 13);
+            // 
+            // layoutViewField_colReference3
+            // 
+            this.layoutViewField_colReference3.EditorPreferredWidth = 164;
+            this.layoutViewField_colReference3.Location = new System.Drawing.Point(255, 139);
+            this.layoutViewField_colReference3.Name = "layoutViewField_colReference3";
+            this.layoutViewField_colReference3.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
+            this.layoutViewField_colReference3.Size = new System.Drawing.Size(256, 46);
+            this.layoutViewField_colReference3.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.layoutViewField_colReference3.TextSize = new System.Drawing.Size(62, 13);
+            // 
+            // layoutViewField_colCategorie3
+            // 
+            this.layoutViewField_colCategorie3.EditorPreferredWidth = 163;
+            this.layoutViewField_colCategorie3.Location = new System.Drawing.Point(0, 185);
+            this.layoutViewField_colCategorie3.Name = "layoutViewField_colCategorie3";
+            this.layoutViewField_colCategorie3.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
+            this.layoutViewField_colCategorie3.Size = new System.Drawing.Size(255, 46);
+            this.layoutViewField_colCategorie3.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.layoutViewField_colCategorie3.TextSize = new System.Drawing.Size(62, 13);
+            // 
+            // layoutViewField_colDateEntree
+            // 
+            this.layoutViewField_colDateEntree.EditorPreferredWidth = 164;
+            this.layoutViewField_colDateEntree.Location = new System.Drawing.Point(255, 231);
+            this.layoutViewField_colDateEntree.Name = "layoutViewField_colDateEntree";
+            this.layoutViewField_colDateEntree.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
+            this.layoutViewField_colDateEntree.Size = new System.Drawing.Size(256, 65);
+            this.layoutViewField_colDateEntree.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.layoutViewField_colDateEntree.TextSize = new System.Drawing.Size(62, 13);
+            this.layoutViewField_colDateEntree.TextToControlDistance = 4;
+            // 
+            // layoutViewField_colNom4
+            // 
+            this.layoutViewField_colNom4.EditorPreferredWidth = 230;
+            this.layoutViewField_colNom4.Location = new System.Drawing.Point(0, 0);
+            this.layoutViewField_colNom4.Name = "layoutViewField_colNom4";
+            this.layoutViewField_colNom4.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
+            this.layoutViewField_colNom4.Size = new System.Drawing.Size(325, 46);
+            this.layoutViewField_colNom4.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.layoutViewField_colNom4.TextSize = new System.Drawing.Size(65, 13);
+            // 
+            // layoutViewField_colQuantiteMin4
+            // 
+            this.layoutViewField_colQuantiteMin4.EditorPreferredWidth = 230;
+            this.layoutViewField_colQuantiteMin4.Location = new System.Drawing.Point(0, 46);
+            this.layoutViewField_colQuantiteMin4.Name = "layoutViewField_colQuantiteMin4";
+            this.layoutViewField_colQuantiteMin4.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
+            this.layoutViewField_colQuantiteMin4.Size = new System.Drawing.Size(325, 46);
+            this.layoutViewField_colQuantiteMin4.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.layoutViewField_colQuantiteMin4.TextSize = new System.Drawing.Size(65, 13);
+            // 
+            // layoutViewField_colId3
+            // 
+            this.layoutViewField_colId3.EditorPreferredWidth = 20;
+            this.layoutViewField_colId3.Location = new System.Drawing.Point(0, 0);
+            this.layoutViewField_colId3.Name = "layoutViewField_colId3";
+            this.layoutViewField_colId3.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
+            this.layoutViewField_colId3.Size = new System.Drawing.Size(511, 277);
+            this.layoutViewField_colId3.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.layoutViewField_colId3.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutViewField_colId3.TextToControlDistance = 0;
+            this.layoutViewField_colId3.TextVisible = false;
+            // 
             // Bdc2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -707,17 +729,6 @@ namespace DevExpress.MailClient.Win.Modules
             ((System.ComponentModel.ISupportInitialize)(this.GCDisplayProduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.modelViewProductBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewProduct)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colId1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colQuantiteMin3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colPhoto1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colFournisseur1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colCategorie1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colRemarque1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colReference1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colNom3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colMarque1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.item2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colId2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colQuantiteMin2)).EndInit();
@@ -735,6 +746,18 @@ namespace DevExpress.MailClient.Win.Modules
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colQuantiteMin1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colNom1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewCard3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colPhoto3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.item3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colFournisseur3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colRemarque3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colMarque3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colReference3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colCategorie3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colDateEntree)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colNom4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colQuantiteMin4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colId3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -753,25 +776,14 @@ namespace DevExpress.MailClient.Win.Modules
         private XtraGrid.GridControl GCDisplayProduct;
         private XtraGrid.Views.Layout.LayoutView layoutViewProduct;
         private XtraGrid.Columns.LayoutViewColumn layoutViewColumn10;
-        private XtraGrid.Views.Layout.LayoutViewField layoutViewField_colId1;
         private XtraGrid.Columns.LayoutViewColumn layoutViewColumn11;
-        private XtraGrid.Views.Layout.LayoutViewField layoutViewField_colQuantiteMin3;
         private XtraGrid.Columns.LayoutViewColumn layoutViewColumn12;
-        private XtraGrid.Views.Layout.LayoutViewField layoutViewField_colPhoto1;
         private XtraGrid.Columns.LayoutViewColumn layoutViewColumn13;
-        private XtraGrid.Views.Layout.LayoutViewField layoutViewField_colFournisseur1;
         private XtraGrid.Columns.LayoutViewColumn layoutViewColumn14;
-        private XtraGrid.Views.Layout.LayoutViewField layoutViewField_colCategorie1;
         private XtraGrid.Columns.LayoutViewColumn layoutViewColumn15;
-        private XtraGrid.Views.Layout.LayoutViewField layoutViewField_colRemarque1;
         private XtraGrid.Columns.LayoutViewColumn layoutViewColumn16;
-        private XtraGrid.Views.Layout.LayoutViewField layoutViewField_colReference1;
         private XtraGrid.Columns.LayoutViewColumn layoutViewColumn17;
-        private XtraGrid.Views.Layout.LayoutViewField layoutViewField_colNom3;
         private XtraGrid.Columns.LayoutViewColumn layoutViewColumn18;
-        private XtraGrid.Views.Layout.LayoutViewField layoutViewField_colMarque1;
-        private XtraGrid.Views.Layout.LayoutViewCard layoutViewCard3;
-        private XtraLayout.LayoutControlGroup item2;
         private XtraGrid.Views.Layout.LayoutView layoutView1;
         private XtraGrid.Columns.LayoutViewColumn layoutViewColumn1;
         private XtraGrid.Views.Layout.LayoutViewField layoutViewField_colId2;
@@ -796,5 +808,18 @@ namespace DevExpress.MailClient.Win.Modules
         private XtraGrid.Views.Layout.LayoutViewField layoutViewField_colQuantiteMin1;
         private XtraGrid.Views.Layout.LayoutViewField layoutViewField_colNom1;
         private System.Windows.Forms.BindingSource modelViewProductBindingSource;
+        private XtraGrid.Views.Layout.LayoutViewField layoutViewField_colId3;
+        private XtraGrid.Views.Layout.LayoutViewField layoutViewField_colQuantiteMin4;
+        private XtraGrid.Views.Layout.LayoutViewField layoutViewField_colPhoto3;
+        private XtraGrid.Views.Layout.LayoutViewField layoutViewField_colFournisseur3;
+        private XtraGrid.Views.Layout.LayoutViewField layoutViewField_colCategorie3;
+        private XtraGrid.Views.Layout.LayoutViewField layoutViewField_colRemarque3;
+        private XtraGrid.Views.Layout.LayoutViewField layoutViewField_colReference3;
+        private XtraGrid.Views.Layout.LayoutViewField layoutViewField_colNom4;
+        private XtraGrid.Views.Layout.LayoutViewField layoutViewField_colMarque3;
+        private XtraGrid.Columns.LayoutViewColumn colDateEntree;
+        private XtraGrid.Views.Layout.LayoutViewField layoutViewField_colDateEntree;
+        private XtraGrid.Views.Layout.LayoutViewCard layoutViewCard3;
+        private XtraLayout.LayoutControlGroup item3;
     }
 }

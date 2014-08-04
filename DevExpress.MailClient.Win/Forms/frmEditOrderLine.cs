@@ -44,6 +44,8 @@ namespace DevExpress.MailClient.Win.Forms
                 comboBoxProduit.SelectedValue = orderLine.ProductName;
                 textEditQuantité.Text = orderLine.Quantity.ToString(CultureInfo.InvariantCulture);
             }
+
+            IsOrderLineModified = false;
         }
 
         private void bbiNouveau_ItemClick(object sender, ItemClickEventArgs e)

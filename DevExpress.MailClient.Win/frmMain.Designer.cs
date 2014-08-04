@@ -151,9 +151,8 @@
             this.barButtonGroup1 = new DevExpress.XtraBars.BarButtonGroup();
             this.barButtonGroup2 = new DevExpress.XtraBars.BarButtonGroup();
             this.bbiNewSecteur = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiModifySecteur = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiDeleteSecteur = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
@@ -228,6 +227,10 @@
             this.pcMain = new DevExpress.XtraEditors.PanelControl();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.bbiRefreshSecteur = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiCloseSecteur = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.backstageViewControl1.SuspendLayout();
             this.backstageViewClientControl1.SuspendLayout();
@@ -351,9 +354,8 @@
             this.barButtonGroup1,
             this.barButtonGroup2,
             this.bbiNewSecteur,
-            this.barButtonItem7,
-            this.barButtonItem8,
-            this.barButtonItem9,
+            this.bbiModifySecteur,
+            this.bbiDeleteSecteur,
             this.barButtonItem10,
             this.barButtonItem11,
             this.barButtonItem12,
@@ -370,9 +372,11 @@
             this.bbiDeleteOrderLine,
             this.bbiModifyStock,
             this.bbiCloseProduct,
-            this.bbiRefreshProduct});
+            this.bbiRefreshProduct,
+            this.bbiRefreshSecteur,
+            this.bbiCloseSecteur});
             resources.ApplyResources(this.ribbonControl1, "ribbonControl1");
-            this.ribbonControl1.MaxItemId = 12;
+            this.ribbonControl1.MaxItemId = 14;
             this.ribbonControl1.MiniToolbars.Add(this.ribbonMiniToolbar1);
             this.ribbonControl1.MiniToolbars.Add(this.ribbonMiniToolbar2);
             this.ribbonControl1.Name = "ribbonControl1";
@@ -1277,33 +1281,25 @@
             // 
             resources.ApplyResources(this.bbiNewSecteur, "bbiNewSecteur");
             this.bbiNewSecteur.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiNewSecteur.Glyph")));
-            this.bbiNewSecteur.Id = 5;
+            this.bbiNewSecteur.Id = 6;
             this.bbiNewSecteur.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiNewSecteur.LargeGlyph")));
             this.bbiNewSecteur.Name = "bbiNewSecteur";
             // 
-            // barButtonItem7
+            // bbiModifySecteur
             // 
-            resources.ApplyResources(this.barButtonItem7, "barButtonItem7");
-            this.barButtonItem7.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.Glyph")));
-            this.barButtonItem7.Id = 6;
-            this.barButtonItem7.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.LargeGlyph")));
-            this.barButtonItem7.Name = "barButtonItem7";
+            resources.ApplyResources(this.bbiModifySecteur, "bbiModifySecteur");
+            this.bbiModifySecteur.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiModifySecteur.Glyph")));
+            this.bbiModifySecteur.Id = 7;
+            this.bbiModifySecteur.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiModifySecteur.LargeGlyph")));
+            this.bbiModifySecteur.Name = "bbiModifySecteur";
             // 
-            // barButtonItem8
+            // bbiDeleteSecteur
             // 
-            resources.ApplyResources(this.barButtonItem8, "barButtonItem8");
-            this.barButtonItem8.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.Glyph")));
-            this.barButtonItem8.Id = 7;
-            this.barButtonItem8.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.LargeGlyph")));
-            this.barButtonItem8.Name = "barButtonItem8";
-            // 
-            // barButtonItem9
-            // 
-            resources.ApplyResources(this.barButtonItem9, "barButtonItem9");
-            this.barButtonItem9.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.Glyph")));
-            this.barButtonItem9.Id = 8;
-            this.barButtonItem9.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.LargeGlyph")));
-            this.barButtonItem9.Name = "barButtonItem9";
+            resources.ApplyResources(this.bbiDeleteSecteur, "bbiDeleteSecteur");
+            this.bbiDeleteSecteur.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiDeleteSecteur.Glyph")));
+            this.bbiDeleteSecteur.Id = 8;
+            this.bbiDeleteSecteur.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiDeleteSecteur.LargeGlyph")));
+            this.bbiDeleteSecteur.Name = "bbiDeleteSecteur";
             // 
             // barButtonItem10
             // 
@@ -1606,7 +1602,9 @@
             // 
             this.rpSector.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.rpgGestionSecteur,
-            this.rpgGestionLivreur});
+            this.rpgGestionLivreur,
+            this.ribbonPageGroup1,
+            this.ribbonPageGroup2});
             this.rpSector.Name = "rpSector";
             this.rpSector.Tag = "Secteur";
             resources.ApplyResources(this.rpSector, "rpSector");
@@ -1615,9 +1613,8 @@
             // 
             this.rpgGestionSecteur.AllowTextClipping = false;
             this.rpgGestionSecteur.ItemLinks.Add(this.bbiNewSecteur);
-            this.rpgGestionSecteur.ItemLinks.Add(this.barButtonItem7);
-            this.rpgGestionSecteur.ItemLinks.Add(this.barButtonItem8);
-            this.rpgGestionSecteur.ItemLinks.Add(this.barButtonItem9);
+            this.rpgGestionSecteur.ItemLinks.Add(this.bbiModifySecteur);
+            this.rpgGestionSecteur.ItemLinks.Add(this.bbiDeleteSecteur);
             this.rpgGestionSecteur.Name = "rpgGestionSecteur";
             this.rpgGestionSecteur.ShowCaptionButton = false;
             resources.ApplyResources(this.rpgGestionSecteur, "rpgGestionSecteur");
@@ -1967,6 +1964,38 @@
             this.ribbonPageGroup5.ShowCaptionButton = false;
             resources.ApplyResources(this.ribbonPageGroup5, "ribbonPageGroup5");
             // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.AllowTextClipping = false;
+            this.ribbonPageGroup1.ItemLinks.Add(this.bbiRefreshSecteur);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.ShowCaptionButton = false;
+            resources.ApplyResources(this.ribbonPageGroup1, "ribbonPageGroup1");
+            // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.AllowTextClipping = false;
+            this.ribbonPageGroup2.ItemLinks.Add(this.bbiCloseSecteur);
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            this.ribbonPageGroup2.ShowCaptionButton = false;
+            resources.ApplyResources(this.ribbonPageGroup2, "ribbonPageGroup2");
+            // 
+            // bbiRefreshSecteur
+            // 
+            resources.ApplyResources(this.bbiRefreshSecteur, "bbiRefreshSecteur");
+            this.bbiRefreshSecteur.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiRefreshSecteur.Glyph")));
+            this.bbiRefreshSecteur.Id = 12;
+            this.bbiRefreshSecteur.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiRefreshSecteur.LargeGlyph")));
+            this.bbiRefreshSecteur.Name = "bbiRefreshSecteur";
+            // 
+            // bbiCloseSecteur
+            // 
+            resources.ApplyResources(this.bbiCloseSecteur, "bbiCloseSecteur");
+            this.bbiCloseSecteur.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiCloseSecteur.Glyph")));
+            this.bbiCloseSecteur.Id = 13;
+            this.bbiCloseSecteur.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiCloseSecteur.LargeGlyph")));
+            this.bbiCloseSecteur.Name = "bbiCloseSecteur";
+            // 
             // FrmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -2122,9 +2151,8 @@
         private XtraBars.BarButtonGroup barButtonGroup1;
         private XtraBars.BarButtonGroup barButtonGroup2;
         private XtraBars.BarButtonItem bbiNewSecteur;
-        private XtraBars.BarButtonItem barButtonItem7;
-        private XtraBars.BarButtonItem barButtonItem8;
-        private XtraBars.BarButtonItem barButtonItem9;
+        private XtraBars.BarButtonItem bbiModifySecteur;
+        private XtraBars.BarButtonItem bbiDeleteSecteur;
         private XtraBars.BarButtonItem barButtonItem10;
         private XtraBars.BarButtonItem barButtonItem11;
         private XtraBars.BarButtonItem barButtonItem12;
@@ -2193,6 +2221,10 @@
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         private XtraBars.BarButtonItem bbiRefreshProduct;
+        private XtraBars.BarButtonItem bbiRefreshSecteur;
+        private XtraBars.BarButtonItem bbiCloseSecteur;
+        private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
     }
 }
 

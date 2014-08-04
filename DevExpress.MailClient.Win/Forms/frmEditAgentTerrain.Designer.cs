@@ -1,6 +1,8 @@
-﻿namespace DevExpress.MailClient.Win.Forms
+﻿using vente_embarque.presenter.Secteur;
+
+namespace DevExpress.MailClient.Win.Forms
 {
-    partial class FrmEditAgentTerrain
+    partial class FrmEditAgentTerrain : IEditAgentTerrainView
     {
         /// <summary>
         /// Required designer variable.
@@ -44,13 +46,13 @@
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.textEditNom = new DevExpress.XtraEditors.TextEdit();
-            this.labelStock = new DevExpress.XtraEditors.LabelControl();
+            this.textEditNameAgentTerrain = new DevExpress.XtraEditors.TextEdit();
+            this.labelNameAgentTerrain = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditNom.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditNameAgentTerrain.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
@@ -175,31 +177,31 @@
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.textEditNom);
-            this.groupControl1.Controls.Add(this.labelStock);
+            this.groupControl1.Controls.Add(this.textEditNameAgentTerrain);
+            this.groupControl1.Controls.Add(this.labelNameAgentTerrain);
             this.groupControl1.Location = new System.Drawing.Point(0, 150);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(617, 96);
             this.groupControl1.TabIndex = 5;
             this.groupControl1.Text = "Information sur l\'agent de terrain";
             // 
-            // textEditNom
+            // textEditNameAgentTerrain
             // 
-            this.textEditNom.Location = new System.Drawing.Point(77, 44);
-            this.textEditNom.MenuManager = this.ribbon;
-            this.textEditNom.Name = "textEditNom";
-            this.textEditNom.Size = new System.Drawing.Size(140, 20);
-            this.textEditNom.TabIndex = 19;
+            this.textEditNameAgentTerrain.Location = new System.Drawing.Point(77, 44);
+            this.textEditNameAgentTerrain.MenuManager = this.ribbon;
+            this.textEditNameAgentTerrain.Name = "textEditNameAgentTerrain";
+            this.textEditNameAgentTerrain.Size = new System.Drawing.Size(140, 20);
+            this.textEditNameAgentTerrain.TabIndex = 19;
             // 
-            // labelStock
+            // labelNameAgentTerrain
             // 
-            this.labelStock.Location = new System.Drawing.Point(22, 47);
-            this.labelStock.Name = "labelStock";
-            this.labelStock.Size = new System.Drawing.Size(21, 13);
-            this.labelStock.TabIndex = 4;
-            this.labelStock.Text = "Nom";
+            this.labelNameAgentTerrain.Location = new System.Drawing.Point(22, 47);
+            this.labelNameAgentTerrain.Name = "labelNameAgentTerrain";
+            this.labelNameAgentTerrain.Size = new System.Drawing.Size(21, 13);
+            this.labelNameAgentTerrain.TabIndex = 4;
+            this.labelNameAgentTerrain.Text = "Nom";
             // 
-            // frmEditAgentTerrain
+            // FrmEditAgentTerrain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -218,7 +220,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditNom.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditNameAgentTerrain.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -239,7 +241,7 @@
         private XtraBars.BarButtonItem bbiEffacer;
         private XtraBars.BarButtonItem bbiFermer;
         private XtraEditors.GroupControl groupControl1;
-        private XtraEditors.TextEdit textEditNom;
-        private XtraEditors.LabelControl labelStock;
+        private XtraEditors.TextEdit textEditNameAgentTerrain;
+        private XtraEditors.LabelControl labelNameAgentTerrain;
     }
 }

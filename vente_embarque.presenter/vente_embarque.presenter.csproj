@@ -52,6 +52,7 @@
     <Compile Include="Bdc\EditOrderLinePresenterPage.cs" />
     <Compile Include="Bdc\IBdcView.cs" />
     <Compile Include="Bdc\IEditBdcView.cs" />
+    <Compile Include="Secteur\IEditAgentTerrainView.cs" />
     <Compile Include="Secteur\EditAgentTerrainPresenterPage.cs" />
     <Compile Include="Secteur\EditSectorPresenterPage.cs" />
     <Compile Include="Secteur\IEditSecteurView.cs" />

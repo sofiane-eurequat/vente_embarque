@@ -91,7 +91,6 @@ namespace vente_embarque.DataLayer
                     ConnectionString = ((string)config.GetValue("connect", typeof(string)))
                 })
             {
-                
                 Map.Map.MapProduct(entity, uow);
                 uow.CommitChanges();
             }

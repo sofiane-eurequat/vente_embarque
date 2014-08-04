@@ -109,7 +109,6 @@ namespace vente_embarque.presenter.Stok
         public string Marque { get; set; }
         public string Remarque { get; set; }
         public string Reference { get; set; }
-        
         public DateTime DateEntree { get; set; }
         public GestionProduit TypeGestion { get; set; }
     }

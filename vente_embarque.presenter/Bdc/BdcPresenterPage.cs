@@ -61,6 +61,7 @@ namespace vente_embarque.presenter.Bdc
                                 Categorie = pr.Product.Category.Name,
                                 Remarque = pr.Product.Remarque,
                                 Marque = pr.Product.Marque.Name,
+                                DateEntree = pr.Product.DateEntree,
                             });
                     }
                 }     
@@ -112,6 +113,8 @@ namespace vente_embarque.presenter.Bdc
         public string Remarque { get; set; }
         public string Reference { get; set; }
         public string Nom { get; set; }
+        public DateTime DateEntree { get; set; }
+        public GestionProduit TypeGestion { get; set; }
 
     }
 }
