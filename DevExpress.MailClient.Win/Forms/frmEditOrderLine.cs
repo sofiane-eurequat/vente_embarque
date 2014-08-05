@@ -138,17 +138,27 @@ namespace DevExpress.MailClient.Win.Forms
                 DialogResult result = XtraMessageBox.Show(this, TagResources.SaveBeforeClose, Application.ProductName, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
                 if (result == DialogResult.Yes)
                 {
-                    var orderLineModif = new OrderLine
+                    if (_newOrderLine)
                     {
-                        id = OrderLineOut.Id,
-                        Product = comboBoxProduit.SelectedItem as Product,
-                        Quantity = Convert.ToInt32(textEditQuantité.EditValue.ToString())
-                    };
+                        OrderLine = FactoryOrder.CreateOrderLine(comboBoxStock.SelectedItem as Stock, comboBoxProduit.Text,
+                                                             Convert.ToInt32(textEditQuantité.EditValue.ToString()));
+                        MessageBox.Show(Resources.succesAdd);
+                    }
+                    else
+                    {
+                        var orderLineModif = new OrderLine
+                        {
+                            id = OrderLineOut.Id,
+                            Product = comboBoxProduit.SelectedItem as Product,
+                            Quantity = Convert.ToInt32(textEditQuantité.EditValue.ToString())
+                        };
 
-                    var repositoryOrder = new RepositoryOrder();
-                    repositoryOrder.Save(OrderLineOut.IdOrder, orderLineModif);
+                        var repositoryOrder = new RepositoryOrder();
+                        repositoryOrder.Save(OrderLineOut.IdOrder, orderLineModif);
+                        MessageBox.Show(Resources.succesUpdate);
+                    }
+
                     IsOrderLineModified = false;
-                    MessageBox.Show(Resources.succesUpdate);
                 }
 
                 if (result == DialogResult.Cancel) e.Cancel = true;

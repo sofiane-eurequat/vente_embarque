@@ -260,10 +260,20 @@ namespace DevExpress.MailClient.Win.Forms
                 DialogResult result = XtraMessageBox.Show(this, TagResources.SaveBeforeClose, Application.ProductName, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
                 if (result == DialogResult.Yes)
                 {
-                    _editStockPresenter.Write(IdStock, textEditNameStock.Text, comboBoxWilaya.SelectedItem as Wilaya,
-                                          comboBoxCommune.SelectedItem as Commune, textEditAdress.Text);
+                    if (_newStock)
+                    {
+                        _editStockPresenter.Write(textEditNameStock.Text, comboBoxWilaya.SelectedItem as Wilaya,
+                                                  comboBoxCommune.SelectedItem as Commune, textEditAdress.Text);
+                        MessageBox.Show(Resources.succesAdd);
+                    }
+                    else
+                    {
+                        _editStockPresenter.Write(IdStock, textEditNameStock.Text, comboBoxWilaya.SelectedItem as Wilaya,
+                                                  comboBoxCommune.SelectedItem as Commune, textEditAdress.Text);
+                        MessageBox.Show(Resources.succesUpdate);
+                    }
+
                     IsStockModified = false;
-                    MessageBox.Show(Resources.succesUpdate);
                 }
                 if (result == DialogResult.Cancel) e.Cancel = true;
             }

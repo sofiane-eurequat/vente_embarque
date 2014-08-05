@@ -76,7 +76,7 @@ namespace vente_embarque.DataLayer.Entities.Stock
         public XpoFournisseur Fournisseur
         {
             get { return _fournisseur; }
-            set { SetPropertyValue("Name", ref _fournisseur, value); }
+            set { SetPropertyValue("Fournisseur", ref _fournisseur, value); }
         }
 
         [Association("XpoProduct-XpoproductLine")]

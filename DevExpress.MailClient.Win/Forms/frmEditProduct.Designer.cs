@@ -46,7 +46,6 @@ namespace DevExpress.MailClient.Win.Forms{
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.richEditBarController1 = new DevExpress.XtraRichEdit.UI.RichEditBarController();
             this.GCInfoGeneral = new DevExpress.XtraEditors.GroupControl();
-            this.textEditFournisseur = new DevExpress.XtraEditors.TextEdit();
             this.labelNameFournisseur = new DevExpress.XtraEditors.LabelControl();
             this.textEditQuantité = new DevExpress.XtraEditors.TextEdit();
             this.dateEditEntree = new DevExpress.XtraEditors.DateEdit();
@@ -74,7 +73,6 @@ namespace DevExpress.MailClient.Win.Forms{
             ((System.ComponentModel.ISupportInitialize)(this.richEditBarController1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GCInfoGeneral)).BeginInit();
             this.GCInfoGeneral.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditFournisseur.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditQuantité.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditEntree.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditEntree.Properties)).BeginInit();
@@ -379,7 +377,6 @@ namespace DevExpress.MailClient.Win.Forms{
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.textEditFournisseur);
             this.Controls.Add(this.GCInfoGeneral);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
@@ -394,7 +391,6 @@ namespace DevExpress.MailClient.Win.Forms{
             ((System.ComponentModel.ISupportInitialize)(this.GCInfoGeneral)).EndInit();
             this.GCInfoGeneral.ResumeLayout(false);
             this.GCInfoGeneral.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditFournisseur.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditQuantité.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditEntree.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditEntree.Properties)).EndInit();
@@ -441,7 +437,6 @@ namespace DevExpress.MailClient.Win.Forms{
         private XtraEditors.DateEdit dateEditEntree;
         private XtraEditors.LabelControl labelDateEntree;
         private XtraEditors.LabelControl labelNameFournisseur;
-        private XtraEditors.TextEdit textEditFournisseur;
         private System.Windows.Forms.ComboBox comboBoxFournisseur;
     }
 }

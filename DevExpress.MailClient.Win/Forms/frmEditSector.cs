@@ -93,7 +93,6 @@ namespace DevExpress.MailClient.Win.Forms
                                             comboBoxCommune.SelectedItem as Commune);
                 MessageBox.Show(Resources.succesUpdate);
             }
-            
         }
 
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
@@ -172,11 +171,22 @@ namespace DevExpress.MailClient.Win.Forms
                 DialogResult result = XtraMessageBox.Show(this, TagResources.SaveBeforeClose, Application.ProductName, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
                 if (result == DialogResult.Yes)
                 {
-                    _editSecteurPresenter.Write(IdSecteur, textEditNameSector.EditValue.ToString(),
-                                            comboBoxWilaya.SelectedItem as Wilaya,
-                                            comboBoxCommune.SelectedItem as Commune);
+                    if (_newSecteur)
+                    {
+                        _editSecteurPresenter.Write(textEditNameSector.EditValue.ToString(),
+                                                    comboBoxWilaya.SelectedItem as Wilaya,
+                                                    comboBoxCommune.SelectedItem as Commune);
+                        MessageBox.Show(Resources.succesAdd);
+                    }
+                    else
+                    {
+                        _editSecteurPresenter.Write(IdSecteur, textEditNameSector.EditValue.ToString(),
+                                                    comboBoxWilaya.SelectedItem as Wilaya,
+                                                    comboBoxCommune.SelectedItem as Commune);
+                        MessageBox.Show(Resources.succesUpdate);
+                    }
+                    
                     IsSectorModified = false;
-                    MessageBox.Show(Resources.succesUpdate);
                 }
 
                 if (result == DialogResult.Cancel) e.Cancel = true;

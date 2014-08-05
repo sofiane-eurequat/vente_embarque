@@ -3,23 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
 using Moq;
-using Moq.Contrib.Indy;
 using vente_embarque.Core.Domain;
 using vente_embarque.Core.Domain.Query;
 using vente_embarque.DataLayer;
 using vente_embarque.DataLayer.Helper;
 using vente_embarque.Model;
-using vente_embarque.Model.Enum;
 
 namespace vente_embarque.Test
 {
     [TestFixture]
     public class Test
     {
-        private Mock<IRepository<Stock, Guid>> stockMock;
-        private Mock<IRepository<Sector, Guid>> sectorMock;
-        private Mock<IRepository<Sector, Guid>> sectorMock2;
-        private Mock<IRepository<Product, Guid>> productMock;
+        private Mock<IRepository<Stock, Guid>> _stockMock;
+        private Mock<IRepository<Sector, Guid>> _sectorMock;
+        private Mock<IRepository<Sector, Guid>> _sectorMock2;
+        private Mock<IRepository<Product, Guid>> _productMock;
         [SetUp]
         public void SetupStockMock()
         {
@@ -37,8 +35,8 @@ namespace vente_embarque.Test
             FactoryStock.CreateProductLine(factoryStockCreateStock, FactoryProduct.CreateProduct("product2",17,category,marque,fournisseur1), 10);
             FactoryStock.CreateProductLine(factoryStockCreateStock, FactoryProduct.CreateProduct("product3",20,category,marque,fournisseur1), 10);
 
-            stockMock = new Mock<IRepository<Stock, Guid>>();
-            stockMock.Setup(e => e.FindBy(It.IsAny<Query>())).Returns(
+            _stockMock = new Mock<IRepository<Stock, Guid>>();
+            _stockMock.Setup(e => e.FindBy(It.IsAny<Query>())).Returns(
                 new List<Stock> {factoryStockCreateStock}
                 );
 
@@ -48,8 +46,8 @@ namespace vente_embarque.Test
             const string nom = "NomClient1";
             const string prenom = "PrenomClient1";
             FactorySector.CreateClient(nom, prenom, sector);
-            sectorMock=new Mock<IRepository<Sector, Guid>>();
-            sectorMock.Setup(e => e.FindBy(It.IsAny<Query>())).Returns(
+            _sectorMock=new Mock<IRepository<Sector, Guid>>();
+            _sectorMock.Setup(e => e.FindBy(It.IsAny<Query>())).Returns(
                 new List<Sector> {sector}
                 );
 
@@ -64,8 +62,8 @@ namespace vente_embarque.Test
             var fournisseur = FactoryFournisseur.CreateFournisseur(nomfournisseur);
             var produit1 = FactoryProduct.CreateProduct("MockedProduct",10,category2,marque2,fournisseur);
             var produit2 = FactoryProduct.CreateProduct("MockedProduct", 15, category2, marque2,fournisseur,"ce produit est explosif",reference: "http://www.google.com");
-            productMock=new Mock<IRepository<Product, Guid>>();
-            productMock.Setup(e => e.FindBy(It.IsAny<Query>())).Returns(
+            _productMock=new Mock<IRepository<Product, Guid>>();
+            _productMock.Setup(e => e.FindBy(It.IsAny<Query>())).Returns(
                 new List<Product>
                     {
                         produit1,
@@ -76,8 +74,8 @@ namespace vente_embarque.Test
             var wilaya1 = new RepositoryWilaya().FindAll().First();
             var commune1 = new RepositoryWilaya().FindAll().First().Communes.First();
             var secteur=FactorySector.CreateSector(nomSector,wilaya1,commune1);
-            sectorMock2=new Mock<IRepository<Sector, Guid>>();
-            sectorMock2.Setup(e => e.FindBy(It.IsAny<Query>())).Returns(
+            _sectorMock2=new Mock<IRepository<Sector, Guid>>();
+            _sectorMock2.Setup(e => e.FindBy(It.IsAny<Query>())).Returns(
                 new List<Sector>
                     {
                         secteur
@@ -382,6 +380,16 @@ namespace vente_embarque.Test
             Assert.AreEqual(marque.Name, nom);
             new RepositoryMarque().Save(marque);
             new RepositoryMarque().Remove(marque);
+        }
+
+        [Test]
+        public void CanCreateFournisseur()
+        {
+            const string nomFournisseur = "Solinf";
+            var fournisseur = FactoryFournisseur.CreateFournisseur(nomFournisseur);
+            Assert.AreEqual(fournisseur.Name, nomFournisseur);
+            new RepositoryFournisseur().Save(fournisseur);
+            //new RepositoryFournisseur().Remove(fournisseur);
         }
 
         [Test]

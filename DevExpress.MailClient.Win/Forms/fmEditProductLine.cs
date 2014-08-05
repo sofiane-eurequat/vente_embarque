@@ -143,19 +143,30 @@ namespace DevExpress.MailClient.Win.Forms
             if (IsProductLineModified)
             {
                 DialogResult result = XtraMessageBox.Show(this, TagResources.SaveBeforeClose, Application.ProductName, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
+                
                 if (result == DialogResult.Yes)
                 {
-                    var productLineModif = new ProductLine
+                    if (_newProductLine)
                     {
-                        id = ProductLineOut.Id,
-                        Product = comboBoxProduit.SelectedItem as Product,
-                        Quantity = Convert.ToInt32(textEditQuantité.EditValue.ToString())
-                    };
+                        _editProductLinePresenter.Write(comboBoxStock.SelectedItem as Stock, comboBoxProduit.SelectedItem as Product,
+                                                             Convert.ToInt32(textEditQuantité.EditValue.ToString()));
+                        MessageBox.Show(Resources.succesAdd);
+                    }
+                    else
+                    {
+                        var productLineModif = new ProductLine
+                        {
+                            id = ProductLineOut.Id,
+                            Product = comboBoxProduit.SelectedItem as Product,
+                            Quantity = Convert.ToInt32(textEditQuantité.EditValue.ToString())
+                        };
 
-                    var repositoryStock = new RepositoryStock();
-                    repositoryStock.Save(comboBoxStock.SelectedItem as Stock, productLineModif);
+                        var repositoryStock = new RepositoryStock();
+                        repositoryStock.Save(comboBoxStock.SelectedItem as Stock, productLineModif);
+                        MessageBox.Show(Resources.succesUpdate);
+                    }
+
                     IsProductLineModified = false;
-                    MessageBox.Show(Resources.succesUpdate);
                 }
                     
                 if (result == DialogResult.Cancel) e.Cancel = true;

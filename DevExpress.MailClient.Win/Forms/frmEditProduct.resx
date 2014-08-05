@@ -866,27 +866,6 @@
   <data name="&gt;&gt;GCInfoGeneral.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="textEditFournisseur.Location" type="System.Drawing.Point, System.Drawing">
-    <value>251, 399</value>
-  </data>
-  <data name="textEditFournisseur.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 20</value>
-  </data>
-  <data name="textEditFournisseur.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="&gt;&gt;textEditFournisseur.Name" xml:space="preserve">
-    <value>textEditFournisseur</value>
-  </data>
-  <data name="&gt;&gt;textEditFournisseur.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;textEditFournisseur.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textEditFournisseur.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="ribbonPageGroup2.Text" xml:space="preserve">
     <value>Nouveau</value>
   </data>

@@ -124,7 +124,7 @@ namespace DevExpress.MailClient.Win.Forms
             textEditNameProduct.Text = "";
             comboBoxCategory.Text = "";
             comboBoxMarque.Text = "";
-            textEditFournisseur.Text = "";
+            comboBoxFournisseur.Text = "";
             textEditQuantité.Text = "";
             dateEditEntree.Text = "";
             comboBoxTypeGestion.Text = "";
@@ -142,11 +142,24 @@ namespace DevExpress.MailClient.Win.Forms
                 DialogResult result = XtraMessageBox.Show(this, TagResources.SaveBeforeClose, Application.ProductName, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
                 if (result == DialogResult.Yes)
                 {
-                    _editProductPresenter.Write(IdProduct, textEditNameProduct.Text, comboBoxCategory.SelectedItem as Category,
-                                        comboBoxMarque.SelectedItem as Marque, comboBoxFournisseur.SelectedItem as Fournisseur,
-                                        Convert.ToInt32(textEditQuantité.Text), dateEditEntree.DateTime,
-                                        (GestionProduit)comboBoxTypeGestion.SelectedItem);
-                    MessageBox.Show(Resources.succesUpdate);
+                    if (_newProduct)
+                    {
+                        _editProductPresenter.Write(textEditNameProduct.Text, comboBoxCategory.SelectedItem as Category,
+                                                    comboBoxMarque.SelectedItem as Marque,
+                                                    comboBoxFournisseur.SelectedItem as Fournisseur,
+                                                    Convert.ToInt32(textEditQuantité.Text), dateEditEntree.DateTime,
+                                                    (GestionProduit)comboBoxTypeGestion.SelectedItem);
+                        MessageBox.Show(Resources.succesAdd);
+                    }
+                    else
+                    {
+                        _editProductPresenter.Write(IdProduct, textEditNameProduct.Text, comboBoxCategory.SelectedItem as Category,
+                                                comboBoxMarque.SelectedItem as Marque, comboBoxFournisseur.SelectedItem as Fournisseur,
+                                                Convert.ToInt32(textEditQuantité.Text), dateEditEntree.DateTime,
+                                                (GestionProduit)comboBoxTypeGestion.SelectedItem);
+                        MessageBox.Show(Resources.succesUpdate);
+                    }
+
                     IsProductModified = false;
                 }
                     

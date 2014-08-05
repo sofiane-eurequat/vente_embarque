@@ -236,14 +236,28 @@ namespace DevExpress.MailClient.Win.Forms
                 DialogResult result = XtraMessageBox.Show(this, TagResources.SaveBeforeClose, Application.ProductName, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
                 if (result == DialogResult.Yes)
                 {
-                    _editBdcPresenter.Write(IdOrder, Convert.ToInt32(textEditNumCommande.Text), comboBoxClients.SelectedItem as Client,
-                                    dateEditLivraison.DateTime, memoEditAdresssLivraion.Text,
-                                    (Priorite)comboBoxPriorite.SelectedItem,
-                                    (GestionCommande)comboBoxEtat.SelectedItem,
-                                    Convert.ToBoolean(radiogroupLivraisonSurPlace.Text), dateEditCommande.DateTime,
-                                    OrderLines);
+                    if (_newBdc)
+                    {
+                        _editBdcPresenter.Write(Convert.ToInt32(textEditNumCommande.Text), comboBoxClients.SelectedItem as Client,
+                                            dateEditLivraison.DateTime, memoEditAdresssLivraion.Text,
+                                            (Priorite)comboBoxPriorite.SelectedItem,
+                                            (GestionCommande)comboBoxEtat.SelectedItem,
+                                            Convert.ToBoolean(radiogroupLivraisonSurPlace.Text), dateEditCommande.DateTime,
+                                            OrderLines);
+                        MessageBox.Show(Resources.succesAdd);
+                    }
+                    else
+                    {
+                        _editBdcPresenter.Write(IdOrder, Convert.ToInt32(textEditNumCommande.Text), comboBoxClients.SelectedItem as Client,
+                                            dateEditLivraison.DateTime, memoEditAdresssLivraion.Text,
+                                            (Priorite)comboBoxPriorite.SelectedItem,
+                                            (GestionCommande)comboBoxEtat.SelectedItem,
+                                            Convert.ToBoolean(radiogroupLivraisonSurPlace.Text), dateEditCommande.DateTime,
+                                            OrderLines);
+                        MessageBox.Show(Resources.succesUpdate);
+                    }
+
                     IsBdcModified = false;
-                    MessageBox.Show(Resources.succesUpdate);
                 }
                   
                 if (result == DialogResult.Cancel) e.Cancel = true;
