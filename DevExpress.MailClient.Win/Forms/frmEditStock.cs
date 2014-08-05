@@ -204,6 +204,7 @@ namespace DevExpress.MailClient.Win.Forms
                                           comboBoxCommune.SelectedItem as Commune, textEditAdress.Text);
                 MessageBox.Show(Resources.succesUpdate);
             }
+
             Close();
         }
 
@@ -240,6 +241,7 @@ namespace DevExpress.MailClient.Win.Forms
             if (IsStockModified)
             {
                 DialogResult result = XtraMessageBox.Show(this, TagResources.SaveBeforeClose, Application.ProductName, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
+                
                 if (result == DialogResult.Yes)
                 {
                     if (_newStock)
@@ -257,6 +259,7 @@ namespace DevExpress.MailClient.Win.Forms
 
                     IsStockModified = false;
                 }
+
                 if (result == DialogResult.Cancel) e.Cancel = true;
             }
         }
