@@ -69,32 +69,6 @@ namespace DevExpress.MailClient.Win.Forms
 
         }
 
-        private void bbiSave_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            IsProductModified = false;
-
-            if (_newProduct)
-            {
-                _editProductPresenter.Write(textEditNameProduct.Text, comboBoxCategory.SelectedItem as Category,
-                                            comboBoxMarque.SelectedItem as Marque,
-                                            comboBoxFournisseur.SelectedItem as Fournisseur,
-                                            Convert.ToInt32(textEditQuantité.Text), dateEditEntree.DateTime,
-                                            (GestionProduit) comboBoxTypeGestion.SelectedItem);
-                MessageBox.Show(Resources.succesAdd);
-            }
-            else
-            {
-                _editProductPresenter.Write(IdProduct, textEditNameProduct.Text,
-                                            comboBoxCategory.SelectedItem as Category,
-                                            comboBoxMarque.SelectedItem as Marque,
-                                            comboBoxFournisseur.SelectedItem as Fournisseur,
-                                            Convert.ToInt32(textEditQuantité.Text), dateEditEntree.DateTime,
-                                            (GestionProduit) comboBoxTypeGestion.SelectedItem);
-                MessageBox.Show(Resources.succesUpdate);
-            }
-            
-        }
-
         private void bbiSaveClsoe_ItemClick(object sender, ItemClickEventArgs e)
         {
             IsProductModified = false;

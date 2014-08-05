@@ -34,7 +34,6 @@ namespace DevExpress.MailClient.Win.Forms{
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.applicationMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.bbiNew = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiSave = new DevExpress.XtraBars.BarButtonItem();
             this.bbiSaveClsoe = new DevExpress.XtraBars.BarButtonItem();
             this.bbiClear = new DevExpress.XtraBars.BarButtonItem();
             this.bbiClose = new DevExpress.XtraBars.BarButtonItem();
@@ -46,6 +45,7 @@ namespace DevExpress.MailClient.Win.Forms{
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.richEditBarController1 = new DevExpress.XtraRichEdit.UI.RichEditBarController();
             this.GCInfoGeneral = new DevExpress.XtraEditors.GroupControl();
+            this.comboBoxFournisseur = new System.Windows.Forms.ComboBox();
             this.labelNameFournisseur = new DevExpress.XtraEditors.LabelControl();
             this.textEditQuantité = new DevExpress.XtraEditors.TextEdit();
             this.dateEditEntree = new DevExpress.XtraEditors.DateEdit();
@@ -67,7 +67,6 @@ namespace DevExpress.MailClient.Win.Forms{
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.comboBoxFournisseur = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.richEditBarController1)).BeginInit();
@@ -86,7 +85,6 @@ namespace DevExpress.MailClient.Win.Forms{
             this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbon.ExpandCollapseItem,
             this.bbiNew,
-            this.bbiSave,
             this.bbiSaveClsoe,
             this.bbiClear,
             this.bbiClose});
@@ -111,15 +109,6 @@ namespace DevExpress.MailClient.Win.Forms{
             this.bbiNew.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiNew.LargeGlyph")));
             this.bbiNew.Name = "bbiNew";
             this.bbiNew.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiNew_ItemClick);
-            // 
-            // bbiSave
-            // 
-            resources.ApplyResources(this.bbiSave, "bbiSave");
-            this.bbiSave.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiSave.Glyph")));
-            this.bbiSave.Id = 2;
-            this.bbiSave.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiSave.LargeGlyph")));
-            this.bbiSave.Name = "bbiSave";
-            this.bbiSave.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiSave_ItemClick);
             // 
             // bbiSaveClsoe
             // 
@@ -169,7 +158,6 @@ namespace DevExpress.MailClient.Win.Forms{
             // ribbonPageGroup10
             // 
             this.ribbonPageGroup10.AllowTextClipping = false;
-            this.ribbonPageGroup10.ItemLinks.Add(this.bbiSave);
             this.ribbonPageGroup10.ItemLinks.Add(this.bbiSaveClsoe);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
             this.ribbonPageGroup10.ShowCaptionButton = false;
@@ -215,6 +203,15 @@ namespace DevExpress.MailClient.Win.Forms{
             this.GCInfoGeneral.Controls.Add(this.labelMarque);
             resources.ApplyResources(this.GCInfoGeneral, "GCInfoGeneral");
             this.GCInfoGeneral.Name = "GCInfoGeneral";
+            // 
+            // comboBoxFournisseur
+            // 
+            this.comboBoxFournisseur.DisplayMember = "id";
+            this.comboBoxFournisseur.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxFournisseur, "comboBoxFournisseur");
+            this.comboBoxFournisseur.Name = "comboBoxFournisseur";
+            this.comboBoxFournisseur.ValueMember = "id";
+            this.comboBoxFournisseur.SelectedIndexChanged += new System.EventHandler(this.comboBoxFournisseur_SelectedIndexChanged);
             // 
             // labelNameFournisseur
             // 
@@ -364,15 +361,6 @@ namespace DevExpress.MailClient.Win.Forms{
             this.ribbonPageGroup9.ShowCaptionButton = false;
             resources.ApplyResources(this.ribbonPageGroup9, "ribbonPageGroup9");
             // 
-            // comboBoxFournisseur
-            // 
-            this.comboBoxFournisseur.DisplayMember = "id";
-            this.comboBoxFournisseur.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBoxFournisseur, "comboBoxFournisseur");
-            this.comboBoxFournisseur.Name = "comboBoxFournisseur";
-            this.comboBoxFournisseur.ValueMember = "id";
-            this.comboBoxFournisseur.SelectedIndexChanged += new System.EventHandler(this.comboBoxFournisseur_SelectedIndexChanged);
-            // 
             // FrmEditProduct
             // 
             resources.ApplyResources(this, "$this");
@@ -418,7 +406,6 @@ namespace DevExpress.MailClient.Win.Forms{
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
         private XtraBars.BarButtonItem bbiNew;
-        private XtraBars.BarButtonItem bbiSave;
         private XtraBars.BarButtonItem bbiSaveClsoe;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;

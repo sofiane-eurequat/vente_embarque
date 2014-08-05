@@ -242,7 +242,7 @@ namespace vente_embarque.DataLayer.Map
                 agentTerrainReturned = uow.GetObjectByKey<XpoAgentTerrain>(agentterrain.id);
             }
             agentTerrainReturned.Name = agentterrain.Name;
-            agentTerrainReturned.Secteur = MapSector(agentterrain.Secteur, uow);
+            //agentTerrainReturned.Secteur = MapSector(agentterrain.Secteur, uow);
             return agentTerrainReturned;
         }
 

@@ -52,30 +52,7 @@ namespace DevExpress.MailClient.Win.Forms
         {
            // frmBdc
         }
-        private void bbiSauvegarder_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            IsOrderLineModified = false;
-
-            if (_newOrderLine)
-            {
-                OrderLine = FactoryOrder.CreateOrderLine(comboBoxStock.SelectedItem as Stock, comboBoxProduit.Text,
-                                                     Convert.ToInt32(textEditQuantité.EditValue.ToString()));
-                MessageBox.Show(Resources.succesAdd);
-            }
-            else
-            {
-                var orderLineModif = new OrderLine
-                    {
-                    id = OrderLineOut.Id,
-                    Product = comboBoxProduit.SelectedItem as Product,
-                    Quantity = Convert.ToInt32(textEditQuantité.EditValue.ToString())
-                };
-
-                var repositoryOrder = new RepositoryOrder();
-                repositoryOrder.Save(OrderLineOut.IdOrder, orderLineModif);
-                MessageBox.Show(Resources.succesUpdate);
-            }
-        }
+        
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
         {
             IsOrderLineModified = false;

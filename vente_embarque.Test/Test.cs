@@ -389,7 +389,7 @@ namespace vente_embarque.Test
             var fournisseur = FactoryFournisseur.CreateFournisseur(nomFournisseur);
             Assert.AreEqual(fournisseur.Name, nomFournisseur);
             new RepositoryFournisseur().Save(fournisseur);
-            //new RepositoryFournisseur().Remove(fournisseur);
+            new RepositoryFournisseur().Remove(fournisseur);
         }
 
         [Test]

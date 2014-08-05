@@ -35,7 +35,6 @@ namespace DevExpress.MailClient.Win.Forms
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiSauvegarderFermer = new DevExpress.XtraBars.BarButtonItem();
             this.bbiNouveau = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiSauvegarder = new DevExpress.XtraBars.BarButtonItem();
             this.bbiFermer = new DevExpress.XtraBars.BarButtonItem();
             this.bbiEfaccer = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -66,7 +65,6 @@ namespace DevExpress.MailClient.Win.Forms
             this.ribbon.ExpandCollapseItem,
             this.bbiSauvegarderFermer,
             this.bbiNouveau,
-            this.bbiSauvegarder,
             this.bbiFermer,
             this.bbiEfaccer});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
@@ -80,7 +78,7 @@ namespace DevExpress.MailClient.Win.Forms
             // 
             // bbiSauvegarderFermer
             // 
-            this.bbiSauvegarderFermer.Caption = "Sauvegarder et Fermer";
+            this.bbiSauvegarderFermer.Caption = "Sauvegarder";
             this.bbiSauvegarderFermer.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvegarderFermer.Glyph")));
             this.bbiSauvegarderFermer.Id = 1;
             this.bbiSauvegarderFermer.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvegarderFermer.LargeGlyph")));
@@ -95,15 +93,6 @@ namespace DevExpress.MailClient.Win.Forms
             this.bbiNouveau.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiNouveau.LargeGlyph")));
             this.bbiNouveau.Name = "bbiNouveau";
             this.bbiNouveau.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiNouveau_ItemClick);
-            // 
-            // bbiSauvegarder
-            // 
-            this.bbiSauvegarder.Caption = "Sauvegarder";
-            this.bbiSauvegarder.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvegarder.Glyph")));
-            this.bbiSauvegarder.Id = 4;
-            this.bbiSauvegarder.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvegarder.LargeGlyph")));
-            this.bbiSauvegarder.Name = "bbiSauvegarder";
-            this.bbiSauvegarder.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiSauvegarder_ItemClick);
             // 
             // bbiFermer
             // 
@@ -144,7 +133,6 @@ namespace DevExpress.MailClient.Win.Forms
             // ribbonPageGroup2
             // 
             this.ribbonPageGroup2.AllowTextClipping = false;
-            this.ribbonPageGroup2.ItemLinks.Add(this.bbiSauvegarder);
             this.ribbonPageGroup2.ItemLinks.Add(this.bbiSauvegarderFermer);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.ShowCaptionButton = false;
@@ -290,7 +278,6 @@ namespace DevExpress.MailClient.Win.Forms
         private XtraBars.BarButtonItem bbiNouveau;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
-        private XtraBars.BarButtonItem bbiSauvegarder;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private XtraBars.BarButtonItem bbiFermer;
         private XtraBars.BarButtonItem bbiEfaccer;

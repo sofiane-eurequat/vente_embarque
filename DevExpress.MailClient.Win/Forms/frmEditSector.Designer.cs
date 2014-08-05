@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEditSector));
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiNouveau = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiSauvegarder = new DevExpress.XtraBars.BarButtonItem();
             this.bbiSauvegarderFermer = new DevExpress.XtraBars.BarButtonItem();
             this.bbiSupprimer = new DevExpress.XtraBars.BarButtonItem();
             this.bbiValider = new DevExpress.XtraBars.BarButtonItem();
@@ -105,7 +104,6 @@
             this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbon.ExpandCollapseItem,
             this.bbiNouveau,
-            this.bbiSauvegarder,
             this.bbiSauvegarderFermer,
             this.bbiSupprimer,
             this.bbiValider,
@@ -131,15 +129,6 @@
             this.bbiNouveau.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiNouveau.LargeGlyph")));
             this.bbiNouveau.Name = "bbiNouveau";
             this.bbiNouveau.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiNouveau_ItemClick);
-            // 
-            // bbiSauvegarder
-            // 
-            resources.ApplyResources(this.bbiSauvegarder, "bbiSauvegarder");
-            this.bbiSauvegarder.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvegarder.Glyph")));
-            this.bbiSauvegarder.Id = 2;
-            this.bbiSauvegarder.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvegarder.LargeGlyph")));
-            this.bbiSauvegarder.Name = "bbiSauvegarder";
-            this.bbiSauvegarder.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiSauvegarder_ItemClick);
             // 
             // bbiSauvegarderFermer
             // 
@@ -229,7 +218,6 @@
             // ribbonPageGroup2
             // 
             this.ribbonPageGroup2.AllowTextClipping = false;
-            this.ribbonPageGroup2.ItemLinks.Add(this.bbiSauvegarder);
             this.ribbonPageGroup2.ItemLinks.Add(this.bbiSauvegarderFermer);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.ShowCaptionButton = false;
@@ -549,7 +537,6 @@
         private XtraBars.BarButtonItem bbiNouveau;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
-        private XtraBars.BarButtonItem bbiSauvegarder;
         private XtraBars.BarButtonItem bbiSauvegarderFermer;
         private XtraBars.BarButtonItem bbiSupprimer;
         private XtraBars.BarButtonItem bbiValider;

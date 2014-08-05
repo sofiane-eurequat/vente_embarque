@@ -101,32 +101,6 @@ namespace DevExpress.MailClient.Win.Forms
 
         }
 
-        private void bbiSauvegarder_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            IsBdcModified = false;
-
-            if (_newBdc)
-            {
-                _editBdcPresenter.Write(Convert.ToInt32(textEditNumCommande.Text), comboBoxClients.SelectedItem as Client,
-                                    dateEditLivraison.DateTime, memoEditAdresssLivraion.Text,
-                                    (Priorite) comboBoxPriorite.SelectedItem,
-                                    (GestionCommande) comboBoxEtat.SelectedItem,
-                                    Convert.ToBoolean(radiogroupLivraisonSurPlace.Text), dateEditCommande.DateTime,
-                                    OrderLines);
-                MessageBox.Show(Resources.succesAdd);
-            }
-            else
-            {
-                _editBdcPresenter.Write(IdOrder, Convert.ToInt32(textEditNumCommande.Text), comboBoxClients.SelectedItem as Client,
-                                    dateEditLivraison.DateTime, memoEditAdresssLivraion.Text,
-                                    (Priorite)comboBoxPriorite.SelectedItem,
-                                    (GestionCommande)comboBoxEtat.SelectedItem,
-                                    Convert.ToBoolean(radiogroupLivraisonSurPlace.Text), dateEditCommande.DateTime,
-                                    OrderLines);
-                MessageBox.Show(Resources.succesUpdate);
-            }
-        }
-
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
         {
             IsBdcModified = false;

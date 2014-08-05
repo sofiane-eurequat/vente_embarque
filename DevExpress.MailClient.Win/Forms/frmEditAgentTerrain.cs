@@ -42,11 +42,6 @@ namespace DevExpress.MailClient.Win.Forms
             SourceAgentTerrain = agentTerrain;
         }
 
-        private void bbiSauvegarder_ItemClick(object sender, ItemClickEventArgs e)
-        {
-
-        }
-
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
         {
 

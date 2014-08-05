@@ -25,8 +25,8 @@
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEditStock));
-            DevExpress.XtraSpellChecker.OptionsSpelling optionsSpelling3 = new DevExpress.XtraSpellChecker.OptionsSpelling();
             DevExpress.XtraSpellChecker.OptionsSpelling optionsSpelling1 = new DevExpress.XtraSpellChecker.OptionsSpelling();
+            DevExpress.XtraSpellChecker.OptionsSpelling optionsSpelling2 = new DevExpress.XtraSpellChecker.OptionsSpelling();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.fileSaveItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.printPreviewItem1 = new DevExpress.XtraRichEdit.UI.PrintPreviewItem();
@@ -152,7 +152,6 @@
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiSauvergarder = new DevExpress.XtraBars.BarButtonItem();
             this.bbiSauvegarderFermer = new DevExpress.XtraBars.BarButtonItem();
             this.bbiEffacer = new DevExpress.XtraBars.BarButtonItem();
             this.bbiRefresh = new DevExpress.XtraBars.BarButtonItem();
@@ -362,7 +361,6 @@
             this.barButtonItem4,
             this.barButtonItem5,
             this.barButtonItem6,
-            this.bbiSauvergarder,
             this.bbiSauvegarderFermer,
             this.bbiEffacer,
             this.bbiRefresh,
@@ -1325,15 +1323,6 @@
             this.barButtonItem6.Id = 162;
             this.barButtonItem6.Name = "barButtonItem6";
             // 
-            // bbiSauvergarder
-            // 
-            resources.ApplyResources(this.bbiSauvergarder, "bbiSauvergarder");
-            this.bbiSauvergarder.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvergarder.Glyph")));
-            this.bbiSauvergarder.Id = 170;
-            this.bbiSauvergarder.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvergarder.LargeGlyph")));
-            this.bbiSauvergarder.Name = "bbiSauvergarder";
-            this.bbiSauvergarder.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiSauvergarder_ItemClick);
-            // 
             // bbiSauvegarderFermer
             // 
             resources.ApplyResources(this.bbiSauvegarderFermer, "bbiSauvegarderFermer");
@@ -1411,7 +1400,6 @@
             // SauvegarderibbonPageGroup
             // 
             this.SauvegarderibbonPageGroup.AllowTextClipping = false;
-            this.SauvegarderibbonPageGroup.ItemLinks.Add(this.bbiSauvergarder);
             this.SauvegarderibbonPageGroup.ItemLinks.Add(this.bbiSauvegarderFermer);
             this.SauvegarderibbonPageGroup.Name = "SauvegarderibbonPageGroup";
             this.SauvegarderibbonPageGroup.ShowCaptionButton = false;
@@ -1471,7 +1459,7 @@
             this.textEditNameStock.MenuManager = this.ribbonControl;
             this.textEditNameStock.Name = "textEditNameStock";
             this.spellChecker1.SetShowSpellCheckMenu(this.textEditNameStock, true);
-            this.spellChecker1.SetSpellCheckerOptions(this.textEditNameStock, optionsSpelling3);
+            this.spellChecker1.SetSpellCheckerOptions(this.textEditNameStock, optionsSpelling1);
             this.textEditNameStock.EditValueChanged += new System.EventHandler(this.textEditNameStock_EditValueChanged);
             // 
             // textEditAdress
@@ -1480,7 +1468,7 @@
             this.textEditAdress.MenuManager = this.ribbonControl;
             this.textEditAdress.Name = "textEditAdress";
             this.spellChecker1.SetShowSpellCheckMenu(this.textEditAdress, true);
-            this.spellChecker1.SetSpellCheckerOptions(this.textEditAdress, optionsSpelling1);
+            this.spellChecker1.SetSpellCheckerOptions(this.textEditAdress, optionsSpelling2);
             this.textEditAdress.EditValueChanged += new System.EventHandler(this.textEditAdress_EditValueChanged);
             // 
             // richEditBarController1
@@ -1841,7 +1829,7 @@
             this.barDockControlRight.CausesValidation = false;
             resources.ApplyResources(this.barDockControlRight, "barDockControlRight");
             // 
-            // frmEditStock
+            // FrmEditStock
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1854,7 +1842,7 @@
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.KeyPreview = true;
-            this.Name = "frmEditStock";
+            this.Name = "FrmEditStock";
             this.Ribbon = this.ribbonControl;
             this.StatusBar = this.statusBar;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmEditStock_FormClosing);
@@ -2030,7 +2018,6 @@
         private XtraBars.BarButtonItem barButtonItem4;
         private XtraBars.BarButtonItem barButtonItem5;
         private XtraBars.BarButtonItem barButtonItem6;
-        private XtraBars.BarButtonItem bbiSauvergarder;
         private XtraBars.BarButtonItem bbiSauvegarderFermer;
         private XtraBars.BarButtonItem bbiSupprimer;
         private XtraBars.Ribbon.RibbonPageGroup SauvegarderibbonPageGroup;

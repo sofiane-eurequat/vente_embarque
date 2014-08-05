@@ -188,24 +188,6 @@ namespace DevExpress.MailClient.Win.Forms
 
         }
 
-        private void bbiSauvergarder_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            IsStockModified = false;
-            
-            if (_newStock)
-            {
-                _editStockPresenter.Write(textEditNameStock.Text, comboBoxWilaya.SelectedItem as Wilaya,
-                                          comboBoxCommune.SelectedItem as Commune, textEditAdress.Text);
-                MessageBox.Show(Resources.succesAdd);
-            }
-            else
-            {
-                _editStockPresenter.Write(IdStock, textEditNameStock.Text, comboBoxWilaya.SelectedItem as Wilaya,
-                                          comboBoxCommune.SelectedItem as Commune, textEditAdress.Text);
-                MessageBox.Show(Resources.succesUpdate);
-            }
-        }
-
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
         {
             IsStockModified = false;

@@ -74,26 +74,6 @@ namespace DevExpress.MailClient.Win.Forms
         {
 
         }
-        
-        private void bbiSauvegarder_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            IsSectorModified = false;
-
-            if (_newSecteur)
-            {
-                _editSecteurPresenter.Write(textEditNameSector.EditValue.ToString(),
-                                            comboBoxWilaya.SelectedItem as Wilaya,
-                                            comboBoxCommune.SelectedItem as Commune);
-                MessageBox.Show(Resources.succesAdd);
-            }
-            else
-            {
-                _editSecteurPresenter.Write(IdSecteur, textEditNameSector.EditValue.ToString(),
-                                            comboBoxWilaya.SelectedItem as Wilaya,
-                                            comboBoxCommune.SelectedItem as Commune);
-                MessageBox.Show(Resources.succesUpdate);
-            }
-        }
 
         private void bbiSauvegarderFermer_ItemClick(object sender, ItemClickEventArgs e)
         {

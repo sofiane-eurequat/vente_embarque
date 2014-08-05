@@ -33,7 +33,6 @@
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.bbiNouveau = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiSauvegarder = new DevExpress.XtraBars.BarButtonItem();
             this.bbiFermer = new DevExpress.XtraBars.BarButtonItem();
             this.bbiEfaccer = new DevExpress.XtraBars.BarButtonItem();
             this.bbiSauvegarderFermer = new DevExpress.XtraBars.BarButtonItem();
@@ -103,7 +102,6 @@
             this.ribbon.ExpandCollapseItem,
             this.bbiNouveau,
             this.barButtonItem1,
-            this.bbiSauvegarder,
             this.bbiFermer,
             this.bbiEfaccer,
             this.bbiSauvegarderFermer});
@@ -130,15 +128,6 @@
             resources.ApplyResources(this.barButtonItem1, "barButtonItem1");
             this.barButtonItem1.Id = 2;
             this.barButtonItem1.Name = "barButtonItem1";
-            // 
-            // bbiSauvegarder
-            // 
-            resources.ApplyResources(this.bbiSauvegarder, "bbiSauvegarder");
-            this.bbiSauvegarder.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvegarder.Glyph")));
-            this.bbiSauvegarder.Id = 3;
-            this.bbiSauvegarder.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiSauvegarder.LargeGlyph")));
-            this.bbiSauvegarder.Name = "bbiSauvegarder";
-            this.bbiSauvegarder.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiSauvegarder_ItemClick);
             // 
             // bbiFermer
             // 
@@ -188,7 +177,6 @@
             // ribbonPageGroup2
             // 
             this.ribbonPageGroup2.AllowTextClipping = false;
-            this.ribbonPageGroup2.ItemLinks.Add(this.bbiSauvegarder);
             this.ribbonPageGroup2.ItemLinks.Add(this.bbiSauvegarderFermer);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.ShowCaptionButton = false;
@@ -560,7 +548,6 @@
         private XtraGrid.Views.Grid.GridView gridViewOrderLine;
         private XtraEditors.DateEdit dateEditLivraison;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
-        private XtraBars.BarButtonItem bbiSauvegarder;
         private XtraEditors.MemoEdit memoEditAdresssLivraion;
         private XtraGrid.Columns.GridColumn colProduct;
         private XtraGrid.Columns.GridColumn colQuantity;
