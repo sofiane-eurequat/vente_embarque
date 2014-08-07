@@ -10,17 +10,21 @@ namespace vente_embarque.presenter.Stok
     public class StockPresenterPage:IStockPagePresenter
     {
         private readonly IStockView _stockView;
-        private readonly IRepository<Stock, Guid> _repositoryStock; 
+        private readonly IRepository<Stock, Guid> _repositoryStock;
+        private readonly IRepository<Product, Guid> _repositoryProduct;
 
-        public StockPresenterPage(IStockView stockView,IRepository<Stock,Guid> stockRepository)
+        public StockPresenterPage(IStockView stockView, IRepository<Stock, Guid> stockRepository, IRepository<Product, Guid> productRepository)
         {
             _stockView = stockView;
             _repositoryStock = stockRepository;
+            _repositoryProduct = productRepository;
         }
 
         public void Display()
         {
             var stock = _repositoryStock.FindAll();
+            var produit = _repositoryProduct.FindAll();
+
             if (stock == null) return;
         
             var tempStock = new List<ModelViewStock>();
@@ -72,7 +76,29 @@ namespace vente_embarque.presenter.Stok
             }
 
             _stockView.Stocks = tempStock;
-    
+
+            if (produit == null) return;
+
+            var tempProduct = new List<ModelViewProduct>();
+
+            foreach (var p in produit)
+            {
+                var mvp = new ModelViewProduct
+                {
+                    Id = p.id,
+                    Nom = p.Name,
+                    QuantiteMin = p.QuantiteMin,
+                    Fournisseur = p.Fournisseur.Name,
+                    Categorie = p.Category.Name,
+                    Marque = p.Marque.Name,
+                    DateEntree = p.DateEntree,
+                    TypeGestion = p.TypeGestion,
+
+                };
+                tempProduct.Add(mvp);
+            }
+
+            _stockView.Products = tempProduct;
         }
     }
     public class ModelViewStock

@@ -53,8 +53,8 @@ namespace DevExpress.MailClient.Win.Forms
                 IdProduct = product.Id;
                 textEditNameProduct.Text = product.Nom;
                 comboBoxCategory.SelectedValue = product.Categorie;
-                comboBoxMarque.SelectedValue = product.Fournisseur;
-                comboBoxFournisseur.SelectedValue = product.Marque;
+                comboBoxMarque.SelectedValue = product.Marque;
+                comboBoxFournisseur.SelectedValue = product.Fournisseur;
                 textEditQuantité.Text = product.QuantiteMin.ToString(CultureInfo.InvariantCulture);
                 dateEditEntree.Text = product.DateEntree.ToShortDateString();
                 comboBoxTypeGestion.SelectedItem = product.TypeGestion;

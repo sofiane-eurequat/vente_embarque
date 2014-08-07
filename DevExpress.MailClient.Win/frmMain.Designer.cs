@@ -170,6 +170,8 @@
             this.bbiModifyStock = new DevExpress.XtraBars.BarButtonItem();
             this.bbiCloseProduct = new DevExpress.XtraBars.BarButtonItem();
             this.bbiRefreshProduct = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiRefreshSecteur = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiCloseSecteur = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonMiniToolbar1 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(this.components);
             this.ribbonMiniToolbar2 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(this.components);
             this.rpStock = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -194,8 +196,10 @@
             this.rpSector = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rpgGestionSecteur = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpgGestionLivreur = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpProduct = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.rpgProduit = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpgProduitt = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpgRefreshProduct = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpgCloseProduct = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemSpinEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit();
@@ -227,10 +231,8 @@
             this.pcMain = new DevExpress.XtraEditors.PanelControl();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.bbiRefreshSecteur = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiCloseSecteur = new DevExpress.XtraBars.BarButtonItem();
+            this.rpgProduit = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.backstageViewControl1.SuspendLayout();
             this.backstageViewClientControl1.SuspendLayout();
@@ -1429,10 +1431,27 @@
             this.bbiRefreshProduct.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiRefreshProduct.LargeGlyph")));
             this.bbiRefreshProduct.Name = "bbiRefreshProduct";
             // 
+            // bbiRefreshSecteur
+            // 
+            resources.ApplyResources(this.bbiRefreshSecteur, "bbiRefreshSecteur");
+            this.bbiRefreshSecteur.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiRefreshSecteur.Glyph")));
+            this.bbiRefreshSecteur.Id = 12;
+            this.bbiRefreshSecteur.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiRefreshSecteur.LargeGlyph")));
+            this.bbiRefreshSecteur.Name = "bbiRefreshSecteur";
+            // 
+            // bbiCloseSecteur
+            // 
+            resources.ApplyResources(this.bbiCloseSecteur, "bbiCloseSecteur");
+            this.bbiCloseSecteur.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiCloseSecteur.Glyph")));
+            this.bbiCloseSecteur.Id = 13;
+            this.bbiCloseSecteur.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiCloseSecteur.LargeGlyph")));
+            this.bbiCloseSecteur.Name = "bbiCloseSecteur";
+            // 
             // rpStock
             // 
             this.rpStock.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.rpgStock,
+            this.rpgProduit,
             this.rpgTags,
             this.rpgLayoutMail});
             this.rpStock.Name = "rpStock";
@@ -1630,25 +1649,38 @@
             this.rpgGestionLivreur.ShowCaptionButton = false;
             resources.ApplyResources(this.rpgGestionLivreur, "rpgGestionLivreur");
             // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.AllowTextClipping = false;
+            this.ribbonPageGroup1.ItemLinks.Add(this.bbiRefreshSecteur);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.ShowCaptionButton = false;
+            resources.ApplyResources(this.ribbonPageGroup1, "ribbonPageGroup1");
+            // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.AllowTextClipping = false;
+            this.ribbonPageGroup2.ItemLinks.Add(this.bbiCloseSecteur);
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            this.ribbonPageGroup2.ShowCaptionButton = false;
+            resources.ApplyResources(this.ribbonPageGroup2, "ribbonPageGroup2");
+            // 
             // rpProduct
             // 
             this.rpProduct.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.rpgProduit,
+            this.rpgProduitt,
             this.rpgRefreshProduct,
             this.rpgCloseProduct});
             this.rpProduct.Name = "rpProduct";
             this.rpProduct.Tag = "Produit";
             resources.ApplyResources(this.rpProduct, "rpProduct");
             // 
-            // rpgProduit
+            // rpgProduitt
             // 
-            this.rpgProduit.AllowTextClipping = false;
-            this.rpgProduit.ItemLinks.Add(this.bbiNewProduct);
-            this.rpgProduit.ItemLinks.Add(this.bbiModifyProduct);
-            this.rpgProduit.ItemLinks.Add(this.bbiDeleteProduct);
-            this.rpgProduit.Name = "rpgProduit";
-            this.rpgProduit.ShowCaptionButton = false;
-            resources.ApplyResources(this.rpgProduit, "rpgProduit");
+            this.rpgProduitt.AllowTextClipping = false;
+            this.rpgProduitt.Name = "rpgProduitt";
+            this.rpgProduitt.ShowCaptionButton = false;
+            resources.ApplyResources(this.rpgProduitt, "rpgProduitt");
             // 
             // rpgRefreshProduct
             // 
@@ -1964,37 +1996,23 @@
             this.ribbonPageGroup5.ShowCaptionButton = false;
             resources.ApplyResources(this.ribbonPageGroup5, "ribbonPageGroup5");
             // 
-            // ribbonPageGroup1
+            // rpgProduit
             // 
-            this.ribbonPageGroup1.AllowTextClipping = false;
-            this.ribbonPageGroup1.ItemLinks.Add(this.bbiRefreshSecteur);
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonPageGroup1, "ribbonPageGroup1");
+            this.rpgProduit.AllowTextClipping = false;
+            this.rpgProduit.ItemLinks.Add(this.bbiNewProduct);
+            this.rpgProduit.ItemLinks.Add(this.bbiModifyProduct);
+            this.rpgProduit.ItemLinks.Add(this.bbiDeleteProduct);
+            this.rpgProduit.Name = "rpgProduit";
+            this.rpgProduit.ShowCaptionButton = false;
+            resources.ApplyResources(this.rpgProduit, "rpgProduit");
             // 
-            // ribbonPageGroup2
+            // barButtonItem6
             // 
-            this.ribbonPageGroup2.AllowTextClipping = false;
-            this.ribbonPageGroup2.ItemLinks.Add(this.bbiCloseSecteur);
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.ShowCaptionButton = false;
-            resources.ApplyResources(this.ribbonPageGroup2, "ribbonPageGroup2");
-            // 
-            // bbiRefreshSecteur
-            // 
-            resources.ApplyResources(this.bbiRefreshSecteur, "bbiRefreshSecteur");
-            this.bbiRefreshSecteur.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiRefreshSecteur.Glyph")));
-            this.bbiRefreshSecteur.Id = 12;
-            this.bbiRefreshSecteur.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiRefreshSecteur.LargeGlyph")));
-            this.bbiRefreshSecteur.Name = "bbiRefreshSecteur";
-            // 
-            // bbiCloseSecteur
-            // 
-            resources.ApplyResources(this.bbiCloseSecteur, "bbiCloseSecteur");
-            this.bbiCloseSecteur.Glyph = ((System.Drawing.Image)(resources.GetObject("bbiCloseSecteur.Glyph")));
-            this.bbiCloseSecteur.Id = 13;
-            this.bbiCloseSecteur.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("bbiCloseSecteur.LargeGlyph")));
-            this.bbiCloseSecteur.Name = "bbiCloseSecteur";
+            resources.ApplyResources(this.barButtonItem6, "barButtonItem6");
+            this.barButtonItem6.Glyph = global::DevExpress.MailClient.Win.Properties.Resources.panier_ajouter_icone_5924_16;
+            this.barButtonItem6.Id = 8;
+            this.barButtonItem6.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R));
+            this.barButtonItem6.Name = "barButtonItem6";
             // 
             // FrmMain
             // 
@@ -2204,7 +2222,7 @@
         private XtraBars.Ribbon.RibbonPageGroup rpgRefresh;
         private XtraBars.Ribbon.RibbonPageGroup rpgClose;
         private XtraBars.BarButtonItem bbiCloseBdc;
-        private XtraBars.Ribbon.RibbonPageGroup rpgProduit;
+        private XtraBars.Ribbon.RibbonPageGroup rpgProduitt;
         private XtraBars.BarButtonItem bbiNewProductLine;
         private XtraBars.BarButtonItem bbiModifyProductLine;
         private XtraBars.BarButtonItem bbiDeleteProductLine;
@@ -2225,6 +2243,8 @@
         private XtraBars.BarButtonItem bbiCloseSecteur;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
+        private XtraBars.Ribbon.RibbonPageGroup rpgProduit;
+        private XtraBars.BarButtonItem barButtonItem6;
     }
 }
 

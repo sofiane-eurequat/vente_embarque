@@ -30,9 +30,11 @@ namespace DevExpress.MailClient.Win.Modules {
 
 
         public IEnumerable<ModelViewStock> Stocks { get; set; }
+        public IEnumerable<ModelViewProduct> Products { get; set; }
         private StockPresenterPage _stockPresenter;
         private readonly RepositoryStock _repositoryStock = new RepositoryStock();
         public ModelViewStock MvStock { get; set; }
+        public ModelViewProduct MvProduct { get; set; }
         public ModelViewProductLine MvPl { get; set; }
 
         public Stock() {
@@ -60,7 +62,8 @@ namespace DevExpress.MailClient.Win.Modules {
 
 
             var repositoryStock = new RepositoryStock();
-            _stockPresenter = new StockPresenterPage(this, repositoryStock);
+            var repositoryProduit = new RepositoryProduct();
+            _stockPresenter = new StockPresenterPage(this, repositoryStock, repositoryProduit);
             _stockPresenter.Display();
 
             gridControlStock.DataSource = Stocks;
@@ -77,7 +80,13 @@ namespace DevExpress.MailClient.Win.Modules {
             gridViewProductLine.Columns[2].Caption = Resources.Quantité;
             gridViewStock.RowCellClick += gridViewStock_CellClick;
 
-
+            gridControlProduct.DataSource = Products;
+            gridViewProduct.Columns[0].Visible = false;
+            gridViewProduct.Columns[3].Visible = false;
+            gridViewProduct.Columns[4].Visible = false;
+            gridViewProduct.Columns[6].Visible = false;
+            gridViewProduct.Columns[7].Visible = false;
+            gridViewProduct.Columns[8].Visible = false;
 
             GCProductDisplay.DataSource = Stocks.First().Products;
             /*LayoutViewProduct.TemplateCard.Width = 400;
@@ -303,6 +312,12 @@ namespace DevExpress.MailClient.Win.Modules {
                 case TagResources.NewProduct:
                     CreateProduct();
                     break;
+                case TagResources.ModifyProduct:
+                    ModifyProduct(MvProduct);
+                    break;
+                case TagResources.DeleteProduct:
+                    DeleteProduct();
+                    break;
                 case TagResources.NewProductLine:
                     CreateProductLine();
                     break;
@@ -385,6 +400,25 @@ namespace DevExpress.MailClient.Win.Modules {
         {
             var product = new ModelViewProduct();
             EditProduct(product, true);
+        }
+
+        private void ModifyProduct(ModelViewProduct produit)
+        {
+            if (gridViewProduct == null) return;
+            produit = (ModelViewProduct)gridViewProduct.GetFocusedRow();
+            EditProduct(produit, false);
+        }
+
+        private void DeleteProduct()
+        {
+            DialogResult result = XtraMessageBox.Show(this, TagResources.DeleteQuestion, Application.ProductName, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation);
+            if (result != DialogResult.Yes)
+                return;
+            if (gridViewProduct == null) return;
+            var idProduct = (Guid)gridViewProduct.GetFocusedRowCellValue("Id");
+            new RepositoryProduct().Remove(idProduct);
+            var produit = new ModelViewProduct();
+            Mail_Load(produit, new EventArgs());
         }
 
         void CreateProductLine()
@@ -688,6 +722,14 @@ namespace DevExpress.MailClient.Win.Modules {
             if (gridViewProductLine == null) return;
             var productLine = (ModelViewProductLine)gridViewProductLine.GetFocusedRow();
             ModifyProductLine(productLine);
+        }
+
+        //To accomplish this task, set the GridView.OptionsBehavior.EditorShowMode property to the EditorShowMode.MouseUp value.
+        private void gridViewProduct_DoubleClick(object sender, EventArgs e)
+        {
+            if (gridViewProduct == null) return;
+            var product = (ModelViewProduct)gridViewProduct.GetFocusedRow();
+            ModifyProduct(product);
         }
     }
 }

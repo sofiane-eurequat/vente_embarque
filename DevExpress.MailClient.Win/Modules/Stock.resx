@@ -192,28 +192,28 @@
   <data name="splitContainerControl2.Panel1.Text" xml:space="preserve">
     <value>Panel1</value>
   </data>
-  <data name="gridControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="gridControlProduct.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="gridControl1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="gridControlProduct.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="gridControl1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="gridControlProduct.Size" type="System.Drawing.Size, System.Drawing">
     <value>857, 164</value>
   </data>
-  <data name="gridControl1.TabIndex" type="System.Int32, mscorlib">
+  <data name="gridControlProduct.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;gridControl1.Name" xml:space="preserve">
-    <value>gridControl1</value>
+  <data name="&gt;&gt;gridControlProduct.Name" xml:space="preserve">
+    <value>gridControlProduct</value>
   </data>
-  <data name="&gt;&gt;gridControl1.Type" xml:space="preserve">
+  <data name="&gt;&gt;gridControlProduct.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;gridControl1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;gridControlProduct.Parent" xml:space="preserve">
     <value>splitContainerControl2.Panel2</value>
   </data>
-  <data name="&gt;&gt;gridControl1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;gridControlProduct.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="splitContainerControl2.Panel2.Text" xml:space="preserve">
@@ -638,7 +638,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAB6
-        BwAAAk1TRnQBSQFMAgEBBAEAAYgBAwGIAQMBDAEAAQwBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        BwAAAk1TRnQBSQFMAgEBBAEAAZgBAwGYAQMBDAEAAQwBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABMAMAARgDAAEBAQABCAUAAYABBBgAAYACAAGAAwACgAEAAYADAAGAAQABgAEAAoACAAPAAQABwAHc
         AcABAAHwAcoBpgEAATMFAAEzAQABMwEAATMBAAIzAgADFgEAAxwBAAMiAQADKQEAA1UBAANNAQADQgEA
         AzkBAAGAAXwB/wEAAlAB/wEAAZMBAAHWAQAB/wHsAcwBAAHGAdYB7wEAAdYC5wEAAZABqQGtAgAB/wEz
@@ -711,10 +711,10 @@
   <data name="&gt;&gt;gridViewProductLine.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;gridView1.Name" xml:space="preserve">
-    <value>gridView1</value>
+  <data name="&gt;&gt;gridViewProduct.Name" xml:space="preserve">
+    <value>gridViewProduct</value>
   </data>
-  <data name="&gt;&gt;gridView1.Type" xml:space="preserve">
+  <data name="&gt;&gt;gridViewProduct.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;modelViewProductBindingSource.Name" xml:space="preserve">

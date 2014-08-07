@@ -1988,6 +1988,9 @@
   <data name="rpgStock.Text" xml:space="preserve">
     <value>Stock / Lignes de Stock</value>
   </data>
+  <data name="rpgProduit.Text" xml:space="preserve">
+    <value>Produits</value>
+  </data>
   <data name="rpgTags.Text" xml:space="preserve">
     <value>Affichage produit</value>
   </data>
@@ -2042,7 +2045,7 @@
   <data name="rpSector.Text" xml:space="preserve">
     <value>SECTEUR</value>
   </data>
-  <data name="rpgProduit.Text" xml:space="preserve">
+  <data name="rpgProduitt.Text" xml:space="preserve">
     <value>Produit</value>
   </data>
   <data name="rpgRefreshProduct.Text" xml:space="preserve">
@@ -2669,6 +2672,9 @@
   </data>
   <data name="ribbonPageGroup5.Text" xml:space="preserve">
     <value>Fermer</value>
+  </data>
+  <data name="barButtonItem6.Caption" xml:space="preserve">
+    <value>Ajouter Produit</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -5135,6 +5141,18 @@
   <data name="&gt;&gt;bbiRefreshProduct.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="&gt;&gt;bbiRefreshSecteur.Name" xml:space="preserve">
+    <value>bbiRefreshSecteur</value>
+  </data>
+  <data name="&gt;&gt;bbiRefreshSecteur.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bbiCloseSecteur.Name" xml:space="preserve">
+    <value>bbiCloseSecteur</value>
+  </data>
+  <data name="&gt;&gt;bbiCloseSecteur.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="&gt;&gt;ribbonMiniToolbar1.Name" xml:space="preserve">
     <value>ribbonMiniToolbar1</value>
   </data>
@@ -5279,16 +5297,28 @@
   <data name="&gt;&gt;rpgGestionLivreur.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="&gt;&gt;ribbonPageGroup1.Name" xml:space="preserve">
+    <value>ribbonPageGroup1</value>
+  </data>
+  <data name="&gt;&gt;ribbonPageGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ribbonPageGroup2.Name" xml:space="preserve">
+    <value>ribbonPageGroup2</value>
+  </data>
+  <data name="&gt;&gt;ribbonPageGroup2.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="&gt;&gt;rpProduct.Name" xml:space="preserve">
     <value>rpProduct</value>
   </data>
   <data name="&gt;&gt;rpProduct.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;rpgProduit.Name" xml:space="preserve">
-    <value>rpgProduit</value>
+  <data name="&gt;&gt;rpgProduitt.Name" xml:space="preserve">
+    <value>rpgProduitt</value>
   </data>
-  <data name="&gt;&gt;rpgProduit.Type" xml:space="preserve">
+  <data name="&gt;&gt;rpgProduitt.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;rpgRefreshProduct.Name" xml:space="preserve">
@@ -5417,28 +5447,16 @@
   <data name="&gt;&gt;ribbonPageGroup5.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;ribbonPageGroup1.Name" xml:space="preserve">
-    <value>ribbonPageGroup1</value>
+  <data name="&gt;&gt;rpgProduit.Name" xml:space="preserve">
+    <value>rpgProduit</value>
   </data>
-  <data name="&gt;&gt;ribbonPageGroup1.Type" xml:space="preserve">
+  <data name="&gt;&gt;rpgProduit.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;ribbonPageGroup2.Name" xml:space="preserve">
-    <value>ribbonPageGroup2</value>
+  <data name="&gt;&gt;barButtonItem6.Name" xml:space="preserve">
+    <value>barButtonItem6</value>
   </data>
-  <data name="&gt;&gt;ribbonPageGroup2.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bbiRefreshSecteur.Name" xml:space="preserve">
-    <value>bbiRefreshSecteur</value>
-  </data>
-  <data name="&gt;&gt;bbiRefreshSecteur.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;bbiCloseSecteur.Name" xml:space="preserve">
-    <value>bbiCloseSecteur</value>
-  </data>
-  <data name="&gt;&gt;bbiCloseSecteur.Type" xml:space="preserve">
+  <data name="&gt;&gt;barButtonItem6.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
