@@ -55,7 +55,6 @@ namespace DevExpress.MailClient.Win {
         void RibbonButtonsInitialize() {
             InitBarButtonItem(bbiRotateLayout, TagResources.RotateLayout, Properties.Resources.RotateLayoutDescription);
             InitBarButtonItem(bbiFlipLayout, TagResources.FlipLayout, Properties.Resources.FlipLayoutDescription);
-            InitBarButtonItem(bbiDeleteStock, TagResources.DeleteItem, Properties.Resources.DeleteItemDescription);
             InitBarButtonItem(bbiNewStock, TagResources.NewStock, Properties.Resources.NewItemDescription);
             InitBarButtonItem(bbiModifyStock, TagResources.ModifyStock);
             InitBarButtonItem(bbiDeleteStock, TagResources.DeleteStock, Properties.Resources.DeleteItemDescription);

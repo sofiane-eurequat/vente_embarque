@@ -31,8 +31,11 @@ namespace DevExpress.MailClient.Win.Modules {
             this.gridControlStock = new DevExpress.XtraGrid.GridControl();
             this.gridViewStock = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
+            this.splitContainerControl2 = new DevExpress.XtraEditors.SplitContainerControl();
             this.gridControlProductLine = new DevExpress.XtraGrid.GridControl();
             this.gridViewProductLine = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.GCProductDisplay = new DevExpress.XtraGrid.GridControl();
             this.modelViewProductBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.LayoutViewProduct = new DevExpress.XtraGrid.Views.Layout.LayoutView();
@@ -89,8 +92,12 @@ namespace DevExpress.MailClient.Win.Modules {
             ((System.ComponentModel.ISupportInitialize)(this.gridViewStock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).BeginInit();
+            this.splitContainerControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlProductLine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewProductLine)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GCProductDisplay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.modelViewProductBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LayoutViewProduct)).BeginInit();
@@ -133,7 +140,7 @@ namespace DevExpress.MailClient.Win.Modules {
             resources.ApplyResources(this.splitmain.Panel1, "splitmain.Panel1");
             this.splitmain.Panel2.Controls.Add(this.splitContainerControl1);
             resources.ApplyResources(this.splitmain.Panel2, "splitmain.Panel2");
-            this.splitmain.SplitterPosition = 259;
+            this.splitmain.SplitterPosition = 170;
             // 
             // gridControlStock
             // 
@@ -156,12 +163,23 @@ namespace DevExpress.MailClient.Win.Modules {
             // splitContainerControl1
             // 
             resources.ApplyResources(this.splitContainerControl1, "splitContainerControl1");
+            this.splitContainerControl1.Horizontal = false;
             this.splitContainerControl1.Name = "splitContainerControl1";
-            this.splitContainerControl1.Panel1.Controls.Add(this.gridControlProductLine);
+            this.splitContainerControl1.Panel1.Controls.Add(this.splitContainerControl2);
             resources.ApplyResources(this.splitContainerControl1.Panel1, "splitContainerControl1.Panel1");
             this.splitContainerControl1.Panel2.Controls.Add(this.GCProductDisplay);
             resources.ApplyResources(this.splitContainerControl1.Panel2, "splitContainerControl1.Panel2");
-            this.splitContainerControl1.SplitterPosition = 402;
+            this.splitContainerControl1.SplitterPosition = 164;
+            // 
+            // splitContainerControl2
+            // 
+            resources.ApplyResources(this.splitContainerControl2, "splitContainerControl2");
+            this.splitContainerControl2.Name = "splitContainerControl2";
+            this.splitContainerControl2.Panel1.Controls.Add(this.gridControlProductLine);
+            resources.ApplyResources(this.splitContainerControl2.Panel1, "splitContainerControl2.Panel1");
+            this.splitContainerControl2.Panel2.Controls.Add(this.gridControl1);
+            resources.ApplyResources(this.splitContainerControl2.Panel2, "splitContainerControl2.Panel2");
+            this.splitContainerControl2.SplitterPosition = 364;
             // 
             // gridControlProductLine
             // 
@@ -181,6 +199,20 @@ namespace DevExpress.MailClient.Win.Modules {
             this.gridViewProductLine.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.MouseUp;
             this.gridViewProductLine.OptionsFind.AlwaysVisible = true;
             this.gridViewProductLine.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridControl1
+            // 
+            resources.ApplyResources(this.gridControl1, "gridControl1");
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
             // GCProductDisplay
             // 
@@ -676,8 +708,12 @@ namespace DevExpress.MailClient.Win.Modules {
             ((System.ComponentModel.ISupportInitialize)(this.gridViewStock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
             this.splitContainerControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).EndInit();
+            this.splitContainerControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlProductLine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewProductLine)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GCProductDisplay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.modelViewProductBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LayoutViewProduct)).EndInit();
@@ -771,5 +807,8 @@ namespace DevExpress.MailClient.Win.Modules {
         private XtraGrid.Views.Layout.LayoutViewField layoutViewField_colDateEntree;
         private XtraGrid.Views.Layout.LayoutViewCard layoutViewCard2;
         private XtraLayout.LayoutControlGroup item2;
+        private XtraEditors.SplitContainerControl splitContainerControl2;
+        private XtraGrid.GridControl gridControl1;
+        private XtraGrid.Views.Grid.GridView gridView1;
     }
 }

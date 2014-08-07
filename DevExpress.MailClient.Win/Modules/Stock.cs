@@ -689,6 +689,5 @@ namespace DevExpress.MailClient.Win.Modules {
             var productLine = (ModelViewProductLine)gridViewProductLine.GetFocusedRow();
             ModifyProductLine(productLine);
         }
-        
     }
 }
