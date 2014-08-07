@@ -288,7 +288,7 @@ namespace DevExpress.MailClient.Win.Modules {
             this.layoutViewField_colQuantiteMin2.Location = new System.Drawing.Point(0, 46);
             this.layoutViewField_colQuantiteMin2.Name = "layoutViewField_colQuantiteMin2";
             this.layoutViewField_colQuantiteMin2.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
-            this.layoutViewField_colQuantiteMin2.Size = new System.Drawing.Size(325, 46);
+            this.layoutViewField_colQuantiteMin2.Size = new System.Drawing.Size(325, 42);
             this.layoutViewField_colQuantiteMin2.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
             this.layoutViewField_colQuantiteMin2.TextSize = new System.Drawing.Size(65, 13);
             // 
@@ -304,7 +304,7 @@ namespace DevExpress.MailClient.Win.Modules {
             this.layoutViewField_colPhoto2.Location = new System.Drawing.Point(0, 0);
             this.layoutViewField_colPhoto2.Name = "layoutViewField_colPhoto2";
             this.layoutViewField_colPhoto2.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
-            this.layoutViewField_colPhoto2.Size = new System.Drawing.Size(158, 139);
+            this.layoutViewField_colPhoto2.Size = new System.Drawing.Size(158, 135);
             this.layoutViewField_colPhoto2.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
             this.layoutViewField_colPhoto2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutViewField_colPhoto2.TextToControlDistance = 0;
@@ -319,7 +319,7 @@ namespace DevExpress.MailClient.Win.Modules {
             // layoutViewField_colFournisseur2
             // 
             this.layoutViewField_colFournisseur2.EditorPreferredWidth = 163;
-            this.layoutViewField_colFournisseur2.Location = new System.Drawing.Point(0, 139);
+            this.layoutViewField_colFournisseur2.Location = new System.Drawing.Point(0, 135);
             this.layoutViewField_colFournisseur2.Name = "layoutViewField_colFournisseur2";
             this.layoutViewField_colFournisseur2.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
             this.layoutViewField_colFournisseur2.Size = new System.Drawing.Size(255, 46);
@@ -335,7 +335,7 @@ namespace DevExpress.MailClient.Win.Modules {
             // layoutViewField_colCategorie2
             // 
             this.layoutViewField_colCategorie2.EditorPreferredWidth = 163;
-            this.layoutViewField_colCategorie2.Location = new System.Drawing.Point(0, 185);
+            this.layoutViewField_colCategorie2.Location = new System.Drawing.Point(0, 181);
             this.layoutViewField_colCategorie2.Name = "layoutViewField_colCategorie2";
             this.layoutViewField_colCategorie2.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
             this.layoutViewField_colCategorie2.Size = new System.Drawing.Size(255, 46);
@@ -351,10 +351,10 @@ namespace DevExpress.MailClient.Win.Modules {
             // layoutViewField_colRemarque2
             // 
             this.layoutViewField_colRemarque2.EditorPreferredWidth = 163;
-            this.layoutViewField_colRemarque2.Location = new System.Drawing.Point(0, 231);
+            this.layoutViewField_colRemarque2.Location = new System.Drawing.Point(0, 227);
             this.layoutViewField_colRemarque2.Name = "layoutViewField_colRemarque2";
             this.layoutViewField_colRemarque2.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
-            this.layoutViewField_colRemarque2.Size = new System.Drawing.Size(255, 65);
+            this.layoutViewField_colRemarque2.Size = new System.Drawing.Size(255, 46);
             this.layoutViewField_colRemarque2.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
             this.layoutViewField_colRemarque2.TextSize = new System.Drawing.Size(62, 13);
             // 
@@ -367,7 +367,7 @@ namespace DevExpress.MailClient.Win.Modules {
             // layoutViewField_colReference2
             // 
             this.layoutViewField_colReference2.EditorPreferredWidth = 164;
-            this.layoutViewField_colReference2.Location = new System.Drawing.Point(255, 139);
+            this.layoutViewField_colReference2.Location = new System.Drawing.Point(255, 135);
             this.layoutViewField_colReference2.Name = "layoutViewField_colReference2";
             this.layoutViewField_colReference2.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
             this.layoutViewField_colReference2.Size = new System.Drawing.Size(256, 46);
@@ -399,7 +399,7 @@ namespace DevExpress.MailClient.Win.Modules {
             // layoutViewField_colMarque2
             // 
             this.layoutViewField_colMarque2.EditorPreferredWidth = 164;
-            this.layoutViewField_colMarque2.Location = new System.Drawing.Point(255, 185);
+            this.layoutViewField_colMarque2.Location = new System.Drawing.Point(255, 181);
             this.layoutViewField_colMarque2.Name = "layoutViewField_colMarque2";
             this.layoutViewField_colMarque2.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
             this.layoutViewField_colMarque2.Size = new System.Drawing.Size(256, 46);
@@ -415,10 +415,10 @@ namespace DevExpress.MailClient.Win.Modules {
             // layoutViewField_colDateEntree
             // 
             this.layoutViewField_colDateEntree.EditorPreferredWidth = 164;
-            this.layoutViewField_colDateEntree.Location = new System.Drawing.Point(255, 231);
+            this.layoutViewField_colDateEntree.Location = new System.Drawing.Point(255, 227);
             this.layoutViewField_colDateEntree.Name = "layoutViewField_colDateEntree";
             this.layoutViewField_colDateEntree.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
-            this.layoutViewField_colDateEntree.Size = new System.Drawing.Size(256, 65);
+            this.layoutViewField_colDateEntree.Size = new System.Drawing.Size(256, 46);
             this.layoutViewField_colDateEntree.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
             this.layoutViewField_colDateEntree.TextSize = new System.Drawing.Size(62, 13);
             this.layoutViewField_colDateEntree.TextToControlDistance = 4;
@@ -449,7 +449,7 @@ namespace DevExpress.MailClient.Win.Modules {
             this.item2.Location = new System.Drawing.Point(158, 0);
             this.item2.Name = "item2";
             this.item2.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 8, 8, 8);
-            this.item2.Size = new System.Drawing.Size(353, 139);
+            this.item2.Size = new System.Drawing.Size(353, 135);
             this.item2.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
             // 
             // layoutView1
