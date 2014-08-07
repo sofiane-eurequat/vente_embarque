@@ -115,6 +115,5 @@ namespace vente_embarque.presenter.Bdc
         public string Nom { get; set; }
         public DateTime DateEntree { get; set; }
         public GestionProduit TypeGestion { get; set; }
-
     }
 }

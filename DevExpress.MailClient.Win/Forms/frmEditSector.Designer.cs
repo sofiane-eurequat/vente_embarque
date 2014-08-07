@@ -47,6 +47,7 @@
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
             this.comboBoxClients = new System.Windows.Forms.ComboBox();
             this.comboBoxCommune = new System.Windows.Forms.ComboBox();
             this.comboBoxWilaya = new System.Windows.Forms.ComboBox();
@@ -84,6 +85,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditNameSector.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GCAgentTerrain)).BeginInit();
@@ -247,6 +249,7 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.lookUpEdit1);
             this.groupControl1.Controls.Add(this.comboBoxClients);
             this.groupControl1.Controls.Add(this.comboBoxCommune);
             this.groupControl1.Controls.Add(this.comboBoxWilaya);
@@ -257,6 +260,14 @@
             this.groupControl1.Controls.Add(this.labelSecteur);
             resources.ApplyResources(this.groupControl1, "groupControl1");
             this.groupControl1.Name = "groupControl1";
+            // 
+            // lookUpEdit1
+            // 
+            resources.ApplyResources(this.lookUpEdit1, "lookUpEdit1");
+            this.lookUpEdit1.MenuManager = this.ribbon;
+            this.lookUpEdit1.Name = "lookUpEdit1";
+            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("lookUpEdit1.Properties.Buttons"))))});
             // 
             // comboBoxClients
             // 
@@ -512,6 +523,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditNameSector.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GCAgentTerrain)).EndInit();
@@ -581,5 +593,6 @@
         private XtraBars.Ribbon.ApplicationMenu applicationMenu1;
         private XtraRichEdit.UI.RichEditBarController richEditBarController1;
         private XtraBars.BarButtonItem barButtonItem13;
+        private XtraEditors.LookUpEdit lookUpEdit1;
     }
 }

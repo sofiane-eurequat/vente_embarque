@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.MailClient.Win.Forms;
 using DevExpress.MailClient.Win.Properties;
@@ -13,9 +9,7 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Controls;
 using DevExpress.XtraEditors.Repository;
 using DevExpress.XtraGrid.Views.Grid;
-using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 using vente_embarque.DataLayer;
-using vente_embarque.Model;
 using vente_embarque.presenter.Bdc;
 
 namespace DevExpress.MailClient.Win.Modules
@@ -160,7 +154,7 @@ namespace DevExpress.MailClient.Win.Modules
             gridViewOrderLine.Columns[1].Caption = Resources.Produit;
             gridViewOrderLine.Columns[2].Caption = Resources.Quantité;
 
-            GCDisplayProduct.DataSource = Orders.First().Products;
+           // GCDisplayProduct.DataSource = Orders.First().Products;
             layoutViewProduct.Columns["Id"].Visible = false;
             layoutViewProduct.Columns["Photo"].LayoutViewField.TextVisible = false;
             layoutViewProduct.CardMinSize = new Size(350, 200);
@@ -207,7 +201,11 @@ namespace DevExpress.MailClient.Win.Modules
         {
             if (gridViewOrderLine == null) return;
             GCDisplayProduct.DataSource =
-                Orders.First(o => o.Id == (Guid)gridViewOrder.GetFocusedRowCellValue("Id")).OrderLines.First(ol => ol.Id == (Guid)gridViewOrderLine.GetFocusedRowCellValue("Id")).Product;
+                Orders.First(o => o.Id == (Guid) gridViewOrder.GetFocusedRowCellValue("Id"))
+                      .OrderLines.First(ol => ol.Id == (Guid) gridViewOrderLine.GetFocusedRowCellValue("Id"))
+                      .Product;
+            GCDisplayProduct.DataSource =
+                Orders.First().OrderLines.First().Product;
         }
 
         private void gridViewOrderLine_CellClick(object sender, RowCellClickEventArgs e)

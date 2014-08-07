@@ -735,18 +735,6 @@
   <data name="ribbon.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="ribbonPageGroup1.Text" xml:space="preserve">
-    <value>Nouveau</value>
-  </data>
-  <data name="ribbonPageGroup2.Text" xml:space="preserve">
-    <value>Sauvegarder</value>
-  </data>
-  <data name="ribbonPageGroup4.Text" xml:space="preserve">
-    <value>Reinitialiser</value>
-  </data>
-  <data name="ribbonPageGroup7.Text" xml:space="preserve">
-    <value>Fermer</value>
-  </data>
   <data name="ribbonPage1.Text" xml:space="preserve">
     <value>Home</value>
   </data>
@@ -783,13 +771,50 @@
   <data name="&gt;&gt;ribbon.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="ribbonPageGroup1.Text" xml:space="preserve">
+    <value>Nouveau</value>
+  </data>
+  <data name="ribbonPageGroup2.Text" xml:space="preserve">
+    <value>Sauvegarder</value>
+  </data>
+  <data name="ribbonPageGroup4.Text" xml:space="preserve">
+    <value>Reinitialiser</value>
+  </data>
+  <data name="ribbonPageGroup7.Text" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="lookUpEdit1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>350, 100</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v13.2" name="DevExpress.Utils.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="lookUpEdit1.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.2">
+    <value>Combo</value>
+  </data>
+  <data name="lookUpEdit1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 20</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lookUpEdit1.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;lookUpEdit1.Name" xml:space="preserve">
+    <value>lookUpEdit1</value>
+  </data>
+  <data name="&gt;&gt;lookUpEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LookUpEdit, DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lookUpEdit1.Parent" xml:space="preserve">
+    <value>groupControl1</value>
+  </data>
+  <data name="&gt;&gt;lookUpEdit1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="comboBoxClients.Location" type="System.Drawing.Point, System.Drawing">
     <value>520, 37</value>
   </data>
   <data name="comboBoxClients.Size" type="System.Drawing.Size, System.Drawing">
     <value>206, 21</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="comboBoxClients.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
@@ -803,7 +828,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;comboBoxClients.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="comboBoxCommune.Location" type="System.Drawing.Point, System.Drawing">
     <value>520, 74</value>
@@ -824,7 +849,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;comboBoxCommune.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="comboBoxWilaya.Location" type="System.Drawing.Point, System.Drawing">
     <value>115, 74</value>
@@ -845,7 +870,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;comboBoxWilaya.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="textEditNameSector.Location" type="System.Drawing.Point, System.Drawing">
     <value>115, 38</value>
@@ -866,7 +891,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;textEditNameSector.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="labelCommune.Location" type="System.Drawing.Point, System.Drawing">
     <value>403, 78</value>
@@ -890,7 +915,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;labelCommune.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="labelWilaya.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 77</value>
@@ -914,7 +939,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;labelWilaya.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="labelClient.Location" type="System.Drawing.Point, System.Drawing">
     <value>403, 41</value>
@@ -938,7 +963,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;labelClient.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="labelSecteur.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 41</value>
@@ -962,7 +987,7 @@
     <value>groupControl1</value>
   </data>
   <data name="&gt;&gt;labelSecteur.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="groupControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -1049,15 +1074,6 @@
   <data name="xtraTabControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 270</value>
   </data>
-  <data name="standaloneBarDockControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 3</value>
-  </data>
-  <data name="standaloneBarDockControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>770, 23</value>
-  </data>
-  <data name="standaloneBarDockControl1.Text" xml:space="preserve">
-    <value>standaloneBarDockControl1</value>
-  </data>
   <data name="&gt;&gt;standaloneBarDockControl1.Name" xml:space="preserve">
     <value>standaloneBarDockControl1</value>
   </data>
@@ -1104,6 +1120,27 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;xtraTabControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="standaloneBarDockControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 3</value>
+  </data>
+  <data name="standaloneBarDockControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>770, 23</value>
+  </data>
+  <data name="standaloneBarDockControl1.Text" xml:space="preserve">
+    <value>standaloneBarDockControl1</value>
+  </data>
+  <data name="&gt;&gt;standaloneBarDockControl1.Name" xml:space="preserve">
+    <value>standaloneBarDockControl1</value>
+  </data>
+  <data name="&gt;&gt;standaloneBarDockControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.StandaloneBarDockControl, DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;standaloneBarDockControl1.Parent" xml:space="preserve">
+    <value>xtraTabPage1</value>
+  </data>
+  <data name="&gt;&gt;standaloneBarDockControl1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="bar3.Text" xml:space="preserve">

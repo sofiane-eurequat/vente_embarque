@@ -68,10 +68,11 @@ namespace DevExpress.MailClient.Win.Modules {
             gridViewStock.Columns[7].Visible = false;
 
             var lignesProduits = Stocks.First().ProductLine;
-            gridControlProduct.DataSource = lignesProduits;
+            gridControlProductLine.DataSource = lignesProduits;
             gridViewProductLine.Columns[0].Visible = false;
             gridViewProductLine.Columns[3].Visible = false;
             gridViewProductLine.Columns[4].Visible = false;
+            gridViewProductLine.Columns[5].Visible = false;
             gridViewProductLine.Columns[1].Caption = Resources.Produit;
             gridViewProductLine.Columns[2].Caption = Resources.Quantité;
             gridViewStock.RowCellClick += gridViewStock_CellClick;
@@ -184,7 +185,7 @@ namespace DevExpress.MailClient.Win.Modules {
         protected override void LookAndFeelStyleChanged() {
             base.LookAndFeelStyleChanged();
             ColorHelper.UpdateColor(ilColumns, gridControlStock.LookAndFeel);
-            ColorHelper.UpdateColor(ilColumns, gridControlProduct.LookAndFeel);
+            ColorHelper.UpdateColor(ilColumns, gridControlProductLine.LookAndFeel);
         }
         private void gridView1_CustomDrawGroupRow(object sender, DevExpress.XtraGrid.Views.Base.RowObjectCustomDrawEventArgs e) {
             GridGroupRowInfo info = e.Info as GridGroupRowInfo;
@@ -647,16 +648,24 @@ namespace DevExpress.MailClient.Win.Modules {
         private void gridControlStock_Click(object sender, EventArgs e)
         {
             if (!Stocks.Any()) return;
-            gridControlProduct.DataSource =
+            gridControlProductLine.DataSource =
                 Stocks.First(s => s.Id == (Guid)gridViewStock.GetFocusedRowCellValue("Id")).ProductLine;
+
+            GCProductDisplay.DataSource =
+               Stocks.First(s => s.Id == (Guid)gridViewStock.GetFocusedRowCellValue("Id"))
+                      .Products.Where(p => p.Id == (Guid)gridViewProductLine.GetFocusedRowCellValue("IdProduct"));
         }
 
         //To accomplish this task, set the GridView.OptionsBehavior.EditorShowMode property to the EditorShowMode.MouseUp value.
         private void gridViewStock_CellClick(object sender, RowCellClickEventArgs e)
         {
             if (!Stocks.Any()) return;
-            gridControlProduct.DataSource =
+            gridControlProductLine.DataSource =
                 Stocks.First(s => s.Id == (Guid)gridViewStock.GetFocusedRowCellValue("Id")).ProductLine;
+
+            GCProductDisplay.DataSource =
+               Stocks.First(s => s.Id == (Guid)gridViewStock.GetFocusedRowCellValue("Id"))
+                      .Products.Where(p => p.Id == (Guid)gridViewProductLine.GetFocusedRowCellValue("IdProduct"));
         }
 
         private void gridViewStock_DoubleClick(object sender, EventArgs e)
@@ -666,11 +675,12 @@ namespace DevExpress.MailClient.Win.Modules {
             ModifyStock(stock);
         }
 
-        private void gridControlProduct_Click(object sender, EventArgs e)
+        private void gridControlProductLine_Click(object sender, EventArgs e)
         {
             if (!Stocks.Any()) return;
             GCProductDisplay.DataSource =
-                Stocks.First(s => s.Id == (Guid)gridViewStock.GetFocusedRowCellValue("Id")).ProductLine.First(p => p.Id == (Guid)gridViewProductLine.GetFocusedRowCellValue("Id")).Product;
+               Stocks.First(s => s.Id == (Guid)gridViewStock.GetFocusedRowCellValue("Id"))
+                      .Products.Where(p => p.Id == (Guid)gridViewProductLine.GetFocusedRowCellValue("IdProduct"));
         }
 
         private void gridViewProductLine_DoubleClick(object sender, EventArgs e)
